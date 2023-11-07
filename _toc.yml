@@ -1,0 +1,24 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+#  - file: intro.md
+  - file: notebooks/introduccion.ipynb
+  - file: notebooks/observables.ipynb
+#- caption: Leptones
+#  chapters:
+#  - file: notebooks/tcalvec_integral_linea.ipynb
+#- caption: Hadrones
+#  chapters:
+#  - file: notebooks/tfourier.ipynb
+#- caption: Modelo Estándar
+#  chapters:
+#  - file: notebooks/tfourier.ipynb
+#- caption: Apéndices
+#  chapters:
+#  - file: notebooks/tfourier.ipynb
+
+
+
