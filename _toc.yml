@@ -8,6 +8,8 @@ chapters:
   - file: notebooks/introduccion.ipynb
   - file: notebooks/observables.ipynb
   - file: notebooks/leptones.ipynb
+  - file: notebooks/quarks_hadrons.ipynb
+  - file: notebooks/sm.ipynb
 #- caption: Leptones
 #  chapters:
 #  - file: notebooks/tcalvec_integral_linea.ipynb
