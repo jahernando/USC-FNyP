@@ -1,0 +1,1453 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción a Física de Partículas &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Observables en Física de Partículas" href="observables.html" />
+    <link rel="prev" title="Introducción" href="../intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observables.html">
+   Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="leptones.html">
+   Sobre los leptones
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/introduccion.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/introduccion.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/introduccion.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduccion">
+   Introducción
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objetivos">
+   Objetivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#primeros-pasos-en-fisica-de-particulas">
+   Primeros pasos en Física de Partículas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#que-es-la-fisica-de-particulas">
+     ¿Qué es la Física de Partículas?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#metodologia">
+     Metodología
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particulas-y-energia">
+     Partículas y Energía
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particulas-y-cosmologia">
+     Partículas y Cosmología
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#teoria-experimentos-detectores">
+     Teoría, experimentos, detectores
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-gran-ciencia">
+     La gran ciencia
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-grandes-laboratorios">
+     Los grandes Laboratorios
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aplicaciones-practicas">
+       Aplicaciones prácticas
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#historia">
+     Historia
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduccion-al-modelo-estandar">
+   Introducción al modelo estandar
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-sm-a-simple-vista">
+     El SM a simple vista
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fermiones">
+     Fermiones
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#anti-fermiones">
+       anti-fermiones
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#generaciones">
+       generaciones
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leptones">
+     Leptones
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-quarks">
+     Los quarks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-mediadores-de-las-fuerzas">
+     Los mediadores de las fuerzas
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#propiedades-de-los-portadores">
+       Propiedades de los portadores
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#propiedades-de-las-fuerzas">
+       Propiedades de las fuerzas
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-boson-de-higgs">
+     El bosón de Higgs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-universo-esta-formado-de-materia">
+     El Universo está formado de materia
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#algunas-preguntas-sin-respuesta">
+     Algunas preguntas sin respuesta
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nomenclatura">
+       Nomenclatura:
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introducción a Física de Partículas</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduccion">
+   Introducción
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objetivos">
+   Objetivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#primeros-pasos-en-fisica-de-particulas">
+   Primeros pasos en Física de Partículas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#que-es-la-fisica-de-particulas">
+     ¿Qué es la Física de Partículas?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#metodologia">
+     Metodología
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particulas-y-energia">
+     Partículas y Energía
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particulas-y-cosmologia">
+     Partículas y Cosmología
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#teoria-experimentos-detectores">
+     Teoría, experimentos, detectores
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-gran-ciencia">
+     La gran ciencia
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-grandes-laboratorios">
+     Los grandes Laboratorios
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aplicaciones-practicas">
+       Aplicaciones prácticas
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#historia">
+     Historia
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduccion-al-modelo-estandar">
+   Introducción al modelo estandar
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-sm-a-simple-vista">
+     El SM a simple vista
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fermiones">
+     Fermiones
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#anti-fermiones">
+       anti-fermiones
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#generaciones">
+       generaciones
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leptones">
+     Leptones
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-quarks">
+     Los quarks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-mediadores-de-las-fuerzas">
+     Los mediadores de las fuerzas
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#propiedades-de-los-portadores">
+       Propiedades de los portadores
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#propiedades-de-las-fuerzas">
+       Propiedades de las fuerzas
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-boson-de-higgs">
+     El bosón de Higgs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-universo-esta-formado-de-materia">
+     El Universo está formado de materia
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#algunas-preguntas-sin-respuesta">
+     Algunas preguntas sin respuesta
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nomenclatura">
+       Nomenclatura:
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduccion-a-fisica-de-particulas">
+<h1>Introducción a Física de Partículas<a class="headerlink" href="#introduccion-a-fisica-de-particulas" title="Permalink to this heading">#</a></h1>
+<div class="section" id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h2>
+<p><em>Jose A. Hernando Morata</em></p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p><em>primera versión: Septiembre 2021; última versión: Octubre 2023</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov  7 16:47:46 2023
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Dar una visión del entorno de la Física de Partículas:</p>
+<ul>
+<li><p>Historia, relaciones con otras ramas, los laboratorios.</p></li>
+</ul>
+</li>
+<li><p>Dar una introducción general del Modelo Estándar.</p>
+<ul>
+<li><p>La materia (fermiones),  las fuerzas (bosones), y el aglutador (Higgs)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="primeros-pasos-en-fisica-de-particulas">
+<h2>Primeros pasos en Física de Partículas<a class="headerlink" href="#primeros-pasos-en-fisica-de-particulas" title="Permalink to this heading">#</a></h2>
+<div class="section" id="que-es-la-fisica-de-particulas">
+<h3>¿Qué es la Física de Partículas?<a class="headerlink" href="#que-es-la-fisica-de-particulas" title="Permalink to this heading">#</a></h3>
+<p>Física de Partículas es la rama de la Física que estudia los <strong>corpúsculos</strong> más pequeños (elementales?) de la Naturaleza y las <strong>interacciones</strong> que median entre ellos.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_distances_scale.jpg"><img alt="../_images/intro_distances_scale.jpg" class="align-center" src="../_images/intro_distances_scale.jpg" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Las escalas de <strong>distancia</strong> (m) y <strong>energía</strong> (eV):</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Atómica</p></th>
+<th class="head"><p>Nuclear</p></th>
+<th class="head"><p>Partículas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>distancia (m)</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-10}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-14}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-18}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Energía (eV)</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{6}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{9-11}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Si queremos explorar distancias muy cortas necesitamos, por la relación de Broglie, <span class="math notranslate nohighlight">\(\lambda = h /p\)</span>, energías más altas.</p>
+</div>
+<div class="section" id="metodologia">
+<h3>Metodología<a class="headerlink" href="#metodologia" title="Permalink to this heading">#</a></h3>
+<p>Estudiamos la naturaleza mediante pruebas con dispersión (<em>scattering</em>) o colisiones.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_dispersion.png"><img alt="../_images/intro_dispersion.png" class="align-center" src="../_images/intro_dispersion.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/intro_colision.png"><img alt="../_images/intro_colision.png" class="align-center" src="../_images/intro_colision.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema de dispersión</p></td>
+<td class="text-align:center"><p>Esquema de  colisión</p></td>
+</tr>
+</tbody>
+</table>
+<p>Literalmente lanzamos unas partículas (<span class="math notranslate nohighlight">\(e, p, \nu\)</span>) contra otras a muy altas energías (GeV-TeV) y observamos sus productos.</p>
+</div>
+<div class="section" id="particulas-y-energia">
+<h3>Partículas y Energía<a class="headerlink" href="#particulas-y-energia" title="Permalink to this heading">#</a></h3>
+<p>Se conoce también a Física de Partículas como <strong>Física de Altas Energías</strong>, ordenes típicos <span class="math notranslate nohighlight">\(\mathcal{0}(1-10^3) \)</span>GeV.</p>
+<p>La Física de Partículas está asociada con el desarrollo de aceleradores de partículas y detectores.</p>
+<ul class="simple">
+<li><p>El acelerador más potente es el LHC <a class="reference external" href="https://www.youtube.com/watch?v=pQhbhpU9Wrg">[&gt;]</a></p></li>
+<li><p>Existen aceleradores cósmicos naturales que producen rayos cósmicos que alcanzan la Tierra. Ver el detector IceCube <a class="reference external" href="https://www.youtube.com/watch?v=D50LNnioXQc">[&gt;]</a></p></li>
+</ul>
+</div>
+<div class="section" id="particulas-y-cosmologia">
+<h3>Partículas y Cosmología<a class="headerlink" href="#particulas-y-cosmologia" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_universe_history_2.jpg"><img alt="../_images/intro_universe_history_2.jpg" class="align-center" src="../_images/intro_universe_history_2.jpg" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema de la evolución del Universo [PDG]</p></td>
+</tr>
+</tbody>
+</table>
+<p>La Física de Partículas nos permite entender la evolución primigenia del Universo (Cosmología).</p>
+<p>A partir de los <span class="math notranslate nohighlight">\(10^{-32}\)</span> s después del Big Bang el Universo se rigue por el Modelo Estándar, (SM) y depués de 100 s tiene lugar la Nucleosíntesis (Nuclear).</p>
+<p>Existe una relación de continuidad entre ramas de la física:</p>
+<center>
+Astropartículas $\Leftrightarrow$ Partículas $\Leftrightarrow$ Nuclear
+</center>
+<p>El <em>Instituto Galego de Fíxica de Altas Enerxías</em>, <a class="reference external" href="https://igfae.usc.es/igfae/gl/">IGFAE</a>, cubre las tres ramas y sus posibles aplicaciones.</p>
+</div>
+<div class="section" id="teoria-experimentos-detectores">
+<h3>Teoría, experimentos, detectores<a class="headerlink" href="#teoria-experimentos-detectores" title="Permalink to this heading">#</a></h3>
+<p>La Física de Partículas es una rama que involucra a la física teórica, experimental y la de detectores.</p>
+<ul class="simple">
+<li><p>Los avances en detección hacen posible nuevos discubrimientos</p></li>
+<li><p>Los descubrimientos marcan las líneas permitidas de las teorías</p></li>
+<li><p>La teoría indica qué experimentos son de interés</p></li>
+</ul>
+ <center>
+   Detectores $\Leftrightarrow$ Experimentos $\Leftrightarrow$ Teorías
+ </center>
+<p>y se relaciona con otras áreas:</p>
+ <center>
+    Ingeniería | Química | Computación
+ </center></div>
+<div class="section" id="la-gran-ciencia">
+<h3>La gran ciencia<a class="headerlink" href="#la-gran-ciencia" title="Permalink to this heading">#</a></h3>
+<p>Los experimentos y los acelerados son grandes construcciones, únicas, que requieren de la participación de miles de científicos y una gran financiación.</p>
+<p>Las estructuras de los experimentos son complejos, su planificación, construcción y explotación duran décadas. Un ejemplo: <a class="reference external" href="https://atlas.cern/">ATLAS</a></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_atlas.jpg"><img alt="../_images/intro_atlas.jpg" class="align-center" src="../_images/intro_atlas.jpg" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Imagen del detector ATLAS durante su construcción [ATLAS]</p></td>
+</tr>
+</tbody>
+</table>
+<p>El experimento <a class="reference external" href="https://atlas.cern/">ATLAS</a> del LHC es uno de los más grandes experimentos construidos.</p>
+</div>
+<div class="section" id="los-grandes-laboratorios">
+<h3>Los grandes Laboratorios<a class="headerlink" href="#los-grandes-laboratorios" title="Permalink to this heading">#</a></h3>
+<p>Los experimentos de Física de Partículas tienen lugar en grandes laboratorios internacionales.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/Dr_Fabiola_Gianotti.jpg"><img alt="../_images/Dr_Fabiola_Gianotti.jpg" class="align-center" src="../_images/Dr_Fabiola_Gianotti.jpg" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>F. Gianotti, directora del <a class="reference external" href="https://home.cern">CERN</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Basados en aceleradores:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://home.cern">CERN</a> (Ginebra, Suiza).</p></li>
+<li><p><a class="reference external" href="https://www.fnal.gov/">Fermilab</a> (Chicago, Illinois), <a class="reference external" href="https://www6.slac.stanford.edu/">SLAC</a> (Stanford, California), <a class="reference external" href="https://www.bnl.gov/world/">Brookhaven</a> (New York)</p></li>
+<li><p><a class="reference external" href="https://www.kek.jp/en/">KEK</a> (Japón)</p></li>
+</ul>
+<p>Subterráneos:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.lngs.infn.it/en">LNGS</a> (Italia), <a class="reference external" href="http://www-sk.icrr.u-tokyo.ac.jp/index-e.html">Kamioka</a> (Japon), <a class="reference external" href="https://www.snolab.ca/">SNOLAB</a> (Canada), <a class="reference external" href="https://lsc-canfranc.es/">Canfranc</a> (Spain).</p></li>
+</ul>
+<div class="section" id="aplicaciones-practicas">
+<h4>Aplicaciones prácticas<a class="headerlink" href="#aplicaciones-practicas" title="Permalink to this heading">#</a></h4>
+<p>Las técnicas desarrolladas para los detectores y los algoritmos para el tratamiento del gran volumen de tratamiento de datos han generados aplicaciones fundamentales en otros campos:</p>
+<ul class="simple">
+<li><p>Física Médica (rayos-X, PEP, terapia hadrónica)</p></li>
+<li><p>World Wide Wed (<a class="reference external" href="https://home.cern/science/computing/birth-web/short-history-web">WWW</a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="historia">
+<h3>Historia<a class="headerlink" href="#historia" title="Permalink to this heading">#</a></h3>
+<p>Una vista a vuelo de pájaro de la historia de la Física de Partículas:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_particles_history.jpg"><img alt="../_images/intro_particles_history.jpg" class="align-center" src="../_images/intro_particles_history.jpg" style="width: 800px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Hitos de la Historia de Física de Partículas</p></td>
+</tr>
+</tbody>
+</table>
+<p>Los grandes desarrollos de detetectores y aceleradores se traducen en descubrimientos científicos.</p>
+<ul class="simple">
+<li><p>Las emulsiones fotográficas permitieron la observación de partículas, <span class="math notranslate nohighlight">\(\mu, \pi\)</span></p></li>
+<li><p>Las centelleadores y los reactores nucleares el descubrimiento del neutrino <span class="math notranslate nohighlight">\(\nu_e\)</span>.</p></li>
+<li><p>Los detectores de silicio la determinación de partículas con vida corta <span class="math notranslate nohighlight">\(\tau, B\)</span></p></li>
+</ul>
+<p>Los experimentos revelan una Naturaleza inesperada:</p>
+<ul class="simple">
+<li><p>La violación de Paridad y CP en corrientes débiles.</p></li>
+<li><p>Tres familias de leptones y de quarks.</p></li>
+<li><p>La matrix de mezcla, CKM, que rigue los corrientes cargadas entre los quarks.</p></li>
+<li><p>Oscilaciones de neutrinos.</p></li>
+</ul>
+<p>La construcción de la teoría guía a los descubrimientos:</p>
+<ul class="simple">
+<li><p>Pauli postula la existencia del neutrino.</p></li>
+<li><p>Gellman propone el modelo de quarks y la ordenación de “zoo” de hadrones.</p></li>
+<li><p>La unificación electro-débil predice las corrientes neutras de neutrinos.</p></li>
+<li><p>La rotura espontánea de simetría postula la existencia del bosón de Higgs.</p></li>
+</ul>
+<p>Los avacen experimentales más relevantes:</p>
+<ul class="simple">
+<li><p>El descubrimento del positron (antimateria)</p></li>
+<li><p>El descubrimiento de partículas inesperadas: <span class="math notranslate nohighlight">\(\mu, ...\)</span></p></li>
+<li><p>El descubrimiento del neutrino y sus propiedades.</p></li>
+<li><p>La violación de Paridad y de CP en corrientes débiles</p></li>
+<li><p>La existencia de los quarks y los gluones</p></li>
+<li><p>La existencia de las corrientes neutras y la verificación del SM</p></li>
+<li><p>La verificación de la matrix de mezclas CKM</p></li>
+<li><p>El descubrimiento de oscilaciones de neutrinos</p></li>
+<li><p>La descubrimiento del bosón de Higgs</p></li>
+</ul>
+<p>Los avences teóricos más importantes:</p>
+<ul class="simple">
+<li><p>La ecuación de Dirac y la existancia de la antimateria</p></li>
+<li><p>El potencial de Yukawa</p></li>
+<li><p>La teoría de Fermi de interacciones entre corrientes.</p></li>
+<li><p>Los diagramas de Feynman (QED)</p></li>
+<li><p>El modelo de quarks de Gellman and Zweig.</p></li>
+<li><p>La unificación electro-débil, el modelo estandard (SM) de Glashow, Salam y Weinberg.</p></li>
+<li><p>El mecanismo de Higgs y Englert.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="introduccion-al-modelo-estandar">
+<h2>Introducción al modelo estandar<a class="headerlink" href="#introduccion-al-modelo-estandar" title="Permalink to this heading">#</a></h2>
+<p>EL modelo estandar (SM) de Física de Partículas clasifica las partículas elementales y establece sus interacciones a través de las fuerzas electromagnética, débil y fuerte.</p>
+<p>El <em>Particle Data Group</em> (<a class="reference external" href="https://pdg.lbl.gov/">PDG</a>) recopila toda la información relevante sobre física de partículas.</p>
+<div class="section" id="el-sm-a-simple-vista">
+<h3>El SM a simple vista<a class="headerlink" href="#el-sm-a-simple-vista" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_SM_table.png"><img alt="../_images/intro_SM_table.png" class="align-center" src="../_images/intro_SM_table.png" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Las partículas del modelo estandar</p></td>
+</tr>
+</tbody>
+</table>
+<p>La materia está formada por los <strong>fermiones</strong>, que son partículas elementales de spín <span class="math notranslate nohighlight">\(1/2\)</span>.</p>
+<p>Los <strong>bosones vectoriales</strong>, con spín <span class="math notranslate nohighlight">\(1\)</span>, son los mediadores de las fuerzas fuerte, débil y electromagnética.</p>
+<p>El <strong>bosón scalar de Higgs</strong>, que tiene spín 0, dota de masas a los fermiones y a los bosones vectoriales de la fuerza débil.</p>
+</div>
+<div class="section" id="fermiones">
+<h3>Fermiones<a class="headerlink" href="#fermiones" title="Permalink to this heading">#</a></h3>
+<p>Los fermiones se dividen en:</p>
+<ul class="simple">
+<li><p><strong>quarks</strong> : si interaccionan fuertemente</p></li>
+<li><p><strong>leptons</strong>: si no interaccionan fuertemente</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>fuerte</p></th>
+<th class="text-align:left head"><p>electromagnética</p></th>
+<th class="text-align:left head"><p>débil</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>quarks</p></td>
+<td class="text-align:left"><p>quarks y leptones cargados</p></td>
+<td class="text-align:left"><p>quarks y leptones</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="anti-fermiones">
+<h4>anti-fermiones<a class="headerlink" href="#anti-fermiones" title="Permalink to this heading">#</a></h4>
+<p>Los fermiones se riguen por la ecuación de Dirac. Son espinores de Dirac. (ver [Apéndice-Dirac])</p>
+<p>Por cada fermión existe un antifermión.</p>
+<p>Una <strong>antipartícula</strong> tiene las cargas y los números cuánticos opuestos a su partícula, a excepción del espín y la masa que no cambian.</p>
+<p>Si <span class="math notranslate nohighlight">\(f\)</span> es un fermión, denotamos <span class="math notranslate nohighlight">\(\bar{f}\)</span> como su antifermión.</p>
+<p>Indicamos los antileptones con carga (+): <span class="math notranslate nohighlight">\(e^+, \mu^+, \tau^+\)</span></p>
+</div>
+<div class="section" id="generaciones">
+<h4>generaciones<a class="headerlink" href="#generaciones" title="Permalink to this heading">#</a></h4>
+<p>Los fermiones (tanto leptones como quarks) aparecen en <strong>tres generaciones</strong> o familias.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \nu_e \\ e \end{pmatrix}, \begin{pmatrix} \nu_\mu \\ \mu \end{pmatrix}, 
+\begin{pmatrix} \nu_\tau \\ \tau \end{pmatrix}; \;\;\;
+\begin{pmatrix} u \\ d \end{pmatrix}, \begin{pmatrix} c \\ s \end{pmatrix}, 
+\begin{pmatrix} t \\ b \end{pmatrix} \\
+\end{split}\]</div>
+<p>Decimos que las partículas se presentan en tres <strong>sabores</strong>. Por ejemplo neutrino se presenta en sabor electrónico, muónico y tauónico.</p>
+<p>Las tres generaciones de leptones se comportan con <strong>universalidad</strong> (de igual manera) frente a las interacciones si se tiene en cuenta que sus masas son diferentes.</p>
+<p>No hay una motivación de por qué hay tres generaciones.</p>
+<p>En cada generación, tanto leptones como quarks, se agrupan en <strong>dupletes</strong> con posiciones <strong>arriba</strong> y <strong>abajo</strong>.</p>
+<p>La siguiente tabla muestra los fermiones agrupados por familias, su carga eléctrica y las fuerzas que sienten:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="text-align:left head"><p>posición</p></th>
+<th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p>generación</p></th>
+<th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p>Q (e)</p></th>
+<th class="text-align:left head"><p>fuerte</p></th>
+<th class="text-align:left head"><p>electromagnética</p></th>
+<th class="text-align:left head"><p>débil</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>I</p></td>
+<td class="text-align:left"><p>II</p></td>
+<td class="text-align:left"><p>III</p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>quarks</p></td>
+<td class="text-align:left"><p>up</p></td>
+<td class="text-align:left"><p>u  (2 MeV)</p></td>
+<td class="text-align:left"><p>c (1.2 GeV)</p></td>
+<td class="text-align:left"><p>t (170 GeV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\frac{2}{3}\)</span></p></td>
+<td class="text-align:left"><p>sí</p></td>
+<td class="text-align:left"><p>sí</p></td>
+<td class="text-align:left"><p>sí</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td class="text-align:left"><p>down</p></td>
+<td class="text-align:left"><p>d  (5 MeV)</p></td>
+<td class="text-align:left"><p>s (93 MeV)</p></td>
+<td class="text-align:left"><p>b (4.2 GeV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\frac{-1}{3}\)</span></p></td>
+<td class="text-align:left"><p>sí</p></td>
+<td class="text-align:left"><p>sí</p></td>
+<td class="text-align:left"><p>sí</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>leptons</p></td>
+<td class="text-align:left"><p>up</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_e\)</span> (&lt; eV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_\mu\)</span> (&lt; eV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_\tau\)</span> (&lt;eV)</p></td>
+<td class="text-align:left"><p>0</p></td>
+<td class="text-align:left"><p>no</p></td>
+<td class="text-align:left"><p>no</p></td>
+<td class="text-align:left"><p>sí</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td class="text-align:left"><p>down</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(e\)</span>   (511 keV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mu\)</span>  (106 MeV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau\)</span>  (1.77 GeV)</p></td>
+<td class="text-align:left"><p>-1</p></td>
+<td class="text-align:left"><p>no</p></td>
+<td class="text-align:left"><p>sí</p></td>
+<td class="text-align:left"><p>sí</p></td>
+</tr>
+</tbody>
+</table>
+<p>La carga eléctrica depende de su posición en el duplete. El fermión de arriba tiene una carga <span class="math notranslate nohighlight">\(+1\)</span> comparada con la del de abajo.</p>
+<p>La siguiente figura muestra de forma gráfica la disparidad de masas entre los fermiones:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_masas.png"><img alt="../_images/intro_masas.png" class="align-center" src="../_images/intro_masas.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Masas de los fermiones [MT1.1]</p></td>
+</tr>
+</tbody>
+</table>
+<p>El electrón es 2000 veces más ligero que el protón.</p>
+<p>Del neutrino desconocemos su masa, pero ésta es al menos <span class="math notranslate nohighlight">\(5 \times 10^5\)</span> veces más pequeña que el electrón.</p>
+<p>Como veremos en el [Tema-SM] la masa de los fermiones aparece de su interacción con el bosón de Higgs. En el SM aparecen las masas como parámetros libres del modelo.</p>
+</div>
+</div>
+<div class="section" id="leptones">
+<h3>Leptones<a class="headerlink" href="#leptones" title="Permalink to this heading">#</a></h3>
+<p>Las tres familias de leptones son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \nu_e \\ e \end{pmatrix}, \begin{pmatrix} \nu_\mu \\ \mu \end{pmatrix}, 
+\begin{pmatrix} \nu_\tau \\ \tau \end{pmatrix}
+\end{split}\]</div>
+<p>Los leptones cargados <span class="math notranslate nohighlight">\(\mu, \tau\)</span> son una copia con más masa del <span class="math notranslate nohighlight">\(e\)</span>.</p>
+<p>Las interacciones conservan el <strong>número leptónico</strong>, <span class="math notranslate nohighlight">\(L\)</span>, que es el número de leptones menos el de anti-leptones.</p>
+<p>Por ejemplo en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+n \to p + e + \bar{\nu}_e
+\]</div>
+<p>El número leptónico antes y después de de la desintegración es <span class="math notranslate nohighlight">\(L = 0\)</span>. Dado que <span class="math notranslate nohighlight">\(e\)</span> es un leptón, <span class="math notranslate nohighlight">\(L = +1\)</span>  y <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span> un anti-lepton, <span class="math notranslate nohighlight">\(L=-1\)</span>.</p>
+<p>Notar que en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> <strong>se conserva la carga eléctrica.</strong></p>
+<p><strong>El electrón</strong>, que es la leptón cargado más ligero, <strong>es estable</strong>.</p>
+<p>Los leptones cargados se desintegran débilmente:</p>
+<p>Sus vidas medias son:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p><span class="math notranslate nohighlight">\(e\)</span></p></th>
+<th class="text-align:center head"><p>——— <span class="math notranslate nohighlight">\(\mu\)</span> ———</p></th>
+<th class="text-align:center head"><p>——- <span class="math notranslate nohighlight">\(\tau\)</span> —-</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>estable</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(2.6 \, 10^{-6}\)</span> s</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(2.9 \, 10^{-13}\)</span> s</p></td>
+</tr>
+</tbody>
+</table>
+<p>Los electrones interaccionan con los átomos de la materia, ionizando y radiando fotones por <em>Bremsstrahlung</em>.</p>
+<p>Los muones son partículas penetrantes, del orden de <span class="math notranslate nohighlight">\(\mathcal{0}(10)\)</span>m (depende de su momento) porque su radiación de <em>Bremsstrahlung</em> está suprimida por <span class="math notranslate nohighlight">\(1/m^2_\mu\)</span> comparada con los electrones.</p>
+<p>Los tauones se desintegran al poco de ser producidos. Pueden llegar a recorrer <span class="math notranslate nohighlight">\(\mathcal{0}\)</span>(cm).</p>
+<p>Existen tres neutrinos de sabor, <span class="math notranslate nohighlight">\(\nu_e, \nu_\mu, \nu_\tau\)</span> asociados a sus parejas leptónicas <span class="math notranslate nohighlight">\(e, \mu, \tau\)</span> respectivamente.</p>
+<p><strong>El SM postula que no tienen masa</strong>, pero gracias a los experimentos de oscilaciones de neutrinos sabemos que tienen masa.</p>
+<p>Su masa se desconoce pero es muy pequeña <span class="math notranslate nohighlight">\(\lt 1\)</span> eV comparada con la del <span class="math notranslate nohighlight">\(e\)</span>.</p>
+<p><strong>Los neutrinos</strong> no tiene carga eléctrica, <strong>tienen una masa muy pequeña</strong>, <strong>son estables</strong>, y <strong>sólo interactuan débilmente</strong>.  ¡Son muy <em>cool</em>!</p>
+<p>Son los leptones más peculiares del SM y que tengan masa es <strong>la única prueba hasta el momento de que el SM es incompleto o incorrecto</strong>.</p>
+<p>Las características de los leptones y las peculiaridades de la desintegración débil y de los neutrinos las estudiaremos en el [Tema-leptones].</p>
+</div>
+<div class="section" id="los-quarks">
+<h3>Los quarks<a class="headerlink" href="#los-quarks" title="Permalink to this heading">#</a></h3>
+<p>Las tres generaciones de quarks son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} u \\ d \end{pmatrix}, \begin{pmatrix} c \\ s \end{pmatrix}, 
+\begin{pmatrix} t \\ b \end{pmatrix} \\
+\end{split}\]</div>
+<p>Los quarks <span class="math notranslate nohighlight">\((c, s)\)</span>, encanto y extrañeza respectivamente, y <span class="math notranslate nohighlight">\((t, b)\)</span>, top y bottom (o belleza), son copias con más masa del par <span class="math notranslate nohighlight">\((u, d)\)</span>, arriba y abajo.</p>
+<p>Los quarks <span class="math notranslate nohighlight">\(u, d, s\)</span> son ligeros, los quark <span class="math notranslate nohighlight">\(c, b\)</span> son pesados. El top, <span class="math notranslate nohighlight">\(t\)</span>, es incluso más pesado que los bosones vectoriales <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y el Higgs, <span class="math notranslate nohighlight">\(H\)</span>, y no llega a producir hadrones.</p>
+<p><strong>Los quarks tienen carga fraccionaria</strong>: los de arriba <span class="math notranslate nohighlight">\(+2/3\)</span> y los de abajo <span class="math notranslate nohighlight">\(-1/3\)</span> en unidades de <span class="math notranslate nohighlight">\(e\)</span>.</p>
+<p><strong>Los quarks no son libres</strong>, sólo aparecen en partíclas compuestas, los <strong>hadrones</strong>. Este fenómeno se conoce como <strong>confinamiento</strong>.</p>
+<p>Los quarks aparecen con tres cargas fuertes o de <strong>color</strong>, que se denominan: <strong>rojo, verde y azul</strong>, <span class="math notranslate nohighlight">\(r, g, b\)</span>. Y por supuesto no tiene nada que ver con los colores habituales.</p>
+<p>Un mismo quark existe en tres colores, por ejemplo el quark belleza, <span class="math notranslate nohighlight">\(b\)</span>, puede ser rojo, verde o azul. Hay por lo tanto 18 quarks diferentes.</p>
+<p>Los únicos hadrones que existen son <strong>neutros al color</strong>, digamos que son <em>descoloridos</em> o <em>blancos</em>, de forma similar al hecho de que los átomos sean eléctricamente neutros.</p>
+<p>Estudiaremos los quarks, los hadrones y el color en el [Tema-quarks].</p>
+<p>Los <strong>hadrones</strong> se clasifican en.</p>
+<ul class="simple">
+<li><p><strong>bariones</strong>, formados por tres quarks.</p></li>
+<li><p><strong>mesones</strong>, formados por un par quark y antiquark.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/intro_hadrons.png"><img alt="../_images/intro_hadrons.png" class="align-center" src="../_images/intro_hadrons.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Imagen esquemática de un mesón y un barión</p></td>
+</tr>
+</tbody>
+</table>
+<p>que como veremos ([Tema-quarks]) son las únicas combinaciones de singletes de color y por lo tanto los únicos hadrones blancos.</p>
+<p>Notar que la carga eléctrica de los hadrones es entera.</p>
+<p>El protón y el neutrón son bariones.</p>
+<p>El protón está formado por el trío de quarks de valencia (<span class="math notranslate nohighlight">\(uud\)</span>), cuya carga es <span class="math notranslate nohighlight">\(+e\)</span>,  y el neutrón por (<span class="math notranslate nohighlight">\(udd\)</span>), cuya carga es nula.</p>
+<p>En las interacciones se converva <strong>el número bariónico</strong>, <span class="math notranslate nohighlight">\(B\)</span>, (el número de bariones menos el de antibariones).</p>
+<p>Por ejemplo, de nuevo, en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+n \to p + e + \bar{\nu}_e.
+\]</div>
+<p>A ambos lados de la interacción el número bariónico es 1. El <span class="math notranslate nohighlight">\(p\)</span> y el <span class="math notranslate nohighlight">\(n\)</span> tienen los dos <span class="math notranslate nohighlight">\(B = 1\)</span></p>
+<p><strong>El protón</strong>, que es el barión más ligero, <strong>es estable</strong>.</p>
+<p>Remarquemos que la desintegración <span class="math notranslate nohighlight">\(\beta\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+n \to p + e + \bar{\nu}_e.
+\]</div>
+<p>y el resto de <strong>interacciones conservan</strong>:</p>
+<ul class="simple">
+<li><p>la <strong>carga eléctrica</strong>, <span class="math notranslate nohighlight">\(Q\)</span>,</p></li>
+<li><p>el <strong>número leptónico</strong>, <span class="math notranslate nohighlight">\(L\)</span>,</p></li>
+<li><p>el <strong>número bariónico</strong>, <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+</ul>
+<p>A excepción del protón, el resto de hadrones, así como los leptones cargados <span class="math notranslate nohighlight">\(\mu, \tau\)</span>, se desintegran:</p>
+<p>La vida media de la desintegración depende:</p>
+<ul class="simple">
+<li><p>del tipo de desintegración permitida, ya sea ésta fuerte, electromagnética (via un fotón) o débil (vía bosones <span class="math notranslate nohighlight">\(W^\pm\)</span>).</p></li>
+<li><p>del espacio fásico permitido. A mayor diferencia de masas entre la partícula madre y las hijas más espacio fásico.</p></li>
+</ul>
+<p>La figura muestra la vida media de varias partículas y su tipo de desintegración.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/intro_lifetimes.png"><img alt="../_images/intro_lifetimes.png" class="align-center" src="../_images/intro_lifetimes.png" style="width: 900px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Vida media de algunas partículas dependiendo del tipo de desintegración [MT1.1]</p></td>
+</tr>
+</tbody>
+</table>
+<p>La partículas que se desintegran débilmente son aquellas con una vida media «mayor».</p>
+</div>
+<div class="section" id="los-mediadores-de-las-fuerzas">
+<h3>Los mediadores de las fuerzas<a class="headerlink" href="#los-mediadores-de-las-fuerzas" title="Permalink to this heading">#</a></h3>
+<p>Recordemos que la fuerzas son responsables entre otros fenómenos de:</p>
+<ul class="simple">
+<li><p>la <strong>electromagnética</strong>, de la estabilidad y complejidad de los átomos</p></li>
+<li><p>la <strong>débil</strong>, de las desintegraciones <span class="math notranslate nohighlight">\(\beta\)</span> nucleares.</p></li>
+<li><p>la <strong>fuerte</strong>, de la estabilidad y complejidad de los núcleos (protones y neutrones) y de los hadrones.</p></li>
+</ul>
+<div class="section" id="propiedades-de-los-portadores">
+<h4>Propiedades de los portadores<a class="headerlink" href="#propiedades-de-los-portadores" title="Permalink to this heading">#</a></h4>
+<p>La interacción se describe como el intercambio de un mediador o portador de la fuerza entre corrientes de fermiones.</p>
+<p>Cada portador interviene según la carga (por ejemplo eléctrica o color) de los fermiones a los que se acopla.</p>
+<p>Los portadores <strong>son bosones vectoriales</strong> (spín 1).</p>
+<p>En la tabla se muestra intensidad approximada de las distintas fuerzas:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>fuerza</p></th>
+<th class="text-align:left head"><p>intensidad</p></th>
+<th class="text-align:left head"><p>bosón</p></th>
+<th class="text-align:left head"><p>Q (e)</p></th>
+<th class="text-align:left head"><p>mass (GeV)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>fuerte</p></td>
+<td class="text-align:left"><p>1</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(g\)</span> (gluón)</p></td>
+<td class="text-align:left"><p>0</p></td>
+<td class="text-align:left"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>electromagnetismo</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(10^{-3}\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\gamma\)</span> (fotón)</p></td>
+<td class="text-align:left"><p>0</p></td>
+<td class="text-align:left"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>débil</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(10^{-8}\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(W^{\pm}\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\pm1\)</span></p></td>
+<td class="text-align:left"><p>80.4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(Z^0\)</span></p></td>
+<td class="text-align:left"><p>0</p></td>
+<td class="text-align:left"><p>91.2</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>gravedad</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(10^{-37}\)</span></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>La masa del bosón determina el rango (en distancia) de la interacción. El rango de la interacciones débiles es de <span class="math notranslate nohighlight">\(&lt;10^{-18}\)</span> m.</p>
+<p>El rango de <span class="math notranslate nohighlight">\(100\)</span> GeV, aproximadamente la masa del bosón <span class="math notranslate nohighlight">\(Z\)</span>, se conoce como <strong>escala electrodébil.</strong></p>
+<p>Los bosones <span class="math notranslate nohighlight">\(W^\pm\)</span> son cargados. Sus interacciones se conocen como <strong>corrientes cargadas</strong> (CC).</p>
+<p>Las interacciones del bosón <span class="math notranslate nohighlight">\(Z^0\)</span> se denominan también <strong>corrientes neutras</strong> (NC).</p>
+<p>Existen 8 tipos de gluones, que cambian el color de los quarks, son electricamente neutros y de masa nula. Los gluones tienen carga de color e interaccionan entre sí, generando «lazos» entre ellos y reduciendo la interacción fuerte al rango de fm.</p>
+<p>El rango de los fotones en infinito mientras que el de los bosones débiles y los gluones es puntual.</p>
+</div>
+<div class="section" id="propiedades-de-las-fuerzas">
+<h4>Propiedades de las fuerzas<a class="headerlink" href="#propiedades-de-las-fuerzas" title="Permalink to this heading">#</a></h4>
+<p>Adelantamos ahora algunas propiedades de las fuerzas que se discutirán en los temas siguientes:</p>
+<p><strong>Las interacciones electromagnética y fuerte conservan</strong>:</p>
+<ul class="simple">
+<li><p><strong>el sabor</strong>,</p></li>
+<li><p><strong>la paridad</strong>.</p></li>
+</ul>
+<p>Recordemos que paridad es la inversión de <span class="math notranslate nohighlight">\({\bf x} \to - {\bf x}\)</span>, cambio de signo en las coordenadas espaciales; y la inversión de carga cambia todas las cargas de las partículas (a excepción del espín y la masa).</p>
+<p>La conservación del sabor implica que el número de partículas menos el antipartículas de un sabor, por ejemplo del quark belleza, se conserva antes y después de una interacción.</p>
+<p>En los temas siguientes veremos también que:</p>
+<p><strong>las interacciones débiles violan</strong>:</p>
+<ul class="simple">
+<li><p><strong>paridad</strong>, (las cargadas de forma máxima),</p></li>
+<li><p><strong>carga y paridad</strong>, CP, mínimamente y solo en corrientes cargadas en hadrones, (no sabemos si también se viola en leptones).</p></li>
+</ul>
+<p><strong>las corrientes cargadas cambian el sabor, pero las neutras lo conservan</strong>.</p>
+<p><strong>La interacción fuerte conserva</strong> además:</p>
+<ul class="simple">
+<li><p>las cargas de <strong>color</strong>.</p></li>
+</ul>
+<p><em>Las interacciones débiles son «peculiares», especialmente la cargada.</em></p>
+</div>
+</div>
+<div class="section" id="el-boson-de-higgs">
+<h3>El bosón de Higgs<a class="headerlink" href="#el-boson-de-higgs" title="Permalink to this heading">#</a></h3>
+<p>El bosón de Higgs es un <strong>scalar</strong>, su espín es <span class="math notranslate nohighlight">\(0\)</span>.</p>
+<p>Juega un papel crucial en el SM:</p>
+<ul class="simple">
+<li><p><strong>dota de masas a las partículas</strong>.</p></li>
+<li><p>dota de masas <strong>a los bosones véctoriales débiles <span class="math notranslate nohighlight">\(W^\pm, Z\)</span></strong>, <strong>manteniendo las simetrías</strong> de la teoría.</p></li>
+</ul>
+<p>Sin embargo el SM introduce las masas de los fermiones como parámetros libres del modelo.</p>
+<p>Estudiaremos las características del SM y del bosón de Higgs en el [Tema-SM]</p>
+</div>
+<div class="section" id="el-universo-esta-formado-de-materia">
+<h3>El Universo está formado de materia<a class="headerlink" href="#el-universo-esta-formado-de-materia" title="Permalink to this heading">#</a></h3>
+<p>No hay evidencia de partes del Universo formadas por antimateria.</p>
+<p>Los átomos están formados por electrones y núcleos, éstos a su vez por protones (que son un trío de quarks (<span class="math notranslate nohighlight">\(uud\)</span>) y neutrones (<span class="math notranslate nohighlight">\(udd\)</span>)).</p>
+<p>El Universo está compuesto pues <strong>por electrones, neutrinos y quarks <span class="math notranslate nohighlight">\((u, d)\)</span>.</strong>
+Decimos que el Universo es de «baja» energía.</p>
+<p>El Universo primigenio estaba a más energía, y existían leptones y quarks (hadrones) de las otras generaciones.</p>
+<p>Conforme el Universo se enfrió solo los elementos estables sobrevivieron.</p>
+<p>No sabemos por qué en el Universo solo sobrevivió la materia dado que inicialmente debió existir la misma cantidad de partículas que anti-partículas.</p>
+</div>
+<div class="section" id="algunas-preguntas-sin-respuesta">
+<h3>Algunas preguntas sin respuesta<a class="headerlink" href="#algunas-preguntas-sin-respuesta" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>¿Son los quarks y leptones elementales? ¿Y el bosón de Higgs?</p></li>
+<li><p>¿Por qué hay 3 generaciones?</p></li>
+<li><p>¿Hay un patrón de masas de los fermiones?</p></li>
+<li><p>¿Por qué hay tanta disparidad de masas entre el neutrino y el resto de fermiones?</p></li>
+<li><p>¿Es el neutrino su propia anti-partícula?</p></li>
+<li><p>¿Por qué el Universo está formado por materia y no por anti-materia? ¿Qué paso con la anti-materia del Universo?</p></li>
+<li><p>¿Qué forma la materia oscura?</p></li>
+</ul>
+<div class="section" id="nomenclatura">
+<h4>Nomenclatura:<a class="headerlink" href="#nomenclatura" title="Permalink to this heading">#</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>nombres</p></th>
+<th class="text-align:left head"><p>definición</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><em>partícula</em></p></td>
+<td class="text-align:left"><p>corpúsculo que puede sentir la fuerzas electromagnética, débil o fuerte</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><em>antipartícula</em></p></td>
+<td class="text-align:left"><p>partícula con las cargas y números cuánticos (excepto masa y spín) opuestos a la partícula</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><em>fermión</em></p></td>
+<td class="text-align:left"><p>partícula de spin 1/2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><em>leptón</em>  (liguero)</p></td>
+<td class="text-align:left"><p>fermión que no siente la fuerza fuerte</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><em>quark</em></p></td>
+<td class="text-align:left"><p>fermión que siente la fuerza fuerte</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><em>bosón</em></p></td>
+<td class="text-align:left"><p>particula de spín entero</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><em>gauge boson</em></p></td>
+<td class="text-align:left"><p>bosones portadores de la fuerza <span class="math notranslate nohighlight">\(W, Z, \gamma\)</span> tienen spín 1 (vectoriales)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><em>hadrón</em>  (fuerte)</p></td>
+<td class="text-align:left"><p>partícula compuesta que siente la fuerza fuerte</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><em>barión</em></p></td>
+<td class="text-align:left"><p>hadrón compuesto de tres quarks</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><em>mesón</em>   (mediano)</p></td>
+<td class="text-align:left"><p>hadrón compuesto de quark y antiquark</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[AB] Alessandro Bettini, «Introduction to Elementary Particle Physcs», Cambridge U. press. Tema 1</p></li>
+<li><p>[MT] Mark Tomsom, «Modern Particle Physics», Cambridge U. press. Tema 1</p></li>
+<li><p><a class="reference external" href="https://pdg.lbl.gov/">PDG</a> Particle Data Group.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../intro.html" title="anterior página">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title">Introducción</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="observables.html" title="siguiente página">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Observables en Física de Partículas</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

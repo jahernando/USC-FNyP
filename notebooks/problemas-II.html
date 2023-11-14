@@ -1,0 +1,1662 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción a Física de Partículas &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduccion.html">
+   Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observables.html">
+   Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="leptones.html">
+   Sobre los leptones
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/problemas-II.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/problemas-II.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/problemas-II.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boletin-de-problemas-ii">
+   Boletín de problemas II
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#leptons">
+   Leptons
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problemas-varios">
+   Problemas varios
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soluciones-m-t">
+   Soluciones M.T
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-mt-1-1">
+     Ejercicio MT 1.1)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-mt-1-2">
+     Ejercicio MT 1.2)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-mixture">
+     Ejercicio [mixture]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Ejercicio [mixture]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Ejercicio [mixture]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problems-a-bettini-2nd-edition">
+     Problems A. Bettini (2nd edition)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bettini-1st-edition">
+       Bettini 1st edition
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problems-a-l">
+     Problems A. L
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soluciones">
+   Soluciones
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-a-b-2-1">
+     Ejercicio  A.B 2.1)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-2-2">
+     Ejercicio 2.2)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicion-ab-mixture">
+     Ejercicion AB [Mixture]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-3-8">
+     Ejercicio AB 3.8)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-3">
+     ejercicio AB 7.3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercio-ab-7-4">
+     Ejercio AB 7.4)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-5">
+     Ejercicio AB 7.5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-7">
+     ejercicio AB 7.7)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-8-modificado">
+     Ejercicio AB 7.8) [modificado]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problema-ab-7-13">
+     Problema AB 7.13)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-7-16">
+     Ejercicio 7.16)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-17">
+     Ejercicio AB 7.17)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-27">
+     Ejercicio AB 7.27)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio">
+     1.4 ejercicio
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-icecube">
+     Ejercicio IceCube
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mas-problemas">
+   Mas problemas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#detectors">
+   4 Detectors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     4.1 ejercicio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#otros">
+   Otros
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bibliografia">
+     Bibliografía
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introducción a Física de Partículas</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boletin-de-problemas-ii">
+   Boletín de problemas II
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#leptons">
+   Leptons
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problemas-varios">
+   Problemas varios
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soluciones-m-t">
+   Soluciones M.T
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-mt-1-1">
+     Ejercicio MT 1.1)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-mt-1-2">
+     Ejercicio MT 1.2)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-mixture">
+     Ejercicio [mixture]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Ejercicio [mixture]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Ejercicio [mixture]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problems-a-bettini-2nd-edition">
+     Problems A. Bettini (2nd edition)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bettini-1st-edition">
+       Bettini 1st edition
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problems-a-l">
+     Problems A. L
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soluciones">
+   Soluciones
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-a-b-2-1">
+     Ejercicio  A.B 2.1)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-2-2">
+     Ejercicio 2.2)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicion-ab-mixture">
+     Ejercicion AB [Mixture]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-3-8">
+     Ejercicio AB 3.8)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-3">
+     ejercicio AB 7.3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercio-ab-7-4">
+     Ejercio AB 7.4)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-5">
+     Ejercicio AB 7.5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-7">
+     ejercicio AB 7.7)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-8-modificado">
+     Ejercicio AB 7.8) [modificado]
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problema-ab-7-13">
+     Problema AB 7.13)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-7-16">
+     Ejercicio 7.16)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-17">
+     Ejercicio AB 7.17)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-ab-7-27">
+     Ejercicio AB 7.27)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio">
+     1.4 ejercicio
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-icecube">
+     Ejercicio IceCube
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mas-problemas">
+   Mas problemas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#detectors">
+   4 Detectors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     4.1 ejercicio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#otros">
+   Otros
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bibliografia">
+     Bibliografía
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduccion-a-fisica-de-particulas">
+<h1>Introducción a Física de Partículas<a class="headerlink" href="#introduccion-a-fisica-de-particulas" title="Permalink to this heading">#</a></h1>
+<div class="section" id="boletin-de-problemas-ii">
+<h2>Boletín de problemas II<a class="headerlink" href="#boletin-de-problemas-ii" title="Permalink to this heading">#</a></h2>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Octubre 2021</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov  7 16:33:46 2023
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="leptons">
+<h2>Leptons<a class="headerlink" href="#leptons" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="problemas-varios">
+<h2>Problemas varios<a class="headerlink" href="#problemas-varios" title="Permalink to this heading">#</a></h2>
+<p>## Problemas M.Tompson</p>
+<p>1.1) Indica si son posibles los siguientes vértices:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/prob_feynman_e1.png"><img alt="../_images/prob_feynman_e1.png" class="align-center" src="../_images/prob_feynman_e1.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Indentfica los vértices [MT1.P1]</p></td>
+</tr>
+</tbody>
+</table>
+<p>1.2)  Dibuja los diagramas árbol de las posibles interacciones, e indica si son aniquilaciones o dispersiones:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(e+e\to e+e\)</span></p></li>
+<li><p>b)  <span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span></p></li>
+<li><p>c) <span class="math notranslate nohighlight">\(e + e^+ \to e + e^+\)</span></p></li>
+</ul>
+<p>[mixture] Completa las siguientes desintegraciones añadiendo los neutrinos y antinuetrinos necesarios y dibuja los diagramas de Feynman:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(\tau \to e + \nu s\)</span>,</p></li>
+<li><p>b) <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \nu s\)</span>,</p></li>
+<li><p>c) <span class="math notranslate nohighlight">\(\tau^+ \to \mu^+ + \nu s\)</span></p></li>
+</ul>
+<p>[mixture] Indica los posible mediadores entre las siguientes interacciones y dibuja los diagramas de Feynman correspondientes:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(\nu_e + e \to \nu_e + e\)</span></p></li>
+<li><p>b) <span class="math notranslate nohighlight">\(\bar{\nu}_e + e \to \bar{\nu}_e + e\)</span></p></li>
+</ul>
+<p>[mixture] Dibuja los diagramas de Feynman de las desintegraciones:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span>, donde <span class="math notranslate nohighlight">\(\pi^+\)</span> es un mesón <span class="math notranslate nohighlight">\((u \bar{d})\)</span></p></li>
+<li><p>b) <span class="math notranslate nohighlight">\(\Lambda \to p + e + \bar{\nu}_e\)</span>, donde <span class="math notranslate nohighlight">\(\Lambda\)</span> es un barión <span class="math notranslate nohighlight">\((uds)\)</span>.</p></li>
+</ul>
+<p>[mixture] Calcula la energía y momento de las partículas finales en el CM en la desintegración. Calcula también la <span class="math notranslate nohighlight">\(\beta\)</span> de los leptones cargados:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span></p></li>
+<li><p>b) <span class="math notranslate nohighlight">\(\pi^+ \to e^+ + \nu_e\)</span>.</p></li>
+</ul>
+</div>
+<div class="section" id="soluciones-m-t">
+<h2>Soluciones M.T<a class="headerlink" href="#soluciones-m-t" title="Permalink to this heading">#</a></h2>
+<div class="section" id="ejercicio-mt-1-1">
+<h3>Ejercicio MT 1.1)<a class="headerlink" href="#ejercicio-mt-1-1" title="Permalink to this heading">#</a></h3>
+<p>Indica si son posibles los siguientes vértices:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/prob_feynman_e1.png"><img alt="../_images/prob_feynman_e1.png" class="align-center" src="../_images/prob_feynman_e1.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Indentfica los vértices [MT1.P1]</p></td>
+</tr>
+</tbody>
+</table>
+<p>a) <span class="math notranslate nohighlight">\(e,e,\gamma\)</span>, Sí, el fotón se acopla al <span class="math notranslate nohighlight">\(e\)</span>,</p>
+<p>b) <span class="math notranslate nohighlight">\(\nu_e, \nu_e, \gamma\)</span>. No. Los neutrinos solo interaccionan débilmente, esto es con el <span class="math notranslate nohighlight">\(W\)</span> o el <span class="math notranslate nohighlight">\(Z\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(e, e^+, \gamma\)</span>. No. Excepto el <span class="math notranslate nohighlight">\(W\)</span>, el resto de bosones se acoplan entre partículas del mismo sabor, y aquí se acopla un electrón con un positrón. El acoplo permitido es <span class="math notranslate nohighlight">\(f, f, V\)</span>, siendo <span class="math notranslate nohighlight">\(f\)</span> el fermión y <span class="math notranslate nohighlight">\(V\)</span> el bosón vectorial <span class="math notranslate nohighlight">\(\gamma, Z,\)</span> o gluón.</p>
+<p>d) <span class="math notranslate nohighlight">\(\nu_e, \nu_e, Z\)</span>. Sí. El neutrino se acopla con el <span class="math notranslate nohighlight">\(Z\)</span></p>
+<p>e) <span class="math notranslate nohighlight">\(e, \mu, \gamma\)</span>. No. De nuevo las partículas del acoplo deben tener el mismo sabor si se acoplan con el <span class="math notranslate nohighlight">\(\gamma\)</span> y aquí cambia de <span class="math notranslate nohighlight">\(e\)</span> a <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
+<p>f) <span class="math notranslate nohighlight">\(e, \nu_e, W\)</span>. Sí. El <span class="math notranslate nohighlight">\(W\)</span> cambia el sabor entre leptones de la misma generación, en este caso <span class="math notranslate nohighlight">\(e, \nu_e\)</span>.</p>
+<p>g) <span class="math notranslate nohighlight">\(e, \tau, Z\)</span>. No, de nuevo la partículas deben tener el mismo sabor si se acoplan al <span class="math notranslate nohighlight">\(Z\)</span>.</p>
+<p>h) <span class="math notranslate nohighlight">\(e, \nu_\mu, W\)</span>. No porque el <span class="math notranslate nohighlight">\(W\)</span> acopla las parejas de la misma generación y <span class="math notranslate nohighlight">\(e, \nu_\mu\)</span> son de generaciones deferentes.</p>
+</div>
+<div class="section" id="ejercicio-mt-1-2">
+<h3>Ejercicio MT 1.2)<a class="headerlink" href="#ejercicio-mt-1-2" title="Permalink to this heading">#</a></h3>
+<p>1.2)  Dibuja los diagramas árbol de las posibles interacciones, e indica si son aniquilaciones o dispersiones:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(e+e\to e+e\)</span></p></li>
+<li><p>b)  <span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span></p></li>
+<li><p>c) <span class="math notranslate nohighlight">\(e + e^+ \to e + e^+\)</span></p></li>
+</ul>
+<p>a) Dispersión</p>
+<p>b) Aniquilación</p>
+<p>c) dispersion y aniquilación (los dos son posibles)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/prob_feynman_e2.png"><img alt="../_images/prob_feynman_e2.png" class="align-center" src="../_images/prob_feynman_e2.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>a) arriba-izda, b) arriba-derecha, c) abajo [MT1.P2]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ejercicio-mixture">
+<h3>Ejercicio [mixture]<a class="headerlink" href="#ejercicio-mixture" title="Permalink to this heading">#</a></h3>
+<p>Completa las siguientes desintegraciones añadiendo los neutrinos y antinuetrinos necesarios y dibuja los diagramas de Feynman:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(\tau \to e + \nu s\)</span>,</p></li>
+<li><p>b) <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \nu s\)</span>,</p></li>
+<li><p>c) <span class="math notranslate nohighlight">\(\tau^+ \to \mu^+ + \nu s\)</span></p></li>
+</ul>
+<p>a) <span class="math notranslate nohighlight">\(\tau \to e + \nu_\tau + \bar{\nu}_e\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \bar{\nu}_\mu + \nu_e\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(\tau^+ \to \mu^+ + \nu_\mu + \bar{\nu}_\tau\)</span></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/prob_feynman_e3.png"><img alt="../_images/prob_feynman_e3.png" class="align-center" src="../_images/prob_feynman_e3.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>a) arriba-izda, b) arriba-dereca, c) abajo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id1">
+<h3>Ejercicio [mixture]<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>Indica los posible mediadores entre las siguientes interacciones y dibuja los diagramas de Feynman correspondientes:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(\nu_e + e \to \nu_e + e\)</span></p></li>
+<li><p>b) <span class="math notranslate nohighlight">\(\bar{\nu}_e + e \to \bar{\nu}_e + e\)</span></p></li>
+</ul>
+<p>a) Dispersion via Z y también via W</p>
+<p>b) dispersión via Z, aniquiliación via un W</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/prob_feynman_e4.png"><img alt="../_images/prob_feynman_e4.png" class="align-center" src="../_images/prob_feynman_e4.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>a) arriba, b) abajo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id2">
+<h3>Ejercicio [mixture]<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>Dibuja los diagramas de Feynman de las desintegraciones:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span>, donde <span class="math notranslate nohighlight">\(\pi^+\)</span> es un mesón <span class="math notranslate nohighlight">\((u \bar{d})\)</span></p></li>
+<li><p>b) <span class="math notranslate nohighlight">\(\Lambda \to p + e + \bar{\nu}_e\)</span>, donde <span class="math notranslate nohighlight">\(\Lambda\)</span> es un barión <span class="math notranslate nohighlight">\((uds)\)</span>.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/prob_feynman_e5.png"><img alt="../_images/prob_feynman_e5.png" class="align-center" src="../_images/prob_feynman_e5.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>a) izda, b) dereca</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="problems-a-bettini-2nd-edition">
+<h3>Problems A. Bettini (2nd edition)<a class="headerlink" href="#problems-a-bettini-2nd-edition" title="Permalink to this heading">#</a></h3>
+<p>2.1) Calcula la energía y momento de las partículas finales en el CM en la desintegración. Calcula también la <span class="math notranslate nohighlight">\(\beta\)</span> de los leptones cargados:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span></p></li>
+<li><p>b) <span class="math notranslate nohighlight">\(\pi^+ \to e^+ + \nu_e\)</span>.</p></li>
+</ul>
+<p>2.2) Considera la desintegración <span class="math notranslate nohighlight">\(K^- \to \mu + \bar{\nu}_\mu\)</span>. Calcula la energía y momento en el CM del <span class="math notranslate nohighlight">\(\nu, \bar{\nu}_\mu\)</span> y el máximo momento del <span class="math notranslate nohighlight">\(\mu\)</span> si el <span class="math notranslate nohighlight">\(K^-\)</span> tienen un momento de 5 GeV.</p>
+<p>2.14) Calcula la energía de umbral del <span class="math notranslate nohighlight">\(\nu\)</span> para producir los procesos: <span class="math notranslate nohighlight">\(\nu_e + n \to e + p\)</span>, <span class="math notranslate nohighlight">\(\nu_\mu + n \to \mu^- + p\)</span>, <span class="math notranslate nohighlight">\(\nu_\tau + n \to \tau + p\)</span>.</p>
+<p>[Reines.Cowen] (pag 74)</p>
+<p>[Mixture] Indica si los siguientes procesos están permitidos y si no, por qué [SOL]</p>
+<p>a) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_{\mu}\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \bar{\nu}_\mu\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(n \to p + e\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(e \to \nu_e + \gamma\)</span></p>
+<p>e) <span class="math notranslate nohighlight">\(p \to e^+ + \bar{\nu}_e\)</span></p>
+<p>f) <span class="math notranslate nohighlight">\(p \to n + e + \bar{\nu}_e\)</span></p>
+<p>h) <span class="math notranslate nohighlight">\(n \to p + e + \nu_e\)</span></p>
+<p>3.8) Indica si son posibles los procesos [SOL]:</p>
+<p>a) <span class="math notranslate nohighlight">\(p \to n + e^+\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\mu^+ \to \nu_\mu + e^+\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(e^+ + e \to \nu_\mu + \bar{\nu}_\mu\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(\nu_\mu + p \to \mu^+ + p\)</span></p>
+<p>e) <span class="math notranslate nohighlight">\(\nu_\mu + n \to \nu + p\)</span></p>
+<p>f) <span class="math notranslate nohighlight">\(\nu_\mu + n \to e^- + p\)</span></p>
+<p>g) <span class="math notranslate nohighlight">\(e^+ + n \to p + \nu_e\)</span></p>
+<p>h) <span class="math notranslate nohighlight">\(e + p \to n + \bar{\nu}_e\)</span></p>
+<ol class="simple">
+<li><p>7.2) Dibuja los diagramas de Feynman para: <span class="math notranslate nohighlight">\(\pi^+ \to e^+ \nu_e\)</span>, <span class="math notranslate nohighlight">\(\Lambda \to p + e + \bar{\nu}_e\)</span></p></li>
+</ol>
+<p>7.3) Da la Constante de Fermi en el SI, <span class="math notranslate nohighlight">\(G_F = 1.16 \times 10^{-5}\)</span> GeV<span class="math notranslate nohighlight">\(^{-2}\)</span>. [SOL]</p>
+<p>7.4) El colisionador PEP de SLAC <span class="math notranslate nohighlight">\(e+e^+ \to \tau + \tau^+\)</span> a una energía <span class="math notranslate nohighlight">\(\sqrt{s} = 29\)</span> GeV, calcular la distancia media que recorre el <span class="math notranslate nohighlight">\(\tau\)</span>. [SOL]</p>
+<p>7.5) Considerar <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu\)</span> y <span class="math notranslate nohighlight">\(\tau^+ \to e^+ + \nu_e + \bar{\nu}_\tau\)</span>, la razón de desintegración el primero es <span class="math notranslate nohighlight">\(\mathcal{B} = 100\)</span> % y del segundo 17 %. Si la vida media del muón <span class="math notranslate nohighlight">\(\tau_\mu = 2.2\)</span> <span class="math notranslate nohighlight">\(\mu\)</span>s, calcula la vida media del tau <span class="math notranslate nohighlight">\(\tau_\tau\)</span>. [SOL]</p>
+<p>7.7) ¿Cuál es la diferencia entre un neutrino y su anti-neutrino? ¿Qué cantidades se conservan en las dispersiones de neutrinos? Completa la dispersión y dibuja el diagrama de Feynman asoaciado: <span class="math notranslate nohighlight">\(\nu_\mu + e \to \mu + ...\)</span> Si los neutrinos no tienen masa ¿Cuál es la dirección de su espín? ¿Y para los anti-neutrinos?. Si el Universo contiene neutrinos a 2K de temperatura, ¿cuál es la velocidad de los neutrinos? [SOL]</p>
+<p>7.8) [modificada] Exite las desintegraciones <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \gamma, \; \mu^+ \to e^+ + e^+ + e\)</span> ¿Por qué? [SOL]</p>
+<p>7.12) ¿Cuál es la energía mínima y máxima del electrón en la desintegración de un <span class="math notranslate nohighlight">\(\mu\)</span> en reposo?</p>
+<p>7.13) Los rayos cósmicos son principalmente protones. Su espectro de energía decrece con la energía. En las interacciones con los núcleos de la atmósfera producen mesones, que a su vez, al desintegrarse producen <span class="math notranslate nohighlight">\(\nu_\mu, \nu_e\)</span>. Aproximadamente a 1 GeV se procuden <span class="math notranslate nohighlight">\(N = 10^6\)</span> <span class="math notranslate nohighlight">\(\nu_\mu\)</span>, ¿Cuántos de ellos interaccionan al atravesar el diámetro de la Tierra? Considear <span class="math notranslate nohighlight">\(sigma = 7\)</span> fbarn, <span class="math notranslate nohighlight">\(\rho = 5 \, 10^3\)</span> kg m<span class="math notranslate nohighlight">\(^{-3}\)</span> y el radio <span class="math notranslate nohighlight">\(R= 6000\)</span> km. [SOL]</p>
+<p>7.15) Dibuja los diagramas de Feynman para la dispersión <span class="math notranslate nohighlight">\(\bar{\nu}_e + e\)</span> y para <span class="math notranslate nohighlight">\(\nu_e + e\)</span>.</p>
+<p>7.16) El experimento GALLEX del Laboratorio Nacional de Gran Sasso (LNGS) en Itialia, medió el flujo de <span class="math notranslate nohighlight">\(\nu_e\)</span> del Sol a partir de la reacción <span class="math notranslate nohighlight">\(\nu_e + ^{71}\mathrm{Ga} \to ^{Ge}\mathrm{Ge} + e\)</span> que tiene un umbral de energía <span class="math notranslate nohighlight">\(E = 233\)</span> keV. El flujo de nuetrinos del sol es <span class="math notranslate nohighlight">\(\phi = 6 \, 10^{14}\)</span> m<span class="math notranslate nohighlight">\(^{-2}\)</span>s<span class="math notranslate nohighlight">\(^{-1}\)</span>. Consideremos que la sección eficaz es <span class="math notranslate nohighlight">\(\sigma = 10^{-48}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>. Si consideramos una efficiencia de selección del 40%, ¿Cuántos nucleos de <span class="math notranslate nohighlight">\(^{71}\)</span>Ga son necesarios para tener una interacción al día? Si la abundancia natural del <span class="math notranslate nohighlight">\(^{71}\)</span>Ga es 40%, ¿Cuánta masa se necesita de galio? [SOL]</p>
+<p>7.17) ¿Cuántos metros de Fe se precisan para que un <span class="math notranslate nohighlight">\(\nu_\mu\)</span> de 1 GeV interaccione en promedio una vez? Compara la distancia con el diámetro de la Tierra. Considera <span class="math notranslate nohighlight">\(\sigma = 0.017\)</span> fb, <span class="math notranslate nohighlight">\(\rho = 7.7 \, 10^{3}\)</span> kg m<span class="math notranslate nohighlight">\(^{-3}\)</span>, Z= 26, A = 56. [SOL-TODO:check]</p>
+<p>7.26) Un pión de momento 500 MeV decay en <span class="math notranslate nohighlight">\(\pi^- \to \mu + \bar{\nu}\)</span>. Da el valor mínimo y máximo del momento del muón. Indica el sabor el la quiralidad del neutrino.</p>
+<p>7.27) Considera un tanque de agua para detector neutrinos solares por efector Cherenkov (como SuperKamiokande) mediante la interacción <span class="math notranslate nohighlight">\(\nu_e + e \to \nu_e + e\)</span>. Si la sección eficaz es <span class="math notranslate nohighlight">\(\sigma = 10^{-47}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>, y el flujo incidente por encima de la energía umbral <span class="math notranslate nohighlight">\(\Phi = 10^{10}\)</span> m<span class="math notranslate nohighlight">\(^{-2}\)</span>s<span class="math notranslate nohighlight">\(^{-2}\)</span>, ¿Cuál es la masa necesaria para tener una razón de intracción de 10  eventos al día con una efficiencia de detección de 50%? [SOL]</p>
+<div class="section" id="bettini-1st-edition">
+<h4>Bettini 1st edition<a class="headerlink" href="#bettini-1st-edition" title="Permalink to this heading">#</a></h4>
+<ol class="simple">
+<li><p>[AB1.7.P3] Reescribe la constante de Fermi en el SI</p></li>
+<li><p>[AB1.7.P1] Dibuja los diagramas de Feynman de las desintegraciones: <span class="math notranslate nohighlight">\(K^{*+} \to K^0 + \pi^+\)</span>, <span class="math notranslate nohighlight">\(n \to p + e + \bar{\nu}_e\)</span>, <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span></p></li>
+<li><p>[AB1.7.P7] ¿Cuáles son las diferencias entre neutrinos y antineutrinos? Completa la interacción: <span class="math notranslate nohighlight">\(\nu_\mu + e \to \mu  + ?\)</span>. El Universo este lleno de neutrinos con temperatura <span class="math notranslate nohighlight">\(2\)</span> K, si los neutrinos tienen una masa de 50 meV, ¿Cuál es su velocidad?</p></li>
+<li><p>[AB1.7.P8] Escribe las corrientes cargadas de <span class="math notranslate nohighlight">\(\nu_\mu\)</span> con protón y nucleón para producir un pión. Existen las desintegraciones <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \gamma\)</span>, <span class="math notranslate nohighlight">\(\mu^+ \to e + e^+ + e^+\)</span></p></li>
+<li><p>[AB1.7.P13] Si en las interacciones de los rayos cósmicos (principalmente protones) con la atmósfera se producen <span class="math notranslate nohighlight">\(N_\nu = 10^6\)</span> neutrinos a 1 GeV, considera cuántos interaccionan si atraviesan el diámetro de Tierra dada la sección eficaz 7 fb, la densidad de la tierra <span class="math notranslate nohighlight">\(\rho = 5 \, 10^3\)</span> kg/m<span class="math notranslate nohighlight">\(^3\)</span> y el radio <span class="math notranslate nohighlight">\(R = 6000\)</span> km.</p></li>
+<li><p>[AB1.7.PX] El experimento GALLEX del Laboratorio del Gran Sasso, Italia, medía la interacción de los <span class="math notranslate nohighlight">\(\nu_e\)</span> solares con <span class="math notranslate nohighlight">\(^{71}\)</span>Ga, <span class="math notranslate nohighlight">\(\nu_e + ^{71}\mathrm{Ga} \to ^{71}\mathrm{Ge} + e\)</span>, que tiene una en energía umbral <span class="math notranslate nohighlight">\(E_0 = 233\)</span> keV.
+La predicción flujo solar es <span class="math notranslate nohighlight">\(\phi = 6 \, 10^{14}\)</span> m<span class="math notranslate nohighlight">\(^{-2}\)</span>s<span class="math notranslate nohighlight">\(^{-1}\)</span> y la sección eficaz <span class="math notranslate nohighlight">\(\sigma = 10^{-48}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>. Si la eficiencia de detección, <span class="math notranslate nohighlight">\(\epsilon\)</span> es del 40 % y la abundancia, <span class="math notranslate nohighlight">\(\eta\)</span> del isótopo <span class="math notranslate nohighlight">\(^{71}\)</span>Ga en is 40%, Calcula la masa necesaria de Ga natural para tener una razón de detección de 1 evento al día.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="problems-a-l">
+<h3>Problems A. L<a class="headerlink" href="#problems-a-l" title="Permalink to this heading">#</a></h3>
+<ol class="simple">
+<li><p>[AL10.P7] IceCube es un gigantesco detector de neutrinos en la Antartida, construido con sondas verticales instrumentalizadas de PMTs a una profundidad de 1.6 km de la superficie, donde el hielo es muy transparente, estudia las interacciones de neutirnos atmosféricos y cósmicos que interaccionan con el detector via <span class="math notranslate nohighlight">\({\bar \nu}_\mu + p \to \mu^+ + n\)</span>. Considera un neutrino incidente con energía <span class="math notranslate nohighlight">\(E\)</span> ultra-energético, del orden de TeV, calcula en momento del <span class="math notranslate nohighlight">\(\mu^+\)</span>, <span class="math notranslate nohighlight">\(p_\mu\)</span>, dependiendo de su ángulo de emisión <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+</ol>
+<p>El 4 de diciembre del 2014, IceCube, detector «Big Bird» un <span class="math notranslate nohighlight">\(\mu^+\)</span> de 2 PeV, ¿Cuál es la energía mínima del <span class="math notranslate nohighlight">\(\bar{\nu}_\mu\)</span> que lo produjo? ¿Y su ángulo máximo respecto a la dirección del <span class="math notranslate nohighlight">\(\mu^+\)</span>?</p>
+</div>
+</div>
+<div class="section" id="soluciones">
+<h2>Soluciones<a class="headerlink" href="#soluciones" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hbar = </span><span class="si">{:4e}</span><span class="s1"> J m/s&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">hbar</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;c  = </span><span class="si">{:4e}</span><span class="s1"> m/2&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="p">))</span>
+<span class="n">GeV_to_Julio</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">giga</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">eV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;GeV  = </span><span class="si">{:4e}</span><span class="s1"> J &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GeV_to_Julio</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hbar c  =  </span><span class="si">{:4e}</span><span class="s1"> GeV fm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">hbar</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span> <span class="o">/</span> <span class="p">(</span><span class="n">GeV_to_Julio</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">femto</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hbar = 1.054572e-34 J m/s
+c  = 2.997925e+08 m/2
+GeV  = 1.602177e-10 J 
+hbar c  =  1.973270e-01 GeV fm
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">me</span> <span class="o">=</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">m_e</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">GeV_to_Julio</span><span class="p">)</span> <span class="c1"># GeV</span>
+<span class="n">mp</span> <span class="o">=</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">m_p</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">GeV_to_Julio</span><span class="p">)</span> <span class="c1"># GeV</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;electron mass </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">me</span> <span class="o">*</span><span class="mf">1e3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;proton   mass </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mp</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>electron mass 0.511 MeV
+proton   mass 0.938 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">energy</span>         <span class="o">=</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">,</span> <span class="n">p</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">m</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">p</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">momentum</span>       <span class="o">=</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">,</span> <span class="n">E</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">E</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">m</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">gamma_lorentz</span>  <span class="o">=</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">,</span> <span class="n">E</span> <span class="p">:</span> <span class="n">E</span><span class="o">/</span><span class="n">m</span>
+<span class="n">beta_lorentz</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">,</span> <span class="n">E</span> <span class="p">:</span> <span class="n">p</span><span class="o">/</span><span class="n">E</span>
+<span class="n">kinetic_energy</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">,</span> <span class="n">E</span> <span class="p">:</span> <span class="n">E</span> <span class="o">-</span> <span class="n">m</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-a-b-2-1">
+<h3>Ejercicio  A.B 2.1)<a class="headerlink" href="#ejercicio-a-b-2-1" title="Permalink to this heading">#</a></h3>
+<p>Calcula la energía y momento de las partículas finales en el CM en la desintegración. Calcula también la <span class="math notranslate nohighlight">\(\beta\)</span> de los leptones cargados:</p>
+<ul class="simple">
+<li><p>a) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span></p></li>
+<li><p>b) <span class="math notranslate nohighlight">\(\pi^+ \to e^+ + \nu_e\)</span>.</p></li>
+</ul>
+<p>Esta resuelto en clase (ver apuntes leptones)</p>
+<div class="math notranslate nohighlight">
+\[
+E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\pi}, \;\;
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">139.51</span>  <span class="c1"># MeV</span>
+<span class="n">mmu</span> <span class="o">=</span> <span class="mf">105.66</span>  <span class="c1"># MeV</span>
+<span class="n">me</span>  <span class="o">=</span>   <span class="mf">0.511</span> <span class="c1"># MeV</span>
+<span class="n">ene_cm</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span><span class="p">,</span> <span class="n">mhad</span> <span class="o">=</span> <span class="n">mpi</span> <span class="p">:</span> <span class="p">(</span><span class="n">mhad</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mhad</span><span class="p">)</span>
+<span class="n">p_cm</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span><span class="p">,</span> <span class="n">mhad</span> <span class="o">=</span> <span class="n">mpi</span> <span class="p">:</span> <span class="p">(</span><span class="n">mhad</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mhad</span><span class="p">)</span>
+<span class="n">a_R</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span><span class="p">,</span> <span class="n">mhad</span> <span class="o">=</span> <span class="n">mpi</span> <span class="p">:</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">ml</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">ml</span><span class="p">)</span> <span class="o">+</span> <span class="n">ml</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">beta_mu</span><span class="p">,</span> <span class="n">beta_e</span> <span class="o">=</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">)</span><span class="o">/</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">),</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span><span class="o">/</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; beta mu    = </span><span class="si">{:7.6f}</span><span class="s1">, beta       e = </span><span class="si">{:7.6f}</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">beta_mu</span><span class="p">,</span> <span class="n">beta_e</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; energy mu  = </span><span class="si">{:5.3f}</span><span class="s1"> MeV, energy  e = </span><span class="si">{:5.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">),</span> <span class="n">ene_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; momento mu = </span><span class="si">{:5.3f}</span><span class="s1"> MeV,  momento e = </span><span class="si">{:5.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">),</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> beta mu    = 0.270970, beta       e = 0.999973    
+ energy mu  = 109.767 MeV, energy  e = 69.756 MeV
+ momento mu = 29.743 MeV,  momento e = 69.754 MeV
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-2-2">
+<h3>Ejercicio 2.2)<a class="headerlink" href="#ejercicio-2-2" title="Permalink to this heading">#</a></h3>
+<p>Considera la desintegración <span class="math notranslate nohighlight">\(K^- \to \mu + \bar{\nu}_\mu\)</span>. Calcula la energía y momento en el CM del <span class="math notranslate nohighlight">\(\mu, \bar{\nu}_\mu\)</span> y el máximo momento del <span class="math notranslate nohighlight">\(\mu\)</span> si el <span class="math notranslate nohighlight">\(K^-\)</span> tienen un momento de 5 GeV.</p>
+<p>La energía y momento del leptón son:
+$<span class="math notranslate nohighlight">\(
+E_l = \frac{m^2_K + m^2_l}{2 m_K}, \; \; p_l = \frac{m^2_K - m^2_l}{2 m_K}, \;\;
+\)</span>$</p>
+<p>El momento máximo corresponderá al momento del <span class="math notranslate nohighlight">\(\mu\)</span> en la dirección y sentido del <span class="math notranslate nohighlight">\(K\)</span> incidente, que recibirá un <em>boost</em> de <span class="math notranslate nohighlight">\(\gamma = E_K/m_K, \; \beta = p_K/E_K\)</span>. Asi:</p>
+<div class="math notranslate nohighlight">
+\[
+p'_\mu = \gamma \beta E^*_\mu + \gamma p^*_\mu
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mkaon</span> <span class="o">=</span> <span class="mf">493.67</span> <span class="c1"># MeV</span>
+<span class="n">e_mu</span><span class="p">,</span> <span class="n">p_mu</span> <span class="o">=</span> <span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">,</span> <span class="n">mkaon</span><span class="p">),</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">,</span> <span class="n">mkaon</span><span class="p">)</span>
+<span class="n">e_nu</span><span class="p">,</span> <span class="n">p_nu</span> <span class="o">=</span> <span class="n">p_mu</span><span class="p">,</span> <span class="n">p_mu</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; energy mu  = </span><span class="si">{:5.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e_mu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; momento mu = </span><span class="si">{:5.3f}</span><span class="s1"> MeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p_mu</span><span class="p">))</span>
+
+<span class="n">e_kaon</span> <span class="o">=</span> <span class="mi">5000</span> <span class="c1"># MeV</span>
+<span class="n">p_kaon</span> <span class="o">=</span> <span class="n">momentum</span><span class="p">(</span><span class="n">mkaon</span><span class="p">,</span> <span class="n">e_kaon</span><span class="p">)</span>
+<span class="n">gamma_kaon</span><span class="p">,</span> <span class="n">beta_kaon</span> <span class="o">=</span> <span class="n">e_kaon</span><span class="o">/</span><span class="n">mkaon</span><span class="p">,</span> <span class="n">p_kaon</span><span class="o">/</span><span class="n">e_kaon</span>
+<span class="n">p_max_mu</span> <span class="o">=</span> <span class="n">gamma_kaon</span> <span class="o">*</span> <span class="n">beta_kaon</span> <span class="o">*</span> <span class="n">e_mu</span> <span class="o">+</span> <span class="n">gamma_kaon</span> <span class="o">*</span> <span class="n">p_mu</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; momentum mu maximo en lab = </span><span class="si">{:5.3f}</span><span class="s1"> MeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p_max_mu</span><span class="p">))</span>
+<span class="n">p_min_nu</span> <span class="o">=</span> <span class="n">gamma_kaon</span> <span class="o">*</span> <span class="n">beta_kaon</span> <span class="o">*</span> <span class="n">e_nu</span> <span class="o">-</span> <span class="n">gamma_kaon</span> <span class="o">*</span> <span class="n">p_nu</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; momentum nu minimo en lab = </span><span class="si">{:5.3f}</span><span class="s1"> MeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p_min_nu</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> energy mu  = 258.142 MeV
+ momento mu = 235.528 MeV 
+ momentum mu maximo en lab = 4987.225 MeV 
+ momentum nu minimo en lab = -11.656 MeV 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicion-ab-mixture">
+<h3>Ejercicion AB [Mixture]<a class="headerlink" href="#ejercicion-ab-mixture" title="Permalink to this heading">#</a></h3>
+<p>Indica si los siguientes procesos están permitidos y si no, por qué</p>
+<p>a) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_{\mu}\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \bar{\nu}_\mu\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(n \to p + e\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(e \to \nu_e + \gamma\)</span></p>
+<p>e) <span class="math notranslate nohighlight">\(p \to e^+ + \bar{\nu}_e\)</span></p>
+<p>f) <span class="math notranslate nohighlight">\(p \to n + e + \bar{\nu}_e\)</span></p>
+<p>h) <span class="math notranslate nohighlight">\(n \to p + e + \nu_e\)</span></p>
+<p>a) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_{\mu}\)</span></p>
+<p>Sí. Conserva carga, número léptónico y muónico, y la masa del <span class="math notranslate nohighlight">\(m_\pi = 139\)</span> MeV, menor que la masa del múon <span class="math notranslate nohighlight">\(m_\mu = 106\)</span> MeV</p>
+<p>b) <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \bar{\nu}_\mu\)</span></p>
+<p>No. No conserva el número leptónico.</p>
+<p>c) <span class="math notranslate nohighlight">\(n \to p + e\)</span></p>
+<p>No. No conserva el número leptónico.</p>
+<p>d) <span class="math notranslate nohighlight">\(e \to \nu_e + \gamma\)</span></p>
+<p>No. No conserva la carga eléctrica.</p>
+<p>e) <span class="math notranslate nohighlight">\(p \to e^+ + \bar{\nu}_e\)</span></p>
+<p>No. No conserva el número bariónico, ni el leptónico.</p>
+<p>f) <span class="math notranslate nohighlight">\(p \to n + e + \bar{\nu}_e\)</span></p>
+<p>No. No conserva la carga eléctrica</p>
+<p>h) <span class="math notranslate nohighlight">\(n \to p + e + \nu_e\)</span></p>
+<p>No. No conserva el número leptónico</p>
+</div>
+<div class="section" id="ejercicio-ab-3-8">
+<h3>Ejercicio AB 3.8)<a class="headerlink" href="#ejercicio-ab-3-8" title="Permalink to this heading">#</a></h3>
+<p>Indica si son posibles los procesos:</p>
+<p>a) <span class="math notranslate nohighlight">\(p \to n + e^+\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\mu^+ \to \nu_\mu + e^+\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(e^+ + e \to \nu_\mu + \bar{\nu}_\mu\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(\nu_\mu + p \to \mu^+ + p\)</span></p>
+<p>e) <span class="math notranslate nohighlight">\(\nu_\mu + n \to \nu + p\)</span></p>
+<p>f) <span class="math notranslate nohighlight">\(\nu_\mu + n \to e^- + p\)</span></p>
+<p>g) <span class="math notranslate nohighlight">\(e^+ + n \to p + \nu_e\)</span></p>
+<p>h) <span class="math notranslate nohighlight">\(e + p \to n + \bar{\nu}_e\)</span></p>
+<p>a) <span class="math notranslate nohighlight">\(p \to n + e^+\)</span></p>
+<p>No, no conserva el número leptónico.</p>
+<p>b) <span class="math notranslate nohighlight">\(\mu^+ \to \nu_\mu + e^+\)</span></p>
+<p>No, no conserva el número leptónico total, ni el de sabor.</p>
+<p>c) <span class="math notranslate nohighlight">\(e^+ + e \to \nu_\mu + \bar{\nu}_\mu\)</span></p>
+<p>Sí. conserva la carga, el númerl leptónico total y de sabor.</p>
+<p>d) <span class="math notranslate nohighlight">\(\nu_\mu + p \to \mu^+ + p\)</span></p>
+<p>No. No conserva carga, ni el número leptónico total, ni de sabor.</p>
+<p>e) <span class="math notranslate nohighlight">\(\nu_\mu + n \to \nu_\nu + p\)</span></p>
+<p>No. No conserva la carga.</p>
+<p>f) <span class="math notranslate nohighlight">\(\nu_\mu + n \to e^- + p\)</span></p>
+<p>No. No conserva el número leptónico de sabor.</p>
+<p>g) <span class="math notranslate nohighlight">\(e^+ + n \to p + \nu_e\)</span></p>
+<p>No. No conserva el número leptónico.</p>
+<p>h) <span class="math notranslate nohighlight">\(e + p \to n + \bar{\nu}_e\)</span></p>
+<p>No. No conserval el número leptónico.</p>
+</div>
+<div class="section" id="ejercicio-ab-7-3">
+<h3>ejercicio AB 7.3<a class="headerlink" href="#ejercicio-ab-7-3" title="Permalink to this heading">#</a></h3>
+<p>Reescribe la constante de Fermi en el SI</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">GF</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;Fermi coupling constant&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;GF </span><span class="si">{:e}</span><span class="s1"> 1/Gev^2&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GF</span><span class="p">))</span>
+<span class="n">GF_si</span> <span class="o">=</span> <span class="n">GF</span> <span class="o">/</span><span class="p">(</span><span class="n">GeV_to_Julio</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;GF </span><span class="si">{:e}</span><span class="s1"> 1/Julios^2 &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GF_si</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GF 1.166379e-05 1/Gev^2
+GF 4.543796e+14 1/Julios^2 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercio-ab-7-4">
+<h3>Ejercio AB 7.4)<a class="headerlink" href="#ejercio-ab-7-4" title="Permalink to this heading">#</a></h3>
+<p>El colisionador PEP de SLAC produjo <span class="math notranslate nohighlight">\(e+e^+ \to \tau + \tau^+\)</span> a una energía <span class="math notranslate nohighlight">\(\sqrt{s} = 29\)</span> GeV, calcular la distancia media que recorrían los <span class="math notranslate nohighlight">\(\tau\)</span>s.</p>
+<p>el cuadrimomento de las partículas salientes en el CM <span class="math notranslate nohighlight">\(p_c = (E_c, {\bf p}^*_f), \; p_d=(E_d, -{\bf p}^*_f)\)</span>, <span class="math notranslate nohighlight">\(s = (2E_\tau, {\bf 0})^2 = 29^2\)</span> GeV<span class="math notranslate nohighlight">\(^2\)</span>. Esto es <span class="math notranslate nohighlight">\(E_\tau = 29\)</span> GeV</p>
+<p>La distancia recorrida por la transformación de Lorentz de <span class="math notranslate nohighlight">\((\tau, {\bf 0})\)</span> en la dirección <span class="math notranslate nohighlight">\(z\)</span> de <span class="math notranslate nohighlight">\(\gamma = E/m\)</span>, tenemos <span class="math notranslate nohighlight">\(d = \gamma \beta \tau\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m_tau</span>   <span class="o">=</span> <span class="mf">1.77</span> <span class="c1"># GeV</span>
+<span class="n">tau_tau</span> <span class="o">=</span> <span class="mf">0.29</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">pico</span> <span class="c1"># s</span>
+<span class="n">sqrt_s</span>  <span class="o">=</span> <span class="mf">29.</span>  <span class="c1"># GeV</span>
+<span class="n">E_tau</span>   <span class="o">=</span> <span class="n">sqrt_s</span>
+<span class="n">p_tau</span>   <span class="o">=</span> <span class="n">momentum</span><span class="p">(</span><span class="n">m_tau</span><span class="p">,</span> <span class="n">E_tau</span><span class="p">)</span>
+<span class="n">gamma</span>   <span class="o">=</span> <span class="n">gamma_lorentz</span><span class="p">(</span><span class="n">m_tau</span><span class="p">,</span> <span class="n">E_tau</span><span class="p">)</span>
+<span class="n">beta</span>    <span class="o">=</span> <span class="n">beta_lorentz</span> <span class="p">(</span><span class="n">p_tau</span><span class="p">,</span> <span class="n">E_tau</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; tau gamma </span><span class="si">{:4.3f}</span><span class="s1">, beta </span><span class="si">{:4.4f}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">beta</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; distance </span><span class="si">{:4.3f}</span><span class="s1"> mm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gamma</span> <span class="o">*</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">tau_tau</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">kilo</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> tau gamma 16.384, beta 0.9981 
+ distance 1.422 mm
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-ab-7-5">
+<h3>Ejercicio AB 7.5<a class="headerlink" href="#ejercicio-ab-7-5" title="Permalink to this heading">#</a></h3>
+<p>Considerar <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu\)</span> y <span class="math notranslate nohighlight">\(\tau^+ \to e^+ + \nu_e + \bar{\nu}_\tau\)</span>, la razón de desintegración el primero es <span class="math notranslate nohighlight">\(\mathcal{B} = 100\)</span> % y del segundo 17 %. Si la vida media del muón <span class="math notranslate nohighlight">\(\tau_\mu = 2.2\)</span> <span class="math notranslate nohighlight">\(\mu\)</span>s, calcula la vida media del tau <span class="math notranslate nohighlight">\(\tau_\tau\)</span>.</p>
+<p>Vimos en clase que la anchura de desintegración <span class="math notranslate nohighlight">\(l \to \nu_l + e + \bar{\nu}_e\)</span>, con <span class="math notranslate nohighlight">\(l = \mu, \tau\)</span>, viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma_l (l \to \nu_l + e + \bar{\nu}_e) =  \frac{\mathcal{B}(l \to \nu_l + e + \bar{\nu}_e)}{\tau_l} = \frac{G^2_F m^5_l}{192 \pi^3}
+\]</div>
+<p>Por lo que la razón entre las vidas medias de <span class="math notranslate nohighlight">\(\tau\)</span> y del <span class="math notranslate nohighlight">\(\mu\)</span> viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\tau_\tau}{\tau_\mu} = \frac{m^5_\mu}{m_\tau^5} \frac{\mathcal{B}(\tau \to \nu_\tau + e + \bar{\nu}_e)}{\mathcal{B}(\mu \to \nu_\mu + e + \bar{\nu}_e)}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m_tau</span>  <span class="o">=</span> <span class="mf">1.77</span>  <span class="c1"># GeV</span>
+<span class="n">m_mu</span>   <span class="o">=</span> <span class="mf">0.106</span> <span class="c1"># GeV</span>
+<span class="n">tau_mu</span> <span class="o">=</span> <span class="mf">2.2</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">micro</span> <span class="c1"># s</span>
+<span class="n">B_tau_e</span> <span class="o">=</span> <span class="mf">0.17</span>
+<span class="n">B_mu_e</span>  <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">tau_tau_exp</span> <span class="o">=</span> <span class="n">tau_mu</span> <span class="o">*</span> <span class="p">(</span><span class="n">m_mu</span><span class="o">/</span><span class="n">m_tau</span><span class="p">)</span><span class="o">**</span><span class="mi">5</span>  <span class="o">*</span> <span class="n">B_tau_e</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; tau half live </span><span class="si">{:e}</span><span class="s1"> s&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tau_tau_exp</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> tau half live 2.880943e-13 s
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-ab-7-7">
+<h3>ejercicio AB 7.7)<a class="headerlink" href="#ejercicio-ab-7-7" title="Permalink to this heading">#</a></h3>
+<p>¿Cuáles son las diferencias entre neutrinos y antineutrinos? Completa la interacción: <span class="math notranslate nohighlight">\(\nu_\mu + e \to \mu  + ?\)</span>. El Universo este lleno de neutrinos con temperatura <span class="math notranslate nohighlight">\(2\)</span> K, si los neutrinos tienen una masa de 50 meV, ¿Cuál es su velocidad?</p>
+<p>Los neutrinos tienen número leptónico total y de sabor positivo y los antineutrinos negativo</p>
+<p>La interacción es <span class="math notranslate nohighlight">\(\nu_\mu + e \to \mu + \nu_e\)</span></p>
+<p>De la relación of kinetic energy</p>
+<div class="math notranslate nohighlight">
+\[
+E_k = k_B T = m (\gamma - 1); \;\;\; \gamma = \frac{1}{\sqrt{1 - \beta^2}}
+\]</div>
+<p>Obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+\beta = \sqrt{1 - \frac{m^2}{(m + k_B T)^2}}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span>   <span class="o">=</span> <span class="mi">2</span> <span class="c1"># K</span>
+<span class="n">kene</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">giga</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">k</span> <span class="o">*</span> <span class="n">T</span> <span class="o">/</span> <span class="n">GeV_to_Julio</span> <span class="c1"># J</span>
+<span class="n">mnu</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">milli</span>
+<span class="n">kappa</span> <span class="o">=</span> <span class="n">mnu</span><span class="o">/</span><span class="p">(</span><span class="n">mnu</span> <span class="o">+</span> <span class="n">kene</span><span class="p">)</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">kappa</span><span class="o">*</span><span class="n">kappa</span><span class="p">)</span>
+<span class="n">gamma</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">betap</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">kene</span><span class="o">/</span><span class="n">mnu</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;neutrinos kinetic energy </span><span class="si">{:e}</span><span class="s1"> eV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kene</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;neutrinos mass           </span><span class="si">{:e}</span><span class="s1"> eV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mnu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;neutrinos beta           </span><span class="si">{:e}</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">beta</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;neutrinos gamma          </span><span class="si">{:e}</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gamma</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;neutrinos veolicity      </span><span class="si">{:e}</span><span class="s1"> m/s  &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">betap</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>neutrinos kinetic energy 1.723467e-04 eV 
+neutrinos mass           5.000000e-02 eV 
+neutrinos beta           8.281537e-02    
+neutrinos gamma          1.003447e+00    
+neutrinos veolicity      2.489156e+07 m/s  
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-ab-7-8-modificado">
+<h3>Ejercicio AB 7.8) [modificado]<a class="headerlink" href="#ejercicio-ab-7-8-modificado" title="Permalink to this heading">#</a></h3>
+<p>Existen las desintegraciones <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \gamma, \; \mu^+ \to e^+ + e^+ + e\)</span> ¿Por qué?</p>
+<p>En ambo casos se viola el número leptónica. A pesar de la intensa búsqueda de la primera, sólo se han impuesto cotas.</p>
+</div>
+<div class="section" id="problema-ab-7-13">
+<h3>Problema AB 7.13)<a class="headerlink" href="#problema-ab-7-13" title="Permalink to this heading">#</a></h3>
+<p>Los rayos cósmicos son principalmente protones. Su espectro de energía decrece con la energía. En las interacciones con los núcleos de la atmósfera producen mesones, que a su vez, al desintegrarse producen <span class="math notranslate nohighlight">\(\nu_\mu, \nu_e\)</span>. Aproximadamente a 1 GeV se procuden <span class="math notranslate nohighlight">\(N = 10^6\)</span> <span class="math notranslate nohighlight">\(\nu_\mu\)</span>, ¿Cuántos de ellos interaccionan al atravesar el diámetro de la Tierra? Considear <span class="math notranslate nohighlight">\(\sigma = 7\)</span> fbarn, <span class="math notranslate nohighlight">\(\rho = 5 \, 10^3\)</span> kg m<span class="math notranslate nohighlight">\(^{-3}\)</span> y el radio <span class="math notranslate nohighlight">\(R= 6000\)</span> km.</p>
+<p>En A. Bettini considera un cilindro de longitud <span class="math notranslate nohighlight">\(2R\)</span>, en vez de una esfera en ese caso</p>
+<div class="math notranslate nohighlight">
+\[
+N_n = \pi R^2 (2 R) \rho N_A 10^3; \;\; \Phi = \frac{N_\nu}{\pi R^2};
+\]</div>
+<p>y el número de interacciones:</p>
+<div class="math notranslate nohighlight">
+\[
+N = 2 R \rho N_A 10^3 \sigma N_\nu
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rho</span>   <span class="o">=</span> <span class="mf">5e3</span> <span class="c1"># kg/m3</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">7</span> <span class="o">*</span> <span class="mf">1e-15</span> <span class="o">*</span> <span class="mf">1e-28</span>  
+<span class="n">R</span>     <span class="o">=</span> <span class="mf">6e6</span> <span class="c1"># m </span>
+<span class="n">Nnu</span>   <span class="o">=</span> <span class="mf">1e6</span> <span class="c1"># nuetrinos</span>
+<span class="n">val</span> <span class="o">=</span> <span class="n">Nnu</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">R</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">N_A</span> <span class="o">*</span> <span class="mf">1e3</span> <span class="o">*</span> <span class="n">sigma</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;interactions </span><span class="si">{:e}</span><span class="s1">  &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>interactions 2.529299e+01  
+</pre></div>
+</div>
+</div>
+</div>
+<p>En el caso de que consideremos una esfera en vez de un cilindro:</p>
+<p>El número de nucleones en la tierra
+$<span class="math notranslate nohighlight">\(
+N_n = \frac{4}{3} \pi R^3 \frac{\rho}{m_p}
+\)</span>$</p>
+<p>El flujo:</p>
+<div class="math notranslate nohighlight">
+\[
+\phi = \frac{N_\nu}{\pi R^2}
+\]</div>
+<p>Y el número de interacciones:</p>
+<div class="math notranslate nohighlight">
+\[
+N = \phi \sigma N_n = \frac{4}{3} \frac{R \rho \sigma N_\nu}{m_p}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Np</span>    <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">R</span><span class="o">**</span><span class="mi">3</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">m_p</span><span class="p">)</span>
+<span class="n">phi</span>   <span class="o">=</span> <span class="n">Nnu</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">R</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;targets </span><span class="si">{:e}</span><span class="s1"> nucleons &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Np</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;beam    </span><span class="si">{:e}</span><span class="s1"> neutrinos/m2&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;interactions </span><span class="si">{:e}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">phi</span> <span class="o">*</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">Np</span><span class="p">))</span>
+<span class="n">val</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">R</span> <span class="o">*</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">Nnu</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">m_p</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;interactions </span><span class="si">{:e}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>targets 2.704672e+51 nucleons 
+beam    8.841941e-09 neutrinos/m2
+interactions 1.674018e+01 
+interactions 1.674018e+01 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-7-16">
+<h3>Ejercicio 7.16)<a class="headerlink" href="#ejercicio-7-16" title="Permalink to this heading">#</a></h3>
+<p>El experimento GALLEX del Laboratorio Nacional de Gran Sasso (LNGS) en Itialia, medió el flujo de <span class="math notranslate nohighlight">\(\nu_e\)</span> del Sol a partir de la reacción <span class="math notranslate nohighlight">\(\nu_e + ^{71}\mathrm{Ga} \to ^{Ge}\mathrm{Ge} + e\)</span> que tiene un umbral de energía <span class="math notranslate nohighlight">\(E = 233\)</span> keV. El flujo de nuetrinos del sol es <span class="math notranslate nohighlight">\(\phi = 6 \, 10^{14}\)</span> m<span class="math notranslate nohighlight">\(^{-2}\)</span>s<span class="math notranslate nohighlight">\(^{-1}\)</span>. Consideremos que la sección eficaz es <span class="math notranslate nohighlight">\(\sigma = 10^{-48}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>. Si consideramos una efficiencia de selección del 40%, ¿Cuántos nucleos de <span class="math notranslate nohighlight">\(^{71}\)</span>Ga son necesarios para tener una interacción al día? Si la abundancia natural del <span class="math notranslate nohighlight">\(^{71}\)</span>Ga es 40%, ¿Cuánta masa se necesita de galio?</p>
+<p>Sea <span class="math notranslate nohighlight">\(n\)</span> el número de moles necesarios para tener una interacción, <span class="math notranslate nohighlight">\(N=1\)</span>, en <span class="math notranslate nohighlight">\(t\)</span> s del día:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{t} = \phi \sigma \epsilon N_A \, n
+\]</div>
+<p>que convertimos en masa, si <span class="math notranslate nohighlight">\(\eta\)</span> es la abundancia natural del <span class="math notranslate nohighlight">\(^{71}\)</span>Ga:</p>
+<div class="math notranslate nohighlight">
+\[
+M \eta = n A
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">phi</span>     <span class="o">=</span> <span class="mf">6e14</span>  <span class="c1"># /m2s</span>
+<span class="n">sigma</span>   <span class="o">=</span> <span class="mf">1e-48</span> <span class="c1"># m2</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.4</span>
+<span class="n">N</span>       <span class="o">=</span> <span class="mi">1</span> 
+<span class="n">t</span>       <span class="o">=</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="c1"># s</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;1 day </span><span class="si">{:e}</span><span class="s1"> s&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+
+<span class="n">nmoles</span> <span class="o">=</span> <span class="n">N</span> <span class="o">/</span> <span class="p">(</span> <span class="n">t</span> <span class="o">*</span> <span class="n">epsilon</span> <span class="o">*</span> <span class="n">phi</span> <span class="o">*</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">N_A</span><span class="p">)</span> 
+<span class="n">eta</span>     <span class="o">=</span> <span class="mf">0.4</span>
+<span class="n">A</span>       <span class="o">=</span> <span class="mf">71e-3</span>
+<span class="n">M</span>       <span class="o">=</span> <span class="n">nmoles</span> <span class="o">*</span> <span class="n">A</span> <span class="o">/</span> <span class="n">eta</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of moles 71Ga </span><span class="si">{:e}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nmoles</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;71Ga mass </span><span class="si">{:e}</span><span class="s1"> kg&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nmoles</span> <span class="o">*</span> <span class="n">A</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ga mass   </span><span class="si">{:e}</span><span class="s1"> kg&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1 day 8.640000e+04 s
+number of moles 71Ga 8.008001e+04 
+71Ga mass 5.685681e+03 kg
+Ga mass   1.421420e+04 kg
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-ab-7-17">
+<h3>Ejercicio AB 7.17)<a class="headerlink" href="#ejercicio-ab-7-17" title="Permalink to this heading">#</a></h3>
+<p>¿Cuántos metros de Fe se precisan para que un <span class="math notranslate nohighlight">\(\nu_\mu\)</span> de 1 GeV interaccione en promedio una vez? Compara la distancia con el diámetro de la Tierra. Considera <span class="math notranslate nohighlight">\(\sigma = 0.017\)</span> fb, <span class="math notranslate nohighlight">\(\rho = 7.7 \, 10^{3}\)</span> kg m<span class="math notranslate nohighlight">\(^{-3}\)</span>, Z= 26, A = 56.</p>
+<p>La razón de producción es:</p>
+<div class="math notranslate nohighlight">
+\[
+R = \Phi \sigma N
+\]</div>
+<p>La densida en número de moles es <span class="math notranslate nohighlight">\(n = 10^3 \rho/A\)</span>, pero en cada mol hay <span class="math notranslate nohighlight">\(A\)</span> nucleones, luego la densidad de nucleones
+<span class="math notranslate nohighlight">\(n_A = 10^3 \rho\)</span></p>
+<p>Sea <span class="math notranslate nohighlight">\(S\)</span> la sección de la barra de hierro, entonces <span class="math notranslate nohighlight">\(\Phi = 1/S\)</span> y <span class="math notranslate nohighlight">\(N = 10^3 \, N_A L S \rho\)</span></p>
+<p>Por lo tanto:
+$<span class="math notranslate nohighlight">\(
+R = 10^3 \, N_A L \rho \sigma 
+\)</span><span class="math notranslate nohighlight">\(
+Con \)</span>R = 1<span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+L = 10^{-3} \frac{1}{N_A \rho \sigma}
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rho</span>      <span class="o">=</span> <span class="mf">7.7e3</span> <span class="c1"># kg/m3</span>
+<span class="n">sigma</span>    <span class="o">=</span> <span class="mf">0.017</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">femto</span> <span class="o">*</span> <span class="mf">1e-28</span> <span class="c1"># m2</span>
+<span class="n">N_A</span>      <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">N_A</span>
+<span class="n">distance</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1e-3</span><span class="p">)</span>  <span class="o">/</span> <span class="p">(</span><span class="n">N_A</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">sigma</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;distance </span><span class="si">{:e}</span><span class="s1"> m&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">distance</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;distance in units of Earth diameters </span><span class="si">{:e}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">distance</span><span class="o">/</span><span class="mf">12e6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>distance 1.268555e+14 m
+distance in units of Earth diameters 1.057130e+07 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-ab-7-27">
+<h3>Ejercicio AB 7.27)<a class="headerlink" href="#ejercicio-ab-7-27" title="Permalink to this heading">#</a></h3>
+<p>Considera un tanque de agua para detector neutrinos solares por efector Cherenkov (como SuperKamiokande) mediante la interacción <span class="math notranslate nohighlight">\(\nu_e + e \to \nu_e + e\)</span>. Si la sección eficaz es <span class="math notranslate nohighlight">\(\sigma = 10^{-47}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>, y el flujo incidente por encima de la energía umbral <span class="math notranslate nohighlight">\(\Phi = 10^{10}\)</span> m<span class="math notranslate nohighlight">\(^{-2}\)</span>s<span class="math notranslate nohighlight">\(^{-2}\)</span>, ¿Cuál es la masa necesaria para tener una razón de intracción de 10  eventos al día con una efficiencia de detección de 50%?</p>
+<p>La razón de producción es:</p>
+<div class="math notranslate nohighlight">
+\[
+R = \epsilon \, \Phi \sigma N_e
+\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(N_e\)</span> es el número de electrones en el blanco.</p>
+<p>El número de electrones un una masa <span class="math notranslate nohighlight">\(M\)</span> con densidad <span class="math notranslate nohighlight">\(\rho\)</span>, número A, Z es:</p>
+<div class="math notranslate nohighlight">
+\[
+N_e = Z N_A M/ A,
+\]</div>
+<p>Para el caso el agua <span class="math notranslate nohighlight">\(Z = 10, A = 18\)</span></p>
+<p>De donde:</p>
+<div class="math notranslate nohighlight">
+\[
+M = \frac{R A}{\epsilon \Phi \sigma Z N_A}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">R</span>       <span class="o">=</span> <span class="mi">10</span><span class="o">/</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span> <span class="c1"># 1/s</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">A</span>       <span class="o">=</span> <span class="mi">16</span>
+<span class="n">Z</span>       <span class="o">=</span> <span class="mi">10</span>
+<span class="n">sigma</span>   <span class="o">=</span> <span class="mf">1e-47</span> <span class="c1"># m2</span>
+<span class="n">phi</span>     <span class="o">=</span> <span class="mf">1e10</span>  <span class="c1"># 1/m2s</span>
+
+<span class="n">mass</span> <span class="o">=</span>  <span class="mf">1e-3</span> <span class="o">*</span> <span class="p">(</span><span class="n">R</span> <span class="o">*</span> <span class="n">A</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">epsilon</span> <span class="o">*</span> <span class="n">phi</span> <span class="o">*</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">Z</span> <span class="o">*</span> <span class="n">N_A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; mass </span><span class="si">{:e}</span><span class="s1"> kg&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mass</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> mass 6.150145e+06 kg
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+<span class="n">size</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">tau_tau</span> <span class="o">=</span> <span class="mf">0.23</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">pico</span>
+<span class="n">m_tau</span> <span class="o">=</span> <span class="mf">1.77</span> <span class="c1">#GeV</span>
+<span class="n">e_tau</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="mi">91</span> <span class="c1"># GeV</span>
+<span class="n">gamma</span> <span class="o">=</span> <span class="n">e_tau</span><span class="o">/</span><span class="n">m_tau</span>
+<span class="n">p_tau</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">e_tau</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">m_tau</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">beta</span>  <span class="o">=</span> <span class="n">p_tau</span><span class="o">/</span><span class="n">e_tau</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">expon</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">scale</span> <span class="o">=</span> <span class="n">tau_tau</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">size</span><span class="p">)</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">gamma</span> <span class="o">*</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">ts</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">kilo</span>
+<span class="n">ds</span> <span class="o">+=</span> <span class="mf">0.3</span> <span class="o">*</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="n">size</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">ds</span><span class="p">),</span> <span class="s1">&#39; mm&#39;</span><span class="p">)</span>
+<span class="n">xs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ds</span><span class="p">[</span><span class="n">ds</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="nb">list</span><span class="p">(</span><span class="o">-</span><span class="n">ds</span><span class="p">[</span><span class="n">ds</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">xs</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.758272104362873  mm
+0.25852563701591313
+</pre></div>
+</div>
+<img alt="../_images/problemas-II_64_1.png" src="../_images/problemas-II_64_1.png" />
+</div>
+</div>
+<p>### 1.2 ejercicio</p>
+<p>Dibuja los diagramas de Feynman de las desintegraciones: <span class="math notranslate nohighlight">\(K^{*+} \to K^0 + \pi^+\)</span>, <span class="math notranslate nohighlight">\(n \to p + e + \bar{\nu}_e\)</span>, <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span></p>
+<p>[AB7.P1]</p>
+</div>
+<div class="section" id="ejercicio">
+<h3>1.4 ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this heading">#</a></h3>
+<p>Escribe las corrientes cargadas de <span class="math notranslate nohighlight">\(\nu_\mu\)</span> con protón y nucleón para producir un pión.</p>
+<p>Existen las desintegraciones <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \gamma\)</span>, <span class="math notranslate nohighlight">\(\mu^+ \to e + e^+ + e^+\)</span></p>
+<p>[AB7.P8]</p>
+<p>a1) <span class="math notranslate nohighlight">\(\nu_\mu + p \to \mu + p + \pi^+\)</span>,</p>
+<p>a2) <span class="math notranslate nohighlight">\(\nu_\mu + n \to \mu + n + \pi^+\)</span></p>
+<p>b1) No es posible porque mo conserva el número leptónico de sabor. <span class="math notranslate nohighlight">\(L_\mu = -1, 0\)</span> (antes y después). También <span class="math notranslate nohighlight">\(L_e = 0, 1\)</span> (antes y después)</p>
+<p>b2) No es posible porque no conserva el número leptónico de sabor. <span class="math notranslate nohighlight">\(L_\mu = -1, 0\)</span> (antes y después). <span class="math notranslate nohighlight">\(L_e = 0, 1\)</span> (antes y después)</p>
+</div>
+<div class="section" id="ejercicio-icecube">
+<h3>Ejercicio IceCube<a class="headerlink" href="#ejercicio-icecube" title="Permalink to this heading">#</a></h3>
+<p>IceCube es un gigantesco detector de neutrinos en la Antartida, construido con sondas instrumentalizadas de PMTs a una profundidad de 1.6 km de la superficie, donde el hielo es muy transparente, estudia las interacciones de neutirnos atmosféricos y cósmicos que interaccionan con el detector via <span class="math notranslate nohighlight">\({\bar \nu}_\mu + p \to \mu^+ + n\)</span>. Considera un neutrino incidente con energía <span class="math notranslate nohighlight">\(E_a\)</span> ultra-energético, del orden de TeV, calcula en momento del <span class="math notranslate nohighlight">\(\mu^+\)</span>, <span class="math notranslate nohighlight">\(p_\mu\)</span>, dependiendo de su ángulo de emisión <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<p>El 4 de diciembre del 2014, IceCube, detector «Big Bird» un <span class="math notranslate nohighlight">\(\mu^+\)</span> de 2 PeV, ¿Cuál es la energía mínima del <span class="math notranslate nohighlight">\(\bar{\nu}_\mu\)</span> que lo produjo? ¿Y su ángulo máximo respecto a la dirección del <span class="math notranslate nohighlight">\(\mu^+\)</span>?</p>
+<p>[AL10.P7]</p>
+<p>El cuadrimomento del anti-muón <span class="math notranslate nohighlight">\(p_c\)</span> y del anti-neutrino <span class="math notranslate nohighlight">\(\bar{\nu_e}\)</span> están relacionados por:</p>
+<div class="math notranslate nohighlight">
+\[
+p_c = \frac{E_a m_N}{ m_N + E_a (1-\cos \theta)} \left(1, 0, \sin \theta, \cos\theta \right)
+\]</div>
+<p>De donde despejamos:</p>
+<div class="math notranslate nohighlight">
+\[
+E_a = \frac{p_c}{1 - \frac{p}{m} (1-\cos \theta)}
+\]</div>
+<p>Para el caso <span class="math notranslate nohighlight">\(\theta = 0\)</span>, tenemos <span class="math notranslate nohighlight">\(E_a = p_c\)</span></p>
+<p>El ángulo máximo de emisión corresponderá con:</p>
+<p><span class="math notranslate nohighlight">\(
+p (1-\cos \theta) = m,\;\;\; \theta = \sqrt{\frac{2m}{p}}
+\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">peta</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">giga</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="n">p</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; theta max </span><span class="si">{:e}</span><span class="s1"> degrees&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta</span> <span class="o">*</span> <span class="mi">180</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> theta max 5.729578e-02 degrees
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="mas-problemas">
+<h2>Mas problemas<a class="headerlink" href="#mas-problemas" title="Permalink to this heading">#</a></h2>
+<p><em>ejercicio</em>: Dibuja los diagramas de Feynman para los siguientes procesos:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau \to \pi^- + \nu_\tau\)</span>, siendo <span class="math notranslate nohighlight">\(\pi^-\)</span> la combinación de quarks (<span class="math notranslate nohighlight">\(d\bar{u}\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(K^+ \to  \mu^+ + \nu_\mu\)</span>, siendo <span class="math notranslate nohighlight">\(K^+\)</span> la combinación (<span class="math notranslate nohighlight">\(s\bar{u}\)</span>)</p></li>
+</ul>
+<p><em>ejercicio</em>: Dibuja los diagramas de Fynman para los sigientes procesos:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau \to \mu + \bar{\nu}_\mu + \nu_\tau\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau \to e + \bar{\nu}_e + \nu_\tau\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu \to e + \bar{\nu}_e + \nu_\mu\)</span></p></li>
+</ul>
+<p><em>ejercicio</em>: Considera <span class="math notranslate nohighlight">\(\pi^0\)</span> una combinación <span class="math notranslate nohighlight">\((u\bar{u})\)</span> y dibuja e indica su relativa intensidad de las siguientes desintegraciones teniendo en cuenta en número de vértices:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\pi^0 \to \gamma \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^0 \to \gamma + e + e^+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^0 \to e + e^+\)</span></p></li>
+</ul>
+<p><em>ejercicio</em>: Dibuja los diagramas árbol de las posible interacciones, e indica si son aniquilaciones o interacciones:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(e+e\to e+e\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e + e^+ \to e + e^+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e + \nu_e \to e \nu_e\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e + \bar{\nu}_e \to e + \bar{\nu}_e\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="detectors">
+<h2>4 Detectors<a class="headerlink" href="#detectors" title="Permalink to this heading">#</a></h2>
+<div class="section" id="id3">
+<h3>4.1 ejercicio<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>Sea un <span class="math notranslate nohighlight">\(\pi^\pm\)</span> y un <span class="math notranslate nohighlight">\(K^\pm\)</span> con el mismo momento <span class="math notranslate nohighlight">\(p\)</span> 4 GeV, evaluar la distancia <span class="math notranslate nohighlight">\(L\)</span> que deben recorrer entre dos centelleadores cuya resolución temporal es <span class="math notranslate nohighlight">\(\sigma_t = 300\)</span> ps, para que puedan distinguirse con la medida de su tiempo de vuelo en al menos dos descibaciones estándard.</p>
+<p>[AB1.24]</p>
+</div>
+</div>
+<div class="section" id="otros">
+<h2>Otros<a class="headerlink" href="#otros" title="Permalink to this heading">#</a></h2>
+<p><em>ejercicio</em>: Demostrar que en un sistema de partículas con cuadrimomentos <span class="math notranslate nohighlight">\(p_i\)</span>, <span class="math notranslate nohighlight">\(i = 1, \dots, n\)</span>, la cantidad:
+$<span class="math notranslate nohighlight">\(
+\left( \sum_i E_i \right)^2 - \left( \sum_i {\bf p}_i \right)^2
+\)</span>$
+es un invariante Lorentz</p>
+<p><em>ejercicio</em>: Demostrar que <span class="math notranslate nohighlight">\(\hat{P} \, u_+ (\theta, \phi) = v_-(\pi-\theta, \pi + \theta)\)</span></p>
+<div class="section" id="bibliografia">
+<h3>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>«Elementary Particle Physics», S. Bettini, Cambridge.</p></li>
+<li><p>«Modern Particle Physics», Mark Thomson, Cambridge.</p></li>
+<li><p>«Lepton and Quark», Francis Halzen, Alan D. Martin, Josh Wiley &amp; Sons.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

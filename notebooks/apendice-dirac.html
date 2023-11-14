@@ -1,0 +1,1735 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción a Física de Partículas &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduccion.html">
+   Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observables.html">
+   Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="leptones.html">
+   Sobre los leptones
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/apendice-dirac.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/apendice-dirac.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/apendice-dirac.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Introducción a Física de Partículas
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#apendice-unidades-relatividad-y-ecuacion-de-dirac">
+     Apéndice: Unidades, relatividad y ecuación de Dirac
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indice">
+   Indice
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ecuacion-de-dirac">
+     Ecuación de Dirac
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#formulacion-de-la-ecuacion-de-dirac">
+       Formulación de la ecuación de Dirac
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#las-matrices-alpha-beta">
+         Las matrices
+         <span class="math notranslate nohighlight">
+          \(\alpha, \beta\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#el-espinor-de-dirac">
+         El espinor de Dirac
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#representacion-covariante-de-la-ecuacion-de-dirac">
+       Representación covariante de la ecuación de Dirac
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#las-matrices-gamma">
+         Las matrices
+         <span class="math notranslate nohighlight">
+          \(\gamma\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#matrix-gamma-5">
+         Matrix
+         <span class="math notranslate nohighlight">
+          \(\gamma^5\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#el-espinor-de-dirac-adjunto">
+         El espinor de Dirac adjunto
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#densidad-y-corriente-de-probabilidad">
+         Densidad y corriente de probabilidad
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#spin-en-la-ecuacion-de-dirac">
+       Spin en la ecuación de Dirac
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#soluciones-de-la-ecuacion-de-dirac">
+     Soluciones de la ecuación de Dirac
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#soluciones-de-la-particula-en-reposo">
+       Soluciones de la partícula en reposo
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#cual-es-el-significado-de-la-solucion-de-energia-negativa">
+         ¿Cuál es el significado de la solución de energía negativa?
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ecuacion-de-dirac-para-los-espinores-v">
+         Ecuación de Dirac para los espinores
+         <span class="math notranslate nohighlight">
+          \(v\)
+         </span>
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#soluciones-generales-de-la-particula-libre">
+       Soluciones generales de la partícula libre
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#los-espinores-de-las-particulas-u">
+         los espinores de las partículas
+         <span class="math notranslate nohighlight">
+          \(u\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#espinores-de-las-antiparticulas-v">
+         espinores de las antipartículas
+         <span class="math notranslate nohighlight">
+          \(v\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#los-espinores-u-de-las-particulas-y-v-de-las-antiparticulas">
+         Los espinores
+         <span class="math notranslate nohighlight">
+          \(u\)
+         </span>
+         de las partículas y
+         <span class="math notranslate nohighlight">
+          \(v\)
+         </span>
+         de las antipartículas
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#operadores-sobre-los-spinores-de-anti-particulas">
+       Operadores sobre los spinores de anti-partículas
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conjungacion-de-carga">
+       Conjungación de carga
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paridad">
+       Paridad
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#factor-de-normalizacion">
+       Factor de normalización
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicidad-y-quiralidad">
+     Helicidad y Quiralidad
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tercera-componente-de-spin">
+       Tercera componente de spin
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#helicidad">
+       Helicidad
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#espinores-de-helicidad">
+       Espinores de helicidad
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#autovalores-de-helicidad">
+         Autovalores de helicidad
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#autoestados-de-helicidad">
+         Autoestados de helicidad
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#caso-de-particulas-ultrarelativistas">
+           Caso de partículas ultrarelativistas
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#quiralidad">
+       Quiralidad
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#quiralidad-de-los-espinores-de-helicidad-de-las-particulas-ultra-relativistas">
+         quiralidad de los espinores de helicidad de las partículas ultra-relativistas
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#proyectores-de-quiralidad">
+         Proyectores de quiralidad
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#relacion-entre-helicidad-y-quiralidad">
+       Relación entre helicidad y quiralidad
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paridad-y-conjugacion-de-carga-en-espinores-de-quiralidad">
+       Paridad y conjugación de carga en espinores de quiralidad
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bibliografia">
+     Bibliografía
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introducción a Física de Partículas</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Introducción a Física de Partículas
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#apendice-unidades-relatividad-y-ecuacion-de-dirac">
+     Apéndice: Unidades, relatividad y ecuación de Dirac
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indice">
+   Indice
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ecuacion-de-dirac">
+     Ecuación de Dirac
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#formulacion-de-la-ecuacion-de-dirac">
+       Formulación de la ecuación de Dirac
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#las-matrices-alpha-beta">
+         Las matrices
+         <span class="math notranslate nohighlight">
+          \(\alpha, \beta\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#el-espinor-de-dirac">
+         El espinor de Dirac
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#representacion-covariante-de-la-ecuacion-de-dirac">
+       Representación covariante de la ecuación de Dirac
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#las-matrices-gamma">
+         Las matrices
+         <span class="math notranslate nohighlight">
+          \(\gamma\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#matrix-gamma-5">
+         Matrix
+         <span class="math notranslate nohighlight">
+          \(\gamma^5\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#el-espinor-de-dirac-adjunto">
+         El espinor de Dirac adjunto
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#densidad-y-corriente-de-probabilidad">
+         Densidad y corriente de probabilidad
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#spin-en-la-ecuacion-de-dirac">
+       Spin en la ecuación de Dirac
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#soluciones-de-la-ecuacion-de-dirac">
+     Soluciones de la ecuación de Dirac
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#soluciones-de-la-particula-en-reposo">
+       Soluciones de la partícula en reposo
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#cual-es-el-significado-de-la-solucion-de-energia-negativa">
+         ¿Cuál es el significado de la solución de energía negativa?
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ecuacion-de-dirac-para-los-espinores-v">
+         Ecuación de Dirac para los espinores
+         <span class="math notranslate nohighlight">
+          \(v\)
+         </span>
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#soluciones-generales-de-la-particula-libre">
+       Soluciones generales de la partícula libre
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#los-espinores-de-las-particulas-u">
+         los espinores de las partículas
+         <span class="math notranslate nohighlight">
+          \(u\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#espinores-de-las-antiparticulas-v">
+         espinores de las antipartículas
+         <span class="math notranslate nohighlight">
+          \(v\)
+         </span>
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#los-espinores-u-de-las-particulas-y-v-de-las-antiparticulas">
+         Los espinores
+         <span class="math notranslate nohighlight">
+          \(u\)
+         </span>
+         de las partículas y
+         <span class="math notranslate nohighlight">
+          \(v\)
+         </span>
+         de las antipartículas
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#operadores-sobre-los-spinores-de-anti-particulas">
+       Operadores sobre los spinores de anti-partículas
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conjungacion-de-carga">
+       Conjungación de carga
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paridad">
+       Paridad
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#factor-de-normalizacion">
+       Factor de normalización
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicidad-y-quiralidad">
+     Helicidad y Quiralidad
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tercera-componente-de-spin">
+       Tercera componente de spin
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#helicidad">
+       Helicidad
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#espinores-de-helicidad">
+       Espinores de helicidad
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#autovalores-de-helicidad">
+         Autovalores de helicidad
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#autoestados-de-helicidad">
+         Autoestados de helicidad
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#caso-de-particulas-ultrarelativistas">
+           Caso de partículas ultrarelativistas
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#quiralidad">
+       Quiralidad
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#quiralidad-de-los-espinores-de-helicidad-de-las-particulas-ultra-relativistas">
+         quiralidad de los espinores de helicidad de las partículas ultra-relativistas
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#proyectores-de-quiralidad">
+         Proyectores de quiralidad
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#relacion-entre-helicidad-y-quiralidad">
+       Relación entre helicidad y quiralidad
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paridad-y-conjugacion-de-carga-en-espinores-de-quiralidad">
+       Paridad y conjugación de carga en espinores de quiralidad
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bibliografia">
+     Bibliografía
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduccion-a-fisica-de-particulas">
+<h1>Introducción a Física de Partículas<a class="headerlink" href="#introduccion-a-fisica-de-particulas" title="Permalink to this heading">#</a></h1>
+<div class="section" id="apendice-unidades-relatividad-y-ecuacion-de-dirac">
+<h2>Apéndice: Unidades, relatividad y ecuación de Dirac<a class="headerlink" href="#apendice-unidades-relatividad-y-ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Septiembre-Octubre 2021</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov  7 16:33:11 2023
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="indice">
+<h1>Indice<a class="headerlink" href="#indice" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Ecuación de Dirac</p>
+<ul>
+<li><p>Ecuación de Dirac</p></li>
+<li><p>Matrices <span class="math notranslate nohighlight">\(\gamma\)</span></p></li>
+</ul>
+</li>
+<li><p>Soluciones de la partícula libre - espinores</p></li>
+<li><p>Helicidad y quiralidad</p></li>
+</ul>
+<div class="section" id="ecuacion-de-dirac">
+<h2>Ecuación de Dirac<a class="headerlink" href="#ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
+<div class="section" id="formulacion-de-la-ecuacion-de-dirac">
+<h3>Formulación de la ecuación de Dirac<a class="headerlink" href="#formulacion-de-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
+<p>Para dar una versión relativista de la mecánica cuántica, Dirac propuso una ecuación lineal en la primera derivada temporal y en las derivadas espaciales a los que multiplicó por los factores <span class="math notranslate nohighlight">\(\alpha, \beta\)</span>.</p>
+<p>La <strong>ecuación de Dirac</strong> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{H} \,\Psi = \left( \bf{\alpha} \cdot {\bf \hat p} + \beta \, m \right) \, \Psi,
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\hat{H} = i \frac{\partial}{\partial t}\)</span> es el hamiltoniano de la partícula libre, <span class="math notranslate nohighlight">\({\hat {\bf p}} = -i \nabla\)</span> el operador momento lineal y <span class="math notranslate nohighlight">\(\Psi\)</span> la función de ondas.</p>
+<div class="section" id="las-matrices-alpha-beta">
+<h4>Las matrices <span class="math notranslate nohighlight">\(\alpha, \beta\)</span><a class="headerlink" href="#las-matrices-alpha-beta" title="Permalink to this heading">#</a></h4>
+<p>Al elevar al cuadrado la ecuación se obtiene la relación de Einstein:
+$<span class="math notranslate nohighlight">\(
+ E^2 = p^2 + m^2
+\)</span>$</p>
+<p>siempre que los factores <span class="math notranslate nohighlight">\({\bf \alpha}, \beta\)</span> sean matrices y cumplan las condiciones:</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_i^2 = \beta^2 = I, \;\; \alpha_i \alpha_j + \alpha_j \alpha_i = 0 \; (i \neq j), \;\; \alpha_i \beta + \beta \alpha_i = 0,
+\]</div>
+<p>con <span class="math notranslate nohighlight">\(i= 1, 2, 3\)</span>.</p>
+<p>Deben ser además matrices hermíticas, <span class="math notranslate nohighlight">\(\alpha_i = \alpha_i^\dagger, \; \beta = \beta^\dagger\)</span>, para que el hamiltonianto tenga valores reales.</p>
+<p>Las soluciones más sencillas son matrices <span class="math notranslate nohighlight">\(4 \times 4\)</span>.</p>
+<p>Una <strong>representación</strong> de las matrices conveniente es la <strong>Pauli-Dirac</strong> que usa las <strong>matrices de Dirac</strong> <span class="math notranslate nohighlight">\(2 \times 2\)</span>, <span class="math notranslate nohighlight">\(\sigma_i\)</span> con <span class="math notranslate nohighlight">\(i=1, 2, 3\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\beta = \begin{pmatrix} I &amp; 0 \\ 0 &amp; I \end{pmatrix}, \;\;
+\alpha_i = \begin{pmatrix} 0 &amp; \sigma_i \\ \sigma_i &amp; 0 \end{pmatrix}
+\end{split}\]</div>
+<p>Donde:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+I = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}, \;\;
+\sigma_1 = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}, \;\;
+\sigma_2 = \begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix}, \;\;
+\sigma_3 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}, \;\;
+\end{split}\]</div>
+<p>Existen otras representaciones útiles, por ejemplo la quiral, pero la física de la ecuación de Dirac no depende de la representación.</p>
+</div>
+<div class="section" id="el-espinor-de-dirac">
+<h4>El espinor de Dirac<a class="headerlink" href="#el-espinor-de-dirac" title="Permalink to this heading">#</a></h4>
+<p>La función de onda, solución de la ecuación de Dirac, <span class="math notranslate nohighlight">\(\Psi\)</span>, es un <strong>cuadri-spinor de Dirac</strong>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi = \begin{pmatrix} \psi_1 \\ \psi_2 \\ \psi_3 \\ \psi_4\end{pmatrix},
+\end{split}\]</div>
+<p>que tiene cuatro componentes, <span class="math notranslate nohighlight">\(\psi_i\)</span> con <span class="math notranslate nohighlight">\(i=1, 4\)</span>, complejas en forma vector columna.</p>
+</div>
+</div>
+<div class="section" id="representacion-covariante-de-la-ecuacion-de-dirac">
+<h3>Representación covariante de la ecuación de Dirac<a class="headerlink" href="#representacion-covariante-de-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
+<p>La representación más común de la ecuación de Dirac es la covariante.</p>
+<p>Introducimos primero las  <strong>matrices-<span class="math notranslate nohighlight">\(\gamma\)</span></strong> que se definen como:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^0 = \beta, \;\; \gamma^1 = \beta \alpha_1, \; \gamma^2 = \beta \alpha_2, \;\; \gamma^3 = \beta \alpha_3
+\]</div>
+<p>y la <strong>derivada covariante</strong>:</p>
+<div class="math notranslate nohighlight">
+\[\partial_\mu = \left( \frac{\partial}{\partial t}, \frac{\partial}{\partial x},  
+                \frac{\partial}{\partial y}, \frac{\partial}{\partial z}  \right),\]</div>
+<p>La ecuación de Dirac se escribe de forma <strong>covariante</strong> como:</p>
+<div class="math notranslate nohighlight">
+\[
+(i \gamma^\mu \partial_\mu  - m) \, \Psi = 0.
+\]</div>
+<div class="section" id="las-matrices-gamma">
+<h4>Las matrices <span class="math notranslate nohighlight">\(\gamma\)</span><a class="headerlink" href="#las-matrices-gamma" title="Permalink to this heading">#</a></h4>
+<p>Las matrices-<span class="math notranslate nohighlight">\(\gamma\)</span> cumplen:
+$<span class="math notranslate nohighlight">\(
+(\gamma^0)^2 = I, \; (\gamma^k)^2 = - I, \;\; \gamma^\mu \gamma^\nu = - \gamma^\nu \gamma^\mu \, (\mu \neq \nu),
+\)</span><span class="math notranslate nohighlight">\(
+con \)</span>k=1, 2, 3<span class="math notranslate nohighlight">\(, y \)</span>\mu = 0, 1, 2, 3$.</p>
+<p>De forma equivalente, cumplen las siguientes relaciones de anti-conmutación:</p>
+<div class="math notranslate nohighlight">
+\[
+\{ \gamma^\mu, \gamma^\nu \} \equiv \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 g^{\mu\nu}
+\]</div>
+<p>La matrix <span class="math notranslate nohighlight">\(\gamma^0\)</span> es hermítica y las <span class="math notranslate nohighlight">\(\gamma^k\)</span>, con <span class="math notranslate nohighlight">\(k=1, 2, 3\)</span>, anti-hermíticas:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^{0\dagger} = \gamma^0, \;\; \gamma^{k \dagger} = - \gamma^{k}
+\]</div>
+</div>
+<div class="section" id="matrix-gamma-5">
+<h4>Matrix <span class="math notranslate nohighlight">\(\gamma^5\)</span><a class="headerlink" href="#matrix-gamma-5" title="Permalink to this heading">#</a></h4>
+<p>Definimos la matrix <span class="math notranslate nohighlight">\(\gamma^5\)</span> a partir del producto de las otras matrices gamma:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^5 \equiv i \gamma^0 \gamma^1 \gamma^2 \gamma^3,
+\]</div>
+<p>La matriz <span class="math notranslate nohighlight">\(\gamma^5\)</span> juega un papel fundamental en la interacciones débiles.</p>
+<p>Tiene las siguientes propiedades:</p>
+<div class="math notranslate nohighlight">
+\[
+(\gamma^5)^2 = I, \;\; \gamma^{5\dagger} = \gamma^5, \;\; \gamma^5\gamma^\mu = - \gamma^\mu \gamma^5
+\]</div>
+<p>En la representación de Pauli-Dirac, la matrices <span class="math notranslate nohighlight">\(\gamma\)</span> son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 = \begin{pmatrix} I &amp; 0 \\ 0 &amp; -I \end{pmatrix}, \;\;
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma_k \\ -\sigma_k &amp; 0 \end{pmatrix}, \;\;
+\gamma^5 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix},
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(I\)</span> es la matriz identidad <span class="math notranslate nohighlight">\(2\times2\)</span>.</p>
+</div>
+<div class="section" id="el-espinor-de-dirac-adjunto">
+<h4>El espinor de Dirac adjunto<a class="headerlink" href="#el-espinor-de-dirac-adjunto" title="Permalink to this heading">#</a></h4>
+<p>Es conveniente también definir el <strong>spinor adjunto</strong> como:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi} = \Psi^\dagger \gamma^0
+\]</div>
+<p>En la representación de Pauli-Dirac:
+$<span class="math notranslate nohighlight">\(\bar{\Psi} = (\psi^*_1, \psi^*_2, -\psi^*_3, -\psi^*_4),\)</span>$
+que tiene forma de vector fila.</p>
+</div>
+<div class="section" id="densidad-y-corriente-de-probabilidad">
+<h4>Densidad y corriente de probabilidad<a class="headerlink" href="#densidad-y-corriente-de-probabilidad" title="Permalink to this heading">#</a></h4>
+<p>La densidad, <span class="math notranslate nohighlight">\(\rho\)</span>, y la corriente, <span class="math notranslate nohighlight">\(j^k\)</span>  con <span class="math notranslate nohighlight">\(k=1, 2, 3\)</span>, de probabilidad del spinor de Dirac son:</p>
+<div class="math notranslate nohighlight">
+\[
+\rho = \Psi^\dagger \Psi = |\psi_1|^2 + |\psi_2|^2 + |\psi_3|^2 + |\psi_4|^2, \;\; j^k  = \Psi^\dagger \alpha_k \Psi
+\]</div>
+<p>que cumplen:
+$<span class="math notranslate nohighlight">\(
+\frac{\partial \rho}{\partial t} + \nabla \cdot {\bf j} = 0.
+\)</span>$</p>
+<p>Podemos introducir el cuadrivector corriente de probabilidad:</p>
+<div class="math notranslate nohighlight">
+\[
+j^\mu = \Psi^\dagger \gamma^0 \gamma^\mu \Psi = \bar{\Psi} \gamma^\mu \Psi,
+\]</div>
+<p>Y la conservación de probabilidad puede expresarse:</p>
+<div class="math notranslate nohighlight">
+\[
+\partial_\mu j^\mu = 0
+\]</div>
+</div>
+</div>
+<div class="section" id="spin-en-la-ecuacion-de-dirac">
+<h3>Spin en la ecuación de Dirac<a class="headerlink" href="#spin-en-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
+<p>En mecánica cuántica la evolución temporal de un observable, O, con operador, <span class="math notranslate nohighlight">\(\hat O\)</span>, y hamiltoniano <span class="math notranslate nohighlight">\(\hat H\)</span>, viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d O}{dt} = i \langle | \Psi | [\hat H, \hat O] | \Psi \rangle \]</div>
+<p>En el caso del operador momento angular: <span class="math notranslate nohighlight">\({\bf \hat L} = {\bf \hat r} \times {\bf \hat p}\)</span>, y el hamiltoniano de Dirac: <span class="math notranslate nohighlight">\(\hat H = {\bf \alpha } \cdot {\bf \hat p} + \beta m\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[[\hat H, {\bf \hat L}] = - i {\bf \alpha} \times {\bf \hat p}\]</div>
+<p>No se conserva en el tiempo.</p>
+<p>(Para los detalles del cálculo ver [MT4.4])</p>
+<p>Pero si consideramos el operador spín, <span class="math notranslate nohighlight">\({\bf \hat S}\)</span>, definido por:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+{\bf \hat S } = \frac{1}{2} {\bf \hat \Sigma} = 
+\frac{1}{2} \begin{pmatrix} {\bf \sigma} &amp; 0 \\ 0 &amp; {\bf \sigma} \end{pmatrix} 
+\end{split}\]</div>
+<p>obtenemos que:</p>
+<div class="math notranslate nohighlight">
+\[
+[\hat H, {\bf \hat S}] = i {\bf \alpha} \times {\bf \hat p}
+\]</div>
+<p>Luego el momento angular total: <span class="math notranslate nohighlight">\({\bf \hat J} = {\bf \hat L} + {\bf \hat S}\)</span>, se conserva.</p>
+<p>Podemos interpretar <span class="math notranslate nohighlight">\({\bf \hat S}\)</span> como un momento angular intrínsico, el spín, de la partícula.</p>
+<p><span class="math notranslate nohighlight">\({\bf \hat S}\)</span> tiene las mismas relaciones de conmutación que <span class="math notranslate nohighlight">\({\bf \hat L}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+[\hat S_x, \hat S_y] = i \hat S_z, \;\; 
+[\hat S_y, \hat S_z] = i \hat S_z, \;\,
+[\hat S_z, \hat S_x] = i \hat S_y, \\
+[\hat S^2, \hat S_y] =  [\hat S^2, \hat S_z] = [\hat S^2, \hat S_x] = 0. 
+\end{split}\]</div>
+</div>
+</div>
+<div class="section" id="soluciones-de-la-ecuacion-de-dirac">
+<h2>Soluciones de la ecuación de Dirac<a class="headerlink" href="#soluciones-de-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
+<p>Vamos a obtener la soluciones de la ecuación de Dirac a partir de las funciones de la onda plana de una partícula libre:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi = u(E, {\bf p}) \, e^{i ({\bf p} \cdot {\bf x} - E t)}
+\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(u(E,{\bf p})\)</span> es un espinor de Dirac que no depende ahora de <span class="math notranslate nohighlight">\({\bf x}, t\)</span>.</p>
+<p>Al aplicar la ecuación de Dirac obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+(i\gamma^\mu \partial_\mu - m) \, \Psi = (\gamma^0 E - \gamma^1 p_1 -\gamma^2 p_2 - \gamma^3 p_3) \, u(E, {\bf p}) \, e^{i({\bf p \cdot x} - E t)}
+\]</div>
+<p>luego <span class="math notranslate nohighlight">\(u(E, {\bf p})\)</span> debe cumplir la ecuación:</p>
+<div class="math notranslate nohighlight">
+\[
+(\gamma^\mu p_\mu - m) \, u(E, {\bf p}) = 0,
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(p_\mu = (E, -p_x, -p_y, -p_z)\)</span> es el cuadrimomento <em>covariante</em>.</p>
+<p>Notar que ecuación ahora no contiene derivadas.</p>
+<div class="section" id="soluciones-de-la-particula-en-reposo">
+<h3>Soluciones de la partícula en reposo<a class="headerlink" href="#soluciones-de-la-particula-en-reposo" title="Permalink to this heading">#</a></h3>
+<p>Para una partícula en reposo <span class="math notranslate nohighlight">\({\bf p} = {\bf 0}\)</span>, la onda de la partícula libre es: <span class="math notranslate nohighlight">\(\Psi = u(E, {\bf 0})\,e^{-iEt}\)</span> y la ecuación para el espinor <span class="math notranslate nohighlight">\(u(E, {\bf 0})\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\left(E \gamma^0 - m  \right) \, u = 0
+\]</div>
+<p>En la representación de Pauli-Dirac, hay cuatro soluciones:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_1 = N \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} \;
+u_2 = N \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} \;
+u_3 = N \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} \;
+u_4 = N \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix} . 
+\end{split}\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(N\)</span> es un factor de normalización.</p>
+<p>La ecuación de Dirac, <span class="math notranslate nohighlight">\((E\gamma^0 - m) \, u_i\)</span>, aplicada a:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(u_1, u_2\)</span> queda, <span class="math notranslate nohighlight">\(E - m = 0\)</span>. Esto es, <span class="math notranslate nohighlight">\(u_1, u_2\)</span> tienen energía positiva, <span class="math notranslate nohighlight">\(E = m\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(u_3, u_4\)</span> queda <span class="math notranslate nohighlight">\(-E -m = 0\)</span>. Esto es <span class="math notranslate nohighlight">\(u_3, u_4\)</span> tiene energía negativa, <span class="math notranslate nohighlight">\(E = -m\)</span>.</p></li>
+</ul>
+<p>Respecto al spín <span class="math notranslate nohighlight">\({\hat S_z}\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(u_1, u_3\)</span> tiene spín <span class="math notranslate nohighlight">\(1/2\)</span>, arriba.</p></li>
+<li><p><span class="math notranslate nohighlight">\(u_2, u_4\)</span> tiene spin <span class="math notranslate nohighlight">\(-1/2\)</span>, abajo.</p></li>
+</ul>
+<p>Asociamos estas soluciones de energía positiva con una partícula de spín <span class="math notranslate nohighlight">\(1/2\)</span>, un <strong>fermión</strong>, y las soluciones de energía negativa con una antipartícula de spín <span class="math notranslate nohighlight">\(1/2\)</span>, <strong>antifermión</strong>.</p>
+<div class="section" id="cual-es-el-significado-de-la-solucion-de-energia-negativa">
+<h4>¿Cuál es el significado de la solución de energía negativa?<a class="headerlink" href="#cual-es-el-significado-de-la-solucion-de-energia-negativa" title="Permalink to this heading">#</a></h4>
+<p>Dirac propuso la teoría del «mar de Dirac». El <em>vacío</em> estaba lleno con todos los estados de energía negativos ocupados. Un fotón con <span class="math notranslate nohighlight">\(E &gt; 2 m_e c^2\)</span> podía hacer saltar un electrón del vacío a la zona de energía positiva produciendo un electrón y un hueco en el mar que se interpreta como el positrón.</p>
+<p>Feynman y Stückelberg propusieron que las soluciones de energía negativa eran en realidad partículas que se propagaban hacía atrás en el tiempo o equivalente antipartículas con cargas opuestas que se propagan hacia delante en el tiempo con energía positiva.</p>
+<p>Experimentalmente las antipartículas se comportan como las partículas solo que tienen sus cargas opuestas.</p>
+<p>En la interpretación de Feynman-Stückerlberg <span class="math notranslate nohighlight">\(t \to -t\)</span>, lo que cambia el momento <span class="math notranslate nohighlight">\({\bf p} \to -{\bf p}\)</span>.</p>
+<p>Las funciones de ondas de las partículas, <span class="math notranslate nohighlight">\(\Psi\)</span>, son:
+$<span class="math notranslate nohighlight">\(
+\Psi = u(E, {\bf p}) \, e^{+i({\bf p \cdot x} - Et)},
+\)</span>$</p>
+<p>y las de las antipartículas, <span class="math notranslate nohighlight">\(\Psi^v\)</span>, quedan:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi^v = v(E, {\bf p}) \, e^{-i({\bf p \cdot x} - Et)}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(v(E, {\bf p})\)</span> es el espinor de las antipartículas.</p>
+<p>Darse cuenta del cambio de signo en el exponente en la función de ondas.</p>
+<p><em>Nota adicional</em> Veremos que en los diagramas de Feynman los anti-fermiones se dibujan con una flecha en sentido opuesto al tiempo.</p>
+</div>
+<div class="section" id="ecuacion-de-dirac-para-los-espinores-v">
+<h4>Ecuación de Dirac para los espinores <span class="math notranslate nohighlight">\(v\)</span><a class="headerlink" href="#ecuacion-de-dirac-para-los-espinores-v" title="Permalink to this heading">#</a></h4>
+<p>Si aplicamos la ecuación de Dirac sobre la función de onda de las antipartículas, <span class="math notranslate nohighlight">\(\Psi^v\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\psi^v ({\bf x}, t) = v(E, {\bf p}) \, e^{-i ({\bf p \cdot x} - E t)}
+\]</div>
+<p>obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+(-\gamma^0E + \gamma^1p_1 + \gamma^2 p_2 + \gamma^3 p_3 -m) \, v(E, {\bf p}) = 0
+\]</div>
+<p>que reescribimos para dar la ecuación de Dirac en los espinores <span class="math notranslate nohighlight">\(v\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+(\gamma^\mu p_\mu + m) \, v(E, {\bf p}) = 0
+\]</div>
+<p>Notar que cambia de signo el término de masa.</p>
+</div>
+</div>
+<div class="section" id="soluciones-generales-de-la-particula-libre">
+<h3>Soluciones generales de la partícula libre<a class="headerlink" href="#soluciones-generales-de-la-particula-libre" title="Permalink to this heading">#</a></h3>
+<p>Vamos a calcular primero las soluciones generales de la ecuación de Dirac para los espinores <span class="math notranslate nohighlight">\(u\)</span> y <span class="math notranslate nohighlight">\(v\)</span>.</p>
+<p>En cada caso aparecen cuatro soluciones, dos con energía positiva y dos con negativa.</p>
+<p>Pero resulta más conveniente trabajar con las dos soluciones de energía positiva de <span class="math notranslate nohighlight">\(u\)</span>, las partículas, y las dos de <span class="math notranslate nohighlight">\(v\)</span>, las antipartículas.</p>
+<p>Recordemos la ecuación de Dirac para ambos es:</p>
+<div class="math notranslate nohighlight">
+\[
+(\gamma^\mu p_\mu- m) \, u = 0, \;\; (\gamma^\mu p_\mu + m) \, v = 0
+\]</div>
+<div class="section" id="los-espinores-de-las-particulas-u">
+<h4>los espinores de las partículas <span class="math notranslate nohighlight">\(u\)</span><a class="headerlink" href="#los-espinores-de-las-particulas-u" title="Permalink to this heading">#</a></h4>
+<p>La ecuación de Dirac sobre el espinor <span class="math notranslate nohighlight">\(u\)</span>, esto es <span class="math notranslate nohighlight">\((\gamma^\mu p_\mu -m ) \,u = 0\)</span>, queda:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[ \begin{pmatrix} I &amp; 0 \\ 0 &amp; - I\end{pmatrix} E - 
+        \begin{pmatrix} 0 &amp; \sigma \cdot {\bf p} \\ - \sigma \cdot {\bf p} &amp; 0 \end{pmatrix} - 
+        m \begin{pmatrix} I &amp; 0 \\ 0 &amp; I \end{pmatrix}\right] u = 0
+\end{split}\]</div>
+<p>si expresamos el spinor a partir de dos vectores columna con dos componentes cada uno, <span class="math notranslate nohighlight">\(u_A, u_B\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u = \begin{pmatrix} u_A \\ u_B \end{pmatrix}
+\end{split}\]</div>
+<p>Obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} (E-m) I &amp; - \sigma \cdot {\bf p} \\ \sigma \cdot {\bf p} &amp; - (E + m) I\end{pmatrix}  
+\begin{pmatrix} u_A \\ u_B \end{pmatrix} = 0
+\end{split}\]</div>
+<p>que se reduce a dos equaciones acopladas:
+$<span class="math notranslate nohighlight">\(
+u_A = \frac{\sigma \cdot {\bf p}}{E - m} u_B \\
+u_B = \frac{\sigma \cdot {\bf p}}{E + m} u_A \\
+\)</span>$</p>
+<p>Notar que la parte arriba está relacionada con la de abajo.</p>
+<p>Para más claridad, reescribimos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sigma \cdot {\bf p } =  \begin{pmatrix} p_z &amp; p_x -  i p_y \\ p_x +i p_y &amp; - p_z  \end{pmatrix}  
+\end{split}\]</div>
+<p>Si consideramos estas cuatro posibilidades para las componentes <span class="math notranslate nohighlight">\(u_A, u_B\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u^1_A = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \;\; 
+u^2_A = \begin{pmatrix} 0 \\ 1 \end{pmatrix}, \;\;
+u^3_B = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \; 
+u^4_B = \begin{pmatrix} 0 \\ 1 \end{pmatrix} 
+\end{split}\]</div>
+<p>Obtenemos las cuatro soluciones:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_1 = N \begin{pmatrix} 1 \\ 0 \\ \frac{p_z}{E+m} \\ \frac{p_x+ip_y}{E+m} \end{pmatrix}, \;\;
+u_2 = N \begin{pmatrix} 0 \\ 1 \\ \frac{p_x-ip_y}{E+m} \\ \frac{-p_z}{E+m} \end{pmatrix}, \;\;
+u_3 = N \begin{pmatrix} \frac{p_z}{E-m} \\ \frac{p_x+ip_y}{E-m} \\ 1 \\ 0 \end{pmatrix}, \;\;
+u_4 = N \begin{pmatrix} \frac{p_x-ip_y}{E-m} \\ \frac{-p_z}{E-m} \\ 0 \\ 1 \end{pmatrix}. 
+\end{split}\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(N\)</span> son factores de normalización.</p>
+<p>Que en el límite <span class="math notranslate nohighlight">\({\bf p} = {\bf 0}\)</span>, se reducen a los casos con energía positiva y negativa.</p>
+<p><span class="math notranslate nohighlight">\(u_1, u_2\)</span> están asociados a las partículas de energía positiva: <span class="math notranslate nohighlight">\(E = + \sqrt{p^2 + m^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(u_3, u_4\)</span> están asociados a la partículas de energía negativa: <span class="math notranslate nohighlight">\(E = - \sqrt{p^2 + m^2}\)</span></p>
+</div>
+<div class="section" id="espinores-de-las-antiparticulas-v">
+<h4>espinores de las antipartículas <span class="math notranslate nohighlight">\(v\)</span><a class="headerlink" href="#espinores-de-las-antiparticulas-v" title="Permalink to this heading">#</a></h4>
+<p>De marera similar, la ecuación para los spinores <span class="math notranslate nohighlight">\(v\)</span></p>
+<div class="math notranslate nohighlight">
+\[ 
+\left(\gamma^\mu p_\mu + m \right) v = 0
+\]</div>
+<p>Si consideramos un espinor como dos vectores columna, arriba y abajo, <span class="math notranslate nohighlight">\(v_A, v_B\)</span>, con dos componentes cada uno:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v = \begin{pmatrix} v_A \\ v_B\end{pmatrix}
+\end{split}\]</div>
+<p>Obtenemos de nuevos dos ecuaciones acopladas:</p>
+<div class="math notranslate nohighlight">
+\[
+v_A = \frac{{\bf \sigma} \cdot {\bf p}}{E + m} v_B, \;\; v_B = \frac{{\bf \sigma} \cdot {\bf p}}{E - m} v_A,
+\]</div>
+<p>Que da lugar a a cuatro soluciones para <span class="math notranslate nohighlight">\(v\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_1 = N \begin{pmatrix} \frac{p_x - ip_y}{E+m} \\ \frac{-p_z}{E+m} \\ 0 \\ 1 \end{pmatrix}, \;\;
+v_2 = N \begin{pmatrix} \frac{p_z}{E+m} \\ \frac{p_x + ip_y}{E+m} \\ 1 \\ 0 \end{pmatrix}, \;\;
+v_3 = N \begin{pmatrix} 1 \\ 0 \\ \frac{p_z}{E-m} \\ \frac{p_x + ip_y}{E-m}  \end{pmatrix}, \;\;
+v_4 = N \begin{pmatrix} 0 \\ 1 \\ \frac{p_x - ip_y}{E-m} \\ \frac{-p_z}{E-m} \end{pmatrix}, \;\;
+\end{split}\]</div>
+<p>Los espinores <span class="math notranslate nohighlight">\(v_1, v_2\)</span> tienen ahora energía positiva, <span class="math notranslate nohighlight">\(E = \sqrt{{\bf p}^2 + m^2}\)</span></p>
+<p>Los espinores <span class="math notranslate nohighlight">\(v_3, v_4\)</span> tienen ahora energía negativa, <span class="math notranslate nohighlight">\(E = - \sqrt{{\bf p}^2 + m^2}\)</span></p>
+</div>
+<div class="section" id="los-espinores-u-de-las-particulas-y-v-de-las-antiparticulas">
+<h4>Los espinores <span class="math notranslate nohighlight">\(u\)</span> de las partículas y <span class="math notranslate nohighlight">\(v\)</span> de las antipartículas<a class="headerlink" href="#los-espinores-u-de-las-particulas-y-v-de-las-antiparticulas" title="Permalink to this heading">#</a></h4>
+<p>Resulta conviente utilizar los espinores <span class="math notranslate nohighlight">\(u_i\)</span> y <span class="math notranslate nohighlight">\(v_i\)</span>, con <span class="math notranslate nohighlight">\(i=1, 2\)</span>, asociados a partículas y antipartículas con energía positiva.</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi_i = u_i(E, {\bf p}) \, e^{+i({\bf p} \cdot {\bf x} - E t)}, \;\; 
+\Psi^v_i = v_i(E, {\bf p}) \, e^{-i({\bf p} \cdot {\bf x} - E t)},
+\]</div>
+<p>donde:
+$<span class="math notranslate nohighlight">\(
+u_1 = N \begin{pmatrix} 1 \\ 0 \\ \frac{p_z}{E+m} \\ \frac{p_x+ip_y}{E+m} \end{pmatrix}, \;
+u_2 = N \begin{pmatrix} 0 \\ 1 \\ \frac{p_x-ip_y}{E+m} \\ \frac{-p_z}{E+m} \end{pmatrix}, \;
+v_1 = N \begin{pmatrix} \frac{p_x-ip_y}{E+m} \\ \frac{-p_z}{E+m} \\ 0 \\ 1 \end{pmatrix}, \;
+v_2 = N \begin{pmatrix} \frac{p_z}{E+m} \\ \frac{p_x + ip_y}{E+m} \\ 1 \\ 0 \end{pmatrix}. 
+\)</span>$</p>
+</div>
+</div>
+<div class="section" id="operadores-sobre-los-spinores-de-anti-particulas">
+<h3>Operadores sobre los spinores de anti-partículas<a class="headerlink" href="#operadores-sobre-los-spinores-de-anti-particulas" title="Permalink to this heading">#</a></h3>
+<p>Los operadores <span class="math notranslate nohighlight">\({\hat H} = i \frac{\partial}{\partial t}, \; {\hat {\bf p}} = - i \nabla\)</span>. Al aplicarlos sobre las soluciones de las anti-partículas nos dan:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{H} \, \Psi^v = - E \, \Psi^v, \;\; {\bf \hat p} \, \Psi^v = - {\bf p} \, \Psi^v,
+\]</div>
+<p>que son las soluciones de energía negativa yendo hacia atrás en el tiempo.</p>
+<p>A los operadores de las antipartículas afectados por la interpretación de Feynman-Stückelber los denotaremos con <span class="math notranslate nohighlight">\(\hat{O}^v\)</span>.</p>
+<p>Estos operadores, para que den las cantidades <em>física</em> adecuadas, son:</p>
+<div class="math notranslate nohighlight">
+\[
+{\hat H}^v = - i \frac{\partial}{\partial t}, \;\;\;
+{\hat {\bf p}}^v = i \nabla, \;\;\; {\hat S}_z^v = - {\hat S}_z
+\]</div>
+</div>
+<div class="section" id="conjungacion-de-carga">
+<h3>Conjungación de carga<a class="headerlink" href="#conjungacion-de-carga" title="Permalink to this heading">#</a></h3>
+<p>La conjungación de carga cambia partículas por antipartículas.</p>
+<p>El <strong>operador cojungación de carga</strong> viene dado por:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi' = \hat{C} \, \Psi = i \gamma^2 \Psi^*
+\]</div>
+<p>Este operador cambia <span class="math notranslate nohighlight">\(\Psi_1 = u_1 \, e^{+i({\bf p \cdot x} - Et)}\)</span>  en <span class="math notranslate nohighlight">\(\Psi^v_1 = v_1 \, e^{-i({\bf p \cdot x} - Et)}\)</span></p>
+<p>Veámoslo:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi' = \hat{C} \, \Psi_1 = i \gamma^2 \left[u_i e^{+i ({\bf p} \cdot {\bf x} - Et)} \, \right]^* = i \gamma^2 u^*_1 \, e^{-i ({\bf p} \cdot {\bf x} - Et)} 
+\]</div>
+<p>Queda comprobar que <span class="math notranslate nohighlight">\(i\gamma^2 u^*_1 = v_1\)</span></p>
+<p>En la representación de Pauli-Dirac:
+$$
+i \gamma^2 u^*_1 =
+i</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6fadbbee-d985-4907-801d-2254e99dd5ac">
+<span class="eqno">()<a class="headerlink" href="#equation-6fadbbee-d985-4907-801d-2254e99dd5ac" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; -i  \\ 0 &amp; 0 &amp; i &amp; 0 \\ 
+                0 &amp; i &amp; 0 &amp; 0   \\ -i &amp; 0 &amp; 0 &amp; 0  \end{pmatrix}\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-eb578a0f-bb4d-45cc-af3b-298ab04ae353">
+<span class="eqno">()<a class="headerlink" href="#equation-eb578a0f-bb4d-45cc-af3b-298ab04ae353" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} 1 \\ 0 \\ \frac{p_z}{E+m} \\ \frac{p_x - i p_y}{E+m}\end{pmatrix}\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-b943c4bd-ef78-4982-98cc-e21d07dbaa4f">
+<span class="eqno">()<a class="headerlink" href="#equation-b943c4bd-ef78-4982-98cc-e21d07dbaa4f" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} \frac{p_x - ip_y}{E+m} \\ \frac{-p_z}{E+m} \\ 0 \\ 1 \end{pmatrix}\]</div>
+<div class="math notranslate nohighlight">
+\[Verificamos que no la conjungación de carga no cambia el espín:
+\]</div>
+<p>\hat{S}_z , \Psi_1 = \hat{S}^v_z \Psi^v_1
+$$</p>
+<p>Se comprueba de la misma forma para <span class="math notranslate nohighlight">\(u_2, v_1, v_2\)</span>.</p>
+</div>
+<div class="section" id="paridad">
+<h3>Paridad<a class="headerlink" href="#paridad" title="Permalink to this heading">#</a></h3>
+<p>La operación de paridad, <span class="math notranslate nohighlight">\({\hat P}\)</span>, cambia <span class="math notranslate nohighlight">\({\bf x} \to -{\bf x}\)</span>. Lo que tiene como consecuencia que también cambie <span class="math notranslate nohighlight">\({\bf p} \to - {\bf p}\)</span>, pero no el momento angular.</p>
+<p>Definimos el operador paridad como:
+$<span class="math notranslate nohighlight">\(
+\hat{P} \equiv \gamma^0,
+\)</span>$</p>
+<p>De tal forma que los fermiones en reposo, tienen autovalor +1 bajo paridad y las antifermiones -1:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{P} \, u_i(m, {\bf 0}) = \gamma^0 u_i(m, {\bf 0})  = + u_i (m, {\bf 0}), \;\; \hat{P} \, v_i(m, {\bf 0}) = \gamma^0 v_i(m, {\bf 0}) = - v_i(m, {\bf 0}),
+\]</div>
+<p>con <span class="math notranslate nohighlight">\(i = 1, 2\)</span>.</p>
+<p>Si aplicamos paridad, <span class="math notranslate nohighlight">\(\hat{P}\)</span> sobre <span class="math notranslate nohighlight">\(\Psi_1\)</span></p>
+<p>El exponente de la función de ondas, <span class="math notranslate nohighlight">\(\Psi\)</span>, no cambia por paridad ya que si <span class="math notranslate nohighlight">\({\bf x \to -x}\)</span> entonces <span class="math notranslate nohighlight">\({\bf p} \to -{\bf p}\)</span>.</p>
+<p>Y al aplicar <span class="math notranslate nohighlight">\(\hat{P} \, u_1(E, {\bf p})\)</span> obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+ N \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{pmatrix} 
+\begin{pmatrix} 1 \\ 0 \\ \frac{p_x +i p_y}{E+m} \\ \frac{p_z}{E+m} \end{pmatrix} = 
+N \begin{pmatrix} 1 \\ 0 \\ \frac{-p_x - i p_y}{E+m} \\ \frac{-p_z}{E+m} \end{pmatrix} = u_1(E, - {\bf p}) 
+\end{split}\]</div>
+<p>comprobamos que en el espinor cambia <span class="math notranslate nohighlight">\({\bf p} \to - {\bf p}\)</span></p>
+<p>Se comprueba de forma simular para <span class="math notranslate nohighlight">\(u_2, v_1, v_2\)</span>.</p>
+</div>
+<div class="section" id="factor-de-normalizacion">
+<h3>Factor de normalización<a class="headerlink" href="#factor-de-normalizacion" title="Permalink to this heading">#</a></h3>
+<p>La función de ondas en la versión relativista se normaliza a <span class="math notranslate nohighlight">\(2E\)</span> partículas en una unidad de volumen <span class="math notranslate nohighlight">\(V\)</span> (ver [apéndice-fundamentos])</p>
+<p>Si normalizamos por ejemplo para <span class="math notranslate nohighlight">\(\Psi_1\)</span> obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi_1^\dagger \Psi_1 = u_1^\dagger u_1 = |N|^2 \, 
+\left(1 + \frac{p_z^2}{(E+m)^2} + \frac{p^2_x + p^2_y}{(E+m)^2} \right) = |N|^2 \frac{2E}{E+m} = 2E
+\]</div>
+<p>El factor de normalización es:
+$<span class="math notranslate nohighlight">\(
+N = \sqrt{E + m}
+\)</span>$</p>
+</div>
+</div>
+<div class="section" id="helicidad-y-quiralidad">
+<h2>Helicidad y Quiralidad<a class="headerlink" href="#helicidad-y-quiralidad" title="Permalink to this heading">#</a></h2>
+<div class="section" id="tercera-componente-de-spin">
+<h3>Tercera componente de spin<a class="headerlink" href="#tercera-componente-de-spin" title="Permalink to this heading">#</a></h3>
+<p>Los espinores, <span class="math notranslate nohighlight">\(u, v\)</span>, son autoestados del operador tercera componente de espín, <span class="math notranslate nohighlight">\({\hat S}_z\)</span>.</p>
+<p>Se comprueba fácil para el caso en reposo, <span class="math notranslate nohighlight">\(u_i(m, {\bf 0}), \, v_i(m, {\bf 0})\)</span>, con <span class="math notranslate nohighlight">\(i=1, 2\)</span>.</p>
+<p>Para las partículas en movimiento siempre podemos definar la dirección <span class="math notranslate nohighlight">\(z\)</span> como la de momento, <span class="math notranslate nohighlight">\({\bf p} = p {\hat k}\)</span>. En ese caso:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_1 = N \begin{pmatrix} 1 \\ 0 \\ \frac{p}{E+m} \\ 0 \end{pmatrix}, \;
+u_2 = N \begin{pmatrix} 0 \\ 1 \\ 0 \\ \frac{-p_z}{E+m} \end{pmatrix}, \;
+v_1 = N \begin{pmatrix} 0 \\ \frac{-p_z}{E+m} \\ 0 \\ 1 \end{pmatrix}, \;
+v_2 = N \begin{pmatrix} \frac{p_z}{E+m} \\ 0 \\ 1 \\ 0 \end{pmatrix} 
+\end{split}\]</div>
+<p>se cumple:
+$<span class="math notranslate nohighlight">\(
+\hat{S}_z \, u_i(E, p \hat{k}) = \pm \frac{1}{2} u_i(E, p \hat{k}), \;\;\;
+\hat{S}^v_z \, v_i(E, p \hat{k}) = \pm \frac{1}{2} v_i(E, p \hat{k}),
+\)</span>$</p>
+<p>Los espinores con <span class="math notranslate nohighlight">\(i=1\)</span> tiene autovalores <span class="math notranslate nohighlight">\(+1/2\)</span> (up) y los de <span class="math notranslate nohighlight">\(i=2\)</span>, <span class="math notranslate nohighlight">\(-1/2\)</span> (down) de la tercera componente de spin.</p>
+</div>
+<div class="section" id="helicidad">
+<h3>Helicidad<a class="headerlink" href="#helicidad" title="Permalink to this heading">#</a></h3>
+<p>Definimos la helicidad, <span class="math notranslate nohighlight">\(h\)</span>, como la proyección normalizada del spin sobre el momento:</p>
+<div class="math notranslate nohighlight">
+\[
+h \equiv \frac{{\bf S} \cdot {\bf p}}{p}.
+\]</div>
+<p>Para un espinor de Dirac el operador de helicidad, <span class="math notranslate nohighlight">\(\hat{h}\)</span>, en la representación Pauli-Dirac:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+{\hat h} = \frac{{\bf \Sigma} \cdot {\hat {\bf p}}}{ 2 p} = \frac{1}{2p} 
+\begin{pmatrix} {\bf \sigma} \cdot {\bf {\hat p}} &amp; 0 \\ 0 &amp; {\bf \sigma} \cdot {\bf {\hat p}} \end{pmatrix}
+\end{split}\]</div>
+<p>El operador helicidad conmuta con el hamiltoniano: <span class="math notranslate nohighlight">\([{\hat H}, {\hat h}] = 0 \)</span> y por lo tanto la helicidad se conserva.</p>
+<p>Pero no es un invariante Lorentz, para una partícula siempre podemos encontrar un sistema de referencia (con una velocidad mayor) que revierta el momento y por lo tanto la helicidad.</p>
+<p>Vamos a calcular la representación de los espinores, <span class="math notranslate nohighlight">\(u, v\)</span> que sean autoestados de helicidad.</p>
+<p>Estos espinores son de gran utilidad cuando se calculan los elementos de matriz de las desintegraciones o interacciones de partículas.</p>
+</div>
+<div class="section" id="espinores-de-helicidad">
+<h3>Espinores de helicidad<a class="headerlink" href="#espinores-de-helicidad" title="Permalink to this heading">#</a></h3>
+<p>Recordemos que la parde de arriba y abajo, <span class="math notranslate nohighlight">\(u_A, u_B\)</span>, del espinor <span class="math notranslate nohighlight">\(u = \begin{pmatrix} u_A \\ u_B \end{pmatrix}\)</span> están relacionadas:</p>
+<div class="math notranslate nohighlight">
+\[
+u_B = \frac{{\bf \sigma \cdot p}}{E+m} \, u_A
+\]</div>
+<p>Solo necesitamos calcular las componentes, <span class="math notranslate nohighlight">\(a, b\)</span>, de <span class="math notranslate nohighlight">\(u_A = \begin{pmatrix} a \\ b \end{pmatrix}\)</span></p>
+<p>Siendo <span class="math notranslate nohighlight">\(u\)</span> autoestado de helicidad</p>
+<div class="section" id="autovalores-de-helicidad">
+<h4>Autovalores de helicidad<a class="headerlink" href="#autovalores-de-helicidad" title="Permalink to this heading">#</a></h4>
+<p>la condición de autoestado de helicidad, <span class="math notranslate nohighlight">\(\hat{h}\, u = \lambda \, u\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{1}{2p} \begin{pmatrix} \sigma \cdot {\bf p} &amp; 0 \\ 0  &amp; \sigma \cdot {\bf p}\end{pmatrix} \, 
+\begin{pmatrix} u_A \\ u_B \end{pmatrix} = \lambda \, \begin{pmatrix} u_A \\ u_B \end{pmatrix},
+\end{split}\]</div>
+<p>se traduce en dos condiciones:
+$<span class="math notranslate nohighlight">\(
+(\sigma \cdot {\bf p}) \, u_A = (2p) \lambda u_A, \;\; (\sigma \cdot {\bf p}) \, u_B = (2p) \lambda u_B
+\)</span>$</p>
+<p>si multiplicamos la primera ecuación a ambos lados por <span class="math notranslate nohighlight">\((\sigma \cdot {\bf p})\)</span> y teniendo en cuenta que <span class="math notranslate nohighlight">\((\sigma \cdot {\bf p})^2 = p^2\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+p^2 u_A = (2p) \lambda (\sigma \cdot {\bf p}) u_A = 4p^2 \lambda^2 u_A 
+\]</div>
+<p>de donde obtenemos los autovalores de helicidad:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \pm \frac{1}{2}
+\]</div>
+</div>
+<div class="section" id="autoestados-de-helicidad">
+<h4>Autoestados de helicidad<a class="headerlink" href="#autoestados-de-helicidad" title="Permalink to this heading">#</a></h4>
+<p>Si expresamos el momento en coordenadas esféricas <span class="math notranslate nohighlight">\({\bf p} = p \, (\sin \theta \cos \phi, \sin \theta, \cos \theta)\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{{\bf \sigma} \cdot {\bf p}}{p} = \frac{1}{p}\begin{pmatrix} p_z &amp; p_x - ip_y \\ p_x+ip_y &amp; -p_z \end{pmatrix} = 
+\begin{pmatrix} \cos\theta &amp; \sin\theta e^{-i\phi} \\ \sin\theta e^{i\phi} &amp; -\cos\theta \end{pmatrix}
+\end{split}\]</div>
+<p>La condición de autoestado de <span class="math notranslate nohighlight">\(u_A\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \cos\theta &amp; \sin\theta e^{-i\phi} \\ \sin\theta e^{i\phi} &amp; -\cos\theta \end{pmatrix}
+\begin{pmatrix} a \\ b \end{pmatrix} = 
+2 \lambda \begin{pmatrix} a \\ b \end{pmatrix}
+\end{split}\]</div>
+<p>Las componentes <span class="math notranslate nohighlight">\(a, b\)</span> cumplen:
+$<span class="math notranslate nohighlight">\(
+\frac{b}{a} = \frac{2\lambda -\cos \theta}{\sin\theta} e^{i\phi}
+\)</span>$</p>
+<p>Para el caso de helicidad positiva <span class="math notranslate nohighlight">\(\lambda = 1/2\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{b}{a} = \frac{1 -\cos \theta}{\sin\theta} e^{i\phi} = e^{i\phi} \tan \frac{\theta}{2}
+\]</div>
+<p>De tal forma:
+$<span class="math notranslate nohighlight">\(
+u_A = \begin{pmatrix} \cos \frac{\theta}{2} \\ e^{i\phi}\sin \frac{\theta}{2}\end{pmatrix}
+\)</span>$</p>
+<p>Por la relación entre las partes <span class="math notranslate nohighlight">\(u_B\)</span> y <span class="math notranslate nohighlight">\(u_A\)</span> que impone la ecuación de Dirac, <span class="math notranslate nohighlight">\((E+m) \, u_B = ({\bf \sigma \cdot p \cdot}) \, u_A\)</span> obtenemos y por ser autoestado de helicidad, <span class="math notranslate nohighlight">\(({\bf \sigma \cdot p}) \, u_A = (2p) \lambda u_A\)</span>, obtenemos el espinor <span class="math notranslate nohighlight">\(u_+\)</span> con <span class="math notranslate nohighlight">\(\lambda = 1/2\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{+} = N \begin{pmatrix} c \\ s e^{i\theta} \\ \frac{p}{E+m} c \\ \frac{p}{E+m} s e^{i\theta} \end{pmatrix},
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(c = \cos \theta/2, s = \sin \theta/2\)</span>, y <span class="math notranslate nohighlight">\(N\)</span> el factor de normalización.</p>
+<p>que es autovector del operador helicidad, <span class="math notranslate nohighlight">\(\hat{h}\)</span> con autovalor <span class="math notranslate nohighlight">\(1/2\)</span>, helicidad positiva:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{h} \, u_+ = \frac{1}{2} \, u_+
+\]</div>
+<p>Procediendo de forma similar para el espinor <span class="math notranslate nohighlight">\(u\)</span> con <span class="math notranslate nohighlight">\(\lambda = -1/2\)</span> y para los espinores <span class="math notranslate nohighlight">\(v\)</span> con <span class="math notranslate nohighlight">\(\lambda = \pm 1/2\)</span> obtenemos los <strong>espinores de helicidad</strong>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{+} = N \begin{pmatrix} c \\ s e^{i\theta} \\ \kappa c \\ \kappa s e^{i\theta} \end{pmatrix}, \;
+u_{-} = N \begin{pmatrix} -s \\ c e^{i\theta} \\ \kappa s \\ -\kappa c e^{i\theta}\end{pmatrix}, \;
+v_{+} = N \begin{pmatrix} \kappa s \\ -\kappa c e^{i\theta}\\ -s \\ ce^{i\theta} \end{pmatrix}, \;
+v_{-} = N \begin{pmatrix} \kappa c \\ \kappa s e^{i\theta}\\ c \\ s e^{i\theta} \end{pmatrix}. 
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\kappa = \frac{p}{E+m}, c = \cos \theta/2, s = \sin \theta/2\)</span> y <span class="math notranslate nohighlight">\(N\)</span> el factor normalización.</p>
+<p>que cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{h} \, u_\pm = \pm \frac{1}{2} \, u_\pm, \;\;\; \hat{h}^v \, v_\pm = \pm \frac{1}{2} \, v_\pm
+\]</div>
+<p>Los espinores de quiralidad se suelen representar de forma gráfica con la siguientes figuras:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_spinors_helicities.png"><img alt="../_images/dirac_spinors_helicities.png" class="align-center" src="../_images/dirac_spinors_helicities.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>spín (flecha azul) y momento (negra) de los spinores de helicidad</p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math notranslate nohighlight">\(u_\pm, v_\pm\)</span> son los espinores de las partículas y antipartículas respectivamente.</p>
+<p><span class="math notranslate nohighlight">\(u_{+}, v_{+}\)</span> son espinores de <strong>helicidad positiva</strong> (el espín tiene el mismo sentido que el momento).</p>
+<p><span class="math notranslate nohighlight">\(u_{-}, v_{-}\)</span> tienen <strong>helicidad negativa</strong> (el spín y momento tienen sentido opuesto).</p>
+<div class="section" id="caso-de-particulas-ultrarelativistas">
+<h5>Caso de partículas ultrarelativistas<a class="headerlink" href="#caso-de-particulas-ultrarelativistas" title="Permalink to this heading">#</a></h5>
+<p>Si consideramos elcaso de partículas ultrarelativistas, <span class="math notranslate nohighlight">\(E \gg m\)</span>, o sin masa <span class="math notranslate nohighlight">\(m=0\)</span>, como es el caso del neutrino, tenemos <span class="math notranslate nohighlight">\(E = p\)</span> y por lo tanto <span class="math notranslate nohighlight">\(\kappa = 1\)</span>.</p>
+<p>Los espinores de helicidad para el caso ultrarelativista son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{+} = N \begin{pmatrix} c \\ s e^{i\theta} \\ c \\  s e^{i\theta} \end{pmatrix}, \;
+u_{-} = N \begin{pmatrix} -s \\ c e^{i\theta} \\ s \\ - c e^{i\theta}\end{pmatrix}, \;
+v_{+} = N \begin{pmatrix}  s \\ -c e^{i\theta}\\ -s \\ ce^{i\theta} \end{pmatrix}, \;
+v_{-} = N \begin{pmatrix} c \\ s e^{i\theta}\\ c \\ s e^{i\theta} \end{pmatrix}. 
+\end{split}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="quiralidad">
+<h3>Quiralidad<a class="headerlink" href="#quiralidad" title="Permalink to this heading">#</a></h3>
+<p>La quiralidad juega un papel fundamental en la interacciones débiles.</p>
+<p>La quiralidad se corresponde con la matriz <span class="math notranslate nohighlight">\(\gamma^5\)</span>. Los autoestados de <span class="math notranslate nohighlight">\(\gamma^5\)</span> son autoestados de quiralidad.</p>
+<p>Recordemos que <span class="math notranslate nohighlight">\(\gamma^5\)</span> en la representación de Pauli-Dirac es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^5 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix}
+\end{split}\]</div>
+<p>En esta representación, los espinores <span class="math notranslate nohighlight">\(u = \begin{pmatrix} u_A \\ u_B \end{pmatrix}\)</span> son autoestados de quiralidad si sus componentes <span class="math notranslate nohighlight">\(u_A, u_B\)</span> cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+u_B = \pm u_A
+\]</div>
+<p>Los espinores</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_R = \begin{pmatrix} u_A \\ u_A \end{pmatrix}, \;\;\; u_L = \begin{pmatrix} u_A \\ -u_A \end{pmatrix},
+\end{split}\]</div>
+<p>cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^5 \, u_R = + u_R; \;\;\; \gamma^5 \, u_L = - u_L
+\]</div>
+<p>Decimos que <span class="math notranslate nohighlight">\(u_R\)</span> tiene quiralidad a derechas y <span class="math notranslate nohighlight">\(u_L\)</span> a izquierdas.</p>
+<p>Para los espinores <span class="math notranslate nohighlight">\(v\)</span> de las antipartículas, la situación se invierte.</p>
+<p>Los espinores:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_R = \begin{pmatrix} -v_B \\ v_B \end{pmatrix}, \;\;\;
+v_L = \begin{pmatrix} v_B \\ v_B \end{pmatrix}
+\end{split}\]</div>
+<p>Son autoestados de quiralidad <span class="math notranslate nohighlight">\(v_R\)</span> a derechas y <span class="math notranslate nohighlight">\(v_L\)</span> a izquierdas, y cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^5 \, v_R = - v_R, \;\;\; \gamma^5 v_L = +v_L
+\]</div>
+<p>Si definimos <span class="math notranslate nohighlight">\(\gamma^{5v} = - \gamma^5\)</span>, para los espinores <span class="math notranslate nohighlight">\(v\)</span>, tenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^{5v} v_R = + v_R, \;\; \gamma^{5v} v_L = - v_L 
+\]</div>
+<div class="section" id="quiralidad-de-los-espinores-de-helicidad-de-las-particulas-ultra-relativistas">
+<h4>quiralidad de los espinores de helicidad de las partículas ultra-relativistas<a class="headerlink" href="#quiralidad-de-los-espinores-de-helicidad-de-las-particulas-ultra-relativistas" title="Permalink to this heading">#</a></h4>
+<p>Si consideramos los <strong>estados de helicidad de partículas ultra-relativistas</strong>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{+} = N \begin{pmatrix} c \\ s e^{i\theta} \\ c \\  s e^{i\theta} \end{pmatrix}, \;
+u_{-} = N \begin{pmatrix} -s \\ c e^{i\theta} \\ s \\ - c e^{i\theta}\end{pmatrix}, \;
+v_{+} = N \begin{pmatrix}  s \\ -c e^{i\theta}\\ -s \\ ce^{i\theta} \end{pmatrix}, \;
+v_{-} = N \begin{pmatrix} c \\ s e^{i\theta}\\ c \\ s e^{i\theta} \end{pmatrix}. 
+\end{split}\]</div>
+<p>observamos que <strong>son autoestados de quiralidad</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^5 \, u_+ = +u_+, \;\;\; \gamma^5 \, u_- = -u_-, \;\;\; 
+\gamma^{5} \, v_+ = -v_+, \;\;\; \gamma^{5} \, v_- = +v_-
+\]</div>
+<p>Esto es:
+$<span class="math notranslate nohighlight">\(
+u_R = u_+, \;\;\; u_L = u_-, \;\;\; v_R = v_+, \;\;\; v_L = v_-
+\)</span>$</p>
+<p><em>Cuidado</em>: ¡sólo es válido para partículas ultra-relativistas!</p>
+</div>
+<div class="section" id="proyectores-de-quiralidad">
+<h4>Proyectores de quiralidad<a class="headerlink" href="#proyectores-de-quiralidad" title="Permalink to this heading">#</a></h4>
+<p>Los proyectores de quiralidad a derechas, <span class="math notranslate nohighlight">\(P_R\)</span>, y a izquierdad, <span class="math notranslate nohighlight">\(P_L\)</span> son:</p>
+<div class="math notranslate nohighlight">
+\[
+P_R = \frac{1}{2} (I + \gamma^5), \;\;\, P_L = \frac{1}{2} (I - \gamma^5)
+\]</div>
+<p>Es fácil comprobar a partir de las proiedades de la <span class="math notranslate nohighlight">\(\gamma^5\)</span> que <span class="math notranslate nohighlight">\(P_R, \, P_L\)</span> cumplen las condiciones de proyectores:</p>
+<div class="math notranslate nohighlight">
+\[
+P_R + P_L = I, \;\; P^2_R = P_R, \;\;, P^2_L = P_L, \;\; P_L P_R = P_R P_L = 0
+\]</div>
+<p>En la representación de Pauli-Dirac son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_R = \frac{1}{2}\begin{pmatrix} I &amp; I \\ I &amp; I \end{pmatrix}, \;\;\;
+P_L = \frac{1}{2}\begin{pmatrix} I &amp; -I \\ -I &amp; I \end{pmatrix},
+\end{split}\]</div>
+<p>Los proyectores actuan sobre los espinores <span class="math notranslate nohighlight">\(u\)</span> de la siguiente forma:</p>
+<div class="math notranslate nohighlight">
+\[
+P_R \, u_R = u_R, \;\; P_R \, u_L = 0, \;\;\; P_L \, u_R = 0, \;\; P_L \, u_L = u_L.
+\]</div>
+<p>De tal forma que un espinor <span class="math notranslate nohighlight">\(u\)</span> se puede descomponer en su parte a derechas e izquierdas:</p>
+<div class="math notranslate nohighlight">
+\[
+P_R \, u = \alpha \, u_R, \;\;\; P_L \, u = \beta \, u_L, \;\;\; u = \alpha \, u_R + \beta \,u_L
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\alpha, \beta\)</span> son dos coeficientes complejos.</p>
+<p>Mientras que sobre los espinores <span class="math notranslate nohighlight">\(v\)</span>, actuan:</p>
+<div class="math notranslate nohighlight">
+\[
+P_R \, v_R = 0, \;\; P_R \, v_L = v_L, \;\;\; P_L \, v_R = v_R, \;\; P_L \, v_L = 0.
+\]</div>
+<p>Y un espinor <span class="math notranslate nohighlight">\(v\)</span> puede descomponerse en partes a izquierdas y derechas:</p>
+<div class="math notranslate nohighlight">
+\[
+P_L \, v = \alpha' \, v_R, \;\; P_R \, v = \beta' \, v_L, \;\; v = \alpha' \, v_L + \beta' \, v_R
+\]</div>
+<p>Si definimos los operadores proyección para los espinores <span class="math notranslate nohighlight">\(v\)</span> como:</p>
+<div class="math notranslate nohighlight">
+\[
+ P^{v}_R = \frac{1}{2} (1 + \gamma^{5v}), \;\; P^{v}_L = \frac{1}{2} (1 - \gamma^{5v})
+\]</div>
+<p>Recuperamos la notación simétrica:</p>
+<div class="math notranslate nohighlight">
+\[
+P^v_R \, v_R = v_R, \;\; P^v_R \, v_L = 0, \;\;\; P^v_L \, v_R = 0, \;\; P^v_L \, v_L = v_L.
+\]</div>
+<p>Resulta muy útil reconocer que las siguientes corrientes entre proyecciones de quiralidas son nulas:</p>
+<div class="math notranslate nohighlight">
+\[
+{\bar u}_L \gamma^\mu u_R = {\bar u}_R \gamma^\mu u_L = {\bar v}_L \gamma^\mu u_R = {\bar v}_R \gamma^\mu u_L = 
+{\bar v}_L \gamma^\mu v_R = {\bar v}_R \gamma^\mu v_L = 0
+\]</div>
+<p>Por ejemplo:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{u}_L \gamma^\mu u_R = u^\dagger \frac{1}{2}(1 - \gamma^5)^\dagger \gamma^0 \gamma^\mu \frac{1}{2} (1 + \gamma^5) = u^\dagger \, \gamma^0 \gamma^\mu \frac{1}{2}(1-\gamma^5) \frac{1}{2}(1+\gamma^5) u = \bar{u} \gamma^\mu P_L P_R u = 0
+\]</div>
+<p>por las propiedades de las <span class="math notranslate nohighlight">\(\gamma\)</span>’s: <span class="math notranslate nohighlight">\(\gamma^{5\dagger} = \gamma^5, \, \gamma^\mu \gamma^5 = - \gamma^\mu \gamma^5\)</span>.</p>
+<p>De las posibles corrientes fermiónicas, solo pueden ser no nulas las que tienen fermiones con la misma quiralidad en ambos lados de la corriente. Estas son:</p>
+<div class="math notranslate nohighlight">
+\[
+{\bar u}_L \gamma^\mu u_L, \;\; {\bar u}_R \gamma^\mu u_R, \;\;  {\bar v}_L \gamma^\mu u_L, \;\; {\bar v}_R \gamma^\mu v_R 
+\]</div>
+<p><em>Nota adicional</em>: En las corrientes débiles cargadas intervienen solamente, <span class="math notranslate nohighlight">\(u_L\)</span>, espinores de izquierdas de los fermiones, y <span class="math notranslate nohighlight">\(v_R\)</span>, espinores de derechas de los antifermiones.</p>
+</div>
+</div>
+<div class="section" id="relacion-entre-helicidad-y-quiralidad">
+<h3>Relación entre helicidad y quiralidad<a class="headerlink" href="#relacion-entre-helicidad-y-quiralidad" title="Permalink to this heading">#</a></h3>
+<p>Ya vimos que los espinores de helicidad para las partículas ultrarelativistas <span class="math notranslate nohighlight">\(E &gt;&gt; m\)</span> o sin masa <span class="math notranslate nohighlight">\(m = 0\)</span> eran
+también autoestados de quiralidad.</p>
+<p>Si aplicamos los proyectores de quiralidad sobre el autoestado de helicidad <span class="math notranslate nohighlight">\(u_+\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_R \, u_+ = N \frac{1}{2} (1 + \kappa) \, \begin{pmatrix} c \\ s e^{i\phi} \\ c \\ se^{i\phi} \end{pmatrix}, \;\; 
+P_L \, u_+ = N \frac{1}{2} (1 - \kappa) \, \begin{pmatrix} c \\ -s e^{i\phi} \\ -c \\ -se^{i\phi} \end{pmatrix}, 
+\end{split}\]</div>
+<p>La componente de quiralidad a izquierdas de un espinor con helicidad positiva es proporcional a:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{2} (1-\kappa)
+\]</div>
+<p>De forma similar obtendríamos la descomposición de <span class="math notranslate nohighlight">\(u_-\)</span> y <span class="math notranslate nohighlight">\(v_\pm\)</span>.</p>
+<p>Luego sólo cuando <span class="math notranslate nohighlight">\(\kappa = 1\)</span>, la autoestados de quiralidad y helicidad coinciden, esto es solo el régimen ultrarelativista <span class="math notranslate nohighlight">\(E \gg m\)</span> o sin masa <span class="math notranslate nohighlight">\(m=0\)</span>.</p>
+</div>
+<div class="section" id="paridad-y-conjugacion-de-carga-en-espinores-de-quiralidad">
+<h3>Paridad y conjugación de carga en espinores de quiralidad<a class="headerlink" href="#paridad-y-conjugacion-de-carga-en-espinores-de-quiralidad" title="Permalink to this heading">#</a></h3>
+<p>Si aplicamos el operador <strong>paridad</strong>, <span class="math notranslate nohighlight">\(\hat{P} = \gamma^0\)</span>, y los proyectores de quiralidad, <span class="math notranslate nohighlight">\(P_{R/L}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^0 \frac{1}{2} (1 \pm \gamma^5) = \frac{1}{2}(1 \mp \gamma^5) \gamma^0 
+\]</div>
+<p><strong>intercambia las componentes de izquierdas y las de derechas</strong>.</p>
+<p>Notar que si una teoría es invariante bajo paridad debe tratar por igual a las componentes de quiralidad a izquierdas que a derechas.</p>
+<p>Si aplicamos conjugación de carga, <span class="math notranslate nohighlight">\(\hat{C} \, \Psi = i \gamma^2 \Psi^*\)</span>, a los proyectores de quiralidad, <span class="math notranslate nohighlight">\(P_{R/L}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+i \gamma^2 \frac{1}{2} (1 \pm \gamma^5) =  (1 \mp \gamma^5) i \gamma^2
+\]</div>
+<p>Como los proyectores de quiralidad sobre los espores <span class="math notranslate nohighlight">\(v\)</span> tienen el comportamiento complementario que sobre los <span class="math notranslate nohighlight">\(u\)</span>. Vemos que <strong>conjugación de carga no cambia la quiralidad</strong>.</p>
+</div>
+</div>
+<div class="section" id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[MT] Mark Tomson, «Modern Particle Physics», Cambridge U. press. Tema 4 y 6.4</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
