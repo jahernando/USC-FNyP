@@ -404,7 +404,7 @@ title="Print to PDF"
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#creacion-de-particulas-en-colisiones-o-en-blanco-fijo">
-       creación de partículas en colisiones o en blanco fijo
+       Creación de partículas en colisiones o en blanco fijo
       </a>
      </li>
     </ul>
@@ -708,7 +708,7 @@ title="Print to PDF"
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#creacion-de-particulas-en-colisiones-o-en-blanco-fijo">
-       creación de partículas en colisiones o en blanco fijo
+       Creación de partículas en colisiones o en blanco fijo
       </a>
      </li>
     </ul>
@@ -960,7 +960,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 20 15:19:18 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 20 16:24:53 2023
 </pre></div>
 </div>
 </div>
@@ -1000,7 +1000,7 @@ title="Print to PDF"
 <li><p>Introducción a la física teórica de partículas y los cálculos de los observables</p>
 <ul>
 <li><p>Unos apuntes mínimos de la Teoría (Cuántica de Campos) y la ecuación de Dirac</p></li>
-<li><p>La regla de oro de Fermy y los diagramas de Feynman: las corrientes, los vértices (acoplos) y los mediadores</p></li>
+<li><p>Los diagramas de Feynman: las corrientes, los vértices (acoplos) y los mediadores</p></li>
 </ul>
 </li>
 </ul>
@@ -1081,7 +1081,7 @@ E^2 = m^2 c^4 + p^2 c^2 \;\; \Rightarrow \;\; E^2 = m^2 + p^2
 </table>
 <p>La magnitud de referencia es GeV.</p>
 <p>Es útil recordar el factor de conversión: <span class="math notranslate nohighlight">\(\hbar c\)</span> = 0.197 GeV fm.</p>
-<p>Para convertir de NU a SI se añaden los factores <span class="math notranslate nohighlight">\(\hbar, c\)</span> correspondientes y para cuadrar las magnitudes.</p>
+<p>Para convertir valores de NU a SI se añaden los factores <span class="math notranslate nohighlight">\(\hbar, c\)</span> que sean necesarios.</p>
 <p><em>Cuestión</em>: expresa el radio del protón <span class="math notranslate nohighlight">\(r = 4.1\)</span> <span class="math notranslate nohighlight">\(\mathrm{GeV}^{-1}\)</span> en el S.I.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1161,16 +1161,16 @@ t' = \gamma (1 - \beta z),  \; x' = x, \; y' = y, z' = \gamma (z - \beta t)
 \end{pmatrix}
 \begin{pmatrix}t' \\ x' \\ y' \\ z' \end{pmatrix}
 \end{split}\]</div>
-<p>¡Un cambio se signo en la velocidad!</p>
+<p>¡simplmente la velocidad cambia de signo!</p>
 <div class="section" id="cuatro-vectores">
 <h5>cuatro-vectores<a class="headerlink" href="#cuatro-vectores" title="Permalink to this heading">#</a></h5>
 <p>La magnitud <span class="math notranslate nohighlight">\({\bf r}^2\)</span>, el módulo al cuadrado de un vector 3D, donde <span class="math notranslate nohighlight">\({\bf r} = (x, y, z)\)</span>, es invariante bajo rotaciones.</p>
-<p>Defininos el <strong>cuadri-vector</strong> como <span class="math notranslate nohighlight">\(x = (t, {\bf x}) = (t, x, y, z)\)</span>, y su <em>norma</em>, o producto escalar, al cuadrado, viene dada por:</p>
+<p>Defininos el <strong>cuadri-vector</strong> como <span class="math notranslate nohighlight">\(x = (t, {\bf x}) = (t, x, y, z)\)</span>, y su <em>norma</em> al cuadrado, o producto escalar, viene dada por:</p>
 <div class="math notranslate nohighlight">
 \[
-x^2 = t^2 - {\bf x}^2
+x^2 = t^2 - {\bf x}^2,
 \]</div>
-<p>es un <strong>invariante</strong> bajo transformaciones de <strong>Lorentz</strong>.</p>
+<p>que es un <strong>invariante</strong> bajo transformaciones de <strong>Lorentz</strong>.</p>
 <p>Si definimos <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> como la <strong>matriz diagonal de la métrica</strong>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1184,19 +1184,20 @@ a \, b =  g_{\nu\mu} a^\nu b^\mu  \equiv  \sum_{\mu=0}^3 \sum_{\nu = 0}^3 g_{\mu
 </div>
 <div class="section" id="cuadri-momento">
 <h5>cuadri-momento<a class="headerlink" href="#cuadri-momento" title="Permalink to this heading">#</a></h5>
-<p>Si consideramos una partícula de masa <span class="math notranslate nohighlight">\(m\)</span>, que para un observador se mueve a velocidad <span class="math notranslate nohighlight">\(\beta\)</span> (en <span class="math notranslate nohighlight">\(z\)</span>). La partícula tiene energía <span class="math notranslate nohighlight">\(E\)</span> y momento <span class="math notranslate nohighlight">\({\bf p}\)</span>, y cumple la ecuación de Einstein (en UN):</p>
+<p>Si consideramos una partícula de masa <span class="math notranslate nohighlight">\(m\)</span>, que para un observador se mueve a velocidad <span class="math notranslate nohighlight">\(\beta\)</span> (en <span class="math notranslate nohighlight">\(z\)</span>).</p>
+<p>La partícula tiene energía <span class="math notranslate nohighlight">\(E\)</span> y momento <span class="math notranslate nohighlight">\({\bf p}\)</span>, y cumple la ecuación de Einstein (en UN):</p>
 <div class="math notranslate nohighlight">
 \[
 E = m^2 + {\bf p}^2 \;\; \Rightarrow \;\; m^2 = E^2 - {\bf p}^2
 \]</div>
 <p>que es válida en todos los sistemas inerciales (relacionados por transformaciones de Lorentz).</p>
-<p>Si definimos <strong>cuadrimomento</strong> de una partícula como</p>
+<p>Si definimos el <strong>cuadrimomento</strong> de una partícula como</p>
 <div class="math notranslate nohighlight">
 \[
 p \equiv (E, \, {\bf p}),
 \]</div>
 <p>El cuadrimomento <strong>es un cuadrivector</strong>.</p>
-<p>Su norma al cuadrado es un invariante Lorentz, <span class="math notranslate nohighlight">\(p^2 = E - {\bf p}^2 = m^2\)</span>, y coincide con la masa de la partícula.</p>
+<p>Su norma al cuadrado es un invariante Lorentz, <span class="math notranslate nohighlight">\(p^2 = E - {\bf p}^2 = m^2\)</span>, y coincide con la masa al cuadrado de la partícula.</p>
 <p>En el sistema donde la partícula está en reposo, <span class="math notranslate nohighlight">\(\Sigma'\)</span>, el cuadrimomento es <span class="math notranslate nohighlight">\(p' = (m, {\bf 0})\)</span>.</p>
 <p>Podemos obtener el cuadrimomento <span class="math notranslate nohighlight">\(p = (E, {\bf p})\)</span> de la partícula en el sistema del observador, <span class="math notranslate nohighlight">\(\Sigma\)</span>, para el que la partícula tiene velocidad <span class="math notranslate nohighlight">\({\beta}\)</span> (en z) aplicando la transformación de Lorentz:</p>
 <div class="math notranslate nohighlight">
@@ -1235,8 +1236,8 @@ E = m \, \gamma \;\;\; {\bf p} = m \, \gamma  \, {\vec \beta}.
 \[
 e + e^+ \to \mu + \mu^+.
 \]</div>
-<p>Un par de electrón y positrón se aniquilan y producen un par de muón y antimuón. Veremos más adelante que este proceso está mediado o por un fotón o por un bosón <span class="math notranslate nohighlight">\(Z^0\)</span>.</p>
-<p>La energía de los dos electrones necesaria para producir en el centro de masas, CM, los dos muones debe ser al menos <span class="math notranslate nohighlight">\(\sqrt{s} \ge 2 m_\mu\)</span> (ver más adelante), ¡esto es los dos muones aparecerían en reposo!.</p>
+<p>Un par electrón y positrón se aniquilan y producen un par muón y antimuón. Veremos más adelante que este proceso está mediado o por un fotón o por un bosón <span class="math notranslate nohighlight">\(Z^0\)</span>.</p>
+<p>La energía de los dos electrones necesaria para producir en el centro de masas, CM, los dos muones debe ser al menos <span class="math notranslate nohighlight">\(\sqrt{s} \ge 2 m_\mu\)</span> (ver más adelante), en este caso los dos muones aparecerían en reposo.</p>
 <p>Notar que el anti-fermión de la aniquilación (o producción de pares) es siempre la antipartícula de fermión, en este caso <span class="math notranslate nohighlight">\(e^+\)</span> es el anti-fermión de <span class="math notranslate nohighlight">\(e\)</span>, y el <span class="math notranslate nohighlight">\(\mu^+\)</span> es el anti-fermión de <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
 <p>Por lo tanto, siempre que creamos por aniquilación antimateria creamos a su vez la materia complementaria.</p>
 </div>
@@ -1244,12 +1245,12 @@ e + e^+ \to \mu + \mu^+.
 <h4>interacciones en colisión o en blanco fijo<a class="headerlink" href="#interacciones-en-colision-o-en-blanco-fijo" title="Permalink to this heading">#</a></h4>
 <p>Recordemos que existen dos tipos principales de experimentos en Física de Partículas:</p>
 <ul class="simple">
-<li><p><strong>colisionador</strong>: haces de <span class="math notranslate nohighlight">\(e, e^+, p, \bar{p}\)</span> colisionan entre sí, por ejemplo <a class="reference external" href="https://es.wikipedia.org/wiki/Large_Electron-Positron_collider">LEP</a> (<span class="math notranslate nohighlight">\(e +e^+\)</span>)</p></li>
+<li><p><strong>colisionador</strong>: haces de <span class="math notranslate nohighlight">\(e, e^+, p, \bar{p}\)</span> colisionan entre sí, por ejemplo en <a class="reference external" href="https://es.wikipedia.org/wiki/Large_Electron-Positron_collider">LEP</a> (<span class="math notranslate nohighlight">\(e +e^+\)</span>)</p></li>
 <li><p><strong>blanco fijo</strong> (<em>fixed target</em>): haces de <span class="math notranslate nohighlight">\(e, p, \mu, \nu\)</span> chocan contra un blanco (átomos, núcleos). Los experimentos de neutrinos son de blancos fijos, por ejemplo <a class="reference external" href="https://en.wikipedia.org/wiki/Gargamelle">Gargamelle</a>.</p></li>
 </ul>
 </div>
 <div class="section" id="creacion-de-particulas-en-colisiones-o-en-blanco-fijo">
-<h4>creación de partículas en colisiones o en blanco fijo<a class="headerlink" href="#creacion-de-particulas-en-colisiones-o-en-blanco-fijo" title="Permalink to this heading">#</a></h4>
+<h4>Creación de partículas en colisiones o en blanco fijo<a class="headerlink" href="#creacion-de-particulas-en-colisiones-o-en-blanco-fijo" title="Permalink to this heading">#</a></h4>
 <p>Las figuras muestran un dibujo del detector CMS (colisiones <span class="math notranslate nohighlight">\((p, p)\)</span> del LHC) y de SuperKamiokande (blanco fijo donde interaccioan neutrinos).</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1345,7 +1346,7 @@ s = 2 m_b E_a \Rightarrow \sqrt{s} \propto \sqrt{E}
 \bar{\nu}_e + p \to n + e^+
 \]</div>
 <p><em>Solución:</em></p>
-<p>El valor de <span class="math notranslate nohighlight">\(s\)</span>, es igual, calculado como el cuadrimomento total de las partículas iniciales <em>o</em> finales.</p>
+<p>El valor de <span class="math notranslate nohighlight">\(s\)</span> es igual, calculado como el cuadrimomento total de las partículas iniciales <em>o</em> finales.</p>
 <p>Para la iniciales, en el <em>sistema de laboratorio</em>, considerando la energía del neutrino <span class="math notranslate nohighlight">\(E\)</span> y su masa nula.</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1407,7 +1408,8 @@ s = (m_a, {\bf 0})^2 = m^2_a = (p_b + p_c)^2 = (E_b+E_c, {\bf 0})^2
 <p><em>Ejercicio:</em> Calcula cuánto vale <span class="math notranslate nohighlight">\(p^*\)</span> en función de <span class="math notranslate nohighlight">\(m_a, m_b, m_c\)</span>.</p>
 <div class="section" id="desintegraciones-a-varias-particulas">
 <h5>Desintegraciones a varias partículas<a class="headerlink" href="#desintegraciones-a-varias-particulas" title="Permalink to this heading">#</a></h5>
-<p>Si consideramos ahora la una partícula con masa <span class="math notranslate nohighlight">\(m_a\)</span>  se desintegra a varias, <span class="math notranslate nohighlight">\(n\)</span>, partículas, cada una con cuadrimomento <span class="math notranslate nohighlight">\(p_i\)</span> y masa <span class="math notranslate nohighlight">\(m_i\)</span>. Podemos calcular <span class="math notranslate nohighlight">\(s\)</span> inicial en el sistema donde <span class="math notranslate nohighlight">\(a\)</span> están en reposo, y <span class="math notranslate nohighlight">\(s\)</span> final en el sistema del laboratorio.</p>
+<p>Consideramos ahora una partícula con masa <span class="math notranslate nohighlight">\(m_a\)</span> que se desintegra a varias, <span class="math notranslate nohighlight">\(n\)</span>, partículas, cada una con cuadrimomento <span class="math notranslate nohighlight">\(p_i\)</span> y masa <span class="math notranslate nohighlight">\(m_i\)</span>.</p>
+<p>Calculamos <span class="math notranslate nohighlight">\(s\)</span> inicial en el sistema donde <span class="math notranslate nohighlight">\(a\)</span> están en reposo, y <span class="math notranslate nohighlight">\(s\)</span> final en el sistema del laboratorio.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 s = (m_a, {\bf 0})^2 =  m^2_a, \\
@@ -1449,7 +1451,8 @@ s = \left( \sum_{i  = 1}^n  p_i \right)^2
 \[
  \nu = \mathcal{L} \, \sigma.
 \]</div>
-<p>Como la luminosidad pueden depender del tiempo, llamamos luminosidad instantánea a <span class="math notranslate nohighlight">\(\mathcal{L}(t)\)</span>  y la integral en un tiempo <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(\int_0^T \mathcal{L}(t) \mathrm{d}t\)</span>, <strong>luminosidad integrada</strong>.</p>
+<p>La luminosidad puede depender del tiempo.</p>
+<p>Llamamos luminosidad instantánea a <span class="math notranslate nohighlight">\(\mathcal{L}(t)\)</span>  y la integral en un tiempo <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(\int_0^T \mathcal{L}(t) \mathrm{d}t\)</span>, <strong>luminosidad integrada</strong>.</p>
 <p>La luminosidad se mide en <span class="math notranslate nohighlight">\(\mathrm{cm}^{-2}\mathrm{s}^{-1}\)</span> y la luminosidad integrada en <span class="math notranslate nohighlight">\(\mathrm{cm}^{-2}\)</span>, o en <span class="math notranslate nohighlight">\(\mathrm{b}^{-1}\)</span> (generalmente en fb).</p>
 </div>
 <div class="section" id="id1">
@@ -1457,12 +1460,12 @@ s = \left( \sum_{i  = 1}^n  p_i \right)^2
 <p>Esta es una lista de algunos colisionadores:</p>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p>collider</p></th>
-<th class="text-align:center head"><p>Laboratory</p></th>
-<th class="text-align:center head"><p>Type  —-</p></th>
-<th class="text-align:center head"><p>Period</p></th>
-<th class="text-align:center head"><p>Energy, <span class="math notranslate nohighlight">\(\sqrt{s}\)</span>, (GeV)</p></th>
-<th class="text-align:center head"><p>Luminosity, <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>, (<span class="math notranslate nohighlight">\(cm^{-2}s^{-1})\)</span> —</p></th>
+<tr class="row-odd"><th class="text-align:center head"><p>collionador</p></th>
+<th class="text-align:center head"><p>laboratorio</p></th>
+<th class="text-align:center head"><p>Tipo  —-</p></th>
+<th class="text-align:center head"><p>Periodo</p></th>
+<th class="text-align:center head"><p>Energía, <span class="math notranslate nohighlight">\(\sqrt{s}\)</span>, (GeV)</p></th>
+<th class="text-align:center head"><p>Luminosidad, <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>, (<span class="math notranslate nohighlight">\(cm^{-2}s^{-1})\)</span> —</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1545,13 +1548,13 @@ s = \left( \sum_{i  = 1}^n  p_i \right)^2
 N = \frac{Z N_A}{A} M
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(M\)</span> es la masa del blanco, en g, <span class="math notranslate nohighlight">\(A\)</span> el número de masa g/mol, <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, y <span class="math notranslate nohighlight">\(Z\)</span> el número de protones en cada núcleo.</p>
-<p>Conforme el haz penetrea en el material, su flujo disminuje.</p>
+<p>Conforme el haz penetrea en el material, su intensidad disminuye.</p>
+<p>Definimos la intensidad como <span class="math notranslate nohighlight">\(I = \Phi \, S\)</span>, donde <span class="math notranslate nohighlight">\(S\)</span> es el área transversal del haz.</p>
 <p>Si la densidad de los elementos blanco es <span class="math notranslate nohighlight">\(n\)</span>, y el haz penetra normal (en la dirección <span class="math notranslate nohighlight">\(z\)</span>) con flujo inicial <span class="math notranslate nohighlight">\(\Phi\)</span> al blanco, y éste tiene una sección trasversal <span class="math notranslate nohighlight">\(S\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-\mathrm{d}I(z) =- \sigma n \Phi S \mathrm{d}z \;\;\; \Rightarrow \;\;\; I(z) = I_0 e^{-n \sigma z} = I_0 e^{-z/\lambda}
+\mathrm{d}I(z) =- \sigma n \Phi S \mathrm{d}z \;\;\; \Rightarrow \;\;\; I(z) = I_0 e^{-n \sigma z} = I_0 e^{-z/\lambda}.
 \]</div>
-<p>donde <span class="math notranslate nohighlight">\(I_0 = \Phi S\)</span>.</p>
 <p>Llamamos <strong>longitud de absorción</strong> a la cantidad <span class="math notranslate nohighlight">\(\lambda = 1/(n \sigma)\)</span>, e indica a qué distancia la intensidad del haz se ha reducido en un factor <span class="math notranslate nohighlight">\(1/e.\)</span></p>
 </div>
 </div>
@@ -1574,9 +1577,11 @@ N = \frac{Z N_A}{A} M
 <tbody>
 <tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/fun_drawing_xsection.png"><img alt="../_images/fun_drawing_xsection.png" class="align-center" src="../_images/fun_drawing_xsection.png" style="width: 400px;" /></a></p></td>
 </tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema explicativo del significado de la sección eficaz MT1</p></td>
+</tr>
 </tbody>
 </table>
-<p>La sección eficaz cuantifica como un área efectiva, <span class="math notranslate nohighlight">\(\mathrm{cm}^{-24}\)</span> o b (barn), la razón de intacciones por segundo en el caso de un experimento de blanco fijo y de un flujo, <span class="math notranslate nohighlight">\(\Phi\)</span>, sobre un blanco con <span class="math notranslate nohighlight">\(N\)</span> elementos o en el caso de un colisionador, dada una luminosidad <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> como.</p>
+<p>La sección eficaz, <span class="math notranslate nohighlight">\(\sigma\)</span>, cuantifica como un área efectiva, <span class="math notranslate nohighlight">\(\mathrm{cm}^{-24}\)</span> o b (barn), la razón de intacciones por segundo en el caso de un experimento de blanco fijo y de un flujo, <span class="math notranslate nohighlight">\(\Phi\)</span>, sobre un blanco con <span class="math notranslate nohighlight">\(N\)</span> elementos; o en el caso de un colisionador, dada una luminosidad <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> como:</p>
 <div class="math notranslate nohighlight">
 \[
 \nu = \sigma \Phi  N, \;\;\; \nu = \sigma \, \mathcal{L}
@@ -1640,7 +1645,7 @@ N = \sigma \mathcal{L}_{\mathrm{int}} \Rightarrow \sigma = \frac{N}{\mathcal{L}_
 \[
 \sigma = \frac{N}{N'} \frac{\epsilon'}{\epsilon} \sigma'
 \]</div>
-<p>En un experimento de blanco fiijo, si hemos medido <span class="math notranslate nohighlight">\(n\)</span> interacciones en un blanco de <span class="math notranslate nohighlight">\(N\)</span> elementos sobre los que incidía un flujo <span class="math notranslate nohighlight">\(\Phi\)</span> duante un tiempo <span class="math notranslate nohighlight">\(T\)</span>, la sección efizaz se estima simplemente como:</p>
+<p>En un experimento de blanco fijo, si hemos medido <span class="math notranslate nohighlight">\(n\)</span> interacciones en un blanco de <span class="math notranslate nohighlight">\(N\)</span> elementos sobre los que incidía un flujo <span class="math notranslate nohighlight">\(\Phi\)</span> duante un tiempo <span class="math notranslate nohighlight">\(T\)</span>, la sección efizaz se estima simplemente como:</p>
 <div class="math notranslate nohighlight">
 \[
 \sigma = \frac{n}{\Phi N T}
@@ -1741,14 +1746,14 @@ Gamma_hadrons 	 = 1.445398e-03 eV
 <ul class="simple">
 <li><p>Las partículas <em>estables</em>, <span class="math notranslate nohighlight">\(p, e, \nu\)</span>; o con <em>vida media «larga»</em> cargadas, <span class="math notranslate nohighlight">\(\mu, \gamma, K, \pi^\pm\)</span>, (recorren <span class="math notranslate nohighlight">\(\mathcal{O}\)</span>(m))</p>
 <ul>
-<li><p>Se detectan como <strong>trayectorias o depositos de energía</strong> en el detector.</p></li>
+<li><p>Se detectan como <strong>trayectorias o depósitos de energía</strong> en el detector.</p></li>
 <li><p>La identidad de las partículas puede determinarse por su rango de <strong>penetración, ionización, producción de luz</strong> en los materiales y por sus <strong>desintegraciones</strong>.</p></li>
 </ul>
 </li>
 <li><p>La identificación de las partículas de <em>vida media «corta»</em>, <span class="math notranslate nohighlight">\(&lt;\mathcal{O}\)</span>(ps), puede realizarse de dos formas:</p>
 <ul>
 <li><p>Si la partícula «vuela» del orden <span class="math notranslate nohighlight">\(\mathcal{O}\)</span>(cm), podemos determinar su <strong>vértices de desintegración</strong> con detectores precisos de trazas (ie. <span class="math notranslate nohighlight">\(\tau\)</span>).</p></li>
-<li><p>Si la partícula tiene un tiempo de vida media extremadamente pequeño, se desintengra en su lugar de producción, podemos observarla como una <strong>resonancia</strong> en el espectro de energías de la producción o mediante la <strong>masa invariante</strong> de las partículas producidas en su desintegración.</p></li>
+<li><p>Si la partícula tiene un tiempo de vida media extremadamente pequeño, se desintegra en su lugar de producción, y podemos observarla como una <strong>resonancia</strong> en el espectro de energías de la producción o mediante la <strong>masa invariante</strong> de las partículas producidas en su desintegración.</p></li>
 </ul>
 </li>
 </ul>
@@ -1957,7 +1962,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 \sigma_\gamma \simeq \frac{7}{9} \frac{1}{n X_0},
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(n\)</span> es la densidad de núcleos.</p>
-<p>La cantidad <span class="math notranslate nohighlight">\(\lambda = 1/(n \sigma_\gamma)\)</span> es el <strong>camino libre medio</strong>, que vale <span class="math notranslate nohighlight">\(\lambda \simeq 7/9 X_0\)</span> y que nos indica la cantidad de fotones que se pierden en un haz monoenergético de intensidad <span class="math notranslate nohighlight">\(I\)</span>:</p>
+<p>La cantidad <span class="math notranslate nohighlight">\(\lambda = 1/(n \sigma_\gamma)\)</span> es el <strong>camino libre medio</strong>, que vale <span class="math notranslate nohighlight">\(\lambda \simeq 7/9 X_0\)</span>. Nos indica la distancia a la que el número de fotones, o la intensidad del haz, se reduce en <span class="math notranslate nohighlight">\(1/e\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{\mathrm{d}I}{\mathrm{dx}} = - \frac{I}{\lambda}, \;\; I(x) = I_0 e^{-x/\lambda}
@@ -1983,7 +1988,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </tr>
 </tbody>
 </table>
-<p>Los <strong>calorímetros electromagnéticos</strong> tienen una estructura alternada de material pasivo (por ejemplo Pb, alto <span class="math notranslate nohighlight">\(Z\)</span>, alto <span class="math notranslate nohighlight">\(X_0\)</span>), donde se desarrollan las cascadas, y  material activo, donde se detecteca la ionización (i.e centelleadores).</p>
+<p>Los <strong>calorímetros electromagnéticos</strong> tienen una estructura alternada de material pasivo (por ejemplo Pb, alto <span class="math notranslate nohighlight">\(Z\)</span>, bajo <span class="math notranslate nohighlight">\(X_0\)</span>), donde se desarrollan las cascadas, y  material activo, donde se detecteca la ionización (i.e centelleadores) con alto <span class="math notranslate nohighlight">\(X_0\)</span>.</p>
 <p>La energía depositada es proporcional a la energía incidente del <span class="math notranslate nohighlight">\(e\)</span> o <span class="math notranslate nohighlight">\(\gamma\)</span> y la resolución en energía, <span class="math notranslate nohighlight">\(\sigma_E\)</span>, está limitada por las fluctuaciones en la producción de las partículas (que es proporcional a <span class="math notranslate nohighlight">\(\sqrt{E}\)</span>) en la cascada):</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1995,7 +2000,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </div>
 <div class="section" id="pmt">
 <h3>PMT<a class="headerlink" href="#pmt" title="Permalink to this heading">#</a></h3>
-<p>Los photomultiplicadores son sensores que detectan fotones via efecto foto-electrico, arrancan un electrón de la primera capa del sensor y esté genera un avalancha en las siguientes capas.</p>
+<p>Los photomultiplicadores son sensores que detectan fotones via el efecto foto-electrico, arrancan un electrón de la primera capa del sensor (dínodo) y esté genera un avalancha en las siguientes capas.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -2035,7 +2040,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <div class="section" id="experimentos-de-blanco-fijo-o-hacia-delante">
 <h4>Experimentos de blanco fijo o hacia delante<a class="headerlink" href="#experimentos-de-blanco-fijo-o-hacia-delante" title="Permalink to this heading">#</a></h4>
 <p>Solo tiene instrumentalizados un brazo de la interacción.</p>
-<p>Están constituidos en general por la zona de interacción, de detectores de vértices, seguidos de trazas (en un campo magnético), por los calorímetros electromagnético, hadrónico y finalmente por detectores de muones.</p>
+<p>Están constituidos en general por la zona de interacción, de detectores de vértices, seguidos de trazas (en un campo magnético, dipolar), por los calorímetros electromagnético, hadrónico y finalmente por detectores de muones.</p>
 <p>Es el caso de detector LHCb en el LHC.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -2159,7 +2164,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </table>
 <p>Se obtienen de golpear un haz primario (principalmente <span class="math notranslate nohighlight">\(p\)</span>) contra un blanco.</p>
 <p>Se seleccionan los partículas de interés mediante un conjunto de imanes tuneados para permitir el paso de partículas con una carga y un momento determinados.</p>
-<p>Por ejemplo, los <span class="math notranslate nohighlight">\(\pi^\pm\)</span> se desintegraran a un haz e muones <span class="math notranslate nohighlight">\(\mu^\pm\)</span> y netrinos <span class="math notranslate nohighlight">\(\bar{\nu}_\mu, \nu_\mu\)</span>.</p>
+<p>Por ejemplo, los <span class="math notranslate nohighlight">\(\pi^\pm\)</span> se desintegraran a un haz e muones <span class="math notranslate nohighlight">\(\mu^\pm\)</span> y neutrinos <span class="math notranslate nohighlight">\(\bar{\nu}_\mu, \nu_\mu\)</span>.</p>
 </div>
 </div>
 </div>
@@ -2228,7 +2233,7 @@ a^{\dagger}_{p, s} \, |0 \rangle = |p, s \rangle, \;\;\; \{a^{\dagger}_{p,s}, a^
 \{ \gamma^\mu, \gamma^\nu \} \equiv \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 g^{\mu\nu}
 \]</div>
 <p>conocida como de ágebra de Clifford.</p>
-<p>De forma equivalente, las matrices-<span class="math notranslate nohighlight">\(\gamma\)</span> cumplen:</p>
+<p>O lo que es equivalente, las matrices-<span class="math notranslate nohighlight">\(\gamma\)</span> cumplen:</p>
 <div class="math notranslate nohighlight">
 \[
 (\gamma^0)^2 = I, \; (\gamma^k)^2 = - I, \;\; \gamma^\mu \gamma^\nu = - \gamma^\nu \gamma^\mu \, (\mu \neq \nu),
