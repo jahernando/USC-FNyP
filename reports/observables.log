@@ -17,14 +17,22 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-Ejercicio
+import time
+print(' Last version ', time.asctime() )
 ------------------
 
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mNameError[0m                                 Traceback (most recent call last)
-[0;32m/var/folders/56/_pmdccc97ljb_l3v3s6gkrxm0000gn/T/ipykernel_14333/2716437163.py[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0mEjercicio[0m[0;34m[0m[0;34m[0m[0m
-[0m
-[0;31mNameError[0m: name 'Ejercicio' is not defined
-NameError: name 'Ejercicio' is not defined
+ArgumentError: Package time not found in current path:
+- Run `import Pkg; Pkg.add("time")` to install the time package.
+
+
+Stacktrace:
+ [1] require(into::Module, mod::Symbol)
+   @ Base ./loading.jl:967
+ [2] eval
+   @ ./boot.jl:373 [inlined]
+ [3] include_string(mapexpr::typeof(REPL.softscope), mod::Module, code::String, filename::String)
+   @ Base ./loading.jl:1196
+LoadError: ArgumentError: Package time not found in current path:
+- Run `import Pkg; Pkg.add("time")` to install the time package.
+
 
