@@ -1,0 +1,1804 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre los leptones &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Sobre los quarks y los hadrones" href="quarks_hadrons.html" />
+    <link rel="prev" title="Observables en Física de Partículas" href="observables.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduccion.html">
+   Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observables.html">
+   Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quarks_hadrons.html">
+   Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sm.html">
+   Sobre el Modelo Estándar
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/leptones.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/leptones.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/leptones.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objetivos">
+   Objetivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#caracteristicas-de-los-leptones">
+   Características de los leptones
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#desintegraciones">
+     Desintegraciones
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conservacion-del-numero-leptonico">
+       Conservación del número leptónico.
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descubrimientos-de-los-leptones">
+     Descubrimientos de los leptones
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#descubrimiento-del-neutrino">
+       Descubrimiento del neutrino
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#caracteristicas-de-las-interacciones-debiles">
+   Características de las interacciones débiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#universalidad-leptonica">
+     Universalidad leptónica
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#violacion-de-paridad">
+     Violación de Paridad
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Violación de paridad
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#la-corrientes-bajo-paridad">
+       La corrientes bajo paridad
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#proyeccion-de-quiralidad">
+       Proyección de quiralidad
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#proyeccion-de-los-espinores-de-helicidad">
+       Proyección de los espinores de helicidad
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicidad-del-neutrino">
+     Helicidad del neutrino
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-masa-del-neutrino">
+     La masa del neutrino
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#desintegracion-del-pion">
+     Desintegración del pión
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oscilaciones-de-neutrinos">
+   Oscilaciones de neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-puzzle-solar">
+     El puzzle solar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neutrinos-atmosfericos">
+     Neutrinos atmosféricos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#oscilaciones-en-dos-familias">
+     Oscilaciones en dos familias
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#oscilaciones-en-tres-familias">
+     Oscilaciones en tres familias
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-futuro-de-las-oscilaciones-de-neutrinos">
+     El futuro de las oscilaciones de neutrinos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bibliografia">
+     Bibliografía
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Sobre los leptones</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objetivos">
+   Objetivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#caracteristicas-de-los-leptones">
+   Características de los leptones
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#desintegraciones">
+     Desintegraciones
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conservacion-del-numero-leptonico">
+       Conservación del número leptónico.
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descubrimientos-de-los-leptones">
+     Descubrimientos de los leptones
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#descubrimiento-del-neutrino">
+       Descubrimiento del neutrino
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#caracteristicas-de-las-interacciones-debiles">
+   Características de las interacciones débiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#universalidad-leptonica">
+     Universalidad leptónica
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#violacion-de-paridad">
+     Violación de Paridad
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Violación de paridad
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#la-corrientes-bajo-paridad">
+       La corrientes bajo paridad
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#proyeccion-de-quiralidad">
+       Proyección de quiralidad
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#proyeccion-de-los-espinores-de-helicidad">
+       Proyección de los espinores de helicidad
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicidad-del-neutrino">
+     Helicidad del neutrino
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-masa-del-neutrino">
+     La masa del neutrino
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#desintegracion-del-pion">
+     Desintegración del pión
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oscilaciones-de-neutrinos">
+   Oscilaciones de neutrinos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-puzzle-solar">
+     El puzzle solar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neutrinos-atmosfericos">
+     Neutrinos atmosféricos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#oscilaciones-en-dos-familias">
+     Oscilaciones en dos familias
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#oscilaciones-en-tres-familias">
+     Oscilaciones en tres familias
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-futuro-de-las-oscilaciones-de-neutrinos">
+     El futuro de las oscilaciones de neutrinos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bibliografia">
+     Bibliografía
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="sobre-los-leptones">
+<h1>Sobre los leptones<a class="headerlink" href="#sobre-los-leptones" title="Permalink to this heading">#</a></h1>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Noviembre 2023</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 20 15:19:15 2023
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Los leptones sienten la fuerza electro-débil y se clasifican en tres familias que se comportan de forma universal.</p></li>
+<li><p>las corrientes cargadas presentan violación de carga y paridad.</p></li>
+<li><p>la violación de paridad está asociada a una propiedad que se llama quiralidad</p></li>
+<li><p>los neutrinos solo sienten la fuerza débil y oscilan entre ellos.</p></li>
+</ul>
+</div>
+<div class="section" id="caracteristicas-de-los-leptones">
+<h2>Características de los leptones<a class="headerlink" href="#caracteristicas-de-los-leptones" title="Permalink to this heading">#</a></h2>
+<p>Los leptones se presentan en tres generaciones agrupados en dupletes:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix}\nu_e \\ e \end{pmatrix}, \; \begin{pmatrix}\nu_\mu \\ \mu \end{pmatrix}, \;
+\begin{pmatrix}\nu_\tau \\ \tau \end{pmatrix}
+\end{split}\]</div>
+<p>Sus propiedades:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(e\)</span></p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(\mu\)</span></p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(\tau\)</span></p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(\nu\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>masa</p></td>
+<td class="text-align:left"><p>0.511 MeV</p></td>
+<td class="text-align:left"><p>105.7 MeV</p></td>
+<td class="text-align:left"><p>1777 MeV</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\le\)</span> 1 eV</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>carga</p></td>
+<td class="text-align:left"><p>-1</p></td>
+<td class="text-align:left"><p>-1</p></td>
+<td class="text-align:left"><p>-1</p></td>
+<td class="text-align:left"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>vida media (<span class="math notranslate nohighlight">\(\tau\)</span>)</p></td>
+<td class="text-align:left"><p>estable</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(2.197\)</span> <span class="math notranslate nohighlight">\(\mu\)</span>s</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(290.6\)</span> fs</p></td>
+<td class="text-align:left"><p>estable</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Cuestión</em>: ¿Cuál es el recorrido medio del <span class="math notranslate nohighlight">\(\mu, \, \tau\)</span> con momento <span class="math notranslate nohighlight">\(p = 10\)</span> GeV en el vacío?</p>
+<p>Aplicando la transformación de Lorentz de un tiempo propio del sistema en reposo al sistema del observador:</p>
+<div class="math notranslate nohighlight">
+\[
+d = \, \gamma \, \beta \, \tau \, c, \;\; \gamma = \frac{E}{m}, \; \beta = \frac{p}{E}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="mf">0.106</span> <span class="c1"># GeV</span>
+<span class="n">tau</span>  <span class="o">=</span> <span class="mf">2.2</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">micro</span> <span class="c1"># s</span>
+<span class="n">p</span>    <span class="o">=</span> <span class="mi">10</span> <span class="c1"># GeV</span>
+<span class="n">ene</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mass</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">p</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">gamma</span> <span class="o">=</span> <span class="n">ene</span><span class="o">/</span><span class="n">mass</span>
+<span class="n">beta</span>  <span class="o">=</span> <span class="n">p</span><span class="o">/</span><span class="n">ene</span>
+<span class="n">distance</span> <span class="o">=</span> <span class="n">gamma</span> <span class="o">*</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">tau</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; distance </span><span class="si">{:e}</span><span class="s1"> m&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">distance</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> distance 6.222108e+04 m
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="desintegraciones">
+<h3>Desintegraciones<a class="headerlink" href="#desintegraciones" title="Permalink to this heading">#</a></h3>
+<p>Los siguientes diagramas de Feynman muestran las desintegraciones de los leptones cargados:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/feynman_lepton_decays.png"><img alt="../_images/feynman_lepton_decays.png" class="align-center" src="../_images/feynman_lepton_decays.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Desintegraciones del <span class="math notranslate nohighlight">\(\mu\)</span> (arriba) y del <span class="math notranslate nohighlight">\(\tau\)</span> (abajo)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Desintegraciones principales:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:right head"><p>Fracción de desintegración</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mu  \to e + \bar{\nu_e} + \nu_\mu\)</span></p></td>
+<td class="text-align:right"><p><span class="math notranslate nohighlight">\(\sim 100\)</span> %</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau \to \mu + \bar{\nu_\mu} + \nu_\tau\)</span></p></td>
+<td class="text-align:right"><p><span class="math notranslate nohighlight">\(17.4\)</span> %</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau \to e + \bar{\nu_e} + \nu_\tau\)</span></p></td>
+<td class="text-align:right"><p><span class="math notranslate nohighlight">\(17.8\)</span> %</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau \to \mathrm{hadrons}+ \nu_\tau\)</span></p></td>
+<td class="text-align:right"><p><span class="math notranslate nohighlight">\(\sim 64\)</span> %</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="conservacion-del-numero-leptonico">
+<h4>Conservación del número leptónico.<a class="headerlink" href="#conservacion-del-numero-leptonico" title="Permalink to this heading">#</a></h4>
+<p>Experimentalmente en toda interacción se conservan en número total de leptones menos anti-leptones de la misma generación y también el total.</p>
+<p>Asignamos un número leptónico a cada generación (es negativo para las antipartículas).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(L_e\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(L_\mu\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(L_\tau\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(L\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\((e, \nu_e), \; (e^+, \bar{\nu}_e)\)</span></p></td>
+<td><p>+1, -1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>+1, -1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\((\mu, \nu_\mu), \; (\mu^+, \bar{\nu}_\mu)\)</span></p></td>
+<td><p>0</p></td>
+<td><p>+1,-1</p></td>
+<td><p>0</p></td>
+<td><p>+1, -1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\((\tau, \nu_\tau), \; (\tau^+, \bar{\nu}_\tau)\)</span></p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>+1,-1</p></td>
+<td><p>+1, -1</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>El número leptónico de sabor</strong> (por generación) <strong>y el total se conservan.</strong></p>
+<p><em>Cuestión</em>: Verifica que el número leptónico de sabor y el total se conservan en las desintegraciones de <span class="math notranslate nohighlight">\(\mu, \tau\)</span>.</p>
+<p>Los experimentos que han buscado la violación del número léptonico solo han puesto límites a los valores de vida media de los procesos que lo violan. Por ejemplo <span class="math notranslate nohighlight">\(\mu \to e + \gamma\)</span></p>
+<p>La conservación del la carga eléctrica fuerza que el <span class="math notranslate nohighlight">\(e\)</span>, la partícula cargada más ligera sea estable.</p>
+<p><em>Nota adicional</em> Como veremos posteriormente las oscilaciones de neutrinos violan el número leptónico de sabor pero en la propagación de los neutrinos.</p>
+<p><em>Cuestión</em>: ¿La desintegración <span class="math notranslate nohighlight">\(\mu \to \nu_\mu + e + e^+\)</span> viola alguna regla de conservación? ¿Y la desintegración <span class="math notranslate nohighlight">\(\tau \to \mu + \mu + \mu^+\)</span>?</p>
+</div>
+</div>
+<div class="section" id="descubrimientos-de-los-leptones">
+<h3>Descubrimientos de los leptones<a class="headerlink" href="#descubrimientos-de-los-leptones" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>El 1930 C. Anderson descubrió <strong>el positrón</strong> en una cámara de burbujas con un campo magnético 1 T observó que de los productos con rayos cósmicos aparecían trazas que por la curvatura eran como el electrón pero con carga positiva.</p></li>
+<li><p>En 1937 Aderson y Nedermayer descubrieron partículas penetrantes en los rayos cósmicos. En 1947 se observaron en emulsiones fotográficas con rayos cósmicos la desintegraciones del pión y del <strong>muón</strong>, que se correspondía a la partícula penetrante.</p></li>
+<li><p>en 1975 M. Perl en el colisionador <span class="math notranslate nohighlight">\(e^+e^-\)</span> de SLAC descubrió <strong>el tau</strong> en la producción de pares <span class="math notranslate nohighlight">\(e+e^+ \to \tau+\tau^+\)</span>, donde éstos se desintegraban leptónicamente <span class="math notranslate nohighlight">\(\tau \to\mu +\bar{\nu}_\mu + \nu_\tau\)</span></p></li>
+</ul>
+<ul class="simple">
+<li><p>En 1030 <strong>Pauli</strong> propuso <strong>el neutrino</strong> como solución desperada para resolver el problema de la no conservación de energía y momento en las desintegraciones <span class="math notranslate nohighlight">\(\beta\)</span>, la existencia de una partícula neutra de pequeña masa que escaparía indetectada.</p></li>
+<li><p>En 1956 <strong>Reines y Cowan</strong> detectaron el <span class="math notranslate nohighlight">\(\nu_e\)</span>. A partir del flujo intenso de neutrinos del reactor nuclear de Savannah, Carolina del Sur, detectaron la interacción inversa <span class="math notranslate nohighlight">\(\bar{\nu}_e + p \to e^+ +n \)</span> en un detector con líquido centelleador y agua como blanco.</p></li>
+<li><p>En 1962 Schwartz, Lederman y Steinberger descubrieron el <span class="math notranslate nohighlight">\(\nu_\mu\)</span> con el haz de <span class="math notranslate nohighlight">\(\nu_\mu\)</span> producido en el AGS de Boorkhaven, Nueva York, con un detector de placas anternadas de material pasivo y cámaras de chispas. Demostraton que los <span class="math notranslate nohighlight">\(\nu_\mu\)</span> son distintos a los <span class="math notranslate nohighlight">\(\nu_e\)</span> y que aparecen en parejas con su fermiones cargados <span class="math notranslate nohighlight">\(\mu\)</span>.</p></li>
+<li><p>En 2001 la colaboración DONUT de Fermilab en emulsiones observó la primera interacción de un <span class="math notranslate nohighlight">\(\nu_{\tau}\)</span>.</p></li>
+</ul>
+<p><strong>Otros hitos relevantes relacionados con los leptones</strong></p>
+<ul class="simple">
+<li><p>1956 Experimento de Ms <strong>Wu</strong>. Descubrimiento de <strong>la violación de paridad</strong>.</p></li>
+<li><p>1958 Goldhaber descubre que el neutrino tiene helicidad negativa.</p></li>
+<li><p>1970 <strong>David et al, y Bahcall</strong>, descubren <strong>el problema de los neutrinos solares</strong>.</p></li>
+<li><p>1998 Tajita et al, Descubrimiento de <strong>oscilaciones de neutrinos</strong> en el experimento <strong>Super-Kamiokande</strong>.</p></li>
+<li><p>2012 McDonald et al, Solución del problema de los neutrinos solares, en el experimen to SNO.</p></li>
+</ul>
+<div class="section" id="descubrimiento-del-neutrino">
+<h4>Descubrimiento del neutrino<a class="headerlink" href="#descubrimiento-del-neutrino" title="Permalink to this heading">#</a></h4>
+<p>El espectro continuo de energía de la desintegraciones <span class="math notranslate nohighlight">\(\beta\)</span> era un misterio en la década de los 20 en del siglo XX.</p>
+<div class="math notranslate nohighlight">
+\[
+^A_Z X \to ^A_{Z+1}X' + e \;\; (?)
+\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_bspectrum_1935.png"><img alt="../_images/intro_bspectrum_1935.png" class="align-center" src="../_images/intro_bspectrum_1935.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Espectro <span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Si el nucleo padre está en reposo y sólo se emiten dos partículas, el núcleo hijo y el electrón, <span class="math notranslate nohighlight">\(\beta\)</span>, éste debería ser mono-energético. La energía a repartir entre el núcleo hijo y el electrón es <span class="math notranslate nohighlight">\(Q\)</span> y salen en el CM con el mismo momento <span class="math notranslate nohighlight">\(p^*\)</span>.</p>
+<p>N. Bohr: <em>”At the present stage of atomic theory, however, we may say that we have no argument… for upholding the energy principle in the case of 𝛽-ray disintegrations.”</em></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Wolfgang_Pauli">Pauli</a> postuó la existencia del neutrino en una histórica carta.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_Pauli_letter.jpg"><img alt="../_images/intro_Pauli_letter.jpg" class="align-center" src="../_images/intro_Pauli_letter.jpg" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>B. Pontecorvo <a class="reference external" href="https://www.youtube.com/watch?v=yXrHnsBgQSw&amp;t=9s">[&gt;]</a> sugirió utilizar el flujo de neutrinos generado en los reactores nucleares.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_cowan_reines_detector.png"><img alt="../_images/intro_cowan_reines_detector.png" class="align-center" src="../_images/intro_cowan_reines_detector.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/intro_cowan_reines_telegram.png"><img alt="../_images/intro_cowan_reines_telegram.png" class="align-center" src="../_images/intro_cowan_reines_telegram.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>F. Reines and C. L. Cowan detectaron los neutrino con la interacción inversa usando el flujo de neutrinos, <span class="math notranslate nohighlight">\(\Phi \simeq 10^{17}\)</span> <span class="math notranslate nohighlight">\(\nu\mathrm{/(m^2 \, s)}\)</span>, generado en el reactor nuclear de Savanna River, SC, EEUU.</p>
+<p>Se trataba de un contador de positrones (detectaban simultaneamente en los centelleadores gammas de 511 keV provinientes de la desintegración del positrón) que operaba cuando el reactor estaba en funcionamiento o parada.</p>
+</div>
+</div>
+</div>
+<div class="section" id="caracteristicas-de-las-interacciones-debiles">
+<h2>Características de las interacciones débiles<a class="headerlink" href="#caracteristicas-de-las-interacciones-debiles" title="Permalink to this heading">#</a></h2>
+<div class="section" id="universalidad-leptonica">
+<h3>Universalidad leptónica<a class="headerlink" href="#universalidad-leptonica" title="Permalink to this heading">#</a></h3>
+<p>La <strong>Universalidad leptónica</strong> nos dice que la intensidad del acoplo de los vértices de las corrientes cagadas es igual para las tres generaciones de leptones.</p>
+<p>Si suponemos que en las corrientes de Fermi la constante <span class="math notranslate nohighlight">\(G^\alpha_F\)</span>, con <span class="math notranslate nohighlight">\(\alpha = e, \mu, \tau\)</span> es <em>distinta para cada sabor</em>, veremos que experimentalmente esas constantes son en realidad iguales para todos los sabores, y que valen <span class="math notranslate nohighlight">\(G_F\)</span>, la constante de Fermi.</p>
+<p>La anchura de desintegración del <span class="math notranslate nohighlight">\(\mu\)</span>, que se calcula en un curso más avanzado, es:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma (\mu \to e + \bar{\nu}_e + \nu_\mu) \equiv  \frac{1}{\tau_\mu} = \frac{G^e_F G^\mu_F m^5_\mu}{192 \pi^3},
+\]</div>
+<p><em>Cuestión</em>: verifica que las dimensiones en la fórmula de la anchura de desintegración son correctas.</p>
+<p>Para la desintegraciones <span class="math notranslate nohighlight">\(\tau \to e + \bar{\nu}_e + \nu_\tau\)</span> intervendra las constante <span class="math notranslate nohighlight">\(G^\tau_F\)</span> en la corriente tauónica y <span class="math notranslate nohighlight">\(G^e_F\)</span> en la eléctrica.</p>
+<p>La anchura de desintegración parcial:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma (\tau \to e + \bar{\nu}_e + \nu_\tau) = \frac{G^\tau_F G^e_F m^5_\tau}{192 \pi^3},
+\]</div>
+<p>La anchura de desintegración total es la suma de las parciales: <span class="math notranslate nohighlight">\(\Gamma = \sum_i \Gamma \equiv 1/\tau_\tau\)</span>, y la fracción de desintegración, <span class="math notranslate nohighlight">\(Br\)</span>, se relaciona con la anchura total y parcial por:</p>
+<div class="math notranslate nohighlight">
+\[
+Br(\tau \to e + \bar{\nu}_e + \nu_\tau) = \frac{\Gamma(\tau \to e + \bar{\nu}_e + \nu_\tau)}{\Gamma_\tau} = \tau_\tau \, \Gamma(\tau \to e + \bar{\nu}_e + \nu_\tau)
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\tau_\tau\)</span> es la vida media del <span class="math notranslate nohighlight">\(\tau\)</span>.</p>
+<p>Luego:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma(\tau \to e + \bar{\nu}_e + \nu_\tau) = \frac{1}{\tau_\tau} \, Br(\tau \to e + \bar{\nu}_e + \nu_\tau) 
+\]</div>
+<p>A partir de la razón entre las dos anchuras:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\Gamma(\tau \to \nu_\tau + e + \bar{\nu}_e)}{\Gamma(\mu \to \nu_\mu + e + \bar{\nu}_e)} = \frac{\tau_\mu}{\tau_\tau} \mathcal{Br}(\tau \to \nu_\tau + e + \bar{\nu}_e) = \frac{G^\tau_F m^5_\tau}{G^\mu_F m^5_\mu}
+\]</div>
+<p>Podemos despejar la razón entre la constantes de Fermi para cada sabor, y sustituyendo por sus valores experimentales obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{G^\tau_F}{G^\mu_F} = \frac{m^5_\mu \tau_\mu}{m^5_\tau \tau_\tau} \, Br(\tau \to e + \bar{\nu}_e + \nu_\tau) = 1.0023 \pm 0.033
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tau_tau</span>  <span class="o">=</span> <span class="mf">290.6</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">femto</span> <span class="c1"># s</span>
+<span class="n">mass_tau</span> <span class="o">=</span> <span class="mi">1777</span>  <span class="c1"># MeV</span>
+<span class="n">tau_mu</span>   <span class="o">=</span> <span class="mf">2.197</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">micro</span> <span class="c1"># s</span>
+<span class="n">mass_mu</span>  <span class="o">=</span> <span class="mf">105.7</span>   <span class="c1"># MeV</span>
+<span class="n">br_tau_e</span> <span class="o">=</span> <span class="mf">0.178</span>
+<span class="n">ratio</span>    <span class="o">=</span> <span class="p">(</span><span class="n">tau_mu</span> <span class="o">*</span> <span class="n">mass_mu</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">tau_tau</span> <span class="o">*</span> <span class="n">mass_tau</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span> <span class="o">*</span> <span class="n">br_tau_e</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gamma ratio </span><span class="si">{:4.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ratio</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gamma ratio 1.002
+</pre></div>
+</div>
+</div>
+</div>
+<p>La constande de Fermi es común a todos los vértices de las corrientes cargadas entre leptones:</p>
+<div class="math notranslate nohighlight">
+\[
+G_F = 1.166 \times 10^{-5} \;\; \mathrm{GeV}^{-2}.
+\]</div>
+<p>La constante de Fermi esta relacionada con el intensidad del acoplo <span class="math notranslate nohighlight">\(g_W\)</span> del modelo estándar por:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{G_F}{\sqrt{2}} = \frac{g^2_W}{8 m^2_W},
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(m_W = 80.385 \pm 0.015\)</span> GeV es la masa del <span class="math notranslate nohighlight">\(W\)</span>.</p>
+<p><em>Cuestión</em>: A partir de las anchura de desintegración <span class="math notranslate nohighlight">\(\Gamma(\tau \to \mu + \nu_\mu + \bar{\nu}_\tau)\)</span> y <span class="math notranslate nohighlight">\(\Gamma(\tau \to e + \nu_e + \bar{\nu}_\tau)\)</span> calcular <span class="math notranslate nohighlight">\(G^e_F/G^\mu_F\)</span>. La desviación respecto de la unidad se compensa con un factor de espacio de fase.</p>
+</div>
+<div class="section" id="violacion-de-paridad">
+<h3>Violación de Paridad<a class="headerlink" href="#violacion-de-paridad" title="Permalink to this heading">#</a></h3>
+<p>Recordemos que es la operación de inversión por paridad, <span class="math notranslate nohighlight">\({\hat P}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+{\hat P}  \, : \; {\bf x} \to - {\bf x}, \;\;\;  \Psi({\bf x}, t) \to  \Psi(-{\bf x}, t).
+\]</div>
+<p>Recordemos también cómo se clasifican distintas magnitudes bajo paridad:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="head"><p>Rango</p></th>
+<th class="head"><p>Paridad</p></th>
+<th class="text-align:left head"><p>Ejemplo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>scalar</p></td>
+<td><p>0</p></td>
+<td><p>+1</p></td>
+<td class="text-align:left"><p>temperatura</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>pseudo-scalar</p></td>
+<td><p>0</p></td>
+<td><p>-1</p></td>
+<td class="text-align:left"><p>helicidad</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>vector</p></td>
+<td><p>1</p></td>
+<td><p>-1</p></td>
+<td class="text-align:left"><p>momento</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>axial-vector</p></td>
+<td><p>1</p></td>
+<td><p>+1</p></td>
+<td class="text-align:left"><p>momento angular, campo magnético</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id1">
+<h4>Violación de paridad<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<p>En 1957 Ms Wu y colaboradores descubrieron que las corrientes cargadas no conservan paridad.</p>
+<p>En el experimento polarizaban temporalmente <span class="math notranslate nohighlight">\(^{60}\mathrm{Co}\)</span> mediante un campo magnético <span class="math notranslate nohighlight">\({\bf B}\)</span>. El <span class="math notranslate nohighlight">\(^{60}\mathrm{Co}\)</span> se desintegra <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+^{60}\mathrm{Co} \to ^{60}\mathrm{Ni}^* + e + \bar{\nu}_e.
+\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_Co_scheme.jpeg"><img alt="../_images/leptons_Co_scheme.jpeg" class="align-center" src="../_images/leptons_Co_scheme.jpeg" style="width: 200px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Esquema de la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> del <span class="math notranslate nohighlight">\(^{60}\mathrm{Co}\)</span> polarizado</p></td>
+</tr>
+</tbody>
+</table>
+<p>y estudiaron la emisión de <span class="math notranslate nohighlight">\(e\)</span> hacia arriba en los casos de campo magnético hacia arriba o hacia abajo.
+Si la paridad se conservase, el número de electrones emitidos en las dos configuraciones debería ser el mismo.</p>
+<p>Considera los siguientes gráficos, el de la derecha es la inversión por paridad del de la izquierda.</p>
+<p>El nucleo de <span class="math notranslate nohighlight">\(^{60}\mathrm{Co}\)</span> tiene un momento magnético <span class="math notranslate nohighlight">\({\bf \mu}\)</span>, dado por su espín, <span class="math notranslate nohighlight">\({\bf S}\)</span>, que está alineado en la dirección de un campo magnético <span class="math notranslate nohighlight">\({\bf B}\)</span>.</p>
+<p>Tanto <span class="math notranslate nohighlight">\({\bf B}\)</span>, como <span class="math notranslate nohighlight">\({\bf \mu}\)</span> y <span class="math notranslate nohighlight">\({\bf S}\)</span>, son vectores axiales, no cambian bajo paridad, mientras que el momento, <span class="math notranslate nohighlight">\({\bf p}\)</span>; del electrón sí cambia por ser un vector.</p>
+<p>Si se conserva la paridad, el electrón debe salir con igual probabilidad en los dos lados. Esto es con <span class="math notranslate nohighlight">\(\theta\)</span> respecto a la vertical y con <span class="math notranslate nohighlight">\(\pi-\theta\)</span>.</p>
+<p>En el caso extremo, cuando el electrón sale en la vertical, el electrón sale con la misma probabilidad hacia arriba que hacia abajo.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/leptons_Co_spins.png"><img alt="../_images/leptons_Co_spins.png" class="align-center" src="../_images/leptons_Co_spins.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema de la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> del <span class="math notranslate nohighlight">\(^{60}\mathrm{Co}\)</span> polarizado</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota</em> En la figura no se dibuja el neutrino que se emite en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/leptons_Co_results.png"><img alt="../_images/leptons_Co_results.png" class="align-center" src="../_images/leptons_Co_results.png" style="width: 360px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Razón de detección de <span class="math notranslate nohighlight">\(e\)</span> en función del tiempo y la polarización de <span class="math notranslate nohighlight">\({\bf B}\)</span> [WU]</p></td>
+</tr>
+</tbody>
+</table>
+<p>¡Se observa que los electrones se emitían con preferencia en la dirección opuesta al campo magnético!</p>
+<p>Luego las desintegraciones <span class="math notranslate nohighlight">\(\beta\)</span> o <strong>las corrientes cargadas violan paridad</strong>.</p>
+<p>Nota: el <span class="math notranslate nohighlight">\(^{60}\mathrm{Co}\)</span> se desmagnetizaba al cabo de un tiempo, al perder temperatura la muestra.</p>
+</div>
+<div class="section" id="la-corrientes-bajo-paridad">
+<h4>La corrientes bajo paridad<a class="headerlink" href="#la-corrientes-bajo-paridad" title="Permalink to this heading">#</a></h4>
+<p>En la teoría de Fermi, el elemento de Matriz se construía con el producto de dos corrientes, la hadrónica y la fermíonica.</p>
+<div class="math notranslate nohighlight">
+\[
+M_{fi} \propto j^\mu_{\mathrm{had}}  \, g_{\mu\nu} \, j^\nu_{\mathrm{lep}} = j_{\mathrm{had}}  \cdot  j_{\mathrm{lep}}
+\]</div>
+<p>como cada corriente cambia bajo paridad:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{P} \; : \; j^\mu = (\rho, {\bf j}) \to j^\mu (\rho, - {\bf j}),
+\]</div>
+<p>pero <span class="math notranslate nohighlight">\(M_{fi}\)</span> es invariante bajo paridad</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{P} \; : \; (\rho, {\bf j})_{\mathrm{had}} \cdot (\rho, {\bf j})_{\mathrm{lep}} = (\rho, - {\bf j})_{\mathrm{had}} \cdot (\rho, - {\bf j})_{\mathrm{lep}}
+\]</div>
+<p>¡Luego no representa la física de la corrientas cargadas!</p>
+<p>Nota:</p>
+<p>En la representación Pauli-Dirac, la operación paridad es simplemente: <span class="math notranslate nohighlight">\(\hat{P} = \gamma^0\)</span></p>
+<p>La corriente de probabilidad <span class="math notranslate nohighlight">\(j^\mu = \bar{\Psi} \gamma^\mu \Psi \to {\bar \Psi} \gamma^0 \gamma^\mu \gamma^0 \Psi\)</span> bajo paridad cambia:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{P} \, j^\mu = (j^0, -{\bf j}^k)
+\]</div>
+<p>dado que:
+$<span class="math notranslate nohighlight">\(
+\gamma^0 \gamma^k = - \gamma^k \gamma^0
+\)</span>$</p>
+<p>donde <span class="math notranslate nohighlight">\(k = 1, 2, 3\)</span></p>
+<p>Podemos construir el elemento de matrix <span class="math notranslate nohighlight">\(M_{fi}\)</span> de forma génerica con las formas <span class="math notranslate nohighlight">\( {\bar \Psi} \, \Gamma \, \Psi \)</span>, donde <span class="math notranslate nohighlight">\(\Gamma\)</span> es una matrix <span class="math notranslate nohighlight">\(4 \times 4\)</span> construida con la matrices de Dirac.</p>
+<p>Solo existen cinco posibilidades de <span class="math notranslate nohighlight">\(\gamma\)</span> que garantizan que el elmento de matriz es invariante Lorentz:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:center head"><p>——– Forma ——–</p></th>
+<th class="text-align:center head"><p>Componentes</p></th>
+<th class="text-align:center head"><p>Spin</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>scalar</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\({\bar \Psi} \Psi\)</span></p></td>
+<td class="text-align:center"><p>1</p></td>
+<td class="text-align:center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>pseudo-scalar</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\({\bar \Psi} \gamma^5 \Psi\)</span></p></td>
+<td class="text-align:center"><p>1</p></td>
+<td class="text-align:center"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>vector</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\({\bar \Psi} \gamma^\mu \Psi\)</span></p></td>
+<td class="text-align:center"><p>4</p></td>
+<td class="text-align:center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>pseudo-vector</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\({\bar \Psi} \gamma^\mu \gamma^5 \Psi\)</span></p></td>
+<td class="text-align:center"><p>4</p></td>
+<td class="text-align:center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>tensor</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\({\bar \Psi} (\gamma^\mu\gamma^\nu - \gamma^\nu \gamma^\mu) \Psi\)</span></p></td>
+<td class="text-align:center"><p>6</p></td>
+<td class="text-align:center"><p>2</p></td>
+</tr>
+</tbody>
+</table>
+<p>A partir del estudio de las desintegraciones de los muones se determinó las <span class="math notranslate nohighlight">\(\Gamma\)</span> que intervienen en el acoplo de las corrientes</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_espectrum_mudecay.png"><img alt="../_images/leptons_espectrum_mudecay.png" class="align-center" src="../_images/leptons_espectrum_mudecay.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Espectro del electrón en <span class="math notranslate nohighlight">\(\mu\)</span> decays, la línea es la teoría V-A [MU]</p></td>
+</tr>
+</tbody>
+</table>
+<p>La forma que corresponde a las desintegraciones de muones (y las corrientes cargadas) es:</p>
+<div class="math notranslate nohighlight">
+\[
+{\bar \Psi} \left[ \gamma^\mu \frac{1}{2}(I - \gamma^5) \right] \Psi
+\]</div>
+<p>La corriente <span class="math notranslate nohighlight">\(j^\mu_V = \frac{1}{2}{\bar \Psi} \gamma^\mu \Psi\)</span> es <strong>vectorial</strong> porque cambia como un vector frente a paridad.</p>
+<p>La corriente <span class="math notranslate nohighlight">\(j^\mu_A = \frac{1}{2}{\bar \Psi} \gamma^\mu \gamma^5 \Psi\)</span> es <strong>axial</strong> porque cambia como un axial-vector frente a paridad.</p>
+<p>Decimos que las corrientes cargadas tienen una <strong>estructura <span class="math notranslate nohighlight">\(V-A\)</span></strong></p>
+<p>¿Cómo cambia <span class="math notranslate nohighlight">\(M_{fi}\)</span> ahora bajo paridad?</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{P} \;  \; : j^\mu_V - j^\mu_A = (\rho_V - \rho_A, \; {\bf j}_V - {\bf j}_A) \to (\rho_V - \rho_A, - {\bf j}_V - {\bf j}_A)
+\]</div>
+<p>Y ahora <span class="math notranslate nohighlight">\(M_{fi}\)</span>, al ser el producto de dos corrientes <span class="math notranslate nohighlight">\(V-A\)</span>, ¡cambia bajo paridad!</p>
+<div class="math notranslate nohighlight">
+\[
+(\rho_V - \rho_A, \; {\bf j}_V - {\bf j}_A)_{\mathrm{had}} \cdot (\rho_V - \rho_A, \; {\bf j}_V - {\bf j}_A)_{\mathrm{lep}} \neq 
+(\rho_V - \rho_A, \; -{\bf j}_V - {\bf j}_A)_{\mathrm{had}} \cdot (\rho_V - \rho_A, \; -{\bf j}_V - {\bf j}_A)_{\mathrm{lep}}
+\]</div>
+<p>aunque sigue siendo un invariante Lorentz.</p>
+</div>
+<div class="section" id="proyeccion-de-quiralidad">
+<h4>Proyección de quiralidad<a class="headerlink" href="#proyeccion-de-quiralidad" title="Permalink to this heading">#</a></h4>
+<p>¿Qué es la matriz:</p>
+<div class="math notranslate nohighlight">
+\[
+P_L \equiv \frac{1}{2} (I-\gamma^5) \, \mathrm{?}
+\]</div>
+<p>Es un proyector que actua sobre el sobre el espinor de Dirac:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi_L = \frac{1}{2}(I - \gamma^5) \, \Psi
+\]</div>
+<p>El proyector complementario es:</p>
+<div class="math notranslate nohighlight">
+\[
+P_R = \frac{1}{2} (I+\gamma^5)
+\]</div>
+<p>Los dos proyectores cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+I = P_R + P_L, \;\; P^2_R = P_R, \;\; P^2_L = P_L, \; P_R P_L = P_L P_R = 0 
+\]</div>
+<p>Estos proyectores se llaman de <strong>quiralidad</strong> y proyectan a <strong>izquierda y derecha</strong>.</p>
+<p>De tal forma que un <strong>espinor de Dirac</strong> se descompone en dos proyecciones, <strong>quiralidad a izquierdas y derechas</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi_R = P_R \, \Psi, \;\;\; \Psi_L = P_L \, \Psi, \;\;\; \Psi = \Psi_R + \Psi_L =  P_R \Psi + P_L \Psi = (P_R + P_L) \, \Psi
+\]</div>
+<p><strong>La quiralidad se invierte al aplicar paridad</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{P} : P_L \leftrightarrow P_R, \;\; \Psi_L \leftrightarrow \Psi_R
+\]</div>
+<p>Nota: La transformación paridad <span class="math notranslate nohighlight">\(\hat{P} = \gamma^0\)</span> cambia los proyectores de quiralidad:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{P} \; P_L = \gamma^0 \frac{1}{2}(1 - \gamma^5) = \frac{1}{2} (1+\gamma^5) \gamma^0 = P_R \, \hat{P}
+\]</div>
+<p>Podemos decir entonces que, <strong>las corrientas cargadas</strong></p>
+<ul class="simple">
+<li><p><strong>Son de tipo V-A</strong>, <span class="math notranslate nohighlight">\(\; {\bar \Psi} \, \frac{1}{2}\gamma^\mu (I - \gamma^5) \, \Psi\)</span></p></li>
+<li><p>O <strong>solo intervienen los espinores a izquierdas de los fermiones</strong>, <span class="math notranslate nohighlight">\(u_L = \frac{1}{2} (I - \gamma^5) \, u\)</span>, y <strong>de derechas a los anti-fermiones</strong>, <span class="math notranslate nohighlight">\(v_R\)</span></p></li>
+</ul>
+<p>En la corrientes cargadas <em>solo</em> interviene la parte a izquierdas de los espinores de las partículas, la parte a derechas no juega ningún papel. Para las anti-partículas es al contrario, solo interviene su espinor a derechas.</p>
+<p>En una teoría que conserva paridad la parte a izquierdas y a derechas de las partícuals debe entrar igual en el elemento de Matriz, como pasa con las interacciones electromagnéticas y fuertes.</p>
+</div>
+<div class="section" id="proyeccion-de-los-espinores-de-helicidad">
+<h4>Proyección de los espinores de helicidad<a class="headerlink" href="#proyeccion-de-los-espinores-de-helicidad" title="Permalink to this heading">#</a></h4>
+<p>En la representación de Pauli-Dirac, los proyectores de quiralidad son simplemente:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_R = \frac{1}{2}\begin{pmatrix} I &amp; I \\ I &amp; I \end{pmatrix}, \;\;\;
+P_L = \frac{1}{2}\begin{pmatrix} I &amp; -I \\ -I &amp; I \end{pmatrix},
+\end{split}\]</div>
+<p>Sean ahora los espinores de helicidad con <span class="math notranslate nohighlight">\({\bf p} = p \, \hat{k}\)</span> en la dirección <span class="math notranslate nohighlight">\(z\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{+} = N \begin{pmatrix} 1 \\ 0 \\ \kappa  \\ 0 \end{pmatrix}, \;
+u_{-} = N \begin{pmatrix} 0 \\ 1 \\ 0 \\ -\kappa  \end{pmatrix}, \;
+v_{+} = N \begin{pmatrix} 0 \\ -\kappa  \\ 0 \\ 1 \end{pmatrix}, \;
+v_{-} = N \begin{pmatrix} \kappa  \\ 0 \\ 1 \\ 0 \end{pmatrix}. 
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(N\)</span> es un factor de normalización y:</p>
+<div class="math notranslate nohighlight">
+\[
+\kappa = \frac{p}{E+m}
+\]</div>
+<p>Si aplicamos los proyectores de quiralidad sobre los espinores <span class="math notranslate nohighlight">\(u_{\pm}\)</span> de helicidad, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_R \, u_+ = \frac{1}{2}(1+\kappa) N \begin{pmatrix} 1 \\ 0 \\ 1  \\ 0 \end{pmatrix}, \;\;\;
+P_L \, u_+ = \frac{1}{2}(1-\kappa) N \begin{pmatrix} 1 \\ 0 \\ -1  \\ 0 \end{pmatrix}, \\
+P_R \, u_- = \frac{1}{2}(1-\kappa) N \begin{pmatrix} 0 \\ 1 \\ 0  \\ 1 \end{pmatrix}, \;\;\;
+P_L \, u_- = \frac{1}{2}(1+\kappa) N \begin{pmatrix} 0 \\ 1 \\ 0  \\ -1 \end{pmatrix}, \;\;\;
+\end{split}\]</div>
+<p>Así tenemos la tabla que relaciona las componentes de quiralidad y de helicidad de los espinores <span class="math notranslate nohighlight">\(u\)</span>:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>helicidad <span class="math notranslate nohighlight">\(\downarrow\)</span> \ quiralidad  <span class="math notranslate nohighlight">\(\rightarrow\)</span></p></th>
+<th class="text-align:center head"><p>— R —</p></th>
+<th class="text-align:center head"><p>— L —</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>+</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}(1+\kappa)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}(1-\kappa)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>-</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}(1-\kappa)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}(1+\kappa)\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>en los acoplos con el <span class="math notranslate nohighlight">\(W\)</span></p></td>
+<td class="text-align:center"><p>anti-fermiones, <span class="math notranslate nohighlight">\(v_R\)</span></p></td>
+<td class="text-align:center"><p>fermiones, <span class="math notranslate nohighlight">\(u_L\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Hemos dicho que en la interacciones débiles cargadas solo participan los espinores <span class="math notranslate nohighlight">\(u_L\)</span>, esto es la última columna, L.</p>
+<p>Si repitiésemos los cálculos para los espinores <span class="math notranslate nohighlight">\(v_R\)</span> obtendríamos los mismos coeficientes. En las corrientes débiles entraría la parte <span class="math notranslate nohighlight">\(v_R\)</span> que correpondería a la columna del medio, R.</p>
+<p>Consideremos ahora el caso de partículas sin masa, <span class="math notranslate nohighlight">\(m=0\)</span>, o ultra-relativistas, <span class="math notranslate nohighlight">\(m \ll E\)</span>, en ambos casos tenemos que <span class="math notranslate nohighlight">\(\kappa = 1\)</span> y por lo tanto:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>helicidad <span class="math notranslate nohighlight">\(\downarrow\)</span> \ quiralidad  <span class="math notranslate nohighlight">\(\rightarrow\)</span></p></th>
+<th class="text-align:center head"><p>— R —</p></th>
+<th class="text-align:center head"><p>— L —</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>+</p></td>
+<td class="text-align:center"><p>1</p></td>
+<td class="text-align:center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>-</p></td>
+<td class="text-align:center"><p>0</p></td>
+<td class="text-align:center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>en los acoplos con el <span class="math notranslate nohighlight">\(W\)</span></p></td>
+<td class="text-align:center"><p>anti-fermiones, <span class="math notranslate nohighlight">\(v_R\)</span></p></td>
+<td class="text-align:center"><p>fermiones, <span class="math notranslate nohighlight">\(u_L\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Esto es <strong>para partículas sin masa o ultra-relativistas la quiralidad y la helicidad coinciden</strong>.</p>
+<p><em>En esos dos casos</em>, que son los más comunes a alta energías, en las corrientes cargadas solo participan los espinores de los fermiones <span class="math notranslate nohighlight">\(u_-\)</span> con helicidad negativa y de los antifermiones <span class="math notranslate nohighlight">\(v_+\)</span> con helicidad positiva.</p>
+</div>
+</div>
+<div class="section" id="helicidad-del-neutrino">
+<h3>Helicidad del neutrino<a class="headerlink" href="#helicidad-del-neutrino" title="Permalink to this heading">#</a></h3>
+<p>En 1957 Goldhaber y colaboradores midieron  en Brookhaven, NY, la helicidad del neutrino, que resultó ser negativa.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_goldhaber_experiment.png"><img alt="../_images/leptons_goldhaber_experiment.png" class="align-center" src="../_images/leptons_goldhaber_experiment.png" style="width: 200px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Esquema del experimento de Goldhaber [GOL]</p></td>
+</tr>
+</tbody>
+</table>
+<div class="math notranslate nohighlight">
+\[
+^{152}\mathrm{Eu}(J = 0) + e \to ^{152}\mathrm{Sm}^*(J = 1) + \nu_e \to ^{150}\mathrm{Sm}(J =0) + \gamma
+\]</div>
+<p>La dirección <span class="math notranslate nohighlight">\(z\)</span> es la «vertical» definida por el eje del campo <span class="math notranslate nohighlight">\({\bf B}\)</span>.</p>
+<p>El campo <span class="math notranslate nohighlight">\({\bf B}\)</span> polariza el electrón de la captura de <span class="math notranslate nohighlight">\(^{152}\mathrm{Eu}\)</span> arriba o abajo, <span class="math notranslate nohighlight">\(S_z(e) = \pm 1/2\)</span> dependiendo de la orientación del campo.</p>
+<p>Se seleccionan los fotones que salen hacia abajo por lo que el neutrino sale hacia arriba.</p>
+<p>La tercera componente del spín <span class="math notranslate nohighlight">\(\pm 1/2\)</span> en <span class="math notranslate nohighlight">\(z\)</span> se conserva.</p>
+<p>Lo que implica que la helicidad del neutrino es la del fotón (ver más adelante).</p>
+<p>Se cambia la polaridad del campo <span class="math notranslate nohighlight">\({\bf B}\)</span> y se determina el número de fotones en cada orientación del campo.</p>
+<p>Si se producen neutrinos con las dos helicidades independientemente de la polaridad de <span class="math notranslate nohighlight">\({\bf B}\)</span> se medirán el mismo número de fotones.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_goldhaber_spins.png"><img alt="../_images/leptons_goldhaber_spins.png" class="align-center" src="../_images/leptons_goldhaber_spins.png" style="width: 200px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>helicidades en el experimento de Goldhaber</p></td>
+</tr>
+</tbody>
+</table>
+<p>La siguiente tabla muestra las dos posibilidades de espín y helicidades posibles en el experimento de Goldhaber.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>—– <span class="math notranslate nohighlight">\(S_z(e)\)</span> —–</p></th>
+<th class="text-align:center head"><p>—– <span class="math notranslate nohighlight">\(S_z(\nu)\)</span> —–</p></th>
+<th class="text-align:center head"><p>—– <span class="math notranslate nohighlight">\(S_z(\gamma)\)</span> —–</p></th>
+<th class="text-align:center head"><p>—– <span class="math notranslate nohighlight">\(h(\nu)\)</span> —–</p></th>
+<th class="text-align:center head"><p>—– <span class="math notranslate nohighlight">\(h(\gamma)\)</span> —–</p></th>
+<th class="text-align:center head"><p>observación</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>1/2</p></td>
+<td class="text-align:center"><p>-1/2</p></td>
+<td class="text-align:center"><p>1</p></td>
+<td class="text-align:center"><p>-</p></td>
+<td class="text-align:center"><p>-</p></td>
+<td class="text-align:center"><p>si</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>-1/2</p></td>
+<td class="text-align:center"><p>1/2</p></td>
+<td class="text-align:center"><p>-1</p></td>
+<td class="text-align:center"><p>+</p></td>
+<td class="text-align:center"><p>+</p></td>
+<td class="text-align:center"><p>no</p></td>
+</tr>
+</tbody>
+</table>
+<p>En la Naturaleza, solo se realiza la primera posibilidad (fila en la tabla). Solo existen neutrinos con helicidad negativa y no existen con helicidad positiva.</p>
+<p>Ya vimos que para una partícula con masa nula, helicidad es quiralidad, luego neutrinos con helicidad negativa implica neutrinos a izquierdas.</p>
+</div>
+<div class="section" id="la-masa-del-neutrino">
+<h3>La masa del neutrino<a class="headerlink" href="#la-masa-del-neutrino" title="Permalink to this heading">#</a></h3>
+<p>La masa del neutrino no se ha medido, se establece su límite, <span class="math notranslate nohighlight">\(\lt 1\)</span> eV, con la forma final del espectro de energía de los electrones en desintegración <span class="math notranslate nohighlight">\(\beta\)</span> del tritio,</p>
+<div class="math notranslate nohighlight">
+\[
+^3\mathrm{H} \to ^3\mathrm{He} + e + \bar{\nu}_e,
+\]</div>
+<p>que debería verse reducido por la masa del neutrino.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_numass_tritium.jpeg"><img alt="../_images/leptons_numass_tritium.jpeg" class="align-center" src="../_images/leptons_numass_tritium.jpeg" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Espectro del electrón en un decay de tritio si el neutrino tiene masa <span class="math notranslate nohighlight">\(\sim\)</span> 1 eV</p></td>
+</tr>
+</tbody>
+</table>
+<p>El experimento actual es [KATRIN] que busca <span class="math notranslate nohighlight">\(m_{\nu_e} &lt; 0.2\)</span> eV.</p>
+<p><strong>El Modelo Estandar postulaba que el neutrino no tiene masa</strong>. En todo caso su masa es ridículamente pequeña comparada con sus energías.</p>
+<p>Los neutrinos solo interaccionan débilmente, y <strong>en las interacciones débiles solo intervienen las proyecciones a izquierdas</strong>, esto es <span class="math notranslate nohighlight">\(u_L\)</span> y <span class="math notranslate nohighlight">\(v_R\)</span>. <strong>Solo son reales esos dos espinores</strong> para el neutrino:</p>
+<div class="math notranslate nohighlight">
+\[
+u_L \equiv u_-, \;\;\; v_R \equiv v_+
+\]</div>
+<p>En términos de la conjugación de Carga y Paridad encontramos:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\hat{P}\)</span></p></th>
+<th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\nu_L\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\Rightarrow\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_R\)</span>  (no existe)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\hat{C}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\Downarrow\)</span></p></td>
+<td class="text-align:center"><p></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\Downarrow\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\bar{\nu}_L\)</span> (no existe)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\Rightarrow\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\bar{\nu}_R\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>La fuerza débil viola de forma máxima paridad, <span class="math notranslate nohighlight">\(P\)</span>, y conjugación de carga, <span class="math notranslate nohighlight">\(C\)</span>, pero no <span class="math notranslate nohighlight">\(CP\)</span></strong>.</p>
+<p>Dado que <strong>el neutrino</strong>:</p>
+<ul class="simple">
+<li><p><strong>tiene masa compatible con nula</strong>.</p></li>
+<li><p><strong>la helicidad es negativa</strong> (para el anti-neutrino positiva).</p></li>
+</ul>
+<p><strong>El Modelo Estándar postula</strong> que <strong>los neutrinos no tienen masa</strong>, solo existen en <strong>quiralidad a izquierdas</strong>, y el antineutrino con quiralidad a derechas,</p>
+<div class="math notranslate nohighlight">
+\[
+\nu_L, \;\;\; {\bar \nu}_R.
+\]</div>
+<p><strong>Las corrientes cargadas en leptones violan paridad, P, y carga, C; pero preservan CP</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../_images/leptons_escher_CP.png"><img alt="../_images/leptons_escher_CP.png" class="align-center" src="../_images/leptons_escher_CP.png" style="width: 450px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Efecto de aplicar paridad (reflejo, izquierda-derecha) y carga (invertir grises, arriba-abajo)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="desintegracion-del-pion">
+<h3>Desintegración del pión<a class="headerlink" href="#desintegracion-del-pion" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../_images/feynman_pion_decay.png"><img alt="../_images/feynman_pion_decay.png" class="align-center" src="../_images/feynman_pion_decay.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Diagrama de Feynman de <span class="math notranslate nohighlight">\(\pi^+ \to l^+ + \nu_l\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La desintegración del pión <span class="math notranslate nohighlight">\(\pi^+ \to l^+  + \nu_l\)</span> ejemplifica los efectos de la estructura V-A de las corrientes cargadas.</p>
+<p>La razón de las anchuras de desintegración a <span class="math notranslate nohighlight">\(l = \mu, e\)</span> medida es:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\Gamma(\pi^+ \to e^+ + \nu_e)}{\Gamma(\pi^+ \to \mu^+ + \nu_\mu)} = 1.230 \pm 0.004 \; 10^{-4}
+\]</div>
+<p>Sin embargo el espacio fásico disponible para el <span class="math notranslate nohighlight">\(e\)</span> es mayor que el del <span class="math notranslate nohighlight">\(\mu\)</span> dado que la razón entre ellos viene dada por <span class="math notranslate nohighlight">\(p^*_e/p^*_\mu\)</span>.</p>
+<p>¿Por qué es así entonces?</p>
+<p><strong>C</strong>uestión: Calcula <span class="math notranslate nohighlight">\(p^*_l, E^*_l\)</span> en el CM.</p>
+<p><strong>C</strong>uestión: Calcula la razón entre el <span class="math notranslate nohighlight">\(p^*_e/p^*_\mu\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_piondecay_spins.png"><img alt="../_images/leptons_piondecay_spins.png" class="align-center" src="../_images/leptons_piondecay_spins.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Momento y spin de <span class="math notranslate nohighlight">\(\pi^+ \to l^+ + \nu_l\)</span> en el CM</p></td>
+</tr>
+</tbody>
+</table>
+<p>Si consideramos el CM: El <span class="math notranslate nohighlight">\(\pi^+\)</span> tiene <span class="math notranslate nohighlight">\(J= 0\)</span>, el neutrino, <span class="math notranslate nohighlight">\(\nu_l\)</span>, tiene helicidad (-), y para conservar <span class="math notranslate nohighlight">\(J\)</span>, <span class="math notranslate nohighlight">\(l^+\)</span> debe tener helicidad (-), pero sabemos que solo la proyección con quiralidad a derechas del <span class="math notranslate nohighlight">\(l^+\)</span> interviene en la desintegración. ¿Cuánto vale esa parte para el <span class="math notranslate nohighlight">\(e^+\)</span> y el <span class="math notranslate nohighlight">\(\mu^+\)</span>?</p>
+<p>Sabemos que el espinor <span class="math notranslate nohighlight">\(v_-\)</span> helicidad (-) tiene como coeficiente de quiralidad a derechas:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{2}(1-\kappa) = \frac{1}{2}\left(1 - \frac{p_l}{E_l + m_l} \right)
+\]</div>
+<p>En el CM
+$<span class="math notranslate nohighlight">\(
+E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\pi}, \;\;
+\frac{1}{2}(1-\kappa) = \frac{1}{2}\left(1 - \frac{p_l}{E_l + m_l} \right)= \frac{m_l}{m_\pi + m_l}
+\)</span>$</p>
+<p>El <span class="math notranslate nohighlight">\(\mu\)</span> no es relativista, <span class="math notranslate nohighlight">\(\beta = 0.27\)</span>, pero sí el electrón, <span class="math notranslate nohighlight">\(\beta = 0.99997\)</span>.</p>
+<p>El factor <span class="math notranslate nohighlight">\((1-\kappa)/2\)</span> es mucho más pequeño para <span class="math notranslate nohighlight">\(e\)</span> que para el <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
+<p>El factor asociado a las proyecciones a derechas entre el <span class="math notranslate nohighlight">\(e\)</span> y <span class="math notranslate nohighlight">\(\mu\)</span> que aparece en <span class="math notranslate nohighlight">\(|M_{if}|^2\)</span> será:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{m^2_e}{m^2_\mu} \frac{(m_\pi + m_e)^2}{(m_\pi + m_\mu)^2}\sim 7 \, 10^{-5}
+\]</div>
+<p>Así pues, a pesar de que el espacio fásico es mucho mayor para la desintegración al <span class="math notranslate nohighlight">\(e^+\)</span>, el <span class="math notranslate nohighlight">\(\pi^+\)</span> se desintegra mayoritariamente a <span class="math notranslate nohighlight">\(\mu^+\)</span>, porque los leptones cargados de la desintegración deben tener helicidad negativa, u como en las corrientes V-A, solo interviene su componente de quiralidad a derechas, esta está muy suprimida en la helicidad negativa si la partícula es relativista, lo que es el caso deo positrón pero no para el muón. Por eso la desintegración a <span class="math notranslate nohighlight">\(e^+\)</span> está muy suprimida respecto a <span class="math notranslate nohighlight">\(\mu^+\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">139.51</span>  <span class="c1"># MeV</span>
+<span class="n">mmu</span> <span class="o">=</span> <span class="mf">105.66</span>  <span class="c1"># MeV</span>
+<span class="n">me</span>  <span class="o">=</span>   <span class="mf">0.511</span> <span class="c1"># MeV</span>
+<span class="n">ene_cm</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span> <span class="p">:</span> <span class="p">(</span><span class="n">mpi</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mpi</span><span class="p">)</span>
+<span class="n">p_cm</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span> <span class="p">:</span> <span class="p">(</span><span class="n">mpi</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mpi</span><span class="p">)</span>
+<span class="n">a_R</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span> <span class="p">:</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">ml</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">ml</span><span class="p">)</span> <span class="o">+</span> <span class="n">ml</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">beta_mu</span><span class="p">,</span> <span class="n">beta_e</span> <span class="o">=</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">)</span><span class="o">/</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">),</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span><span class="o">/</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; beta mu   = </span><span class="si">{:7.6f}</span><span class="s1">   , beta   e = </span><span class="si">{:7.6f}</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">beta_mu</span><span class="p">,</span> <span class="n">beta_e</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; energy mu = </span><span class="si">{:5.3f}</span><span class="s1"> MeV, energy e = </span><span class="si">{:5.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">),</span> <span class="n">ene_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> beta mu   = 0.270970   , beta   e = 0.999973    
+ energy mu = 109.767 MeV, energy e = 69.756 MeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">helicity_supres</span> <span class="o">=</span> <span class="n">a_R</span><span class="p">(</span><span class="n">me</span><span class="p">)</span><span class="o">/</span><span class="n">a_R</span><span class="p">(</span><span class="n">mmu</span><span class="p">)</span>
+<span class="n">espace_phase</span>    <span class="o">=</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span><span class="o">/</span><span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; supresion por helicidad = </span><span class="si">{:e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">helicity_supres</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; espacio fásico          = </span><span class="si">{:e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">espace_phase</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; total                   = </span><span class="si">{:e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">espace_phase</span> <span class="o">*</span> <span class="n">helicity_supres</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> supresion por helicidad = 7.170821e-05
+ espacio fásico          = 2.345194e+00
+ total                   = 1.681697e-04
+</pre></div>
+</div>
+</div>
+</div>
+<p>Distribución de la energía del espectro de electrones en las desintegraciones del <span class="math notranslate nohighlight">\(\pi\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_espectrum_pidecay.png"><img alt="../_images/leptons_espectrum_pidecay.png" class="align-center" src="../_images/leptons_espectrum_pidecay.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Espectro de energías del <span class="math notranslate nohighlight">\(e\)</span> en las desintegraciones del <span class="math notranslate nohighlight">\(\pi\)</span> [AB]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="oscilaciones-de-neutrinos">
+<h2>Oscilaciones de neutrinos<a class="headerlink" href="#oscilaciones-de-neutrinos" title="Permalink to this heading">#</a></h2>
+<p>Sabemos experimentalmente que <strong>los neutrinos oscilan entre sus sabores en su propagación</strong>.</p>
+<p>Las oscilaciones <strong>dependen de las masas</strong> de los neutrinos.</p>
+<p>Pero recordemos que el Modelo Estándar postula que los neutrinos no tienen masas.</p>
+<p>Esto hace que las oscilaciones de neutrinos sean por ahora la <strong>única prueba experimental</strong> de que <strong>el SM necesita revisarse</strong>.</p>
+<div class="section" id="el-puzzle-solar">
+<h3>El puzzle solar<a class="headerlink" href="#el-puzzle-solar" title="Permalink to this heading">#</a></h3>
+<p>En la década de los 60, el experimento de R. David en la mina de Homestake, Dakota del Sur, medió el flujo de <span class="math notranslate nohighlight">\(\nu_e\)</span>  solares y resultaba ser <span class="math notranslate nohighlight">\(1/3\)</span> del esperado según el modelo teórico del Sol desarrollado por J. Bahcall.</p>
+<p>Durante aproximadamente 40 años los resultados de los experimentos que medían el flujo de <span class="math notranslate nohighlight">\(\nu_e\)</span> solares mostraban un deficit respecto al flujo esperado según el modelo solar.</p>
+<p>En el 2004 El experimento SNO (en Canada) midió el flujo total (la suma de los flujos de los diferentes sabores) de neutrinos y verificó que estaba en acuerdo con el esperado por el modelo solar para <span class="math notranslate nohighlight">\(\nu_e\)</span> producidos en el Sol. Por lo tanto los neutrinos que se producían en el Sol, todos <span class="math notranslate nohighlight">\(\nu_e\)</span>, estaban de acuerdo con el modelo teórico, pero al llegar a la Tierra, solo una fracción, 1/3, eran <span class="math notranslate nohighlight">\(\nu_e\)</span>.</p>
+<p>Pontecorbo en los 50’s adelantó que los neutrinos podrían oscilar entre sus diversos sabores si tenían masas distintas.</p>
+<p>Ahora sabemos que los <span class="math notranslate nohighlight">\(\nu_e\)</span> que se producen en la reacciones nucleares del Sol cambian de sabor en su camino hacia la Tierra.</p>
+</div>
+<div class="section" id="neutrinos-atmosfericos">
+<h3>Neutrinos atmosféricos<a class="headerlink" href="#neutrinos-atmosfericos" title="Permalink to this heading">#</a></h3>
+<p>En 1998 el experimento Super-Kamiokande en la mina de Kamioka, Japón, medió que el flujo de <span class="math notranslate nohighlight">\(\nu_\mu\)</span> producido en las interacciones de los rayos cósmicos con la atmósfera dependía de la dirección de llegada, en concreto midió que existía una asimetría arriba y abajo, donde abajo correspondía a los neutrinos que habían atravesado la Tierra, y arriba sólo la atmósfera.</p>
+<p>Ahora sabemos que los <span class="math notranslate nohighlight">\(\nu_\mu\)</span> dependiendo de la distancia recorrida se transforman de sabor a los dos otros neutrinos, pero principalmente en <span class="math notranslate nohighlight">\(\nu_\tau\)</span>.</p>
+<p>La siguiente figura muestra el detector Super-Kamiokande.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_SK.png"><img alt="../_images/leptons_SK.png" class="align-center" src="../_images/leptons_SK.png" style="width: 450px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Super-Kamiokande a) dibujo del detector b) principio de detección [SK, MT13.2]</p></td>
+</tr>
+</tbody>
+</table>
+<p>SK es un tanque de agua de 50 kton, 36 m de altura y 34 de diámetro, con 11 k PMTs en las paredes.</p>
+<p>SK detecta las corrientes cargadas de neutrinos <span class="math notranslate nohighlight">\(\nu_e \to e + X\)</span> o <span class="math notranslate nohighlight">\(\nu_\mu \to \mu + X\)</span>, a partir del leptón cargado.</p>
+<p>En el agua, el leptón a partir de un umbral de energía emite luz Cherenkov que se detecta en gigantescos PMTs colocados en las paredes del detector.</p>
+<p>A partir de la luz y el tiempo de de su llegada a los PMTs se determina la energía y dirección del neutrino.</p>
+<p>Se pueden distingir <span class="math notranslate nohighlight">\(e\)</span> de <span class="math notranslate nohighlight">\(\mu\)</span> por los patrones de luz en los PMTs.</p>
+<p>Resultados de la colaboración SK.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_SK_results.png"><img alt="../_images/leptons_SK_results.png" class="align-center" src="../_images/leptons_SK_results.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>eventos de <span class="math notranslate nohighlight">\(\nu_e\)</span> (iza), <span class="math notranslate nohighlight">\(\nu_\mu\)</span> detectados por SK en función del ángulo [SK]</p></td>
+</tr>
+</tbody>
+</table>
+<p>En la figura, el eje <span class="math notranslate nohighlight">\(x\)</span>, correponde al <span class="math notranslate nohighlight">\(\cos \theta\)</span>, donde <span class="math notranslate nohighlight">\(\theta\)</span> es el ángulo de llegada, <span class="math notranslate nohighlight">\(\cos \theta = 1\)</span> indica arriba, y <span class="math notranslate nohighlight">\(\cos \theta = -1\)</span>, abajo (o sea, atravesando la Tierra).</p>
+<p>Observamos:</p>
+<ul class="simple">
+<li><p>Para los <span class="math notranslate nohighlight">\(\nu_e\)</span> la predicción y la observación coinciden.</p></li>
+<li><p>Para los <span class="math notranslate nohighlight">\(\nu_\mu\)</span>, de multi-GeV, hay un déficit para aquellos que provienen de “abajo”.</p></li>
+<li><p>La línea corresponde a las predicción en caso de oscilaciones.</p></li>
+</ul>
+<p>Luego SK concluyó que los neutrinos producidos <span class="math notranslate nohighlight">\(\nu_\mu\)</span> en las atmósfera oscilan en su recorrido hasta el detector.</p>
+</div>
+<div class="section" id="oscilaciones-en-dos-familias">
+<h3>Oscilaciones en dos familias<a class="headerlink" href="#oscilaciones-en-dos-familias" title="Permalink to this heading">#</a></h3>
+<p>Como los neutrinos son neutros, un neutrino de un sabor, por ejemplo <span class="math notranslate nohighlight">\(\nu_e\)</span>, puede estar compuesto por una combinación de neutrinos con diferentes masas. Cada neutrino se propagará libremente de acuerdo con su masa como una onda libre; y con la distancia -o el tiempo transcurrido-, la composición inicial de los diferentes tipos de neutrinos cambia.</p>
+<p>Los neutrinos pueden oscilar si los estados de sabor no son los mismos que los estados de masas y las masas de los neutrinos son distintas.</p>
+<p>Los estados de sabor son <span class="math notranslate nohighlight">\(\nu_\alpha\)</span>, con <span class="math notranslate nohighlight">\(\alpha = e, \mu, \tau\)</span>, y los estados de masas <span class="math notranslate nohighlight">\(\nu_i\)</span> con masas <span class="math notranslate nohighlight">\(m_i\)</span>  donde <span class="math notranslate nohighlight">\(i = 1, 2, 3\)</span>.</p>
+<p>Consideremos por simplicidad solo dos sabores y dos masas. Los sabores serán: <span class="math notranslate nohighlight">\(\alpha, \beta\)</span></p>
+<p>La relación entre estados de masas y de sabor de neutrinos viene dada por una matriz de mezcla:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \nu_\alpha \\ \nu_\beta \end{pmatrix} = \begin{pmatrix} \cos \theta &amp; \sin \theta \\ - \sin \theta &amp; \cos \theta \end{pmatrix} \begin{pmatrix} \nu_1 \\ \nu_2 \end{pmatrix} 
+\end{split}\]</div>
+<p>Si producimos un neutrino de un determinado sabor, <span class="math notranslate nohighlight">\(\nu_\alpha\)</span>, en un tiempo <span class="math notranslate nohighlight">\(t_0  = 0\)</span>, con un momento <span class="math notranslate nohighlight">\(p\)</span>, este es una combinación de los neutrinos de masas <span class="math notranslate nohighlight">\(| \nu_1 \rangle, \, | \nu_2 \rangle\)</span> que depende de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+| \nu_\alpha \rangle = \cos \theta | \nu_1 \rangle + \sin \theta | \nu_2 \rangle
+\]</div>
+<p>La evolución de cada neutrino de masas corresponde a la de una partícula libre, esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+| \nu (t) \rangle  = \cos \theta e^{+i({\bf p x} - E_1t)}| \nu_1 \rangle + \sin \theta e^{+i({\bf p x} - E_2t)}| \nu_2 \rangle
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(E_i = \sqrt{m^2_i + p^2}\)</span>, con <span class="math notranslate nohighlight">\(i = 1, 2\)</span></p>
+<p>En un determinato tiempo <span class="math notranslate nohighlight">\(t\)</span>, o equivalentemente a una distancia <span class="math notranslate nohighlight">\(L\)</span>, podemos detectar el neutrino con otro sabor <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+| \nu_\beta \rangle = -\sin \theta | \nu_1 \rangle + \cos \theta | \nu_2 \rangle
+\]</div>
+<p>¡Recordemos que las interacciones de los neutrinos tienen lugar en sus estados de sabor!</p>
+<p>Calculamos la amplitud de transición:</p>
+<div class="math notranslate nohighlight">
+\[
+A_{\alpha \beta}(t) = \langle \nu_\beta | \nu(t) \rangle = -\sin\theta\cos\theta e^{-iE_1t} + \sin\theta\cos\theta e^{-iE_2t} 
+\]</div>
+<p>recordemos que una fase global en la amplitud, en este caso <span class="math notranslate nohighlight">\(e^{i{\bf px}}\)</span> no afecta a la física del proceso.</p>
+<p>Si operamos:<br />
+$<span class="math notranslate nohighlight">\(
+A_{\alpha\beta}(t) = \frac{1}{2}\sin 2 \theta e^{-iE_1} \left( 1 + e^{-i(E_2 - E_1)t}\right)
+\)</span>$</p>
+<p>de nuevo la fase global <span class="math notranslate nohighlight">\(e^{-iE_1t}\)</span> no altera la física, y si desarrollamos:</p>
+<div class="math notranslate nohighlight">
+\[
+E_2 - E_1 \simeq \frac{p}{2}  \left(1 + \frac{m_2^2}{p^2}\right) - \frac{p}{2}  \left(1 + \frac{m_1^2}{p^2}\right) = \frac{m_2^2 - m^2_1}{2p} \simeq \frac{\Delta m^2_{21}}{2E}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\Delta m_{21}^2 = m_2^2 - m^2_1\)</span>, y dado que <span class="math notranslate nohighlight">\(m_i \sim 0\)</span> aproximamos <span class="math notranslate nohighlight">\(p \sim E\)</span></p>
+<p>La probabilidad de aparición, o de oscilación, de un <span class="math notranslate nohighlight">\(\nu_\alpha\)</span> como <span class="math notranslate nohighlight">\(\nu_\beta\)</span> a un tiempo <span class="math notranslate nohighlight">\(t\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_{\alpha\beta}(t) = |A_{\alpha\beta}|^2 = \frac{1}{4} \sin^2 2 \theta (1 + e^{-i \frac{\Delta m^2_{21}t}{2E}}) (1 + e^{+i \frac{\Delta m^2_{21}t}{2E}})  \\
+= \frac{1}{4} \sin^2 2 \theta \left(2 - 2 \cos \frac{\Delta m^2_{21}t}{2E} \right)  \\
+= \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21}t}{4E}
+\end{split}\]</div>
+<p>Podemos dar la probabilidad de oscilación a una distancia <span class="math notranslate nohighlight">\(L\)</span>, que corresponde a tiempo, <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p>Notar que los experimentos se situan a una distancia <span class="math notranslate nohighlight">\(L\)</span> de la fuente de neutrinos.</p>
+<div class="math notranslate nohighlight">
+\[
+P_{\alpha\beta}(L) = \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21}L}{4E}
+\]</div>
+<p>Si damos unidades:</p>
+<div class="math notranslate nohighlight">
+\[
+P_{\alpha\beta}(L) = \sin^2 2 \theta \sin^2 \frac{1.27 \Delta m^2_{21} [\mathrm{eV}^2]L [\mathrm{km}]}{4E[\mathrm{GeV}]}
+\]</div>
+<p>Se trata de una probabilidad de forma oscilatoria, cuya amplitud están controlada por <span class="math notranslate nohighlight">\(\theta\)</span>, si <span class="math notranslate nohighlight">\(\theta = 0\)</span> no hay oscilación, y su frecuencia por <span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span>, si los dos neutrinos tienen igual masa, tampoco hay oscilación.</p>
+<p>Para observar la oscilación, dado un <span class="math notranslate nohighlight">\(\Delta m^2_{12}\)</span> y una energía <span class="math notranslate nohighlight">\(E\)</span> debemos colocar el detector a una distancia <span class="math notranslate nohighlight">\(L\)</span> adecuada.</p>
+<p>Consideremos el caso de <span class="math notranslate nohighlight">\(\Delta m^2 = 2 \times 10^{-3} \; \mathrm{eV}^2\)</span> y <span class="math notranslate nohighlight">\(\theta = 47^o\)</span></p>
+<p>Vamos a calcular la probabilidad de oscilación <span class="math notranslate nohighlight">\(P_{\alpha\beta}(L)\)</span></p>
+<p><em>Cuestion</em>: ¿A qué distancia deberíamos colocar el detector para observar la oscilación máxima?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta</span>    <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mi">47</span><span class="o">/</span><span class="mf">180.</span> <span class="c1"># rad</span>
+<span class="n">ls</span>       <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># km</span>
+<span class="n">ene</span>      <span class="o">=</span> <span class="mf">1.</span> <span class="c1"># GeV</span>
+<span class="n">delta_m2</span> <span class="o">=</span> <span class="mf">0.0025</span> <span class="c1"># eV^2</span>
+<span class="n">posc</span>     <span class="o">=</span> <span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mf">1.27</span> <span class="o">*</span> <span class="n">delta_m2</span> <span class="o">*</span> <span class="n">d</span> <span class="o">/</span> <span class="n">ene</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">posc</span><span class="p">(</span><span class="n">ls</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$L$ (km)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$P_{\alpha\beta}(L)$&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/leptones_70_0.png" src="../_images/leptones_70_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="oscilaciones-en-tres-familias">
+<h3>Oscilaciones en tres familias<a class="headerlink" href="#oscilaciones-en-tres-familias" title="Permalink to this heading">#</a></h3>
+<p>Como existen tres neutrinos hay dos diferencias al cuadrado de sus masas, que controlan la fase de oscilación de los neutrinos solares, <span class="math notranslate nohighlight">\(\Delta m^2_{sol}\)</span> y de los atmosféricos, <span class="math notranslate nohighlight">\(\Delta m^2_{atm}\)</span> [PDG]:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta m^2_{sol} \simeq 7.5 \ 10^{-5} \; \mathrm{eV}^2, \;\;\; |\Delta m^2_{atm}| \simeq 2.5 \; 10^{-3} \mathrm{eV}^2  
+\]</div>
+<p>Notar que los neutrinos son quasi-degenerados en masa.</p>
+<p>La relación entre los estados de sabor <span class="math notranslate nohighlight">\(\nu_\alpha\)</span> con <span class="math notranslate nohighlight">\(\alpha = e, \mu, \tau\)</span> con los estados de masas <span class="math notranslate nohighlight">\(\nu_i\)</span> con masas <span class="math notranslate nohighlight">\(m_i\)</span> donde <span class="math notranslate nohighlight">\(i = 1, 2, 3\)</span>, viene dada por una matriz unitaria <span class="math notranslate nohighlight">\(U_{PMNS}\)</span>, conocida como PMNS (Pontecorvo-Maki-Nakagawa-Sakata)</p>
+<p>La matiz <span class="math notranslate nohighlight">\(U\)</span> tiene 3 ángulos de mezcla y una fase compleja (de forma similar a la matriz CKM).</p>
+<p>Se han medido experimentalmente los tres ángulos [PDG], pero no la fase compleja <span class="math notranslate nohighlight">\(\delta\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\theta_{sol} \simeq 33^0, \; \theta_{atm} \simeq 47^o \; \theta_{13} \simeq 8^o
+\]</div>
+</div>
+<div class="section" id="el-futuro-de-las-oscilaciones-de-neutrinos">
+<h3>El futuro de las oscilaciones de neutrinos<a class="headerlink" href="#el-futuro-de-las-oscilaciones-de-neutrinos" title="Permalink to this heading">#</a></h3>
+<p>En la próxima década el detector Hyper-Kamiokande en Japón y DUNE en los EEUU determinaran seguramente la fase <span class="math notranslate nohighlight">\(\delta\)</span> y fijarán nuestra comprensión de las oscilaciones de neutrinos.</p>
+<p>HK estudiará las oscilaciones <span class="math notranslate nohighlight">\(\nu_\mu \to \nu_e\)</span> y <span class="math notranslate nohighlight">\(\bar{\nu}_\mu \to \bar{\nu}_e\)</span> con energías de 0.6 GeV y una distancia 295 km, desde su producción en J-Parc hasta su detección en HK en la mina de Kamioka.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/leptons_HK.png"><img alt="../_images/leptons_HK.png" class="align-center" src="../_images/leptons_HK.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Dibujo del detector HK comparado con Notre-Dame de Paris</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="bibliografia">
+<h3>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>[AB] Alessandro Bettini, «Introduction to Elementary Particle Physcs», Cambridge U. press. Temas 7 y 10.</p></li>
+<li><p>[MT] Mark Tomsom, «Modern Particle Physics», Cambridge U. press. Temas 11, 12 y 13.</p></li>
+<li><p><a class="reference external" href="https://pdg.lbl.gov/">PDG</a> Particle Data Group.</p></li>
+<li><p>[WU] C.S. Wu et al, <em>Phys. Rev.</em> <strong>D17</strong> 2369 (1957)</p></li>
+<li><p>[MU] M. Bardon, P. Norton, J. Peoples, A. M. Sachs and J. Lee-Franzini, <em>Phys. Rev.
+Lett.</em> <strong>14</strong>, 449 (1965).</p></li>
+<li><p>[GOL] M. Goldhaber et al, <em>Phys Rev</em> <strong>109</strong> 1015 (1958)</p></li>
+<li><p>[KATRIN] M. Aker et al. (KATRIN Collaboration)
+<em>Phys. Rev. Lett.</em> <strong>123</strong>, 221802 (2019)</p></li>
+<li><p>[SK] Y. Ashie et al, SK Collaboration, <em>Phys. Rev.</em> <strong>D71</strong> 112005 (2005)</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="observables.html" title="anterior página">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title">Observables en Física de Partículas</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="quarks_hadrons.html" title="siguiente página">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Sobre los quarks y los hadrones</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

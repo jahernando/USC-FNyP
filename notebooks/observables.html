@@ -1,0 +1,2687 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Observables en Física de Partículas &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Sobre los leptones" href="leptones.html" />
+    <link rel="prev" title="Introducción a Física de Partículas" href="introduccion.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduccion.html">
+   Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="leptones.html">
+   Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quarks_hadrons.html">
+   Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sm.html">
+   Sobre el Modelo Estándar
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/observables.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/observables.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/observables.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objetivos">
+   Objetivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pasos-previos">
+   Pasos previos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unidades-naturales">
+     Unidades Naturales
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recordatorio-de-la-cinematica-relativista">
+     Recordatorio de la cinemática relativista
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#transformaciones-de-lorentz">
+       Transformaciones de Lorentz
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#cuatro-vectores">
+         cuatro-vectores
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#cuadri-momento">
+         cuadri-momento
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-y-desintegraciones-de-particulas">
+     Interacciones y desintegraciones de partículas
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interacciones-y-colisiones">
+       Interacciones y colisiones
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interacciones-en-colision-o-en-blanco-fijo">
+       interacciones en colisión o en blanco fijo
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#creacion-de-particulas-en-colisiones-o-en-blanco-fijo">
+       creación de partículas en colisiones o en blanco fijo
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interaccion-en-colision-o-en-blanco-fijo">
+     Interacción en colisión o en blanco fijo
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#desintegraciones-de-particulas">
+       Desintegraciones de partículas
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#desintegraciones-a-varias-particulas">
+         Desintegraciones a varias partículas
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#los-parametros-de-los-colisionadores">
+       Los parámetros de los colisionadores
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Los parámetros de los colisionadores
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parametros-de-los-experimentos-en-blanco-fijo">
+       Parámetros de los experimentos en blanco fijo
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#observables">
+   Observables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seccion-eficaz">
+     Sección eficaz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#anchura-de-desintegracion">
+     Anchura de desintegración
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fraccion-de-desintegracion">
+     Fracción de desintegración
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#una-perspectiva-experimental">
+   Una perspectiva experimental
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#las-particulas-cargadas">
+     Las partículas cargadas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#detectores-gaseosos">
+     Detectores gaseosos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#camaras-de-proyeccion-temporal-tpc">
+       Cámaras de proyección temporal (TPC)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#detectores-de-silicio">
+       Detectores de silicio
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-electromagneticas">
+     Interacciones electromagnéticas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-de-los-electrones">
+     Interacciones de los electrones
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-de-los-fotones">
+     Interacciones de los fotones
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calorimetros-electromagneticos">
+     Calorímetros electromagnéticos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pmt">
+     PMT
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#experimentos">
+     Experimentos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#experimentos-4-pi">
+       Experimentos
+       <span class="math notranslate nohighlight">
+        \(4\pi\)
+       </span>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#experimentos-de-blanco-fijo-o-hacia-delante">
+       Experimentos de blanco fijo o hacia delante
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#procesado-y-analisis-de-datos">
+       Procesado y análisis de datos
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#analisis">
+       Análisis
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#breve-introduccion-a-los-aceleradores">
+     Breve introducción a los aceleradores
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#acelerador-lineal">
+       Acelerador lineal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aceleradores-circulares">
+       Aceleradores circulares
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#haces-secundarios-de-hadrones-mu-nu-mu">
+       Haces secundarios de hadrones,
+       <span class="math notranslate nohighlight">
+        \(\mu, \, \nu_\mu\)
+       </span>
+       .
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#una-perspectiva-teorica">
+   Una perspectiva teórica
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sobre-la-ecuacion-de-dirac">
+     Sobre la ecuación de Dirac
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#diagramas-de-feyman">
+     Diagramas de Feyman
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#teoria-de-fermi">
+       Teoría de Fermi
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#diagrama-de-feynman">
+       diagrama de Feynman
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vertices">
+       Vértices
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#portadores">
+       Portadores
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tipos-de-interacciones">
+     Tipos de interacciones
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#diagramas-de-arbol-y-de-lazo">
+       Diagramas de árbol y de lazo
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Observables en Física de Partículas</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objetivos">
+   Objetivos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pasos-previos">
+   Pasos previos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unidades-naturales">
+     Unidades Naturales
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recordatorio-de-la-cinematica-relativista">
+     Recordatorio de la cinemática relativista
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#transformaciones-de-lorentz">
+       Transformaciones de Lorentz
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#cuatro-vectores">
+         cuatro-vectores
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#cuadri-momento">
+         cuadri-momento
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-y-desintegraciones-de-particulas">
+     Interacciones y desintegraciones de partículas
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interacciones-y-colisiones">
+       Interacciones y colisiones
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interacciones-en-colision-o-en-blanco-fijo">
+       interacciones en colisión o en blanco fijo
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#creacion-de-particulas-en-colisiones-o-en-blanco-fijo">
+       creación de partículas en colisiones o en blanco fijo
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interaccion-en-colision-o-en-blanco-fijo">
+     Interacción en colisión o en blanco fijo
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#desintegraciones-de-particulas">
+       Desintegraciones de partículas
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#desintegraciones-a-varias-particulas">
+         Desintegraciones a varias partículas
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#los-parametros-de-los-colisionadores">
+       Los parámetros de los colisionadores
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Los parámetros de los colisionadores
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parametros-de-los-experimentos-en-blanco-fijo">
+       Parámetros de los experimentos en blanco fijo
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#observables">
+   Observables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seccion-eficaz">
+     Sección eficaz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#anchura-de-desintegracion">
+     Anchura de desintegración
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fraccion-de-desintegracion">
+     Fracción de desintegración
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#una-perspectiva-experimental">
+   Una perspectiva experimental
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#las-particulas-cargadas">
+     Las partículas cargadas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#detectores-gaseosos">
+     Detectores gaseosos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#camaras-de-proyeccion-temporal-tpc">
+       Cámaras de proyección temporal (TPC)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#detectores-de-silicio">
+       Detectores de silicio
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-electromagneticas">
+     Interacciones electromagnéticas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-de-los-electrones">
+     Interacciones de los electrones
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-de-los-fotones">
+     Interacciones de los fotones
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calorimetros-electromagneticos">
+     Calorímetros electromagnéticos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pmt">
+     PMT
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#experimentos">
+     Experimentos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#experimentos-4-pi">
+       Experimentos
+       <span class="math notranslate nohighlight">
+        \(4\pi\)
+       </span>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#experimentos-de-blanco-fijo-o-hacia-delante">
+       Experimentos de blanco fijo o hacia delante
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#procesado-y-analisis-de-datos">
+       Procesado y análisis de datos
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#analisis">
+       Análisis
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#breve-introduccion-a-los-aceleradores">
+     Breve introducción a los aceleradores
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#acelerador-lineal">
+       Acelerador lineal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aceleradores-circulares">
+       Aceleradores circulares
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#haces-secundarios-de-hadrones-mu-nu-mu">
+       Haces secundarios de hadrones,
+       <span class="math notranslate nohighlight">
+        \(\mu, \, \nu_\mu\)
+       </span>
+       .
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#una-perspectiva-teorica">
+   Una perspectiva teórica
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sobre-la-ecuacion-de-dirac">
+     Sobre la ecuación de Dirac
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#diagramas-de-feyman">
+     Diagramas de Feyman
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#teoria-de-fermi">
+       Teoría de Fermi
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#diagrama-de-feynman">
+       diagrama de Feynman
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vertices">
+       Vértices
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#portadores">
+       Portadores
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tipos-de-interacciones">
+     Tipos de interacciones
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#diagramas-de-arbol-y-de-lazo">
+       Diagramas de árbol y de lazo
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="observables-en-fisica-de-particulas">
+<h1>Observables en Física de Partículas<a class="headerlink" href="#observables-en-fisica-de-particulas" title="Permalink to this heading">#</a></h1>
+<p><em>Jose A. Hernando Morata</em></p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p><em>Noviembre 2023</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 20 15:19:18 2023
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Recordar la cinemátics relativista</p></li>
+<li><p>Discutir los principables observables y los parámetros de los experimentos</p>
+<ul>
+<li><p>sección eficaz, amplitud de desintegración o tiempo de vida media, fracción de desintegración</p></li>
+</ul>
+</li>
+<li><p>Introducción a la Física de Partículas experimental</p>
+<ul>
+<li><p>El paso de las partículas por la materia, los detectores</p></li>
+<li><p>La dinámica: experimentos, las medidas y sus errores</p></li>
+</ul>
+</li>
+<li><p>Introducción a la física teórica de partículas y los cálculos de los observables</p>
+<ul>
+<li><p>Unos apuntes mínimos de la Teoría (Cuántica de Campos) y la ecuación de Dirac</p></li>
+<li><p>La regla de oro de Fermy y los diagramas de Feynman: las corrientes, los vértices (acoplos) y los mediadores</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="pasos-previos">
+<h2>Pasos previos<a class="headerlink" href="#pasos-previos" title="Permalink to this heading">#</a></h2>
+<div class="section" id="unidades-naturales">
+<h3>Unidades Naturales<a class="headerlink" href="#unidades-naturales" title="Permalink to this heading">#</a></h3>
+<p>Los físicos/as de Partículas trabajamos en <strong>unidades naturales</strong>, UN, donde</p>
+<div class="math notranslate nohighlight">
+\[
+\hbar =  1, \;\;\; c = 1.
+\]</div>
+<p>Así, la ecuación de Einstein queda:</p>
+<div class="math notranslate nohighlight">
+\[
+E^2 = m^2 c^4 + p^2 c^2 \;\; \Rightarrow \;\; E^2 = m^2 + p^2 
+\]</div>
+<p>Para convertir la unidades naturales al sistema internacional, SI, se utilizan los siguientes factores de conversión:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>—- <span class="math notranslate nohighlight">\(\hbar\)</span> ——</p></th>
+<th class="text-align:center head"><p>—- <span class="math notranslate nohighlight">\(c\)</span> ——</p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\hbar c\)</span>  —-</p></th>
+<th class="text-align:center head"><p>—- GeV —–</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.055\)</span> <span class="math notranslate nohighlight">\(10^{-34}\)</span> Js</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(2.998\)</span> <span class="math notranslate nohighlight">\(10^8\)</span> m/s</p></td>
+<td class="text-align:center"><p>0.197 GeV fm</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.602\)</span>  <span class="math notranslate nohighlight">\(10^{-10}\)</span> J</p></td>
+</tr>
+</tbody>
+</table>
+<p>Energía, momento y masa las daremos en MeV o GeV, y habitualmente tiempo y distancia los damos en s y fm.</p>
+<p>La tabla muestra como las unidades de las magnitudes más comunes en NU:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Cantidad</p></th>
+<th class="text-align:left head"><p>kg, m, s</p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(\hbar, c\)</span>, GeV</p></th>
+<th class="text-align:left head"><p>NU</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Energía</p></td>
+<td class="text-align:left"><p>kg m<span class="math notranslate nohighlight">\(^2\)</span> s<span class="math notranslate nohighlight">\(^{-2}\)</span></p></td>
+<td class="text-align:left"><p>GeV</p></td>
+<td class="text-align:left"><p>GeV</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>momento</p></td>
+<td class="text-align:left"><p>kg m s<span class="math notranslate nohighlight">\(^{-1}\)</span></p></td>
+<td class="text-align:left"><p>GeV/<span class="math notranslate nohighlight">\(c\)</span></p></td>
+<td class="text-align:left"><p>GeV</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>masa</p></td>
+<td class="text-align:left"><p>kg</p></td>
+<td class="text-align:left"><p>GeV/<span class="math notranslate nohighlight">\(c^{2}\)</span></p></td>
+<td class="text-align:left"><p>GeV</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>tiempo</p></td>
+<td class="text-align:left"><p>s</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\hbar\)</span>/GeV</p></td>
+<td class="text-align:left"><p>GeV<span class="math notranslate nohighlight">\(^{-1}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>distance</p></td>
+<td class="text-align:left"><p>m</p></td>
+<td class="text-align:left"><p>(<span class="math notranslate nohighlight">\(\hbar c\)</span>/GeV)</p></td>
+<td class="text-align:left"><p>GeV<span class="math notranslate nohighlight">\(^{-1}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>área</p></td>
+<td class="text-align:left"><p>m<span class="math notranslate nohighlight">\(^2\)</span></p></td>
+<td class="text-align:left"><p>(<span class="math notranslate nohighlight">\(\hbar c\)</span>/GeV)<span class="math notranslate nohighlight">\(^{2}\)</span></p></td>
+<td class="text-align:left"><p>GeV<span class="math notranslate nohighlight">\(^{-2}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La magnitud de referencia es GeV.</p>
+<p>Es útil recordar el factor de conversión: <span class="math notranslate nohighlight">\(\hbar c\)</span> = 0.197 GeV fm.</p>
+<p>Para convertir de NU a SI se añaden los factores <span class="math notranslate nohighlight">\(\hbar, c\)</span> correspondientes y para cuadrar las magnitudes.</p>
+<p><em>Cuestión</em>: expresa el radio del protón <span class="math notranslate nohighlight">\(r = 4.1\)</span> <span class="math notranslate nohighlight">\(\mathrm{GeV}^{-1}\)</span> en el S.I.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hbarc</span> <span class="o">=</span> <span class="mf">0.197</span>  <span class="c1"># GeV fm (femto = 10^-15) </span>
+<span class="n">r_un</span>  <span class="o">=</span> <span class="mf">4.1</span>    <span class="c1"># 1/GeV</span>
+<span class="n">r_si</span>  <span class="o">=</span> <span class="n">r_un</span> <span class="o">*</span> <span class="n">hbarc</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; radio del protón &#39;</span><span class="p">,</span> <span class="n">r_si</span><span class="p">,</span> <span class="s1">&#39; fm&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> radio del protón  0.8077  fm
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="recordatorio-de-la-cinematica-relativista">
+<h3>Recordatorio de la cinemática relativista<a class="headerlink" href="#recordatorio-de-la-cinematica-relativista" title="Permalink to this heading">#</a></h3>
+<div class="section" id="transformaciones-de-lorentz">
+<h4>Transformaciones de Lorentz<a class="headerlink" href="#transformaciones-de-lorentz" title="Permalink to this heading">#</a></h4>
+<p>La transformación de Lorentz nos relaciona el espacio-tiempo <span class="math notranslate nohighlight">\((t, {\bf r})\)</span> en un sistema inercial <span class="math notranslate nohighlight">\(\Sigma\)</span> con el espacio-tiempo <span class="math notranslate nohighlight">\((t', {\bf r}')\)</span> en otros sistema inercial <span class="math notranslate nohighlight">\(\Sigma'\)</span> que se desplaza respecto del primero con velocidad <span class="math notranslate nohighlight">\(v\)</span> en la dirección <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/fun_frames_relativity.png"><img alt="../_images/fun_frames_relativity.png" class="align-center" src="../_images/fun_frames_relativity.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Sistemas inerciales, <span class="math notranslate nohighlight">\(\Sigma'\)</span> se desplaza con velocidad <span class="math notranslate nohighlight">\(v\)</span> respecto <span class="math notranslate nohighlight">\(\Sigma\)</span> [MT2.2]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Einstein postuló que la velocidad de la luz, <span class="math notranslate nohighlight">\(c\)</span>, es la misma en los dos sistemas y nada puede viajar más rápido que la luz <span class="math notranslate nohighlight">\(v \lt c\)</span>.</p>
+<p>La luz producida en <span class="math notranslate nohighlight">\(t = t' = 0\)</span>, cuando el origen de los dos sistemas coincide, cumple:</p>
+<div class="math notranslate nohighlight">
+\[
+c^2t^2 - {\bf r}^2 = c^2 t'^2 - {\bf r}'^2,
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\({\bf r} = (x, y, z)\)</span>, y de igual manera para <span class="math notranslate nohighlight">\({\bf r}' = (x', y', z')\)</span>.</p>
+<p>Se cumple esa condición si las coordenadas en los dos sistemas están relacionadas por la transformación de Lorentz.</p>
+<div class="math notranslate nohighlight">
+\[
+t' = \gamma \left( t - \frac{v}{c^2} z \right), \; x' = x, \; y' = y, \, z' = \gamma (z - vt) 
+\]</div>
+<p>donde introducimos, el <strong>factor de Lorentz</strong>, <span class="math notranslate nohighlight">\(\gamma\)</span>, y <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = (1 - \beta^2)^{-1/2}, \; \; \beta = v/c 
+\]</div>
+<p>En NU:</p>
+<div class="math notranslate nohighlight">
+\[
+t' = \gamma (1 - \beta z),  \; x' = x, \; y' = y, z' = \gamma (z - \beta t)
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} t' \\ x' \\ y' \\ z' \end{pmatrix} = 
+\begin{pmatrix} \gamma         &amp; 0 &amp; 0 &amp; -\gamma \beta \\
+                 0             &amp; 1 &amp; 0 &amp; 0 \\
+                 0             &amp; 0 &amp; 1 &amp; 0 \\
+                 -\gamma \beta &amp; 0 &amp; 0 &amp; \gamma 
+\end{pmatrix}
+\begin{pmatrix}t \\ x \\ y \\ z \end{pmatrix}
+\end{split}\]</div>
+<p>Consideremos una partícula de masa <span class="math notranslate nohighlight">\(m\)</span> que para un observador va a velocidad <span class="math notranslate nohighlight">\(\beta\)</span> (en <span class="math notranslate nohighlight">\(z\)</span>).</p>
+<p>El sistema del observador es <span class="math notranslate nohighlight">\(\Sigma\)</span>, mientras que el sistema donde la partícula está en reposo (va a su misma velocidad) es <span class="math notranslate nohighlight">\(\Sigma'\)</span></p>
+<p>La tranformación de Lorentz de <span class="math notranslate nohighlight">\(\Sigma' \to \Sigma\)</span> viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} t \\ x \\ y \\ z \end{pmatrix} = 
+\begin{pmatrix} \gamma         &amp; 0 &amp; 0 &amp; \gamma \beta \\
+                 0             &amp; 1 &amp; 0 &amp; 0 \\
+                 0             &amp; 0 &amp; 1 &amp; 0 \\
+                 \gamma \beta &amp; 0 &amp; 0 &amp; \gamma 
+\end{pmatrix}
+\begin{pmatrix}t' \\ x' \\ y' \\ z' \end{pmatrix}
+\end{split}\]</div>
+<p>¡Un cambio se signo en la velocidad!</p>
+<div class="section" id="cuatro-vectores">
+<h5>cuatro-vectores<a class="headerlink" href="#cuatro-vectores" title="Permalink to this heading">#</a></h5>
+<p>La magnitud <span class="math notranslate nohighlight">\({\bf r}^2\)</span>, el módulo al cuadrado de un vector 3D, donde <span class="math notranslate nohighlight">\({\bf r} = (x, y, z)\)</span>, es invariante bajo rotaciones.</p>
+<p>Defininos el <strong>cuadri-vector</strong> como <span class="math notranslate nohighlight">\(x = (t, {\bf x}) = (t, x, y, z)\)</span>, y su <em>norma</em>, o producto escalar, al cuadrado, viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[
+x^2 = t^2 - {\bf x}^2
+\]</div>
+<p>es un <strong>invariante</strong> bajo transformaciones de <strong>Lorentz</strong>.</p>
+<p>Si definimos <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> como la <strong>matriz diagonal de la métrica</strong>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+g_{\mu\nu } = \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{pmatrix}
+\end{split}\]</div>
+<p>El producto escalar al cuadrado definido entre dos <strong>cuadri-vectores</strong>, <span class="math notranslate nohighlight">\(a, b\)</span>, se expresa como:</p>
+<div class="math notranslate nohighlight">
+\[
+a \, b =  g_{\nu\mu} a^\nu b^\mu  \equiv  \sum_{\mu=0}^3 \sum_{\nu = 0}^3 g_{\mu\nu} a^\nu b^\mu
+\]</div>
+</div>
+<div class="section" id="cuadri-momento">
+<h5>cuadri-momento<a class="headerlink" href="#cuadri-momento" title="Permalink to this heading">#</a></h5>
+<p>Si consideramos una partícula de masa <span class="math notranslate nohighlight">\(m\)</span>, que para un observador se mueve a velocidad <span class="math notranslate nohighlight">\(\beta\)</span> (en <span class="math notranslate nohighlight">\(z\)</span>). La partícula tiene energía <span class="math notranslate nohighlight">\(E\)</span> y momento <span class="math notranslate nohighlight">\({\bf p}\)</span>, y cumple la ecuación de Einstein (en UN):</p>
+<div class="math notranslate nohighlight">
+\[
+E = m^2 + {\bf p}^2 \;\; \Rightarrow \;\; m^2 = E^2 - {\bf p}^2
+\]</div>
+<p>que es válida en todos los sistemas inerciales (relacionados por transformaciones de Lorentz).</p>
+<p>Si definimos <strong>cuadrimomento</strong> de una partícula como</p>
+<div class="math notranslate nohighlight">
+\[
+p \equiv (E, \, {\bf p}),
+\]</div>
+<p>El cuadrimomento <strong>es un cuadrivector</strong>.</p>
+<p>Su norma al cuadrado es un invariante Lorentz, <span class="math notranslate nohighlight">\(p^2 = E - {\bf p}^2 = m^2\)</span>, y coincide con la masa de la partícula.</p>
+<p>En el sistema donde la partícula está en reposo, <span class="math notranslate nohighlight">\(\Sigma'\)</span>, el cuadrimomento es <span class="math notranslate nohighlight">\(p' = (m, {\bf 0})\)</span>.</p>
+<p>Podemos obtener el cuadrimomento <span class="math notranslate nohighlight">\(p = (E, {\bf p})\)</span> de la partícula en el sistema del observador, <span class="math notranslate nohighlight">\(\Sigma\)</span>, para el que la partícula tiene velocidad <span class="math notranslate nohighlight">\({\beta}\)</span> (en z) aplicando la transformación de Lorentz:</p>
+<div class="math notranslate nohighlight">
+\[
+p = (m \, \gamma,0, 0,  m \gamma \beta), 
+\]</div>
+<p>Esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+E = m \, \gamma \;\;\; {\bf p} = m \, \gamma  \, {\vec \beta}.
+\]</div>
+<p>O podemos dar los parámetros de Lorentz a partir del cuadrimomento en el sistema del observador:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{E}{m}, \;\;\; {\vec \beta} = \frac{{\bf p}}{E}
+\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="interacciones-y-desintegraciones-de-particulas">
+<h3>Interacciones y desintegraciones de partículas<a class="headerlink" href="#interacciones-y-desintegraciones-de-particulas" title="Permalink to this heading">#</a></h3>
+<div class="section" id="interacciones-y-colisiones">
+<h4>Interacciones y colisiones<a class="headerlink" href="#interacciones-y-colisiones" title="Permalink to this heading">#</a></h4>
+<p>Podemos <strong>crear nuevas partículas</strong> al hacer <strong>interaccionar o colisionar  partículas a alta energía</strong></p>
+<p>Por ejemplo mediante la interacción <span class="math notranslate nohighlight">\(\beta\)</span> inversa:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\nu}_e + p \to n + e^+
+\]</div>
+<p>podemos crear un <span class="math notranslate nohighlight">\(n\)</span> y un <span class="math notranslate nohighlight">\(e^+\)</span>, siempre que el <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span> tenga la suficiente energía al colisionar con un protón.</p>
+<p>Observa que en la interacción <span class="math notranslate nohighlight">\(\beta\)</span> inversa se conserva la carga, Q, y los números leptónico, <span class="math notranslate nohighlight">\(L\)</span> y bariónico, <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p>¡Y por su puesto, se conserva la energía, el momento y el momento angular total!</p>
+<p>También podemos crear nuevas partículas (un par de fermión-antifermión) mediante <strong>aniquilaciones</strong> de un partículas con su antipartícula</p>
+<p>por ejemplo:</p>
+<div class="math notranslate nohighlight">
+\[
+e + e^+ \to \mu + \mu^+.
+\]</div>
+<p>Un par de electrón y positrón se aniquilan y producen un par de muón y antimuón. Veremos más adelante que este proceso está mediado o por un fotón o por un bosón <span class="math notranslate nohighlight">\(Z^0\)</span>.</p>
+<p>La energía de los dos electrones necesaria para producir en el centro de masas, CM, los dos muones debe ser al menos <span class="math notranslate nohighlight">\(\sqrt{s} \ge 2 m_\mu\)</span> (ver más adelante), ¡esto es los dos muones aparecerían en reposo!.</p>
+<p>Notar que el anti-fermión de la aniquilación (o producción de pares) es siempre la antipartícula de fermión, en este caso <span class="math notranslate nohighlight">\(e^+\)</span> es el anti-fermión de <span class="math notranslate nohighlight">\(e\)</span>, y el <span class="math notranslate nohighlight">\(\mu^+\)</span> es el anti-fermión de <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
+<p>Por lo tanto, siempre que creamos por aniquilación antimateria creamos a su vez la materia complementaria.</p>
+</div>
+<div class="section" id="interacciones-en-colision-o-en-blanco-fijo">
+<h4>interacciones en colisión o en blanco fijo<a class="headerlink" href="#interacciones-en-colision-o-en-blanco-fijo" title="Permalink to this heading">#</a></h4>
+<p>Recordemos que existen dos tipos principales de experimentos en Física de Partículas:</p>
+<ul class="simple">
+<li><p><strong>colisionador</strong>: haces de <span class="math notranslate nohighlight">\(e, e^+, p, \bar{p}\)</span> colisionan entre sí, por ejemplo <a class="reference external" href="https://es.wikipedia.org/wiki/Large_Electron-Positron_collider">LEP</a> (<span class="math notranslate nohighlight">\(e +e^+\)</span>)</p></li>
+<li><p><strong>blanco fijo</strong> (<em>fixed target</em>): haces de <span class="math notranslate nohighlight">\(e, p, \mu, \nu\)</span> chocan contra un blanco (átomos, núcleos). Los experimentos de neutrinos son de blancos fijos, por ejemplo <a class="reference external" href="https://en.wikipedia.org/wiki/Gargamelle">Gargamelle</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="creacion-de-particulas-en-colisiones-o-en-blanco-fijo">
+<h4>creación de partículas en colisiones o en blanco fijo<a class="headerlink" href="#creacion-de-particulas-en-colisiones-o-en-blanco-fijo" title="Permalink to this heading">#</a></h4>
+<p>Las figuras muestran un dibujo del detector CMS (colisiones <span class="math notranslate nohighlight">\((p, p)\)</span> del LHC) y de SuperKamiokande (blanco fijo donde interaccioan neutrinos).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_CMS.jpg"><img alt="../_images/intro_CMS.jpg" class="align-center" src="../_images/intro_CMS.jpg" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/intro_SK.jpg"><img alt="../_images/intro_SK.jpg" class="align-center" src="../_images/intro_SK.jpg" style="width: 250px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>esquema del CMS [CERN]</p></td>
+<td class="text-align:center"><p>dibujo de SK [SK]</p></td>
+</tr>
+</tbody>
+</table>
+<p>SuperKamiokande (SK) un gigantesco tanque de 50 kton de agua que actua como blanco donde interactuan los neutrinos solares, atmosféricos y de un haz desde JPARC.
+Se está construyendo un detector mayor, HyperKamiokande, <a class="reference external" href="https://www-sk.icrr.u-tokyo.ac.jp/en/hk/">HK</a>, que operará en 2027.</p>
+</div>
+</div>
+<div class="section" id="interaccion-en-colision-o-en-blanco-fijo">
+<h3>Interacción en colisión o en blanco fijo<a class="headerlink" href="#interaccion-en-colision-o-en-blanco-fijo" title="Permalink to this heading">#</a></h3>
+<p>La figura muestra el caso de colisión de dos partículas <span class="math notranslate nohighlight">\(a, b\)</span> (izda) y de interacción de una partícula <span class="math notranslate nohighlight">\(a\)</span> contra un blanco fijo <span class="math notranslate nohighlight">\(b\)</span> (derecha).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/intro_collider_target.png"><img alt="../_images/intro_collider_target.png" class="align-center" src="../_images/intro_collider_target.png" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>colisión central (izda) y en blanco (derecha) de dos partículas <span class="math notranslate nohighlight">\(a, \, b\)</span>.</p></td>
+</tr>
+</tbody>
+</table>
+<p>A partir de los cuadrimomentos de las partículas <span class="math notranslate nohighlight">\(p_a, \; p_b\)</span>, definimos la variable <span class="math notranslate nohighlight">\(s\)</span>, el cuadrado de la suma de los momentos iniciales,</p>
+<div class="math notranslate nohighlight">
+\[
+s = (p_a + p_b)^2,
+\]</div>
+<p>que es un invariante Lorentz.</p>
+<p>En un mismo sistema inercial, la suma de cuadrimomentos iniciales es igual a los finales, por conservación de la energía y el momento antes y después de la interacción.</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{i \in \mathrm{iniciales}} p_i = \sum_{j \in \mathrm{finales}} p_j \Rightarrow s = \left(\sum_{i \in \mathrm{iniciales}} p_i \right)^2 = \left(\sum_{j \in \mathrm{finales}} p_j \right)^2
+\]</div>
+<p>Por lo tanto <span class="math notranslate nohighlight">\(s\)</span> se conserva en la interacción.</p>
+<p>Además, por ser invariante Lorentz, podemos calcular <span class="math notranslate nohighlight">\(s\)</span> en el sistema inercial que más nos convenga.</p>
+<p>Consideremos el caso, <span class="math notranslate nohighlight">\(a+b \to c\)</span>, donde el choque en el centro de masas de <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span>, produce una tercera partícula <span class="math notranslate nohighlight">\(c\)</span> de masa <span class="math notranslate nohighlight">\(m_c\)</span>.</p>
+<p>El momento inicial total en el centro de masas es nulo, esto es <span class="math notranslate nohighlight">\({\bf p}_b = - {\bf p}_a = {\bf p}^*\)</span>, por lo que <span class="math notranslate nohighlight">\(c\)</span> queda en reposo, <span class="math notranslate nohighlight">\({\bf p_c} = 0\)</span>.</p>
+<p>El valor de <span class="math notranslate nohighlight">\(s\)</span> antes de la colisión, <span class="math notranslate nohighlight">\(s = (p_a+p_b)^2\)</span> y después, <span class="math notranslate nohighlight">\(s = p^2_c\)</span>, es el mismo:</p>
+<div class="math notranslate nohighlight">
+\[
+s = (p_a + p_b)^2 = ((E_a, {\bf p}^*) + (E_b, -{\bf p}^*))^2 = (E_a+E_b, {\bf 0})^2 = (E_a+E_b)^2, \;\;\;\; s = (m_c, {\bf 0})^2 = m^2_c
+\]</div>
+<p>Las cantidades con <span class="math notranslate nohighlight">\(p^*\)</span> se refieren en general al sistema CM.</p>
+<p>Esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+m_c = E_a + E_b 
+\]</div>
+<p>Luego <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> correspondería a la masa de la particula producida, y en el caso general a la energía disponible para crear partículas, o a la <strong>energía en el centro de masas</strong>.</p>
+<p>Veamos cuánto vale <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> en un experimento de colisión en el centro de masas, CM, y otro de blanco fijo.</p>
+<ol class="simple">
+<li><p>En una <strong>colisión en el CM</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+{\bf p}_b = - {\bf p_a}  = p^* \Rightarrow s = ((E_a, {\bf p_a}) + (E_b, - {\bf p_a}))^2 = (E_a+E_b)^2
+\]</div>
+<p>Si consideramos el caso en el que <span class="math notranslate nohighlight">\(m_a (m_b) \ll E_a (E_b)\)</span>, entonces <span class="math notranslate nohighlight">\(E_a = E_b = E\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+s = (2 E)^2 \Rightarrow \sqrt{s} \propto E
+\]</div>
+<ol class="simple">
+<li><p>En una interacción <strong>en blanco fijo</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+s = ((E_a, {\bf p}_a) + (m_b, 0))^2 = m^2_a + m^2_b + 2 \, m_b \, E_a.
+\]</div>
+<p>En el caso de antes, donde las masas son despreciables respecto a su energía, <span class="math notranslate nohighlight">\(m_a \ll E_a , \;\; E_a = E\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+s = 2 m_b E_a \Rightarrow \sqrt{s} \propto \sqrt{E}
+\]</div>
+<p>En el caso de los colisionadores, <span class="math notranslate nohighlight">\(\sqrt{s}\)</span>, crece con <span class="math notranslate nohighlight">\(E\)</span> y en el caso del blanco fijo con <span class="math notranslate nohighlight">\(\sqrt{E}\)</span>.</p>
+<p><em>Cuestión:</em> considera el caso de <span class="math notranslate nohighlight">\(E = 100\)</span> GeV, ¿En qué tipo de experimento podríamos crear partículas de mayor masa?</p>
+<p><em>Ejemplo:</em> ¿Cuál es la energía mínima de un neutrino para que tenga lugar la interacción beta inversa en un blanco fijo?</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\nu}_e + p \to n + e^+
+\]</div>
+<p><em>Solución:</em></p>
+<p>El valor de <span class="math notranslate nohighlight">\(s\)</span>, es igual, calculado como el cuadrimomento total de las partículas iniciales <em>o</em> finales.</p>
+<p>Para la iniciales, en el <em>sistema de laboratorio</em>, considerando la energía del neutrino <span class="math notranslate nohighlight">\(E\)</span> y su masa nula.</p>
+<div class="math notranslate nohighlight">
+\[
+p_{\bar{\nu}_e} = (E, E \, {\bf k}), \;\; p_p = (m_p, {\bf 0}) \Rightarrow s = (E+m_p, E \, \bf{k})^2
+\]</div>
+<p>Para las finales, considerando el <em>sistema centro de masas</em>, y su energía mínima (que las dos se produzcan en reposo). El valor <em>mínimo</em> de <span class="math notranslate nohighlight">\(s\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+p_n = (m_n, {\bf 0}), \;\; p_{e^+} = (m_e, {\bf 0}) \Rightarrow s = (m_n + m_e, {\bf 0})^2
+\]</div>
+<p>Del hecho que el valor de <span class="math notranslate nohighlight">\(s\)</span> es igual antes y después de la interacción,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(E+m_p, E \,{\bf k})^2 = (m_n+m_e, {\bf 0})^2, \\
+(E+m_p)^2 - E^2 = (m_n+m_e)^2, \;\;\; 2m_p E +  m^2_p = (m_n+m_e)^2,
+\end{split}\]</div>
+<p>obtenemos que la energía umbral del neutrino para producir una interacción <span class="math notranslate nohighlight">\(\beta\)</span> inversa es</p>
+<div class="math notranslate nohighlight">
+\[
+E = \frac{(m_n+m_e)^2 - m^2_p}{2 m_p}.
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m_p</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;proton mass energy equivalent in MeV&quot;</span><span class="p">)</span>
+<span class="n">m_n</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;neutron mass energy equivalent in MeV&quot;</span><span class="p">)</span>
+<span class="n">m_e</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;electron mass energy equivalent in MeV&quot;</span><span class="p">)</span> 
+<span class="n">E</span> <span class="o">=</span> <span class="p">((</span><span class="n">m_n</span> <span class="o">+</span> <span class="n">m_e</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">m_p</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">m_p</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Energía umbral del nuetrino = </span><span class="si">{:4.3f}</span><span class="s2"> MeV&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">E</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Energía umbral del nuetrino = 1.806 MeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="desintegraciones-de-particulas">
+<h4>Desintegraciones de partículas<a class="headerlink" href="#desintegraciones-de-particulas" title="Permalink to this heading">#</a></h4>
+<p>Las partículas inestables (todas a excepción de <span class="math notranslate nohighlight">\(p, e, \nu\)</span>), se desintegran a otras partículas</p>
+<p>El siguiente esquema muestra la <strong>desintegración</strong> de una partícula <span class="math notranslate nohighlight">\(a\)</span>, en reposo, en dos <span class="math notranslate nohighlight">\(b, d\)</span>, con masas <span class="math notranslate nohighlight">\(m_a, m_b, m_c\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_drawing_decay2.png"><img alt="../_images/intro_drawing_decay2.png" class="align-center" src="../_images/intro_drawing_decay2.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema de desintegración de la partícula <span class="math notranslate nohighlight">\(a\)</span> a dos <span class="math notranslate nohighlight">\(b, c\)</span> en el CM</p></td>
+</tr>
+</tbody>
+</table>
+<p>En el CM los momentos de <span class="math notranslate nohighlight">\(b, c\)</span> son iguales, <span class="math notranslate nohighlight">\(p^*\)</span>, y ese caso se cumple:</p>
+<div class="math notranslate nohighlight">
+\[
+s = (m_a, {\bf 0})^2 = m^2_a = (p_b + p_c)^2 = (E_b+E_c, {\bf 0})^2
+\]</div>
+<p><em>Ejercicio:</em> Calcula cuánto vale <span class="math notranslate nohighlight">\(p^*\)</span> en función de <span class="math notranslate nohighlight">\(m_a, m_b, m_c\)</span>.</p>
+<div class="section" id="desintegraciones-a-varias-particulas">
+<h5>Desintegraciones a varias partículas<a class="headerlink" href="#desintegraciones-a-varias-particulas" title="Permalink to this heading">#</a></h5>
+<p>Si consideramos ahora la una partícula con masa <span class="math notranslate nohighlight">\(m_a\)</span>  se desintegra a varias, <span class="math notranslate nohighlight">\(n\)</span>, partículas, cada una con cuadrimomento <span class="math notranslate nohighlight">\(p_i\)</span> y masa <span class="math notranslate nohighlight">\(m_i\)</span>. Podemos calcular <span class="math notranslate nohighlight">\(s\)</span> inicial en el sistema donde <span class="math notranslate nohighlight">\(a\)</span> están en reposo, y <span class="math notranslate nohighlight">\(s\)</span> final en el sistema del laboratorio.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+s = (m_a, {\bf 0})^2 =  m^2_a, \\
+s = \left(\sum_{i = 1}^n p_i \right)^2 = \left( \sum_i E_i, \, \sum_i {\bf p}_i \right)^2 = \left( \sum_i E_i \right)^2 - \left( \sum_i {\bf p}_i \right)^2,
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(p_i\)</span> es el cuadrimomento de la partícula <span class="math notranslate nohighlight">\(i\)</span>, con energía <span class="math notranslate nohighlight">\(E_i\)</span> y momento <span class="math notranslate nohighlight">\({\bf p}_i\)</span>, en el sistema de laboratorio.</p>
+<p>La variable <span class="math notranslate nohighlight">\(s\)</span> se corresponde a la masa al cuadrado del sistema (que se llama redundantemente <strong>masa invariate</strong> al cuadrado).</p>
+<div class="math notranslate nohighlight">
+\[
+s = \left( \sum_{i  = 1}^n  p_i \right)^2
+\]</div>
+<p>Si las <span class="math notranslate nohighlight">\(n\)</span> partículas provienen de la desintegración de <span class="math notranslate nohighlight">\(a\)</span> entonces su masa invariante nos permite <strong>detectar la partícula</strong> «a» que se desintegró.</p>
+<p>En la siguiente figura se muestra el espectro de la masa invariante de dos muones (<span class="math notranslate nohighlight">\(\mu, \mu^+\)</span>) obtenida con los datos del LHCb en el Run-I y Run-II.</p>
+<p>El pico a ~5.4 MeV, corresponde a la masa del <span class="math notranslate nohighlight">\(B_s\)</span>. El resto de eventos se consideran de contaminación.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_massinv_Bsmumu.png"><img alt="../_images/intro_massinv_Bsmumu.png" class="align-center" src="../_images/intro_massinv_Bsmumu.png" style="width: 700px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Espectro de la mas invariante y observación de <span class="math notranslate nohighlight">\(B_s \to \mu + \mu^+\)</span> en los datos del Run-I (izda) y Run-II (dcha) del experimento [LHCb] (2021)</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota:</em> Que la estadística en el Run-I para determinar si existe un pico en el <span class="math notranslate nohighlight">\(B_s\)</span> es insuficiente.</p>
+</div>
+</div>
+<div class="section" id="los-parametros-de-los-colisionadores">
+<h4>Los parámetros de los colisionadores<a class="headerlink" href="#los-parametros-de-los-colisionadores" title="Permalink to this heading">#</a></h4>
+<p>Los dos parámetros fundamentales de un colisionador son:</p>
+<ul class="simple">
+<li><p><strong>Energía</strong> en el centro de masas, <span class="math notranslate nohighlight">\(\sqrt{s}\)</span>, que determina las partículas que se pueden crear en la colisión.</p></li>
+<li><p><strong>Luminosidad</strong>, <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>, o el número de partículas que lanzamos entre ellas por unidad de área y tiempo. Establece el número de interacciones en cada cruze.</p></li>
+</ul>
+<p>La frecuencia de eventos, en Hz = <span class="math notranslate nohighlight">\(\mathrm{s}^{-1}\)</span>, que se producen por cruce, <span class="math notranslate nohighlight">\(\nu\)</span> es el producto de la luminosidad <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> y una sección eficaz, <span class="math notranslate nohighlight">\(\sigma\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+ \nu = \mathcal{L} \, \sigma.
+\]</div>
+<p>Como la luminosidad pueden depender del tiempo, llamamos luminosidad instantánea a <span class="math notranslate nohighlight">\(\mathcal{L}(t)\)</span>  y la integral en un tiempo <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(\int_0^T \mathcal{L}(t) \mathrm{d}t\)</span>, <strong>luminosidad integrada</strong>.</p>
+<p>La luminosidad se mide en <span class="math notranslate nohighlight">\(\mathrm{cm}^{-2}\mathrm{s}^{-1}\)</span> y la luminosidad integrada en <span class="math notranslate nohighlight">\(\mathrm{cm}^{-2}\)</span>, o en <span class="math notranslate nohighlight">\(\mathrm{b}^{-1}\)</span> (generalmente en fb).</p>
+</div>
+<div class="section" id="id1">
+<h4>Los parámetros de los colisionadores<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<p>Esta es una lista de algunos colisionadores:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>collider</p></th>
+<th class="text-align:center head"><p>Laboratory</p></th>
+<th class="text-align:center head"><p>Type  —-</p></th>
+<th class="text-align:center head"><p>Period</p></th>
+<th class="text-align:center head"><p>Energy, <span class="math notranslate nohighlight">\(\sqrt{s}\)</span>, (GeV)</p></th>
+<th class="text-align:center head"><p>Luminosity, <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>, (<span class="math notranslate nohighlight">\(cm^{-2}s^{-1})\)</span> —</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>PEP-II</p></td>
+<td class="text-align:center"><p>SLAC</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(e+e^+\)</span></p></td>
+<td class="text-align:center"><p>1999-2009</p></td>
+<td class="text-align:center"><p>10.5</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.2 \, 10^{34}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>LEP</p></td>
+<td class="text-align:center"><p>CERN</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(e+e^+\)</span></p></td>
+<td class="text-align:center"><p>1989-2000</p></td>
+<td class="text-align:center"><p>90-209</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(10^{32}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Tevatron</p></td>
+<td class="text-align:center"><p>Fermilab</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(p+\bar{p}\)</span></p></td>
+<td class="text-align:center"><p>1987-2012</p></td>
+<td class="text-align:center"><p>1960</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(4 \, 10^{32}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>LHC</p></td>
+<td class="text-align:center"><p>CERN</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(p+p\)</span></p></td>
+<td class="text-align:center"><p>2009-</p></td>
+<td class="text-align:center"><p>7000-13000</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(10^{34}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Luminosidad integrada del LHC a lo largo de los años de funcionamiento.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_LHC_intlumi.png"><img alt="../_images/det_LHC_intlumi.png" class="align-center" src="../_images/det_LHC_intlumi.png" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Lunimosidad integrada del LHC [CERN]</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Cuestion</em>: ¿Cuántos Higgs se han producido en el LHC Run-II si la sección eficaz de producción es <span class="math notranslate nohighlight">\(\sigma = 56 \pm 4\)</span> pb?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lumi</span>  <span class="o">=</span> <span class="mf">160.</span> <span class="o">/</span> <span class="n">units</span><span class="o">.</span><span class="n">femto</span> <span class="c1"># 1/barn</span>
+<span class="n">sigma</span> <span class="o">=</span>  <span class="mf">56.</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">pico</span>  <span class="c1">#   barn</span>
+<span class="n">N</span>     <span class="o">=</span> <span class="n">lumi</span> <span class="o">*</span> <span class="n">sigma</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numero de Higgs producidos por el LHC en el Run-II a sqrt(s) = 13 TeV = </span><span class="si">{:e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">N</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Numero de Higgs producidos por el LHC en el Run-II a sqrt(s) = 13 TeV = 8.960000e+06
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="parametros-de-los-experimentos-en-blanco-fijo">
+<h4>Parámetros de los experimentos en blanco fijo<a class="headerlink" href="#parametros-de-los-experimentos-en-blanco-fijo" title="Permalink to this heading">#</a></h4>
+<p>Los parámetros fundamentales de un experimento de blanco fijo son:</p>
+<ul class="simple">
+<li><p>la <strong>energía</strong> del haz incidente, <span class="math notranslate nohighlight">\(E\)</span>, recordemos <span class="math notranslate nohighlight">\(\sqrt{s} = \sqrt{2 m_b E_a}\)</span></p></li>
+<li><p>el <strong>flujo de haz</strong>, <span class="math notranslate nohighlight">\(\Phi\)</span>, las partículas que atraviesan una unidad de área por unidad de tiempo.</p></li>
+<li><p>el <strong>número de partículas blanco</strong>, <span class="math notranslate nohighlight">\(N\)</span>, que es proporcional a la masa del blanco.</p></li>
+</ul>
+<p>La frecuencia de eventos, en Hz, en un experimento de blanco fijo viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[
+\nu = \phi \, \sigma N
+\]</div>
+<p>donde, por ejemplo, sin el blanco son los protones de los núcleos del material con <span class="math notranslate nohighlight">\((A, Z)\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+N = \frac{Z N_A}{A} M
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(M\)</span> es la masa del blanco, en g, <span class="math notranslate nohighlight">\(A\)</span> el número de masa g/mol, <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, y <span class="math notranslate nohighlight">\(Z\)</span> el número de protones en cada núcleo.</p>
+<p>Conforme el haz penetrea en el material, su flujo disminuje.</p>
+<p>Si la densidad de los elementos blanco es <span class="math notranslate nohighlight">\(n\)</span>, y el haz penetra normal (en la dirección <span class="math notranslate nohighlight">\(z\)</span>) con flujo inicial <span class="math notranslate nohighlight">\(\Phi\)</span> al blanco, y éste tiene una sección trasversal <span class="math notranslate nohighlight">\(S\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{d}I(z) =- \sigma n \Phi S \mathrm{d}z \;\;\; \Rightarrow \;\;\; I(z) = I_0 e^{-n \sigma z} = I_0 e^{-z/\lambda}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(I_0 = \Phi S\)</span>.</p>
+<p>Llamamos <strong>longitud de absorción</strong> a la cantidad <span class="math notranslate nohighlight">\(\lambda = 1/(n \sigma)\)</span>, e indica a qué distancia la intensidad del haz se ha reducido en un factor <span class="math notranslate nohighlight">\(1/e.\)</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="observables">
+<h2>Observables<a class="headerlink" href="#observables" title="Permalink to this heading">#</a></h2>
+<p>En física de partículas habitualmente estimamos (o ponemos límites en su valor) a:</p>
+<ul class="simple">
+<li><p>la <strong>sección eficaz</strong>, <span class="math notranslate nohighlight">\(\sigma\)</span>, de una interacción (en barns, 1 barn <span class="math notranslate nohighlight">\(= 10^{-24}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^2\)</span>). En algunos experimentos se mide la distribución angular de las partículas o <strong>la sección eficaz diferencial</strong>.</p></li>
+<li><p>el <strong>tiempo de vida media</strong>, <span class="math notranslate nohighlight">\(\tau\)</span>, (s), cuando la partícula es de vida «corta», o su inverso, la <strong>anchura de desintegración</strong>, <span class="math notranslate nohighlight">\(\Gamma\)</span>, (MeV), cuando la partícula es una resonancia.</p></li>
+<li><p>la <strong>fracción de desintegración</strong>, <span class="math notranslate nohighlight">\(\mathcal{Br}\)</span>, en un canal (%). El porcentaje de veces que un partícula se desintegra en un canal, por ejemplo el <span class="math notranslate nohighlight">\(\tau\)</span> se desintegra a <span class="math notranslate nohighlight">\(\mu + \bar{\nu}_\mu + \nu_\tau\)</span> un 17.8% de las veces.</p></li>
+</ul>
+<div class="section" id="seccion-eficaz">
+<h3>Sección eficaz<a class="headerlink" href="#seccion-eficaz" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/fun_drawing_xsection.png"><img alt="../_images/fun_drawing_xsection.png" class="align-center" src="../_images/fun_drawing_xsection.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>La sección eficaz cuantifica como un área efectiva, <span class="math notranslate nohighlight">\(\mathrm{cm}^{-24}\)</span> o b (barn), la razón de intacciones por segundo en el caso de un experimento de blanco fijo y de un flujo, <span class="math notranslate nohighlight">\(\Phi\)</span>, sobre un blanco con <span class="math notranslate nohighlight">\(N\)</span> elementos o en el caso de un colisionador, dada una luminosidad <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> como.</p>
+<div class="math notranslate nohighlight">
+\[
+\nu = \sigma \Phi  N, \;\;\; \nu = \sigma \, \mathcal{L}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\nu\)</span> es el promedio de las interacciones, que siguen una distribución de Poisson.</p>
+<p>En general también estudiaremos la sección eficaz diferencial (en función de la energía y/o del ángulo sólido)</p>
+<p>La siguiente figura muestra la sección eficaz <span class="math notranslate nohighlight">\(\sigma(e+e^+ \to \mathrm{hadrons})\)</span> vs <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> medida en el experimento OPAL (2001), uno de los 4 experimentos de LEP.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_Zreso_OPAL.png"><img alt="../_images/intro_Zreso_OPAL.png" class="align-center" src="../_images/intro_Zreso_OPAL.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sigma(e+e^+\to \mathrm{hadrons})\)</span> vs <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> (puntos) y predicción del SM (linea)  [OPAL]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Notas que:</p>
+<ul class="simple">
+<li><p>La sección eficaz está en nbarns.</p></li>
+<li><p>La resonancia del <span class="math notranslate nohighlight">\(Z\)</span> sigue una curva de Breit-Wigner, con media <span class="math notranslate nohighlight">\(m_z = 91.1852 \pm 0.0030\)</span> GeV y anchura <span class="math notranslate nohighlight">\(\Gamma_Z = 2.4948 \pm 0.004\)</span>.</p></li>
+</ul>
+<p>La sección eficaz es proporcional a la curva de Breit-Wigner:</p>
+<div class="math notranslate nohighlight">
+\[
+ \sigma(s) \propto \frac{1}{(s-m^2_Z)^2 + m^2_z \Gamma^2_Z}
+ \]</div>
+<p><em>cuestión</em> Estudiar los casos <span class="math notranslate nohighlight">\(\sqrt{s} = m_Z, \; \sqrt{s} = m_z \pm \frac{\Gamma_Z}{2}\)</span></p>
+<p><em>Nota adicional</em>: La curva teórica de la figura anterior está corregida por la radiación de fotones en los estados inicial y  final.</p>
+<p><em>Cuestión</em>: Calcula la razón de producción de <span class="math notranslate nohighlight">\(Z \to \mathrm{hadrons}\)</span> en el pico de <span class="math notranslate nohighlight">\(Z\)</span> en OPAL usando la luminosidad de LEP.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sigma</span>   <span class="o">=</span> <span class="mi">31</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">nano</span> <span class="c1"># bars</span>
+<span class="n">barn_si</span> <span class="o">=</span> <span class="mf">1e-24</span> <span class="c1"># cm2</span>
+<span class="n">lumi</span>    <span class="o">=</span> <span class="mf">1e32</span> <span class="o">*</span> <span class="n">barn_si</span>  <span class="c1"># /bar s </span>
+<span class="n">R</span>       <span class="o">=</span> <span class="n">lumi</span> <span class="o">*</span> <span class="n">sigma</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Razón de producción Z -&gt; hadrons en OPAL = </span><span class="si">{:4.1f}</span><span class="s1"> Hz&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">R</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Razón de producción Z -&gt; hadrons en OPAL =  3.1 Hz
+</pre></div>
+</div>
+</div>
+</div>
+<p>Si queremos determinar una sección eficaz, <span class="math notranslate nohighlight">\(\sigma\)</span>, en un experimento de colisionador, mediremos el número de interacciones, <span class="math notranslate nohighlight">\(N\)</span> que se producen en un tiempo, <span class="math notranslate nohighlight">\(T\)</span>. Siendo <span class="math notranslate nohighlight">\(\mathcal{L}_{\mathrm{int}}\)</span> la luminosidad integrada en el ese tiempo (lo que se conoce como un <em>run</em>),</p>
+<div class="math notranslate nohighlight">
+\[
+N = \sigma \mathcal{L}_{\mathrm{int}} \Rightarrow \sigma = \frac{N}{\mathcal{L}_{\mathrm{int}}}
+\]</div>
+<p>Si no conocemos <span class="math notranslate nohighlight">\(\mathcal{L}_{\mathrm{int}}\)</span>, podemos usar el número medido <span class="math notranslate nohighlight">\(N'\)</span> de otras interacciones cuya <span class="math notranslate nohighlight">\(\sigma'\)</span> sea conocida en el mismo periodo de tiempo:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{N}{N'} \sigma'
+\]</div>
+<p>Habitualmente nuestros eventos son seleccionados con una efficiencia (por ejemplo no detectamos todos los eventos que se producen), en este caso <span class="math notranslate nohighlight">\(\epsilon, \epsilon'\)</span> son las eficiencias de selección de eventos <span class="math notranslate nohighlight">\(N, N'\)</span> respectivamente.</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{N}{N'} \frac{\epsilon'}{\epsilon} \sigma'
+\]</div>
+<p>En un experimento de blanco fiijo, si hemos medido <span class="math notranslate nohighlight">\(n\)</span> interacciones en un blanco de <span class="math notranslate nohighlight">\(N\)</span> elementos sobre los que incidía un flujo <span class="math notranslate nohighlight">\(\Phi\)</span> duante un tiempo <span class="math notranslate nohighlight">\(T\)</span>, la sección efizaz se estima simplemente como:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{n}{\Phi N T}
+\]</div>
+</div>
+<div class="section" id="anchura-de-desintegracion">
+<h3>Anchura de desintegración<a class="headerlink" href="#anchura-de-desintegracion" title="Permalink to this heading">#</a></h3>
+<p>Las desintegraciones se caracterizan por su anchura o por su tiempo de vida media.</p>
+<p>Un sistema de N partículas en un volumen V que se desintegran con una frecuencia fija:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}N}{\mathrm{d}t} = - \Gamma N; \;\;\;\;
+N(t) = N \, e^{-\Gamma t}
+\]</div>
+<p>A <span class="math notranslate nohighlight">\(\Gamma\)</span> la llamamos <strong>anchura de desintegración</strong> y a su inverso, <span class="math notranslate nohighlight">\(\tau\)</span> <strong>tiempo de vida media</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\tau = \frac{1}{\Gamma}, \;\; N(t) = N \, e^{-t/\tau}
+\]</div>
+<p>Por ejemplo:</p>
+<ul class="simple">
+<li><p>la vida media del <span class="math notranslate nohighlight">\(\tau\)</span> es 0.296 ps</p></li>
+<li><p>La anchura de desintegración del <span class="math notranslate nohighlight">\(Z\)</span>, <span class="math notranslate nohighlight">\(\Gamma_Z \simeq 2.5\)</span> GeV.</p></li>
+</ul>
+</div>
+<div class="section" id="fraccion-de-desintegracion">
+<h3>Fracción de desintegración<a class="headerlink" href="#fraccion-de-desintegracion" title="Permalink to this heading">#</a></h3>
+<p>En el caso de que la partícula se desintegra a varios, <span class="math notranslate nohighlight">\(n\)</span>, canales, <span class="math notranslate nohighlight">\(i = 0, \dots, n\)</span>.</p>
+<p>Para cada uno habrá una <strong>anchura parcial de desintegración</strong>, <span class="math notranslate nohighlight">\(\Gamma_i\)</span></p>
+<p>La anchura total será la suma de las parciales:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = \sum_{i=1}^{n} \Gamma_i
+\]</div>
+<p>Y llamaremos fracción o razón de desintegración, <span class="math notranslate nohighlight">\(\mathcal{Br}_i\)</span>, de un canal al porcentaje de veces que una partícula se desintegra en ese canal, que corresponde a:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{Br}_i = \frac{\Gamma_i}{\Gamma}
+\]</div>
+<p>Las fracciones de desintegración, <span class="math notranslate nohighlight">\(\mathcal{Br}\)</span>, del leptón <span class="math notranslate nohighlight">\(\tau\)</span> son:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\tau \to e + \bar{\nu}_e + \nu_\tau\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\tau \to \mu + \bar{\nu}_\mu + \nu_\tau\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\tau \to \mathrm{hadrons} + \nu_\tau\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>——- 17.4% ——–</p></td>
+<td class="text-align:center"><p>——– 17.8% ———-</p></td>
+<td class="text-align:center"><p>———- <span class="math notranslate nohighlight">\(\sim 64\)</span>% ————</p></td>
+</tr>
+</tbody>
+</table>
+<p>La anchura total es la suma de las particales:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = \Gamma(\tau \to e + \bar{\nu}_e + \nu_\tau) + \Gamma(\tau \to \mu + \bar{\nu}_\mu + \nu_\tau) + \Gamma(\tau \to \mathrm{hadrons} + \nu_\tau) 
+\]</div>
+<p>Y la fracción de desintegración es:
+$<span class="math notranslate nohighlight">\(
+\mathcal{Br}(\tau \to \mu + \bar{\nu}_\mu + \nu_\tau) = \frac{\Gamma(\tau \to \mu + \bar{\nu}_\mu + \nu_\tau)}{\Gamma}
+\)</span>$</p>
+<p><em>Cuestión</em>: Calcula la anchura de desintegración en MeV del <span class="math notranslate nohighlight">\(\tau\)</span></p>
+<p><em>Cuestión</em>: Calcula las anchuras de desintegración parciales del <span class="math notranslate nohighlight">\(\tau\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hbar</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">hbar</span><span class="o">/</span><span class="n">units</span><span class="o">.</span><span class="n">eV</span> <span class="c1"># eV s</span>
+<span class="n">tau</span>   <span class="o">=</span> <span class="mf">0.296</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">pico</span>  <span class="c1"># s</span>
+<span class="n">gamma_tau</span> <span class="o">=</span> <span class="n">hbar</span> <span class="o">/</span> <span class="n">tau</span>     <span class="c1"># eV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gamma </span><span class="se">\t</span><span class="s1"> = </span><span class="si">{:e}</span><span class="s1"> eV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gamma_tau</span><span class="p">))</span>
+<span class="n">brs</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="mf">14.7</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;mu&#39;</span><span class="p">,</span> <span class="mf">17.8</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;hadrons&#39;</span><span class="p">,</span> <span class="mi">65</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">br</span> <span class="ow">in</span> <span class="n">brs</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gamma_</span><span class="si">{:s}</span><span class="s1"> </span><span class="se">\t</span><span class="s1"> = </span><span class="si">{:e}</span><span class="s1"> eV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gamma_tau</span> <span class="o">*</span> <span class="n">br</span> <span class="o">*</span> <span class="mf">1e-2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gamma 	 = 2.223689e-03 eV 
+Gamma_e 	 = 3.268823e-04 eV
+Gamma_mu 	 = 3.958166e-04 eV
+Gamma_hadrons 	 = 1.445398e-03 eV
+</pre></div>
+</div>
+</div>
+</div>
+<p>Las anchuras de desintegración las medimos directamente de la anchura de la resonancia en el espectro de energías.</p>
+<p>O si la partícula «vuela» lo suficiente para ser detectada podemos determinar el vértice primario y secundario y conocido su momento estimar su tiempo de vida media.</p>
+</div>
+</div>
+<div class="section" id="una-perspectiva-experimental">
+<h2>Una perspectiva experimental<a class="headerlink" href="#una-perspectiva-experimental" title="Permalink to this heading">#</a></h2>
+<p>Desde el punto de vista de su detección, podemos distinguir dos rangos principales de partículas :</p>
+<ul class="simple">
+<li><p>Las partículas <em>estables</em>, <span class="math notranslate nohighlight">\(p, e, \nu\)</span>; o con <em>vida media «larga»</em> cargadas, <span class="math notranslate nohighlight">\(\mu, \gamma, K, \pi^\pm\)</span>, (recorren <span class="math notranslate nohighlight">\(\mathcal{O}\)</span>(m))</p>
+<ul>
+<li><p>Se detectan como <strong>trayectorias o depositos de energía</strong> en el detector.</p></li>
+<li><p>La identidad de las partículas puede determinarse por su rango de <strong>penetración, ionización, producción de luz</strong> en los materiales y por sus <strong>desintegraciones</strong>.</p></li>
+</ul>
+</li>
+<li><p>La identificación de las partículas de <em>vida media «corta»</em>, <span class="math notranslate nohighlight">\(&lt;\mathcal{O}\)</span>(ps), puede realizarse de dos formas:</p>
+<ul>
+<li><p>Si la partícula «vuela» del orden <span class="math notranslate nohighlight">\(\mathcal{O}\)</span>(cm), podemos determinar su <strong>vértices de desintegración</strong> con detectores precisos de trazas (ie. <span class="math notranslate nohighlight">\(\tau\)</span>).</p></li>
+<li><p>Si la partícula tiene un tiempo de vida media extremadamente pequeño, se desintengra en su lugar de producción, podemos observarla como una <strong>resonancia</strong> en el espectro de energías de la producción o mediante la <strong>masa invariante</strong> de las partículas producidas en su desintegración.</p></li>
+</ul>
+</li>
+</ul>
+<p>Las interacciones de las partículas con la materia pueden clasificarse en:</p>
+<ul class="simple">
+<li><p>interacciones de las partículas cargadas (<span class="math notranslate nohighlight">\(e\)</span>, <span class="math notranslate nohighlight">\(\mu\)</span>, <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(K^\pm\)</span>, <span class="math notranslate nohighlight">\(\pi^\pm\)</span>)</p></li>
+<li><p>interacciones electromagnéticas de electrones y fotones (<span class="math notranslate nohighlight">\(e\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span>)</p></li>
+<li><p>interacciones fuertes de hadrones (<span class="math notranslate nohighlight">\(\pi, K, ...\)</span>).</p></li>
+</ul>
+<div class="section" id="las-particulas-cargadas">
+<h3>Las partículas cargadas<a class="headerlink" href="#las-particulas-cargadas" title="Permalink to this heading">#</a></h3>
+<p>Pueden excitar los átomos o moléculas o ionizar (separar los electrones)</p>
+<p>La mayor parte de los detectores de trayectorias usan la ionización del medio tras el paso de las partículas cargadas.</p>
+<p>La pérdida de energía <span class="math notranslate nohighlight">\(\frac{\mathrm{d}E}{\mathrm{dx}}\)</span> por distancia debido a la ionización sigue la ecuación de Bethe-Bloch (1930s):</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{\rho}\frac{\mathrm{d}E}{\mathrm{d}x} \simeq - K \frac{Z}{A \beta^2}\left[ \ln \left( \frac{2  m_e c^2 \beta^2 \gamma^2}{I_e}\right) - \beta^2\right]
+\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(K = \frac{4\pi \hbar^2 \alpha^2 N_A}{m_e} = 0.307\)</span> MeV <span class="math notranslate nohighlight">\(\mathrm{cm}^2\)</span>/mol, <span class="math notranslate nohighlight">\(\alpha\)</span> es la constante de estructura fina, <span class="math notranslate nohighlight">\(m_e\)</span> la masa del electrón, <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, <span class="math notranslate nohighlight">\(I_e\)</span> un potencial de ionización que depende del material <span class="math notranslate nohighlight">\((A, Z)\)</span>, <span class="math notranslate nohighlight">\(\rho\)</span> la densidad, y <span class="math notranslate nohighlight">\(\gamma, \beta\)</span> los parámetros de Lorentz asociados a la velocidad <span class="math notranslate nohighlight">\(\beta\)</span> de la partícula.</p>
+<p>La pérdida de energía tiene una curva general en función principalmente de <span class="math notranslate nohighlight">\(\gamma \beta\)</span> y del material</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_eneloss_mip.jpg"><img alt="../_images/det_eneloss_mip.jpg" class="align-center" src="../_images/det_eneloss_mip.jpg" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>pérdida de energía por ionización [PDG]</p></td>
+</tr>
+</tbody>
+</table>
+<p>El recorrido medio de una partícula con <span class="math notranslate nohighlight">\(\beta\)</span> hasta que se detiene en un medio se denomina <strong>rango</strong> de penetración.</p>
+<p>La pérdida de la energía depende de la velocidad de la partícula <span class="math notranslate nohighlight">\(\beta\)</span>. Distinguimos tres regiones:</p>
+<ul class="simple">
+<li><p>La pérdida es más intensa para baja <span class="math notranslate nohighlight">\(\beta\)</span> (de la dependencia <span class="math notranslate nohighlight">\(1/\beta^2\)</span>). La inonización es mayor al final de la trayectoria, o <strong>región de Bragg</strong>.</p></li>
+<li><p>En el rango de <span class="math notranslate nohighlight">\(\beta\gamma\)</span> de <span class="math notranslate nohighlight">\(1-10\)</span>, esa región se denomina <strong>mip</strong> (<em>minimum ionizing particle</em>).
+Un muón de 10 GeV en hierro pierde en promedio 13 MeV/cm y su rango es de varios metros.</p></li>
+<li><p>Para <span class="math notranslate nohighlight">\(\beta \gamma &gt;100\)</span>, la perdida aumenta de forma logaritmica. A partir de aquí los efectos de radiación son relevantes.</p></li>
+</ul>
+</div>
+<div class="section" id="detectores-gaseosos">
+<h3>Detectores gaseosos<a class="headerlink" href="#detectores-gaseosos" title="Permalink to this heading">#</a></h3>
+<p>En los detectores gaseosos se utiliza la ionización (<span class="math notranslate nohighlight">\(\sim 30\)</span> eV por ionización) del paso de las partículas cargadas en gases nobles, por ejemplo Ar, Xe.</p>
+<p>Los detectores están, en general, en un rango de voltage proporcional (no hay efecto avalancha).</p>
+<p>El paso de la partícula deja un regero de electrones de ionización.</p>
+<p>Esos electrones derivan bajo la presencia de un campo eléctrico <span class="math notranslate nohighlight">\({\bf E}\)</span> hasta el ánodo donde se recoge la carga.</p>
+<p>Existen varios tipos de detectores: <em>wire chambers</em>, <em>multiproportial wire chambers (MPWC)</em>, <em>time proyection chambers (TPC)</em>.</p>
+<div class="section" id="camaras-de-proyeccion-temporal-tpc">
+<h4>Cámaras de proyección temporal (TPC)<a class="headerlink" href="#camaras-de-proyeccion-temporal-tpc" title="Permalink to this heading">#</a></h4>
+<p>Las TPC suelen tener forma de barril, pueden ser simétricas, con dos tapas como ánodos y un cátodo central de HV.</p>
+<p>Bajo la presencia del campo eléctrico, los <span class="math notranslate nohighlight">\(e\)</span> de ionización derivan hasta el ánodo.</p>
+<p>Son recogidos por un detector segmentado (hilos) en dos direcciones (<span class="math notranslate nohighlight">\(r, \phi\)</span>) o (<span class="math notranslate nohighlight">\(x, y\)</span>), donde se amplifica su carga (electrónica frontal).</p>
+<p>El tiempo de llegada de los electrones al ánodo, <span class="math notranslate nohighlight">\(\Delta t\)</span>, sirve para estimar la posición en <span class="math notranslate nohighlight">\(z\)</span> (el eje de la cámara).</p>
+<p>Las TPCs son excelentes detectores de trazas</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../_images/det_ALICE_TPC_scheme.png"><img alt="../_images/det_ALICE_TPC_scheme.png" class="align-center" src="../_images/det_ALICE_TPC_scheme.png" style="width: 400px;" /></a></p></td>
+<td><p><a class="reference internal" href="../_images/det_ALICE_ppevent.jpeg"><img alt="../_images/det_ALICE_ppevent.jpeg" class="align-center" src="../_images/det_ALICE_ppevent.jpeg" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://alice-collaboration.web.cern.ch/menu_proj_items/tpc">ALICE TPC</a></p></td>
+<td><p>ALICE pp event [ALICE]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Las TPC se utilizan también en experimentos de búsqueda de materia oscura, XENON, detectores de neutrinos EXO, NEXT.</p>
+<p>La fórmula calcula el valor promedio. La distribución <span class="math notranslate nohighlight">\(\mathrm{d}E/\mathrm{d}x\)</span> está relacionada con la fluctuación del número de colisiones de la partícula con los electrones de los átomos.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_eloss_alice_tpc.png"><img alt="../_images/det_eloss_alice_tpc.png" class="align-center" src="../_images/det_eloss_alice_tpc.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>pérdida de energía en la TPC de ALICE [ALICE]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Pérdida de energía en la TPC (<em>Time Projection Chamber</em>) de ALICE.</p>
+<p>Los electrones pierden tambien energía por radiación <strong>bremsstrahlung</strong> (en la siguiente sección).</p>
+<p>En los detectores de trazas se detecta la ionización (electrones liberados) del paso de la partícula cargada a través del medio para determinar puntos de paso o <em>hits</em>.</p>
+<p>Los detectores están inmerso en un campo magnético, <span class="math notranslate nohighlight">\({\bf B}\)</span>, (Teslas) que produce una curvatura de la partícula proporcional a su momento, <span class="math notranslate nohighlight">\({\bf p}\)</span> (GeV)  en la dirección perperdicular a <span class="math notranslate nohighlight">\({\bf B}\)</span>. Si entre ambos tiene un ángulo <span class="math notranslate nohighlight">\(\theta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\rho\)</span> (m) es el radio de curvatura en el plano perperdicular, <span class="math notranslate nohighlight">\(B\)</span> (T) el campo magnético.</p>
+<p>Llamamos al momento en el plano perperdicular, <strong>momento transverso</strong>, <span class="math notranslate nohighlight">\(p_T = p \sin \theta\)</span>.</p>
+<p>Para CMS con <span class="math notranslate nohighlight">\(B = 4\)</span> T, y un <span class="math notranslate nohighlight">\(\pi^\pm\)</span> de <span class="math notranslate nohighlight">\(p\)</span> 100 GeV, <span class="math notranslate nohighlight">\(\rho \sim 100\)</span> m.</p>
+</div>
+<div class="section" id="detectores-de-silicio">
+<h4>Detectores de silicio<a class="headerlink" href="#detectores-de-silicio" title="Permalink to this heading">#</a></h4>
+<p>Están basando en vaciar de portadores libres de carga una oblea de silico (aprox <span class="math notranslate nohighlight">\(~300\)</span> <span class="math notranslate nohighlight">\(\mu\)</span>m de esperor) donde se ha dopado tiras (<em>strips</em>) de tipo <span class="math notranslate nohighlight">\(p\)</span>, separadas aprox <span class="math notranslate nohighlight">\(~50\)</span> <span class="math notranslate nohighlight">\(\mu\mathrm{m}\)</span>, para crear uniones <span class="math notranslate nohighlight">\(pn\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_silicon_detector.png"><img alt="../_images/det_silicon_detector.png" class="align-center" src="../_images/det_silicon_detector.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Esquema de un sensor de micro-strips de silicio</p></td>
+</tr>
+</tbody>
+</table>
+<p>La ionización del paso de una partícula cargada crea pares electrón/hueco (<span class="math notranslate nohighlight">\(\mathcal{0}(1)\)</span> eV).</p>
+<p>Los electrones de ionización derivan hacia las tiras <span class="math notranslate nohighlight">\(p\)</span>, donde su carga es amplificada por la electrónica (<em>front end electronics</em>).</p>
+<p>Con estos detectores se pueden reconstruir las trayectorias con precisión <span class="math notranslate nohighlight">\(\sim 10\)</span> <span class="math notranslate nohighlight">\(\mu\mathrm{m}\)</span> e identificar vértices de desintegración de partículas que pueden recorrer <span class="math notranslate nohighlight">\(\sim  1\)</span> cm.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../_images/det_DELPHI_vertex.jpeg"><img alt="../_images/det_DELPHI_vertex.jpeg" class="align-center" src="../_images/det_DELPHI_vertex.jpeg" style="width: 350px;" /></a></p></td>
+<td><p><a class="reference internal" href="../_images/det_DELPHI_bdecay.gif"><img alt="../_images/det_DELPHI_bdecay.gif" class="align-center" src="../_images/det_DELPHI_bdecay.gif" style="width: 350px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>DELPHI micro-vertex detector</p></td>
+<td><p>DELPHI Event con b-tag [DELPHI]</p></td>
+</tr>
+</tbody>
+</table>
+<p>ATLAS y <a class="reference external" href="https://cms.cern/detector/identifying-tracks/silicon-strips">CMS</a> utilizan detectores de silicio, que se desarrollaron a partir de 80’s. Estos detectores fueron esenciales en los experimentos de LEP, BaBar, Belle entre otros y FERMI, en astropartículas.</p>
+</div>
+</div>
+<div class="section" id="interacciones-electromagneticas">
+<h3>Interacciones electromagnéticas<a class="headerlink" href="#interacciones-electromagneticas" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="interacciones-de-los-electrones">
+<h3>Interacciones de los electrones<a class="headerlink" href="#interacciones-de-los-electrones" title="Permalink to this heading">#</a></h3>
+<p>Las partículas cargadas pueden radiar fotones por la interacción electromagnética con los protones de los núcleos. Esta radiación se llama <strong>bremsstrahlung</strong>.</p>
+<div class="math notranslate nohighlight">
+\[e^- + (A, Z) \to e^- + \gamma + (A, Z)\]</div>
+<p>Esta radiación empieza a ser dominante a partir de una <strong>energía crítica</strong> <span class="math notranslate nohighlight">\(E_c \sim 800/Z\)</span> MeV, antes domina la ionización.</p>
+<p>Este proceso se puede calcular en QED (<em>Quantum Electro-Dynamics</em>) y su sección eficaz:</p>
+<div class="math notranslate nohighlight">
+\[\sigma_{b} \propto E/m^2.\]</div>
+<p>Afecta más a los electrones que a los muones por un factor <span class="math notranslate nohighlight">\((m_e/m_\mu)^2\)</span>.</p>
+<p>Los muones por debajo de <span class="math notranslate nohighlight">\(\mathcal{O}(100)\)</span> GeV pierden energía principalmente por ionización.</p>
+<p>La pérdida de energía por bremsstralung por encima de una energía umbral, <span class="math notranslate nohighlight">\(E_c\)</span>, puede expresarse:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}E}{\mathrm{d}x} = - \frac{E}{X_0}, \;\; E(x) = E_0 \, e^{-x/X_0},
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(X_0\)</span> se denomina <strong>longitud de radiación</strong> y <span class="math notranslate nohighlight">\(E_0\)</span> es la energía inicial del electrón.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_AB1.1_electron_xsec_Pb.png"><img alt="../_images/det_AB1.1_electron_xsec_Pb.png" class="align-center" src="../_images/det_AB1.1_electron_xsec_Pb.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>energía perdida para electrones</p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math notranslate nohighlight">\(X_0\)</span> depende del material. Notar que <span class="math notranslate nohighlight">\(X_0 = n \sigma_b\)</span>, donde <span class="math notranslate nohighlight">\(n\)</span> es la densidad de núcleos.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>H<span class="math notranslate nohighlight">\(_2\)</span></p></th>
+<th class="text-align:left head"><p>H<span class="math notranslate nohighlight">\(_2\)</span>O</p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(_{12}\)</span>C</p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(_{54}\)</span>Xe</p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(_{26}\)</span>Fe</p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(_{82}\)</span>Pb</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>7.6 km</p></td>
+<td class="text-align:left"><p>36.1 cm</p></td>
+<td class="text-align:left"><p>18.8 cm</p></td>
+<td class="text-align:left"><p>15.47 cm</p></td>
+<td class="text-align:left"><p>1.76 cm</p></td>
+<td class="text-align:left"><p>0.56 cm</p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math notranslate nohighlight">\(X_0\)</span> es la distancia a la que electrón ha perdido en promedio <span class="math notranslate nohighlight">\(1/e\)</span> de su energía.</p>
+</div>
+<div class="section" id="interacciones-de-los-fotones">
+<h3>Interacciones de los fotones<a class="headerlink" href="#interacciones-de-los-fotones" title="Permalink to this heading">#</a></h3>
+<p>Las interacciones de los fotones con la materia dependen de su rango de energía, por debajo del MeV domina el efecto foto-eléctrico, en el rango de MeVs, la dispersión Compton, y por encima 10 MeV, la producción de pares.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../_images/det_AB1.1_gamma_xsec_Pb.png"><img alt="../_images/det_AB1.1_gamma_xsec_Pb.png" class="align-center" src="../_images/det_AB1.1_gamma_xsec_Pb.png" style="width: 340px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>sección eficaz de fotones en plomo [AB1.1]</p></td>
+</tr>
+</tbody>
+</table>
+<p>A altas energías el efecto dominante será la producción de pares.</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_\gamma \simeq \frac{7}{9} \frac{1}{n X_0},
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(n\)</span> es la densidad de núcleos.</p>
+<p>La cantidad <span class="math notranslate nohighlight">\(\lambda = 1/(n \sigma_\gamma)\)</span> es el <strong>camino libre medio</strong>, que vale <span class="math notranslate nohighlight">\(\lambda \simeq 7/9 X_0\)</span> y que nos indica la cantidad de fotones que se pierden en un haz monoenergético de intensidad <span class="math notranslate nohighlight">\(I\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}I}{\mathrm{dx}} = - \frac{I}{\lambda}, \;\; I(x) = I_0 e^{-x/\lambda}
+\]</div>
+<p>Por lo tanto la longitud de radiación, <span class="math notranslate nohighlight">\(X_0\)</span> caracteriza la pérdida en un médio de energía de electrones y fotones por encima <span class="math notranslate nohighlight">\(\sim 10\)</span> MeV.</p>
+</div>
+<div class="section" id="calorimetros-electromagneticos">
+<h3>Calorímetros electromagnéticos<a class="headerlink" href="#calorimetros-electromagneticos" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/det_gamma_cascade.png"><img alt="../_images/det_gamma_cascade.png" class="align-center" src="../_images/det_gamma_cascade.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/det_gamma_cascade_real.png"><img alt="../_images/det_gamma_cascade_real.png" class="align-center" src="../_images/det_gamma_cascade_real.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema de cascada [AB]</p></td>
+<td class="text-align:center"><p>Cascada [AB]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Los <strong>calorímetros electromagnéticos</strong> tienen una estructura alternada de material pasivo (por ejemplo Pb, alto <span class="math notranslate nohighlight">\(Z\)</span>, alto <span class="math notranslate nohighlight">\(X_0\)</span>), donde se desarrollan las cascadas, y  material activo, donde se detecteca la ionización (i.e centelleadores).</p>
+<p>La energía depositada es proporcional a la energía incidente del <span class="math notranslate nohighlight">\(e\)</span> o <span class="math notranslate nohighlight">\(\gamma\)</span> y la resolución en energía, <span class="math notranslate nohighlight">\(\sigma_E\)</span>, está limitada por las fluctuaciones en la producción de las partículas (que es proporcional a <span class="math notranslate nohighlight">\(\sqrt{E}\)</span>) en la cascada):</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\sigma_E}{E} \sim \frac{3 - 10 \mathrm{\%}}{\sqrt{E \;\mathrm{(GeV)}}}
+\]</div>
+<p>Los <strong>centelleadores</strong> contienen moléculas que se excitan al paso de la partícular cargadas, y al de-excitarse emiten luz en el visible que puede detectarse con sensores de fotones (por ejemplo <strong>foto-multiplicadores</strong>).</p>
+<p>El número de fotones es proporcional a la energía absorbida, aproximadamente 100 eV por fotón de centelleo.</p>
+<p>Los centelleadores deben tener una <span class="math notranslate nohighlight">\(X_0\)</span> alta para evitar la conversión de los fotones.</p>
+</div>
+<div class="section" id="pmt">
+<h3>PMT<a class="headerlink" href="#pmt" title="Permalink to this heading">#</a></h3>
+<p>Los photomultiplicadores son sensores que detectan fotones via efecto foto-electrico, arrancan un electrón de la primera capa del sensor y esté genera un avalancha en las siguientes capas.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../_images/det_PMT_drawing.png"><img alt="../_images/det_PMT_drawing.png" class="align-center" src="../_images/det_PMT_drawing.png" style="width: 550px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Esquema de funcionamiento de un PMT [WK]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Se utilizan como sensores que recogen la luz de cristales, plásticos centelleadores, etc. Se utilizan en calorímetros y en cámaras de muones, entre otros.</p>
+</div>
+<div class="section" id="experimentos">
+<h3>Experimentos<a class="headerlink" href="#experimentos" title="Permalink to this heading">#</a></h3>
+<div class="section" id="experimentos-4-pi">
+<h4>Experimentos <span class="math notranslate nohighlight">\(4\pi\)</span><a class="headerlink" href="#experimentos-4-pi" title="Permalink to this heading">#</a></h4>
+<p>Los detectores tipo en colisionadores tienen una estructura en capas cilíndricas.</p>
+<p>En el interior están los detector de trazas más precisos (silicon detectors), submergidos en un campo magnético (selenoidal).</p>
+<p>Le siguen el calorímetro electromagnéticos y el hadrónico.</p>
+<p>Y finalmente los detectores de muones (que son las partículas más penetrantes)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_CMS_subdetectors.png"><img alt="../_images/det_CMS_subdetectors.png" class="align-center" src="../_images/det_CMS_subdetectors.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Esquema de un sector del <em>Compact Muon Selenoid</em> (<a class="reference external" href="https://cms.cern/detector">CMS</a>) del LHC</p></td>
+</tr>
+</tbody>
+</table>
+<p>Imágenes de <a class="reference external" href="https://home.cern/resources/image/experiments/cms-images-gallery">CMS</a></p>
+</div>
+<div class="section" id="experimentos-de-blanco-fijo-o-hacia-delante">
+<h4>Experimentos de blanco fijo o hacia delante<a class="headerlink" href="#experimentos-de-blanco-fijo-o-hacia-delante" title="Permalink to this heading">#</a></h4>
+<p>Solo tiene instrumentalizados un brazo de la interacción.</p>
+<p>Están constituidos en general por la zona de interacción, de detectores de vértices, seguidos de trazas (en un campo magnético), por los calorímetros electromagnético, hadrónico y finalmente por detectores de muones.</p>
+<p>Es el caso de detector LHCb en el LHC.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_LHCb_subdetectors.jpg"><img alt="../_images/det_LHCb_subdetectors.jpg" class="align-center" src="../_images/det_LHCb_subdetectors.jpg" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Esquema de un sector del <em>LHCb</em> (<a class="reference external" href="https://lhcb.cern/detector">LHCb</a>) del LHC</p></td>
+</tr>
+</tbody>
+</table>
+<p>Imágenes de <a class="reference external" href="https://home.cern/resources/image/experiments/lhcb-images-gallery">LHCb</a></p>
+</div>
+<div class="section" id="procesado-y-analisis-de-datos">
+<h4>Procesado y análisis de datos<a class="headerlink" href="#procesado-y-analisis-de-datos" title="Permalink to this heading">#</a></h4>
+<p>Sistema de disparo (<em>trigger</em>) y de adquisición de datos</p>
+<p>Es preciso reducir el rate de producción (i.e 40 MHz) y seleccionar los sucesos relevantes (<span class="math notranslate nohighlight">\(\mathcal{0}(10)\)</span> k)</p>
+<p>Puedes ver imágenes de la sala de control de <a class="reference external" href="https://cds.cern.ch/record/1299577">LHCb</a> durante la toma de datos (<em>online</em>).</p>
+<p>Procesado y reconstrucción</p>
+<p>Los eventos se procesan para a partir de las señales de los sensores, primero se reconstruyen trazas, vértices y depósitos de energía y luego partículas y cuadrimomentos (<em>offline</em>).</p>
+<p>Para ello se utilizan programas en C++ o Python.</p>
+<p>También se producen millones de eventos simulados en centros de computación, mediante técnicas de Monte-Carlo.</p>
+</div>
+<div class="section" id="analisis">
+<h4>Análisis<a class="headerlink" href="#analisis" title="Permalink to this heading">#</a></h4>
+<p>Los eventos de una toma de datos se seleccionan primero, y luego se analizan con técnicas de análisis de datos (i.e <em>Neural Networks</em>) donde la estadística juega un papel esencial. En general  se utilizan como control datos de calibración y simulados (i.e con técnicas de Monte-Carlo).</p>
+<p>Las medidades de los experimentos se presentan como:</p>
+<ul>
+<li><p>La <strong>estimación</strong> de un observable, por ejemplo: una sección eficaz, la vida media, la masa o una fracción de desintegración.</p>
+<p>Existen dos tipos de errores:</p>
+<ul class="simple">
+<li><p><em>estadísticos</em>: dependiendo de la cantidad de sucesos relevantes disponibles.</p></li>
+<li><p><em>sistemáticos</em>: que reflejan nuestras incertidumbres en parámetros que afectan al observable, que puede ser de diversas índole: de calibración, eficiencias de selección, teóricos, etc.</p></li>
+</ul>
+<p>Por ejemplo <a class="reference external" href="https://arxiv.org/abs/1207.7214">la observación del Higgs en ATLAS</a>,</p>
+</li>
+<li><p>Un <strong>límite</strong> en el observable como la vida media, masa, sección eficaz, etc, de una <strong>búsqueda</strong>.</p>
+<p>La determinación de un límite se presenta con un nivel de confianza (i.e 90%).</p>
+<p>Por ejemplo, el límite en <a class="reference external" href="https://arxiv.org/abs/1909.06048">la masa del neutrino en KATRIN</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="breve-introduccion-a-los-aceleradores">
+<h3>Breve introducción a los aceleradores<a class="headerlink" href="#breve-introduccion-a-los-aceleradores" title="Permalink to this heading">#</a></h3>
+<p>En un acelerados las partículas estables (<span class="math notranslate nohighlight">\(e, e^+ p, \bar{p}\)</span>) se agrupan en paquetes (<em>bunches</em>), con un número elevados de partículas, <span class="math notranslate nohighlight">\(\mathcal{O}(10^{11})\)</span>, que circulan en un tubo de vacío.</p>
+<p>Se les acelera mediante gradientes de potencial en cavidades resonantes, se les mantiene en órbita mediante campos magnéticos dipolares y cuadripolares.</p>
+<p>Existen dos tipos de aceleradores principales:</p>
+<ul class="simple">
+<li><p><strong>Lineales</strong>, donde el acelerador es un dispositivo recto que los paquetes recorren una vez.</p></li>
+<li><p><strong>Circulares</strong>, colisonadores, en los los paquetes giran en el tubo de vacío del haz numerosas vueltas <span class="math notranslate nohighlight">\(\mathcal{O}(10^5)\)</span>.</p></li>
+</ul>
+<div class="section" id="acelerador-lineal">
+<h4>Acelerador lineal<a class="headerlink" href="#acelerador-lineal" title="Permalink to this heading">#</a></h4>
+<p>Animación de un detector lineal y vista del acelerador lineal (<span class="math notranslate nohighlight">\(e, e^+\)</span>) en SLAC (California) de 3 km de largo.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/Linear_accelerator_animation_16frames_1.6sec.gif"><img alt="../_images/Linear_accelerator_animation_16frames_1.6sec.gif" class="align-center" src="../_images/Linear_accelerator_animation_16frames_1.6sec.gif" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/det_slac_aerial.png"><img alt="../_images/det_slac_aerial.png" class="align-center" src="../_images/det_slac_aerial.png" style="width: 200px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Acelerador lineal [Wikipedia]</p></td>
+<td class="text-align:center"><p>Linar acelarator (SLAC)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="aceleradores-circulares">
+<h4>Aceleradores circulares<a class="headerlink" href="#aceleradores-circulares" title="Permalink to this heading">#</a></h4>
+<p>Vista aérea del LHC donde se sobreimponen las líneas de los túneles de los aceleradores del CERN.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_CERN_accelerators_complex.png"><img alt="../_images/det_CERN_accelerators_complex.png" class="align-center" src="../_images/det_CERN_accelerators_complex.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:left"><p><a class="reference internal" href="../_images/det_LHC_aerial.png"><img alt="../_images/det_LHC_aerial.png" class="align-center" src="../_images/det_LHC_aerial.png" style="width: 320px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Esquema de los aceleradores del CERN <a class="reference external" href="https://www.youtube.com/watch?v=pQhbhpU9Wrg">[&gt;]</a></p></td>
+<td class="text-align:left"><p>vista del LHC (CERN)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Las partículas relativistas al girar pierden energía por radiación (<strong>synchrotron radiation</strong>) proporcional a <span class="math notranslate nohighlight">\(1/m^4\)</span> ¡Este efecto es más dramático para <span class="math notranslate nohighlight">\(e\)</span> que para <span class="math notranslate nohighlight">\(p\)</span>!</p>
+<p>Para “girar” a las partículas se utiliza un campo magnético dipolar <span class="math notranslate nohighlight">\(B\)</span> perperdicular a su dirección.</p>
+<p>Por el electromagnetismo sabemos que <span class="math notranslate nohighlight">\(p = 0.3 B \, \rho\)</span>, donde <span class="math notranslate nohighlight">\(p\)</span> es el momento, en TeV, <span class="math notranslate nohighlight">\(B\)</span> el campo magnético, en T, y <span class="math notranslate nohighlight">\(\rho\)</span> el radio, en km.</p>
+<p>Para el Tevatron, en Fermilab, Chicago, <span class="math notranslate nohighlight">\(\rho = 1\)</span> km. <span class="math notranslate nohighlight">\(B = 1.5\)</span> T, y permite acelerar protones hasta 1 TeV.</p>
+<p>Para obtener campos más intensos hay que recurrer a imanes superconductores.</p>
+<p>Por otro lado, las partículas oscilan dentro de los paquetes y para mantenerlas juntas se utilizan campos magnéticos de cuadropolos.</p>
+<p>En los <strong>anillos de almacenamiento</strong> se hacen girar dos haces de partículas en sentido opuestos en el mismo anillo.</p>
+<p>En determinados <strong>puntos de colisión</strong> mediante un conjunto de imanes se comprimen los paquetes y se cruzan para que tengan lugar las colisiones.</p>
+<p>Este es el caso de LEP, el colisionador <span class="math notranslate nohighlight">\(e^+e^-\)</span> del CERN, de 27 km de circunferencia, que funcionó a finales del siglo XX.</p>
+<p>También es el caso del LHC, que ocupa el tunel donde antes estuvo LEP. LHC es un colisionador <span class="math notranslate nohighlight">\(pp\)</span> con una energía <span class="math notranslate nohighlight">\(\sqrt{s} = 7-13\)</span> TeV.</p>
+<p>Los dipolos superconductores del LHC operan a 8 T. Los paquetes contienen del orden de <span class="math notranslate nohighlight">\(10^{11}\)</span> <span class="math notranslate nohighlight">\(p\)</span> que recorren el anillo a una frecuencia de 40 MHz.</p>
+<p>El volumen de los paquetes es de 40 cm de largo y 1 mm de sección que se reduce a 10 <span class="math notranslate nohighlight">\(\mu\mathrm{m}\)</span> en la zona de colisión.</p>
+</div>
+<div class="section" id="haces-secundarios-de-hadrones-mu-nu-mu">
+<h4>Haces secundarios de hadrones, <span class="math notranslate nohighlight">\(\mu, \, \nu_\mu\)</span>.<a class="headerlink" href="#haces-secundarios-de-hadrones-mu-nu-mu" title="Permalink to this heading">#</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/det_nubeam_schematic.jpg"><img alt="../_images/det_nubeam_schematic.jpg" class="align-center" src="../_images/det_nubeam_schematic.jpg" style="width: 340px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/det_nubeam_DUNE.jpg"><img alt="../_images/det_nubeam_DUNE.jpg" class="align-center" src="../_images/det_nubeam_DUNE.jpg" style="width: 340px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema del haz de neutrinos de FermiLab</p></td>
+<td class="text-align:center"><p>Haz de <span class="math notranslate nohighlight">\(\nu\)</span> de FermiLab a DUNE (en construcción)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Se obtienen de golpear un haz primario (principalmente <span class="math notranslate nohighlight">\(p\)</span>) contra un blanco.</p>
+<p>Se seleccionan los partículas de interés mediante un conjunto de imanes tuneados para permitir el paso de partículas con una carga y un momento determinados.</p>
+<p>Por ejemplo, los <span class="math notranslate nohighlight">\(\pi^\pm\)</span> se desintegraran a un haz e muones <span class="math notranslate nohighlight">\(\mu^\pm\)</span> y netrinos <span class="math notranslate nohighlight">\(\bar{\nu}_\mu, \nu_\mu\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="una-perspectiva-teorica">
+<h2>Una perspectiva teórica<a class="headerlink" href="#una-perspectiva-teorica" title="Permalink to this heading">#</a></h2>
+<p>La teoría de Física de Partículas se basa en la <strong>Teoría Cuántica de Campos</strong>.</p>
+<p>que podemos caracterizar por varios elementos fundamentales:</p>
+<ol class="simple">
+<li><p>Toda tipo de partícula tiene asociada un <strong>campo</strong>.  Existen tres tipos de campos principales:</p></li>
+</ol>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Bosón Escalar (S = 0 ), Klein-Gordon</p></td>
+<td class="text-align:center"><p>Espinor (S = 1/2), Dirac</p></td>
+<td class="text-align:center"><p>Bosón vectorial (S = 1), Maxwell</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\((\partial^\mu\partial_\mu + m^2) \, \phi = 0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((i\gamma^\mu \partial_\mu - m) \, \Psi = 0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\partial_\mu (\partial^\mu A^\nu - \partial^\nu A^\mu) = j^\nu\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<ol class="simple">
+<li><p><strong>Los campos están cuanficados</strong>, se construyen con operadores creacción y destrucción de partículas a partir del vacío. ¡Las partículas son «excitaciones» de los campos!</p></li>
+</ol>
+<p>para el campo fermiónico:</p>
+<div class="math notranslate nohighlight">
+\[
+a^{\dagger}_{p, s} \, |0 \rangle = |p, s \rangle, \;\;\; \{a^{\dagger}_{p,s}, a^{\dagger}_{p', s'} \} = (2\pi)^3 \, \delta^{(3)}({\bf p}- {\bf p}') \, \delta_{ss'}
+\]</div>
+<ol class="simple">
+<li><p>La interacción entre fuerzas y materia (por ejemplo electrón y fotón) se establece a partir de la conservación de la simetría llamada <strong>simetría gauge local</strong> que consiste en que la física no cambia si cambiamos en cada punto (<span class="math notranslate nohighlight">\(x\)</span>, local) el campo fermiónico por una fase <span class="math notranslate nohighlight">\(\theta(x)\)</span>,  <span class="math notranslate nohighlight">\(\Psi'(x) = e^{ig\theta(x)} \Psi(x)\)</span>.</p></li>
+</ol>
+<p>Veremos más adelante que el <em>Modelo Estándar</em> necesita de dos elementos más:</p>
+<ol class="simple">
+<li><p><strong>La teoría de grupos</strong>. El electromagnetismo está asociado al grupo que se llama <span class="math notranslate nohighlight">\(U(1)\)</span> o singletes, la interacción débil al <span class="math notranslate nohighlight">\(SU(2)\)</span> o dupletes, y la fuerte al SU(3) o tripletes.</p></li>
+<li><p><em>Un campo escalar</em>, esto es de spín nulo, el campo del <strong>bosón de Higgs</strong>, que interacciona con el resto de partículas como si fuera un campo de inercia, y que además tiene un potencial singular, con la forma de un sombrero mexicano, y que el valor del campo en el vacío toma de forma espontánea un valor de entre todos los posibles equivalentes, podríamos decir que al azar un punto dentro del ala del sombrero, lo que se conoce como <strong>rotura espontánea de simetría</strong>.</p></li>
+</ol>
+<div class="section" id="sobre-la-ecuacion-de-dirac">
+<h3>Sobre la ecuación de Dirac<a class="headerlink" href="#sobre-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
+<p>Dirac propuso en 1932 una ecuación, que lleva su nombre, que describe la dinámica relativista de los fermiones.</p>
+<div class="math notranslate nohighlight">
+\[
+ (i \gamma^\mu \partial_\mu - m) \, \Psi(x) = 0
+\]</div>
+<p>Las <span class="math notranslate nohighlight">\(\gamma\)</span>’s (veremos en breve) son matrices complejas <span class="math notranslate nohighlight">\(4\times 4\)</span> y <span class="math notranslate nohighlight">\(\partial_\mu\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\partial_\mu = \left( \frac{\partial}{\partial t}, \frac{\partial}{\partial x},  
+                \frac{\partial}{\partial y}, \frac{\partial}{\partial z}  \right).
+\]</div>
+<p>La contracción de índices significa un sumatorio, esto es <span class="math notranslate nohighlight">\(\gamma^\mu\partial_\mu \equiv \sum_{\mu = 0}^4 \gamma^\mu \partial_\mu\)</span> (en gereral a partir de ahora será así).</p>
+<p>Dirac usó dos directrices para escribir su ecuación:</p>
+<ol class="simple">
+<li><p>La coordenada espacial y temporal,  <span class="math notranslate nohighlight">\(\partial_0, \partial_i, \;\; i = 1, 2, 3\)</span>, aparecen linealmente y en igualdad de condiciones.</p></li>
+<li><p>Considerando la asociación con los operadores energía y momento, <span class="math notranslate nohighlight">\(i\partial_0 \to E, \;\;\; -i\partial_i = p_i\)</span>, al elevar al cuadrado la ecuación obtenemos la ecuación de Einstein, <span class="math notranslate nohighlight">\(E^2-{\bf p}^2 = m^2\)</span></p></li>
+</ol>
+<p>Pero para ello, los factores <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> no pueden conmutar, no pueden por lo tanto ser escalares, deben ser matrices complejas <span class="math notranslate nohighlight">\(4\times4\)</span> que cumplan el álgebra siguiente:</p>
+<div class="math notranslate nohighlight">
+\[
+\{ \gamma^\mu, \gamma^\nu \} \equiv \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 g^{\mu\nu}
+\]</div>
+<p>conocida como de ágebra de Clifford.</p>
+<p>De forma equivalente, las matrices-<span class="math notranslate nohighlight">\(\gamma\)</span> cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+(\gamma^0)^2 = I, \; (\gamma^k)^2 = - I, \;\; \gamma^\mu \gamma^\nu = - \gamma^\nu \gamma^\mu \, (\mu \neq \nu),
+\]</div>
+<p>con <span class="math notranslate nohighlight">\(k=1, 2, 3\)</span>, y <span class="math notranslate nohighlight">\(\mu = 0, 1, 2, 3\)</span>.</p>
+<p>Existen varias representaciones del álgebra y podemos usar la más conveniente. la Física no cambia, no depende, de la representación elegida.</p>
+<p>La representación más común es la de Pauli-Dirac:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 = \begin{pmatrix} I &amp; 0 \\ 0 &amp; -I \end{pmatrix}, \;\;
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma_k \\ -\sigma_k &amp; 0 \end{pmatrix}, \;\;
+\gamma^5 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix},
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(I\)</span> es la matriz identidad <span class="math notranslate nohighlight">\(2\times2\)</span> y <span class="math notranslate nohighlight">\(\sigma_k\)</span> la matrices de Pauli <span class="math notranslate nohighlight">\(2\times2\)</span>.</p>
+<p>La quinta matrix se define <span class="math notranslate nohighlight">\(\gamma^5 \equiv i \gamma^0\gamma^1\gamma^2\gamma^3\)</span> y como veremos juega un papel fundamental en la interacción débil.</p>
+<p>La solución de la ec. de Dirac es una función de ondas con cuatro componentes complejas, el espinor de Dirac:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi = \begin{pmatrix} \psi_1 \\ \psi_2 \\ \psi_3 \\ \psi_4\end{pmatrix}.
+\end{split}\]</div>
+<p>Las soluciones generales son cuatro ondas planas, que asociamos a los fermiones, <span class="math notranslate nohighlight">\(\Psi_i(x)\)</span> y anti-fermiones <span class="math notranslate nohighlight">\(\Phi_i(x)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi_i(x) = u_i(E, {\bf p}) \, e^{+i({\bf p x} - Et)}, \;\;\;\; \Phi_i(x) = v_i(E, {\bf p}) \, e^{-i({\bf p x} - Et)}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(u_i(E, {\bf p}), v_i(E, {\bf p})\)</span> corresponden a los <strong>espinores</strong> (cuatro componentes en columna) de los fermiones y antifermiones respectivamente y el índice <span class="math notranslate nohighlight">\(i=1, 2\)</span> está asociado con las dos posibles componentes de espín de <span class="math notranslate nohighlight">\(s=1/2\)</span>.</p>
+<p>A falta de un eje definido o un campo magnético, podemos tomar de forma natural el eje <span class="math notranslate nohighlight">\(z\)</span> aquel en el que se mueve la partícula con momento <span class="math notranslate nohighlight">\(p\)</span>. En ese caso los espinores son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{-} = N \begin{pmatrix} 0     \\ 1       \\ 0       \\ -\kappa \end{pmatrix}, \;
+u_{+} = N \begin{pmatrix} 1    \\  0      \\ \kappa  \\  0      \end{pmatrix}, \;
+v_{-} = N \begin{pmatrix} \kappa \\ 0       \\ 1      \\ 0        \end{pmatrix} \;,
+v_{+} = N \begin{pmatrix} 0     \\ -\kappa \\ 0       \\ 1       \end{pmatrix},
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\kappa = \frac{p}{E+m}\)</span> y <span class="math notranslate nohighlight">\(N = \sqrt{E+m}\)</span>, un factor de normalización.</p>
+<p>Son los espinores del fermión, <span class="math notranslate nohighlight">\(u_{\pm}\)</span>, con su espín alineado (o opuesto  a su momento, esto es tiene helicidad positiva <span class="math notranslate nohighlight">\(+\)</span> o negativa <span class="math notranslate nohighlight">\(-\)</span>, y los del antifermión, <span class="math notranslate nohighlight">\(v_{\pm}\)</span>, con sus dos helicidades.</p>
+<p>Gráficamente:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_spinors_helicities.png"><img alt="../_images/dirac_spinors_helicities.png" class="align-center" src="../_images/dirac_spinors_helicities.png" style="width: 450px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>spín y momento de los spinores de helicidad</p></td>
+</tr>
+</tbody>
+</table>
+<p>Notar que <span class="math notranslate nohighlight">\(\kappa\)</span> es un factor que cuantifica cuán <em>relativista</em> es la partícula. Si la partícula está en reposo <span class="math notranslate nohighlight">\(p = 0 \to \kappa = 0\)</span>, y si es ultra-relativista <span class="math notranslate nohighlight">\(E \simeq p \to \kappa = 1\)</span>.</p>
+<p>Recordemos que la <strong>helicidad</strong> es la proyección del espín en la dirección del momento, <span class="math notranslate nohighlight">\({\bf p}\)</span>.</p>
+<p>Definimos el espinor <strong>adjunto</strong> como:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi} = \Psi^{\dagger} \gamma^0; \;\;\; \bar{\Psi} = (\psi^*_1, \psi^*_2, -\psi^*_3, -\psi^*_4),
+\]</div>
+<p>esté último en la representación Pauli-Dirac.</p>
+<p>A partir de ahí podemos definir una <strong>corriente</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+j^\mu =  \bar{\Psi} \gamma^\mu \Psi,\;\;\;  j^\mu = (j^0, {\bf j})
+\]</div>
+<p>Que se comporta como un <strong>vector</strong> bajo transformaciones de Lorentz, esto es, es un <strong>cuadri-vector</strong>.</p>
+<p>Esta corriente se conserva, cumple la <strong>ecuación de conservación</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial \rho}{\partial t} + \nabla \cdot {\bf j} = 0,
+\]</div>
+<p>esto es, la cantidad de <span class="math notranslate nohighlight">\(\rho\)</span> que entra en un volumen diferencial en una unidad de tiempo corresponde al flujo de la corriente <span class="math notranslate nohighlight">\({\bf j}\)</span> que atraviesa las paredes del volumen en ese tiempo.</p>
+<p>Es este caso es la <strong>corriente de probabilidad</strong> del fermión.</p>
+</div>
+<div class="section" id="diagramas-de-feyman">
+<h3>Diagramas de Feyman<a class="headerlink" href="#diagramas-de-feyman" title="Permalink to this heading">#</a></h3>
+<p>R. Feynman desarrolló en los 50’s la teoría QED (<em>Quantum Electro Dynamics)</em> basada en la TCQ (Teoría Cuántica de Campos).</p>
+<p>A partir de ideas previas en física teórica:</p>
+<ul class="simple">
+<li><p>las interacciones tienen lugar entre <strong>dos corrientes de fermiones</strong> (Fermi )</p></li>
+<li><p>la fuerza se transmite mediante un portador o <strong>mediador</strong> (Yukawa).</p></li>
+<li><p><strong>la regla de Oro de Fermi</strong>. La frecuencia de la transición, <span class="math notranslate nohighlight">\(R\)</span>, es proporcional a <span class="math notranslate nohighlight">\(|M_{fi}|^2\)</span> y a la densidad de estados disponibles <span class="math notranslate nohighlight">\(\rho(E)\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+R = (2\pi) |M_{fi}|^2 \rho(E)
+\]</div>
+<p>Recordemos que <span class="math notranslate nohighlight">\(M_{fi} = \langle f | H_{int}| i \rangle\)</span> es el elemento de la matriz de transición entre los estados iniciales, <span class="math notranslate nohighlight">\(| i \rangle\)</span> y finales, <span class="math notranslate nohighlight">\(\langle f|\)</span>, mediante un hamiltoniano de interacción <span class="math notranslate nohighlight">\(H_{int}\)</span>.</p>
+<p>La parte cinématica puede resolverse «facilmente».</p>
+<p>Los dos casos comunes (ver [Apéndice-fundamentos]) en el CM se muestran en el tabla:</p>
+<ul class="simple">
+<li><p>anchura de desintegración de la partícula <span class="math notranslate nohighlight">\(a \to b + c\)</span></p></li>
+<li><p>sección eficaz de la interación de dos cuerpos <span class="math notranslate nohighlight">\(a +b \to c + d\)</span></p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\Gamma(a \to b + c)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sigma(a+b \to c+d)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_drawing_decay2.png"><img alt="../_images/intro_drawing_decay2.png" class="align-center" src="../_images/intro_drawing_decay2.png" style="width: 250px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/intro_drawing_int2.png"><img alt="../_images/intro_drawing_int2.png" class="align-center" src="../_images/intro_drawing_int2.png" style="width: 250px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>La parte cinemática en el cálculo de la anchura de desintegración, <span class="math notranslate nohighlight">\(\Gamma(a \to b + c)\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = \frac{p^*}{32 \pi^2 m^2_a} \int_{\Omega} |M_{fi}|^2 \mathrm{d}\Omega^*
+\]</div>
+<p>Y en el cánculo de la sección eficaz <span class="math notranslate nohighlight">\(\sigma(a + b \to c + d)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{1}{64 \pi^2 (E_a+E_b)^2} \frac{p^*_f}{p^*_i} \int_\Omega |M_{fi}|^2 \, \mathrm{d}\Omega^*
+\]</div>
+<p>donde el índice «*» corresponde a las cantidades en el <strong>centro de masas</strong>.</p>
+<p>La física de la interacción se encuentra en el término <span class="math notranslate nohighlight">\(M_{fi}\)</span></p>
+<p>Feynman propuso una serie de diagramas que tienen asociados unas reglas que permiten calcular <span class="math notranslate nohighlight">\(M_{fi}\)</span>.</p>
+<p>Los <strong>diagramas de Feynman</strong> nos permiten además representar <strong>gráficamente</strong> una interacción.</p>
+<p>y son válidos para <strong>todas las fuerzas</strong>.</p>
+<div class="section" id="teoria-de-fermi">
+<h4>Teoría de Fermi<a class="headerlink" href="#teoria-de-fermi" title="Permalink to this heading">#</a></h4>
+<p>Recordemos que Fermi propuso una teoría para le desintegración <span class="math notranslate nohighlight">\(\beta\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+n \to p + e + \bar{\nu}_e
+\]</div>
+<p>que se basaba en acoplo <strong>puntual</strong> entre <strong>dos corrientes fermiónicas</strong> con una intensidad <span class="math notranslate nohighlight">\(G_F/\sqrt{2}\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_fermi_currents.png"><img alt="../_images/intro_fermi_currents.png" class="align-center" src="../_images/intro_fermi_currents.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Representación gráfica de la teoría de Fermi del acoplo entre dos corrientes</p></td>
+</tr>
+</tbody>
+</table>
+<p>Y el elemento <span class="math notranslate nohighlight">\(M_{fi}\)</span> podía calcularse a partir de:</p>
+<div class="math notranslate nohighlight">
+\[
+M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_{\mu\nu} \left[ \bar{\Psi}_e \gamma^\nu \Psi_{\bar{\nu}_e} \right],
+\]</div>
+<p>donde:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(G_F = 1.16 \, 10^{-5}\)</span> <span class="math notranslate nohighlight">\(\mathrm{GeV}^{-2}\)</span>, es la constante de acoplo, o de Fermi, que cuantifica la intensidad de la interacción.</p></li>
+<li><p><span class="math notranslate nohighlight">\(j^\mu_{\mathrm{had}} = \bar{\Psi}_p \gamma^\mu \Psi_n\)</span> es la corriente hadrónica.</p></li>
+<li><p><span class="math notranslate nohighlight">\(j^\nu_{\mathrm{lep}} = \bar{\Psi}_e \gamma^\nu \Psi_{\bar{\nu}_e}\)</span> es la corriente leptónica.</p></li>
+</ul>
+<p>Como <span class="math notranslate nohighlight">\(j^\mu_{\mathrm{had}}, \, j^\nu_{\mathrm{lep}}\)</span> son corrientes, cuadri-vectores, <span class="math notranslate nohighlight">\(M_{fi} = g_{\mu\nu} j^\mu_{\mathrm{had}} j^\nu_{\mathrm{lep}}\)</span> es un invariante Lorentz.</p>
+<p>Recordemos que <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> son las matrices de Dirac, <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> el tensor diagonal de la métrica, y cuando aparecen los índices arriba y abajo, se entiende que hay implícito un sumatorio.</p>
+</div>
+<div class="section" id="diagrama-de-feynman">
+<h4>diagrama de Feynman<a class="headerlink" href="#diagrama-de-feynman" title="Permalink to this heading">#</a></h4>
+<p>El siguiente <strong>diagrama de Feyman</strong> representa la interacción de dos corrientes fermiónicas</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/feynman_default.png"><img alt="../_images/feynman_default.png" class="align-center" src="../_images/feynman_default.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Diagrama de Feyman de una dispersión</p></td>
+</tr>
+</tbody>
+</table>
+<p>Identificamos:</p>
+<ul class="simple">
+<li><p>las <strong>corrientes fermiónicas</strong> de las partículas, de <span class="math notranslate nohighlight">\(a\)</span> a <span class="math notranslate nohighlight">\(c\)</span>, y de <span class="math notranslate nohighlight">\(b\)</span> a <span class="math notranslate nohighlight">\(d\)</span>.</p></li>
+<li><p>el <strong>mediador</strong> o portador, <span class="math notranslate nohighlight">\(X\)</span></p></li>
+<li><p>los <strong>vértices de acoplo</strong> con intensidad <span class="math notranslate nohighlight">\(g\)</span>.</p></li>
+</ul>
+<p>En más detalle:</p>
+<ul class="simple">
+<li><p>las <strong>corrientes fermiónicas</strong> estan representadas por líneas. Cada fermión es un segmento de la línea con una flecha asociada. Los fermiones tienen las flechas hacia la derecha y los antifermiones hacia la izquierda.</p></li>
+<li><p>El <strong>mediador</strong> se representa con una línea en senos para el fotón, y los bosones débiles <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y con un muelle para los gluones que median la fuerza fuerte. El mediador introduce un factor en el elemento de matriz denominado <strong>propagador</strong>.</p></li>
+<li><p>La intensidad y características de la interacción está cuantificada por un factor asociado al <strong>vértice</strong>. La <strong>intensidad de la interacción</strong> viene dada por una <strong>«constante» de acoplo</strong> <span class="math notranslate nohighlight">\(g\)</span>.</p></li>
+</ul>
+<p><em>Nota</em>: Es común en la literatura que la <strong>línea temporal</strong> corresponda <strong>hacia la derecha</strong>. Así los fermiones avanzan en el tiempo y los antifermiones en sentido inverso. Los mediadores se representan verticalmente, para indicar que no sabemos en qué dirección temporal se intercambió el mediador.</p>
+</div>
+<div class="section" id="vertices">
+<h4>Vértices<a class="headerlink" href="#vertices" title="Permalink to this heading">#</a></h4>
+<p>Los vértices de los diagramas de Feynman para las distintas fuerzas son:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/feynman_forces.png"><img alt="../_images/feynman_forces.png" class="align-center" src="../_images/feynman_forces.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Para cada fuerza tenemos asociada una <strong>constante de acoplo</strong>:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>electromagnética</p></td>
+<td class="text-align:center"><p>débil cargada</p></td>
+<td class="text-align:center"><p>débil neutra</p></td>
+<td class="text-align:center"><p>fuerte</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(e \)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(g_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(g_Z\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(g_s\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La constante asociada al electromagnetismo es la carga eléctrica, <span class="math notranslate nohighlight">\(e\)</span>.</p>
+<p>La constante nos indica la <strong>intensidad</strong> de la fuerza</p>
+<p>Resulta conveniente utilizar <strong>constantes adimensionales</strong>, que denotamos <span class="math notranslate nohighlight">\(\alpha\)</span>, para cuantificar la intensidad de las fuerzas entre ellas.</p>
+<p>Para el electromagnetimo utilizamos <span class="math notranslate nohighlight">\(\alpha\)</span>, la constante de estructura fina:
+$<span class="math notranslate nohighlight">\(
+\alpha = \frac{e^2}{4 \pi \epsilon_0}
+\)</span>$</p>
+<p>Como en cada diagrama hay dos vértices, <span class="math notranslate nohighlight">\(M_{fi}\)</span> es proporcional a <span class="math notranslate nohighlight">\(g^2 \propto \alpha\)</span>, y la propabilidad <span class="math notranslate nohighlight">\(|M_{fi}|^2 \propto g^4 \propto \alpha^2 \)</span></p>
+<p>Las constantes adimensionales de las fuerzas serían aproximadamente:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>electromagnetismo <span class="math notranslate nohighlight">\(\alpha\)</span></p></th>
+<th class="text-align:center head"><p>débil <span class="math notranslate nohighlight">\(\alpha_W\)</span></p></th>
+<th class="text-align:center head"><p>fuerte <span class="math notranslate nohighlight">\(\alpha_S\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>1/137</p></td>
+<td class="text-align:center"><p>1/30</p></td>
+<td class="text-align:center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<p>En los vértices se conserva:</p>
+<ul class="simple">
+<li><p>la <strong>carga eléctrica</strong>. En el caso de <span class="math notranslate nohighlight">\(W^\pm\)</span> el portador transfiere la carga.</p></li>
+<li><p>el <strong>sabor</strong>, la identidad de las partículas, a excepción de <span class="math notranslate nohighlight">\(W^\pm\)</span> donde cambia <span class="math notranslate nohighlight">\(f \to f'\)</span></p></li>
+<li><p>el <strong>cuadrimomento</strong>. Sea la partícula <span class="math notranslate nohighlight">\(a\)</span> entrante y <span class="math notranslate nohighlight">\(c\)</span> saliente de la corriente, el cuadrimomento transferido es <span class="math notranslate nohighlight">\(q = p_c-p_a\)</span>.</p></li>
+<li><p>el número leptónico y leptónico de sabor, el número de quarks/antiquarks.</p></li>
+<li><p>el número total de fermiones menos antifermiones.</p></li>
+</ul>
+</div>
+<div class="section" id="portadores">
+<h4>Portadores<a class="headerlink" href="#portadores" title="Permalink to this heading">#</a></h4>
+<p>Los portadores transmiten la fuerza, y se les asociada un <strong>propagador</strong> que actua como un factor entre las corrientes.</p>
+<p>En la tabla se muestra la expresión aproximada de los propagadores:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>electromagnética</p></td>
+<td class="text-align:center"><p>débil cargada</p></td>
+<td class="text-align:center"><p>débil neutra</p></td>
+<td class="text-align:center"><p>fuerte —</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\frac{g_{\mu\nu}}{q^2}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\frac{g_{\mu\nu}}{q^2 - m^2_W}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\frac{g_{\mu\nu}}{q^2 - m^2_Z}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\frac{g_{\mu\nu}}{q^2}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>donde <span class="math notranslate nohighlight">\(q^2\)</span> es el cuadrimomento transferido, en el caso del diagrama anterior, <span class="math notranslate nohighlight">\(q = p_c - p_a = p_d - p_c\)</span>, y <span class="math notranslate nohighlight">\(m_W = 80.4, m_z = 91.2\)</span> GeV son las masas del <span class="math notranslate nohighlight">\(W\)</span> y del <span class="math notranslate nohighlight">\(Z\)</span> respectivamente. Notar que el tensor de la métrica <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> une las dos corrientes.</p>
+<p>Podemos interpretar <span class="math notranslate nohighlight">\(q^2\)</span> como la «masa efectiva» al cuadrado del mediador y éste actua con un factor <span class="math notranslate nohighlight">\(1/q^2\)</span> en <span class="math notranslate nohighlight">\(M_{fi}\)</span>.</p>
+<p>En la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> en un núcleo, <span class="math notranslate nohighlight">\(q^2 (\, \sim \mathcal{0}(MeV^2)) \ll \,  M^2_W \, (80 GeV)^2\)</span>, por lo tanto</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{g_{\mu\nu}}{q^2 - M^2_W} \to -\frac{g_{\mu\nu}}{M^2_W}.
+\]</div>
+<p>¡De ahí que Fermi asociara al vértice una constante!</p>
+</div>
+</div>
+<div class="section" id="tipos-de-interacciones">
+<h3>Tipos de interacciones<a class="headerlink" href="#tipos-de-interacciones" title="Permalink to this heading">#</a></h3>
+<p>Existen tres tipos de diagramas principales: <strong>dispersión</strong>, <strong>aniquilación</strong> y <strong>desintegración</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/feynman_new_type_interactions.png"><img alt="../_images/feynman_new_type_interactions.png" class="align-center" src="../_images/feynman_new_type_interactions.png" style="width: 450px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>De izda a derecha diagramas de dispersión,  aniquilación y desintegración</p></td>
+</tr>
+</tbody>
+</table>
+<p>El cuadrimomento transferido <span class="math notranslate nohighlight">\(q\)</span> es:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>— dispersión —</p></td>
+<td class="text-align:center"><p>– aniquilación –</p></td>
+<td class="text-align:center"><p>desintegración –</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(q = p_c - p_a\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(q = p_a + p_b\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(q = p_c - p_a\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>El diagrama de Feynman para la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> de un neutrón es:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/feynman_new_beta_decay.png"><img alt="../_images/feynman_new_beta_decay.png" class="align-center" src="../_images/feynman_new_beta_decay.png" style="width: 250px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Diagrama de Feynman de la desintegración <span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>notar que los quarks (<span class="math notranslate nohighlight">\(ud\)</span>) son meros «espectadores».</p>
+<p>La relación exacta entre <span class="math notranslate nohighlight">\(G_F\)</span> y <span class="math notranslate nohighlight">\(g_W, m_W\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{G_F}{\sqrt{2}} = \frac{g^2_W}{8 m^2_W}
+\]</div>
+<p><em>Nota adicional</em>: En la relación anterior aparecen algunos factores <span class="math notranslate nohighlight">\(2\)</span> que tienen un origen histórico.</p>
+<p><em>Cuestión</em>: Calcula el valor de <span class="math notranslate nohighlight">\(g_W\)</span> a partir de los valores de <span class="math notranslate nohighlight">\(G_F\)</span> y <span class="math notranslate nohighlight">\(m_W\)</span>.</p>
+<p>El siguiente diagrama muestra la aniquilación <span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span> mediada por un fotón.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/feynman_eemumu_momenta.png"><img alt="../_images/feynman_eemumu_momenta.png" class="align-center" src="../_images/feynman_eemumu_momenta.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Diagrama de Feynman <span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span> mediado por <span class="math notranslate nohighlight">\(\gamma\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Notar que los partículas están etiquetadas para asignar los cuadrimomentos.</p>
+<div class="section" id="diagramas-de-arbol-y-de-lazo">
+<h4>Diagramas de árbol y de lazo<a class="headerlink" href="#diagramas-de-arbol-y-de-lazo" title="Permalink to this heading">#</a></h4>
+<p>Los diagramas de Feynman que hemos visto son de nivel árbol.</p>
+<p>Otros diagramas pueden contribuir al mismo proceso, por ejemplo, en la dispersión de dos electrones:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/feynman_tree_loop.png"><img alt="../_images/feynman_tree_loop.png" class="align-center" src="../_images/feynman_tree_loop.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Diagrama árbol (izda) y lazo (derecha)</p></td>
+</tr>
+</tbody>
+</table>
+<p>El elemento de matrix del primer diagrama es <span class="math notranslate nohighlight">\(\propto \alpha\)</span> mientras que el segundo <span class="math notranslate nohighlight">\(\propto \alpha^2\)</span></p>
+<p>Si la constante de acoplo <span class="math notranslate nohighlight">\(\alpha\)</span> es pequeña, como es el caso en electromagnetismo, podemos considerar que los diagramas de lazo son correciones y el diagrama árbol es de primer nivel  (<em>leading order</em>).</p>
+<p>A lo largo de los temas consideraremos solo diagramas árbol</p>
+</div>
+</div>
+</div>
+<div class="section" id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[AB] Alessandro Bettini, «Introduction to Elementary Particle Physcs», Cambridge U. press. Tema 1</p></li>
+<li><p>[MT] Mark Tomsom, «Modern Particle Physics», Cambridge U. press. Tema 1</p></li>
+<li><p><a class="reference external" href="https://pdg.lbl.gov/">PDG</a> Particle Data Group.</p></li>
+<li><p>[LHCb] «Observation of the rare <span class="math notranslate nohighlight">\(B_s \to \mu + \mu^+\)</span> decay from the combined analysis of CMS and LHCb data», LHCB, CMS collaborations, Nature522, pages 68–72 (2015)</p></li>
+<li><p>[Peskin] M. Peskin, «Lectures on the Theory of the Weak Interaction», 2016 CERN-JINR European School of Particle Physics, <a class="reference external" href="https://arxiv.org/abs/1708.09043">arXiv:1708.09043</a></p></li>
+<li><p>[OPAL] G. Abbiendi et al. OPAL Collaboration, «Precise Determination of the Z Resonance Parameters at LEP», Eur. Phys. J. C 19, 587 (2001) <a class="reference external" href="https://arxiv.org/abs/hep-ex/0012018">arXiv:hep-ex/0012018v1</a>.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="introduccion.html" title="anterior página">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title">Introducción a Física de Partículas</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="leptones.html" title="siguiente página">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Sobre los leptones</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
