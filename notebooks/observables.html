@@ -586,6 +586,18 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#sobre-la-ecuacion-de-dirac">
      Sobre la ecuación de Dirac
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#helicidad">
+       Helicidad
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#corriente-fermionica">
+       Corriente fermiónica
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#diagramas-de-feyman">
@@ -890,6 +902,18 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#sobre-la-ecuacion-de-dirac">
      Sobre la ecuación de Dirac
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#helicidad">
+       Helicidad
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#corriente-fermionica">
+       Corriente fermiónica
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#diagramas-de-feyman">
@@ -960,7 +984,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov 21 17:56:26 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Nov 22 12:00:21 2023
 </pre></div>
 </div>
 </div>
@@ -1820,7 +1844,7 @@ Un muón de 10 GeV en hierro pierde en promedio 13 MeV/cm y su rango es de vario
 <td><p><a class="reference internal" href="../_images/det_ALICE_ppevent.jpeg"><img alt="../_images/det_ALICE_ppevent.jpeg" class="align-center" src="../_images/det_ALICE_ppevent.jpeg" style="width: 400px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://alice-collaboration.web.cern.ch/menu_proj_items/tpc">ALICE TPC</a></p></td>
-<td><p>ALICE pp event [ALICE]</p></td>
+<td><p>ALICE evento reconstruido [ALICE]</p></td>
 </tr>
 </tbody>
 </table>
@@ -1878,8 +1902,8 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <tr class="row-even"><td><p><a class="reference internal" href="../_images/det_DELPHI_vertex.jpeg"><img alt="../_images/det_DELPHI_vertex.jpeg" class="align-center" src="../_images/det_DELPHI_vertex.jpeg" style="width: 350px;" /></a></p></td>
 <td><p><a class="reference internal" href="../_images/det_DELPHI_bdecay.gif"><img alt="../_images/det_DELPHI_bdecay.gif" class="align-center" src="../_images/det_DELPHI_bdecay.gif" style="width: 350px;" /></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>DELPHI micro-vertex detector</p></td>
-<td><p>DELPHI Event con b-tag [DELPHI]</p></td>
+<tr class="row-odd"><td><p>detector de vértices de DELPHI</p></td>
+<td><p>vista transversa de un evento [DELPHI]</p></td>
 </tr>
 </tbody>
 </table>
@@ -2000,7 +2024,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </div>
 <div class="section" id="pmt">
 <h3>PMT<a class="headerlink" href="#pmt" title="Permalink to this heading">#</a></h3>
-<p>Los photomultiplicadores son sensores que detectan fotones via el efecto foto-electrico, arrancan un electrón de la primera capa del sensor (dínodo) y esté genera un avalancha en las siguientes capas.</p>
+<p>Los photomultiplicadores, PMTs, son sensores que detectan fotones via el efecto foto-eléctrico, y generan un avalancha de electrones entre dínodos consecutivos, como en la figura:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -2013,16 +2037,12 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </tr>
 </tbody>
 </table>
-<p>Se utilizan como sensores que recogen la luz de cristales, plásticos centelleadores, etc. Se utilizan en calorímetros y en cámaras de muones, entre otros.</p>
+<p>Se utilizan para medir la luz en cristales, plásticos centelleadores, etc. Y forman parte de calorímetros y de cámaras de muones, entre otros.</p>
 </div>
 <div class="section" id="experimentos">
 <h3>Experimentos<a class="headerlink" href="#experimentos" title="Permalink to this heading">#</a></h3>
 <div class="section" id="experimentos-4-pi">
 <h4>Experimentos <span class="math notranslate nohighlight">\(4\pi\)</span><a class="headerlink" href="#experimentos-4-pi" title="Permalink to this heading">#</a></h4>
-<p>Los detectores tipo en colisionadores tienen una estructura en capas cilíndricas.</p>
-<p>En el interior están los detector de trazas más precisos (silicon detectors), submergidos en un campo magnético (selenoidal).</p>
-<p>Le siguen el calorímetro electromagnéticos y el hadrónico.</p>
-<p>Y finalmente los detectores de muones (que son las partículas más penetrantes)</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
@@ -2036,6 +2056,11 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </tbody>
 </table>
 <p>Imágenes de <a class="reference external" href="https://home.cern/resources/image/experiments/cms-images-gallery">CMS</a></p>
+<p>Los detectores en colisionador habitualmente se les conoce como <span class="math notranslate nohighlight">\(4\pi\)</span> porque detectan las partículas en «todo» el ángulo sólido.</p>
+<p>Los detectores tienen una estructura en capas cilíndricas, como en la figura donde se muestra una sección de CMS.</p>
+<p>En el interior están los detector de trazas más precisos (silicon detectors), submergidos en un campo magnético (selenoidal, donde <span class="math notranslate nohighlight">\({\bf B}\)</span> va en el eje del cilindro$), con los que se mide los momentos de las partículas cargadas.</p>
+<p>Le siguen el calorímetro electromagnéticos y el hadrónico, para medir las energías de fotones, electrones y el resto de partículas, neutras pero también las cargadas que los alcanzen.</p>
+<p>El último detector habitualmente es el detector de muones (que son las partículas más penetrantes -junto con los neutrinos, claro-)</p>
 </div>
 <div class="section" id="experimentos-de-blanco-fijo-o-hacia-delante">
 <h4>Experimentos de blanco fijo o hacia delante<a class="headerlink" href="#experimentos-de-blanco-fijo-o-hacia-delante" title="Permalink to this heading">#</a></h4>
@@ -2058,17 +2083,17 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </div>
 <div class="section" id="procesado-y-analisis-de-datos">
 <h4>Procesado y análisis de datos<a class="headerlink" href="#procesado-y-analisis-de-datos" title="Permalink to this heading">#</a></h4>
-<p>Sistema de disparo (<em>trigger</em>) y de adquisición de datos</p>
-<p>Es preciso reducir el rate de producción (i.e 40 MHz) y seleccionar los sucesos relevantes (<span class="math notranslate nohighlight">\(\mathcal{0}(10)\)</span> k)</p>
-<p>Puedes ver imágenes de la sala de control de <a class="reference external" href="https://cds.cern.ch/record/1299577">LHCb</a> durante la toma de datos (<em>online</em>).</p>
-<p>Procesado y reconstrucción</p>
-<p>Los eventos se procesan para a partir de las señales de los sensores, primero se reconstruyen trazas, vértices y depósitos de energía y luego partículas y cuadrimomentos (<em>offline</em>).</p>
-<p>Para ello se utilizan programas en C++ o Python.</p>
+<p>El sistema de disparo (<em>trigger</em>) reduce el rate de producción (40 MHz en el LHC) para seleccionar solo los sucesos relevantes (<span class="math notranslate nohighlight">\(\mathcal{0}(10)\)</span> k). Para ello se lee parcialmente el detector y diversos algoritmos seleccionan los eventos relevantes (que tenga un muón de alto momento por ejemplo)</p>
+<p>El sistema de adquisicón (DAQ) permite recoger y sincronizar los datos de un evento. Para ello se utilizan chips, y módulos de electrónica, en muchos casos diseñados específicamente para esta función.</p>
+<p>El trigger y el DAQ forman parte del <em>online</em> del experimento</p>
+<p>Posteriormente los eventos se procesan,  a partir de las señales de los sensores se reconstruyen posiciones, luego trazas, vértices, depósitos de energía y finalmente partículas y cuadrimomentos.</p>
+<p>Para ello se utilizan programas en C++ o Python donde participan decenas o centenares de físicos.</p>
+<p>Esta parte del procesado se conoce con el nombre de <em>offline</em>.</p>
 <p>También se producen millones de eventos simulados en centros de computación, mediante técnicas de Monte-Carlo.</p>
 </div>
 <div class="section" id="analisis">
 <h4>Análisis<a class="headerlink" href="#analisis" title="Permalink to this heading">#</a></h4>
-<p>Los eventos de una toma de datos se seleccionan primero, y luego se analizan con técnicas de análisis de datos (i.e <em>Neural Networks</em>) donde la estadística juega un papel esencial. En general  se utilizan como control datos de calibración y simulados (i.e con técnicas de Monte-Carlo).</p>
+<p>Los eventos de una toma de datos se seleccionan y luego se analizan con técnicas de análisis de datos (<em>Neural Networks</em> por ejemplo). La estadística juega en esta etapa un papel esencial. En general se utilizan como control datos de calibración y simulados (mediante técnicas de Monte-Carlo por ejemplo).</p>
 <p>Las medidades de los experimentos se presentan como:</p>
 <ul>
 <li><p>La <strong>estimación</strong> de un observable, por ejemplo: una sección eficaz, la vida media, la masa o una fracción de desintegración.</p>
@@ -2079,11 +2104,15 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </ul>
 <p>Por ejemplo <a class="reference external" href="https://arxiv.org/abs/1207.7214">la observación del Higgs en ATLAS</a>,</p>
 </li>
+</ul>
+<ul>
 <li><p>Un <strong>límite</strong> en el observable como la vida media, masa, sección eficaz, etc, de una <strong>búsqueda</strong>.</p>
 <p>La determinación de un límite se presenta con un nivel de confianza (i.e 90%).</p>
 <p>Por ejemplo, el límite en <a class="reference external" href="https://arxiv.org/abs/1909.06048">la masa del neutrino en KATRIN</a></p>
 </li>
 </ul>
+<p>Notar que al establecer un límite no se dan errores, éstos están ya incluidos en la estimación del límite.</p>
+<p>El significado de la covertura depende de los métodos estadísticos utilizados.</p>
 </div>
 </div>
 <div class="section" id="breve-introduccion-a-los-aceleradores">
@@ -2132,13 +2161,13 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </tr>
 </tbody>
 </table>
-<p>Las partículas relativistas al girar pierden energía por radiación (<strong>synchrotron radiation</strong>) proporcional a <span class="math notranslate nohighlight">\(1/m^4\)</span> ¡Este efecto es más dramático para <span class="math notranslate nohighlight">\(e\)</span> que para <span class="math notranslate nohighlight">\(p\)</span>!</p>
-<p>Para “girar” a las partículas se utiliza un campo magnético dipolar <span class="math notranslate nohighlight">\(B\)</span> perpendicular a su dirección.</p>
+<p>Las partículas relativistas al girar pierden energía por radiación (<strong>synchrotron radiation</strong>) proporcional a <span class="math notranslate nohighlight">\(1/m^4\)</span> por lo que este efecto es más dramático para <span class="math notranslate nohighlight">\(e\)</span> que para <span class="math notranslate nohighlight">\(p\)</span>. Esta es la razón por la cual con aceleradores de <span class="math notranslate nohighlight">\(p\)</span> alcanzan energía mayores que con <span class="math notranslate nohighlight">\(e\)</span></p>
+<p>Para “girar” a las partículas y mantenerlas en el anillo se utiliza un campo magnético dipolar <span class="math notranslate nohighlight">\(B\)</span> perpendicular a su dirección.</p>
 <p>Por el electromagnetismo sabemos que <span class="math notranslate nohighlight">\(p = 0.3 B \, \rho\)</span>, donde <span class="math notranslate nohighlight">\(p\)</span> es el momento, en TeV, <span class="math notranslate nohighlight">\(B\)</span> el campo magnético, en T, y <span class="math notranslate nohighlight">\(\rho\)</span> el radio, en km.</p>
 <p>Para el Tevatron, en Fermilab, Chicago, <span class="math notranslate nohighlight">\(\rho = 1\)</span> km. <span class="math notranslate nohighlight">\(B = 1.5\)</span> T, y permite acelerar protones hasta 1 TeV.</p>
 <p>Para obtener campos más intensos hay que recurrer a imanes superconductores.</p>
-<p>Por otro lado, las partículas oscilan dentro de los paquetes y para mantenerlas juntas se utilizan campos magnéticos de cuadropolos.</p>
-<p>En los <strong>anillos de almacenamiento</strong> se hacen girar dos haces de partículas en sentido opuestos en el mismo anillo.</p>
+<p>Por otro lado, las partículas oscilan dentro de los paquetes y tienden a dipsersarse y para mantenerlas juntas se utilizan campos magnéticos cuadripolares</p>
+<p>En los <strong>anillos de almacenamiento</strong> se hacen girar dos haces de partículas en sentido opuestos. En el LHC por ejemplo hay dos anillos paralelos.</p>
 <p>En determinados <strong>puntos de colisión</strong> mediante un conjunto de imanes se comprimen los paquetes y se cruzan para que tengan lugar las colisiones.</p>
 <p>Este es el caso de LEP, el colisionador <span class="math notranslate nohighlight">\(e^+e^-\)</span> del CERN, de 27 km de circunferencia, que funcionó a finales del siglo XX.</p>
 <p>También es el caso del LHC, que ocupa el tunel donde antes estuvo LEP. LHC es un colisionador <span class="math notranslate nohighlight">\(pp\)</span> con una energía <span class="math notranslate nohighlight">\(\sqrt{s} = 7-13\)</span> TeV.</p>
@@ -2150,30 +2179,31 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
-<th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/det_nubeam_schematic.jpg"><img alt="../_images/det_nubeam_schematic.jpg" class="align-center" src="../_images/det_nubeam_schematic.jpg" style="width: 340px;" /></a></p></td>
-<td class="text-align:center"><p><a class="reference internal" href="../_images/det_nubeam_DUNE.jpg"><img alt="../_images/det_nubeam_DUNE.jpg" class="align-center" src="../_images/det_nubeam_DUNE.jpg" style="width: 340px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/det_nubeam_schematic.jpg"><img alt="../_images/det_nubeam_schematic.jpg" class="align-center" src="../_images/det_nubeam_schematic.jpg" style="width: 480px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>Esquema del haz de neutrinos de FermiLab</p></td>
-<td class="text-align:center"><p>Haz de <span class="math notranslate nohighlight">\(\nu\)</span> de FermiLab a DUNE (en construcción)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/det_nubeam_DUNE.jpg"><img alt="../_images/det_nubeam_DUNE.jpg" class="align-center" src="../_images/det_nubeam_DUNE.jpg" style="width: 480px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Haz de <span class="math notranslate nohighlight">\(\nu\)</span> de FermiLab a DUNE (en construcción)</p></td>
 </tr>
 </tbody>
 </table>
 <p>Se obtienen de golpear un haz primario (principalmente <span class="math notranslate nohighlight">\(p\)</span>) contra un blanco.</p>
 <p>Se seleccionan los partículas de interés mediante un conjunto de imanes tuneados para permitir el paso de partículas con una carga y un momento determinados.</p>
-<p>Por ejemplo, los <span class="math notranslate nohighlight">\(\pi^\pm\)</span> se desintegraran a un haz e muones <span class="math notranslate nohighlight">\(\mu^\pm\)</span> y neutrinos <span class="math notranslate nohighlight">\(\bar{\nu}_\mu, \nu_\mu\)</span>.</p>
+<p>Por ejemplo, los <span class="math notranslate nohighlight">\(\pi^\pm\)</span> se desintegraran a un haz e muones <span class="math notranslate nohighlight">\(\mu^\pm\)</span> y neutrinos <span class="math notranslate nohighlight">\(\bar{\nu}_\mu, \nu_\mu\)</span>. Tras absorver por ejemplo en la roca los muones, solo sobreviven los neutrinos.</p>
 </div>
 </div>
 </div>
 <div class="section" id="una-perspectiva-teorica">
 <h2>Una perspectiva teórica<a class="headerlink" href="#una-perspectiva-teorica" title="Permalink to this heading">#</a></h2>
 <p>La teoría de Física de Partículas se basa en la <strong>Teoría Cuántica de Campos</strong>.</p>
-<p>que podemos caracterizar por varios elementos fundamentales:</p>
+<p>Que podemos caracterizar por varios elementos fundamentales que solo mencionamos:</p>
 <ol class="simple">
-<li><p>Toda tipo de partícula tiene asociada un <strong>campo</strong>.  Existen tres tipos de campos principales:</p></li>
+<li><p>Cada tipo de partícula tiene asociada un <strong>campo</strong>.  Existen tres tipos de campos principales:</p></li>
 </ol>
 <table class="colwidths-auto table">
 <thead>
@@ -2183,31 +2213,47 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p>Bosón Escalar (S = 0 ), Klein-Gordon</p></td>
-<td class="text-align:center"><p>Espinor (S = 1/2), Dirac</p></td>
-<td class="text-align:center"><p>Bosón vectorial (S = 1), Maxwell</p></td>
+<tr class="row-even"><td class="text-align:center"><p>Bosón Escalar (S = 0 )</p></td>
+<td class="text-align:center"><p>Espinor (S = 1/2)</p></td>
+<td class="text-align:center"><p>Bosón vectorial (S = 1)</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\((\partial^\mu\partial_\mu + m^2) \, \phi = 0\)</span></p></td>
 <td class="text-align:center"><p><span class="math notranslate nohighlight">\((i\gamma^\mu \partial_\mu - m) \, \Psi = 0\)</span></p></td>
-<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\partial_\mu (\partial^\mu A^\nu - \partial^\nu A^\mu) = j^\nu\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\partial_\mu (\partial^\mu A^\nu - \partial^\nu A^\mu) = 0 \; (j^\nu)\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Klein-Gordon</p></td>
+<td class="text-align:center"><p>Dirac</p></td>
+<td class="text-align:center"><p>Maxwell</p></td>
 </tr>
 </tbody>
 </table>
 <ol class="simple">
-<li><p><strong>Los campos están cuanficados</strong>, se construyen con operadores creacción y destrucción de partículas a partir del vacío. ¡Las partículas son «excitaciones» de los campos!</p></li>
+<li><p><strong>Los campos están cuantificados</strong>, se componen de operadores creacción y destrucción de partículas a partir del vacío. Podemos decir que las partículas son «excitaciones» de los campos.</p></li>
 </ol>
-<p>para el campo fermiónico:</p>
+<p>Para el campo fermiónico, por ejemplo, los operadores creacción anti-conmutan y no permiten crear dos estados con los mismos números cuánticos:</p>
 <div class="math notranslate nohighlight">
 \[
 a^{\dagger}_{p, s} \, |0 \rangle \equiv |p, s \rangle; \;\;\; a^\dagger_{p,s}a^\dagger_{p',s'}  \,  | 0 \rangle \equiv |p, s; p', s' \rangle = - | p', s'; p, s \rangle  \Rightarrow \{a^\dagger_{p,s}, a^{\dagger}_{p', s'} \} = 0, 
 \]</div>
 <ol class="simple">
-<li><p>La interacción entre fuerzas y materia (por ejemplo electrón y fotón) se establece a partir de la conservación de la simetría llamada <strong>simetría gauge local</strong> que consiste en que la física no cambia si cambiamos en cada punto (<span class="math notranslate nohighlight">\(x\)</span>, local) el campo fermiónico por una fase <span class="math notranslate nohighlight">\(\theta(x)\)</span>,  <span class="math notranslate nohighlight">\(\Psi'(x) = e^{ig\theta(x)} \Psi(x)\)</span>.</p></li>
+<li><p>La interacción entre fuerzas y materia (por ejemplo electrón y fotón) se establece a partir de la conservación de la simetría llamada <strong>simetría gauge local</strong> que consiste en que la física no cambia si cambiamos continuamente en cada punto (<span class="math notranslate nohighlight">\(x\)</span>, local) el campo fermiónico por una fase <span class="math notranslate nohighlight">\(\theta(x)\)</span>,  <span class="math notranslate nohighlight">\(\Psi'(x) = e^{ig\theta(x)} \Psi(x)\)</span>, donde <span class="math notranslate nohighlight">\(g\)</span> es una constante que llamamos de acoplo.</p></li>
 </ol>
-<p>Veremos más adelante que el <em>Modelo Estándar</em> necesita de dos elementos más:</p>
+<p>Esto obliga a que se den simultáneamente:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi'(x) = e^{ig \theta(x)} \Psi(x), \;\;\; A'_\mu(x) = A_\mu(x) - \partial_\mu \theta(x)
+\]</div>
+<p>Para preservar la simetría, aparece en el lagrangiano un término:</p>
+<div class="math notranslate nohighlight">
+\[
+-g \bar{\Psi} \gamma^\mu \Psi \, A_\mu 
+\]</div>
+<p>que nos cuantifica la interacción del fermión con el bosón.</p>
+<p>Verenos más adelante que podemos interpretarlo como una corriente, <span class="math notranslate nohighlight">\(j^\mu = \bar{\Psi} \gamma^\mu \Psi\)</span>, (electrónica en caso del electrón) acoplada a un campo vectorial <span class="math notranslate nohighlight">\(A_\mu\)</span>, (fotón), con una intensidad o acoplo <span class="math notranslate nohighlight">\(g\)</span> (la carga eléctrica).</p>
+<p>El <em>Modelo Estándar</em> necesita de dos elementos más que nombramos brevemente:</p>
 <ol class="simple">
-<li><p><strong>La teoría de grupos</strong>. El electromagnetismo está asociado al grupo que se llama <span class="math notranslate nohighlight">\(U(1)\)</span> o singletes, la interacción débil al <span class="math notranslate nohighlight">\(SU(2)\)</span> o dupletes, y la fuerte al SU(3) o tripletes.</p></li>
-<li><p><em>Un campo escalar</em>, esto es de spín nulo, el campo del <strong>bosón de Higgs</strong>, que interacciona con el resto de partículas como si fuera un campo de inercia, y que además tiene un potencial singular, con la forma de un sombrero mexicano, y que el valor del campo en el vacío toma de forma espontánea un valor de entre todos los posibles equivalentes, podríamos decir que al azar un punto dentro del ala del sombrero, lo que se conoce como <strong>rotura espontánea de simetría</strong>.</p></li>
+<li><p><strong>La teoría de grupos</strong>. El electromagnetismo está asociado al grupo que se llama U(1) o singletes, la interacción débil al SU(2) o dupletes, y la fuerte al SU(3) o tripletes.</p></li>
+<li><p><em>Un campo escalar</em>, esto es de spín nulo, el campo del <strong>bosón de Higgs</strong>, que interacciona con el resto de partículas como si fuera un campo de inercia, y que además tiene un potencial singular, con la forma de un sombrero mexicano, y que el valor del campo en el vacío, el mínimo, <span class="math notranslate nohighlight">\(v\)</span>, toma de forma espontánea un valor de entre todos los posibles equivalentes, podríamos decir que al azar un punto dentro del ala del sombrero, lo que se conoce como <strong>rotura espontánea de simetría</strong>.</p></li>
 </ol>
 <div class="section" id="sobre-la-ecuacion-de-dirac">
 <h3>Sobre la ecuación de Dirac<a class="headerlink" href="#sobre-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
@@ -2224,7 +2270,7 @@ a^{\dagger}_{p, s} \, |0 \rangle \equiv |p, s \rangle; \;\;\; a^\dagger_{p,s}a^\
 <p>La contracción de índices significa un sumatorio, esto es <span class="math notranslate nohighlight">\(\gamma^\mu\partial_\mu \equiv \sum_{\mu = 0}^4 \gamma^\mu \partial_\mu\)</span> (en gereral a partir de ahora será así).</p>
 <p>Dirac usó dos directrices para escribir su ecuación:</p>
 <ol class="simple">
-<li><p>La coordenada espacial y temporal,  <span class="math notranslate nohighlight">\(\partial_0, \partial_i, \;\; i = 1, 2, 3\)</span>, aparecen linealmente y en igualdad de condiciones.</p></li>
+<li><p>La coordenada temporal y las espaciales,  <span class="math notranslate nohighlight">\(\partial_0, \partial_i, \;\; i = 1, 2, 3\)</span>, aparecen linealmente y en igualdad de condiciones.</p></li>
 <li><p>Considerando la asociación con los operadores energía y momento, <span class="math notranslate nohighlight">\(i\partial_0 \to E, \;\;\; -i\partial_i = p_i\)</span>, al elevar al cuadrado la ecuación obtenemos la ecuación de Einstein, <span class="math notranslate nohighlight">\(E^2-{\bf p}^2 = m^2\)</span></p></li>
 </ol>
 <p>Pero para ello, los factores <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> no pueden conmutar, no pueden por lo tanto ser escalares, deben ser matrices complejas <span class="math notranslate nohighlight">\(4\times4\)</span> que cumplan el álgebra siguiente:</p>
@@ -2248,32 +2294,38 @@ a^{\dagger}_{p, s} \, |0 \rangle \equiv |p, s \rangle; \;\;\; a^\dagger_{p,s}a^\
 \gamma^5 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix},
 \end{split}\]</div>
 <p>donde <span class="math notranslate nohighlight">\(I\)</span> es la matriz identidad <span class="math notranslate nohighlight">\(2\times2\)</span> y <span class="math notranslate nohighlight">\(\sigma_k\)</span> la matrices de Pauli <span class="math notranslate nohighlight">\(2\times2\)</span>.</p>
-<p>La quinta matrix se define <span class="math notranslate nohighlight">\(\gamma^5 \equiv i \gamma^0\gamma^1\gamma^2\gamma^3\)</span> y como veremos juega un papel fundamental en la interacción débil.</p>
-<p>La solución de la ec. de Dirac es una función de ondas con cuatro componentes complejas, el espinor de Dirac:</p>
+<p>La quinta matriz se define como <span class="math notranslate nohighlight">\(\gamma^5 \equiv i \gamma^0\gamma^1\gamma^2\gamma^3\)</span> y como veremos más adelante juega un papel fundamental en la interacción débil.</p>
+<p>La solución de la ec. de Dirac es una función de ondas con cuatro componentes complejas:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \Psi = \begin{pmatrix} \psi_1 \\ \psi_2 \\ \psi_3 \\ \psi_4\end{pmatrix}.
 \end{split}\]</div>
-<p>Las soluciones generales son cuatro ondas planas, que asociamos a los fermiones, <span class="math notranslate nohighlight">\(\Psi_i(x)\)</span> y anti-fermiones <span class="math notranslate nohighlight">\(\Phi_i(x)\)</span>:</p>
+<p>Las soluciones generales son cuatro ondas planas, que asociamos a los <strong>fermiones</strong>, <span class="math notranslate nohighlight">\(\Psi_i(x)\)</span> y <strong>anti-fermiones</strong> <span class="math notranslate nohighlight">\(\Phi_i(x)\)</span> con sus dos componentes de espín (<span class="math notranslate nohighlight">\(s=1/2\)</span>):</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi_i(x) = u_i(E, {\bf p}) \, e^{+i({\bf p x} - Et)}, \;\;\;\; \Phi_i(x) = v_i(E, {\bf p}) \, e^{-i({\bf p x} - Et)}
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(u_i(E, {\bf p}), v_i(E, {\bf p})\)</span> corresponden a los <strong>espinores</strong> (cuatro componentes en columna) de los fermiones y antifermiones respectivamente y el índice <span class="math notranslate nohighlight">\(i=1, 2\)</span> está asociado con las dos posibles componentes de espín de <span class="math notranslate nohighlight">\(s=1/2\)</span>.</p>
+<p>Notar que la dependencia de las soluciones en <span class="math notranslate nohighlight">\(t, {\bf x}\)</span>  está contenida en la fase y que los espinores dependen sólo de <span class="math notranslate nohighlight">\(E, {\bf p}\)</span>.</p>
+<p>Los anti-fermiones tienen la misma masa que el fermión pero sus cargas opuestas, (esto es el positrón tiene carga <span class="math notranslate nohighlight">\(+e\)</span>)</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/obs_pos_discovery.png"><img alt="../_images/obs_pos_discovery.png" class="align-center" src="../_images/obs_pos_discovery.png" style="width: 350px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/obs_pos_discovery.png"><img alt="../_images/obs_pos_discovery.png" class="align-center" src="../_images/obs_pos_discovery.png" style="width: 300px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>Descubrimiento de positrón (Anderson 1932) [WP]</p></td>
 </tr>
 </tbody>
 </table>
-<p>Anderson «descubrió» el positrón en 1932 observando las trazas dejadas en una cámara de niebla por las partículas de los rayos cósmicos. La cámara estaba inmersa en un campo magnéticp. En la traza de la figura, la curvatura y la pérdida de energía corresponde a la de un «electrón positivo».</p>
-<p>A falta de un eje definido o un campo magnético, podemos tomar de forma natural el eje <span class="math notranslate nohighlight">\(z\)</span> aquel en el que se mueve la partícula con momento <span class="math notranslate nohighlight">\(p\)</span>. En ese caso los espinores son:</p>
+<p>Anderson «descubrió» el positrón en 1932 observando las trazas dejadas en una cámara de niebla por las partículas de los rayos cósmicos. La cámara estaba inmersa en un campo magnético. En la traza de la figura, la curvatura y la pérdida de energía corresponden a la de un «electrón positivo».</p>
+<div class="section" id="helicidad">
+<h4>Helicidad<a class="headerlink" href="#helicidad" title="Permalink to this heading">#</a></h4>
+<p>A falta de un eje definido o un campo magnético, podemos tomar de forma natural el eje <span class="math notranslate nohighlight">\(z\)</span> aquel en el que se mueve la partícula con momento <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<p>Podamos dar la proyección del espín respecto al eje de movimiento, lo que se conoce como <strong>helicidad</strong></p>
+<p>En ese caso los espinores de Dirac son:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 u_{-} = N \begin{pmatrix} 0     \\ 1       \\ 0       \\ -\kappa \end{pmatrix}, \;
@@ -2281,8 +2333,28 @@ u_{+} = N \begin{pmatrix} 1    \\  0      \\ \kappa  \\  0      \end{pmatrix}, \
 v_{-} = N \begin{pmatrix} \kappa \\ 0       \\ 1      \\ 0        \end{pmatrix} \;,
 v_{+} = N \begin{pmatrix} 0     \\ -\kappa \\ 0       \\ 1       \end{pmatrix},
 \end{split}\]</div>
-<p>donde <span class="math notranslate nohighlight">\(\kappa = \frac{p}{E+m}\)</span> y <span class="math notranslate nohighlight">\(N = \sqrt{E+m}\)</span>, un factor de normalización.</p>
-<p>Son los espinores del fermión, <span class="math notranslate nohighlight">\(u_{\pm}\)</span>, con su espín alineado (o opuesto  a su momento, esto es tiene helicidad positiva <span class="math notranslate nohighlight">\(+\)</span> o negativa <span class="math notranslate nohighlight">\(-\)</span>, y los del antifermión, <span class="math notranslate nohighlight">\(v_{\pm}\)</span>, con sus dos helicidades.</p>
+<p>donde:</p>
+<div class="math notranslate nohighlight">
+\[
+\kappa = \frac{p}{E+m}, \;\;\; N = \sqrt{E+m},
+\]</div>
+<p><span class="math notranslate nohighlight">\(N\)</span> es un factor de normalización.</p>
+<p>que corresponden a:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>fermión con helicidad <span class="math notranslate nohighlight">\((\pm)\)</span></p></td>
+<td class="text-align:center"><p>anti-fermión con helicidad <span class="math notranslate nohighlight">\((\pm)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(u_\pm\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(v_\pm \)</span></p></td>
+</tr>
+</tbody>
+</table>
 <p>Gráficamente:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -2296,8 +2368,15 @@ v_{+} = N \begin{pmatrix} 0     \\ -\kappa \\ 0       \\ 1       \end{pmatrix},
 </tr>
 </tbody>
 </table>
-<p>Notar que <span class="math notranslate nohighlight">\(\kappa\)</span> es un factor que cuantifica cuán <em>relativista</em> es la partícula. Si la partícula está en reposo <span class="math notranslate nohighlight">\(p = 0 \to \kappa = 0\)</span>, y si es ultra-relativista <span class="math notranslate nohighlight">\(E \simeq p \to \kappa = 1\)</span>.</p>
-<p>Recordemos que la <strong>helicidad</strong> es la proyección del espín en la dirección del momento, <span class="math notranslate nohighlight">\({\bf p}\)</span>.</p>
+<p>Notar que <span class="math notranslate nohighlight">\(\kappa\)</span> es un factor que cuantifica cuán <em>relativista</em> es la partícula.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+p = 0 \; \to \; \kappa = 0 \, \\ m = 0, \, E \gg m, \, p \simeq E \; \to \; \kappa = 1
+\end{split}\]</div>
+<p>para la partículas ultrarelativistas <span class="math notranslate nohighlight">\(\kappa \to 1\)</span>.</p>
+</div>
+<div class="section" id="corriente-fermionica">
+<h4>Corriente fermiónica<a class="headerlink" href="#corriente-fermionica" title="Permalink to this heading">#</a></h4>
 <p>Definimos el espinor <strong>adjunto</strong> como:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2309,14 +2388,15 @@ v_{+} = N \begin{pmatrix} 0     \\ -\kappa \\ 0       \\ 1       \end{pmatrix},
 \[
 j^\mu =  \bar{\Psi} \gamma^\mu \Psi,\;\;\;  j^\mu = (j^0, {\bf j})
 \]</div>
-<p>Que se comporta como un <strong>vector</strong> bajo transformaciones de Lorentz, esto es, es un <strong>cuadri-vector</strong>.</p>
+<p>Que se comporta como un <strong>vector</strong> bajo transformaciones de Lorentz, esto es, es un <strong>cuadri-vector</strong> (ver [MT ap. B]).</p>
 <p>Esta corriente se conserva, cumple la <strong>ecuación de conservación</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\partial \rho}{\partial t} + \nabla \cdot {\bf j} = 0,
+\frac{\partial \rho}{\partial t} + \nabla \cdot {\bf j} = 0, \;\;\; \partial_\mu j^\mu = 0
 \]</div>
 <p>esto es, la cantidad de <span class="math notranslate nohighlight">\(\rho\)</span> que entra en un volumen diferencial en una unidad de tiempo corresponde al flujo de la corriente <span class="math notranslate nohighlight">\({\bf j}\)</span> que atraviesa las paredes del volumen en ese tiempo.</p>
 <p>Es este caso es la <strong>corriente de probabilidad</strong> del fermión.</p>
+</div>
 </div>
 <div class="section" id="diagramas-de-feyman">
 <h3>Diagramas de Feyman<a class="headerlink" href="#diagramas-de-feyman" title="Permalink to this heading">#</a></h3>
@@ -2332,7 +2412,7 @@ j^\mu =  \bar{\Psi} \gamma^\mu \Psi,\;\;\;  j^\mu = (j^0, {\bf j})
 R = (2\pi) |M_{fi}|^2 \rho(E)
 \]</div>
 <p>Recordemos que <span class="math notranslate nohighlight">\(M_{fi} = \langle f | H_{int}| i \rangle\)</span> es el elemento de la matriz de transición entre los estados iniciales, <span class="math notranslate nohighlight">\(| i \rangle\)</span> y finales, <span class="math notranslate nohighlight">\(\langle f|\)</span>, mediante un hamiltoniano de interacción <span class="math notranslate nohighlight">\(H_{int}\)</span>.</p>
-<p>La parte cinématica puede resolverse «facilmente».</p>
+<p>La parte cinématica puede resolverse «fácilmente».</p>
 <p>Los dos casos comunes (ver [Apéndice-fundamentos]) en el CM se muestran en el tabla:</p>
 <ul class="simple">
 <li><p>anchura de desintegración de la partícula <span class="math notranslate nohighlight">\(a \to b + c\)</span></p></li>
@@ -2358,12 +2438,12 @@ R = (2\pi) |M_{fi}|^2 \rho(E)
 \[
 \Gamma = \frac{p^*}{32 \pi^2 m^2_a} \int_{\Omega} |M_{fi}|^2 \mathrm{d}\Omega^*
 \]</div>
-<p>Y en el cánculo de la sección eficaz <span class="math notranslate nohighlight">\(\sigma(a + b \to c + d)\)</span>:</p>
+<p>Y en el cálculo de la sección eficaz <span class="math notranslate nohighlight">\(\sigma(a + b \to c + d)\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 \sigma = \frac{1}{64 \pi^2 (E_a+E_b)^2} \frac{p^*_f}{p^*_i} \int_\Omega |M_{fi}|^2 \, \mathrm{d}\Omega^*
 \]</div>
-<p>donde el índice «*» corresponde a las cantidades en el <strong>centro de masas</strong>.</p>
+<p>donde el índice (*) corresponde a las cantidades en el <strong>centro de masas</strong>.</p>
 <p>La física de la interacción se encuentra en el término <span class="math notranslate nohighlight">\(M_{fi}\)</span></p>
 <p>Feynman propuso una serie de diagramas que tienen asociados unas reglas que permiten calcular <span class="math notranslate nohighlight">\(M_{fi}\)</span>.</p>
 <p>Los <strong>diagramas de Feynman</strong> nos permiten además representar <strong>gráficamente</strong> una interacción.</p>
@@ -2444,6 +2524,7 @@ M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_
 </tr>
 </tbody>
 </table>
+<p>Notar que solo la interación débil cargada cambia un fermión, <span class="math notranslate nohighlight">\(f\)</span>, en otro, <span class="math notranslate nohighlight">\(f'\)</span></p>
 <p>Para cada fuerza tenemos asociada una <strong>constante de acoplo</strong>:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -2473,7 +2554,7 @@ M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_
 $<span class="math notranslate nohighlight">\(
 \alpha = \frac{e^2}{4 \pi \epsilon_0}
 \)</span>$</p>
-<p>Como en cada diagrama hay dos vértices, <span class="math notranslate nohighlight">\(M_{fi}\)</span> es proporcional a <span class="math notranslate nohighlight">\(g^2 \propto \alpha\)</span>, y la propabilidad <span class="math notranslate nohighlight">\(|M_{fi}|^2 \propto g^4 \propto \alpha^2 \)</span></p>
+<p>Como en cada diagrama hay dos vértices, <span class="math notranslate nohighlight">\(M_{fi}\)</span> es proporcional a <span class="math notranslate nohighlight">\(g^2 \propto \alpha\)</span>, y la propabilidad es proporcional a <span class="math notranslate nohighlight">\(|M_{fi}|^2 \propto g^4 \propto \alpha^2 \)</span>.</p>
 <p>Las constantes adimensionales de las fuerzas serían aproximadamente:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -2494,7 +2575,7 @@ $<span class="math notranslate nohighlight">\(
 <li><p>la <strong>carga eléctrica</strong>. En el caso de <span class="math notranslate nohighlight">\(W^\pm\)</span> el portador transfiere la carga.</p></li>
 <li><p>el <strong>sabor</strong>, la identidad de las partículas, a excepción de <span class="math notranslate nohighlight">\(W^\pm\)</span> donde cambia <span class="math notranslate nohighlight">\(f \to f'\)</span></p></li>
 <li><p>el <strong>cuadrimomento</strong>. Sea la partícula <span class="math notranslate nohighlight">\(a\)</span> entrante y <span class="math notranslate nohighlight">\(c\)</span> saliente de la corriente, el cuadrimomento transferido es <span class="math notranslate nohighlight">\(q = p_c-p_a\)</span>.</p></li>
-<li><p>el número leptónico y leptónico de sabor, el número de quarks/antiquarks.</p></li>
+<li><p>el número leptónico, leptónico de sabor, y el número de quarks menos antiquarks.</p></li>
 <li><p>el número total de fermiones menos antifermiones.</p></li>
 </ul>
 </div>
@@ -2525,12 +2606,19 @@ $<span class="math notranslate nohighlight">\(
 </table>
 <p>donde <span class="math notranslate nohighlight">\(q^2\)</span> es el cuadrimomento transferido, en el caso del diagrama anterior, <span class="math notranslate nohighlight">\(q = p_c - p_a = p_d - p_c\)</span>, y <span class="math notranslate nohighlight">\(m_W = 80.4, m_z = 91.2\)</span> GeV son las masas del <span class="math notranslate nohighlight">\(W\)</span> y del <span class="math notranslate nohighlight">\(Z\)</span> respectivamente. Notar que el tensor de la métrica <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> une las dos corrientes.</p>
 <p>Podemos interpretar <span class="math notranslate nohighlight">\(q^2\)</span> como la «masa efectiva» al cuadrado del mediador y éste actua con un factor <span class="math notranslate nohighlight">\(1/q^2\)</span> en <span class="math notranslate nohighlight">\(M_{fi}\)</span>.</p>
-<p>En la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> en un núcleo, <span class="math notranslate nohighlight">\(q^2 (\, \sim \mathcal{0}(MeV^2)) \ll \,  M^2_W \, (80 GeV)^2\)</span>, por lo tanto</p>
+<p>En la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> en un núcleo, <span class="math notranslate nohighlight">\(q^2 (\, \sim \mathcal{0}(\mathrm{MeV}^2)) \ll \,  m^2_W \, (80 \mathrm{GeV})^2\)</span>, por lo tanto</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{g_{\mu\nu}}{q^2 - M^2_W} \to -\frac{g_{\mu\nu}}{M^2_W}.
+\frac{g_{\mu\nu}}{q^2 - m^2_W} \to -\frac{g_{\mu\nu}}{m^2_W}.
 \]</div>
 <p>¡De ahí que Fermi asociara al vértice una constante!</p>
+<p>La relación exacta entre <span class="math notranslate nohighlight">\(G_F\)</span> y <span class="math notranslate nohighlight">\(g_W, m_W\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{G_F}{\sqrt{2}} = \frac{g^2_W}{8 m^2_W}
+\]</div>
+<p><em>Nota adicional</em>: En la relación anterior aparecen algunos factores <span class="math notranslate nohighlight">\(2\)</span> que tienen un origen histórico.</p>
+<p><em>Cuestión</em>: Calcula el valor de <span class="math notranslate nohighlight">\(g_W\)</span> a partir de los valores de <span class="math notranslate nohighlight">\(G_F\)</span> y <span class="math notranslate nohighlight">\(m_W\)</span>.</p>
 </div>
 </div>
 <div class="section" id="tipos-de-interacciones">
@@ -2581,13 +2669,6 @@ $<span class="math notranslate nohighlight">\(
 </tbody>
 </table>
 <p>notar que los quarks (<span class="math notranslate nohighlight">\(ud\)</span>) son meros «espectadores».</p>
-<p>La relación exacta entre <span class="math notranslate nohighlight">\(G_F\)</span> y <span class="math notranslate nohighlight">\(g_W, m_W\)</span> es:</p>
-<div class="math notranslate nohighlight">
-\[
-\frac{G_F}{\sqrt{2}} = \frac{g^2_W}{8 m^2_W}
-\]</div>
-<p><em>Nota adicional</em>: En la relación anterior aparecen algunos factores <span class="math notranslate nohighlight">\(2\)</span> que tienen un origen histórico.</p>
-<p><em>Cuestión</em>: Calcula el valor de <span class="math notranslate nohighlight">\(g_W\)</span> a partir de los valores de <span class="math notranslate nohighlight">\(G_F\)</span> y <span class="math notranslate nohighlight">\(m_W\)</span>.</p>
 <p>El siguiente diagrama muestra la aniquilación <span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span> mediada por un fotón.</p>
 <table class="colwidths-auto table">
 <thead>
