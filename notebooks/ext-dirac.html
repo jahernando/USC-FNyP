@@ -1,0 +1,822 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apéndice B : Ecuación de Dirac &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="prev" title="Apéndice A : Cinemática" href="ext-cinematica.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduccion.html">
+   Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observables.html">
+   Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="leptones.html">
+   Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quarks_hadrons.html">
+   Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sm.html">
+   Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-cinematica.html">
+   Apéndice A : Cinemática
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Apéndice B : Ecuación de Dirac
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/ext-dirac.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/ext-dirac.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/ext-dirac.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sobre-la-ecuacion-de-dirac">
+   Sobre la ecuación de Dirac
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-condicion-de-las-matrices-gamma">
+     La condición de las matrices
+     <span class="math notranslate nohighlight">
+      \(\gamma\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invariance-gauge-local-y-la-interaccion-con-un-campo-vectorial">
+     Invariance gauge local y la interacción con un campo vectorial
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sobre-la-helicidad">
+     Sobre la Helicidad
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#espinores-de-helicidad">
+       Espinores de helicidad
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#autovalores-de-helicidad">
+         Autovalores de helicidad
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#autoestados-de-helicidad">
+         Autoestados de helicidad
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-espinor-adjunto-y-la-corriente-fermionica">
+     El espinor adjunto y la corriente fermiónica
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#el-espinor-de-dirac-adjunto">
+       El espinor de Dirac adjunto
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#densidad-y-corriente-de-probabilidad">
+       Densidad y corriente de probabilidad
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Apéndice B : Ecuación de Dirac</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sobre-la-ecuacion-de-dirac">
+   Sobre la ecuación de Dirac
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-condicion-de-las-matrices-gamma">
+     La condición de las matrices
+     <span class="math notranslate nohighlight">
+      \(\gamma\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invariance-gauge-local-y-la-interaccion-con-un-campo-vectorial">
+     Invariance gauge local y la interacción con un campo vectorial
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sobre-la-helicidad">
+     Sobre la Helicidad
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#espinores-de-helicidad">
+       Espinores de helicidad
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#autovalores-de-helicidad">
+         Autovalores de helicidad
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#autoestados-de-helicidad">
+         Autoestados de helicidad
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-espinor-adjunto-y-la-corriente-fermionica">
+     El espinor adjunto y la corriente fermiónica
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#el-espinor-de-dirac-adjunto">
+       El espinor de Dirac adjunto
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#densidad-y-corriente-de-probabilidad">
+       Densidad y corriente de probabilidad
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="apendice-b-ecuacion-de-dirac">
+<h1>Apéndice B : Ecuación de Dirac<a class="headerlink" href="#apendice-b-ecuacion-de-dirac" title="Permalink to this heading">#</a></h1>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Noviembre 2023</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 27 16:59:49 2023
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sobre-la-ecuacion-de-dirac">
+<h2>Sobre la ecuación de Dirac<a class="headerlink" href="#sobre-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
+<div class="section" id="la-condicion-de-las-matrices-gamma">
+<h3>La condición de las matrices <span class="math notranslate nohighlight">\(\gamma\)</span><a class="headerlink" href="#la-condicion-de-las-matrices-gamma" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="invariance-gauge-local-y-la-interaccion-con-un-campo-vectorial">
+<h3>Invariance gauge local y la interacción con un campo vectorial<a class="headerlink" href="#invariance-gauge-local-y-la-interaccion-con-un-campo-vectorial" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="sobre-la-helicidad">
+<h3>Sobre la Helicidad<a class="headerlink" href="#sobre-la-helicidad" title="Permalink to this heading">#</a></h3>
+<p>Definimos la helicidad, <span class="math notranslate nohighlight">\(h\)</span>, como la proyección normalizada del spin sobre el momento:</p>
+<div class="math notranslate nohighlight">
+\[
+h \equiv \frac{{\bf S} \cdot {\bf p}}{p}.
+\]</div>
+<p>Para un espinor de Dirac el operador de helicidad, <span class="math notranslate nohighlight">\(\hat{h}\)</span>, en la representación Pauli-Dirac es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+{\hat h} = \frac{{\bf \Sigma} \cdot {\hat {\bf p}}}{ 2 p} = \frac{1}{2p} 
+\begin{pmatrix} {\bf \sigma} \cdot {\bf {\hat p}} &amp; 0 \\ 0 &amp; {\bf \sigma} \cdot {\bf {\hat p}} \end{pmatrix}
+\end{split}\]</div>
+<p>El operador helicidad conmuta con el hamiltoniano: <span class="math notranslate nohighlight">\([{\hat H}, {\hat h}] = 0 \)</span> y por lo tanto la helicidad se conserva.</p>
+<p>Pero no es un invariante Lorentz, para una partícula siempre podemos encontrar un sistema de referencia (con una velocidad mayor) que revierta el momento y por lo tanto la helicidad.</p>
+<p>Vamos a calcular la representación de los espinores, <span class="math notranslate nohighlight">\(u, v\)</span> que sean autoestados de helicidad.</p>
+<p>Estos espinores son de gran utilidad cuando se calculan los elementos de matriz de las desintegraciones o interacciones de partículas.</p>
+<div class="section" id="espinores-de-helicidad">
+<h4>Espinores de helicidad<a class="headerlink" href="#espinores-de-helicidad" title="Permalink to this heading">#</a></h4>
+<p>Recordemos que la parde de arriba y abajo, <span class="math notranslate nohighlight">\(u_A, u_B\)</span>, del espinor <span class="math notranslate nohighlight">\(u = \begin{pmatrix} u_A \\ u_B \end{pmatrix}\)</span> están relacionadas por:</p>
+<div class="math notranslate nohighlight">
+\[
+u_B = \frac{{\bf \sigma \cdot p}}{E+m} \, u_A
+\]</div>
+<p>Solo necesitamos calcular las componentes, <span class="math notranslate nohighlight">\(a, b\)</span>, de <span class="math notranslate nohighlight">\(u_A = \begin{pmatrix} a \\ b \end{pmatrix}\)</span></p>
+<p>Siendo <span class="math notranslate nohighlight">\(u\)</span> autoestado de helicidad</p>
+<div class="section" id="autovalores-de-helicidad">
+<h5>Autovalores de helicidad<a class="headerlink" href="#autovalores-de-helicidad" title="Permalink to this heading">#</a></h5>
+<p>la condición de autoestado de helicidad, <span class="math notranslate nohighlight">\(\hat{h}\, u = \lambda \, u\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{1}{2p} \begin{pmatrix} \sigma \cdot {\bf p} &amp; 0 \\ 0  &amp; \sigma \cdot {\bf p}\end{pmatrix} \, 
+\begin{pmatrix} u_A \\ u_B \end{pmatrix} = \lambda \, \begin{pmatrix} u_A \\ u_B \end{pmatrix},
+\end{split}\]</div>
+<p>se traduce en dos condiciones:
+$<span class="math notranslate nohighlight">\(
+(\sigma \cdot {\bf p}) \, u_A = (2p) \lambda u_A, \\ (\sigma \cdot {\bf p}) \, u_B = (2p) \lambda u_B
+\)</span>$</p>
+<p>si multiplicamos la primera ecuación a ambos lados por <span class="math notranslate nohighlight">\((\sigma \cdot {\bf p})\)</span> y teniendo en cuenta que <span class="math notranslate nohighlight">\((\sigma \cdot {\bf p})^2 = p^2\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+p^2 u_A = (2p) \lambda (\sigma \cdot {\bf p}) u_A = 4p^2 \lambda^2 u_A 
+\]</div>
+<p>de donde obtenemos los autovalores de helicidad:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \pm \frac{1}{2}
+\]</div>
+</div>
+<div class="section" id="autoestados-de-helicidad">
+<h5>Autoestados de helicidad<a class="headerlink" href="#autoestados-de-helicidad" title="Permalink to this heading">#</a></h5>
+<p>Si expresamos el momento en coordenadas esféricas <span class="math notranslate nohighlight">\({\bf p} = p \, (\sin \theta \cos \phi, \sin \theta, \cos \theta)\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{{\bf \sigma} \cdot {\bf p}}{p} = \frac{1}{p}\begin{pmatrix} p_z &amp; p_x - ip_y \\ p_x+ip_y &amp; -p_z \end{pmatrix} = 
+\begin{pmatrix} \cos\theta &amp; \sin\theta e^{-i\phi} \\ \sin\theta e^{i\phi} &amp; -\cos\theta \end{pmatrix}
+\end{split}\]</div>
+<p>La condición de autoestado de <span class="math notranslate nohighlight">\(u_A\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \cos\theta &amp; \sin\theta e^{-i\phi} \\ \sin\theta e^{i\phi} &amp; -\cos\theta \end{pmatrix}
+\begin{pmatrix} a \\ b \end{pmatrix} = 
+2 \lambda \begin{pmatrix} a \\ b \end{pmatrix}
+\end{split}\]</div>
+<p>Esto es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+a \cos \theta + \sin \theta e^{-i\phi} b = 2 \lambda a, \\
+\sin \theta e^{-i\phi} b = (2\lambda -  \cos\theta) a \\
+\end{split}\]</div>
+<p>Por lo tanto, las componentes <span class="math notranslate nohighlight">\(a, b\)</span> cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{b}{a} = \frac{2\lambda -\cos \theta}{\sin\theta} e^{i\phi}
+\]</div>
+<p>Para el caso de helicidad positiva <span class="math notranslate nohighlight">\(\lambda = 1/2\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{b}{a} = \frac{1 -\cos \theta}{\sin\theta} e^{i\phi} = e^{i\phi} \tan \frac{\theta}{2}
+\]</div>
+<p>De tal forma:
+$<span class="math notranslate nohighlight">\(
+u_A = \begin{pmatrix} \cos \frac{\theta}{2} \\ e^{i\phi}\sin \frac{\theta}{2}\end{pmatrix} = \begin{pmatrix} c \\ e^{i\phi}c \end{pmatrix}
+\)</span>$</p>
+<p>donde <span class="math notranslate nohighlight">\(c = \cos \theta/2, \; s = \sin \theta/2\)</span>.</p>
+<p>La ecuación de Dirac liga <span class="math notranslate nohighlight">\(u_B\)</span> con <span class="math notranslate nohighlight">\(u_A\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+u_B = \frac{{\bf \sigma \cdot p}}{E+m} \, u_A
+\]</div>
+<p>como <span class="math notranslate nohighlight">\(u_A\)</span> es autoestado de helicidad, también cumple:</p>
+<div class="math notranslate nohighlight">
+\[
+({\bf \sigma \cdot p}) \, u_A = (2p) \lambda \, u_A
+\]</div>
+<p>Para  <span class="math notranslate nohighlight">\(\lambda = 1/2\)</span> obtenemos el espinor <span class="math notranslate nohighlight">\(u_+\)</span>, de helicidad positiva:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{+} = N \begin{pmatrix} c \\ s e^{i\phi} \\ \frac{p}{E+m} c \\ \frac{p}{E+m} s e^{i\phi} \end{pmatrix},
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(c = \cos \theta/2, s = \sin \theta/2\)</span>, y <span class="math notranslate nohighlight">\(N\)</span> el factor de normalización.</p>
+<p>que es autovector del operador helicidad, <span class="math notranslate nohighlight">\(\hat{h}\)</span> con autovalor <span class="math notranslate nohighlight">\(1/2\)</span>, helicidad positiva:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{h} \, u_+ = \frac{1}{2} \, u_+
+\]</div>
+<p>Procediendo de forma similar para el espinor <span class="math notranslate nohighlight">\(u\)</span> con <span class="math notranslate nohighlight">\(\lambda = -1/2\)</span> y para los espinores <span class="math notranslate nohighlight">\(v\)</span> con <span class="math notranslate nohighlight">\(\lambda = \pm 1/2\)</span> obtenemos los <strong>espinores de helicidad</strong>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{+} = N \begin{pmatrix} c \\ s e^{i\theta} \\ \kappa c \\ \kappa s e^{i\theta} \end{pmatrix}, \;
+u_{-} = N \begin{pmatrix} -s \\ c e^{i\theta} \\ \kappa s \\ -\kappa c e^{i\theta}\end{pmatrix}, \;
+v_{+} = N \begin{pmatrix} \kappa s \\ -\kappa c e^{i\theta}\\ -s \\ ce^{i\theta} \end{pmatrix}, \;
+v_{-} = N \begin{pmatrix} \kappa c \\ \kappa s e^{i\theta}\\ c \\ s e^{i\theta} \end{pmatrix}. 
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\kappa = \frac{p}{E+m}, c = \cos \theta/2, s = \sin \theta/2\)</span> y <span class="math notranslate nohighlight">\(N\)</span> el factor normalización.</p>
+<p>que cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{h} \, u_\pm = \pm \frac{1}{2} \, u_\pm, \;\;\; \hat{h}^v \, v_\pm = \pm \frac{1}{2} \, v_\pm
+\]</div>
+<p>[  ] TODO: hacer los calculos y verificar que h cambia de signo para los v-espinores</p>
+<p>Los espinores de quiralidad se suelen representar de forma gráfica con la siguientes figuras:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_spinors_helicities.png"><img alt="../_images/dirac_spinors_helicities.png" class="align-center" src="../_images/dirac_spinors_helicities.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>spín (flecha azul) y momento (negra) de los spinores de helicidad</p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math notranslate nohighlight">\(u_\pm, v_\pm\)</span> son los espinores de las partículas y antipartículas respectivamente.</p>
+<p><span class="math notranslate nohighlight">\(u_{+}, v_{+}\)</span> son espinores de <strong>helicidad positiva</strong> (el espín tiene el mismo sentido que el momento).</p>
+<p><span class="math notranslate nohighlight">\(u_{-}, v_{-}\)</span> tienen <strong>helicidad negativa</strong> (el spín y momento tienen sentido opuesto).</p>
+<p>En el caso en que tomemos como la dirección <span class="math notranslate nohighlight">\(\hat{h}\)</span> la del movimiento de la partícula <span class="math notranslate nohighlight">\({\bf p}\)</span>, tenemos que <span class="math notranslate nohighlight">\(\theta = 0, \phi = 0\)</span> (por convención), tenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{+} = N \begin{pmatrix} 1 \\ 0 \\ \kappa  \\ 0 \end{pmatrix}, \;
+u_{-} = N \begin{pmatrix} 0 \\ 1 \\ 0 \\ -\kappa \end{pmatrix}, \;
+v_{+} = N \begin{pmatrix} 0  \\ -\kappa \\ 0 \\ 1 \end{pmatrix}, \;
+v_{-} = N \begin{pmatrix} \kappa  \\ 0 \\ 1 \\ 0 \end{pmatrix}. 
+\end{split}\]</div>
+<p>Si consideramos ahora el caso de partículas ultrarelativistas, <span class="math notranslate nohighlight">\(E \gg m\)</span>, o sin masa <span class="math notranslate nohighlight">\(m=0\)</span>, por ejemplo el neutrino, tenemos <span class="math notranslate nohighlight">\(E = p\)</span> y por lo tanto <span class="math notranslate nohighlight">\(\kappa = 1\)</span>.</p>
+<p>Los espinores de helicidad para el caso ultrarelativista son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{+} = N \begin{pmatrix} c \\ s e^{i\theta} \\ c \\  s e^{i\theta} \end{pmatrix}, \;
+u_{-} = N \begin{pmatrix} -s \\ c e^{i\theta} \\ s \\ - c e^{i\theta}\end{pmatrix}, \;
+v_{+} = N \begin{pmatrix}  s \\ -c e^{i\theta}\\ -s \\ ce^{i\theta} \end{pmatrix}, \;
+v_{-} = N \begin{pmatrix} c \\ s e^{i\theta}\\ c \\ s e^{i\theta} \end{pmatrix}. 
+\end{split}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="el-espinor-adjunto-y-la-corriente-fermionica">
+<h3>El espinor adjunto y la corriente fermiónica<a class="headerlink" href="#el-espinor-adjunto-y-la-corriente-fermionica" title="Permalink to this heading">#</a></h3>
+<div class="section" id="el-espinor-de-dirac-adjunto">
+<h4>El espinor de Dirac adjunto<a class="headerlink" href="#el-espinor-de-dirac-adjunto" title="Permalink to this heading">#</a></h4>
+<p>Es conveniente también definir el <strong>spinor adjunto</strong> como:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi} = \Psi^\dagger \gamma^0
+\]</div>
+<p>En la representación de Pauli-Dirac:
+$<span class="math notranslate nohighlight">\(\bar{\Psi} = (\psi^*_1, \psi^*_2, -\psi^*_3, -\psi^*_4),\)</span>$
+que tiene forma de vector fila.</p>
+</div>
+<div class="section" id="densidad-y-corriente-de-probabilidad">
+<h4>Densidad y corriente de probabilidad<a class="headerlink" href="#densidad-y-corriente-de-probabilidad" title="Permalink to this heading">#</a></h4>
+<p>La densidad, <span class="math notranslate nohighlight">\(\rho\)</span>, y la corriente, <span class="math notranslate nohighlight">\(j^k\)</span>  con <span class="math notranslate nohighlight">\(k=1, 2, 3\)</span>, de probabilidad del spinor de Dirac son:</p>
+<div class="math notranslate nohighlight">
+\[
+\rho = \Psi^\dagger \Psi = |\psi_1|^2 + |\psi_2|^2 + |\psi_3|^2 + |\psi_4|^2, \;\; j^k  = \Psi^\dagger \alpha_k \Psi
+\]</div>
+<p>que cumplen:
+$<span class="math notranslate nohighlight">\(
+\frac{\partial \rho}{\partial t} + \nabla \cdot {\bf j} = 0.
+\)</span>$</p>
+<p>Podemos introducir el cuadrivector corriente de probabilidad:</p>
+<div class="math notranslate nohighlight">
+\[
+j^\mu = \Psi^\dagger \gamma^0 \gamma^\mu \Psi = \bar{\Psi} \gamma^\mu \Psi,
+\]</div>
+<p>Y la conservación de probabilidad puede expresarse:</p>
+<div class="math notranslate nohighlight">
+\[
+\partial_\mu j^\mu = 0
+\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[MT] Mark Tomson, «Modern Particle Physics», Cambridge U. press. Tema 4 y 6.4</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="ext-cinematica.html" title="anterior página">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title">Apéndice A : Cinemática</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
