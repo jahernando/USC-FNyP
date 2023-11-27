@@ -142,6 +142,11 @@ const thebe_selector_output = ".output, .cell_output"
    Sobre el Modelo Estándar
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-observables.html">
+   Apéndice A : Sobre la cinemática y ecuación de Dirac
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -994,7 +999,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 27 13:23:11 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 27 16:32:44 2023
 </pre></div>
 </div>
 </div>
@@ -2539,17 +2544,17 @@ M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_
 <h4>Corrientes<a class="headerlink" href="#corrientes" title="Permalink to this heading">#</a></h4>
 <p>Vimos que la forma <span class="math notranslate nohighlight">\(\bar{\Psi} \gamma^\mu \Psi\)</span> es una corriente fermiónica.</p>
 <p>En los diagramas de Feynman las corrientes corresponden a los fermiones y aparecen dibujadas como conexión de lineas fermiónicas con una dirección «temporal» definida.</p>
-<p>Esto es las fechas de los dibujos de las lineas entran y salen, no forman sumideros ni fuentes de fermiones.</p>
-<p>Observa en la diagrama genérico anterior las corrientes de los fermiones.</p>
+<p>Esto es las flechas sobre los fermiones indican un sentido, entran y salen, del diagrama, no forman sumideros ni fuentes de fermiones.</p>
+<p><em>Observa</em> en la diagrama genérico anterior las corrientes de los fermiones.</p>
 </div>
 <div class="section" id="vertices">
 <h4>Vértices<a class="headerlink" href="#vertices" title="Permalink to this heading">#</a></h4>
-<p>Matemáticamente, la interacción de un campo vectorial <span class="math notranslate nohighlight">\(A_\mu\)</span>, con una fermiónico <span class="math notranslate nohighlight">\(\Psi\)</span>, introduce un térmido en el lagrangiano (llamado de interacción):</p>
+<p>Matemáticamente, la interacción de un campo vectorial <span class="math notranslate nohighlight">\(A_\mu\)</span>, con una fermiónico <span class="math notranslate nohighlight">\(\Psi\)</span>, introduce en el lagrangiano un término llamado de interacción:</p>
 <div class="math notranslate nohighlight">
 \[
 -g \; \bar{\Psi} \gamma^\mu \Psi \; A_\mu
 \]</div>
-<p>Este término lo asociaremos con un vértice donde se acopla una corriente fermionica, <span class="math notranslate nohighlight">\(f^\mu_f = \bar{\Psi} \gamma^\mu \Psi\)</span>, con un bosón, <span class="math notranslate nohighlight">\(A_\mu\)</span>, con una intesidad <span class="math notranslate nohighlight">\(g\)</span>.</p>
+<p>Este término lo asociaremos con un vértice donde se acopla con una intensidad <span class="math notranslate nohighlight">\(g\)</span> una corriente fermionica, <span class="math notranslate nohighlight">\(f^\mu_f = \bar{\Psi} \gamma^\mu \Psi\)</span>, con un bosón, <span class="math notranslate nohighlight">\(A_\mu\)</span>.</p>
 <p>Si la constante de acoplo es <span class="math notranslate nohighlight">\(g = -e\)</span> se trata de la interacción entre la corriente fermiónica de un electrón y el fotón. Lo que da lugar a la electrodinámica cuántica (QED).</p>
 <p>Los vértices de los diagramas de Feynman para las distintas fuerzas son:</p>
 <table class="colwidths-auto table">
@@ -2638,8 +2643,8 @@ $<span class="math notranslate nohighlight">\(
 </tbody>
 </table>
 <p>Notar que no observamos los mediadores, en ese sentido son «virtuales».</p>
-<p>Matemáticamente, las reglas de Feynman les asocianda un <strong>propagador</strong> que actua como un factor que acopla las corrientes.</p>
-<p>En la tabla se muestra la expresión matemática aproximada asociada a los propagadores:</p>
+<p>Matemáticamente, las reglas de Feynman introducen un <strong>propagador</strong> que actua como un factor que acopla las corrientes.</p>
+<p>En la tabla se muestra la expresión matemática aproximada de los propagadores:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -2661,7 +2666,7 @@ $<span class="math notranslate nohighlight">\(
 </tr>
 </tbody>
 </table>
-<p>donde <span class="math notranslate nohighlight">\(q^2\)</span> es el cuadrimomento transferido, el cuadrimomento que lleva el portador; <span class="math notranslate nohighlight">\(m_W = 80.4, m_z = 91.2\)</span> GeV son las masas del <span class="math notranslate nohighlight">\(W\)</span> y del <span class="math notranslate nohighlight">\(Z\)</span> respectivamente.</p>
+<p>donde <span class="math notranslate nohighlight">\(q^2\)</span> es el cuadrimomento transferido, el cuadrimomento que lleva el portador, <span class="math notranslate nohighlight">\(m_W = 80.4, m_z = 91.2\)</span> GeV son las masas del <span class="math notranslate nohighlight">\(W\)</span> y del <span class="math notranslate nohighlight">\(Z\)</span> respectivamente.</p>
 <p>Notar que el tensor de la métrica <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> une las dos corrientes.</p>
 <p>Podemos interpretar <span class="math notranslate nohighlight">\(q^2\)</span> como la «masa efectiva» al cuadrado del mediador y éste actua con un factor <span class="math notranslate nohighlight">\(1/q^2\)</span> en <span class="math notranslate nohighlight">\(M_{fi}\)</span>.</p>
 <p>En la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> en un núcleo, <span class="math notranslate nohighlight">\(q^2 (\, \sim \mathcal{0}(\mathrm{MeV}^2)) \ll \,  m^2_W \, (80 \mathrm{GeV})^2\)</span>, por lo tanto</p>
