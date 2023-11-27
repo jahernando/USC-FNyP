@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre el Modelo Estándar &#8212; Introducción a la Física de Partículas - USC</title>
+    <title>Dirac solutions a &#8212; Introducción a la Física de Partículas - USC</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,7 +55,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="prev" title="Sobre los quarks y los hadrones" href="quarks_hadrons.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="es">
     
@@ -115,7 +114,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="introduccion.html">
    Introducción a Física de Partículas
@@ -136,8 +135,8 @@ const thebe_selector_output = ".output, .cell_output"
    Sobre los quarks y los hadrones
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="sm.html">
    Sobre el Modelo Estándar
   </a>
  </li>
@@ -200,7 +199,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/sm.ipynb"
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/dirac.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -260,7 +259,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/sm.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/dirac.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -288,7 +287,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notebooks/sm.ipynb"
+        <a href="../_sources/notebooks/dirac.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -347,11 +346,6 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#objetivos">
-   Objetivos
-  </a>
- </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#los-elementos-del-sm">
    Los elementos del SM
@@ -525,7 +519,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Sobre el Modelo Estándar</h1>
+                <h1>Dirac solutions a</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -535,11 +529,6 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#objetivos">
-   Objetivos
-  </a>
- </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#los-elementos-del-sm">
    Los elementos del SM
@@ -714,8 +703,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="sobre-el-modelo-estandar">
-<h1>Sobre el Modelo Estándar<a class="headerlink" href="#sobre-el-modelo-estandar" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="dirac-solutions-a">
+<h1>Dirac solutions a<a class="headerlink" href="#dirac-solutions-a" title="Permalink to this heading">#</a></h1>
 <p>Jose A. Hernando</p>
 <p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
 <p>Noviembre 2023</p>
@@ -727,7 +716,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 27 13:23:14 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 27 13:22:59 2023
 </pre></div>
 </div>
 </div>
@@ -749,14 +738,46 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<div class="section" id="objetivos">
-<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this heading">#</a></h2>
-<p>Conocer:</p>
-<ul class="simple">
-<li><p>La unificación electrodébil.</p></li>
-<li><p>El bosón <span class="math notranslate nohighlight">\(Z\)</span>. La anchura del <span class="math notranslate nohighlight">\(Z\)</span> y la existencia de tres neutrinos.</p></li>
-<li><p>El bosón de Higgs y la masa de los bosones <span class="math notranslate nohighlight">\(W, Z\)</span> y de los fermiones. Descubrimiento del Higgs.</p></li>
-</ul>
+<p>[] return gamma matrices
+[] return Dirac solutions
+[] specific operations: parity, conjungation, chirality, helicity</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gammas</span><span class="p">():</span>
+    <span class="n">gammas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">complex</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">matrices_pauli</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; Return the Pauli matrices</span>
+<span class="sd">    &quot;&quot;&quot;</span> 
+    <span class="n">s1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">s2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="n">j</span><span class="p">],[</span><span class="mi">1</span><span class="n">j</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">s3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+    <span class="n">sigma</span> <span class="o">=</span> <span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">s3</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">sigma</span>
+
+<span class="k">def</span> <span class="nf">identity</span><span class="p">(</span><span class="n">ndim</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">iden</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">ndim</span><span class="p">,</span> <span class="n">ndim</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ndim</span><span class="p">):</span> <span class="n">iden</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.</span>
+    <span class="k">return</span> <span class="n">iden</span>
+
+<span class="k">def</span> <span class="nf">gammas_pauli_dirac</span><span class="p">():</span>
+    <span class="n">sigma</span>  <span class="o">=</span> <span class="n">matrices_pauli</span><span class="p">()</span>
+    <span class="n">iden2</span>  <span class="o">=</span> <span class="n">identity</span><span class="p">()</span>   
+    <span class="n">gamma0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">)</span>
+    <span class="n">gamma0</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">iden2</span><span class="p">;</span> <span class="n">gamma0</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.</span><span class="o">*</span><span class="n">iden2</span> 
+    <span class="n">gammas</span> <span class="o">=</span> <span class="p">[</span><span class="n">gamma0</span><span class="p">,</span> <span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="n">gammai</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">)</span>
+        <span class="n">gammai</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.</span><span class="o">*</span><span class="n">sigma</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">gammai</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">gammas</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="los-elementos-del-sm">
 <h2>Los elementos del SM<a class="headerlink" href="#los-elementos-del-sm" title="Permalink to this heading">#</a></h2>
@@ -818,7 +839,7 @@ title="Print to PDF"
 <p>Recordemos que en las corrientes cargadas solo intervienen espinores a izquierdas de los fermiones (y de derechas de los antifermiones).</p>
 <p>Y que las corrientes cargadas tiene lugar en parejas (i.e <span class="math notranslate nohighlight">\(\nu_e\)</span>, e)</p>
 <p>Para representar esta realidad, el SM introduce el grupo de simetría SU(2)<span class="math notranslate nohighlight">\(_L\)</span>, donde <span class="math notranslate nohighlight">\(L\)</span> es por quiralidad a izquierdas, asociado al isoespín debil.</p>
-<p>Cada pareja de fermiones a izquierdas, Por ejemplo el <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(e\)</span> formarán un dublete de isopín débil, con tercera componente <span class="math notranslate nohighlight">\(\pm 1/2\)</span> respectivamente, mientras que el electrón un singlete a derechas. Sea <span class="math notranslate nohighlight">\(u^{(q)_L}(p)\)</span> es espinor de Dirac a izquierdas del fermión <span class="math notranslate nohighlight">\(q = \nu_e, e\)</span> con cuadrimomento <span class="math notranslate nohighlight">\(p\)</span> se denota habitualmente de forma «compacta»:</p>
+<p>Cada pareja de fermiones a izquierdas, Por ejemplo el <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(s\)</span> formarán un dublete de isopín débil, con tercera componente <span class="math notranslate nohighlight">\(\pm 1/2\)</span> respectivamente, mientras que el electrón un singlete a derechas. Sea <span class="math notranslate nohighlight">\(u^{(q)_L}(p)\)</span> es espinor de Dirac a izquierdas del fermión <span class="math notranslate nohighlight">\(q = \nu_e, e\)</span> con cuadrimomento <span class="math notranslate nohighlight">\(p\)</span> se denota habitualmente de forma «compacta»:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{pmatrix} \nu_{eL} \\ 0 \end{pmatrix} \equiv \chi^\uparrow_W u^{(\nu_e)}_L(p) = \begin{pmatrix} 1 \\ 0 \end{pmatrix}_W u^{(\nu_e)}_L(p)
@@ -868,7 +889,7 @@ e_R \equiv u^{(e)}_R(p)
 <p>En el vértice con un fotón, introducimos (en la reglas de Feynman) la constante de acoplo <span class="math notranslate nohighlight">\(e\)</span> y la carga, <span class="math notranslate nohighlight">\(Q\)</span> del fermión:</p>
 <div class="math notranslate nohighlight">
 \[
-Q e \, \bar{u} \gamma^\mu u = Q e \, \left( \bar{u}_L \gamma^\mu u_L + \bar{u}_R \gamma^\mu u_R \right)
+A: \;\;\; Q e \, \bar{u} \gamma^\mu u = Q e \, \left( \bar{u}_L \gamma^\mu u_L + \bar{u}_R \gamma^\mu u_R \right)
 \]</div>
 </div>
 <div class="section" id="las-corrientes-cargadas">
@@ -898,7 +919,7 @@ Y en el vértice introducimos las matrices de subida o bajada de isospín débil
 <p>De otra forma podemos decir del vértice de las corrientes cargadas tiene tres factores:</p>
 <ul class="simple">
 <li><p>la constante de acoplo <span class="math notranslate nohighlight">\(g_W/\sqrt{2}\)</span></p></li>
-<li><p>la proyección de quiralidad a izquierdas  <span class="math notranslate nohighlight">\(\frac{1}{2} (I-\gamma^5)\)</span>.</p></li>
+<li><p>la proyeciuón de quiralidad a izquierdas  <span class="math notranslate nohighlight">\(\frac{1}{2} (I-\gamma^5)\)</span>.</p></li>
 <li><p>la matriz de subida o bajada de tercera componente de isospín, <span class="math notranslate nohighlight">\(\sigma^\pm_W\)</span>, que medialos estados de los dupletes de isospín débil.</p></li>
 </ul>
 <p>Habitualmente se ignora la matriz <span class="math notranslate nohighlight">\(\sigma^+_W\)</span> en el vértice y simplemente se crean las corrientes con los espinoresde arriba y abajo del duplete.</p>
@@ -1273,7 +1294,7 @@ sigma max (ee-&gt;Z)    60.2 nbarns
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sm_38_0.png" src="../_images/sm_38_0.png" />
+<img alt="../_images/dirac_40_0.png" src="../_images/dirac_40_0.png" />
 </div>
 </div>
 </div>
@@ -1394,7 +1415,7 @@ i \bar{\Psi} \gamma^\mu D_\mu \Psi - m \bar{\Psi} \Psi - \frac{1}{4} F^{\mu\nu}F
 <p>Notar que nos en lagrangiano aparece el término:</p>
 <div class="math notranslate nohighlight">
 \[
-i \bar{\Psi} \gamma^\mu D_\mu \Psi = i \bar{\Psi} \gamma^\mu  (\partial_\mu + i g A_\mu) \Psi = \dots - g \bar{\Psi} \gamma^\mu \Psi \, A_\mu  
+i \bar{\Psi} \gamma^\mu D_\mu \Psi = i \bar{\Psi} \gamma^\mu  (\partial_\mu + i q A_\mu) \Psi = \dots - g \bar{\Psi} \gamma^\mu \Psi \, A_\mu  
 \]</div>
 <p>que es el acoplo de una corriente fermiónica, si <span class="math notranslate nohighlight">\(g = -e\)</span> es el interacción de la corriente electromagnética del electrón con el fotón. E interpretamos el término como un vértice de tres cuerpos con acoplo <span class="math notranslate nohighlight">\(e\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -1523,7 +1544,7 @@ V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sm_55_0.png" src="../_images/sm_55_0.png" />
+<img alt="../_images/dirac_57_0.png" src="../_images/dirac_57_0.png" />
 </div>
 </div>
 <p>El estado del vacío es el estado de mínima energía:</p>
@@ -1835,13 +1856,6 @@ m_W = \frac{1}{2} g_W v \Rightarrow v = \frac{2m_W}{g_W} = \sqrt{\frac{1}{\sqrt{
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="quarks_hadrons.html" title="anterior página">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">anterior</p>
-            <p class="prev-next-title">Sobre los quarks y los hadrones</p>
-        </div>
-    </a>
 </div>
             </footer>
         </div>
