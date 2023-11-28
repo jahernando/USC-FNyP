@@ -550,7 +550,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov 28 11:52:14 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov 28 13:06:57 2023
 </pre></div>
 </div>
 </div>
@@ -582,19 +582,19 @@ title="Print to PDF"
 \int_V \psi^* \psi \, \mathrm{d}^3x = 1 
 \]</div>
 <p>Esto es, la partícula está contenida en <span class="math notranslate nohighlight">\(V\)</span>.</p>
-<p>La densidad densidad de estados disponibles en ese volumen es:</p>
+<p>La densidad de estados disponibles en ese volumen es:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{\mathrm{d}^3{\bf p}}{(2\pi)},
 \]</div>
 <p>que viene de expresar <span class="math notranslate nohighlight">\(\frac{\mathrm{d}^3 {\bf p}}{h}\)</span> en NU, recordando que en NU: <span class="math notranslate nohighlight">\(h = 2\pi\)</span>.</p>
 <p>El volumen sin embargo no es un invariante Lorentz.</p>
-<p>Un cubo de lado <span class="math notranslate nohighlight">\(L\)</span> en un sistema con un factor de Lorentz, <span class="math notranslate nohighlight">\(\gamma\)</span> es:</p>
+<p>Un cubo de lado <span class="math notranslate nohighlight">\(L\)</span> en un sistema con un factor de Lorentz <span class="math notranslate nohighlight">\(\gamma\)</span> es:</p>
 <div class="math notranslate nohighlight">
 \[
 V ' = \gamma L^3 = \gamma V
 \]</div>
-<p>Si en ese cubo estaba contenida la partícula  <span class="math notranslate nohighlight">\(E_0 \)</span>, en el sistema con factor <span class="math notranslate nohighlight">\(\gamma\)</span>, su energía es:</p>
+<p>Si en ese cubo estaba contenida la partícula con energía <span class="math notranslate nohighlight">\(E_0 \)</span>, en el sistema de referencia con factor <span class="math notranslate nohighlight">\(\gamma\)</span>, su energía es:</p>
 <div class="math notranslate nohighlight">
 \[
 E' = \gamma E_0
@@ -606,7 +606,7 @@ E' = \gamma E_0
 \int_V \Psi^* \Psi \, \mathrm{d}^3 x = 2E,
 \]</div>
 <p>El factor <span class="math notranslate nohighlight">\(2\)</span> es por conveniencia.</p>
-<p>Esta normalización si es relativista porque el volumen, <span class="math notranslate nohighlight">\(V\)</span>, y la energía, <span class="math notranslate nohighlight">\(E\)</span>, cambian con el mismo factor al cambiar el sistema de referencia.</p>
+<p>Esta normalización sí es relativista porque el volumen, <span class="math notranslate nohighlight">\(V\)</span>, y la energía, <span class="math notranslate nohighlight">\(E\)</span>, cambian con el mismo factor al cambiar el sistema de referencia.</p>
 </div>
 <div class="section" id="elemento-de-matriz-relativista">
 <h4>Elemento de matriz relativista<a class="headerlink" href="#elemento-de-matriz-relativista" title="Permalink to this heading">#</a></h4>
@@ -615,7 +615,7 @@ E' = \gamma E_0
 \[
 M_{fi} = \langle \Psi_f | H_{int}| \Psi_i \rangle = \left(\prod_i \sqrt{2E_i} \right) \langle  \psi_f | H_{int}| \psi_i \rangle =  \left(\prod_i \sqrt{2E_i} \right)  T_{fi}
 \]</div>
-<p>donde índice <span class="math notranslate nohighlight">\(i\)</span> corre en las <span class="math notranslate nohighlight">\(n\)</span> partículas iniciales y finales.</p>
+<p>donde el índice <span class="math notranslate nohighlight">\(i\)</span> corre en las <span class="math notranslate nohighlight">\(n\)</span> partículas iniciales y finales.</p>
 <p>Las expresiones de la amplitud de transición o de la sección eficaz en el tratamiento relativista incorporan por lo tanto el siguiente factor:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -645,10 +645,11 @@ M_{fi} = \langle \Psi_f | H_{int}| \Psi_i \rangle = \left(\prod_i \sqrt{2E_i} \r
 \sigma = \frac{(2\pi)^4}{|v_a + v_b|} \int |T_{fi}|^2 \delta^4 \left(\sum_k p_k - p_a - p_b \right) \, \prod_i \frac{\mathrm{d}^3{\bf p}_i}{(2\pi)^3},
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(v_a, v_b\)</span> son el módulo de las velocidades, considerando que las partículas colisionan en una misma dirección y tienen sentidos opuestos. Las deltas de Dirac imponen la condición de conservación de la energía y momento entre los estados inicial y final.</p>
-<p>La expresión relativista es:
-$<span class="math notranslate nohighlight">\(
+<p>La expresión relativista es:</p>
+<div class="math notranslate nohighlight">
+\[
 \sigma = \frac{(2\pi)^4}{(2 E_a) (2 E_b) (\beta_a + \beta_b)} \int |M_{fi}|^2 \delta^4 \left(\sum_k p_k - p_a -p_b\right) \, \prod_i \frac{\mathrm{d}^3{\bf p}_i}{(2\pi)^3 (2E_i)}
-\)</span>$</p>
+\]</div>
 <p>En la versión relativista, cada uno de los factores de la sección eficaz es invariante Lorentz:</p>
 <ul class="simple">
 <li><p>el elemento de matriz al cuadrado: <span class="math notranslate nohighlight">\(|M_{fi}|^2 = | \langle \Psi_f| H_{int} | \Psi i\rangle |^2\)</span></p></li>
@@ -785,7 +786,7 @@ R = (v_a + v_b) \, \sigma, \;\;\; \sigma = \frac{R}{(v_a+v_b)}
 \[
 \sigma = \frac{1}{64 \pi^2 E^2} \frac{p^*_f}{p^*_i} \int_\Omega |M_{fi}|^2 \, \mathrm{d}\Omega^*
 \]</div>
-<p>si sustituimos <span class="math notranslate nohighlight">\(E^2 =  s\)</span> donde <span class="math notranslate nohighlight">\(s = \left[(E_a, {\bf p}_a) + (E_b, {\bf p}_b)\right]^2 = [(E_a + E_b, {\bf 0})]^2\)</span>, es el cuadrimomento transferido al cuadrado.</p>
+<p>Si sustituimos <span class="math notranslate nohighlight">\(E^2 =  s\)</span> donde <span class="math notranslate nohighlight">\(s = \left[(E_a, {\bf p}_a) + (E_b, {\bf p}_b)\right]^2 = [(E_a + E_b, {\bf 0})]^2\)</span>, es el cuadrimomento transferido al cuadrado.</p>
 <div class="math notranslate nohighlight">
 \[
 \sigma = \frac{1}{64 \pi^2 s} \frac{p^*_f}{p^*_i} \int_\Omega |M_{fi}|^2 \, \mathrm{d}\Omega
@@ -815,10 +816,11 @@ t = (p_c - p_a)^2 = (p_d - p_b)^2, \;\;\; s = (p_a +p_b)^2 = (p_c + p_d)^2,
 <p>y se denominan <strong>invariantes de Mandelstam</strong> y que corresponden a los <strong>canales</strong> <span class="math notranslate nohighlight">\(t\)</span> de dispersión y <span class="math notranslate nohighlight">\(s\)</span> de aniquilación respectivamente.</p>
 <div class="section" id="cinematica-con-el-invariante-s">
 <h3>Cinemática con el invariante <span class="math notranslate nohighlight">\(s\)</span><a class="headerlink" href="#cinematica-con-el-invariante-s" title="Permalink to this heading">#</a></h3>
-<p>La cantidad <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> es la energía en el centro de masas, (CM), de una aniquilación
-$<span class="math notranslate nohighlight">\(
+<p>La cantidad <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> es la energía en el centro de masas, (CM), de una aniquilación</p>
+<div class="math notranslate nohighlight">
+\[
 s = (p_a + p_b) = (E^*_a + E^*_b) - ({\bf p}^*_a +{\bf p}^*_b) = (E^*_a + E^*_b)^2,
-\)</span>$</p>
+\]</div>
 <p>dado que <span class="math notranslate nohighlight">\({\bf p}^*_i = {\bf p}^*_a = -{\bf p}^*_b\)</span> (ver figura de la dispersión de dos cuerpos arriba).</p>
 <p>En la literatura se denota <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> para indicar la <strong>energía en el centro de masas</strong>.</p>
 <p>Podemos calcular <span class="math notranslate nohighlight">\(E^*_a, E^*_b\)</span> a partir de <span class="math notranslate nohighlight">\(s\)</span> y las masas <span class="math notranslate nohighlight">\(m_a, m_b\)</span>.</p>
