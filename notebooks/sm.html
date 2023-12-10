@@ -55,6 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Apéndice A : Cinemática" href="ext-cinematica.html" />
     <link rel="prev" title="Sobre los quarks y los hadrones" href="quarks_hadrons.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="es">
@@ -139,6 +140,16 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-cinematica.html">
+   Apéndice A : Cinemática
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-dirac.html">
+   Apéndice B : Ecuación de Dirac
   </a>
  </li>
 </ul>
@@ -727,7 +738,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 27 13:23:14 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Sun Dec 10 16:20:47 2023
 </pre></div>
 </div>
 </div>
@@ -944,13 +955,13 @@ g_Z \left( c_L \, \bar{u}_L \gamma^\mu \bar{u}_L + c_R \, \bar{u}_R \gamma^\mu \
 <p>El modelo estándard establece los coeficientes de acoplo del vértice con el <span class="math notranslate nohighlight">\(Z\)</span>:</p>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(c_L\)</span> —</p></th>
-<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(c_R\)</span>  —</p></th>
+<tr class="row-odd"><th class="text-align:left head"><p>———- cL ———-</p></th>
+<th class="text-align:left head"><p>———- cR  ———-</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(I^3_W - Q \sin^2 \theta_W\)</span></p></td>
-<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-Q \sin^2 \theta_W\)</span></p></td>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(I^3_W - Q \sin^2 \theta_W\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(-Q \sin^2 \theta_W\)</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -958,19 +969,19 @@ g_Z \left( c_L \, \bar{u}_L \gamma^\mu \bar{u}_L + c_R \, \bar{u}_R \gamma^\mu \
 <p>Por ejemplo para el <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(e\)</span></p>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
-<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(c_L\)</span> —</p></th>
-<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(c_R\)</span>  —</p></th>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p>——- cL ——-</p></th>
+<th class="text-align:left head"><p>——- cR ——-</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\nu_e\)</span></p></td>
-<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
-<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_e\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(e\)</span></p></td>
-<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-1/2 +s^2_W\)</span></p></td>
-<td class="text-align:center"><p><span class="math notranslate nohighlight">\(s^2_W\)</span></p></td>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(e\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(-1/2 +s^2_W\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(s^2_W\)</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -1172,7 +1183,7 @@ Gamma d 0.3713 GeV
 \[
 \Gamma_Z = 3 \Gamma_{ll} +  \Gamma_{\mathrm{hadrons}} + N_\nu \Gamma_{\nu\nu}
 \]</div>
-<p>donde <span class="math notranslate nohighlight">\(\Gamma_{ll} = \Gamma_{ee} + \Gamma_{\mu\mu} + \Gamma_{\tau\tau}\)</span>, <span class="math notranslate nohighlight">\(\Gamma_{\mathrm{hadrons}}\)</span>, la anchura de desintegración a hadrones (la total a <span class="math notranslate nohighlight">\(qq\)</span>) y <span class="math notranslate nohighlight">\(N_\nu\)</span> es el número de neutrinos, y <span class="math notranslate nohighlight">\(\Gamma_{\nu\nu}\)</span>, la achura a un tipo de neutrino.</p>
+<p>donde <span class="math notranslate nohighlight">\(3\Gamma_{ll} = \Gamma_{ee} + \Gamma_{\mu\mu} + \Gamma_{\tau\tau}\)</span>, <span class="math notranslate nohighlight">\(\Gamma_{\mathrm{hadrons}}\)</span>, la anchura de desintegración a hadrones (la total a <span class="math notranslate nohighlight">\(q\bar{q}\)</span>) y <span class="math notranslate nohighlight">\(N_\nu\)</span> es el número de neutrinos, y <span class="math notranslate nohighlight">\(\Gamma_{\nu\nu}\)</span>, la achura a un tipo de neutrino.</p>
 <p>Los neutrinos no se observan, pero si medimos la anchura total <span class="math notranslate nohighlight">\(\Gamma_Z\)</span> podemos estimar el número de neutrinos, <span class="math notranslate nohighlight">\(N_\nu\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1329,7 +1340,7 @@ N_\nu = 2.9840\pm 0.0082
 </div>
 <div class="section" id="el-boson-de-higgs">
 <h2>El bosón de Higgs<a class="headerlink" href="#el-boson-de-higgs" title="Permalink to this heading">#</a></h2>
-<p>El modelo de Higgs da respuesta (quizás la única posible) a los siguientes problemas graves que presentabal la teoría:</p>
+<p>El modelo de Higgs da respuesta (quizás la única posible) a los siguientes problemas graves que presentaba la teoría:</p>
 <ul class="simple">
 <li><p>Los bosones débiles son masivos, sin embargo las teorías gauge exigen bosones sin masa. ¿Cómo dotar entonces de masa a los bosones <span class="math notranslate nohighlight">\(W^\pm, Z\)</span>?</p></li>
 <li><p>La simetría electrodébil separa fermiones a derechas e izquierdas, <span class="math notranslate nohighlight">\(u_L, u_R\)</span>, en dupletes y singletes, y exige que no tengan masas. ¡Pero sabemos que los fermiones tienen masa!</p></li>
@@ -1381,7 +1392,7 @@ D_\mu = \partial_\mu + i g A_\mu, \;\;\; F^{\mu\nu} = \partial^\mu A^\nu - \part
 \[
 i \bar{\Psi} \gamma^\mu D_\mu \Psi - m \bar{\Psi} \Psi - \frac{1}{4} F^{\mu\nu}F_{\mu\nu}
 \]</div>
-<p>que invariante bajo la simetría gauge local, dada por un cambio continua arbitrario <span class="math notranslate nohighlight">\(g\theta(x)\)</span> en cada punto, local, <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<p>que invariante bajo la simetría gauge local, dada por un cambio continuo arbitrario <span class="math notranslate nohighlight">\(g\theta(x)\)</span> en cada punto, local, <span class="math notranslate nohighlight">\(x\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi'(x) = e^{i g \theta(x)} \, \Psi(x), \;\;\; A'_\mu(x) = A_\mu(x) - \partial_\mu \theta(x)
@@ -1523,7 +1534,7 @@ V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sm_55_0.png" src="../_images/sm_55_0.png" />
+<img alt="../_images/sm_56_0.png" src="../_images/sm_56_0.png" />
 </div>
 </div>
 <p>El estado del vacío es el estado de mínima energía:</p>
@@ -1535,7 +1546,7 @@ V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger 
 \[
 v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
 \]</div>
-<p>donde a  <span class="math notranslate nohighlight">\(v\)</span> denomina <strong>valor esperado en el vacío</strong> (<em>vev</em>).</p>
+<p>donde a  <span class="math notranslate nohighlight">\(v\)</span> es el <strong>valor esperado en el vacío</strong> (<em>vev</em>).</p>
 <p>El hecho que el estado en el vacío se situe en uno de los mínimos de potencial de los posibles equivalentes se conoce como <strong>rotura espontánea de simetría</strong>.</p>
 <p>En el casso de que <span class="math notranslate nohighlight">\(\phi\)</span> sea un complejo obtenemos la curva del potencial conocida como sobrero mexicano:</p>
 <table class="colwidths-auto table">
@@ -1841,6 +1852,13 @@ m_W = \frac{1}{2} g_W v \Rightarrow v = \frac{2m_W}{g_W} = \sqrt{\frac{1}{\sqrt{
             <p class="prev-next-subtitle">anterior</p>
             <p class="prev-next-title">Sobre los quarks y los hadrones</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="ext-cinematica.html" title="siguiente página">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Apéndice A : Cinemática</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

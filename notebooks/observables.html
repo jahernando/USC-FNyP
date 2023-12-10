@@ -1004,7 +1004,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov 28 17:26:46 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Sun Dec 10 16:20:42 2023
 </pre></div>
 </div>
 </div>
@@ -2294,7 +2294,7 @@ a^{\dagger}_{p, s} \, |0 \rangle \equiv |p, s \rangle; \;\;\; \{a^\dagger_{p,s},
 <p>Dirac usó dos directrices para escribir su ecuación:</p>
 <ol class="simple">
 <li><p>La coordenada temporal y las espaciales,  <span class="math notranslate nohighlight">\(\partial_0, \partial_i, \;\; i = 1, 2, 3\)</span>, aparecen linealmente y en igualdad de condiciones.</p></li>
-<li><p>Considerando la asociación con los operadores energía y momento, <span class="math notranslate nohighlight">\(i\partial_0 \to E, \;\;\; -i\partial_i = p_i\)</span>, al elevar al cuadrado la ecuación obtenemos la ecuación de Einstein, <span class="math notranslate nohighlight">\(E^2-{\bf p}^2 = m^2\)</span></p></li>
+<li><p>Considerando la asociación con los operadores energía y momento, <span class="math notranslate nohighlight">\(i\partial_0 \to E, \;\; -i\partial_i = p_i\)</span>, al elevar al cuadrado la ecuación obtenemos la ecuación de Einstein, <span class="math notranslate nohighlight">\(E^2-{\bf p}^2 = m^2\)</span></p></li>
 </ol>
 <p>Pero para ello, los factores <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> no pueden conmutar, no pueden por lo tanto ser escalares, deben ser matrices complejas <span class="math notranslate nohighlight">\(4\times4\)</span> que cumplan el álgebra siguiente:</p>
 <div class="math notranslate nohighlight">
@@ -2308,6 +2308,24 @@ a^{\dagger}_{p, s} \, |0 \rangle \equiv |p, s \rangle; \;\;\; \{a^\dagger_{p,s},
 (\gamma^0)^2 = I, \; (\gamma^k)^2 = - I, \;\; \gamma^\mu \gamma^\nu = - \gamma^\nu \gamma^\mu \, (\mu \neq \nu),
 \]</div>
 <p>con <span class="math notranslate nohighlight">\(k=1, 2, 3\)</span>, y <span class="math notranslate nohighlight">\(\mu = 0, 1, 2, 3\)</span>.</p>
+<p>Vamos a comprobar las condiciones de la matrices <span class="math notranslate nohighlight">\(\gamma\)</span></p>
+<p>De la asociación <span class="math notranslate nohighlight">\(i\partial_0 \to E, \;\; -i\partial_i = p_i\)</span>, y elevando la ecuación al cuadrado:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E - p^2 =  (\gamma^0 E - \gamma^k p_k) (\gamma^0 E - \gamma^i p_i) = \\
+(\gamma^0)^2 E^2 + (\gamma^k)^2 p^2_k + (\gamma^k \gamma^i + \gamma^i \gamma^k) p_k p_i -   (\gamma0 \gamma^k + \gamma^k \gamma^0) E p_k
+\end{split}\]</div>
+<p>si asociamos cada término obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+(\gamma^0)^2 = I, \;\, (\gamma^k)^2 = -I, \;\;
+\{\gamma^k, \gamma^i\} = 0, \;\; \{\gamma^0, \gamma^k\} = 0, \;\; i \neq k, \;\; i,k = 1, 2, 3
+\]</div>
+<p>Esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+\{\gamma^\mu, \gamma^\nu\} = 2 g^{\mu\nu}, \;\; \mu, \nu = 0, 1, 2, 3.
+\]</div>
 <p>Existen varias representaciones del álgebra y podemos usar la más conveniente. la Física no cambia, no depende, de la representación elegida.</p>
 <p>La representación más común es la de Pauli-Dirac:</p>
 <div class="math notranslate nohighlight">
