@@ -55,6 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="prev" title="Apéndice A : Cinemática" href="ext-cinematica.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="es">
     
@@ -114,7 +115,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="introduccion.html">
    Introducción a Física de Partículas
@@ -143,6 +144,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="ext-cinematica.html">
    Apéndice A : Cinemática
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Apéndice B : Ecuación de Dirac
   </a>
  </li>
 </ul>
@@ -448,8 +454,11 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#espinores-bajo-transformaciones-de-lorentz">
-     Espinores bajo transformaciones de Lorentz
+    <a class="reference internal nav-link" href="#condiciones-de-las-matrices-s-lambda">
+     Condiciones de las matrices
+     <span class="math notranslate nohighlight">
+      \(S(\Lambda)\)
+     </span>
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -458,8 +467,12 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#representaciones-de-boost-y-rotaciones">
-     Representaciones de boost y rotaciones
+    <a class="reference internal nav-link" href="#representaciones-espinoriales-de-boosts-y-rotaciones">
+     Representaciones espinoriales de
+     <em>
+      boosts
+     </em>
+     y rotaciones.
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -646,8 +659,11 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#espinores-bajo-transformaciones-de-lorentz">
-     Espinores bajo transformaciones de Lorentz
+    <a class="reference internal nav-link" href="#condiciones-de-las-matrices-s-lambda">
+     Condiciones de las matrices
+     <span class="math notranslate nohighlight">
+      \(S(\Lambda)\)
+     </span>
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -656,8 +672,12 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#representaciones-de-boost-y-rotaciones">
-     Representaciones de boost y rotaciones
+    <a class="reference internal nav-link" href="#representaciones-espinoriales-de-boosts-y-rotaciones">
+     Representaciones espinoriales de
+     <em>
+      boosts
+     </em>
+     y rotaciones.
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -751,7 +771,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Dec 12 11:33:08 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Dec 12 17:18:05 2023
 </pre></div>
 </div>
 </div>
@@ -1344,26 +1364,26 @@ x' \cdot y' = x \cdot y \\
 \[
 g_{\rho\sigma} \Lambda^{\sigma}_{\;\;\mu} \Lambda^{\rho}_{\;\;\nu} = g_{\mu\nu}
 \]</div>
+<p>O en forma matricial:</p>
+<div class="math notranslate nohighlight">
+\[
+\Lambda^{T} g \Lambda = g
+\]</div>
 <p>Además existe la transformación inversa <span class="math notranslate nohighlight">\(\Lambda^{-1}\)</span></p>
 <div class="math notranslate nohighlight">
 \[
 \Lambda \, \Lambda^{-1} = I, \;\; \Lambda^{\nu}_{\;\;\rho} (\Lambda^{-1})^{\rho}_{\;\; \mu} = \delta^{\nu}_{\;\;\mu}
 \]</div>
-<p>En el ejemplo anterior de la rotación de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> y de un boost <span class="math notranslate nohighlight">\(\beta\)</span> en <span class="math notranslate nohighlight">\(z\)</span>, sus transformaciones inversas simplemente:</p>
-<div class="math notranslate nohighlight">
-\[
-\Lambda^{-1}(\theta) = \Lambda(-\theta), \;\;\; \Lambda^{-1}(\beta) = \Lambda(-\beta)
-\]</div>
 <p>Las transformaciones <em>propias</em> de Lorentz son las rotaciones y los boost.</p>
 <div class="section" id="transformaciones-activas-y-pasivas">
 <h4>Transformaciones activas y pasivas.<a class="headerlink" href="#transformaciones-activas-y-pasivas" title="Permalink to this heading">#</a></h4>
-<p>Existen dos formas complementarias de tratar las transformaciones de forma <em>activa</em> o <em>pasiva</em>.</p>
+<p>Existen dos formas complementarias de tratar las transformaciones, de forma <em>activa</em> o <em>pasiva</em>.</p>
 <p>Las transformaciones son pasivas cuando cambian el sistema de referencia dejando fijo el espacio físico.
 Mientras que las <strong>transformaciones activas</strong> son aquellas que cambian el espacio físico y mantienen el sistema de coordenadas.</p>
-<p>Si hacemos una rotación activa en el espacio de 3D, un punto <span class="math notranslate nohighlight">\({\bf x}\)</span> se traslada a otro punto <span class="math notranslate nohighlight">\({\bf x}'\)</span>, pero los dos los damos en el mismo sistema de coordenadas, <span class="math notranslate nohighlight">\(\{{\bf e}_i\}\)</span>. Mientras que cuando hacemos una rotación pasiva, rotamos los ejes de coordenadas y expresamos un mismo punto <span class="math notranslate nohighlight">\(x\)</span> en el sistema inicial <span class="math notranslate nohighlight">\(\{{\bf e}_i\}\)</span> o rotado <span class="math notranslate nohighlight">\(\{{\bf e}'_i\}\)</span>. En las transformaciones activas pensamos en que un punto se traslada en otro y no en un cambio de coordenadas.</p>
+<p>Si hacemos una rotación activa un punto <span class="math notranslate nohighlight">\({\bf x}\)</span> se traslada a otro punto <span class="math notranslate nohighlight">\({\bf x}'\)</span>, pero los dos los damos en el mismo sistema de coordenadas, <span class="math notranslate nohighlight">\(\{{\bf e}_i\}\)</span>. Mientras que cuando hacemos una rotación pasiva, rotamos los ejes de coordenadas y expresamos un mismo punto <span class="math notranslate nohighlight">\(x\)</span> en el sistema inicial <span class="math notranslate nohighlight">\(\{{\bf e}_i\}\)</span> o rotado <span class="math notranslate nohighlight">\(\{{\bf e}'_i\}\)</span>. En las transformaciones activas pensamos en que un punto se traslada en otro y no en un cambio de coordenadas.</p>
 <p>Asi la rotación activa de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de <span class="math notranslate nohighlight">\(z\)</span> trasladaría el punto <span class="math notranslate nohighlight">\((1, 0, 0) \to (\cos \theta, \sin \theta, 0)\)</span>. Mientras que una rotación pasiva expresaríamos el mismo punto como <span class="math notranslate nohighlight">\((1, 0, 0)\)</span> en el sistema original y  <span class="math notranslate nohighlight">\((\cos \theta, -\sin \theta, 0)\)</span> en el nuevo sistema de coordenadas girado respecto al primero un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> respecto al eje inicial <span class="math notranslate nohighlight">\(z\)</span>.</p>
 <p>Es más natural introducir las transformaciones de Lorentz desde un punto de vista pasivo, como cambio de coordenadas, pero resulta más conveniente tomar un punto de vista activo cuando se trabaja con conceptos más abstractos como campos.</p>
-<p>En la literatura se aparecen las transformaciones activas o pasivas. Es importante saber siempre con qué tipo de transformación se está trabajando. Nosotros, en este apéndice, usaremos siempre transformaciones activas.</p>
+<p>En la literatura aparecen las transformaciones activas o pasivas y a veces no se indica de cuál se trata. Es importante saber siempre con qué tipo de transformación se está trabajando. Nosotros, en este apéndice, usaremos siempre transformaciones activas.</p>
 <p>Las transformaciones de Lorentz los cuadrimomentos se representadan con las matrices, <span class="math notranslate nohighlight">\(\Lambda\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1371,7 +1391,7 @@ x' = \Lambda \, x, \;\;\; x'^\mu = \Lambda^{\mu}_{\;\;\nu} \, x^\nu \\
 p' = \Lambda \, p, \;\;\; p'^{\mu} = \Lambda^{\mu}_{\;\;\nu} \, p^{\nu}
 \end{split}\]</div>
 <p>donde los índices <span class="math notranslate nohighlight">\(\mu, \nu\)</span> hacen referencia a las columnas y filas respectivamente de la matriz <span class="math notranslate nohighlight">\(\Lambda\)</span>.</p>
-<p>La transformación asociada a una rotación <span class="math notranslate nohighlight">\(\theta\)</span> en el eje <span class="math notranslate nohighlight">\(z\)</span> (en sentido antihorario) y un <em>boost</em> en z con velocidad <span class="math notranslate nohighlight">\(\beta\)</span> son respectivamente:</p>
+<p>La transformación activa asociada a una rotación <span class="math notranslate nohighlight">\(\theta\)</span> en el eje <span class="math notranslate nohighlight">\(z\)</span> (en sentido antihorario) y un <em>boost</em> en z con velocidad <span class="math notranslate nohighlight">\(\beta\)</span> son respectivamente:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \Lambda(\theta) = 
@@ -1394,7 +1414,7 @@ p' = \Lambda \, p, \;\;\; p'^{\mu} = \Lambda^{\mu}_{\;\;\nu} \, p^{\nu}
 </div>
 <div class="section" id="generadores-en-el-espacio-tiempo">
 <h4>Generadores en el espacio-tiempo<a class="headerlink" href="#generadores-en-el-espacio-tiempo" title="Permalink to this heading">#</a></h4>
-<p>También las transformaciones de Lorentz se pueden construir a partir de la sucesión de transformaciones infinitesimales.</p>
+<p>Las transformaciones de Lorentz se pueden construir a partir de la sucesión de transformaciones infinitesimales.</p>
 <p>La rotación de un angulo <em>infinitesimal</em> <span class="math notranslate nohighlight">\(\theta\)</span> a lo largo del eje <span class="math notranslate nohighlight">\(z\)</span> viene dada por:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1415,7 +1435,7 @@ p' = \Lambda \, p, \;\;\; p'^{\mu} = \Lambda^{\mu}_{\;\;\nu} \, p^{\nu}
                  0   &amp; 1 &amp; 0 &amp; 0 \\
                  0  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} 
 \end{split}\]</div>
-<p>Podemos dar la rotación anterior de forma infinitesimal como:</p>
+<p>Podemos dar la rotación anterior como:</p>
 <div class="math notranslate nohighlight">
 \[
 \Lambda(\theta) = e^{-i\theta J_3} \simeq I -i \theta J_{3},
@@ -1429,9 +1449,9 @@ p' = \Lambda \, p, \;\;\; p'^{\mu} = \Lambda^{\mu}_{\;\;\nu} \, p^{\nu}
                  0  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} 
 \end{split}\]</div>
 <p>A <span class="math notranslate nohighlight">\(J_3\)</span> lo llamamos el <strong>generador</strong> de las rotaciones en torno al eje <span class="math notranslate nohighlight">\(z\)</span>.</p>
-<p><em>Nota:</em> El factor <em>-i</em> es una convención, nos permitirá como veremos hacer exponenciar el generador de forma más conveniente, y también nos recuerda expresiones conocidad en mecánica cuántica.</p>
-<p>Con esta definición, veremos después que el generador de rotaciones para los espinores es el espín.</p>
-<p>La transformación de la rotación de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> en <span class="math notranslate nohighlight">\(z\)</span> podemos darla como la sucessión de rotaciones infinitesimales en torno a <span class="math notranslate nohighlight">\(z\)</span>:</p>
+<p><em>Nota:</em> El factor <em>-i</em> que aparece en el exponente, <span class="math notranslate nohighlight">\(e^{-i\theta J_3}\)</span>, es una convención. Sirve para facilitar los cálculos, nos recuerda expresiones conocidas de mecánica cuántica, y nos permite dar el momento angular y el espín como generadores de las rotaciones.</p>
+<p>La transformación de la rotación de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> en <span class="math notranslate nohighlight">\(z\)</span>
+Podemos dar la transformación asociada a la rotación de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> en torno a <span class="math notranslate nohighlight">\(z\)</span> como una sucessión de rotaciones infinitesimales:</p>
 <div class="math notranslate nohighlight">
 \[
 \Lambda(\theta) = e^{-i \theta J_3} \equiv \sum_{k=0} \frac{(-i \theta)^k}{k!} (J_3)^k 
@@ -1441,23 +1461,21 @@ p' = \Lambda \, p, \;\;\; p'^{\mu} = \Lambda^{\mu}_{\;\;\nu} \, p^{\nu}
 \[
 \Lambda(\theta) = \Lambda\left(\sum_N \frac{\theta}{N}\right) = \prod_{N} \Lambda\left(\frac{\theta}{N}\right) = \lim_{N \to \infty} \left(I + \frac{\theta}{N}J_3 \right)^N
 \]</div>
-<p>Al desarrollar:</p>
+<p>Si separamos en términos pares e impares:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Lambda(\theta) = e^{-i \theta J_3} \equiv \sum_{k=0} \frac{(-i\theta)^k}{k!} (J_3)^k = \\
-I + \sum_{k=1} (-1)^{k} \frac{\theta^{2k}}{2k!} (J_3)^{2k} + i \sum_{k=1} (-1)^{k}  \frac{\theta^{2k+1}}{(2k+1)!} (J_3)^{2k+1} =  \\
+I + \sum_{k=1} (-1)^{k} \frac{\theta^{2k}}{2k!} (J_3)^{2k} - i \sum_{k=1} (-1)^{k}  \frac{\theta^{2k+1}}{(2k+1)!} (J_3)^{2k+1} =  \\
 \end{split}\]</div>
-<p>Haciendo uso de :</p>
+<p>y haciendo uso de:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-(J_3)^0 = I, \;\;
 (J_3)^{2k} = \begin{pmatrix}  0    &amp; 0 &amp; 0 &amp; 0 \\
                  0   &amp; 1 &amp; 0 &amp; 0 \\
                  0   &amp; 0 &amp; 1 &amp; 0 \\
                  0  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} \equiv  I_{12}, \;\;
 (J_3)^{2k+1} = J_3,
 \end{split}\]</div>
-<p>Tenemos</p>
+<p>Obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
 I + \cos \theta \,  I_{12}  - i  \sin \theta \, J_3, 
@@ -1470,45 +1488,14 @@ I + \cos \theta \,  I_{12}  - i  \sin \theta \, J_3,
                  0   &amp; \sin\theta &amp; \cos\theta &amp; 0 \\
                  0  &amp; 0 &amp; 0 &amp; 1 \end{pmatrix}, 
 \end{split}\]</div>
-<p>Haciendo uso de :
-$<span class="math notranslate nohighlight">\(
-(J_3)^0 = I, \;
-(J_3)^2 = \begin{pmatrix}  0    &amp; 0 &amp; 0 &amp; 0 \\
-                 0   &amp; -1 &amp; 0 &amp; 0 \\
-                 0   &amp; 0 &amp; -1 &amp; 0 \\
-                 0  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} \equiv - I_{12}, \\
-(J_3)^3 = \begin{pmatrix}  0    &amp; 0 &amp; 0 &amp; 0 \\ 
-                 0   &amp; 0 &amp; 1 &amp; 0 \\
-                 0   &amp; -1 &amp; 0 &amp; 0 \\
-                 0  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} = - J_3, \;\;
-(J_3)^4 = \begin{pmatrix}  0    &amp; 0 &amp; 0 &amp; 0 \\
-                 0   &amp; 1 &amp; 0 &amp; 0 \\
-                 0   &amp; 0 &amp; 1 &amp; 0 \\
-                 0  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} = I_{12}, \;\;
-\)</span>$</p>
-<p>al desarrollar:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\Lambda(\theta) = e^{\theta J_3} \equiv \sum_{k=0} \frac{\theta^k}{k!} (J_3)^k = \\
-I + \sum_{k=1} \frac{\theta^{2k}}{2k!} (J_3)^{2k} + \sum_{k=1} \frac{\theta^{2k+1}}{(2k+1)!} (J_3)^{2k+1} =  \\
-I + \sum_{k=1} \frac{\theta^{2k}}{2k!} (-1)^k I_{12} + \sum_{k=1} \frac{\theta^{2k+1}}{(2k+1)!} (-1)^{k+1} J_3 =  \\
-I + \cos \theta \,  I_{12}  +  \sin \theta \, J_3, 
-\end{split}\]</div>
-<p>obtenemos de nuevo:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\Lambda(\theta) = \begin{pmatrix}  1    &amp; 0 &amp; 0 &amp; 0 \\
-                 0   &amp; \cos\theta &amp; -\sin\theta &amp; 0 \\
-                 0   &amp; \sin\theta &amp; \cos\theta &amp; 0 \\
-                 0  &amp; 0 &amp; 0 &amp; 1 \end{pmatrix}, 
-\end{split}\]</div>
-<p>Vamos a determinar ahora la matriz asociada a un boost. Definimos primero el parámetro <span class="math notranslate nohighlight">\(\eta\)</span>, llamado <strong>rapidez</strong>, como <span class="math notranslate nohighlight">\(\beta = \tanh \eta\)</span>, lo que implica:</p>
+<p>Vamos a determinar ahora la matriz asociada a un boost.</p>
+<p>Definimos primero el parámetro <span class="math notranslate nohighlight">\(\eta\)</span>, llamado <strong>rapidez</strong>, como <span class="math notranslate nohighlight">\(\beta = \tanh \eta\)</span>, lo que implica:</p>
 <div class="math notranslate nohighlight">
 \[
 \gamma = \cosh \eta, \;\; \beta = \tanh \eta, \;\; \gamma \beta = \sinh \eta.
 \]</div>
 <p>Notar que el rango de <span class="math notranslate nohighlight">\(\beta\)</span>, que es <span class="math notranslate nohighlight">\((-1, 1)\)</span>, se traslada en <span class="math notranslate nohighlight">\(\eta\)</span> en <span class="math notranslate nohighlight">\((-\infty, \infty)\)</span>.</p>
-<p>La transformación de Lorentz de un boots en <span class="math notranslate nohighlight">\(z\)</span> con rapidez <span class="math notranslate nohighlight">\(\eta\)</span> queda:</p>
+<p>La transformación de Lorentz de un boots en <span class="math notranslate nohighlight">\(z\)</span> con velocidad <span class="math notranslate nohighlight">\(\beta\)</span> o rapidez <span class="math notranslate nohighlight">\(\eta\)</span> queda:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \Lambda(\eta) =  
@@ -1526,26 +1513,33 @@ I + \cos \theta \,  I_{12}  +  \sin \theta \, J_3,
                  0   &amp; 0 &amp; 0 &amp; 0 \\
                  1  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} 
 \end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(K_3\)</span> es el generador de los boost en <span class="math notranslate nohighlight">\(z\)</span>.</p>
 <p>A partir de:</p>
 <div class="math notranslate nohighlight">
 \[
-\Lambda(\eta) = e^{\eta K_3} \equiv \sum_{k} \frac{\eta^k}{k!} \, (K_3)^k
+\Lambda(\eta) = e^{-i\eta K_3} \equiv \sum_{k} \frac{(-i\eta)^k}{k!} \, (K_3)^k
 \]</div>
-<p>usando:</p>
+<p>separando en términos pares e impares:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-(K_3)^0 = I, \;\; (K_3)^2 = \begin{pmatrix} 1   &amp; 0 &amp; 0 &amp; 0 \\
-                 0   &amp; 0 &amp; 0 &amp; 0 \\
-                 0   &amp; 0 &amp; 0 &amp; 0 \\
-                 0  &amp; 0 &amp; 0 &amp; 1 \end{pmatrix} \equiv I_{03}, \;\;
-(K_3)^3 = K_3
+I + \sum_{k=1} (-1)^{k} \frac{\eta^{2k}}{2k!} (K_3)^{2k} - i \sum_{k=1} (-1)^{k}  \frac{\eta^{2k+1}}{(2k+1)!} (K_3)^{2k+1} =  \\
 \end{split}\]</div>
-<p>si desarrollamos</p>
+<p>y dado que:</p>
 <div class="math notranslate nohighlight">
-\[
-\Lambda(\eta) = I +  \sum_{k=1} \frac{\eta^{2k}}{(2k)!} \, I_{03} + \sum_{k=1}  \frac{\eta^{2k+1}}{(2k+1)!} \, K_3
-\]</div>
-<p>obtenemos:</p>
+\[\begin{split}
+(K_3)^{2k} = (-1)^k \begin{pmatrix} 1   &amp; 0 &amp; 0 &amp; 0 \\
+                 0   &amp; 0 &amp; 0 &amp; 0 \\
+                 0   &amp; 0 &amp; 0 &amp; 0 \\
+                 0  &amp; 0 &amp; 0 &amp; 1 \end{pmatrix} \equiv (-1)^k I_{03}, \;\; 
+(K_3)^{2k+1} = (-1)^k K_3
+\end{split}\]</div>
+<p>obtenemos</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Lambda(\eta) = I +  \sum_{k=1} \frac{\eta^{2k}}{(2k)!} \, I_{03} - i \sum_{k=1}  \frac{\eta^{2k+1}}{(2k+1)!} \, K_3 = \\
+\cosh \frac{\eta}{2} - i \sinh \frac{\eta}{2} K_3
+\end{split}\]</div>
+<p>de forma explícita:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \Lambda(\eta) =  
@@ -1555,46 +1549,43 @@ I + \cos \theta \,  I_{12}  +  \sin \theta \, J_3,
                  \sinh \eta &amp; 0 &amp; 0 &amp; \cosh \eta 
 \end{pmatrix}
 \end{split}\]</div>
-<p>A la matriz <span class="math notranslate nohighlight">\(J_3\)</span> lo llamamos el <strong>generador</strong> de la rotación en <span class="math notranslate nohighlight">\(z\)</span> y <span class="math notranslate nohighlight">\(K_3\)</span> el generador del boost en <span class="math notranslate nohighlight">\(z\)</span>.</p>
-<p>Las transformaciones de Lorentz quedan definidas de forma genérica con un ángulo de rotación <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de un eje <span class="math notranslate nohighlight">\(\hat{{\bf n}}\)</span> en sentido antihorario, y un boost de rapidez <span class="math notranslate nohighlight">\(\eta\)</span> en la dirección <span class="math notranslate nohighlight">\(\hat{\bf v}\)</span>; y con sus correspondientes «vectores» de generadores <span class="math notranslate nohighlight">\({\bf J}, {\bf K}\)</span>.</p>
+<p>Así pues, las transformaciones de Lorentz quedan definidas de forma genérica con un ángulo de rotación <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de un eje <span class="math notranslate nohighlight">\(\hat{{\bf n}}\)</span> en sentido antihorario, y un boost de rapidez <span class="math notranslate nohighlight">\(\eta\)</span> en la dirección <span class="math notranslate nohighlight">\(\hat{\bf v}\)</span>; y con sus correspondientes «vectores» de generadores <span class="math notranslate nohighlight">\({\bf J}, {\bf K}\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
-\Lambda(\theta \, \hat{{\bf n}}, \eta \, \hat{{\bf v}})  = e^{\theta {\hat{\bf n}} \, {\bf J} + {\eta \hat{\bf v} \, {\bf K}}}
+\Lambda(\theta \, \hat{{\bf n}}+ \eta \, \hat{{\bf v}})  = e^{-i (\theta {\hat{\bf n}} \, {\bf J}  + {\eta \hat{\bf v} \, {\bf K}})}
 \]</div>
-<p>O con tres ángulos <span class="math notranslate nohighlight">\(\theta_k\)</span> y rapideces <span class="math notranslate nohighlight">\(\eta_k\)</span>, con <span class="math notranslate nohighlight">\(k=1, 2, 3\)</span>.</p>
 <p>Las expresiones de los generadores son:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-J_1 = \begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 0 \\
+J_1 = i\begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 0 \\
                  0   &amp; 0 &amp; 0 &amp; 0 \\
                  0   &amp; 0 &amp; 0 &amp; -1 \\
                  0  &amp; 0 &amp; 1 &amp; 0 \end{pmatrix}, \;\;
-J_2 = \begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 0 \\
+J_2 = i\begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 0 \\
                  0   &amp; 0 &amp; 0 &amp; 1 \\
                  0   &amp; 0 &amp; 0 &amp; 0 \\
                  0  &amp; -1 &amp; 0 &amp; 0 \end{pmatrix}, \;\;
-J_3 = \begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 0 \\
+J_3 = i\begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 0 \\
                  0   &amp; 0 &amp; -1 &amp; 0 \\
                  0   &amp; 1 &amp; 0 &amp; 0 \\
                  0  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}, \\
-K_1 = \begin{pmatrix} 0   &amp; 1 &amp; 0 &amp; 0 \\
+K_1 = i\begin{pmatrix} 0   &amp; 1 &amp; 0 &amp; 0 \\
                  1   &amp; 0 &amp; 0 &amp; 0 \\
                  0   &amp; 0 &amp; 0 &amp; 0 \\
                  0  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}, \;\;
-K_2 = \begin{pmatrix} 0   &amp; 0 &amp; 1 &amp; 0 \\
+K_2 = i\begin{pmatrix} 0   &amp; 0 &amp; 1 &amp; 0 \\
                  0   &amp; 0 &amp; 0 &amp; 0 \\
                  1   &amp; 0 &amp; 0 &amp; 0 \\
                  0  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}, \;\;
-K_3 = \begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 1 \\
+K_3 = i\begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 1 \\
                  0   &amp; 0 &amp; 0 &amp; 0 \\
                  0   &amp; 0 &amp; 0 &amp; 0 \\
                  1  &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}. 
 \end{split}\]</div>
-<p>Recordemos que los generadores <span class="math notranslate nohighlight">\(J_k\)</span> corresponden al momento angular.</p>
 <p><em>Ejercicio:</em> Comprueba que:</p>
 <div class="math notranslate nohighlight">
 \[
-[J_i, J_j] =  \epsilon_{ijk} J_k, \; [K_i, K_j] = -\epsilon_{ijk} J_k, \; [J_i, K_j] = \epsilon_{ijk} K_k
+[J_i, J_j] =  i\epsilon_{ijk} J_k, \; [K_i, K_j] = -i\epsilon_{ijk} J_k, \; [J_i, K_j] = i\epsilon_{ijk} K_k
 \]</div>
 </div>
 </div>
@@ -1603,7 +1594,7 @@ K_3 = \begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 1 \\
 <p>La inversión de paridad invierte la coordenadas especiales, <span class="math notranslate nohighlight">\({\bf x } \to -{\bf x}\)</span>. Es una transformación de Lorentz, preserva el producto escalar de cuadrivectores, pero es una transformación <em>impropia</em>.</p>
 <div class="math notranslate nohighlight">
 \[
-x' = \Lambda(P) \, x, \;\;\, x'^\mu = \Lambda^{\mu}_{\;\;\nu}(P) x^\nu
+x'^\mu = \Lambda^{\mu}_{\;\;\nu}(P) x^\nu
 \]</div>
 <p>donde:</p>
 <div class="math notranslate nohighlight">
@@ -1618,7 +1609,7 @@ x' = \Lambda(P) \, x, \;\;\, x'^\mu = \Lambda^{\mu}_{\;\;\nu}(P) x^\nu
 \[
 \det(\Lambda) = -1
 \]</div>
-<p>como es el caso para la inversión por paridad.</p>
+<p>como es el caso de la inversión por paridad.</p>
 <p>Genéricamente el grupo de Lorentz son las matrices ortogonales que preservan la métrica de Minkowski, <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span>, o en otras palabras, preservan el producto escalar de dos cuadrivectores, esto es, la matrices cumplen:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1630,8 +1621,8 @@ x' = \Lambda(P) \, x, \;\;\, x'^\mu = \Lambda^{\mu}_{\;\;\nu}(P) x^\nu
 \[
 \det(\Lambda) = \pm 1
 \]</div>
-<p>Las matrices con <span class="math notranslate nohighlight">\(\det(\Lambda) = +1\)</span> forman un subgrupo, llamado <span class="math notranslate nohighlight">\(SO(1, 3)\)</span>, el de transformaciones propias.</p>
-<p>Las transformaciones con <span class="math notranslate nohighlight">\(\det(\Lambda) = -1\)</span> se llaman impropias, pero no forman un subgrupo porque no contienen el elemento identidad <span class="math notranslate nohighlight">\(I\)</span>.</p>
+<p>Las matrices con <span class="math notranslate nohighlight">\(\det(\Lambda) = +1\)</span> forman un subgrupo, llamado <span class="math notranslate nohighlight">\(SO(1, 3)\)</span>, el de transformaciones propias. Este subgrupo incluye las rotaciones y los <em>boosts</em>.</p>
+<p>Las transformaciones con <span class="math notranslate nohighlight">\(\det(\Lambda) = -1\)</span> se llaman impropias, pero no forman un subgrupo porque no contienen el elemento identidad <span class="math notranslate nohighlight">\(I\)</span>. La transformación de la inversión de paridad es impropia.</p>
 </div>
 <div class="section" id="transformacion-activa-de-los-campos">
 <h3>Transformacion activa de los campos<a class="headerlink" href="#transformacion-activa-de-los-campos" title="Permalink to this heading">#</a></h3>
@@ -1649,21 +1640,22 @@ A'^\mu(x) = \Lambda^{\mu}_{\;\; \nu} \, A^{\nu} (\Lambda^{-1} x)
 \[
 \Psi'(x) = S(\Lambda) \, \Psi( \Lambda^{-1}x)
 \]</div>
-<p>De esta forma la transformación que corresponde a dos transformaciones consecutivas <span class="math notranslate nohighlight">\(\Lambda = \Lambda_2 \Lambda_1\)</span>  cumple:</p>
+<p>De esta forma, la transformación que corresponde a dos transformaciones consecutivas <span class="math notranslate nohighlight">\(\Lambda = \Lambda_2 \Lambda_1\)</span>  cumple:</p>
 <div class="math notranslate nohighlight">
 \[
-\Psi'(x) = S(\Lambda_2\Lambda_1) \, \Psi( (\Lambda_2\Lambda_1)^{-1} x) = S(\Lambda_2) S(\Lambda_1) \, \Psi(\Lambda_2^{-1} \Lambda_1^{-1} x) 
+\Psi'(x) = S(\Lambda) \, \Psi( \Lambda^{-1} x) = S(\Lambda_2) S(\Lambda_1) \, \Psi(\Lambda_1^{-1} \Lambda_2^{-1} x) 
 \]</div>
-<p>Esto significa que las matrices <span class="math notranslate nohighlight">\(S(\Lambda)\)</span> forman una representación del grupo de Lorentz.</p>
+<p>Esto significa que las matrices <span class="math notranslate nohighlight">\(S(\Lambda)\)</span> forman una representación del grupo de Lorentz:</p>
 <div class="math notranslate nohighlight">
-\[
-\Lambda_2 \Lambda_1 =\Lambda_2 \,\Lambda_1 \to S(\Lambda_2 \Lambda_1) = S(\Lambda_2) \, S(\Lambda_1)
-\]</div>
+\[\begin{split}
+\Lambda \to S(\Lambda), \\
+\Lambda  =\Lambda_2 \,\Lambda_1 \to S(\Lambda) = S(\Lambda_2) \, S(\Lambda_1)
+\end{split}\]</div>
 <p>A cada transformación de Lorentz le corresponde una matriz en el espacio espinorial que la representa. La matriz que representa la sucesión de las dos transformaciones es el producto de las matrices de cada transformación por separado.</p>
 <p>A partir de ahora no explicitaremos la dependencia de <span class="math notranslate nohighlight">\(S\)</span> con <span class="math notranslate nohighlight">\(\Lambda\)</span> por simplicidad.</p>
 </div>
-<div class="section" id="espinores-bajo-transformaciones-de-lorentz">
-<h3>Espinores bajo transformaciones de Lorentz<a class="headerlink" href="#espinores-bajo-transformaciones-de-lorentz" title="Permalink to this heading">#</a></h3>
+<div class="section" id="condiciones-de-las-matrices-s-lambda">
+<h3>Condiciones de las matrices <span class="math notranslate nohighlight">\(S(\Lambda)\)</span><a class="headerlink" href="#condiciones-de-las-matrices-s-lambda" title="Permalink to this heading">#</a></h3>
 <p>Para establecer la condiciones de las matrices <span class="math notranslate nohighlight">\(S\)</span>, utilizamos que la ec. de Dirac debe ser válida para los campos transformados.</p>
 <p>Esto es:</p>
 <div class="math notranslate nohighlight">
@@ -1706,7 +1698,7 @@ S^{-1} \gamma^\mu S \, \delta^\rho_{\;\;\mu}  = \Lambda^{\rho}_{\;\; \nu} \, \ga
 \[
 S^{-1} \gamma^\mu S  = \Lambda^\mu_{\;\;\nu}\gamma^\nu
 \]</div>
-<p>Esta ecuación nos dice las condiciones que deben cumplir las matrices <span class="math notranslate nohighlight">\(S\)</span> para ser la representación de las transformaciones de Lorentz <span class="math notranslate nohighlight">\(\Lambda\)</span>. También podemos interpretar la ecuación como que las matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> transforman como vectores.</p>
+<p>Esta ecuación nos dice las condiciones que deben cumplir las matrices <span class="math notranslate nohighlight">\(S\)</span> para ser la representación de las transformaciones de Lorentz <span class="math notranslate nohighlight">\(\Lambda\)</span>.</p>
 </div>
 <div class="section" id="generadores-de-boost-y-rotaciones">
 <h3>Generadores de boost y rotaciones<a class="headerlink" href="#generadores-de-boost-y-rotaciones" title="Permalink to this heading">#</a></h3>
@@ -1716,15 +1708,15 @@ Cada una de ellas estará definida a partir de unos generadores asociados a las 
 <p>Consideremos un <em>boost</em> <span class="math notranslate nohighlight">\(\eta\)</span> <em>infinitesimal</em> en <span class="math notranslate nohighlight">\(z\)</span>. La matriz de Lorentz asociada es:</p>
 <div class="math notranslate nohighlight">
 \[
-\Lambda(\eta) = I + \eta K_3
+\Lambda(\eta) = I -i \eta K_3
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(K_3\)</span> es el generador del boost en <span class="math notranslate nohighlight">\(z\)</span> en el espacio espacio-temporal.</p>
 <p>Y la representación de boost infinitesimal en el espacio de espinores será:</p>
 <div class="math notranslate nohighlight">
 \[
-S(\eta)  = I + \eta \, K^S_3 
+S(\eta)  = I -i \eta \, K^S_3 
 \]</div>
-<p>donde <span class="math notranslate nohighlight">\(K^S_3\)</span> es el generador de los boost en la dirección <span class="math notranslate nohighlight">\(z\)</span> del espacio espinorial.</p>
+<p>donde <span class="math notranslate nohighlight">\(K^S_3\)</span> es el generador de los boost en el espacio de los espinores.</p>
 <p>Las condiciones de las matrices <span class="math notranslate nohighlight">\(S\)</span> se traducen para esta caso en:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1733,12 +1725,12 @@ S^{-1}\gamma^1 S = \gamma^1 \\
 S^{-1}\gamma^2 S = \gamma^2 \\
 S^{-1 }\gamma^3 S = \eta \, \gamma^0 + \gamma^3 \\
 \end{split}\]</div>
-<p>De la segunda y tercera condiciones deducimos que <span class="math notranslate nohighlight">\(S\)</span> y <span class="math notranslate nohighlight">\(K^S_3\)</span> conmutan con <span class="math notranslate nohighlight">\(\gamma^1, \gamma^2\)</span>. Con lo que podemos proponer:</p>
+<p>De la segunda y tercera condición deducimos que <span class="math notranslate nohighlight">\(S\)</span> y por lo tanto <span class="math notranslate nohighlight">\(K^S_3\)</span> conmutan con <span class="math notranslate nohighlight">\(\gamma^1, \gamma^2\)</span>. Con lo que podemos proponer:</p>
 <div class="math notranslate nohighlight">
 \[
-K^S_3 = \alpha \gamma^0 \gamma^3
+K^S_3 = \alpha i \gamma^0 \gamma^3
 \]</div>
-<p>que conmuta con <span class="math notranslate nohighlight">\(\gamma^2, \gamma^3\)</span>, y donde <span class="math notranslate nohighlight">\(\alpha\)</span> es una constante.</p>
+<p>que conmuta con <span class="math notranslate nohighlight">\(\gamma^2, \gamma^3\)</span>, y donde <span class="math notranslate nohighlight">\(\alpha\)</span> es una constante que vamos a determinar.</p>
 <p>De la primera condición:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1749,7 +1741,7 @@ K^S_3 = \alpha \gamma^0 \gamma^3
 \[
 \gamma^0 \, (I + \eta \, \alpha \gamma^0\gamma^3)^2 =  \gamma^0   + \gamma^3  \eta
 \]</div>
-<p>Multiplicando por <span class="math notranslate nohighlight">\(\gamma^0\)</span> por la izquierda, desarrollando el cuadrado, y despreciando términos en <span class="math notranslate nohighlight">\(\eta^2\)</span> al tratarse de un boost infinitesimal,</p>
+<p>Multiplicando por <span class="math notranslate nohighlight">\(\gamma^0\)</span> por la izquierda, desarrollando el cuadrado, y despreciando términos en <span class="math notranslate nohighlight">\(\eta^2\)</span> al tratarse de un boost infinitesimal:</p>
 <div class="math notranslate nohighlight">
 \[
 (I + \eta \, 2 \alpha \gamma^0\gamma^3) =  I   + \eta \gamma^0 \gamma^3 
@@ -1757,19 +1749,18 @@ K^S_3 = \alpha \gamma^0 \gamma^3
 <p>De donde concluimos que:</p>
 <div class="math notranslate nohighlight">
 \[
-K^S_3 = \frac{1}{2} \gamma^0 \gamma^3 \equiv \sigma^{03}
+K^S_3 = \frac{1}{2} i \gamma^0 \gamma^3
 \]</div>
-<p>Donde hemos definido la matriz <span class="math notranslate nohighlight">\(\sigma^{03}\)</span> como base del generador del boost en <span class="math notranslate nohighlight">\(z\)</span> para espinores.</p>
 <p>Consideremos ahora una rotación infinitesimal <span class="math notranslate nohighlight">\(\theta\)</span> a lo largo del eje <span class="math notranslate nohighlight">\(z\)</span>.</p>
 <p>La transformación infinitesimal en el espacio espacio-temporal viene dada por:</p>
 <div class="math notranslate nohighlight">
 \[
-\Lambda(\theta) = I + \theta \, J_3 
+\Lambda(\theta) = I -i \theta \, J_3 
 \]</div>
 <p>Mientras que en el espacio de espinores:</p>
 <div class="math notranslate nohighlight">
 \[
-S(\theta) = I + \theta \, J^S_3
+S(\theta) = I -i \theta \, J^S_3
 \]</div>
 <p>Las condiciones que deben cumplir son:</p>
 <div class="math notranslate nohighlight">
@@ -1779,10 +1770,10 @@ S^{-1}\gamma^1 S = \gamma^1 - \theta \, \gamma^2 \\
 S^{-1}\gamma^2 S = \theta \, \gamma^1 + \gamma^2 \\
 S^{-1 }\gamma^3 S = \gamma^3 \\
 \end{split}\]</div>
-<p>Vemos que <span class="math notranslate nohighlight">\(S, \, J^S_3\)</span> deben conmutar con <span class="math notranslate nohighlight">\(\gamma^0, \, \gamma^3\)</span>, luego podemos suponer que:</p>
+<p>Vemos que <span class="math notranslate nohighlight">\(S\)</span> , y por lo tanto <span class="math notranslate nohighlight">\(J^S_3\)</span> deben conmutar con <span class="math notranslate nohighlight">\(\gamma^0, \, \gamma^3\)</span>, luego podemos suponer que:</p>
 <div class="math notranslate nohighlight">
 \[
-J^S_3 = \alpha \gamma^1\gamma^2
+J^S_3 = \alpha i \gamma^1\gamma^2
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(\alpha\)</span> es de nuevo una constante.</p>
 <p>De la segunda condición, obtenemos:</p>
@@ -1803,51 +1794,38 @@ J^S_3 = \alpha \gamma^1\gamma^2
 <p>Obtenemos que:</p>
 <div class="math notranslate nohighlight">
 \[
-J^S_3 = \frac{1}{2} \gamma^1\gamma^2 \equiv \sigma^{12}
+J^S_3 = \frac{1}{2} i \gamma^1\gamma^2 
 \]</div>
-<p>donde hemos introducido la matriz <span class="math notranslate nohighlight">\(\sigma^{12}\)</span>. Notar que los índices son para identificar la matriz no los elementos de la matriz.</p>
-<p>Vamos a calcular explícitamente los generadores y las matrices <span class="math notranslate nohighlight">\(S\)</span> en la representación de Pauli-Dirac.</p>
+<p>Los generadores, <span class="math notranslate nohighlight">\(J_s, K_3\)</span> en la representación de Pauli-Dirac.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-K^S_3 = \sigma^{03} = \frac{1}{2}  \gamma^0 \gamma^3 = \frac{1}{2} \begin{pmatrix} I &amp; 0 \\ 0 &amp; - I \end{pmatrix} \begin{pmatrix} 0 &amp; \sigma_3 \\ -\sigma_3 &amp; 0 \end{pmatrix} = \frac{1}{2}
+K^S_3  = \frac{1}{2}  i \gamma^0 \gamma^3 = \frac{1}{2} i \begin{pmatrix} I &amp; 0 \\ 0 &amp; - I \end{pmatrix} \begin{pmatrix} 0 &amp; \sigma_3 \\ -\sigma_3 &amp; 0 \end{pmatrix} = \frac{1}{2} i 
 \begin{pmatrix} 0 &amp; \sigma_3 \\ \sigma_3 &amp; 0 \end{pmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-J^S_3 = \sigma^{12} = \frac{1}{2} \gamma^1\gamma^2 = \frac{1}{2} \begin{pmatrix} 0 &amp; \sigma_1  \\ -\sigma_1 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; \sigma_2  \\ -\sigma_2 &amp; 0 \end{pmatrix} = -i \frac{1}{2} \begin{pmatrix}  \sigma_3 &amp; 0  \\ 0 &amp;  \sigma_3 \end{pmatrix} =  -i \frac{1}{2}\Sigma_3
+J^S_3 = \frac{1}{2} i \gamma^1\gamma^2 = \frac{1}{2} i \begin{pmatrix} 0 &amp; \sigma_1  \\ -\sigma_1 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; \sigma_2  \\ -\sigma_2 &amp; 0 \end{pmatrix} =   \frac{1}{2} \begin{pmatrix}  \sigma_3 &amp; 0  \\ 0 &amp;  \sigma_3 \end{pmatrix} =  \frac{1}{2}\Sigma_3
 \end{split}\]</div>
 <p>De forma similar daríamos el resto de rotaciones y boost, obtenemos</p>
 <div class="math notranslate nohighlight">
 \[
-K^S_i = \frac{1}{2}\sigma^0\sigma^i, \;\; J^S_k = \epsilon_{ijk} \, \frac{1}{2} \gamma^i\gamma^k
+K^S_i = \frac{1}{2}i \sigma^0\sigma^i, \;\; J^S_k = \epsilon_{ijk} \, \frac{1}{2} i \gamma^i\gamma^k
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(i \lt j, \, i, j = 1, 2, 3\)</span>.</p>
 <p>De tal forma que recuperamos los generadores en <span class="math notranslate nohighlight">\(z\)</span> y podemos dar además los de <span class="math notranslate nohighlight">\(x, y\)</span>.</p>
-<p>El espín se define como:</p>
+<p>Vemos que el generador de las rotaciones en el espacio de los espinores es el <strong>espín</strong></p>
 <div class="math notranslate nohighlight">
 \[
 \text{\bf S } = \frac{1}{2} {\bf \Sigma}
 \]</div>
-<p>Tomando como generador de las rotaciones en el espacio espinorial el espín <span class="math notranslate nohighlight">\(\text{\bf S}\)</span>, la matriz de la representación de una rotación infinitesimal alrededor de <span class="math notranslate nohighlight">\(z\)</span> es:</p>
-<div class="math notranslate nohighlight">
-\[
-S(\theta) =  I + \theta J^S_3 = I -i \theta \frac{1}{2} {\bf \Sigma}_3 = I - i \theta \, \text{S}_3 
-\]</div>
-<p>De esta forma es habitual dar la representación</p>
-<div class="math notranslate nohighlight">
-\[
-H_i = \sigma^{0i}, \;\; \text{S}_k = \epsilon_{ijk} \, \sigma^{ij}
-\]</div>
-<p>donde <span class="math notranslate nohighlight">\(i \lt j, \, i, j = 1, 2, 3\)</span>.</p>
-<p>De tal forma que recuperamos los generadores en <span class="math notranslate nohighlight">\(z\)</span> y podemos dar además los de <span class="math notranslate nohighlight">\(x, y\)</span>.</p>
 </div>
-<div class="section" id="representaciones-de-boost-y-rotaciones">
-<h3>Representaciones de boost y rotaciones<a class="headerlink" href="#representaciones-de-boost-y-rotaciones" title="Permalink to this heading">#</a></h3>
+<div class="section" id="representaciones-espinoriales-de-boosts-y-rotaciones">
+<h3>Representaciones espinoriales de <em>boosts</em> y rotaciones.<a class="headerlink" href="#representaciones-espinoriales-de-boosts-y-rotaciones" title="Permalink to this heading">#</a></h3>
 <p>Calculemos ahora la representación espinorial, <span class="math notranslate nohighlight">\(S(\eta)\)</span>, de un boost <span class="math notranslate nohighlight">\(\eta\)</span> en <span class="math notranslate nohighlight">\(z\)</span></p>
 <p>Que obtendríamos de la sucesión de transformación infinitesimales, esto es:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-S(\eta) = e^{\frac{\eta}{2} \gamma^0\gamma^3} \equiv \sum_{k= 0}^\infty \frac{1}{k!} \left(\frac{\eta}{2} \right)^k \begin{pmatrix} 0 &amp; \sigma_3 \\ \sigma_3 &amp; 0 \end{pmatrix}^k 
+S(\eta) = e^{-i \eta K^S_3}  = e^{\frac{\eta}{2} \gamma^0\gamma^3} \equiv \sum_{k= 0}^\infty \frac{1}{k!} \left(\frac{\eta}{2} \right)^k \begin{pmatrix} 0 &amp; \sigma_3 \\ \sigma_3 &amp; 0 \end{pmatrix}^k 
 \end{split}\]</div>
 <p>Dado que</p>
 <div class="math notranslate nohighlight">
@@ -1879,7 +1857,7 @@ S(\eta)  = \begin{pmatrix} \cosh \frac{\eta}{2} I  &amp; \sinh \frac{\eta}{2} \s
 <p>Si introducimos que <span class="math notranslate nohighlight">\(E = \gamma m\)</span>, obtenemos las siguientes relaciones:</p>
 <div class="math notranslate nohighlight">
 \[
-\sqrt{\frac{\gamma+1}{2}} = \sqrt{\frac{E+m}{2m}}, \;\; \sqrt{\frac{\gamma-1}{\gamma+1}} = \sqrt{\frac{E-m}{E+m}} = \frac{\sqrt{E^2-m^2}}{E+m} = \frac{p}{E+m} \equiv \kappa
+\sqrt{\frac{\gamma+1}{2}} = \sqrt{\frac{E+m}{2m}}, \;\; \sqrt{\frac{\gamma-1}{\gamma+1}} = \sqrt{\frac{E-m}{E+m}} = \frac{\sqrt{E^2-m^2}}{E+m} = \frac{p}{E+m} = \kappa
 \]</div>
 <p>Asi pues, la matriz <span class="math notranslate nohighlight">\(S\)</span>, al hacer un boost en la dirección <span class="math notranslate nohighlight">\(z\)</span>, queda:</p>
 <div class="math notranslate nohighlight">
@@ -1898,12 +1876,12 @@ u_s(p) = \sqrt{\frac{E+m}{2m}} \begin{pmatrix} I &amp; \kappa \, \sigma_3 \\ \ka
 \, \sqrt{2m} \begin{pmatrix} \chi_s \\ 0 \end{pmatrix} =
 \sqrt{E+m} \begin{pmatrix} \chi_s \\ \kappa \sigma_3 \chi_s \end{pmatrix}
 \end{split}\]</div>
-<p>que es el espinor <span class="math notranslate nohighlight">\(u_s(p)\)</span> para un fermión en movimiento en la dirección <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>que es el espinor <span class="math notranslate nohighlight">\(u_s(p)\)</span> para un fermión en movimiento en la dirección <span class="math notranslate nohighlight">\(z\)</span>, que hemos obtenido al resolver en la sección anterior la ecuación de Dirac.</p>
 <p><em>Ejercicio:</em> Comprobar que <span class="math notranslate nohighlight">\(S(\eta)\)</span> cumple las condiciones de las matrices <span class="math notranslate nohighlight">\(S\)</span></p>
 <p>Por similitud, las matrices <span class="math notranslate nohighlight">\(S(\eta_i)\)</span> que representan a los boosts en las tres posibles direcciones, <span class="math notranslate nohighlight">\(\eta_i, \, i = 1, 2, 3\)</span>, son:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-S(\eta_i) = e^{\frac{\eta_i}{2} \gamma^0\gamma^i } = \begin{pmatrix} \cosh \frac{\eta_i}{2} I  &amp; \sinh \frac{\eta_i}{2} \sigma_i \\ \sinh \frac{\eta_i}{2} \sigma_i &amp; \cosh \frac{\eta_i}{2} I \end{pmatrix}
+S(\eta_i) = e^{-i \eta_i K^S_i } = e^{\frac{\eta_i}{2} \gamma^0\gamma^i } = \begin{pmatrix} \cosh \frac{\eta_i}{2} I  &amp; \sinh \frac{\eta_i}{2} \sigma_i \\ \sinh \frac{\eta_i}{2} \sigma_i &amp; \cosh \frac{\eta_i}{2} I \end{pmatrix}
 \end{split}\]</div>
 <p>Y si hacemos un boost con rapidez <span class="math notranslate nohighlight">\(\eta\)</span> en la dirección <span class="math notranslate nohighlight">\(\hat{{\bf v}}\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -1918,17 +1896,22 @@ S(\beta \hat{\bf v}) = \sqrt{\frac{E+m}{2m}} \begin{pmatrix} I &amp; \kappa \, (
 <p>Determinemos ahora las matrices <span class="math notranslate nohighlight">\(S(\theta)\)</span> asociadas a una rotación <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de <span class="math notranslate nohighlight">\(z\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-S(\theta) = e^{\frac{\theta}{2} \gamma^1\gamma^2} 
+S(\theta) = e^{-i \theta S_3} = e^{-i \frac{\theta}{2} \Sigma_3}
 \]</div>
-<p>Vemos que (en la representación Pauli-Dirac):</p>
+<p>En la representación Pauli-Dirac:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\gamma^1\gamma^2 = \begin{pmatrix} 0 &amp; \sigma_1  \\ -\sigma_1 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; \sigma_2  \\ -\sigma_2 &amp; 0 \end{pmatrix} = - i \begin{pmatrix}  \sigma_3 &amp; 0  \\ 0 &amp;  \sigma_3 \end{pmatrix} =  - i \Sigma_3
+\begin{pmatrix}  \sigma_3 &amp; 0  \\ 0 &amp;  \sigma_3 \end{pmatrix}
 \end{split}\]</div>
 <p>A partir de:</p>
 <div class="math notranslate nohighlight">
 \[
-S(\theta) = e^{-i \frac{\theta}{2} \Sigma_3} = \sum_{k=0} \frac{1}{k!} \left(-i \frac{\theta}{2} \right)^k  (\Sigma_3)^k:
+S(\theta) = e^{-i \frac{\theta}{2} \Sigma_3} = \sum_{k=0} \frac{1}{k!} \left(-i \frac{\theta}{2} \right)^k  (\Sigma_3)^k
+\]</div>
+<p>separando en términos pares e impares</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{k=0} (-1)^k \frac{1}{2k!}\left(\frac{\theta}{2}\right)^{2k} I - i \sum_{k=0} (-1)^k \frac{1}{(2k+1)!} \left(\frac{\theta}{2}\right)^{2k+1}  \Sigma_3 
 \]</div>
 <p>usando:
 $<span class="math notranslate nohighlight">\(
@@ -1937,14 +1920,13 @@ $<span class="math notranslate nohighlight">\(
 <p>obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
-\sum_{k=0} \frac{1}{2k!}\left(\frac{\theta}{2}\right)^{2k} i^{2k} I - \sum_{k=0} \frac{1}{(2k+1)!} \left(\frac{\theta}{2}\right)^{2k+1} i^{2k+1} \Sigma_3 = \cos \frac{\theta}{2} \, I - i \sin \frac{\theta}{2} \, \Sigma_3
+  \cos \frac{\theta}{2} \, I - i \sin \frac{\theta}{2} \, \Sigma_3
 \]</div>
 <p>Dado que también:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-e^{-i \frac{\theta}{2} \sigma_k} = \sum_{k=0} \frac{1}{k!}\left(- i \frac{\theta}{2} \right)^k (\sigma_k)^k = \\
-\sum_{k=0} \frac{1}{2k!} \left(\frac{\theta}{2} \right)^{2k} i^{2k} I  - \sum_{k=0} \frac{1}{(2k+1)!}\left(\frac{\theta}{2} \right)^{2k+1} i^{2k+1} \sigma_k = \cos \frac{\theta}{2} I - i \sin \frac{\theta}{2} \sigma_k 
-\end{split}\]</div>
+\[
+e^{-i \frac{\theta}{2} \sigma_k}  = \cos \frac{\theta}{2} I - i \sin \frac{\theta}{2} \sigma_k 
+\]</div>
 <p>Obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1953,33 +1935,19 @@ S(\theta) = \begin{pmatrix} \cos \frac{\theta}{2} I - i \sin \frac{\theta}{2} \s
 <p>Para el caso de las rotaciones de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de un eje coordenado <span class="math notranslate nohighlight">\(k\)</span>, las matrices son, con <span class="math notranslate nohighlight">\(i &lt;j, \, i,j = 1, 2, 3\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-S(\theta) = e^{\frac{\theta}{2} \epsilon_{ijk} \gamma^i\gamma^j} =  e^{-i\frac{\theta}{2} \Sigma_k} = \\
-\cos \frac{\theta}{2} \, I -i \sin \frac{\theta}{2} \, \gamma^i \gamma^j = 
+S(\theta) = e^{-i \theta S_k} = e^{-i \frac{\theta}{2} \Sigma_k} = \\  
 \cos \frac{\theta}{2} \, I -i \sin \frac{\theta}{2} \, \Sigma_k \\
 \end{split}\]</div>
+<p>O también:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{pmatrix} \cos \frac{\theta}{2}  I - i \sin \frac{\theta}{2} \sigma_k  &amp; 0 \\ 0 &amp;  \cos \frac{\theta}{2} I  - i \sin \frac{\theta}{2} \sigma_k\end{pmatrix} = 
 \begin{pmatrix} e^{-i\frac{\theta}{2} \sigma_k} &amp; 0 \\ 0 &amp; e^{-i\frac{\theta}{2} \sigma_k} \end{pmatrix} 
 \end{split}\]</div>
-<p>Donde</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\Sigma_k \equiv -i \epsilon_{ijk} \gamma^i \gamma^k = \begin{pmatrix} \sigma_k &amp; 0 \\ 0 &amp; \sigma_k \end{pmatrix}
-\end{split}\]</div>
-<p>con <span class="math notranslate nohighlight">\(i \lt j, \; i, j, k = 1, 2, 3\)</span>.</p>
 <p>Para una rotación de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de un eje dado por <span class="math notranslate nohighlight">\(\hat{{\bf n}}\)</span> en sentido anti-horario, la expresión de <span class="math notranslate nohighlight">\(S\)</span> es:</p>
 <div class="math notranslate nohighlight">
 \[
 S(\theta \, \hat{\bf n}) = e^{-i\frac{\theta}{2} \hat{\bf n} \, {\bf \Sigma}} = \cos \frac{\theta}{2} I - i \sin \frac{\theta}{2} (\hat{\bf n} \cdot {\bf \Sigma})  
 \]</div>
-<p>O también:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-S(\theta \, \hat{\bf n}) = 
-\begin{pmatrix} \cos \frac{\theta}{2}  I + i \sin \frac{\theta}{2} (\hat{{\bf n}}\cdot \vec{\sigma})  &amp; 0 \\ 0 &amp; 
-\cos \frac{\theta}{2}  I + i \sin \frac{\theta}{2} (\hat{{\bf n}}\cdot \vec{\sigma}) \end{pmatrix}
-\end{split}\]</div>
 <p>O simplemente:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} 
@@ -1988,28 +1956,17 @@ S(\theta \, \hat{\bf n})  = \begin{pmatrix} e^{-i\frac{\theta}{2} \, (\hat{{\bf 
 <p>Vemos que para <span class="math notranslate nohighlight">\(\theta = 2 \pi\)</span> tenemos <span class="math notranslate nohighlight">\(S(2\pi ) = -I\)</span>, y que hacen falta dos vueltas completas, <span class="math notranslate nohighlight">\(\theta = 4 \pi\)</span>, para regresar a la identidad <span class="math notranslate nohighlight">\(S(4\pi) = I\)</span>.</p>
 <p>¡La rotación de un espinor es diferente a la de un vector!</p>
 <p>También observamos que los dos bi-espinores del espinor de Dirac se transforman igual pero independientemente, sin afectar uno a otro.</p>
-<p>Finalmente, podemos redefinir generador de las rotaciones en el espacio espinorial como el espín:</p>
-<div class="math notranslate nohighlight">
-\[
-\text{\bf S} = \frac{1}{2} {\bf \Sigma}
-\]</div>
-<p>donde:</p>
-<div class="math notranslate nohighlight">
-\[
-\text{S}_k = \frac{1}{2} \Sigma_k = -i \epsilon_{ijk} \, \frac{1}{2} \gamma^i \gamma^j
-\]</div>
-<p>Así el espín es el generador de las rotaciones en el espacio espinorial.</p>
-<p>Que tiene las reglas de conmutación de momento angular:</p>
-<div class="math notranslate nohighlight">
-\[
-[\text{S}_i, \text{S}_j] = i \epsilon_{ijk} \text{S}_k
-\]</div>
 <p>Recopilemos: de forma genérica podemos dar ahora la representación <span class="math notranslate nohighlight">\(S\)</span> de una rotación <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de un eje <span class="math notranslate nohighlight">\(\hat{{\bf n}}\)</span> en sentido anti-horario y un boost de rapidez <span class="math notranslate nohighlight">\(\eta\)</span> en dirección <span class="math notranslate nohighlight">\(\hat{{\bf v}}\)</span> como:</p>
 <div class="math notranslate nohighlight">
 \[
 S(\theta \, \hat{{\bf n}}, \, \eta \hat{{\bf v}}) = e^{-i \theta \, \hat{{\bf n}} \cdot \text{\bf S} + \eta \, \hat{{\bf v}} \cdot {\bf K^S} }
 \]</div>
-<p><em>Ejercicio:</em> Rota el espinor en reposo <span class="math notranslate nohighlight">\(u_s(m)\)</span> respecto al eje <span class="math notranslate nohighlight">\(y\)</span> por un ángulo <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<p><em>Ejercicio:</em> A partir de las expresiones de los generadores en la representación Pauli-Dirac comprueba las reglas de conmutación:</p>
+<div class="math notranslate nohighlight">
+\[
+[S_i, S_j] =  i\epsilon_{ijk} S_k, \; [K^S_i, K^S_j] = -i\epsilon_{ijk} S_k, \; [S_i, K^S_j] = i\epsilon_{ijk} K^S_k
+\]</div>
+<p><em>Ejercicio:</em> Rota el espinor en reposo <span class="math notranslate nohighlight">\(u_s(m)\)</span> respecto al eje <span class="math notranslate nohighlight">\(y\)</span> por un ángulo <span class="math notranslate nohighlight">\(\theta\)</span>, y verfica que se trata del espinor cuyo espín entá alineado en la dirección donde queda el vector <span class="math notranslate nohighlight">\({\hat k}\)</span> tras la rotación.</p>
 <p><em>solución</em>:</p>
 <p>Sea el espinor en reposo <span class="math notranslate nohighlight">\(u_1(m)\)</span>, que corresponde al espín en dirección hacia arriba en <span class="math notranslate nohighlight">\(z\)</span>.</p>
 <p>La matriz de rotación que lo rote un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> alrededor del eje <span class="math notranslate nohighlight">\(y\)</span> es:</p>
@@ -2042,6 +1999,7 @@ S(\theta) = \begin{pmatrix} \cos \frac{\theta}{2} - i \sigma_2 \sin \frac{\theta
 \[
 S^{-1} = S^\dagger, \;\; S^\dagger \, S = I
 \]</div>
+<p><em>Nota:</em> recordar que la unitariedad es una propiedad fundamental en mecánica cuántica, que nos asegura que un estado transformado mantiene la norma, y que exige de la transformación <span class="math notranslate nohighlight">\(U\)</span> debe ser unitaria y cumplir <span class="math notranslate nohighlight">\(U^\dagger U = I\)</span>.</p>
 <p>Véamoslo con la expresión infinitesimal, (aunque puede verse igualmente con la expresión explícita <span class="math notranslate nohighlight">\(S(\eta)\)</span>).</p>
 <p>La transformación inversa es <span class="math notranslate nohighlight">\(S^{-1}(\eta) =  S(-\eta)\)</span>, que viene de exigir que al hacer la transformación inversa obtenemos la identidad, lo que para la representación se traduce</p>
 <div class="math notranslate nohighlight">
@@ -2060,7 +2018,7 @@ I + \frac{\eta}{2} (-\gamma^1)(\gamma^0) = I + \frac{1}{2} (\gamma^0\gamma^i) = 
 \[
  S^{-1}(\eta) \neq S^\dagger(\eta)
 \]</div>
-<p>Esto tendrá consecuencias relevantes cuando más tarde, porque el término <span class="math notranslate nohighlight">\(\Psi^\dagger(x) \Psi(x)\)</span>, no será un invariante Lorentz.</p>
+<p>Esto tendrá consecuencias relevantes cuando más tarde, cuando veamos que el término <span class="math notranslate nohighlight">\(\Psi^\dagger(x) \Psi(x)\)</span>, no es un invariante Lorentz.</p>
 <p>Sin embargo, para rotaciones:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2082,9 +2040,9 @@ S^\dagger(\theta) = I + \frac{\theta}{2} (\gamma^1\gamma^2)^\dagger =
 <div class="math notranslate nohighlight">
 \[\begin{split}
 S^{-1}\gamma^0 S = \gamma^0, \;\; \gamma^0 S = S \gamma^0, \\
-S^{-1}\gamma^1 S = \gamma^1, \;\;  \gamma^1 S = -S \gamma^1,\\
-S^{-1}\gamma^2 S = \gamma^2, \;\;  \gamma^2 S = -S \gamma^2,\\
-S^{-1}\gamma^3 S = \gamma^3, \;\;  \gamma^3 S = -S \gamma^3\\
+S^{-1}\gamma^1 S = -\gamma^1, \;\;  \gamma^1 S = -S \gamma^1,\\
+S^{-1}\gamma^2 S = -\gamma^2, \;\;  \gamma^2 S = -S \gamma^2,\\
+S^{-1}\gamma^3 S = -\gamma^3, \;\;  \gamma^3 S = -S \gamma^3\\
 \end{split}\]</div>
 <p>Esto es:</p>
 <div class="math notranslate nohighlight">
@@ -2100,21 +2058,22 @@ S(P) = \gamma^{0}
 <p>Si aplicamos paridad sobre los espinores nos encontramos:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-S(P) \, u_s(E, -{\bf p}) = + \, u_s(E, {\bf p}), \\ S(P) \, v_s(E, -{\bf p}) = - \, v_s(E, {\bf p}), \;\;
+u_s(E, {\bf p}) \to S(P) \, u_s(E, -{\bf p}) = + \, u_s(E, {\bf p}), \\
+v_s(E, {\bf p}) \to S(P) \, v_s(E, -{\bf p}) = - \, v_s(E, {\bf p}), \;\;
 \end{split}\]</div>
 <p>Los espinores son autoestados de paridad, los de los fermiones, <span class="math notranslate nohighlight">\(u_s(p)\)</span>, tienen paridad positiva, mientras que los de los antifermiones <span class="math notranslate nohighlight">\(v_s(p)\)</span>, negativa.</p>
-<p><em>Ejercio</em> Comprobar que la operación de paridad transforma los espinores <span class="math notranslate nohighlight">\(u_+ \to u_-\)</span>.</p>
+<p><em>Ejercio</em> Comprobar que la operación de paridad transforma los espinores <span class="math notranslate nohighlight">\(u_+(p) \to u_-(p)\)</span>.</p>
 <div class="section" id="inversion-bajo-carga">
 <h4>Inversión bajo Carga<a class="headerlink" href="#inversion-bajo-carga" title="Permalink to this heading">#</a></h4>
-<p>La operación de inversión de carga debe cambiar las soluciones de Dirac, de fermiones a anti-fermiones, <span class="math notranslate nohighlight">\(\Psi(x) \to \Phi(x)\)</span>.</p>
+<p>La operación de inversión de carga debe cambiar las soluciones de Dirac de fermiones a anti-fermiones, <span class="math notranslate nohighlight">\(\Psi(x) \to \Phi(x)\)</span>.</p>
 <p>Para cambiar la parte espacio-temporal, la operación debe incluir el complejo conjugado.</p>
 <p>La operación de carga debe tener la expresión:</p>
 <div class="math notranslate nohighlight">
 \[
-\Psi(x) \to S(C) \, \Psi^*
+\Psi(x) \to S(C) \, \Psi^*(x)
 \]</div>
 <p>Donde <span class="math notranslate nohighlight">\(S(C)\)</span> es la matriz que representa la inversión de carga en el espacio espinorial.</p>
-<p>Si exigimos que la ecuación de Dirac sea válida para <span class="math notranslate nohighlight">\(S \, \Psi^*\)</span>:</p>
+<p>Si exigimos que la ecuación de Dirac sea válida para <span class="math notranslate nohighlight">\(S \, \Psi^*(x)\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 (i \gamma^{\mu} S \partial_\mu - m) \,S \, \Psi^*(x) = 0
@@ -2168,6 +2127,7 @@ i \gamma^2 = i \begin{pmatrix} 0 &amp;  0 &amp;  0 &amp;  -i \\
 \[
 \left[\gamma^\mu (i\partial_\mu - q A_\mu) - m \right] \, \Psi(x) = 0
 \]</div>
+<p>Vamos a transformar las soluciones de fermiones en las de antifermiones y ver cómo queda la interacción con el campo <span class="math notranslate nohighlight">\(A_\mu\)</span>.</p>
 <p>Si tomamos el complejo conjugado y multiplicamos por <span class="math notranslate nohighlight">\(i\gamma^2\)</span> por la izquierda:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2179,7 +2139,8 @@ i\gamma^2 \left[-i (\gamma^\mu)^* \partial_\mu - q (\gamma^\mu)^* A_\mu - m \rig
 \left[i \gamma^\mu \partial_\mu + q \gamma^\mu A_\mu -m \right] \, i \gamma^2 \Psi^*(x) = 0 \\
 \left[\gamma^\mu (i\partial_\mu + q A_\mu) - m \right] \, i \gamma^2 \Psi^*(x) = 0
 \end{split}\]</div>
-<p>Esto es la solución <span class="math notranslate nohighlight">\(\Phi(x) = i \gamma^2 \Psi^*(x)\)</span> tiene carga opuesta: en la ecuación de Dirac ha cambiado <span class="math notranslate nohighlight">\(-q \to q\)</span></p>
+<p>Luego al intercambiar las gammas en <span class="math notranslate nohighlight">\(\gamma^2(\gamma^\mu)^*\)</span>, el factor que se acopla con <span class="math notranslate nohighlight">\(A_\mu\)</span>, se produce un cambio de signo.</p>
+<p>Esto es la solución <span class="math notranslate nohighlight">\(\Phi(x) = i \gamma^2 \Psi^*(x)\)</span> tiene carga opuesta: en la ecuación de Dirac ha cambiado <span class="math notranslate nohighlight">\(-q \to q\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
 \left[i\gamma^\mu(i\partial_\mu + q A_\mu) -m \right] \Phi(x) = 0
@@ -2196,7 +2157,7 @@ i\gamma^2 \left[-i (\gamma^\mu)^* \partial_\mu - q (\gamma^\mu)^* A_\mu - m \rig
 \bar{\Psi}(x) = \Psi^\dagger(x) \, \gamma^0
 \]</div>
 <p>Veremos que la presencia de <span class="math notranslate nohighlight">\(\gamma^0\)</span> hace que la forma <span class="math notranslate nohighlight">\(\bar{\Psi}(x)\Psi(x)\)</span> sea un escalar Lorentz, y <span class="math notranslate nohighlight">\(\bar{\Psi}(x) \gamma^\mu \Psi(x)\)</span> la corriente de probabilidad.</p>
-<p>También estudiaremos otras formas bilineales (donde aparecen contraidos <span class="math notranslate nohighlight">\(\bar{\Psi}()\)</span> y <span class="math notranslate nohighlight">\(\Psi(x)\)</span>); y cómo se comportan con respecto a las transformaciones de Lorentz, en especial con la inversión por paridad.</p>
+<p>También estudiaremos otras formas bilineales (donde aparecen contraidos <span class="math notranslate nohighlight">\(\bar{\Psi}(x)\)</span> y <span class="math notranslate nohighlight">\(\Psi(x)\)</span>, y cómo se comportan con respecto a las transformaciones de Lorentz, en especial con la inversión por paridad.</p>
 <div class="section" id="el-espinor-de-dirac-adjunto">
 <h3>El espinor de Dirac adjunto<a class="headerlink" href="#el-espinor-de-dirac-adjunto" title="Permalink to this heading">#</a></h3>
 <p>El término</p>
@@ -2218,7 +2179,7 @@ S^{-1}(\eta) = S(-\eta) \neq S(\eta)^\dagger
 \Psi^\dagger(y) S^{\dagger}(\eta) S(\eta) \Psi(y) \neq \Psi^\dagger(y) \Psi(y)
 \end{split}\]</div>
 <p>con <span class="math notranslate nohighlight">\(y = \Lambda^{-1} x\)</span>, no es invariante Lorentz.</p>
-<p>El término <span class="math notranslate nohighlight">\(\Psi^\dagger(x)\Psi(x)\)</span> será no obstante la densidad de probabilidad de la corriente (un cadrivector) de probabilidad.</p>
+<p>El término <span class="math notranslate nohighlight">\(\Psi^\dagger(x)\Psi(x)\)</span> será no obstante la densidad de probabilidad de la corriente (el elemento 0 de un cuadri-vector) de probabilidad.</p>
 <p>Para definir la corriente de probabilidad introducimos el espinor adjunto:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2684,6 +2645,13 @@ v_L(p) =  P_R v_-(p) = \sqrt{E} \begin{pmatrix} 1 \\ 0 \\ 1  \\  0 \end{pmatrix}
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="ext-cinematica.html" title="anterior página">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title">Apéndice A : Cinemática</p>
+        </div>
+    </a>
 </div>
             </footer>
         </div>
