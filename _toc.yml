@@ -10,8 +10,10 @@ chapters:
   - file: notebooks/leptones.ipynb
   - file: notebooks/quarks_hadrons.ipynb
   - file: notebooks/sm.ipynb
+#- caption: Fundamentos
   - file: notebooks/ext-cinematica.ipynb
   - file: notebooks/ext-dirac.ipynb
+  - file: notebooks/ext-sm.ipynb
 #  chapters:
 #  - file: notebooks/tcalvec_integral_linea.ipynb
 #- caption: Hadrones
