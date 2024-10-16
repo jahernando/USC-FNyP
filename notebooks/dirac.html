@@ -1,0 +1,1898 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dirac solutions a &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduccion.html">
+   Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observables.html">
+   Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="leptones.html">
+   Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quarks_hadrons.html">
+   Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sm.html">
+   Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-cinematica.html">
+   Apéndice A : Cinemática
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-dirac.html">
+   Apéndice B : Ecuación de Dirac
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-sm.html">
+   Fundamentos del Modelo Estándar
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/dirac.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/dirac.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/dirac.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#los-elementos-del-sm">
+   Los elementos del SM
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hitos-de-la-creaccion-del-sm">
+     Hitos de la creacción del SM
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#corrientes-neutras-el-boson-z-0">
+   Corrientes neutras, el bosón
+   <span class="math notranslate nohighlight">
+    \(Z^0\)
+   </span>
+   .
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-descubrimiento-de-las-corrientes-neutras">
+     El descubrimiento de las corrientes neutras
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#isoespin-debil">
+     Isoespín débil
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#las-corrientes-y-el-vertice">
+     Las corrientes y el vértice
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#electromagnetimo">
+       Electromagnetimo
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#las-corrientes-cargadas">
+       Las corrientes cargadas
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#la-unificacion-electrodebil">
+       La unificación electrodébil
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#las-corrientes-neutras">
+       Las corrientes neutras
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aniquilacion-a-muones-e-e-to-mu-mu-y-la-asimetria-adelante-y-atras">
+     Aniquilación a muones,
+     <span class="math notranslate nohighlight">
+      \(e+e^+ \to \mu+\mu^+\)
+     </span>
+     y la asimetría adelante y atrás.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#anchura-de-desintegracion-del-z">
+     Anchura de desintegración del
+     <span class="math notranslate nohighlight">
+      \(Z\)
+     </span>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#anchura-de-desintegracion-parcial">
+       Anchura de desintegración parcial
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seccion-eficaz">
+     Sección eficaz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tres-familias-de-neutrinos">
+     Tres familias de neutrinos
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-boson-de-higgs">
+   El bosón de Higgs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#como-el-higgs-otorga-la-masa-a-fermiones-y-bosones">
+     Cómo el higgs otorga la masa a fermiones y bosones.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#fermiones">
+       Fermiones
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bosones">
+       Bosones
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-campo-del-boson-de-higgs">
+     El campo del bosón de Higgs
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#las-masas">
+       Las masas
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#la-desintegraciones-del-boson-de-higgs">
+       la desintegraciones del bosón de Higgs
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descubrimiento-del-boson-de-higgs">
+     Descubrimiento del bosón de Higgs
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#el-descubrimiento-del-higgs-en-atlas-y-cms">
+       El descubrimiento del Higgs en ATLAS y CMS
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusions">
+   Conclusions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cuestiones-abiertas">
+     cuestiones abiertas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Dirac solutions a</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#los-elementos-del-sm">
+   Los elementos del SM
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hitos-de-la-creaccion-del-sm">
+     Hitos de la creacción del SM
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#corrientes-neutras-el-boson-z-0">
+   Corrientes neutras, el bosón
+   <span class="math notranslate nohighlight">
+    \(Z^0\)
+   </span>
+   .
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-descubrimiento-de-las-corrientes-neutras">
+     El descubrimiento de las corrientes neutras
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#isoespin-debil">
+     Isoespín débil
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#las-corrientes-y-el-vertice">
+     Las corrientes y el vértice
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#electromagnetimo">
+       Electromagnetimo
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#las-corrientes-cargadas">
+       Las corrientes cargadas
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#la-unificacion-electrodebil">
+       La unificación electrodébil
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#las-corrientes-neutras">
+       Las corrientes neutras
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aniquilacion-a-muones-e-e-to-mu-mu-y-la-asimetria-adelante-y-atras">
+     Aniquilación a muones,
+     <span class="math notranslate nohighlight">
+      \(e+e^+ \to \mu+\mu^+\)
+     </span>
+     y la asimetría adelante y atrás.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#anchura-de-desintegracion-del-z">
+     Anchura de desintegración del
+     <span class="math notranslate nohighlight">
+      \(Z\)
+     </span>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#anchura-de-desintegracion-parcial">
+       Anchura de desintegración parcial
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seccion-eficaz">
+     Sección eficaz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tres-familias-de-neutrinos">
+     Tres familias de neutrinos
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-boson-de-higgs">
+   El bosón de Higgs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#como-el-higgs-otorga-la-masa-a-fermiones-y-bosones">
+     Cómo el higgs otorga la masa a fermiones y bosones.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#fermiones">
+       Fermiones
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bosones">
+       Bosones
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-campo-del-boson-de-higgs">
+     El campo del bosón de Higgs
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#las-masas">
+       Las masas
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#la-desintegraciones-del-boson-de-higgs">
+       la desintegraciones del bosón de Higgs
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descubrimiento-del-boson-de-higgs">
+     Descubrimiento del bosón de Higgs
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#el-descubrimiento-del-higgs-en-atlas-y-cms">
+       El descubrimiento del Higgs en ATLAS y CMS
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusions">
+   Conclusions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cuestiones-abiertas">
+     cuestiones abiertas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="dirac-solutions-a">
+<h1>Dirac solutions a<a class="headerlink" href="#dirac-solutions-a" title="Permalink to this heading">#</a></h1>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Noviembre 2023</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Jan 17 16:42:33 2024
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>[] return gamma matrices
+[] return Dirac solutions
+[] specific operations: parity, conjungation, chirality, helicity</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gammas</span><span class="p">():</span>
+    <span class="n">gammas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">complex</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">matrices_pauli</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; Return the Pauli matrices</span>
+<span class="sd">    &quot;&quot;&quot;</span> 
+    <span class="n">s1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">s2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="n">j</span><span class="p">],[</span><span class="mi">1</span><span class="n">j</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">s3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+    <span class="n">sigma</span> <span class="o">=</span> <span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">s3</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">sigma</span>
+
+<span class="k">def</span> <span class="nf">identity</span><span class="p">(</span><span class="n">ndim</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">iden</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">ndim</span><span class="p">,</span> <span class="n">ndim</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ndim</span><span class="p">):</span> <span class="n">iden</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.</span>
+    <span class="k">return</span> <span class="n">iden</span>
+
+<span class="k">def</span> <span class="nf">gammas_pauli_dirac</span><span class="p">():</span>
+    <span class="n">sigma</span>  <span class="o">=</span> <span class="n">matrices_pauli</span><span class="p">()</span>
+    <span class="n">iden2</span>  <span class="o">=</span> <span class="n">identity</span><span class="p">()</span>   
+    <span class="n">gamma0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">)</span>
+    <span class="n">gamma0</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">iden2</span><span class="p">;</span> <span class="n">gamma0</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.</span><span class="o">*</span><span class="n">iden2</span> 
+    <span class="n">gammas</span> <span class="o">=</span> <span class="p">[</span><span class="n">gamma0</span><span class="p">,</span> <span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="n">gammai</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">)</span>
+        <span class="n">gammai</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.</span><span class="o">*</span><span class="n">sigma</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">gammai</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">gammas</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="los-elementos-del-sm">
+<h2>Los elementos del SM<a class="headerlink" href="#los-elementos-del-sm" title="Permalink to this heading">#</a></h2>
+<p>Varios son los elementos que modelan el SM:</p>
+<ul class="simple">
+<li><p>La <strong>unificación electrodébil</strong> previene que la seccioón eficaz <span class="math notranslate nohighlight">\(e+e^+ \to W^+ + W^-\)</span> ¡crezca infinitimente!</p></li>
+<li><p>El <strong>mecanismo de Higgs y la rotura espontánea de simetría</strong> dotan de masas a los bosones <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y a los firmiones.</p></li>
+<li><p>Las teorías deben prservar <strong>la simetría gauge local</strong> para ser renormalizables (y evitar que en los cálculos de las amplitudes aparezcan infinitos)</p></li>
+</ul>
+<div class="section" id="hitos-de-la-creaccion-del-sm">
+<h3>Hitos de la creacción del SM<a class="headerlink" href="#hitos-de-la-creaccion-del-sm" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>1964 Teoría del bosón de Higgs, Englert, Brout.</p></li>
+<li><p>1961-1964-1967 Teoría electrodébil de S. Glashow, A. Salam and S. Weinberg.</p></li>
+<li><p>1973 Descubrimiento de las corrientes neutras en Gargamelle (CERN)</p></li>
+<li><p>1973 G.”t Hooft et al, renormalización de la teoría gauge.</p></li>
+<li><p>1983 Rubbia et al, descubrimiento de los bosones <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> en el CERN.</p></li>
+<li><p>1990’s Los experimentos del CERN confirman el SM, la física del Z y la existencia de tres familias de neutrinos.</p></li>
+<li><p>2014 Descubrimiento del Higgs en los experimmentos ATLAS y CMS del LHC.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="corrientes-neutras-el-boson-z-0">
+<h2>Corrientes neutras, el bosón <span class="math notranslate nohighlight">\(Z^0\)</span>.<a class="headerlink" href="#corrientes-neutras-el-boson-z-0" title="Permalink to this heading">#</a></h2>
+<p>La interacción <span class="math notranslate nohighlight">\(e^+ + e \to W^+ + W^-\)</span>, mediada por un fotón, presentaba un problema: crecía indefinidamente con la energía, a no ser que existía un bosón neutro, el <span class="math notranslate nohighlight">\(Z^0\)</span>, que mediase en un nuevo diagrama de Feynman que a su vez interfiriese negativamente con el fotón moderando así la sección eficaz.</p>
+<p>Esto bosón implicaba también la existencia de <strong>corrientes débiles neutras</strong>, en particular que un haz de nuetrinos podría interaccionar neutramente con otras partículas, el neutrino se dispersaría, y si el neutrino tuviese la sufienciente energía podría romper un nucleón.</p>
+<p>Las corrientes neutras son del tipo: (todo diagramas dispersión y aniquilación!)</p>
+<div class="section" id="el-descubrimiento-de-las-corrientes-neutras">
+<h3>El descubrimiento de las corrientes neutras<a class="headerlink" href="#el-descubrimiento-de-las-corrientes-neutras" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://home.cern/science/experiments/gargamelle">Gargamelle</a>, en el CERN, en los 70’s, fue el experimento que observó las corrientes neutras. Mediante un haz estaba compuesto principalmente por <span class="math notranslate nohighlight">\(\nu_\mu\)</span>.</p>
+<p>Las corrientes cargadas de neutrinos con los nucleones producían un <span class="math notranslate nohighlight">\(\mu\)</span>, una partícula altamente penetrante.</p>
+<div class="math notranslate nohighlight">
+\[
+\nu_\mu + N \to \mu + X
+\]</div>
+<p>Mientras que las corrientes neutras se esperaba que el neutrino escapase indetectado pero dejase trazas debidas a la ruptura de nucleón.</p>
+<div class="math notranslate nohighlight">
+\[
+\nu_\mu + N \to \nu_\mu + X
+\]</div>
+<p>Gargamel era una gran cámara de burbujas, en un campo magnético, donde se tomaban fotografías pautadas con la llegada del haz de neutrinos</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_gargamelle_event.jpeg"><img alt="../_images/sm_gargamelle_event.jpeg" class="align-center" src="../_images/sm_gargamelle_event.jpeg" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Evento de corriente neutra observado en <a class="reference external" href="https://en.wikipedia.org/wiki/Gargamelle">Gargamelle</a> [CERN]</p></td>
+</tr>
+</tbody>
+</table>
+<p>¡El neutrino interacciona con un nucleón sin producir su leptón asociado!</p>
+<p>Las corrientes neutras observadas en Gargamelle estaban de acuerdo con la teoría de unificación electrodébil desarrollada unos años antes.</p>
+</div>
+<div class="section" id="isoespin-debil">
+<h3>Isoespín débil<a class="headerlink" href="#isoespin-debil" title="Permalink to this heading">#</a></h3>
+<p>Recordemos que en las corrientes cargadas solo intervienen espinores a izquierdas de los fermiones (y de derechas de los antifermiones).</p>
+<p>Y que las corrientes cargadas tiene lugar en parejas (i.e <span class="math notranslate nohighlight">\(\nu_e\)</span>, e)</p>
+<p>Para representar esta realidad, el SM introduce el grupo de simetría SU(2)<span class="math notranslate nohighlight">\(_L\)</span>, donde <span class="math notranslate nohighlight">\(L\)</span> es por quiralidad a izquierdas, asociado al isoespín debil.</p>
+<p>Cada pareja de fermiones a izquierdas, Por ejemplo el <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(s\)</span> formarán un dublete de isopín débil, con tercera componente <span class="math notranslate nohighlight">\(\pm 1/2\)</span> respectivamente, mientras que el electrón un singlete a derechas. Sea <span class="math notranslate nohighlight">\(u^{(q)_L}(p)\)</span> es espinor de Dirac a izquierdas del fermión <span class="math notranslate nohighlight">\(q = \nu_e, e\)</span> con cuadrimomento <span class="math notranslate nohighlight">\(p\)</span> se denota habitualmente de forma «compacta»:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \nu_{eL} \\ 0 \end{pmatrix} \equiv \chi^\uparrow_W u^{(\nu_e)}_L(p) = \begin{pmatrix} 1 \\ 0 \end{pmatrix}_W u^{(\nu_e)}_L(p)
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} 0 \\ e _L\end{pmatrix} \equiv \chi^\downarrow_W u^{(e)}_L(p) = \begin{pmatrix} 0 \\ 1 \end{pmatrix}_W u^{(e)}_L(p) 
+\end{split}\]</div>
+<p>E introducimos los espinores a derechas:</p>
+<div class="math notranslate nohighlight">
+\[
+e_R \equiv u^{(e)}_R(p)
+\]</div>
+<p>Notar que el neutrino no tiene componente a derechas</p>
+<p>Para cada una de las generaciones obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \nu_{eL} \\ e_L \end{pmatrix}, \, e_R; \;\;\;  
+\begin{pmatrix} u_L \\ d'_L \end{pmatrix}, \, u_R, d'_R. 
+\end{split}\]</div>
+<p>Por ejemplo, para el <span class="math notranslate nohighlight">\(\nu_{eL}\)</span>, la tercera componente de isospín débil viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\tau^3_W \begin{pmatrix} \nu_{eL} \\ 0 \end{pmatrix} = \frac{1}{2} 
+\begin{pmatrix} 1 &amp; 0 \\ 0  &amp; -1 \end{pmatrix}
+\begin{pmatrix} \nu_{eL} \\ 0 \end{pmatrix} = 
++ \frac{1}{2} \begin{pmatrix} \nu_{eL} \\ 0 \end{pmatrix}
+\end{split}\]</div>
+</div>
+<div class="section" id="las-corrientes-y-el-vertice">
+<h3>Las corrientes y el vértice<a class="headerlink" href="#las-corrientes-y-el-vertice" title="Permalink to this heading">#</a></h3>
+<div class="section" id="electromagnetimo">
+<h4>Electromagnetimo<a class="headerlink" href="#electromagnetimo" title="Permalink to this heading">#</a></h4>
+<p>Las corrientes electromagnéticas no cambian la carga, ni el sabor y conservan paridad.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_emcur.png"><img alt="../_images/sm_emcur.png" class="align-center" src="../_images/sm_emcur.png" style="width: 250px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Corriente electromagnética</p></td>
+</tr>
+</tbody>
+</table>
+<p>En el vértice con un fotón, introducimos (en la reglas de Feynman) la constante de acoplo <span class="math notranslate nohighlight">\(e\)</span> y la carga, <span class="math notranslate nohighlight">\(Q\)</span> del fermión:</p>
+<div class="math notranslate nohighlight">
+\[
+A: \;\;\; Q e \, \bar{u} \gamma^\mu u = Q e \, \left( \bar{u}_L \gamma^\mu u_L + \bar{u}_R \gamma^\mu u_R \right)
+\]</div>
+</div>
+<div class="section" id="las-corrientes-cargadas">
+<h4>Las corrientes cargadas<a class="headerlink" href="#las-corrientes-cargadas" title="Permalink to this heading">#</a></h4>
+<p>Las corrientes cargadas acoplan dos fermiones a izquierdas en un duplete de isospín débil con un acoplo <span class="math notranslate nohighlight">\(g_W/\sqrt{2}\)</span>.
+Y en el vértice introducimos las matrices de subida o bajada de isospín débil, <span class="math notranslate nohighlight">\(\sigma^\pm_W = \frac{1}{2}(\sigma^1_W \pm i \sigma^2_W)\)</span></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_wcur.png"><img alt="../_images/sm_wcur.png" class="align-center" src="../_images/sm_wcur.png" style="width: 350px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Corriente cargada</p></td>
+</tr>
+</tbody>
+</table>
+<p>Por ejemplo la corriente cargada de <span class="math notranslate nohighlight">\(e \to \nu_e\)</span> con <span class="math notranslate nohighlight">\(W^+\)</span> como portador quedaría:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{g_W}{\sqrt{2}} \bar{u}^{(\nu_e)}_L \gamma^\mu u^{(e)}_L  = 
+\frac{g_W}{\sqrt{2}} \begin{pmatrix}\bar{u}^{(\nu_e)}_L, &amp; 0 \end{pmatrix} \gamma^\mu  \sigma^+_W 
+\begin{pmatrix} 0 \\ u^{(e)}_L\end{pmatrix} = \\ \frac{g_W}{\sqrt{2}} \bar{u}^{(\nu_e)} \left[ (\chi^\uparrow)_W^\dagger \sigma^+_W \chi^\downarrow_W \right] \left[ \, \frac{1}{2} \gamma^\mu (I - \gamma^5) \right] u^{(e)} = \frac{g_W}{\sqrt{2}} \bar{u}^{(\nu_e)} \left[ \gamma^\mu \frac{1}{2}(I - \gamma^5) \right] u^{(e)}
+\end{split}\]</div>
+<p>donde hemos omitido el momento <span class="math notranslate nohighlight">\(p_e, p_{\nu_e}\)</span> de los espinores, <span class="math notranslate nohighlight">\(u^{(e, {\nu_e})}\)</span>.</p>
+<p>De otra forma podemos decir del vértice de las corrientes cargadas tiene tres factores:</p>
+<ul class="simple">
+<li><p>la constante de acoplo <span class="math notranslate nohighlight">\(g_W/\sqrt{2}\)</span></p></li>
+<li><p>la proyeciuón de quiralidad a izquierdas  <span class="math notranslate nohighlight">\(\frac{1}{2} (I-\gamma^5)\)</span>.</p></li>
+<li><p>la matriz de subida o bajada de tercera componente de isospín, <span class="math notranslate nohighlight">\(\sigma^\pm_W\)</span>, que medialos estados de los dupletes de isospín débil.</p></li>
+</ul>
+<p>Habitualmente se ignora la matriz <span class="math notranslate nohighlight">\(\sigma^+_W\)</span> en el vértice y simplemente se crean las corrientes con los espinoresde arriba y abajo del duplete.</p>
+</div>
+<div class="section" id="la-unificacion-electrodebil">
+<h4>La unificación electrodébil<a class="headerlink" href="#la-unificacion-electrodebil" title="Permalink to this heading">#</a></h4>
+<p>El SM establece la unificación entre fuerza electromagnética y débil.</p>
+<p>Ambos procesos, electromagnetismo y débil, están ligados.  El parámetro que determina su «mezcla» es el <strong>ángulo de Weinberg</strong>, <span class="math notranslate nohighlight">\(\sin \theta_W\)</span>.</p>
+<p>La intensidad de los acoplos entre las interacciones electromagnética <span class="math notranslate nohighlight">\(e\)</span>, débil cargada, <span class="math notranslate nohighlight">\(g_W\)</span>, y débil neutra, <span class="math notranslate nohighlight">\(g_Z\)</span>, viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[
+e = g_W \sin \theta_W = g_Z \sin \theta_W \cos \theta_W
+\]</div>
+<p>Le valor <span class="math notranslate nohighlight">\(\theta_W \simeq 33^o\)</span>, se ha determinado experimentalmente en varios procesos físicos, (ver después):</p>
+<div class="math notranslate nohighlight">
+\[
+\sin^2 \theta_W = 0.23146 \pm 0.000012
+\]</div>
+<p>Eso es, determinamos <span class="math notranslate nohighlight">\(g_W, g_Z\)</span> a partir de la carga del electron <span class="math notranslate nohighlight">\(e\)</span> (o de la constante de estructura fina <span class="math notranslate nohighlight">\(\alpha\)</span>) y del ángulo de Weinberg <span class="math notranslate nohighlight">\(\theta_W\)</span>.</p>
+</div>
+<div class="section" id="las-corrientes-neutras">
+<h4>Las corrientes neutras<a class="headerlink" href="#las-corrientes-neutras" title="Permalink to this heading">#</a></h4>
+<p>Las interacciones con el <span class="math notranslate nohighlight">\(Z\)</span> no cambian el sabor de la partícula, ni tampoco su carga eléctrica, ni su tercerca componente de isoespín débil.</p>
+<p>Pero cambia de forma no trivial la paridad, porque el bosón <span class="math notranslate nohighlight">\(Z\)</span> tiene un acoplo diferente para la quiralidad de izquierdas y de derechas, dependiendo del fermión.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_zcur.png"><img alt="../_images/sm_zcur.png" class="align-center" src="../_images/sm_zcur.png" style="width: 350px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Corriente neutra</p></td>
+</tr>
+</tbody>
+</table>
+<p>La corriente neutra con el bosón <span class="math notranslate nohighlight">\(Z\)</span> tiene la forma:</p>
+<div class="math notranslate nohighlight">
+\[
+g_Z \left( c_L \, \bar{u}_L \gamma^\mu \bar{u}_L + c_R \, \bar{u}_R \gamma^\mu \bar{u}_R \right) 
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(g_Z\)</span> es la constante de acoplo del <span class="math notranslate nohighlight">\(Z\)</span> y <span class="math notranslate nohighlight">\(c_L, c_R\)</span> los factores asociados a la parte de quiralidad del fermión.</p>
+<p>El modelo estándard establece los coeficientes de acoplo del vértice con el <span class="math notranslate nohighlight">\(Z\)</span>:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(c_L\)</span> —</p></th>
+<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(c_R\)</span>  —</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(I^3_W - Q \sin^2 \theta_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-Q \sin^2 \theta_W\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Donde <span class="math notranslate nohighlight">\(Q\)</span> es la carga en unidades de electrón <span class="math notranslate nohighlight">\(e\)</span>, y <span class="math notranslate nohighlight">\(I^3_W\)</span> es la tercerca componente de isospín débil</p>
+<p>Por ejemplo para el <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(e\)</span></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(c_L\)</span> —</p></th>
+<th class="text-align:center head"><p>— <span class="math notranslate nohighlight">\(c_R\)</span>  —</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\nu_e\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(e\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-1/2 +s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(s^2_W\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Donde <span class="math notranslate nohighlight">\(s_W \equiv \sin \theta_W\)</span></p>
+<p>la corriente neutra del neutrino con el <span class="math notranslate nohighlight">\(Z\)</span> será:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{g_Z}{2} \bar{u}^{(\nu_e)}_L \gamma^\mu u^{(\nu_e)}_L 
+\]</div>
+<p>Mientras que la del electrón:</p>
+<div class="math notranslate nohighlight">
+\[
+g_Z \left(-\frac{1}{2} + s^2_W \right) \, \bar{u}^{(e)}_L \gamma^\mu u^{(e)}_L  + g_Z s^2_W \, \bar{u}^{(e)}_R \gamma^\mu u^{(e)}_R
+\]</div>
+<p>Para los fermiones y antifermiones</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>—- fermión —-</p></th>
+<th class="text-align:center head"><p>——– <span class="math notranslate nohighlight">\(c_L\)</span> ——–</p></th>
+<th class="text-align:center head"><p>——– <span class="math notranslate nohighlight">\(c_R\)</span> ——</p></th>
+<th class="text-align:center head"><p>— antifermión —</p></th>
+<th class="text-align:center head"><p>———- <span class="math notranslate nohighlight">\(c_L\)</span> ———–</p></th>
+<th class="text-align:center head"><p>——— <span class="math notranslate nohighlight">\(c_R\)</span> ———</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\nu_e\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
+<td class="text-align:center"><p>0</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(e^+\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-1/2 + s^2_W\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(e\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-1/2 + s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\({\bar \nu}_e\)</span></p></td>
+<td class="text-align:center"><p>0</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-1/2\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(u\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/2 -2/3 s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-2/3s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\({\bar d}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-1/3s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/2 - 1/3s^2_W\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(d\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-1/2+1/3s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/3s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\({\bar u}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(2/3 s^2_W\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-1/2 + (2/3)s^2_W\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="aniquilacion-a-muones-e-e-to-mu-mu-y-la-asimetria-adelante-y-atras">
+<h3>Aniquilación a muones, <span class="math notranslate nohighlight">\(e+e^+ \to \mu+\mu^+\)</span> y la asimetría adelante y atrás.<a class="headerlink" href="#aniquilacion-a-muones-e-e-to-mu-mu-y-la-asimetria-adelante-y-atras" title="Permalink to this heading">#</a></h3>
+<p>En la aniquilación <span class="math notranslate nohighlight">\(e + e^+ \to \mu + \mu^+\)</span> intervienen el <span class="math notranslate nohighlight">\(\gamma\)</span> y el <span class="math notranslate nohighlight">\(Z\)</span>. Nota que el portador debe ser necesariamente neutro.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_gz.png"><img alt="../_images/sm_gz.png" class="align-center" src="../_images/sm_gz.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>aniquilación <span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span> mediada por el fotín (izda) o el <span class="math notranslate nohighlight">\(Z\)</span> (derecha)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Recordemos los propagadores respectivos son proporcionales a:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{g_{\mu\nu}}{q^2}, \;\; \frac{g_{\mu\nu}}{q^2 - m_Z^2},
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(m_Z = 91.2\)</span> GeV es la masa del <span class="math notranslate nohighlight">\(Z\)</span>, y <span class="math notranslate nohighlight">\(q^2\)</span> el cuadrado del cuadrimomento transferido al bosón.</p>
+<p>Tenemos tres regímenes de <span class="math notranslate nohighlight">\(q^2\)</span> diferentes:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(q^2 \ll m^2_Z\)</span>, en ese caso domina el propagador del fotón, la interacción es mayoritariamente electromagnética, y preserva paridad.</p></li>
+<li><p><span class="math notranslate nohighlight">\(q^2 \sim m^2_Z\)</span> domina el propagador del <span class="math notranslate nohighlight">\(Z\)</span>, la interacción es mayoritariamente débil neutra, y cambia al pasar por el valor <span class="math notranslate nohighlight">\(q^2 = m^2_Z\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(q^2 \gg m^2_Z\)</span> los dos propagadores contribuyen con una fracción cada uno.</p></li>
+</ul>
+<p>La figura muestra la sección eficaz <span class="math notranslate nohighlight">\(\sigma(e+e^+ \to \mathrm{hadrons})\)</span> con los datos de diversos experimentos y la curva teórica.</p>
+<p>En la figura se muestra también la sección eficaz debida solo al fotón (curva punteada).</p>
+<p>Se observa que la contribución del fotón, es dominante a baja energía. que luego domina la resonancia del <span class="math notranslate nohighlight">\(Z\)</span>, y finalmente hay un equilibrio.</p>
+<p>La sección eficaz no se explicaría sin la interferencia del <span class="math notranslate nohighlight">\(Z\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_sigma_eeqq.png"><img alt="../_images/sm_sigma_eeqq.png" class="align-center" src="../_images/sm_sigma_eeqq.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sigma(e+e^+ \to \mathrm{hadrons})\)</span> vs <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> de [MT16.2] [LEP-SLD]</p></td>
+</tr>
+</tbody>
+</table>
+<p>En la región donde <span class="math notranslate nohighlight">\(Z\)</span> domine o sea relevante aparecen efectos de violación de paridad que dependerán de <span class="math notranslate nohighlight">\(s^2_W\)</span>.</p>
+<p>Experimentalmente calculamos asimetrías. Consideramos el eje dado por el choque <span class="math notranslate nohighlight">\(e+e^+\)</span> y la dirección hacia delante dada por el <span class="math notranslate nohighlight">\(e\)</span> y contamos cuantos <span class="math notranslate nohighlight">\(\mu\)</span> salen hacia delante, <span class="math notranslate nohighlight">\(N_F\)</span>, <em>forward</em> y hacia atrás, <span class="math notranslate nohighlight">\(N_B\)</span>, <em>backwards</em>, y calculamos la <em>asimetría adelante-atrás</em>, <span class="math notranslate nohighlight">\(A_{FB}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+A_{FB} = \frac{N_F - N_B}{N_F + N_B}
+\]</div>
+<p>Si no hay violación de paridad <span class="math notranslate nohighlight">\(A_{FB} = 0\)</span></p>
+<p>Estos son los valores experimentales obtenidos por el experimento DELPHI y el la predicción (línea) para <span class="math notranslate nohighlight">\(s^2_W \simeq 0.23\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/sm_afb.png"><img alt="../_images/sm_afb.png" class="align-center" src="../_images/sm_afb.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Asimetría <em>forward-backward</em> <span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span> vs <span class="math notranslate nohighlight">\(\sqrt{s}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>datos (puntos) del experimento [DELPHI] y predicción del SM para <span class="math notranslate nohighlight">\(s^2_W \simeq 0.23\)</span> (línea)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="anchura-de-desintegracion-del-z">
+<h3>Anchura de desintegración del <span class="math notranslate nohighlight">\(Z\)</span><a class="headerlink" href="#anchura-de-desintegracion-del-z" title="Permalink to this heading">#</a></h3>
+<p>El colisionador LEP <span class="math notranslate nohighlight">\(e+e^+\)</span> que operó durante los 90’s verificó con gran detalle las predicciones del SM, especialmente la física del Z.</p>
+<p>Durante un periodo LEP operó a <span class="math notranslate nohighlight">\(\sqrt{s} = m_Z = 91\)</span> GeV produciendo millones de <span class="math notranslate nohighlight">\(Z\)</span>.</p>
+<p>Uno de los estudios más importantes de LEP es la medición de la anchura de desintegración de <span class="math notranslate nohighlight">\(Z\)</span>.</p>
+<div class="section" id="anchura-de-desintegracion-parcial">
+<h4>Anchura de desintegración parcial<a class="headerlink" href="#anchura-de-desintegracion-parcial" title="Permalink to this heading">#</a></h4>
+<p>La anchura de desintegración viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = \frac{p^*}{8 \pi s} \langle |M_{fi}|^2 \rangle
+\]</div>
+<p>En el caso de  <span class="math notranslate nohighlight">\(Z \to f + \bar{f}\)</span>, <span class="math notranslate nohighlight">\(\sqrt{s} = m_Z\)</span> y <span class="math notranslate nohighlight">\(p^* = m_z/2\)</span>, (en el CM), si despreciamos la masa del fermión en comparación con la del <span class="math notranslate nohighlight">\(m_Z\)</span>.</p>
+<p>La anchura parcial de desintegración <span class="math notranslate nohighlight">\(Z \to f + \bar{f}\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma(Z \to f + \bar{f}) = \frac{m_Z}{16 \pi m^2_Z} \frac{2}{3} (c^2_L + c^2_R) g^2_Z m^2_Z = \frac{g^2_Z m_Z}{24 \pi} (c^2_L + c^2_R)
+\]</div>
+<p>Por ejemplo para <span class="math notranslate nohighlight">\(\nu_e\)</span> como <span class="math notranslate nohighlight">\(c^{(\nu_e)}_L = 1/2, \; c^{(\nu_e)}_R = 0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma (Z \to \nu_e + \bar{\nu}_e) = \frac{g^2_Z m_Z}{96 \pi} = 166 \; \mathrm{MeV}
+\]</div>
+<p><em>Cuestión</em>: Calcula las anchuras de desintegración parciales y totales de <span class="math notranslate nohighlight">\(Z\)</span> y sus fracciones de desintegración.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">GF</span>  <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;Fermi coupling constant&quot;</span><span class="p">)</span>
+<span class="n">s2t</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;weak mixing angle&quot;</span><span class="p">)</span>
+<span class="n">MW</span>  <span class="o">=</span> <span class="mf">80.34</span> <span class="c1"># GeV </span>
+<span class="n">MZ</span>  <span class="o">=</span> <span class="mf">91.19</span> <span class="c1"># GeV</span>
+<span class="n">g2w</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="n">MW</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">GF</span> <span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">g2z</span> <span class="o">=</span> <span class="n">g2w</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">s2t</span><span class="p">)</span> 
+<span class="n">gamma_nu</span> <span class="o">=</span> <span class="n">g2z</span><span class="o">*</span><span class="n">MZ</span><span class="o">/</span><span class="p">(</span><span class="mi">96</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;gw    </span><span class="si">{:5.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">g2w</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;gz    </span><span class="si">{:5.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">g2z</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gamma nue </span><span class="si">{:5.4f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gamma_nu</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>gw    0.6526
+gz    0.7403
+Gamma nue 0.1657 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nc</span>   <span class="o">=</span> <span class="mi">3</span> <span class="c1"># 3 colors for the quarks</span>
+<span class="n">pars</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;e&#39;</span><span class="p">:(</span><span class="o">-</span><span class="mf">0.5</span><span class="o">+</span><span class="n">s2t</span><span class="p">,</span> <span class="n">s2t</span><span class="p">),</span> <span class="s1">&#39;nue&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s1">&#39;u&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="mf">0.5</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">s2t</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">s2t</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="o">+</span><span class="n">s2t</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="n">s2t</span><span class="o">/</span><span class="mi">3</span><span class="p">)}</span>
+<span class="n">gamma</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">cl</span><span class="p">,</span> <span class="n">cr</span><span class="p">:</span> <span class="n">g2z</span><span class="o">*</span><span class="n">MZ</span><span class="o">/</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">cl</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">cr</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">gammas</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">pars</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="n">cl</span><span class="p">,</span> <span class="n">cr</span> <span class="o">=</span> <span class="n">pars</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+    <span class="n">gammai</span> <span class="o">=</span> <span class="n">gamma</span><span class="p">(</span><span class="n">cl</span><span class="p">,</span> <span class="n">cr</span><span class="p">)</span>
+    <span class="n">gammai</span> <span class="o">=</span> <span class="n">nc</span> <span class="o">*</span> <span class="n">gammai</span> <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="n">gammai</span>
+    <span class="n">comment</span> <span class="o">=</span> <span class="s1">&#39;Gamma &#39;</span> <span class="o">+</span> <span class="n">key</span> <span class="o">+</span> <span class="s1">&#39; </span><span class="si">{:5.4f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gammai</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">comment</span><span class="p">)</span>
+    <span class="n">gammas</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">gammai</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gamma e 0.0838 GeV
+Gamma nue 0.1657 GeV
+Gamma u 0.2894 GeV
+Gamma d 0.3713 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<p>La anchura total del <span class="math notranslate nohighlight">\(Z \to f + \bar{f}\)</span> será la suma de las parciales:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma_Z = 3 \Gamma_{ll} +  \Gamma_{\mathrm{hadrons}} + N_\nu \Gamma_{\nu\nu}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\Gamma_{ll} = \Gamma_{ee} + \Gamma_{\mu\mu} + \Gamma_{\tau\tau}\)</span>, <span class="math notranslate nohighlight">\(\Gamma_{\mathrm{hadrons}}\)</span>, la anchura de desintegración a hadrones (la total a <span class="math notranslate nohighlight">\(qq\)</span>) y <span class="math notranslate nohighlight">\(N_\nu\)</span> es el número de neutrinos, y <span class="math notranslate nohighlight">\(\Gamma_{\nu\nu}\)</span>, la achura a un tipo de neutrino.</p>
+<p>Los neutrinos no se observan, pero si medimos la anchura total <span class="math notranslate nohighlight">\(\Gamma_Z\)</span> podemos estimar el número de neutrinos, <span class="math notranslate nohighlight">\(N_\nu\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gamma_total</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">gammas</span><span class="p">[</span><span class="s1">&#39;nue&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">gammas</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">gammas</span><span class="p">[</span><span class="s1">&#39;u&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">gammas</span><span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total Gamma </span><span class="si">{:5.4f}</span><span class="s1"> GeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gamma_total</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">gammas</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="c1">#n  = 2 if key == &#39;u&#39; else 3</span>
+    <span class="n">br</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">gammas</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">/</span><span class="n">gamma_total</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;BR &#39;</span> <span class="o">+</span> <span class="n">key</span> <span class="o">+</span> <span class="s1">&#39; </span><span class="si">{:3.1f}</span><span class="s1"> %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">br</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total Gamma 2.4414 GeV 
+BR e 3.4 %
+BR nue 6.8 %
+BR u 11.9 %
+BR d 15.2 %
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="seccion-eficaz">
+<h3>Sección eficaz<a class="headerlink" href="#seccion-eficaz" title="Permalink to this heading">#</a></h3>
+<p>Aunque no la calcularemos, vamos a presentar ahora los distintos elementos que se necesitan en la sección eficaz de <span class="math notranslate nohighlight">\(e+e^+ \to f + \bar{f}\)</span> en el <span class="math notranslate nohighlight">\(Z\)</span>, donde recordemos la contribución del <span class="math notranslate nohighlight">\(\gamma\)</span> es pequeña.</p>
+<p>Sabemos que la sección eficaz viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{1}{64 \pi^2 s} \frac{p^*_f}{p^*_i} \int_\Omega \langle |M_{fi}|^2 \rangle \, \mathrm{d}\Omega
+\]</div>
+<p>Donde en este caso <span class="math notranslate nohighlight">\(p^*_i = p^*_f = m_Z/2\)</span>, en el CM, podemos despreciar las masas de los fermiones en comparación con <span class="math notranslate nohighlight">\(m_Z\)</span>.</p>
+<p>La sección eficaz expresada en función de las anchuras de desintegración parciales, <span class="math notranslate nohighlight">\(\Gamma_{ee}, \Gamma_{\mu\mu}\)</span> y total, <span class="math notranslate nohighlight">\(\Gamma_Z\)</span>, es:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma (e+e^+\to Z \to \mu+\mu^+)= \frac{12 \pi s}{m^2_Z} \frac{\Gamma_{ee} \Gamma_{\mu\mu}}{(s-m^2_Z)^2 + m^2_Z\Gamma^2_Z} 
+\]</div>
+<p>Las datos experimentales confirmaron que las anchuras <span class="math notranslate nohighlight">\(\Gamma_{ee} = \Gamma_{\mu\mu}\)</span> son iguales, como predecía el modelo.</p>
+<p>Observamos:</p>
+<ul class="simple">
+<li><p>Se trata de una función de tipo Breit-Wigner</p></li>
+<li><p>En el polo <span class="math notranslate nohighlight">\(\sqrt{s} = m_z\)</span> obtenemos el máximo de la sección eficaz:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+  \sigma_{\max} = \frac{12\pi}{m^2_Z} \frac{\Gamma_{ee}\Gamma_{\mu\mu}}{\Gamma^2_Z} 
+  \]</div>
+<ul class="simple">
+<li><p>En los valores <span class="math notranslate nohighlight">\(\sqrt{s} = m_Z \pm \Gamma_Z/2\)</span> la sección eficaz:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+  \sigma \left(\sqrt{s} = m_Z \pm \Gamma_Z/2 \right) = \frac{\sigma_{\max}}{2}
+  \]</div>
+<p>O lo que es lo mismo la anchura a mitad de altura, FWHM, es <span class="math notranslate nohighlight">\(\Gamma_Z\)</span></p>
+<p><em>Cuestión</em> Calcula el máximo de la sección eficaz para <span class="math notranslate nohighlight">\(e+e^+\to \mu+\mu^+\)</span> y <span class="math notranslate nohighlight">\(e+e^+\to \mathrm{hadrones}\)</span> y la curva se la sección eficaz para hadrones en el pico del <span class="math notranslate nohighlight">\(Z\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Gee</span> <span class="o">=</span> <span class="mf">0.0838</span> <span class="c1"># GeV </span>
+<span class="n">Gmm</span> <span class="o">=</span> <span class="mf">0.0838</span> <span class="c1"># GeV</span>
+<span class="n">Gnn</span> <span class="o">=</span> <span class="mf">0.1657</span> <span class="c1"># GeV</span>
+<span class="n">Guu</span> <span class="o">=</span> <span class="mf">0.2894</span> <span class="c1"># GeV</span>
+<span class="n">Gdd</span> <span class="o">=</span> <span class="mf">0.3713</span> <span class="c1"># GeV</span>
+<span class="n">Ghad</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">Guu</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">Gdd</span>
+<span class="n">Gtot</span> <span class="o">=</span> <span class="n">Ghad</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">Gee</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">Gnn</span>
+<span class="c1">#print(Gtot)</span>
+<span class="n">mz</span>  <span class="o">=</span> <span class="mf">91.19</span>  <span class="c1"># GeV</span>
+<span class="n">Gz</span>  <span class="o">=</span>  <span class="mf">2.45</span>  <span class="c1"># GeV</span>
+<span class="n">sigma_mumu</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">mz</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">Gee</span> <span class="o">*</span> <span class="n">Gmm</span><span class="p">)</span><span class="o">/</span><span class="n">Gz</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">sigma_had</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">12</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">mz</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">Gee</span> <span class="o">*</span> <span class="n">Ghad</span><span class="p">)</span><span class="o">/</span><span class="n">Gz</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">sigma_tot</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">12</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">mz</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">Gee</span> <span class="o">*</span> <span class="n">Gz</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">Gz</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">hbarc</span>  <span class="o">=</span> <span class="mf">0.197</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">femto</span> <span class="c1"># GeV m</span>
+<span class="n">barn</span> <span class="o">=</span>  <span class="mf">1e-28</span> <span class="c1"># m^2</span>
+<span class="n">sigma_to_barn</span> <span class="o">=</span> <span class="p">(</span><span class="n">hbarc</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">barn</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sigma max (ee-&gt;mumu) </span><span class="si">{:3.1f}</span><span class="s1"> nbarns &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sigma_to_barn</span> <span class="o">*</span> <span class="n">sigma_mumu</span> <span class="o">/</span> <span class="n">units</span><span class="o">.</span><span class="n">nano</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sigma max (ee-&gt;had)  </span><span class="si">{:3.1f}</span><span class="s1"> nbarns &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sigma_to_barn</span> <span class="o">*</span> <span class="n">sigma_had</span> <span class="o">/</span><span class="n">units</span><span class="o">.</span><span class="n">nano</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sigma max (ee-&gt;Z)    </span><span class="si">{:3.1f}</span><span class="s1"> nbarns &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sigma_to_barn</span> <span class="o">*</span> <span class="n">sigma_tot</span> <span class="o">/</span><span class="n">units</span><span class="o">.</span><span class="n">nano</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sigma max (ee-&gt;mumu) 2.1 nbarns 
+sigma max (ee-&gt;had)  41.6 nbarns 
+sigma max (ee-&gt;Z)    60.2 nbarns 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sigma</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">Gff</span> <span class="o">=</span> <span class="n">Gmm</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">12</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span><span class="n">s</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">mz</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">Gee</span><span class="o">*</span><span class="n">Gff</span><span class="o">/</span><span class="p">((</span><span class="n">s</span><span class="o">-</span><span class="n">mz</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">mz</span><span class="o">*</span><span class="n">Gz</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">ss</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">mz</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="n">mz</span><span class="o">+</span><span class="mi">8</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span> <span class="n">sigma_to_barn</span> <span class="o">*</span> <span class="n">sigma</span><span class="p">(</span><span class="n">ss</span><span class="o">*</span><span class="n">ss</span><span class="p">,</span> <span class="n">Ghad</span><span class="p">)</span> <span class="o">/</span> <span class="n">units</span><span class="o">.</span><span class="n">nano</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\sqrt</span><span class="si">{s}</span><span class="s1">$ (GeV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\sigma$ (nbarn)&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/dirac_40_0.png" src="../_images/dirac_40_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="tres-familias-de-neutrinos">
+<h3>Tres familias de neutrinos<a class="headerlink" href="#tres-familias-de-neutrinos" title="Permalink to this heading">#</a></h3>
+<p>Uno de los resultados más importantes de la era LEP es la determinación del número de neutrinos.</p>
+<p>Se obtiene a partir de la anchura de desintegración, <span class="math notranslate nohighlight">\(\Gamma_Z\)</span>, del <span class="math notranslate nohighlight">\(Z\)</span>, obtenida por la anchura de la resonancia en la sección eficas <span class="math notranslate nohighlight">\(\gamma(e+e^+ \to hadrons)\)</span>.</p>
+<p>En la figura, la vista transversal de varios eventos en ALEP, <span class="math notranslate nohighlight">\(e+e^+ \to Z\)</span> y <span class="math notranslate nohighlight">\(Z \to\)</span> hadrons, <span class="math notranslate nohighlight">\(e+e^+, \mu+\mu^+, \tau+\tau^+\)</span>:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_Zevents_ALEPH.png"><img alt="../_images/sm_Zevents_ALEPH.png" class="align-center" src="../_images/sm_Zevents_ALEPH.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(Z\to\)</span> hadrons, <span class="math notranslate nohighlight">\(e+e^+\)</span>, <span class="math notranslate nohighlight">\(\mu+\mu^+\)</span>, <span class="math notranslate nohighlight">\(\tau + \tau^+\)</span> [ALEPH]</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_zresonance.png"><img alt="../_images/sm_zresonance.png" class="align-center" src="../_images/sm_zresonance.png" style="width: 350px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\sigma(e+e^+ \to \mathrm{hadrons})\)</span> vs <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> de los experimentos de LEP [PDG]</p></td>
+</tr>
+</tbody>
+</table>
+<p>La siguiente figura muestra la sección eficaz <span class="math notranslate nohighlight">\(\sigma(e+e^+ \to \mathrm{hadrons})\)</span>  en función de <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> obtenida por los experimentos de LEP: ALEPH, DELPHI, L3, OPAL.</p>
+<p>Se muestra sobreimpuesta la curva teórica cuando consideramos <span class="math notranslate nohighlight">\(N_\nu\)</span> neutrinos.</p>
+<p>Recordemos que el número de neutrinos, <span class="math notranslate nohighlight">\(N_\nu\)</span>, entra en la anchura de desintegración:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma_Z = 3 \Gamma_{ll} +  \Gamma_{\mathrm{hadrons}} + N_\nu \, \Gamma_{\nu\nu}
+\]</div>
+<p>Dado que para cada leptón cargadro, <span class="math notranslate nohighlight">\(l = e, \mu, \tau\)</span>, <span class="math notranslate nohighlight">\(\Gamma_{ll} = \Gamma_{ee}\)</span>.</p>
+<p>A parti de la medida de <span class="math notranslate nohighlight">\(\Gamma_Z = 2.4952 \pm 0.0023\)</span>, y de las anchuras medidas <span class="math notranslate nohighlight">\(\Gamma_{ll}, \, \Gamma_{\mathrm{hadrons}}\)</span> y del valor teórico de <span class="math notranslate nohighlight">\(\Gamma_{\nu\nu}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma (\nu_e + \bar{\nu}_e) = \frac{g^2_Z m_Z}{96 \pi} = 166 \; \mathrm{MeV}
+\]</div>
+<p>Obtenemos el número de neutrinos:</p>
+<div class="math notranslate nohighlight">
+\[
+N_\nu = 2.9840\pm 0.0082
+\]</div>
+<p>Existen por lo tanto <strong>tres familias de neutrinos</strong>.</p>
+</div>
+</div>
+<div class="section" id="el-boson-de-higgs">
+<h2>El bosón de Higgs<a class="headerlink" href="#el-boson-de-higgs" title="Permalink to this heading">#</a></h2>
+<p>El modelo de Higgs da respuesta (quizás la única posible) a los siguientes problemas graves que presentabal la teoría:</p>
+<ul class="simple">
+<li><p>Los bosones débiles son masivos, sin embargo las teorías gauge exigen bosones sin masa. ¿Cómo dotar entonces de masa a los bosones <span class="math notranslate nohighlight">\(W^\pm, Z\)</span>?</p></li>
+<li><p>La simetría electrodébil separa fermiones a derechas e izquierdas, <span class="math notranslate nohighlight">\(u_L, u_R\)</span>, en dupletes y singletes, y exige que no tengan masas. ¡Pero sabemos que los fermiones tienen masa!</p></li>
+<li><p>La sección eficaz, <span class="math notranslate nohighlight">\(W^+ + W^- \to W^+ + W^-\)</span>, crece indefinidamente a no ser que un escalar, el Higgs, con los acoplos apropiados la controle.</p></li>
+</ul>
+<p>El mecanismo de Higgs permite resolver los tres problemas de una forma económica.</p>
+<p>Es imposible discutir sobre el mecanismo de Higgs sin recurrir de forma breve al TCQ y al Lagrangiano del Modelo Estándad.</p>
+<p>Vamos a dar solo unas ideas que nos permitan entender su comportamiento y descubrimiento.</p>
+<p>Los tres campos que componen las partículas elementales son: escalar (bosón de Higgs), espinorial (fermiones y anti-fermiones) y vectorial (bosones de las fuerzas), cuyas ecuaciones y lagrangianos son:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>—– Tipo —–</p></td>
+<td class="text-align:center"><p>————— Escalar —————-</p></td>
+<td class="text-align:center"><p>———- Espinor ————</p></td>
+<td class="text-align:center"><p>—— Bosón vectorial ———-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Klein-Gordon</p></td>
+<td class="text-align:center"><p>Dirac</p></td>
+<td class="text-align:center"><p>Maxwell</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Ecuación</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((\partial^\mu\partial_\mu + m^2) \, \phi = 0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((i\gamma^\mu \partial_\mu - m) \, \Psi = 0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\partial_\mu F^{\mu\nu} = j^\nu\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Lagrangiano</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((D_\mu \phi)^\dagger (D^\mu \phi) - m^2 \phi^\dagger \phi\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(i\bar{\Psi}\gamma^\mu D_\mu \Psi - m \bar{\Psi}\Psi\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-\frac{1}{4}F^{\mu\nu}F_{\mu\nu} \left[+ \frac{1}{2} m^2 A_\mu A^\mu \right]\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Donde:</p>
+<div class="math notranslate nohighlight">
+\[
+D_\mu = \partial_\mu + i g A_\mu, \;\;\; F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu
+\]</div>
+<p><span class="math notranslate nohighlight">\(D_\mu\)</span> es la <em>derivada covariante</em>, <span class="math notranslate nohighlight">\(g\)</span> es el acoplo, por ejemplo <span class="math notranslate nohighlight">\(g=-e\)</span> para el electrón en el electromagnetismo, y en ese caso <span class="math notranslate nohighlight">\(A_\mu\)</span> correspondería al campo del fotón.</p>
+<p>El Lagrangiano de espinores y bosones vectoriales (sin masa), por ejemplo del electromagnetismo es:</p>
+<div class="math notranslate nohighlight">
+\[
+i \bar{\Psi} \gamma^\mu D_\mu \Psi - m \bar{\Psi} \Psi - \frac{1}{4} F^{\mu\nu}F_{\mu\nu}
+\]</div>
+<p>que invariante bajo la simetría gauge local, dada por un cambio continua arbitrario <span class="math notranslate nohighlight">\(g\theta(x)\)</span> en cada punto, local, <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi'(x) = e^{i g \theta(x)} \, \Psi(x), \;\;\; A'_\mu(x) = A_\mu(x) - \partial_\mu \theta(x)
+\]</div>
+<p>¡Pero el término de masas del bosón vectorial no es invariante gauge local!:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{2} m_A^2 A'^\mu A'_\mu  = \frac{1}{2}m_A^2 (A^\mu - \partial^\mu \theta) \, (A_\mu - \partial_\mu \theta) \neq \frac{1}{2} m_A^2 A^\mu A_\mu 
+\]</div>
+<p>Notar que nos en lagrangiano aparece el término:</p>
+<div class="math notranslate nohighlight">
+\[
+i \bar{\Psi} \gamma^\mu D_\mu \Psi = i \bar{\Psi} \gamma^\mu  (\partial_\mu + i q A_\mu) \Psi = \dots - g \bar{\Psi} \gamma^\mu \Psi \, A_\mu  
+\]</div>
+<p>que es el acoplo de una corriente fermiónica, si <span class="math notranslate nohighlight">\(g = -e\)</span> es el interacción de la corriente electromagnética del electrón con el fotón. E interpretamos el término como un vértice de tres cuerpos con acoplo <span class="math notranslate nohighlight">\(e\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+ e \bar{\Psi} \gamma^\mu \Psi \, A_\mu \equiv e j^\mu_{(e)} \, A_\mu
+\]</div>
+<div class="section" id="como-el-higgs-otorga-la-masa-a-fermiones-y-bosones">
+<h3>Cómo el higgs otorga la masa a fermiones y bosones.<a class="headerlink" href="#como-el-higgs-otorga-la-masa-a-fermiones-y-bosones" title="Permalink to this heading">#</a></h3>
+<div class="section" id="fermiones">
+<h4>Fermiones<a class="headerlink" href="#fermiones" title="Permalink to this heading">#</a></h4>
+<p>El término de masa asociado a los fermiones que aparece en el Lagrangiano es:</p>
+<div class="math notranslate nohighlight">
+\[
+m \bar{\Psi} \Psi
+\]</div>
+<p>que podemos obtener si acoplamos los fermiones con un campo escalar <span class="math notranslate nohighlight">\(\phi\)</span>, de la forma:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda \bar{\Psi} \Psi \phi
+\]</div>
+<p>que corresponde a un vértice de tres ramas con un acoplo <span class="math notranslate nohighlight">\(\lambda\)</span> que llamamos de <strong>acoplo de Yukawa</strong>.</p>
+<p>Consideremos ahora un campo complejo escalar particular, <span class="math notranslate nohighlight">\(\phi\)</span>, con un <strong>valor esperado en el vacío</strong>, <span class="math notranslate nohighlight">\(v\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\phi(x) = \frac{1}{\sqrt{2}}\left(v + h(x)\right) 
+\]</div>
+<p>La interacción que hemos escrito anteriormente entre fermiones y el campo <span class="math notranslate nohighlight">\(\phi\)</span> queda:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda \bar{\Psi} \Psi \, \phi = \frac{\lambda v}{\sqrt{2}} \bar{\Psi} \Psi + \frac{\lambda}{\sqrt{2}} \bar{\Psi} \, \Psi h(x)
+\]</div>
+<p>El primero término podemos asociarlo a la masa del fermión:</p>
+<div class="math notranslate nohighlight">
+\[
+m \bar{\Psi} \Psi = \frac{\lambda v}{\sqrt{2}} \bar{\Psi} \Psi \Rightarrow m= \frac{\lambda v}{\sqrt{2}}.
+\]</div>
+<p>La masa aparece como la fricción, via el acoplo de Yukawa, <span class="math notranslate nohighlight">\(\lambda\)</span>, con el valor esperado del campo escalar (de Higgs) en el vacío, <span class="math notranslate nohighlight">\(v\)</span>.</p>
+<p>El segundo términdo <span class="math notranslate nohighlight">\(\bar{\Psi} \Psi h\)</span> veremos más adelante que lo interpretaremos como la interacción, desintegracion, del Higgs a un par fermión, anti-fermión.</p>
+</div>
+<div class="section" id="bosones">
+<h4>Bosones<a class="headerlink" href="#bosones" title="Permalink to this heading">#</a></h4>
+<p>El mecanismo dota de masa a los bosones es más complejo.</p>
+<p>La masa de un bosón vectorial tendría un término (ver el lagrangiano de la tabla anterior)</p>
+<div class="math notranslate nohighlight">
+\[
+\left[+ \frac{1}{2} m^2 A_\mu A^\mu \right]
+\]</div>
+<p>A partir de la deriviada covariante aplicada al campo escalar obtenemos:
+$<span class="math notranslate nohighlight">\(
+D_\mu \phi = (\partial_\mu + i g A_\mu) \frac{1}{\sqrt{2}} \left( v + h(x) \right)  = \frac{1}{\sqrt{2}} \left(\partial_\mu h(x) + ig v \, A_\mu + i g h(x) A_\mu \right)
+\)</span>$</p>
+<p>En el lagrangiano del campo escalar aparece el producto escalar de la derivada covariante consigo misma, que si lo desarrollamos:</p>
+<div class="math notranslate nohighlight">
+\[
+(D^\mu \phi)^*(D_\mu \phi) = \dots + \frac{1}{2} g^2 v^2 A^\mu A_\mu + \dots 
+\]</div>
+<p>el término que hemos dejado explícito lo asociamos ahora con el término de masas del bosón.</p>
+<div class="math notranslate nohighlight">
+\[
+m = g v
+\]</div>
+<p>En al Modelo Estándar, el cálculo es similar aunque más elaborado, por ejemplo <span class="math notranslate nohighlight">\(\phi\)</span> es un duplete y no un singlete, y obtenemos como masa de los bosones:</p>
+<div class="math notranslate nohighlight">
+\[
+m_W = \frac{g_W v}{2}, \;\; m_Z = \frac{g_z v}{2} = \frac{g_W v}{2 \cos \theta_W}
+\]</div>
+<p>Esto es, la unificación electrodébil y el mecanismo de Higgs predicen:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{m_W}{m_Z} = \cos \theta_W
+\]</div>
+<p>A partir de los datos experimentales, <span class="math notranslate nohighlight">\(M_z, \sin^2 \theta_W\)</span>, el SM predice,</p>
+<div class="math notranslate nohighlight">
+\[
+m_W \simeq 80.34 \;\; \mathrm{GeV}
+\]</div>
+<p>¡que se aproxima mucho al valor experimental!</p>
+<p>Esta relación dio credibilidad al mecanismo de Higgs antes de que se el Higgs se descubriera.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s2t</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;weak mixing angle&quot;</span><span class="p">)</span>
+<span class="n">MW</span>  <span class="o">=</span> <span class="mf">80.378</span> <span class="c1"># GeV </span>
+<span class="n">MZ</span>  <span class="o">=</span> <span class="mf">91.1876</span> <span class="c1"># GeV</span>
+<span class="n">cw</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">s2t</span><span class="p">)</span>
+<span class="n">mw_pred</span> <span class="o">=</span> <span class="n">MZ</span> <span class="o">*</span> <span class="n">cw</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; W mass esperada a primer orde </span><span class="si">{:4.3f}</span><span class="s1"> GeV, medida </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mw_pred</span><span class="p">,</span> <span class="n">MW</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> W mass esperada a primer orde 80.385 GeV, medida 80.378 GeV
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="el-campo-del-boson-de-higgs">
+<h3>El campo del bosón de Higgs<a class="headerlink" href="#el-campo-del-boson-de-higgs" title="Permalink to this heading">#</a></h3>
+<p>Vemos que podemos dotar de masa a los fermiones y bosones vectoriales débiles con un campo con un valor especial en el vacío, <span class="math notranslate nohighlight">\(v\)</span>, ¿pero de donde sale ese valor?</p>
+<p>A partir de asociar -ad hoc- al campo de Higgs un potencial particular, el del sombrero mexicano.</p>
+<p>El término del Lagrangiano de un camplo escalar complejo, <span class="math notranslate nohighlight">\(\phi\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+(D_\mu \phi)^\dagger (D^\mu \phi) - V(\phi)
+\]</div>
+<p>Con:</p>
+<div class="math notranslate nohighlight">
+\[
+V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger \phi)^2
+\]</div>
+<p>y desarrollando el campo escalar alrededor del mínimo, <span class="math notranslate nohighlight">\(v\)</span>, del potencial.</p>
+<div class="math notranslate nohighlight">
+\[
+\phi(x) = \frac{1}{\sqrt{v}} \left( v + h(x)\right)
+\]</div>
+<p>Las siguientes figuras muestran el potencial del sombrero mexicano para el caso <span class="math notranslate nohighlight">\(\mu^2&gt;0, \mu^2&lt;0\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">higgs_potential</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">phi</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">xlambda</span> <span class="p">:</span> <span class="p">((</span><span class="n">mu</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">real</span> <span class="o">*</span> <span class="n">phi</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">xlambda</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">phi</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">phis</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">mu</span>  <span class="o">=</span> <span class="mi">6</span><span class="p">;</span> <span class="n">xlambda</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">phis</span><span class="p">,</span> <span class="n">higgs_potential</span><span class="p">(</span><span class="n">phis</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">xlambda</span><span class="p">));</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">phis</span><span class="p">,</span> <span class="n">higgs_potential</span><span class="p">(</span><span class="n">phis</span><span class="p">,</span> <span class="n">mu</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="n">j</span><span class="p">),</span> <span class="n">xlambda</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/dirac_57_0.png" src="../_images/dirac_57_0.png" />
+</div>
+</div>
+<p>El estado del vacío es el estado de mínima energía:</p>
+<ul class="simple">
+<li><p>El el caso <span class="math notranslate nohighlight">\(\mu^2 &gt;0\)</span> el potencial tiene un mínimo en <span class="math notranslate nohighlight">\(v = 0\)</span></p></li>
+<li><p>Mientras que el caso <span class="math notranslate nohighlight">\(\mu^2 &lt;0\)</span> tiene mínimos en:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
+\]</div>
+<p>donde a  <span class="math notranslate nohighlight">\(v\)</span> denomina <strong>valor esperado en el vacío</strong> (<em>vev</em>).</p>
+<p>El hecho que el estado en el vacío se situe en uno de los mínimos de potencial de los posibles equivalentes se conoce como <strong>rotura espontánea de simetría</strong>.</p>
+<p>En el casso de que <span class="math notranslate nohighlight">\(\phi\)</span> sea un complejo obtenemos la curva del potencial conocida como sobrero mexicano:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_mexican_hat.png"><img alt="../_images/sm_mexican_hat.png" class="align-center" src="../_images/sm_mexican_hat.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>potencial del campo complejo de Higgs <span class="math notranslate nohighlight">\(V(\phi)\)</span> [Wikipedia]</p></td>
+</tr>
+</tbody>
+</table>
+<p>En el modelo estándar es más complejo porque <span class="math notranslate nohighlight">\(\phi\)</span> es un duplete.</p>
+<p>Al establecer invariancia gauge, el campo de Higgs da lugar a las interacciones:</p>
+<ul class="simple">
+<li><p>entre los bosones débiles, <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y el valor <span class="math notranslate nohighlight">\(v\)</span> del vacío, que interpretamos como la <strong>masa de los bosones <span class="math notranslate nohighlight">\(W^\pm, Z\)</span></strong>.</p></li>
+<li><p>entre las dos componentes de quiralidad de los fermiones y <span class="math notranslate nohighlight">\(v\)</span>, lo que da lugar a las <strong>masas de los fermiones</strong>.</p></li>
+<li><p>a interacciones entre el higgs, <span class="math notranslate nohighlight">\(h(x)\)</span>, y los bosones débiles, <span class="math notranslate nohighlight">\(W, Z\)</span>, y dar lugar a <strong>desintegraciones del Higgs a los bosones vectoriales</strong></p></li>
+<li><p>a interacciones entre el higgs, <span class="math notranslate nohighlight">\(h(x)\)</span>, y los fermiones, que a su vez da lugar a <strong>desintegraciones a pares fermión-antifermión</strong></p></li>
+</ul>
+<p>Además el higgs se acopla consigo mismo en vértices de tres y cuatro ramas, y con los bosones vectorales débiles en vértices de cuatro ramas. Esto es, genera nuevas interacciones entre sí, y con los bosones vectoriales.</p>
+<div class="section" id="las-masas">
+<h4>Las masas<a class="headerlink" href="#las-masas" title="Permalink to this heading">#</a></h4>
+<p>La fricción de los bosones y los fermiones con el <em>vev</em> del Higgs da lugar a las masas:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_vev_mass.png"><img alt="../_images/sm_vev_mass.png" class="align-center" src="../_images/sm_vev_mass.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>acción del <em>vev</em> sobre los fermiones y los bosones débiles</p></td>
+</tr>
+</tbody>
+</table>
+<p>En la tabla se muestra la relación entre las masas se relacionan con el <em>vev</em> y las costantes de acoplo:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>—- fermión —-</p></th>
+<th class="text-align:center head"><p>—- bosones <span class="math notranslate nohighlight">\(W^\pm\)</span>  —–</p></th>
+<th class="text-align:center head"><p>—— bosón <span class="math notranslate nohighlight">\(Z\)</span> ——</p></th>
+<th class="text-align:center head"><p>—– Higgs —–</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(m_f = \frac{1}{\sqrt{2}}\lambda_f v \)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(m_W = \frac{1}{2} g_W v\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\( m_Z = \frac{1}{2} \frac{g_W}{\cos \theta_W} v\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(m_H = 2 \lambda v^2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Observamos:</p>
+<ul class="simple">
+<li><p>Hay un parámetro del modelo <span class="math notranslate nohighlight">\(\lambda_f\)</span>, que se llama <strong>acoplo de Yukawa</strong>, para dar la masa de cada fermión y del vev <span class="math notranslate nohighlight">\(v\)</span>. ¡Hay tantos acoplos de Yukawa como fermiones cargados!</p></li>
+<li><p>Que la masa de los bosones vectoriales, <span class="math notranslate nohighlight">\(m_W, m_Z\)</span> está fijada por <span class="math notranslate nohighlight">\(v\)</span> y los acoplos, <span class="math notranslate nohighlight">\(g_W, g_Z\)</span>.</p></li>
+<li><p>Que la masa del Higgs depende de <span class="math notranslate nohighlight">\(v^2\)</span> y <span class="math notranslate nohighlight">\(\lambda\)</span>. El parámetro <span class="math notranslate nohighlight">\(\lambda\)</span> solo interviene en la masa del Higgs.</p></li>
+</ul>
+<p>El mecanismo de Higgs establece <strong>una relación entre la masa de los bosones vectoriales</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+ \cos \theta_W = \frac{m_W}{m_Z}
+\]</div>
+<p>El valor del <span class="math notranslate nohighlight">\(v\)</span> se puede determinar a partir de <span class="math notranslate nohighlight">\(g_W, m_W\)</span>, o simplemente de <span class="math notranslate nohighlight">\(G_F\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+m_W = \frac{1}{2} g_W v \Rightarrow v = \frac{2m_W}{g_W} = \sqrt{\frac{1}{\sqrt{2} G_F}} = 246 \; \mathrm{GeV}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">GF</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;Fermi coupling constant&quot;</span><span class="p">)</span> <span class="c1"># 1/GeV^2</span>
+<span class="n">v</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">GF</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;valor esperado del vacío </span><span class="si">{:4.1f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>valor esperado del vacío 246.2 GeV
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="la-desintegraciones-del-boson-de-higgs">
+<h4>la desintegraciones del bosón de Higgs<a class="headerlink" href="#la-desintegraciones-del-boson-de-higgs" title="Permalink to this heading">#</a></h4>
+<p>La interacción del Higgs con los fermiones y bosones vectoriales determina sus fracciones de desintegración.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_higgs_decay.png"><img alt="../_images/sm_higgs_decay.png" class="align-center" src="../_images/sm_higgs_decay.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Canales de desintegración principales del Higgs</p></td>
+</tr>
+</tbody>
+</table>
+<p>Notar que el Higgs se acopla a sus canales de desintegración proporcionalmente a la masa de éstos:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>—- fermión —-</p></th>
+<th class="text-align:center head"><p>—- bosones <span class="math notranslate nohighlight">\(W^\pm\)</span>  —–</p></th>
+<th class="text-align:center head"><p>—— bosón <span class="math notranslate nohighlight">\(Z\)</span> ——</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\frac{\lambda_f}{\sqrt{2}} = \frac{m_f}{v} \)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(g_Z m_W \)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\( g_Z m_Z\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota adicional</em>: El mecanismo de Higgs introduce vértices adicionales tripes entre tres higgs; y cuadruples: entre cuatro higgs; y dos higgs y dos bosones vectoriales débiles.</p>
+<p>Las fracciones de desintegracción de Higgs dependeran a qué canales pueda desintegrarse dependiendo de su masa.</p>
+<p>Como el acoplo del Higgs es proporcional a la masa, aquellos canales permitidos con mayor masa son los favorecidos.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>——— canal ——-</p></th>
+<th class="text-align:right head"><p>—– <span class="math notranslate nohighlight">\(Br\)</span> —–</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(H\to b + \bar{b}\)</span></p></td>
+<td class="text-align:right"><p>57.8 %</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(H \to W^+ + W^-\)</span></p></td>
+<td class="text-align:right"><p>21.6 %</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(H \to \tau + \tau^+\)</span></p></td>
+<td class="text-align:right"><p>6.4 %</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(H \to g + g\)</span></p></td>
+<td class="text-align:right"><p>8.6 %</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(H \to c + \bar{c}\)</span></p></td>
+<td class="text-align:right"><p>2.9 %</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(H \to Z + Z^*\)</span></p></td>
+<td class="text-align:right"><p>2.7 %</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(H \to \gamma + \gamma\)</span></p></td>
+<td class="text-align:right"><p>0.2 %</p></td>
+</tr>
+</tbody>
+</table>
+<p>En la tabla se muestran las fracciones de desintegración del Higgs para <span class="math notranslate nohighlight">\(m_H = 125\)</span> GeV.</p>
+<p><em>Nota adicional</em> Las desintegraciones <span class="math notranslate nohighlight">\(H\to \gamma + \gamma, H \to g + g\)</span> ocurren a través de diagramas de lazo, por ejemplo, con el intercambio en triángulo de un <span class="math notranslate nohighlight">\(t\)</span>.</p>
+</div>
+</div>
+<div class="section" id="descubrimiento-del-boson-de-higgs">
+<h3>Descubrimiento del bosón de Higgs<a class="headerlink" href="#descubrimiento-del-boson-de-higgs" title="Permalink to this heading">#</a></h3>
+<p>El bosón de Higgs se descubrió en 2012 en los experimentos ATLAS y CMS del LHC del CERN.</p>
+<p>Con anterioridad los experimentos de LEP y los experimentos CDF y D0 de Fermilab habían constreñido el valor de su masa más ligera entre: <span class="math notranslate nohighlight">\(115-150\)</span> GeV.</p>
+<p>Los experimentos y el acelerador LHC se diseñaron en los 90’s y su operación se inición a finales de los 2000’s.</p>
+<p>En el LHC colisionan <span class="math notranslate nohighlight">\(p+p\)</span> a una energía <span class="math notranslate nohighlight">\(\sqrt{s}= 7- 13\)</span> TeV y con una luminosidad <span class="math notranslate nohighlight">\(\mathcal{L}(t) = 10^{34}\)</span> cm<span class="math notranslate nohighlight">\(^{-2}\)</span>. Hay <span class="math notranslate nohighlight">\(10^{11}\)</span> protones por paquete y una frecuencia de colisión de 40 MHz (cada 25 ns).</p>
+<p>El número de colisiones <span class="math notranslate nohighlight">\(10^{9}\)</span> por segundo y por cada cruce hay como máximo <span class="math notranslate nohighlight">\(35\)</span> colisiones, lo que de denomila <em>pile-up</em> (apilamiento).</p>
+<p>Las sección eficaz <span class="math notranslate nohighlight">\(p+p\)</span> is del ~100 mbars en el LHC.</p>
+<p>Las sección eficaz medida de producción del <span class="math notranslate nohighlight">\(H\)</span> para <span class="math notranslate nohighlight">\(\sqrt{s}=13\)</span> TeV es 54 pbarns.</p>
+<p>Los canales de desintegración dónde la señal es más fácil distinguible del fondo son <span class="math notranslate nohighlight">\(H\to Z+Z^*\)</span> y <span class="math notranslate nohighlight">\(H \to \gamma \gamma\)</span>.</p>
+<p>Eso equivale a buscar una desintegración relevante entre <span class="math notranslate nohighlight">\(10^{13}\)</span>.</p>
+<div class="section" id="el-descubrimiento-del-higgs-en-atlas-y-cms">
+<h4>El descubrimiento del Higgs en ATLAS y CMS<a class="headerlink" href="#el-descubrimiento-del-higgs-en-atlas-y-cms" title="Permalink to this heading">#</a></h4>
+<p>En la figura se muestra el esquema del experimento CMS del LHC:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_CMS_subdetectors.png"><img alt="../_images/det_CMS_subdetectors.png" class="align-center" src="../_images/det_CMS_subdetectors.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Esquema de un sector del <em>Compact Muon Selenoid</em> (<a class="reference external" href="https://cms.cern/detector">CMS</a>) del LHC</p></td>
+</tr>
+</tbody>
+</table>
+<p>El Higgs se descubrió en dos canales limpios (donde los sucesos de contaminación son o afectan menos).</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H \to \gamma + \gamma\)</span>, buscando dos deposiciones en el calorímetro electromagnético, <span class="math notranslate nohighlight">\(\gamma\)</span>s.</p></li>
+</ul>
+<p>Se calcula la masa invariante de los <span class="math notranslate nohighlight">\(\gamma\)</span>s que provienen del punto de interacción.</p>
+<ul class="simple">
+<li><p>En el canal <span class="math notranslate nohighlight">\(H \to Z + Z^* \to (l+l^+) + (l'+l'^+)\)</span>, en cuatro leptones (<span class="math notranslate nohighlight">\(4l\)</span>), agrupados en dos parejas del mismo sabor y carga opuesta.</p></li>
+</ul>
+<p>Una pareja proviene de un <span class="math notranslate nohighlight">\(Z\)</span> real, <em>on-shell</em>, y su masa invariantes es próxima al <span class="math notranslate nohighlight">\(Z\)</span>, y otra del <span class="math notranslate nohighlight">\(Z^*\)</span> <em>off-shell</em>, que tiene menor masa invariante que el <span class="math notranslate nohighlight">\(Z\)</span>.</p>
+<p>La siguiente figura muestra la presenta la distribución de la masa invariante de <span class="math notranslate nohighlight">\(2 \gamma\)</span> (izda) para el caso de CMS y de <span class="math notranslate nohighlight">\((4 l)\)</span> para el caso de ATLAS con la estadística de Run-I del LHC</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_higgs_CMS_ATLAS.png"><img alt="../_images/sm_higgs_CMS_ATLAS.png" class="align-center" src="../_images/sm_higgs_CMS_ATLAS.png" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>masa invariante para <span class="math notranslate nohighlight">\(H \to \gamma \gamma\)</span> (izda, [CMS]) y <span class="math notranslate nohighlight">\(H \to Z+ Z^* \to 4 l\)</span> (derecha, [ATLAS])</p></td>
+</tr>
+</tbody>
+</table>
+<p>Observamos:</p>
+<ul class="simple">
+<li><p>La presencia de un pico en la masa invariante en ambas distribuciones a 125 GeV.</p></li>
+<li><p>Ese pico es incompatible con el fondo, en combinación a ~6 desviaciones estandars.</p></li>
+</ul>
+<p>Con los datos del run-I del LHC se pudo concluir además:</p>
+<ul class="simple">
+<li><p>que se trataba de una partícula escalar a partir de las distribuciones angulares de los <span class="math notranslate nohighlight">\((4l)\)</span> en el canal <span class="math notranslate nohighlight">\(H\to 4 l\)</span>.</p></li>
+<li><p>que el acoplo a otros canales <span class="math notranslate nohighlight">\(\tau\tau^+, b \bar{b}\)</span> es el esperado por el SM</p></li>
+</ul>
+<p>En la figura dos eventos de ATLAS, identificados como <span class="math notranslate nohighlight">\(H \to \gamma\gamma\)</span> (izda) y <span class="math notranslate nohighlight">\(H \to e+e^++\mu+\mu^+\)</span></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_atlas_h2gammas_event.png"><img alt="../_images/sm_atlas_h2gammas_event.png" class="align-center" src="../_images/sm_atlas_h2gammas_event.png" style="width: 320px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/sm_atlas_h4leptons_event.png"><img alt="../_images/sm_atlas_h4leptons_event.png" class="align-center" src="../_images/sm_atlas_h4leptons_event.png" style="width: 320px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(H \to \gamma + \gamma\)</span> event</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(H \to 4l\)</span> event <a class="reference external" href="https://twiki.cern.ch/twiki/bin/view/AtlasPublic/EventDisplaysFromHiggsSearches">ATLAS events</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="conclusions">
+<h2>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h2>
+<p>El SM:</p>
+<ul class="simple">
+<li><p>El SM clasifica las partículas conocidas y describe con precisión las interacciones electrodébiles y fuertes entre ellas.</p></li>
+<li><p>El SM se ha verificado en una gran cantidad de procesos físicos.</p></li>
+<li><p>No obstante sabemos que los neutrinos tienen masa, lo que implica que debemos extender el SM.</p></li>
+</ul>
+<p>Pero:</p>
+<ul class="simple">
+<li><p>No incluye otra Física conocida, como la materia oscura, ¿qué partículas la forman?</p></li>
+<li><p>El modelo tiene cinco parámetros fundamentales <span class="math notranslate nohighlight">\(e, g_W, g_S, v, \lambda\)</span>, dos de ellos corresponden al Higgs. Experimentalmente <span class="math notranslate nohighlight">\(\alpha, G_L, \alpha_S, m_Z, M_H\)</span>.</p></li>
+<li><p>Tiene 9 parámetros adcionales, los acoplos de Yukawa (las masas de los leptones cargados y de los quarks); 4 más para acomodar la matriz CKM de los quarks, y 3 o 4 más para la PNMS de los leptones (la que rige las ocilaciones de neutrinos).</p></li>
+</ul>
+<div class="section" id="cuestiones-abiertas">
+<h3>cuestiones abiertas<a class="headerlink" href="#cuestiones-abiertas" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>¿Es el neutrino su propia antipartícula? ¿Cómo se acopla al Higgs?</p></li>
+<li><p>¿Cuál es el origen de los valores de masas? ¿Por qué es tan pequeña la del neutrino?</p></li>
+<li><p>¿Por qué hay 3 familias? ¿Qué releación guardan, si la hay, la matriz CKM y PNMS?</p></li>
+<li><p>¿El el Higgs único? ¿Es el Higgs compuesto?</p></li>
+<li><p>¿Cuál es el origen del potecial del bosón de Higgs, <span class="math notranslate nohighlight">\(V(\Phi)\)</span>?</p></li>
+<li><p>¿Hasta qué escala de energía, <span class="math notranslate nohighlight">\(\Lambda\)</span>, es válido el SM? ¿A qué energía aparecerá nueva física?</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[MT] Mark Tomsom, «Modern Particle Physics», Cambridge U. press, Temas 15, 16 y 17.</p></li>
+<li><p>[AB] Alessandro Bettini, «Introduction to Elementary Particle Physcs», Cambridge U. press, Tema 9.</p></li>
+<li><p>[PK] M. Peskik, Lectures on the Theory of the Weak Interaction, SLAC–PUB–17142, (2017), <a class="reference external" href="https://arxiv.org/abs/1708.09043">arXiv:1708.0943v1</a></p></li>
+<li><p><a class="reference external" href="https://pdg.lbl.gov/">PDG</a> Particle Data Group.</p></li>
+<li><p>[LEP-SLD] LEP and SLD Collaborations. 2006. Phys. Rept., 427, 257–454.</p></li>
+<li><p>[DELPHI] P. Abreu et al., DELPHI Collaboration, <em>Eur. Phys. J.</em> <strong>C 11</strong>, 383 (1999).</p></li>
+<li><p>[ALEPH] D. Decamp et al., ALEPH Collaboration, <em>Z. Phys.</em> <strong>C 48</strong>, 365 (1990)</p></li>
+<li><p>[CMS] V. Khachatryan et al., CMS Collaboration, <em>Eur. Phys. J.</em> <strong>C 74</strong>, no. 10, 3076 (2014) <a class="reference external" href="https://arxiv.org/abs/1407.0558">arXiv:1407.0558</a></p></li>
+<li><p>[ATLAS] G. Aad et al., ATLAS Collaboration, <em>Phys. Lett.</em> <strong>B 726</strong>, 88 (2013) Erratum: [Phys. Lett. B 734, 406 (2014)] <a class="reference external" href="https://arxiv.org/abs/1307.1427">arXiv:1307.1427</a></p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
