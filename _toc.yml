@@ -3,6 +3,8 @@
 
 format: jb-book
 root: intro
+options:
+  numbered: true
 chapters:
 #  - file: intro.md
   - file: notebooks/introduccion.ipynb
