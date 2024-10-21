@@ -35,6 +35,6 @@ Se precisa un conocimiento previo de la cinemática relativista, de los concepto
 
  * [BM] B.R. Martin, "Nuclear and Particicle Physics", Wiley.
 
- * [DP] D. H. Perskins, "Introduction to High Energy Physics", Cambridge
+ * [DP] D. H. Perkins, "Introduction to High Energy Physics", Cambridge
 
  * [AFS] A. Ferrer, "Física Nuclear y de Partículas", UPV
