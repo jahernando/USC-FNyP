@@ -14,9 +14,9 @@ Versión: Octubre 2024
 
 Esta asignatura es una introducción a la Física de Partículas. El objetivo es presentar una visión actual de las partículas fundamentales y las fuerzas que median entre ellas sin entrar en el desarrollo matemático.
 
-La asignatura consta de cuatro temas: una introducción a la temática de la Física de Partículas; la exposición de los observables relevantes desde una perspectiva experimental y teórica; el desarrollo de las características de fermiones, de los quarks y los hadrones; y finalmente una introducción al modelo estándar.
+La asignatura consta de cuatro temas: una introducción a la temática de la Física de Partículas; la exposición de los observables relevantes desde una perspectiva experimental y teórica; el desarrollo de las características de los leptones, de los quarks y los hadrones; y finalmente una introducción al modelo estándar.
 
-Se precisa un conocimiento previo de la cinemática relativista, de los conceptos básicos de Física Nuclear como sección eficaz, anchura de desintegración, etc. También es conveniente conocer la ecuación de Dirac y una introducción a Teoría Cuántica de Campos.
+Se precisa un conocimiento previo de la cinemática relativista, de los conceptos básicos de Física Nuclear. También es conveniente conocer la ecuación de Dirac y una introducción a Teoría Cuántica de Campos.
 
 -------
 
@@ -34,5 +34,7 @@ Se precisa un conocimiento previo de la cinemática relativista, de los concepto
  * [MT] Mark Tomson, "Modern Particle Physics", Cambridge U. press. 
 
  * [BM] B.R. Martin, "Nuclear and Particicle Physics", Wiley.
+
+ * [DP] D. H. Perskins, "Introduction to High Energy Physics", Cambridge
 
  * [AFS] A. Ferrer, "Física Nuclear y de Partículas", UPV
