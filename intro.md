@@ -29,7 +29,7 @@ Se precisa un conocimiento previo de la cinemática relativista, de los concepto
 
 ## Bibliografía recomendada
 
- * [AB] Alessandro Bettini, "Introduction to Elementary Particle Physcis", Cambridge U. press. 
+ * [AB] Alessandro Bettini, "Introduction to Elementary Particle Physics", Cambridge U. press. 
 
  * [MT] Mark Tomson, "Modern Particle Physics", Cambridge U. press. 
 
