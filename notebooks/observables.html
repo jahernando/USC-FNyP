@@ -1104,7 +1104,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov  4 15:41:16 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov  4 16:13:28 2024
 </pre></div>
 </div>
 </div>
@@ -1179,7 +1179,7 @@ E^2 = m^2 c^4 + p^2 c^2 \;\; \Rightarrow \;\; E^2 = m^2 + p^2
 </tbody>
 </table>
 <p>Energía, momento y masa las daremos en MeV o GeV, y habitualmente tiempo y distancia los damos en s y fm.</p>
-<p>La tabla muestra como las unidades de las magnitudes más comunes en NU:</p>
+<p>La tabla muestra las unidades de las magnitudes más comunes en NU:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Cantidad</p></th>
@@ -1440,7 +1440,7 @@ e + e^+ \to \mu + \mu^+.
 </tbody>
 </table>
 <p>SuperKamiokande (SK) un gigantesco tanque de 50 kton de agua que actua como blanco donde interactuan los neutrinos solares, atmosféricos y de un haz desde JPARC.
-Se está construyendo un detector mayor, HyperKamiokande, <a class="reference external" href="https://www-sk.icrr.u-tokyo.ac.jp/en/hk/">HK</a>, que operará en 2027.</p>
+Se está construyendo un detector mayor, HyperKamiokande, <a class="reference external" href="https://gl.wikipedia.org/wiki/Hyper-Kamiokande">HK</a>, que operará en 2027.</p>
 </div>
 </div>
 <div class="section" id="interaccion-en-colision-o-en-blanco-fijo">
@@ -1469,8 +1469,7 @@ s = (p_a + p_b)^2,
 \[
 \sum_{i \in \mathrm{iniciales}} p_i = \sum_{j \in \mathrm{finales}} p_j \Rightarrow s = \left(\sum_{i \in \mathrm{iniciales}} p_i \right)^2 = \left(\sum_{j \in \mathrm{finales}} p_j \right)^2
 \]</div>
-<p>Por lo tanto <span class="math notranslate nohighlight">\(s\)</span> se conserva en la interacción.</p>
-<p>Además, por ser invariante Lorentz, podemos calcular <span class="math notranslate nohighlight">\(s\)</span> en el sistema inercial que más nos convenga.</p>
+<p>Por lo tanto <span class="math notranslate nohighlight">\(s\)</span> es un invariante Lorentz y  podemos calcularlo en el sistema inercial que más nos convenga.</p>
 <p>Consideremos el caso, <span class="math notranslate nohighlight">\(a+b \to c\)</span>, donde el choque en el centro de masas de <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span>, produce una tercera partícula <span class="math notranslate nohighlight">\(c\)</span> de masa <span class="math notranslate nohighlight">\(m_c\)</span>.</p>
 <p>El momento inicial total en el centro de masas es nulo, esto es <span class="math notranslate nohighlight">\({\bf p}_b = - {\bf p}_a = {\bf p}^*\)</span>, por lo que <span class="math notranslate nohighlight">\(c\)</span> queda en reposo, <span class="math notranslate nohighlight">\({\bf p_c} = 0\)</span>.</p>
 <p>El valor de <span class="math notranslate nohighlight">\(s\)</span> antes de la colisión, <span class="math notranslate nohighlight">\(s = (p_a+p_b)^2\)</span> y después, <span class="math notranslate nohighlight">\(s = p^2_c\)</span>, es el mismo:</p>
@@ -1669,23 +1668,6 @@ s = \left( \sum_{i  = 1}^n  p_i \right)^2
  \]</div>
 <p><em>cuestión</em> Estudiar los casos <span class="math notranslate nohighlight">\(\sqrt{s} = m_Z, \; \sqrt{s} = m_z \pm \frac{\Gamma_Z}{2}\)</span></p>
 <p><em>Nota adicional</em>: La curva teórica de la figura anterior está corregida por la radiación de fotones en los estados inicial y  final.</p>
-<p><em>Cuestión</em>: Calcula la razón de producción de <span class="math notranslate nohighlight">\(Z \to \mathrm{hadrons}\)</span> en el pico de <span class="math notranslate nohighlight">\(Z\)</span> en OPAL usando la luminosidad de LEP.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sigma</span>   <span class="o">=</span> <span class="mi">31</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">nano</span> <span class="c1"># bars</span>
-<span class="n">barn_si</span> <span class="o">=</span> <span class="mf">1e-24</span> <span class="c1"># cm2</span>
-<span class="n">lumi</span>    <span class="o">=</span> <span class="mf">1e32</span> <span class="o">*</span> <span class="n">barn_si</span>  <span class="c1"># /bar s </span>
-<span class="n">R</span>       <span class="o">=</span> <span class="n">lumi</span> <span class="o">*</span> <span class="n">sigma</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Razón de producción Z -&gt; hadrons en OPAL = </span><span class="si">{:4.1f}</span><span class="s1"> Hz&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">R</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Razón de producción Z -&gt; hadrons en OPAL =  3.1 Hz
-</pre></div>
-</div>
-</div>
-</div>
 </div>
 <div class="section" id="anchura-de-desintegracion">
 <h3><span class="section-number">3.5.2. </span>Anchura de desintegración<a class="headerlink" href="#anchura-de-desintegracion" title="Permalink to this heading">#</a></h3>
@@ -1897,9 +1879,9 @@ Gamma_hadrons 	 = 1.445398e-03 eV
 <p>donde, por ejemplo, sin el blanco son los protones de los núcleos del material con <span class="math notranslate nohighlight">\((A, Z)\)</span></p>
 <div class="math notranslate nohighlight">
 \[
-N = \frac{Z N_A}{A} M
+N = \frac{Z N_A}{M_A} M
 \]</div>
-<p>donde <span class="math notranslate nohighlight">\(M\)</span> es la masa del blanco, en g, <span class="math notranslate nohighlight">\(A\)</span> el número de masa g/mol, <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, y <span class="math notranslate nohighlight">\(Z\)</span> el número de protones en cada núcleo.</p>
+<p>donde <span class="math notranslate nohighlight">\(M\)</span> es la masa del blanco, en g, <span class="math notranslate nohighlight">\(M_A\)</span> es la masa g/mol, <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, y <span class="math notranslate nohighlight">\(Z\)</span> el número de protones en cada núcleo.</p>
 <p>Notar que en este caso, podemos asociar:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2248,7 +2230,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <div class="section" id="procesado-y-analisis-de-datos">
 <h4><span class="section-number">3.7.3.3. </span>Procesado y análisis de datos<a class="headerlink" href="#procesado-y-analisis-de-datos" title="Permalink to this heading">#</a></h4>
 <p>El sistema de disparo (<em>trigger</em>) reduce el rate de producción (40 MHz en el LHC) para seleccionar solo los sucesos relevantes (<span class="math notranslate nohighlight">\(\mathcal{0}(10)\)</span> k). Para ello se lee parcialmente el detector y diversos algoritmos seleccionan los eventos relevantes (que tenga un muón de alto momento por ejemplo)</p>
-<p>El sistema de adquisicón (DAQ) permite recoger y sincronizar los datos de un evento. Para ello se utilizan chips, y módulos de electrónica, en muchos casos diseñados específicamente para esta función.</p>
+<p>El sistema de adquisición (DAQ) permite recoger y sincronizar los datos de un evento. Para ello se utilizan chips, y módulos de electrónica, en muchos casos diseñados específicamente para esta función.</p>
 <p>El trigger y el DAQ forman parte del <em>online</em> del experimento</p>
 <p>Posteriormente los eventos se procesan,  a partir de las señales de los sensores se reconstruyen posiciones, luego trazas, vértices, depósitos de energía y finalmente partículas y cuadrimomentos.</p>
 <p>Para ello se utilizan programas en C++ o Python donde participan decenas o centenares de físicos.</p>
@@ -2370,7 +2352,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <p>La teoría de Física de Partículas se basa en la <strong>Teoría Cuántica de Campos</strong>.</p>
 <p>En mecánica cuántica, la función de ondas <span class="math notranslate nohighlight">\(\psi(x)\)</span> está asociada a una partícula, y su amplitud al cuadrado con una densidad de probabilidad.</p>
 <p>Pero en Física de Partículas, éstas se destruyen y se crean. <span class="math notranslate nohighlight">\(\psi(x)\)</span> no es suficiente.</p>
-<p>Por otro lado, la Naturaleza crea partículas iguales, por ejemplo un protón de un átomo de Hidrógeno es idéntico al que proviene de un rayo cósmico proviniende de una galacia muy lejana.</p>
+<p>Por otro lado, la Naturaleza crea partículas iguales, por ejemplo un protón de un átomo de Hidrógeno es idéntico al de un rayo cósmico proviniende de una galacia muy lejana.</p>
 <p>Necesitamos pues operadores que creen y destruyan partículas.</p>
 <p>Ya hemos encontrado en cuántica operadores similares, los operadores escalera, que suben y bajan, en el caso del oscilador armónico.</p>
 <p>Veamos los ingredientes principales de la teoría.</p>
@@ -2422,7 +2404,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 - q \bar{\Psi} \gamma^\mu \Psi \, A_\mu 
 \]</div>
 <p>que nos cuantifica la interacción del fermión con el fotón.</p>
-<p>más adelante en el curso aparecerá la expresión <span class="math notranslate nohighlight">\(j^\mu = q \bar{\Psi} \gamma^\mu \Psi\)</span> es una corriente fermiónica. Si <span class="math notranslate nohighlight">\(q\)</span> es la carga, se trata de una corriente eléctrica.</p>
+<p>más adelante en el curso aparecerá la expresión <span class="math notranslate nohighlight">\(j^\mu = q \bar{\Psi} \gamma^\mu \Psi\)</span> como una corriente fermiónica. Si <span class="math notranslate nohighlight">\(q\)</span> es la carga, se trata de una corriente eléctrica.</p>
 <p>El <em>Modelo Estándar</em> necesita de dos elementos más:</p>
 <ol class="simple">
 <li><p><strong>La teoría de grupos</strong>.</p></li>
@@ -2432,7 +2414,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <h3><span class="section-number">3.8.1. </span>Sobre la ecuación de Dirac<a class="headerlink" href="#sobre-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
 <p>Dirac propuso en 1932 una ecuación, que lleva su nombre, que describe la dinámica relativista de los fermiones libres.</p>
 <p>Unificó en una sola ecuación las dos revoluciones de principios del siglo XX: la mecánica cuántica y la relatividad espacial.</p>
-<p>Una ecuación que merece enmarcarse:</p>
+<p>La ecuación de Dirac:</p>
 <div class="math notranslate nohighlight">
 \[
 (i \gamma^\mu \partial_\mu - m) \, \Psi(x) = 0
@@ -2464,7 +2446,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 \]</div>
 <p>con <span class="math notranslate nohighlight">\(k=1, 2, 3\)</span>, y <span class="math notranslate nohighlight">\(\mu = 0, 1, 2, 3\)</span>.</p>
 <p>Existen varias representaciones de las matrices <span class="math notranslate nohighlight">\(\gamma\)</span> y podemos usar la más conveniente.</p>
-<p>La Física no cambia, no puede depender, de la representación de las matrices <span class="math notranslate nohighlight">\(\gamma\)</span> que escogamos.</p>
+<p>La Física no cambia, no puede depender, de la representación de las matrices <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
 <p>La representación más común es la de Pauli-Dirac:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -2529,7 +2511,7 @@ u^a_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \;\;\; u^a_2 = \begin {pmatrix} 0 
 </div>
 <div class="section" id="espin">
 <h4><span class="section-number">3.8.1.3. </span>Espín<a class="headerlink" href="#espin" title="Permalink to this heading">#</a></h4>
-<p>Uno de los principales resultados de la ecuación de Dirac, es que el momento total <span class="math notranslate nohighlight">\({\bf J} = {\bf L} + {\bf S}\)</span>, conmuta con el hamiltoniano, mientras que <span class="math notranslate nohighlight">\({\bf L}\)</span>, el momento angular orbital solo, no conmuta, y que por lo tanto exite un momento angular intrínsico, el espín, que para los electrones vale <span class="math notranslate nohighlight">\(1/2\)</span>. (ver [MT])</p>
+<p>Uno de los principales resultados de la ecuación de Dirac, es que el momento total <span class="math notranslate nohighlight">\({\bf J} = {\bf L} + {\bf S}\)</span>, conmuta con el hamiltoniano, mientras que <span class="math notranslate nohighlight">\({\bf L}\)</span>, el momento angular orbital solo, no conmuta, y que por lo tanto existe un momento angular intrínsico, el espín, que para los electrones vale <span class="math notranslate nohighlight">\(1/2\)</span>. (ver [MT])</p>
 <p>Donde el operador <em>espín</em> es:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -2547,7 +2529,6 @@ h \equiv \frac{{\bf S} \cdot {\bf p}}{\text{p}} = {\bf S} \cdot \hat{\bf v} = \f
 \begin{pmatrix} (\hat{\bf v} \cdot \vec{\sigma}) &amp; 0 \\ 0 &amp; (\hat{\bf v} \cdot \vec{\sigma}) \end{pmatrix}
 \end{split}\]</div>
 <p>Notar no obstante que la helicidad no es un invariante Lorentz: si la partícula tiene masa, siempre podemos encontrar un sistema inercial donde se invierta el momento de la partícula y por lo tanto su helicidad.</p>
-<p>A falta de un eje definido o un campo magnético, podemos tomar de forma natural el eje <span class="math notranslate nohighlight">\(z\)</span> aquel en el que se mueve la partícula con momento <span class="math notranslate nohighlight">\({\bf p}\)</span>.</p>
 <p>En ese caso los espinores de Dirac que son soluciones de helicidad son, <span class="math notranslate nohighlight">\(u_\pm(p), v_\pm(p)\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -2645,7 +2626,7 @@ p = 0 \; \to \; \kappa = 0 \, \\ m = 0, \, E \gg m, \, p \simeq E \; \to \; \kap
 \[
 e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t - {\bf p}{\bf x})}
 \]</div>
-<p>Al cambiar <span class="math notranslate nohighlight">\(t\to -t\)</span>, la energía, momento, espín, helicidad (que están relacionadas con <span class="math notranslate nohighlight">\(t\)</span>) de las antipartículas están en realidad invertidos. Con esta interpretaciín la energía es siempre positiva y está limitada por abajo.</p>
+<p>Al cambiar <span class="math notranslate nohighlight">\(t\to -t\)</span>, la energía, espín, helicidad (que están relacionadas con <span class="math notranslate nohighlight">\(t\)</span>) de las antipartículas están en realidad invertidos. Con esta interpretación la energía es siempre positiva y está limitada por abajo.</p>
 <p>Podríamos entonces ver una carga negativa yendo hacia atrás como una positiva yendo hacia delante.</p>
 <p>Las dos interpretaciones son problemáticas.</p>
 <p>La interpretación correcta se obtiene en Teoría Cuántica de Campos (TCQ).</p>
