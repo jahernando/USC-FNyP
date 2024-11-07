@@ -1104,7 +1104,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov  4 16:13:28 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Nov  7 14:57:09 2024
 </pre></div>
 </div>
 </div>
@@ -1634,7 +1634,7 @@ s = \left( \sum_{i  = 1}^n  p_i \right)^2
 </tr>
 </tbody>
 </table>
-<p>La sección eficaz, <span class="math notranslate nohighlight">\(\sigma\)</span>, cuantifica como un área efectiva, dada habitualmente en barn <span class="math notranslate nohighlight">\(\mathrm{b} = \mathrm{cm}^{-24}\)</span>, la razón de interacciones si sobre una partícula blanco golpea un flujo <span class="math notranslate nohighlight">\(\Phi\)</span> de partículas sonda (dado en <span class="math notranslate nohighlight">\(\mathrm{cm}^2/s\)</span>).</p>
+<p>La sección eficaz, <span class="math notranslate nohighlight">\(\sigma\)</span>, cuantifica como un área efectiva, dada habitualmente en barn <span class="math notranslate nohighlight">\(\mathrm{b} = 10^{-24} \mathrm{cm}^{2}\)</span>, la razón de interacciones si sobre una partícula blanco golpea un flujo <span class="math notranslate nohighlight">\(\Phi\)</span> de partículas sonda (dado en <span class="math notranslate nohighlight">\(1/(\mathrm{cm}^2 s)\)</span>).</p>
 <p>En el caso de un experimento de blanco fijo y de un flujo, <span class="math notranslate nohighlight">\(\Phi\)</span>, con <span class="math notranslate nohighlight">\(N\)</span> partículas blanco, la razón de producción es:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1859,7 +1859,7 @@ Gamma_hadrons 	 = 1.445398e-03 eV
 <p>Si detectamos <span class="math notranslate nohighlight">\(N'\)</span> eventos, con una eficiencia <span class="math notranslate nohighlight">\(\epsilon'\)</span> con la misma luminosidad, <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>, entonces:</p>
 <div class="math notranslate nohighlight">
 \[
-\sigma = \frac{N \epsilon'}{N' \epsilon}
+\frac{\sigma}{\sigma'} = \frac{N \epsilon'}{N' \epsilon}
 \]</div>
 </div>
 </div>
@@ -2471,7 +2471,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(u_s(p), v_s(p)\)</span> corresponden a los <strong>espinores</strong> (cuatro componentes en columna) de los fermiones y antifermiones respectivamente y el índice <span class="math notranslate nohighlight">\(s=1, 2\)</span> está asociado con las dos posibles componentes de espín de <span class="math notranslate nohighlight">\(1/2\)</span>.</p>
 <p>Notar que la dependencia de las soluciones en <span class="math notranslate nohighlight">\(t, {\bf x}\)</span>  está contenida en la fase y que los espinores dependen sólo en <span class="math notranslate nohighlight">\(p =(E, {\bf p})\)</span></p>
-<p>Por otro lado, al aplicar el operador energía <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span>, obtenemos:</p>
+<p>Por otro lado, al aplicar el operador energía a <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span>, obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
 i \partial_0 \Phi_s(x) = - E \, \Phi_s(x)
@@ -2627,14 +2627,15 @@ p = 0 \; \to \; \kappa = 0 \, \\ m = 0, \, E \gg m, \, p \simeq E \; \to \; \kap
 e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t - {\bf p}{\bf x})}
 \]</div>
 <p>Al cambiar <span class="math notranslate nohighlight">\(t\to -t\)</span>, la energía, espín, helicidad (que están relacionadas con <span class="math notranslate nohighlight">\(t\)</span>) de las antipartículas están en realidad invertidos. Con esta interpretación la energía es siempre positiva y está limitada por abajo.</p>
-<p>Podríamos entonces ver una carga negativa yendo hacia atrás como una positiva yendo hacia delante.</p>
+<p>Podríamos entonces ver una carga negativa yendo hacia atrás en el tiempo como una positiva yendo hacia delante.</p>
 <p>Las dos interpretaciones son problemáticas.</p>
 <p>La interpretación correcta se obtiene en Teoría Cuántica de Campos (TCQ).</p>
 <p>La solución más general del campo fermiónico, <span class="math notranslate nohighlight">\(\Psi(x)\)</span>, descompuesta en el espacio de momentos es:</p>
 <div class="math notranslate nohighlight">
-\[\Psi(x) = \sum_s \int \frac{\mathrm{d}p^3}{(2\pi)^3\sqrt{2E}} \left( a_{p,s} u_s(p) e^{-ipx} + b^\dagger_{p,s} v_s(p) e^{+ipx} \right)\]</div>
+\[
+\Psi(x) = \sum_s \int \frac{\mathrm{d}p^3}{(2\pi)^3\sqrt{2E}} \left( a_{p,s} u_s(p) e^{-ipx} + b^\dagger_{p,s} v_s(p) e^{+ipx} \right)
+\]</div>
 <p>Al cuantificar el campo, obtenemos <span class="math notranslate nohighlight">\(\Psi(x), \Psi^\dagger(x)\)</span> como operadores y los coeficientes <span class="math notranslate nohighlight">\(a_{p,s}, b^\dagger_{ps,}\)</span> se convierten en operadores destrucción de una partícula y construcción de antipartícula respectivamente. Estos operadores son similares a los operadores escalera que aparecieron en al cuantificar el oscilador armónico en mecánica cuántica.</p>
-<p>De esta manera la antipartícula es simplemente igual a la partícula pero con sus cargas opuestas.</p>
 <p>Decimos que el operador creacción de partículas, <span class="math notranslate nohighlight">\(a^\dagger_{p,s}\)</span> actuando sobre el vacío, <span class="math notranslate nohighlight">\(|0 \rangle\)</span>, crea una partícula con cuadri-momento <span class="math notranslate nohighlight">\({p}\)</span> y helicidad (o espín) <span class="math notranslate nohighlight">\(s\)</span>, esto es <span class="math notranslate nohighlight">\(| p, s \rangle\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
