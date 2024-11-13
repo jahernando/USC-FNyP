@@ -157,7 +157,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="problemas-prel.html">
-   10. Introducción a Física de Partículas
+   10. Boletín de problemas - preliminar
   </a>
  </li>
 </ul>
@@ -760,7 +760,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 11 10:39:26 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 11 16:11:27 2024
 </pre></div>
 </div>
 </div>
@@ -787,7 +787,7 @@ title="Print to PDF"
 <h2>Detectores<a class="headerlink" href="#detectores" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p><strong>ejercicio 1</strong></p>
-<p>Para medir la sección eficaz de la interacción <span class="math notranslate nohighlight">\(\pi^+ + p\)</span> realizamos el siguiente experimento, enviamos un haz de <span class="math notranslate nohighlight">\(\pi^+\)</span> de 20 GeV de energía a un tanque de longitud <span class="math notranslate nohighlight">\(L = 1\)</span> m, que en una primera configuración está vacío y luego lleno de <span class="math notranslate nohighlight">\(H\)</span> líquido, y medimos los flujos tras el tanque normalizados al mismo flujo incidente y obtenemos <span class="math notranslate nohighlight">\(N_0 = 7.5 \times 10^5\)</span> y <span class="math notranslate nohighlight">\(N_H = 6.9 \times 10^5\)</span> respectivamente. Calcula la sección eficaz y su error estadístico. Datos: <span class="math notranslate nohighlight">\(\rho_H = 60\)</span> <span class="math notranslate nohighlight">\(\mathrm{kg/cm}^3\)</span></p>
+<p>Para medir la sección eficaz de la interacción <span class="math notranslate nohighlight">\(\pi^+ + p\)</span> realizamos el siguiente experimento, enviamos un haz de <span class="math notranslate nohighlight">\(\pi^+\)</span> de 20 GeV de energía a un tanque de longitud <span class="math notranslate nohighlight">\(L = 1\)</span> m, que en una primera configuración está vacío y luego lleno de hidrógeno líquido, y medimos los flujos tras el tanque normalizados al mismo flujo incidente y obtenemos <span class="math notranslate nohighlight">\(N_0 = 7.5 \times 10^5\)</span> y <span class="math notranslate nohighlight">\(N_H = 6.9 \times 10^5\)</span> respectivamente. Calcula la sección eficaz y su error estadístico. Datos: <span class="math notranslate nohighlight">\(\rho_H = 60\)</span> <span class="math notranslate nohighlight">\(\mathrm{kg/cm}^3\)</span></p>
 <p><em>solución</em></p>
 <p>La atenuación será:</p>
 <div class="math notranslate nohighlight">
@@ -843,22 +843,26 @@ error estadístico 1.37e-04 b
 \[
 \frac{\mathrm{d}E}{\mathrm{d}x} \simeq (a + b \,E) \rho
 \]</div>
-<p>Luego la distancia que recorrerá en promedio es:</p>
+<p>Luego la distancia hasta que se detenga considerando la pérdida siempre similar</p>
 <div class="math notranslate nohighlight">
 \[
-E / \frac{\mathrm{d}E}{\mathrm{d}x} 
+\mathrm{d}x = \frac{\mathrm{dE}}{(a + b E) \rho}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+L = \frac{1}{\rho b} \ln{\frac{a + b E}{a}}
 \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">2.5</span> <span class="c1"># MeV cm2/g</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mf">3.5e-5</span> <span class="c1"># cm2/g</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">3.5e-6</span> <span class="c1"># cm2/g</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Energy </span><span class="si">{:1.2f}</span><span class="s2"> GeV&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.e-3</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Energy 71.43 GeV
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Energy 714.29 GeV
 </pre></div>
 </div>
 </div>
@@ -866,16 +870,17 @@ E / \frac{\mathrm{d}E}{\mathrm{d}x}
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Emu</span> <span class="o">=</span> <span class="mf">100e3</span> <span class="c1"># MeV</span>
-<span class="n">rho</span> <span class="o">=</span> <span class="mf">2.65</span> 
+<span class="n">rho</span> <span class="o">=</span> <span class="mf">2.65</span> <span class="c1"># g/cm3</span>
 <span class="n">dEdx</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">*</span> <span class="n">Emu</span><span class="p">)</span> <span class="o">*</span> <span class="n">rho</span> <span class="c1"># MeV/cm</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dE/dx </span><span class="si">{:1.2f}</span><span class="s1"> MeV/cm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dEdx</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;length </span><span class="si">{:1.2e}</span><span class="s1"> m&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">Emu</span><span class="o">/</span><span class="n">dEdx</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e-3</span><span class="p">))</span>
+<span class="n">L</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">*</span> <span class="n">Emu</span><span class="p">)</span><span class="o">/</span><span class="n">a</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">rho</span><span class="o">*</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;length </span><span class="si">{:1.2f}</span><span class="s1"> m&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">L</span> <span class="o">*</span> <span class="mf">1e-2</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dE/dx 15.90 MeV/cm
-length 6.29e+00 m
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dE/dx 7.55 MeV/cm
+length 141.27 m
 </pre></div>
 </div>
 </div>
@@ -915,6 +920,48 @@ length 6.29e+00 m
 </div>
 </div>
 </div>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>Considera un espectrométro de longitud <span class="math notranslate nohighlight">\(L\)</span> y campo magnético <span class="math notranslate nohighlight">\(B\)</span> y tres cámaras de detección situadas antes, en el medio y después del espectrómetro, que nos permiten estimar la sagitta <span class="math notranslate nohighlight">\(s = x_2 - (x_3+x_1)/2\)</span>, calcula el momento transverso de la partícula y su incertidumbre si la resolución de cada cámara es <span class="math notranslate nohighlight">\(\sigma_x\)</span>. Considerar <span class="math notranslate nohighlight">\(\theta\)</span> pequeño.</p>
+<a class="reference internal image-reference" href="../_images/prob_sagitta.png"><img alt="../_images/prob_sagitta.png" class="align-center" src="../_images/prob_sagitta.png" style="width: 200px;" /></a>
+<p><em>solución</em></p>
+<p>La relación entre el momento transverso, <span class="math notranslate nohighlight">\(p_T\)</span> (GeV), el campo magnético <span class="math notranslate nohighlight">\(B\)</span> (T) y el radio de curvatura es <span class="math notranslate nohighlight">\(\rho\)</span> (m)</p>
+<div class="math notranslate nohighlight">
+\[
+p_T = 0.3 B \rho
+\]</div>
+<p>por otro lado la relación entre la sagitta y su ángulo, si <span class="math notranslate nohighlight">\(\theta\)</span> pequeño:</p>
+<div class="math notranslate nohighlight">
+\[
+s = R (1- \cos \theta/2) \simeq \frac{R \theta^2}{8}, \;\;\; L = 2 R \sin \theta/2 \simeq R \theta
+\]</div>
+<p>luego</p>
+<div class="math notranslate nohighlight">
+\[
+s = R \frac{L^2}{8R = ^2} = \frac{L^2}{8} = 0.3 \frac{BL^2}{8 p_t}
+\]</div>
+<p>esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+p_T = 0.3 \frac{BL^2}{8s}
+\]</div>
+<p>La resolución en <span class="math notranslate nohighlight">\(p_T\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{p_T} = p_T \frac{\sigma_s}{s} \to \frac{\sigma_{p_T}}{p_T} = \frac{\sigma_s}{s}
+\]</div>
+<p>y la incertidumbre en la sagitta:</p>
+<div class="math notranslate nohighlight">
+\[
+s = \sqrt{3} \sigma_x
+\]</div>
+<p>luego:</p>
+<p>$$
+\sigma_{p_T} = 0.3 \frac{BL^2}{8s^2} \sqrt{3} \sigma_x</p>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>Considera un detector de trazas construidos por dos capas cilíndricas de detectores de silicio situadas a unos radios de <span class="math notranslate nohighlight">\(r_1, r_2\)</span> y cuyos ejes van en la dirección <span class="math notranslate nohighlight">\(z\)</span>, sea la resolución en <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span> de <span class="math notranslate nohighlight">\(\sigma_0\)</span> en las dos capas. Considera que la trayectoria no se curva en la región de este detector. Estima la resolución del parámetro de impacto en el plano transverso. Decimos que el parámetro de impacto es la distancia de la extrapolación de la traza al vértice primaro (con coordenadas <span class="math notranslate nohighlight">\((x_v, y_v, z_v)\)</span>.  Esta resolución es fundamental para identificar las partículas que no provienen del vértice primaro.</p>
+<p>Pero antes de que la traza lleve al detector debe atravesar el material del tuvo central que introduce un error en el ángulo, (que se donomina de <em>multiple scattering</em>) y que podemos parametrizar por <span class="math notranslate nohighlight">\(\theta_0 = k(x/X_0)/p\)</span>, donde <span class="math notranslate nohighlight">\(k(x/X_0)\)</span> depende de la distancia y del material que atraviesa la partícula. Muestra la dependencia de la resolución con el momento transverso. ¿Qué resolución tienen las trazas de alto momento transverso comparadas con las de bajo?</p>
 <hr class="docutils" />
 <p><strong>ejercicio 3</strong></p>
 <p>Delphi disponía de 3 capas cilíndricas de detectores de silicio situadas en el eje de interacción. Si la la distancia entre ellas era de , y la resolución de los detectores es de 8 <span class="math notranslate nohighlight">\(\mu\mathrm{m}\)</span> ¿Cuál es la resolición que se obtenía al calcular el parámetro de impacto?</p>
@@ -1663,11 +1710,11 @@ M = \frac{R A}{\epsilon \Phi \sigma Z N_A}
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.7512330785415513  mm
-0.2494666290819729
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.8117717456685296  mm
+0.25790290976398256
 </pre></div>
 </div>
-<img alt="../_images/problemas-III_77_1.png" src="../_images/problemas-III_77_1.png" />
+<img alt="../_images/problemas-III_81_1.png" src="../_images/problemas-III_81_1.png" />
 </div>
 </div>
 <p>### 1.2 ejercicio</p>

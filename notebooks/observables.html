@@ -157,6 +157,11 @@ const thebe_selector_output = ".output, .cell_output"
    9. Extensión: El Modelo Estándar
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-prel.html">
+   10. Boletín de problemas - preliminar
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -1104,7 +1109,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Nov  7 14:57:09 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Nov 13 15:50:40 2024
 </pre></div>
 </div>
 </div>
@@ -1939,7 +1944,7 @@ N = \frac{Z N_A}{M_A} M
 <p>La pérdida de energía <span class="math notranslate nohighlight">\(\frac{\mathrm{d}E}{\mathrm{dx}}\)</span> por distancia debido a la ionización sigue la ecuación de Bethe-Bloch (1930s):</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{1}{\rho}\frac{\mathrm{d}E}{\mathrm{d}x} \simeq - K \frac{Z}{A \beta^2}\left[ \ln \left( \frac{2  m_e c^2 \beta^2 \gamma^2}{I_e}\right) - \beta^2\right]
+\frac{1}{\rho}\frac{\mathrm{d}E}{\mathrm{d}x} \simeq - K \frac{Z}{A \beta^2}\left[\ln \left( \frac{2  m_e c^2 \beta^2 \gamma^2}{I_e}\right) - \beta^2\right]
 \]</div>
 <p>Donde <span class="math notranslate nohighlight">\(K = \frac{4\pi \hbar^2 \alpha^2 N_A}{m_e} = 0.307\)</span> MeV <span class="math notranslate nohighlight">\(\mathrm{cm}^2\)</span>/mol, <span class="math notranslate nohighlight">\(\alpha\)</span> es la constante de estructura fina, <span class="math notranslate nohighlight">\(m_e\)</span> la masa del electrón, <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, <span class="math notranslate nohighlight">\(I_e\)</span> un potencial de ionización que depende del material <span class="math notranslate nohighlight">\((A, Z)\)</span>, <span class="math notranslate nohighlight">\(\rho\)</span> la densidad, y <span class="math notranslate nohighlight">\(\gamma, \beta\)</span> los parámetros de Lorentz asociados a la velocidad <span class="math notranslate nohighlight">\(\beta\)</span> de la partícula.</p>
 <p>La pérdida de energía tiene una curva general en función principalmente de <span class="math notranslate nohighlight">\(\gamma \beta\)</span> y del material</p>
@@ -2351,8 +2356,8 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <h2><span class="section-number">3.8. </span>Una perspectiva teórica<a class="headerlink" href="#una-perspectiva-teorica" title="Permalink to this heading">#</a></h2>
 <p>La teoría de Física de Partículas se basa en la <strong>Teoría Cuántica de Campos</strong>.</p>
 <p>En mecánica cuántica, la función de ondas <span class="math notranslate nohighlight">\(\psi(x)\)</span> está asociada a una partícula, y su amplitud al cuadrado con una densidad de probabilidad.</p>
-<p>Pero en Física de Partículas, éstas se destruyen y se crean. <span class="math notranslate nohighlight">\(\psi(x)\)</span> no es suficiente.</p>
-<p>Por otro lado, la Naturaleza crea partículas iguales, por ejemplo un protón de un átomo de Hidrógeno es idéntico al de un rayo cósmico proviniende de una galacia muy lejana.</p>
+<p>Pero las partículas se crean y se destruyen, por lo que <span class="math notranslate nohighlight">\(\psi(x)\)</span> no es suficiente.</p>
+<p>La Naturaleza crea partículas iguales, por ejemplo un protón de un átomo de Hidrógeno es idéntico al de un rayo cósmico proviniende de una galacia muy lejana.</p>
 <p>Necesitamos pues operadores que creen y destruyan partículas.</p>
 <p>Ya hemos encontrado en cuántica operadores similares, los operadores escalera, que suben y bajan, en el caso del oscilador armónico.</p>
 <p>Veamos los ingredientes principales de la teoría.</p>
@@ -2389,7 +2394,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <ol class="simple">
 <li><p>Los campos fermiónicos presentan <strong>simetría gauge local</strong>.</p></li>
 </ol>
-<p>En cuántica un cambio de fase en la función de ondas, <span class="math notranslate nohighlight">\(\psi'(x) = e^\theta \psi(x)\)</span>, no altera la Física.</p>
+<p>En cuántica un cambio de fase en la función de ondas, <span class="math notranslate nohighlight">\(\psi'(x) = e^{i\theta} \psi(x)\)</span>, no altera la Física.</p>
 <p>El TQC exigimos que la Física sea invariante frente a un cambio de fase <em>continuo y local</em> del campo, <span class="math notranslate nohighlight">\(e^{i\theta(x)\Psi(x)}\)</span>.</p>
 <p>Para que se conserve esta simetría, el campo vectorial y el fermiónico deben transformarse de forma conjunta, lo que a su vez implica que interaccionan. Así aparece por ejemplo la interacción la corriente de un electrón con un fotón.</p>
 <p>Se escapa al nivel del curso, pero mencionamos simplemente que a partir de la conservación de la simetría guage local, aparece un término adicional en la ec. de Dirac</p>
@@ -2408,7 +2413,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <p>El <em>Modelo Estándar</em> necesita de dos elementos más:</p>
 <ol class="simple">
 <li><p><strong>La teoría de grupos</strong>.</p></li>
-<li><p><strong>El mecanismno de Higgs</strong></p></li>
+<li><p><strong>El mecanismo de Higgs</strong></p></li>
 </ol>
 <div class="section" id="sobre-la-ecuacion-de-dirac">
 <h3><span class="section-number">3.8.1. </span>Sobre la ecuación de Dirac<a class="headerlink" href="#sobre-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
@@ -2477,7 +2482,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 i \partial_0 \Phi_s(x) = - E \, \Phi_s(x)
 \]</div>
 <p>¡Los anti-fermiones tienen energía negativa!</p>
-<p>Volveremos sobre ello después, antes vamos a indicar cómo obtener las expresiones de los espinores <span class="math notranslate nohighlight">\(u_s(E, {\bf p}), v_s(E, {\bf p})\)</span></p>
+<p>Volveremos sobre ello después, antes vamos a indicar cómo obtener las expresiones de los espinores <span class="math notranslate nohighlight">\(u_s(E, {\bf p}), v_s(E, {\bf p})\)</span>, en donde <span class="math notranslate nohighlight">\(E , {\bf p}\)</span> son físicas, esto es <span class="math notranslate nohighlight">\(E &gt;0\)</span>.</p>
 <p>Aplicando la ecuaciones de Dirac a <span class="math notranslate nohighlight">\(\Psi_s(x)\)</span> obtenemos la ecuación equivalente para los espinores <span class="math notranslate nohighlight">\(u_s(p)\)</span></p>
 <div class="math notranslate nohighlight">
 \[
@@ -2506,8 +2511,35 @@ u^b_s(p) = \frac{\text{p}}{E+m} (\hat{\bf v} \cdot \vec{\sigma}) \; u^a_s(p)
 u^a_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \;\;\; u^a_2 = \begin {pmatrix} 0 \\ 1 \end{pmatrix}
 \end{split}\]</div>
 <p>El caso de la partícula en reposo <span class="math notranslate nohighlight">\(\text{p} = 0\)</span> y en movimiento <span class="math notranslate nohighlight">\({\bf p}\)</span>, (o de forma equivalente nos da la transformación del espinor tras un <em>boost</em>).</p>
+<p>Podemos obtener fácilmente las expressiones de los espinores en el caso de que <span class="math notranslate nohighlight">\({\bf p}\)</span> vaya en la dirección <span class="math notranslate nohighlight">\(z\)</span>.</p>
 <p>De forma simular procedemos con las funciones de las anti-partículas <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span> para obtener las soluciones de los espinores <span class="math notranslate nohighlight">\(v_s(p)\)</span>.</p>
-<p>No vamos a calcular ni necesitaremos las soluciones completas, (ver si eso [MT4] y extensión)</p>
+<div class="math notranslate nohighlight">
+\[
+(\gamma^\mu \, p_\mu + m) \, v_s(p) = 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_s(p) \equiv \begin{pmatrix} v^a_s(p) \\ v^b_s(p) \end{pmatrix} 
+\end{split}\]</div>
+<p>Y obtendríamos:</p>
+<div class="math notranslate nohighlight">
+\[
+v^a_s(p) = \frac{\text{p}}{E+m} (\hat{\bf v} \cdot \vec{\sigma}) \; v^b_s(p)
+\]</div>
+<p>Si consideramos que el momento <span class="math notranslate nohighlight">\({\bf p}\)</span> va en la dirección <span class="math notranslate nohighlight">\(z\)</span>, los espinores de Dirac <span class="math notranslate nohighlight">\(u_s(p), v_s(p)\)</span>, con <span class="math notranslate nohighlight">\(s = 1, 2\)</span>, son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{1}(p) = N \begin{pmatrix} 1    \\  0      \\ \kappa  \\  0      \end{pmatrix}, \;
+u_{2}(p) = N \begin{pmatrix} 0     \\ 1       \\ 0       \\ -\kappa \end{pmatrix}, \;
+v_{1}(p) = N \begin{pmatrix} 0     \\ -\kappa \\ 0       \\ 1       \end{pmatrix},
+v_{2}(p) = N \begin{pmatrix} \kappa \\ 0       \\ 1      \\ 0        \end{pmatrix} \;,
+\end{split}\]</div>
+<p>donde:</p>
+<div class="math notranslate nohighlight">
+\[
+\kappa = \frac{\text{p}}{E+m}, \;\;\; N = \sqrt{E+m},
+\]</div>
+<p>es un factor que nos indica cuán relativista es la partículas y <span class="math notranslate nohighlight">\(N\)</span> es un factor de normalización (ver de nuevo [MT4] y extensión)</p>
 </div>
 <div class="section" id="espin">
 <h4><span class="section-number">3.8.1.3. </span>Espín<a class="headerlink" href="#espin" title="Permalink to this heading">#</a></h4>
@@ -2529,20 +2561,19 @@ h \equiv \frac{{\bf S} \cdot {\bf p}}{\text{p}} = {\bf S} \cdot \hat{\bf v} = \f
 \begin{pmatrix} (\hat{\bf v} \cdot \vec{\sigma}) &amp; 0 \\ 0 &amp; (\hat{\bf v} \cdot \vec{\sigma}) \end{pmatrix}
 \end{split}\]</div>
 <p>Notar no obstante que la helicidad no es un invariante Lorentz: si la partícula tiene masa, siempre podemos encontrar un sistema inercial donde se invierta el momento de la partícula y por lo tanto su helicidad.</p>
-<p>En ese caso los espinores de Dirac que son soluciones de helicidad son, <span class="math notranslate nohighlight">\(u_\pm(p), v_\pm(p)\)</span>:</p>
+<p>En el caso en el que <span class="math notranslate nohighlight">\({\bf p}\)</span> va en la dirección <span class="math notranslate nohighlight">\(z\)</span>, los espinores de Dirac que son soluciones de helicidad son, <span class="math notranslate nohighlight">\(u_\pm(p), v_\pm(p)\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-u_{-} = N \begin{pmatrix} 0     \\ 1       \\ 0       \\ -\kappa \end{pmatrix}, \;
-u_{+} = N \begin{pmatrix} 1    \\  0      \\ \kappa  \\  0      \end{pmatrix}, \;
-v_{-} = N \begin{pmatrix} \kappa \\ 0       \\ 1      \\ 0        \end{pmatrix} \;,
-v_{+} = N \begin{pmatrix} 0     \\ -\kappa \\ 0       \\ 1       \end{pmatrix},
+u_{+}(p) = N \begin{pmatrix} 1    \\  0      \\ \kappa  \\  0      \end{pmatrix}, \;
+u_{-}(p) = N \begin{pmatrix} 0     \\ 1       \\ 0       \\ -\kappa \end{pmatrix}, \;
+v_{+}(p) = N \begin{pmatrix} 0     \\ -\kappa \\ 0       \\ 1       \end{pmatrix},
+v_{-}(p) = N \begin{pmatrix} \kappa \\ 0       \\ 1      \\ 0        \end{pmatrix} \;,
 \end{split}\]</div>
 <p>donde:</p>
 <div class="math notranslate nohighlight">
 \[
 \kappa = \frac{p}{E+m}, \;\;\; N = \sqrt{E+m},
 \]</div>
-<p><span class="math notranslate nohighlight">\(N\)</span> es un factor de normalización (ver de nuevo [MT4] y extensión)</p>
 <p>que corresponden a:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -2575,7 +2606,7 @@ v_{+} = N \begin{pmatrix} 0     \\ -\kappa \\ 0       \\ 1       \end{pmatrix},
 p = 0 \; \to \; \kappa = 0 \, \\ m = 0, \, E \gg m, \, p \simeq E \; \to \; \kappa = 1
 \end{split}\]</div>
 <p>para las partículas ultra-relativistas <span class="math notranslate nohighlight">\(\kappa \to 1\)</span>.</p>
-<p>Nota que al pasar no no relativista a relativista en los espinores <span class="math notranslate nohighlight">\(u_\pm(x)\)</span> aparece el bi-espinor de abajo <span class="math notranslate nohighlight">\(u^b_s(p)\)</span>.</p>
+<p>Nota que al pasar de no relativista a relativista en los espinores <span class="math notranslate nohighlight">\(u_\pm(x)\)</span> aparece el bi-espinor de abajo <span class="math notranslate nohighlight">\(u^b_s(p)\)</span>.</p>
 </div>
 <div class="section" id="las-antiparticulas">
 <h4><span class="section-number">3.8.1.5. </span>Las antipartículas<a class="headerlink" href="#las-antiparticulas" title="Permalink to this heading">#</a></h4>
@@ -2626,16 +2657,16 @@ p = 0 \; \to \; \kappa = 0 \, \\ m = 0, \, E \gg m, \, p \simeq E \; \to \; \kap
 \[
 e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t - {\bf p}{\bf x})}
 \]</div>
-<p>Al cambiar <span class="math notranslate nohighlight">\(t\to -t\)</span>, la energía, espín, helicidad (que están relacionadas con <span class="math notranslate nohighlight">\(t\)</span>) de las antipartículas están en realidad invertidos. Con esta interpretación la energía es siempre positiva y está limitada por abajo.</p>
+<p>Al cambiar <span class="math notranslate nohighlight">\(t\to -t\)</span>, la energía, momento, espín de las antipartículas están en realidad invertidos. Con esta interpretación la energía es siempre positiva y está limitada por abajo.</p>
 <p>Podríamos entonces ver una carga negativa yendo hacia atrás en el tiempo como una positiva yendo hacia delante.</p>
-<p>Las dos interpretaciones son problemáticas.</p>
+<p>Las dos interpretaciones son problemáticas. Los físicos usamos energías acotadas inferiormente, y una línea temporal hacia delante.</p>
 <p>La interpretación correcta se obtiene en Teoría Cuántica de Campos (TCQ).</p>
 <p>La solución más general del campo fermiónico, <span class="math notranslate nohighlight">\(\Psi(x)\)</span>, descompuesta en el espacio de momentos es:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi(x) = \sum_s \int \frac{\mathrm{d}p^3}{(2\pi)^3\sqrt{2E}} \left( a_{p,s} u_s(p) e^{-ipx} + b^\dagger_{p,s} v_s(p) e^{+ipx} \right)
 \]</div>
-<p>Al cuantificar el campo, obtenemos <span class="math notranslate nohighlight">\(\Psi(x), \Psi^\dagger(x)\)</span> como operadores y los coeficientes <span class="math notranslate nohighlight">\(a_{p,s}, b^\dagger_{ps,}\)</span> se convierten en operadores destrucción de una partícula y construcción de antipartícula respectivamente. Estos operadores son similares a los operadores escalera que aparecieron en al cuantificar el oscilador armónico en mecánica cuántica.</p>
+<p>Al cuantificar el campo, obtenemos <span class="math notranslate nohighlight">\(\Psi(x), \Psi^\dagger(x)\)</span> como operadores y <span class="math notranslate nohighlight">\(a_{p,s}, b^\dagger_{ps,}\)</span> son los operadores destrucción de una partícula y construcción de antipartícula respectivamente. Estos operadores son similares a los operadores escalera que aparecieron en al cuantificar el oscilador armónico en mecánica cuántica.</p>
 <p>Decimos que el operador creacción de partículas, <span class="math notranslate nohighlight">\(a^\dagger_{p,s}\)</span> actuando sobre el vacío, <span class="math notranslate nohighlight">\(|0 \rangle\)</span>, crea una partícula con cuadri-momento <span class="math notranslate nohighlight">\({p}\)</span> y helicidad (o espín) <span class="math notranslate nohighlight">\(s\)</span>, esto es <span class="math notranslate nohighlight">\(| p, s \rangle\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2646,6 +2677,7 @@ e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t
 </div>
 <div class="section" id="corriente-fermionica">
 <h4><span class="section-number">3.8.1.6. </span>Corriente fermiónica<a class="headerlink" href="#corriente-fermionica" title="Permalink to this heading">#</a></h4>
+<p>Por último, la corriente fermiónica juega un papel fundamental en la interacciones entre partículas.</p>
 <p>Para obtener una corriente de probabilidad conservada, a partir de la ecución de Dirac, tenemos que introducir el espinor <strong>adjunto</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2665,6 +2697,7 @@ j^\mu =  \bar{\Psi} \gamma^\mu \Psi,\;\;\;  j^\mu = (j^0, {\bf j})
 \]</div>
 <p>esto es, la cantidad de <span class="math notranslate nohighlight">\(\rho\)</span> que entra en un volumen diferencial en una unidad de tiempo corresponde al flujo de la corriente <span class="math notranslate nohighlight">\({\bf j}\)</span> que atraviesa las paredes del volumen en ese tiempo.</p>
 <p>Es este caso es la <strong>corriente de probabilidad</strong> del fermión.</p>
+<p>La corriente multiplicada por su carga, nos da la corriente eléctrica.</p>
 <p>[Para profundizar en el tema MT4.2, MT4.3, MT4.8]</p>
 </div>
 </div>
@@ -2675,11 +2708,11 @@ j^\mu =  \bar{\Psi} \gamma^\mu \Psi,\;\;\;  j^\mu = (j^0, {\bf j})
 <ul class="simple">
 <li><p>las interacciones tienen lugar entre <strong>dos corrientes de fermiones</strong> (Fermi )</p></li>
 <li><p>la fuerza se transmite mediante un portador o <strong>mediador</strong> (Yukawa).</p></li>
-<li><p><strong>la regla de Oro de Fermi</strong>. La frecuencia de la transición, <span class="math notranslate nohighlight">\(R\)</span>, es proporcional a <span class="math notranslate nohighlight">\(|M_{fi}|^2\)</span> y a la densidad de estados disponibles <span class="math notranslate nohighlight">\(\rho(E)\)</span>.</p></li>
+<li><p><strong>la regla de Oro de Fermi</strong>. La frecuencia de la transición, <span class="math notranslate nohighlight">\(\nu\)</span>, es proporcional a <span class="math notranslate nohighlight">\(|M_{fi}|^2\)</span> y a la densidad de estados disponibles <span class="math notranslate nohighlight">\(\rho(E)\)</span>.</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
-R = (2\pi) |M_{fi}|^2 \rho(E)
+\nu = (2\pi) |M_{fi}|^2 \rho(E)
 \]</div>
 <p>Recordemos que <span class="math notranslate nohighlight">\(M_{fi} = \langle f | H_{int}| i \rangle\)</span> es el elemento de la matriz de transición entre los estados iniciales, <span class="math notranslate nohighlight">\(| i \rangle\)</span> y finales, <span class="math notranslate nohighlight">\(\langle f|\)</span>, mediante un hamiltoniano de interacción <span class="math notranslate nohighlight">\(H_{int}\)</span>.</p>
 <p>La parte cinématica puede resolverse <em>fácilmente</em>.</p>
