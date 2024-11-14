@@ -1109,7 +1109,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Nov 13 15:50:40 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Nov 14 15:28:45 2024
 </pre></div>
 </div>
 </div>
@@ -2355,7 +2355,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <div class="section" id="una-perspectiva-teorica">
 <h2><span class="section-number">3.8. </span>Una perspectiva teórica<a class="headerlink" href="#una-perspectiva-teorica" title="Permalink to this heading">#</a></h2>
 <p>La teoría de Física de Partículas se basa en la <strong>Teoría Cuántica de Campos</strong>.</p>
-<p>En mecánica cuántica, la función de ondas <span class="math notranslate nohighlight">\(\psi(x)\)</span> está asociada a una partícula, y su amplitud al cuadrado con una densidad de probabilidad.</p>
+<p>En mecánica cuántica, la función de ondas <span class="math notranslate nohighlight">\(\psi(x)\)</span> está asociada a una partícula, y su norma al cuadrado con una densidad de probabilidad.</p>
 <p>Pero las partículas se crean y se destruyen, por lo que <span class="math notranslate nohighlight">\(\psi(x)\)</span> no es suficiente.</p>
 <p>La Naturaleza crea partículas iguales, por ejemplo un protón de un átomo de Hidrógeno es idéntico al de un rayo cósmico proviniende de una galacia muy lejana.</p>
 <p>Necesitamos pues operadores que creen y destruyan partículas.</p>
@@ -2395,7 +2395,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <li><p>Los campos fermiónicos presentan <strong>simetría gauge local</strong>.</p></li>
 </ol>
 <p>En cuántica un cambio de fase en la función de ondas, <span class="math notranslate nohighlight">\(\psi'(x) = e^{i\theta} \psi(x)\)</span>, no altera la Física.</p>
-<p>El TQC exigimos que la Física sea invariante frente a un cambio de fase <em>continuo y local</em> del campo, <span class="math notranslate nohighlight">\(e^{i\theta(x)\Psi(x)}\)</span>.</p>
+<p>El TQC exigimos que la Física sea invariante frente a un cambio de fase <em>continuo y local</em> del campo, <span class="math notranslate nohighlight">\(e^{i\theta(x)}\Psi(x)\)</span>.</p>
 <p>Para que se conserve esta simetría, el campo vectorial y el fermiónico deben transformarse de forma conjunta, lo que a su vez implica que interaccionan. Así aparece por ejemplo la interacción la corriente de un electrón con un fotón.</p>
 <p>Se escapa al nivel del curso, pero mencionamos simplemente que a partir de la conservación de la simetría guage local, aparece un término adicional en la ec. de Dirac</p>
 <div class="math notranslate nohighlight">
@@ -2435,7 +2435,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <li><p>La coordenada temporal y las espaciales,  <span class="math notranslate nohighlight">\(\partial_0, \partial_i, \;\; i = 1, 2, 3\)</span>, aparecen linealmente y en igualdad de condiciones.</p></li>
 <li><p>Considerando la asociación con los operadores energía y momento, <span class="math notranslate nohighlight">\(i\partial_0 \to E, \;\; -i\partial_i = p_i\)</span>, al elevar al cuadrado la ecuación obtenemos la ecuación de Einstein, <span class="math notranslate nohighlight">\(E^2-{\bf p}^2 = m^2\)</span></p></li>
 </ol>
-<p>La ecuación de Dirac es una de los logros cumbre de la física teórica porque da la dinámica de los fermiones libres a partir de la mecánica cuántica y la relatividad especial, explicó la naturaleza del espín 1/2 de electrón y predijo la existencia de las anti-partículas.</p>
+<p>La ecuación de Dirac es una de los logros cumbre de la física teórica porque explicó la naturaleza del espín 1/2 de electrón y predijo la existencia de las anti-partículas.</p>
 <div class="section" id="las-matrices-gamma">
 <h4><span class="section-number">3.8.1.1. </span>Las matrices <span class="math notranslate nohighlight">\(\gamma\)</span><a class="headerlink" href="#las-matrices-gamma" title="Permalink to this heading">#</a></h4>
 <p>Los factores <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> no conmutan, no pueden por lo tanto ser escalares, deben ser como mínimo matrices complejas <span class="math notranslate nohighlight">\(4\times4\)</span> que cumplan el álgebra siguiente:</p>
@@ -2467,7 +2467,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 <p>La solución de la ec. de Dirac es una función de ondas con cuatro componentes complejas:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Psi = \begin{pmatrix} \psi_1 \\ \psi_2 \\ \psi_3 \\ \psi_4\end{pmatrix}.
+\Psi = \begin{pmatrix} \psi_0 \\ \psi_1 \\ \psi_2 \\ \psi_3\end{pmatrix}.
 \end{split}\]</div>
 <p>Las soluciones generales son cuatro ondas planas, que asociamos a los <strong>fermiones</strong>, <span class="math notranslate nohighlight">\(\Psi_s(x)\)</span> y <strong>anti-fermiones</strong> <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span> con sus dos componentes de espín (<span class="math notranslate nohighlight">\(s=1/2\)</span>):</p>
 <div class="math notranslate nohighlight">
@@ -2666,7 +2666,7 @@ e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t
 \[
 \Psi(x) = \sum_s \int \frac{\mathrm{d}p^3}{(2\pi)^3\sqrt{2E}} \left( a_{p,s} u_s(p) e^{-ipx} + b^\dagger_{p,s} v_s(p) e^{+ipx} \right)
 \]</div>
-<p>Al cuantificar el campo, obtenemos <span class="math notranslate nohighlight">\(\Psi(x), \Psi^\dagger(x)\)</span> como operadores y <span class="math notranslate nohighlight">\(a_{p,s}, b^\dagger_{ps,}\)</span> son los operadores destrucción de una partícula y construcción de antipartícula respectivamente. Estos operadores son similares a los operadores escalera que aparecieron en al cuantificar el oscilador armónico en mecánica cuántica.</p>
+<p>Al cuantificar el campo, obtenemos <span class="math notranslate nohighlight">\(\Psi(x), \Psi^\dagger(x)\)</span> como operadores y <span class="math notranslate nohighlight">\(a_{p,s}, b^\dagger_{ps,}\)</span> son los operadores destrucción de una partícula y construcción de antipartícula respectivamente. El resto de operadores se construyen a partir de los operadores escalera en un orden normal.</p>
 <p>Decimos que el operador creacción de partículas, <span class="math notranslate nohighlight">\(a^\dagger_{p,s}\)</span> actuando sobre el vacío, <span class="math notranslate nohighlight">\(|0 \rangle\)</span>, crea una partícula con cuadri-momento <span class="math notranslate nohighlight">\({p}\)</span> y helicidad (o espín) <span class="math notranslate nohighlight">\(s\)</span>, esto es <span class="math notranslate nohighlight">\(| p, s \rangle\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2681,7 +2681,7 @@ e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t
 <p>Para obtener una corriente de probabilidad conservada, a partir de la ecución de Dirac, tenemos que introducir el espinor <strong>adjunto</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
-\bar{\Psi} = \Psi^{\dagger} \gamma^0; \;\;\; \bar{\Psi} = (\psi^*_1, \psi^*_2, -\psi^*_3, -\psi^*_4),
+\bar{\Psi} = \Psi^{\dagger} \gamma^0; \;\;\; \bar{\Psi} = (\psi^*_0, \psi^*_1, -\psi^*_2, -\psi^*_3),
 \]</div>
 <p>este último en la representación Pauli-Dirac.</p>
 <p>A partir de ahí podemos definir una <strong>corriente</strong>:</p>
