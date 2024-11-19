@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introducción a Física de Partículas &#8212; Introducción a la Física de Partículas - USC</title>
+    <title>Boletín de problemas III &#8212; Introducción a la Física de Partículas - USC</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -158,6 +158,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="problemas-prel.html">
    10. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-I.html">
+   11. Boletín de problemas I
   </a>
  </li>
 </ul>
@@ -344,60 +349,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#boletin-de-problemas-iii">
-   Boletín de problemas III
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introducción a Física de Partículas</h1>
+                <h1>Boletín de problemas III</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#boletin-de-problemas-iii">
-   Boletín de problemas III
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -405,10 +373,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduccion-a-fisica-de-particulas">
-<h1>Introducción a Física de Partículas<a class="headerlink" href="#introduccion-a-fisica-de-particulas" title="Permalink to this heading">#</a></h1>
-<div class="section" id="boletin-de-problemas-iii">
-<h2>Boletín de problemas III<a class="headerlink" href="#boletin-de-problemas-iii" title="Permalink to this heading">#</a></h2>
+  <div class="section" id="boletin-de-problemas-iii">
+<h1>Boletín de problemas III<a class="headerlink" href="#boletin-de-problemas-iii" title="Permalink to this heading">#</a></h1>
 <p>Jose A. Hernando</p>
 <p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
 <p>Noviembre 2021</p>
@@ -420,7 +386,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Nov 18 10:14:26 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov 19 13:09:27 2024
 </pre></div>
 </div>
 </div>
@@ -446,18 +412,15 @@ title="Print to PDF"
 <p><strong>ejercicio 1</strong></p>
 <p>Para medir la sección eficaz de la interacción <span class="math notranslate nohighlight">\(\pi^+ + p\)</span> enviamos un haz de <span class="math notranslate nohighlight">\(\pi^+\)</span> de 20 GeV de energía a un tanque de longitud <span class="math notranslate nohighlight">\(L = 1\)</span> m, que en una primera configuración está vacío y luego lleno de hidrógeno líquido, y medimos los flujos tras el tanque normalizados al mismo flujo incidente y obtenemos <span class="math notranslate nohighlight">\(N_0 = 7.5 \times 10^5\)</span> y <span class="math notranslate nohighlight">\(N_H = 6.9 \times 10^5\)</span> respectivamente. Calcula la sección eficaz y su error estadístico. Datos: <span class="math notranslate nohighlight">\(\rho_H = 60\)</span> <span class="math notranslate nohighlight">\(\mathrm{kg/cm}^3\)</span></p>
 <p><em>solución</em></p>
-<p>La atenuación será:</p>
-<div class="math notranslate nohighlight">
-\[
-N_H = N_0 e^{-n \sigma L} \simeq N_0 (1 - n \sigma L)
-\]</div>
-<p>donde <span class="math notranslate nohighlight">\(n = N_A \rho_H/M_H\)</span>, <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, y <span class="math notranslate nohighlight">\(M_H\)</span> la masa molar del Hidrógeno.</p>
+<p>El número de eventos después del tanque es <span class="math notranslate nohighlight">\(N_0\)</span> y <span class="math notranslate nohighlight">\(N_H\)</span>, luego el número de eventos que se han producido al pasar el tanque con H es
+<span class="math notranslate nohighlight">\(N_0 - N_H\)</span></p>
 <p>luego:</p>
 <div class="math notranslate nohighlight">
 \[
 \sigma = \frac{(N_0 - N_H)}{L} \frac{M_H}{N_A \rho_H}
 \]</div>
-<p>El error estará asociado al error en el número de eventos que viene dado por <span class="math notranslate nohighlight">\(\sqrt{N_0 - N_H}\)</span></p>
+<p>donde <span class="math notranslate nohighlight">\(n = N_A \rho_H/M_H\)</span>, <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, y <span class="math notranslate nohighlight">\(M_H\)</span> la masa molar del Hidrógeno.</p>
+<p>El error estará asociado al error en el número de eventos que viene dado por <span class="math notranslate nohighlight">\(\sqrt{N_0 + N_H}\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">N0</span>  <span class="o">=</span> <span class="mf">7.5e5</span>
@@ -469,14 +432,14 @@ N_H = N_0 e^{-n \sigma L} \simeq N_0 (1 - n \sigma L)
 
 <span class="n">sigma</span> <span class="o">=</span> <span class="p">((</span><span class="n">N0</span> <span class="o">-</span> <span class="n">NH</span><span class="p">)</span><span class="o">/</span><span class="n">L</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">MH</span><span class="o">/</span><span class="p">(</span><span class="n">NA</span><span class="o">*</span><span class="n">rho</span><span class="p">))</span> <span class="c1"># cm2</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sigma </span><span class="si">{:1.2e}</span><span class="s1"> b&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sigma</span> <span class="o">*</span> <span class="mf">1e24</span><span class="p">))</span>
-<span class="n">usigma</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">N0</span> <span class="o">-</span> <span class="n">NH</span><span class="p">)</span><span class="o">/</span><span class="n">L</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">MH</span><span class="o">/</span><span class="p">(</span><span class="n">NA</span><span class="o">*</span><span class="n">rho</span><span class="p">))</span> <span class="c1"># cm2</span>
+<span class="n">usigma</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">N0</span> <span class="o">+</span> <span class="n">NH</span><span class="p">)</span><span class="o">/</span><span class="n">L</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">MH</span><span class="o">/</span><span class="p">(</span><span class="n">NA</span><span class="o">*</span><span class="n">rho</span><span class="p">))</span> <span class="c1"># cm2</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;error estadístico </span><span class="si">{:1.2e}</span><span class="s1"> b&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">usigma</span> <span class="o">*</span> <span class="mf">1e24</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sigma 3.35e-02 b
-error estadístico 1.37e-04 b
+error estadístico 6.69e-04 b
 </pre></div>
 </div>
 </div>
@@ -582,10 +545,10 @@ length 141.27 m
 <p>Considera un espectrométro de longitud <span class="math notranslate nohighlight">\(L\)</span> y campo magnético <span class="math notranslate nohighlight">\(B\)</span> y tres cámaras de detección situadas antes, en el medio y después del espectrómetro, que nos permiten estimar la sagitta <span class="math notranslate nohighlight">\(s = x_2 - (x_3+x_1)/2\)</span>, calcula el momento transverso de la partícula y su incertidumbre si la resolución de cada cámara es <span class="math notranslate nohighlight">\(\sigma_x\)</span>. Considerar <span class="math notranslate nohighlight">\(\theta\)</span> pequeño.</p>
 <a class="reference internal image-reference" href="../_images/prob_sagitta.png"><img alt="../_images/prob_sagitta.png" class="align-center" src="../_images/prob_sagitta.png" style="width: 200px;" /></a>
 <p><em>solución</em></p>
-<p>La relación entre el momento transverso, <span class="math notranslate nohighlight">\(p_T\)</span> (GeV), el campo magnético <span class="math notranslate nohighlight">\(B\)</span> (T) y el radio de curvatura es <span class="math notranslate nohighlight">\(\rho\)</span> (m)</p>
+<p>La relación entre el momento transverso, <span class="math notranslate nohighlight">\(p_T\)</span> (GeV), el campo magnético <span class="math notranslate nohighlight">\(B\)</span> (T) y el radio de curvatura es <span class="math notranslate nohighlight">\(R\)</span> (m)</p>
 <div class="math notranslate nohighlight">
 \[
-p_T = 0.3 B \rho
+p_T = 0.3 B R
 \]</div>
 <p>por otro lado la relación entre la sagitta y su ángulo, si <span class="math notranslate nohighlight">\(\theta\)</span> pequeño:</p>
 <div class="math notranslate nohighlight">
@@ -595,7 +558,7 @@ s = R (1- \cos \theta/2) \simeq \frac{R \theta^2}{8}, \;\;\; L = 2 R \sin \theta
 <p>luego</p>
 <div class="math notranslate nohighlight">
 \[
-s = R \frac{L^2}{8R = ^2} = \frac{L^2}{8} = 0.3 \frac{BL^2}{8 p_t}
+s = R \frac{L^2}{8R^2} = \frac{L^2}{8 R} = 0.3 \frac{BL^2}{8 p_T}
 \]</div>
 <p>esto es:</p>
 <div class="math notranslate nohighlight">
@@ -691,7 +654,6 @@ con una lumonisidad integrada de <span class="math notranslate nohighlight">\(\m
 \mathcal{L} = n \nu \frac{N^2}{\pi \sigma^2}
 \]</div>
 <p><span class="math notranslate nohighlight">\(n\)</span> paquetes con <span class="math notranslate nohighlight">\(N\)</span> partículas cruzan con una frecuenca <span class="math notranslate nohighlight">\(\nu\)</span> una sección <span class="math notranslate nohighlight">\(\pi \sigma^2\)</span> contra un blanco (el otro paquete) de <span class="math notranslate nohighlight">\(N\)</span> partículas.</p>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
