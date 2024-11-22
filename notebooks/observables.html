@@ -1114,7 +1114,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Nov 22 17:00:15 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Nov 22 17:07:00 2024
 </pre></div>
 </div>
 </div>
@@ -2485,7 +2485,7 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 \[
 i \partial_0 \Psi_s(x) =  E \, \Psi_s(x), \;\;\; -i \partial_k \Psi_s(x) =  p_k \, \Psi_s(x)
 \]</div>
-<p>Sin embargo si lo aplicamos a las solyciones de las antipartículas,  <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span>, obtenemos:</p>
+<p>Sin embargo si lo aplicamos a las soluciones de las antipartículas,  <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span>, obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
 i \partial_0 \Phi_s(x) = - E \, \Phi_s(x), \;\;\; -i \partial_k \Phi_s(x) =  -p_k \, \Phi_s(x)
@@ -2497,7 +2497,7 @@ i \partial_0 \Phi_s(x) = - E \, \Phi_s(x), \;\;\; -i \partial_k \Phi_s(x) =  -p_
 \[
 (\gamma^\mu \, p_\mu - m) \, u_s(p) = 0
 \]</div>
-<p>Para encontrar su solución, descomponemos el espinor, <span class="math notranslate nohighlight">\(u_s(p)\)</span> en dos bi-espinores, <span class="math notranslate nohighlight">\(u^a_s(p), \, u^b_s(p)\)</span>, cada uno cos dos componentes:</p>
+<p>Para encontrar su solución, descomponemos el espinor, <span class="math notranslate nohighlight">\(u_s(p)\)</span> en dos bi-espinores, <span class="math notranslate nohighlight">\(u^a_s(p), \, u^b_s(p)\)</span>, cada uno con dos componentes:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 u_s(p) \equiv \begin{pmatrix} u^a_s(p) \\ u^b_s(p) \end{pmatrix} 
@@ -2569,7 +2569,7 @@ S_3 \, u_1(p) = \frac{1}{2} u_1(p), \;\; S_3 \, u_2(p) = -\frac{1}{2} u_2(p)
 <div class="section" id="helicidad">
 <h4><span class="section-number">3.8.1.4. </span>Helicidad<a class="headerlink" href="#helicidad" title="Permalink to this heading">#</a></h4>
 <p>A falta de un eje definido, por ejemplo un campo magnético, podemos dar la proyección del espín, <span class="math notranslate nohighlight">\({\bf S}\)</span> en la dirección del momento, <span class="math notranslate nohighlight">\({\bf p}\)</span>, lo que llamamos <strong>helicidad</strong>.</p>
-<p>Aunque no lo demostramos, la helicidad conmuta con el Hamiltoniano, (<span class="math notranslate nohighlight">\([H, h] = 0\)</span>)es por lo tanto una constante temporal en un determinado sistema inercial, y podemos dar las soluciones de la ecuación de Dirac en la base de helicidad (ver para ello [MT] o extensión). Esta base es útil para realizar cálculos de secciones eficaces a altas energías.</p>
+<p>Aunque no lo demostramos, la helicidad conmuta con el Hamiltoniano, (<span class="math notranslate nohighlight">\([H, h] = 0\)</span>). Por lo tanto la helicidad se conserva en el tiempo en un determinado sistema inercial. Podemos dar además las soluciones de la ecuación de Dirac en la base de helicidad (ver para ello [MT] o extensión). Esta base es útil para realizar cálculos de secciones eficaces a altas energías.</p>
 <p>El operador helicidad se define como:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -2674,9 +2674,9 @@ p = 0 \; \to \; \kappa = 0 \, \\ m = 0, \, E \gg m, \, p \simeq E \; \to \; \kap
 e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t - {\bf p}{\bf x})}
 \]</div>
 <p>En esta interpretación las antipartículas van «hacia atrás en el tiempo» y podríamos ver una corriente de carga negativa yendo hacia atrás en el tiempo como una positiva yendo hacia delante.</p>
-<p>Al cambiar <span class="math notranslate nohighlight">\(t \to -t\)</span> cambia la energía pero también el momento y espín de las antipartículas. De tal forma que tomamos como los valores físicos de la antipartículas de energía, momento o espín, el inverso del valor obtenido al aplicar los operadores.</p>
+<p>Al cambiar <span class="math notranslate nohighlight">\(t \to -t\)</span> cambia la energía pero también el momento y espín de las antipartículas. De tal forma que tomamos como los valores físicos de energía, momento o espín, de las antipartículas el inverso del valor obtenido al aplicar los operadores.</p>
 <p>Las dos interpretaciones son problemáticas. Los físicos usamos energías acotadas inferiormente, y una línea temporal hacia delante. La interpretación correcta se obtiene en Teoría Cuántica de Campos (TCQ).</p>
-<p>Se escapa al nivel del curso, pero indicamos aquí como es el campo fermiónico cuantificado. Su descomposición en el espcio de momentos es:</p>
+<p>Se escapa al nivel del curso, pero indicamos aquí como es el campo fermiónico cuantificado. Su descomposición en el espacio de momentos es:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi(x) = \sum_s \int \frac{\mathrm{d}p^3}{(2\pi)^3\sqrt{2E}} \left( a_{p,s} u_s(p) e^{-ipx} + b^\dagger_{p,s} v_s(p) e^{+ipx} \right)
