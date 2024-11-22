@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introducción a Física de Partículas &#8212; Introducción a la Física de Partículas - USC</title>
+    <title>Extensión: Simetrías discretas, paridad, carga y carga-parida &#8212; Introducción a la Física de Partículas - USC</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -224,7 +224,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/apendice-grupos.ipynb"
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/ext-cpt.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -284,7 +284,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/apendice-grupos.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/ext-cpt.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -312,7 +312,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/notebooks/apendice-grupos.ipynb"
+        <a href="../_sources/notebooks/ext-cpt.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -373,245 +373,280 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Introducción a Física de Partículas
+   Extensión: Simetrías discretas, paridad, carga y carga-parida
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recordatorio-de-simetrias-en-mecanica-cuantica">
+   Recordatorio de simetrías en mecánica cuántica
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#apendice-grupos">
-     Apéndice: Grupos
+    <a class="reference internal nav-link" href="#transformaciones-en-mecanica-cuantica">
+     Transformaciones en mecánica cuántica.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#transformacion-activa-y-pasiva">
+       Transformación activa y pasiva
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#transformacion-de-estados-schrodinger-o-de-operadores-heidelberg">
+       Transformación de estados (Schrödinger) o de operadores (Heidelberg)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#teorema-de-noether">
+     Teorema de Noether
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformaciones-discretas-e-inversiones">
+     Transformaciones discretas e inversiones
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#indice">
-   Indice
+  <a class="reference internal nav-link" href="#inversion-bajo-paridad">
+   Inversión bajo paridad
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inversion-de-carga">
+   Inversión de carga
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inversion-conjunta-de-carga-y-paridad">
+   Inversión conjunta de carga y paridad
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grupos">
+   Grupos
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#grupos">
-     Grupos
+    <a class="reference internal nav-link" href="#definion-de-grupo">
+     Definión de grupo
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#definion-de-grupo">
-       Definión de grupo
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#clasificacion-de-grupos">
-         Clasificación de grupos
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#representaciones">
-       Representaciones
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#representacion-irreducible">
-         representación irreducible
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#el-grupo-u-1">
-     El grupo U(1)
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#relacion-con-so-2">
-       Relación con SO(2)
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#generadores">
-       Generadores
+      <a class="reference internal nav-link" href="#clasificacion-de-grupos">
+       Clasificación de grupos
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#el-grupo-su-2">
-     El grupo SU(2)
+    <a class="reference internal nav-link" href="#representaciones">
+     Representaciones
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       representaciones
+      <a class="reference internal nav-link" href="#representacion-irreducible">
+       representación irreducible
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-grupo-u-1">
+   El grupo U(1)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relacion-con-so-2">
+     Relación con SO(2)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generadores">
+     Generadores
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-grupo-su-2">
+   El grupo SU(2)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     representaciones
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reglas-de-combinacion-de-espinores">
+     reglas de combinación de espinores:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relacion-con-el-grupo-so-3">
+     Relación con el grupo SO(3)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rotacion-de-espin">
+     Rotación de espín
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#su-3">
+   SU(3)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relatividad-special">
+   Relatividad special
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformacion-de-lorentz">
+     Transformación de Lorentz
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cuatro-vectores">
+     cuatro-vectores
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cuadri-momento">
+     Cuadri-momento
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#derivadas-co-variantes-y-contra-variantes">
+     Derivadas co-variantes y contra-variantes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invariables-de-mandelstam">
+     Invariables de Mandelstam
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ecuacion-de-dirac">
+   Ecuación de Dirac
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#representacion-covariante-de-la-ecuacion-de-dirac">
+     Representación covariante de la ecuación de Dirac
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#matrix-gamma-5">
+       Matrix
+       <span class="math notranslate nohighlight">
+        \(\gamma^5\)
+       </span>
       </a>
      </li>
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#reglas-de-combinacion-de-espinores">
-       reglas de combinación de espinores:
+      <a class="reference internal nav-link" href="#el-espinor-de-dirac">
+       El espinor de Dirac
       </a>
      </li>
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#relacion-con-el-grupo-so-3">
-       Relación con el grupo SO(3)
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#rotacion-de-espin">
-       Rotación de espín
+      <a class="reference internal nav-link" href="#densidad-y-corriente-de-probabilidad">
+       Densidad y corriente de probabilidad
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#su-3">
-     SU(3)
+    <a class="reference internal nav-link" href="#spin-en-la-ecuacion-de-dirac">
+     Spin en la ecuación de Dirac
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#relatividad-special">
-     Relatividad special
+    <a class="reference internal nav-link" href="#soluciones-de-la-ecuacion-de-dirac">
+     Soluciones de la ecuación de Dirac
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#soluciones-de-la-particula-en-reposo">
+     Soluciones de la partícula en reposo
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#transformacion-de-lorentz">
-       Transformación de Lorentz
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cuatro-vectores">
-       cuatro-vectores
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cuadri-momento">
-       Cuadri-momento
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#derivadas-co-variantes-y-contra-variantes">
-       Derivadas co-variantes y contra-variantes
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#invariables-de-mandelstam">
-       Invariables de Mandelstam
+      <a class="reference internal nav-link" href="#cual-es-el-significado-de-la-solucion-de-energia-negativa">
+       ¿Cuál es el significado de la solución de energía negativa?
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ecuacion-de-dirac">
-     Ecuación de Dirac
+    <a class="reference internal nav-link" href="#soluciones-generales-de-la-particula-libre">
+     Soluciones generales de la partícula libre
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spinores-de-las-anti-particulas">
+     Spinores de las anti-partículas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conjungacion-de-carga">
+     Conjungación de carga
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#representacion-covariante-de-la-ecuacion-de-dirac">
-       Representación covariante de la ecuación de Dirac
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#matrix-gamma-5">
-         Matrix
-         <span class="math notranslate nohighlight">
-          \(\gamma^5\)
-         </span>
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#el-espinor-de-dirac">
-         El espinor de Dirac
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#densidad-y-corriente-de-probabilidad">
-         Densidad y corriente de probabilidad
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#spin-en-la-ecuacion-de-dirac">
-       Spin en la ecuación de Dirac
+      <a class="reference internal nav-link" href="#operadores-sobre-los-spinores-de-anti-particulas">
+       Operadores sobre los spinores de anti-partículas
       </a>
      </li>
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#soluciones-de-la-ecuacion-de-dirac">
-       Soluciones de la ecuación de Dirac
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#soluciones-de-la-particula-en-reposo">
-       Soluciones de la partícula en reposo
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#cual-es-el-significado-de-la-solucion-de-energia-negativa">
-         ¿Cuál es el significado de la solución de energía negativa?
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#soluciones-generales-de-la-particula-libre">
-       Soluciones generales de la partícula libre
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#spinores-de-las-anti-particulas">
-       Spinores de las anti-partículas
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#conjungacion-de-carga">
-       Conjungación de carga
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#operadores-sobre-los-spinores-de-anti-particulas">
-         Operadores sobre los spinores de anti-partículas
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#factor-de-normalizacion">
-         Factor de normalización
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#paridad">
-       Paridad
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#helicidad-y-quiralidad">
-       Helicidad y Quiralidad
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#tercera-componente-de-spin">
-         Tercera componente de spin
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#helicidad">
-       Helicidad
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#quiralidad">
-       Quiralidad
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#relacion-entre-helicidad-y-quiralidad">
-       Relación entre helicidad y quiralidad
+      <a class="reference internal nav-link" href="#factor-de-normalizacion">
+       Factor de normalización
       </a>
      </li>
     </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#paridad">
+     Paridad
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicidad-y-quiralidad">
+     Helicidad y Quiralidad
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tercera-componente-de-spin">
+       Tercera componente de spin
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicidad">
+     Helicidad
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quiralidad">
+     Quiralidad
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relacion-entre-helicidad-y-quiralidad">
+     Relación entre helicidad y quiralidad
+    </a>
    </li>
   </ul>
  </li>
@@ -624,7 +659,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introducción a Física de Partículas</h1>
+                <h1>Extensión: Simetrías discretas, paridad, carga y carga-parida</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -636,245 +671,280 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Introducción a Física de Partículas
+   Extensión: Simetrías discretas, paridad, carga y carga-parida
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recordatorio-de-simetrias-en-mecanica-cuantica">
+   Recordatorio de simetrías en mecánica cuántica
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#apendice-grupos">
-     Apéndice: Grupos
+    <a class="reference internal nav-link" href="#transformaciones-en-mecanica-cuantica">
+     Transformaciones en mecánica cuántica.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#transformacion-activa-y-pasiva">
+       Transformación activa y pasiva
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#transformacion-de-estados-schrodinger-o-de-operadores-heidelberg">
+       Transformación de estados (Schrödinger) o de operadores (Heidelberg)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#teorema-de-noether">
+     Teorema de Noether
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformaciones-discretas-e-inversiones">
+     Transformaciones discretas e inversiones
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#indice">
-   Indice
+  <a class="reference internal nav-link" href="#inversion-bajo-paridad">
+   Inversión bajo paridad
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inversion-de-carga">
+   Inversión de carga
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inversion-conjunta-de-carga-y-paridad">
+   Inversión conjunta de carga y paridad
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grupos">
+   Grupos
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#grupos">
-     Grupos
+    <a class="reference internal nav-link" href="#definion-de-grupo">
+     Definión de grupo
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#definion-de-grupo">
-       Definión de grupo
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#clasificacion-de-grupos">
-         Clasificación de grupos
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#representaciones">
-       Representaciones
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#representacion-irreducible">
-         representación irreducible
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#el-grupo-u-1">
-     El grupo U(1)
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#relacion-con-so-2">
-       Relación con SO(2)
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#generadores">
-       Generadores
+      <a class="reference internal nav-link" href="#clasificacion-de-grupos">
+       Clasificación de grupos
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#el-grupo-su-2">
-     El grupo SU(2)
+    <a class="reference internal nav-link" href="#representaciones">
+     Representaciones
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       representaciones
+      <a class="reference internal nav-link" href="#representacion-irreducible">
+       representación irreducible
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-grupo-u-1">
+   El grupo U(1)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relacion-con-so-2">
+     Relación con SO(2)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generadores">
+     Generadores
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-grupo-su-2">
+   El grupo SU(2)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     representaciones
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reglas-de-combinacion-de-espinores">
+     reglas de combinación de espinores:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relacion-con-el-grupo-so-3">
+     Relación con el grupo SO(3)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rotacion-de-espin">
+     Rotación de espín
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#su-3">
+   SU(3)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relatividad-special">
+   Relatividad special
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformacion-de-lorentz">
+     Transformación de Lorentz
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cuatro-vectores">
+     cuatro-vectores
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cuadri-momento">
+     Cuadri-momento
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#derivadas-co-variantes-y-contra-variantes">
+     Derivadas co-variantes y contra-variantes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invariables-de-mandelstam">
+     Invariables de Mandelstam
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ecuacion-de-dirac">
+   Ecuación de Dirac
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#representacion-covariante-de-la-ecuacion-de-dirac">
+     Representación covariante de la ecuación de Dirac
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#matrix-gamma-5">
+       Matrix
+       <span class="math notranslate nohighlight">
+        \(\gamma^5\)
+       </span>
       </a>
      </li>
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#reglas-de-combinacion-de-espinores">
-       reglas de combinación de espinores:
+      <a class="reference internal nav-link" href="#el-espinor-de-dirac">
+       El espinor de Dirac
       </a>
      </li>
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#relacion-con-el-grupo-so-3">
-       Relación con el grupo SO(3)
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#rotacion-de-espin">
-       Rotación de espín
+      <a class="reference internal nav-link" href="#densidad-y-corriente-de-probabilidad">
+       Densidad y corriente de probabilidad
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#su-3">
-     SU(3)
+    <a class="reference internal nav-link" href="#spin-en-la-ecuacion-de-dirac">
+     Spin en la ecuación de Dirac
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#relatividad-special">
-     Relatividad special
+    <a class="reference internal nav-link" href="#soluciones-de-la-ecuacion-de-dirac">
+     Soluciones de la ecuación de Dirac
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#soluciones-de-la-particula-en-reposo">
+     Soluciones de la partícula en reposo
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#transformacion-de-lorentz">
-       Transformación de Lorentz
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cuatro-vectores">
-       cuatro-vectores
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cuadri-momento">
-       Cuadri-momento
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#derivadas-co-variantes-y-contra-variantes">
-       Derivadas co-variantes y contra-variantes
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#invariables-de-mandelstam">
-       Invariables de Mandelstam
+      <a class="reference internal nav-link" href="#cual-es-el-significado-de-la-solucion-de-energia-negativa">
+       ¿Cuál es el significado de la solución de energía negativa?
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ecuacion-de-dirac">
-     Ecuación de Dirac
+    <a class="reference internal nav-link" href="#soluciones-generales-de-la-particula-libre">
+     Soluciones generales de la partícula libre
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spinores-de-las-anti-particulas">
+     Spinores de las anti-partículas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conjungacion-de-carga">
+     Conjungación de carga
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#representacion-covariante-de-la-ecuacion-de-dirac">
-       Representación covariante de la ecuación de Dirac
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#matrix-gamma-5">
-         Matrix
-         <span class="math notranslate nohighlight">
-          \(\gamma^5\)
-         </span>
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#el-espinor-de-dirac">
-         El espinor de Dirac
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#densidad-y-corriente-de-probabilidad">
-         Densidad y corriente de probabilidad
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#spin-en-la-ecuacion-de-dirac">
-       Spin en la ecuación de Dirac
+      <a class="reference internal nav-link" href="#operadores-sobre-los-spinores-de-anti-particulas">
+       Operadores sobre los spinores de anti-partículas
       </a>
      </li>
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#soluciones-de-la-ecuacion-de-dirac">
-       Soluciones de la ecuación de Dirac
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#soluciones-de-la-particula-en-reposo">
-       Soluciones de la partícula en reposo
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#cual-es-el-significado-de-la-solucion-de-energia-negativa">
-         ¿Cuál es el significado de la solución de energía negativa?
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#soluciones-generales-de-la-particula-libre">
-       Soluciones generales de la partícula libre
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#spinores-de-las-anti-particulas">
-       Spinores de las anti-partículas
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#conjungacion-de-carga">
-       Conjungación de carga
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#operadores-sobre-los-spinores-de-anti-particulas">
-         Operadores sobre los spinores de anti-partículas
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#factor-de-normalizacion">
-         Factor de normalización
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#paridad">
-       Paridad
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#helicidad-y-quiralidad">
-       Helicidad y Quiralidad
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#tercera-componente-de-spin">
-         Tercera componente de spin
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#helicidad">
-       Helicidad
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#quiralidad">
-       Quiralidad
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#relacion-entre-helicidad-y-quiralidad">
-       Relación entre helicidad y quiralidad
+      <a class="reference internal nav-link" href="#factor-de-normalizacion">
+       Factor de normalización
       </a>
      </li>
     </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#paridad">
+     Paridad
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicidad-y-quiralidad">
+     Helicidad y Quiralidad
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tercera-componente-de-spin">
+       Tercera componente de spin
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#helicidad">
+     Helicidad
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quiralidad">
+     Quiralidad
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relacion-entre-helicidad-y-quiralidad">
+     Relación entre helicidad y quiralidad
+    </a>
    </li>
   </ul>
  </li>
@@ -888,13 +958,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduccion-a-fisica-de-particulas">
-<h1>Introducción a Física de Partículas<a class="headerlink" href="#introduccion-a-fisica-de-particulas" title="Permalink to this heading">#</a></h1>
-<div class="section" id="apendice-grupos">
-<h2>Apéndice: Grupos<a class="headerlink" href="#apendice-grupos" title="Permalink to this heading">#</a></h2>
+  <div class="section" id="extension-simetrias-discretas-paridad-carga-y-carga-parida">
+<h1>Extensión: Simetrías discretas, paridad, carga y carga-parida<a class="headerlink" href="#extension-simetrias-discretas-paridad-carga-y-carga-parida" title="Permalink to this heading">#</a></h1>
 <p>Jose A. Hernando</p>
 <p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
-<p>Septiembre 2021</p>
+<p>Noviembre 2021</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
@@ -903,7 +971,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Nov 22 16:53:29 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Nov 22 16:53:33 2024
 </pre></div>
 </div>
 </div>
@@ -924,26 +992,129 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<div class="section" id="recordatorio-de-simetrias-en-mecanica-cuantica">
+<h1>Recordatorio de simetrías en mecánica cuántica<a class="headerlink" href="#recordatorio-de-simetrias-en-mecanica-cuantica" title="Permalink to this heading">#</a></h1>
+<p>La simetría en la antigua Grecia se relacionaba con lo armónico, bien proporcionado, bello.</p>
+<p>En Física las simetrías juegan un papel fundamental.</p>
+<p>Las simetrías implican la transformación del sistema lo deja indistinguible, por ejemplo, al rotar una esfera sin marcas no podemos saber si se rotó.</p>
+<p>Las simetrías matemáticamente implican la invariancia de las ecuaciones bajo transformaciones.</p>
+<div class="section" id="transformaciones-en-mecanica-cuantica">
+<h2>Transformaciones en mecánica cuántica.<a class="headerlink" href="#transformaciones-en-mecanica-cuantica" title="Permalink to this heading">#</a></h2>
+<p>En mecánica cuántica una transformación asociada un estado a otro del espacio de Hilbert, mediante un operador unitario, <span class="math notranslate nohighlight">\(U\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+| \psi \rangle \to  | \psi' \rangle = U \; | \psi \rangle
+\]</div>
+<p>que cumple la condición <span class="math notranslate nohighlight">\(U^\dagger U = U U^\dagger = 1\)</span>.</p>
+<p>En mecánica cuántica la información se obtiene a partir del cuadrado del producto <span class="math notranslate nohighlight">\(|\langle \phi | \psi \rangle |^2\)</span>, lo que lleva (teorema de Wigner) a que las transformaciones posibles sean unitarias o anti-unitarias (unitaria y anti-lineal)</p>
+<div class="math notranslate nohighlight">
+\[
+|\langle \phi' | \psi' \rangle|^2 = |\langle \phi | U^\dagger U | \psi \rangle|^2
+\]</div>
+<p>La actuación del operador unitario, <span class="math notranslate nohighlight">\(U\)</span> y anti-unitario <span class="math notranslate nohighlight">\({\tilde U}\)</span> afectan al producto escalar:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\langle \phi | U^\dagger U | \psi \rangle = \langle \phi | \psi \rangle \\
+\langle \phi | {\tilde U}^\dagger {\tilde U} | \psi \rangle^ = \langle \phi | \psi \rangle^*
+\end{split}\]</div>
+<p>Ambas dejan invariante <span class="math notranslate nohighlight">\(|\langle \phi | \psi \rangle |^2\)</span>.</p>
+<p>Una operación anti-unitaria, <span class="math notranslate nohighlight">\({\tilde U}\)</span>, toma el complejo conjugado:</p>
+<div class="math notranslate nohighlight">
+\[
+{\tilde U} \, \alpha | \psi \rangle = \alpha^* | \psi \rangle
+\]</div>
+<p>Los operadores anti-unitarios hay que tratarlos con cuidado.</p>
+<p>Las transformaciones continuas son unitarias. Las anti-unitarias solo aparecen en transformaciones discretas, la más relevante de ellas es la inversión temporal.</p>
+<div class="section" id="transformacion-activa-y-pasiva">
+<h3>Transformación activa y pasiva<a class="headerlink" href="#transformacion-activa-y-pasiva" title="Permalink to this heading">#</a></h3>
+<p>Podemos entender las transformaciones como activas o pasivas. Las activas transforman el estado, mientras que las pasivas transforman el sistema de referencia.</p>
+<p>Cuando verificamos una simetría de forma activa, verificamos que el comportamiento del estado transformado es el mismo que el antiguo, mientras que de forma pasiva, verificamos que describimos el comportamiento del estado con las mismas ecuaciones en un sistema y otro.</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="indice">
-<h1>Indice<a class="headerlink" href="#indice" title="Permalink to this heading">#</a></h1>
-<ul class="simple">
-<li><p>Grupos, definitions</p></li>
-<li><p>SU(2)</p>
-<ul>
-<li><p>Generadores y álgebra</p></li>
-<li><p>producto</p></li>
-</ul>
-</li>
-<li><p>SU(3)</p>
-<ul>
-<li><p>Generadores y álgebra</p></li>
-<li><p>productos</p></li>
-</ul>
-</li>
-</ul>
+<div class="section" id="transformacion-de-estados-schrodinger-o-de-operadores-heidelberg">
+<h3>Transformación de estados (Schrödinger) o de operadores (Heidelberg)<a class="headerlink" href="#transformacion-de-estados-schrodinger-o-de-operadores-heidelberg" title="Permalink to this heading">#</a></h3>
+<p>En mecánica cuántica o bien podemos transformas los estados, <span class="math notranslate nohighlight">\(| \psi \rangle\)</span> (que sería la vesión de Schrödinger) o los operadores, <span class="math notranslate nohighlight">\(O\)</span>, (visión de Heidelber)</p>
+<p>En la versión de Schrödinger:</p>
+<div class="math notranslate nohighlight">
+\[
+| \psi \rangle \to \ \psi' \rangle = U \, | \psi \rangle, \;\;\; O \to O
+\]</div>
+<p>En la versión de Heidelberg:</p>
+<div class="math notranslate nohighlight">
+\[
+| \psi \rangle \to \ \psi \rangle, \;\;\; O \to O' = U^{-1} O U = U^\dagger O U
+\]</div>
+<p>En ambos casos la expresión de la transformación de elemento de matriz es la misma</p>
+<p>En la visión de Schrödinger:
+$<span class="math notranslate nohighlight">\(
+\langle \phi | O | \psi \rangle \to \langle \phi' | O | \psi' \rangle = \langle \phi | U^\dagger O U | \psi \rangle 
+\)</span>$</p>
+<p>En la de Heidelberg:</p>
+<div class="math notranslate nohighlight">
+\[
+\langle \phi | O | \psi \rangle \to \langle \phi | O' | \psi' \rangle = \langle \phi | U^\dagger O U | \psi \rangle \
+\]</div>
+<p>Decimos que un sistema tiene una determinada simetría si la transformación asociada, <span class="math notranslate nohighlight">\(U\)</span>, deja invariante el valor esperado de un operador hermítico, <span class="math notranslate nohighlight">\(O\)</span>. Que se cumple si <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(O\)</span> conmutan, <span class="math notranslate nohighlight">\([U, O] = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\langle \psi | O | \psi \rangle \to \langle \psi | U^\dagger O U | \psi \rangle = \langle \psi | U^\dagger U O | \psi \rangle = \langle \psi | O | \psi \rangle
+\]</div>
+<p>En el caso de que <span class="math notranslate nohighlight">\(U\)</span> sea el hamiltoniando <span class="math notranslate nohighlight">\(H\)</span>, entonces los auto-estados de <span class="math notranslate nohighlight">\(O\)</span> son estacionarios (no cambian con el tiempo). Y habitualmente expresamos los estados del hamiltoniano en la base de autoestados de <span class="math notranslate nohighlight">\(O\)</span>.</p>
+<p>Para las transiciones entre estados, inicial <span class="math notranslate nohighlight">\(| i \rangle\)</span>, a final, <span class="math notranslate nohighlight">\(| f \rangle\)</span>, calculamos el elemento de matriz de la matriz de transición <span class="math notranslate nohighlight">\(S\)</span>, <span class="math notranslate nohighlight">\(\langle f | S | i \rangle\)</span>.</p>
+<p>Si <span class="math notranslate nohighlight">\(S\)</span> conmuta con <span class="math notranslate nohighlight">\(U\)</span>, y los estados <span class="math notranslate nohighlight">\(|i\rangle, | f \rangle\)</span> son autoestados de <span class="math notranslate nohighlight">\(U\)</span> con autovalores <span class="math notranslate nohighlight">\(u_i, u_f\)</span> respectivamente, entonces tenemos una ley de consrvación</p>
+<div class="math notranslate nohighlight">
+\[
+0 = \langle f | [U, S] | i \rangle = (u_f - u_i) \langle f | S | i \rangle
+\]</div>
+<p>Los autovalores <span class="math notranslate nohighlight">\(u_f, u_i\)</span> deben ser iguales.</p>
+</div>
+</div>
+<div class="section" id="teorema-de-noether">
+<h2>Teorema de Noether<a class="headerlink" href="#teorema-de-noether" title="Permalink to this heading">#</a></h2>
+<p>El teorema de Noether afirma que un sistema con una simetría continua (por ejemplo rotación) tiene una cantidad conservada asociada.</p>
+<p>Si la siemtría es continua, podemos expresarla a partir de transformaciones infinitesimales, esto es sea <span class="math notranslate nohighlight">\(\alpha\)</span> pequeña:</p>
+<div class="math notranslate nohighlight">
+\[
+U(\alpha) = e^{i\alpha G} \simeq I + i \alpha G
+\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(G\)</span> son los generadores del la transformación que definen un grupo y sus reglas de conmutación definen las reglas del grupo.</p>
+<p>La unitariedad <span class="math notranslate nohighlight">\(U\)</span> implica la hermicidad de <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+U^\dagger U = (I - i \alpha G^\dagger) (I + i \alpha G) \simeq I + i \alpha (G - G^\dagger) = I 
+\]</div>
+<p>Luego <span class="math notranslate nohighlight">\(G^\dagger = G\)</span></p>
+<p>Si el hamiltoniano es invariante bajo <span class="math notranslate nohighlight">\(U\)</span>, esto es <span class="math notranslate nohighlight">\([U, H]\)</span>, lo es bajo sus generadores.</p>
+<div class="math notranslate nohighlight">
+\[
+U^\dagger H U = (I - i \alpha G) H (I + i \alpha G) \simeq H - i \alpha [G, H] = H
+\]</div>
+<p>luego</p>
+<div class="math notranslate nohighlight">
+\[
+[G, H] = 0
+\]</div>
+<p>Lo que implica que los autovalores de <span class="math notranslate nohighlight">\(G\)</span> se conservan en el tiempo.</p>
+</div>
+<div class="section" id="transformaciones-discretas-e-inversiones">
+<h2>Transformaciones discretas e inversiones<a class="headerlink" href="#transformaciones-discretas-e-inversiones" title="Permalink to this heading">#</a></h2>
+<p>Las transformaciones discretas no se conectan continuamente con la identidas, y con ellas no aplica el teorema de Noether.</p>
+<p>Las inversiones son aquellas transformaciones discretas que nos devuelven dos veces al sistema original, por ejemplo, la inversión por paridad o por carga.</p>
+<p>Las inversiones tienen asociadas un operador unitario <span class="math notranslate nohighlight">\(U_I\)</span>. El operador puede introducir una fase al operar sobre un autoestado, <span class="math notranslate nohighlight">\(U_I |\psi \rangle = \eta_I | \psi \rangle\)</span>, que debe cumplir, <span class="math notranslate nohighlight">\(|\eta_I|^2 = 1\)</span>. En general la fase es espúrea, no tiene implicaciones físicas, pero en determinados casos puede ser o tomarse por convención como <span class="math notranslate nohighlight">\(\pm 1\)</span>. [CHECK]</p>
+<p><em>cuestión:</em> A partir de los estados <span class="math notranslate nohighlight">\(| \psi_1 \rangle, \, | \psi_2 \rangle\)</span> que bajo una inversión <span class="math notranslate nohighlight">\(U_I\)</span> se transforman como <span class="math notranslate nohighlight">\(| \psi_1 \rangle \leftrightarrow | \psi_2 \rangle\)</span>, escribe los autoestados de <span class="math notranslate nohighlight">\(U_I\)</span> y sus autovalores.</p>
+<p>Decimos que una teoría es invariante bajo una inversión, si el operador <span class="math notranslate nohighlight">\(U_I\)</span> de la inversión conmuta con el hamiltoniano.</p>
+</div>
+</div>
+<div class="section" id="inversion-bajo-paridad">
+<h1>Inversión bajo paridad<a class="headerlink" href="#inversion-bajo-paridad" title="Permalink to this heading">#</a></h1>
+</div>
+<div class="section" id="inversion-de-carga">
+<h1>Inversión de carga<a class="headerlink" href="#inversion-de-carga" title="Permalink to this heading">#</a></h1>
+</div>
+<div class="section" id="inversion-conjunta-de-carga-y-paridad">
+<h1>Inversión conjunta de carga y paridad<a class="headerlink" href="#inversion-conjunta-de-carga-y-paridad" title="Permalink to this heading">#</a></h1>
+</div>
 <div class="section" id="grupos">
-<h2>Grupos<a class="headerlink" href="#grupos" title="Permalink to this heading">#</a></h2>
+<h1>Grupos<a class="headerlink" href="#grupos" title="Permalink to this heading">#</a></h1>
 <p>Definimos una partícula a partir de su masa, su espín y sus <strong>cargas</strong> respecto a las fuerzas.</p>
 <p>Todos esos valores son constantes y no dependen (y no pueden depender) del sistema en el que definamos la partículas. Son <strong>invariantes respecto a un determinado grupo de simetría</strong>.</p>
 <p>Sabemos por el teorema de Nöether que una simetría del sistema físico representa una cantidad conservada.</p>
@@ -967,7 +1138,7 @@ title="Print to PDF"
 </li>
 </ul>
 <div class="section" id="definion-de-grupo">
-<h3>Definión de grupo<a class="headerlink" href="#definion-de-grupo" title="Permalink to this heading">#</a></h3>
+<h2>Definión de grupo<a class="headerlink" href="#definion-de-grupo" title="Permalink to this heading">#</a></h2>
 <p>Un grupo es una colección de elementos <span class="math notranslate nohighlight">\({g_i}\)</span>, finito o infinito, que complen las siguientre propiedades:</p>
 <ul class="simple">
 <li><p>completitud: <span class="math notranslate nohighlight">\(g_i \cdot g_j = g_k\)</span> (la multiplicación de dos elementos del grupo da otro elemento del grupo)</p></li>
@@ -977,7 +1148,7 @@ title="Print to PDF"
 </ul>
 <p>Decimos que el grupo es abeliano si es conmutativo: <span class="math notranslate nohighlight">\(g_i \cdot g_j = g_j \cdot g_i\)</span>, si no, es no-abeliano</p>
 <div class="section" id="clasificacion-de-grupos">
-<h4>Clasificación de grupos<a class="headerlink" href="#clasificacion-de-grupos" title="Permalink to this heading">#</a></h4>
+<h3>Clasificación de grupos<a class="headerlink" href="#clasificacion-de-grupos" title="Permalink to this heading">#</a></h3>
 <p>Los grupos principales son:</p>
 <ul class="simple">
 <li><p>espacio-temporales, lo que incluye el grupo de Lorentz</p></li>
@@ -992,7 +1163,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="section" id="representaciones">
-<h3>Representaciones<a class="headerlink" href="#representaciones" title="Permalink to this heading">#</a></h3>
+<h2>Representaciones<a class="headerlink" href="#representaciones" title="Permalink to this heading">#</a></h2>
 <p>Llamamos <strong>representación <span class="math notranslate nohighlight">\(D(g)\)</span></strong> lineal al conjunto de matrices asociadas con los elementos <span class="math notranslate nohighlight">\(g\)</span> de un grupo <span class="math notranslate nohighlight">\(G\)</span> que cumplen <strong>las mismas reglas de multiplicación</strong> que los elementos de <span class="math notranslate nohighlight">\(G\)</span>.</p>
 <p>Esto es:</p>
 <div class="math notranslate nohighlight">
@@ -1003,7 +1174,7 @@ title="Print to PDF"
 <p>Los vectores de dimensión <span class="math notranslate nohighlight">\(n\)</span> sobre los que actuan las matrices forman la <strong>base de la representación</strong>.</p>
 <p>Llamamos <strong>representación fundamental</strong> aquella representación con la dimensión menor.</p>
 <div class="section" id="representacion-irreducible">
-<h4>representación irreducible<a class="headerlink" href="#representacion-irreducible" title="Permalink to this heading">#</a></h4>
+<h3>representación irreducible<a class="headerlink" href="#representacion-irreducible" title="Permalink to this heading">#</a></h3>
 <p>Decimos que una representación <span class="math notranslate nohighlight">\(D(g)\)</span> de un grupo <span class="math notranslate nohighlight">\(G\)</span> es reducible si puede descomponerse en representaciones más pequeñas.</p>
 <p>Sea la representación <span class="math notranslate nohighlight">\(D(g)\)</span> de matrices de dimensión <span class="math notranslate nohighlight">\(n\times n\)</span> de un grupo, la representación es redudible si la matrix <span class="math notranslate nohighlight">\(D(g)\)</span> se pueden descomponer en diagonal con matrices de menor dimensión, <span class="math notranslate nohighlight">\(D_1(g), D_2(g)\)</span>, de la forma:</p>
 <div class="math notranslate nohighlight">
@@ -1038,7 +1209,7 @@ y el singlete:
 </div>
 </div>
 <div class="section" id="el-grupo-u-1">
-<h2>El grupo U(1)<a class="headerlink" href="#el-grupo-u-1" title="Permalink to this heading">#</a></h2>
+<h1>El grupo U(1)<a class="headerlink" href="#el-grupo-u-1" title="Permalink to this heading">#</a></h1>
 <p>Consideremos el grupo de las rotaciones de fase <span class="math notranslate nohighlight">\(\theta\)</span> en el espacio complejo, <span class="math notranslate nohighlight">\(x  = a \, e^{i\phi}\)</span>, con <span class="math notranslate nohighlight">\(a&gt;0\)</span>.</p>
 <p>La rotación de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> corresponde a un factor <span class="math notranslate nohighlight">\(D(\theta) = e^{i \theta} \)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -1060,7 +1231,7 @@ D(\theta) = e^{i\theta}, \;\;\; D^{-1}(\theta) = D(-\theta) = e^{-i\theta}
 \]</div>
 <p>Vemos pues que la representación fundamental tiene dimensión 1.</p>
 <div class="section" id="relacion-con-so-2">
-<h3>Relación con SO(2)<a class="headerlink" href="#relacion-con-so-2" title="Permalink to this heading">#</a></h3>
+<h2>Relación con SO(2)<a class="headerlink" href="#relacion-con-so-2" title="Permalink to this heading">#</a></h2>
 <p>El grupo U(1) está relacionado con el grupo SO(2)</p>
 <p>El grupo SO(2) está formado por la matrices de las rotaciones en dos dimensiones, <span class="math notranslate nohighlight">\(U(\theta)\)</span>, propias, esto es con el determinante positivo, <span class="math notranslate nohighlight">\(\mathrm{det}(U(\theta)) &gt; 0\)</span></p>
 <p>Sea <span class="math notranslate nohighlight">\((x, y)\)</span> un punto del espacio bi-dimensional, la rotación es:</p>
@@ -1101,7 +1272,7 @@ U^{-1}(\theta)  = U(-\theta) = U^T(\theta) = \begin{pmatrix} \cos \theta &amp; -
 \end{split}\]</div>
 </div>
 <div class="section" id="generadores">
-<h3>Generadores<a class="headerlink" href="#generadores" title="Permalink to this heading">#</a></h3>
+<h2>Generadores<a class="headerlink" href="#generadores" title="Permalink to this heading">#</a></h2>
 <p>Podemos definir las rotaciones abusando de la notación de la exponencial y su desarrollo de Taylor:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1140,7 +1311,7 @@ SO(2) \sim U(1)
 </div>
 </div>
 <div class="section" id="el-grupo-su-2">
-<h2>El grupo SU(2)<a class="headerlink" href="#el-grupo-su-2" title="Permalink to this heading">#</a></h2>
+<h1>El grupo SU(2)<a class="headerlink" href="#el-grupo-su-2" title="Permalink to this heading">#</a></h1>
 <p><strong>SU(2)</strong> es el grupo que forman las <strong>matrices complejas unitarias <span class="math notranslate nohighlight">\(2 \times 2\)</span> con determinante unidad</strong>.</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1198,7 +1369,7 @@ donde \)</span>\epsilon_{ijk}$ es el tensor de Levi-Civita de 3 dimensiones.</p>
 \downarrow =  \begin{pmatrix} 0 \\ 1 \end{pmatrix} = |1/2, -1/2 \rangle.
 \end{split}\]</div>
 <div class="section" id="id1">
-<h3>representaciones<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h2>representaciones<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>Podemos construir representaciones de SU(2) de mayor dimensión a partir del producto (o combinación) de los estados de la base de la representación fundamental: <span class="math notranslate nohighlight">\(\uparrow, \downarrow\)</span>.</p>
 <p>El producto de dos dupletes, <span class="math notranslate nohighlight">\({\bf 2} \otimes {\bf 2}\)</span>, es: <span class="math notranslate nohighlight">\(\uparrow\uparrow, \uparrow\downarrow,
 \downarrow\uparrow, \downarrow\downarrow\)</span>, tiene dimensión 4.</p>
@@ -1235,7 +1406,7 @@ $<span class="math notranslate nohighlight">\(
 <p>Los miembros del triplete son simétricos bajo el intercambio <span class="math notranslate nohighlight">\(\uparrow \leftrightarrow \downarrow\)</span> y el singlete anti-simétrico.</p>
 </div>
 <div class="section" id="reglas-de-combinacion-de-espinores">
-<h3>reglas de combinación de espinores:<a class="headerlink" href="#reglas-de-combinacion-de-espinores" title="Permalink to this heading">#</a></h3>
+<h2>reglas de combinación de espinores:<a class="headerlink" href="#reglas-de-combinacion-de-espinores" title="Permalink to this heading">#</a></h2>
 <p>Para construir las representaciones de SU(2) de mayor dimensión recurrimos a las reglas que conocemos del espín. O a partir de primeros principios con los operadores escalera.</p>
 <p>Recordemos que los operadores escalrera actuan sobre la base <span class="math notranslate nohighlight">\(|I, I_3 \rangle\)</span> de la siguiente forma:</p>
 <div class="math notranslate nohighlight">
@@ -1254,7 +1425,7 @@ T_- \, |I, I_3 \rangle = \sqrt{I (I+1) - I_3 (I_3-1)} \; |I, I_3 \rangle. \\
 <p>Los elementos de la base <span class="math notranslate nohighlight">\(|I, I_3 \rangle\)</span> se relacionan con los iniciales <span class="math notranslate nohighlight">\(|I^1, I^1_3\rangle |I^2, I^2_3 \rangle\)</span> mediante los coeficientes de <a class="reference external" href="https://pdg.lbl.gov/2018/reviews/rpp2018-rev-clebsch-gordan-coefs.pdf">Clebsch-Gordan</a>.</p>
 </div>
 <div class="section" id="relacion-con-el-grupo-so-3">
-<h3>Relación con el grupo SO(3)<a class="headerlink" href="#relacion-con-el-grupo-so-3" title="Permalink to this heading">#</a></h3>
+<h2>Relación con el grupo SO(3)<a class="headerlink" href="#relacion-con-el-grupo-so-3" title="Permalink to this heading">#</a></h2>
 <p>Llamamos SO(3) al grupo de las rotaciones en el espacio vectorial de tres dimensiones, cuya matriz de rotación tiene determinate positivo.</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1303,7 +1474,7 @@ SU(2) \sim SO(3)
 \end{split}\]</div>
 </div>
 <div class="section" id="rotacion-de-espin">
-<h3>Rotación de espín<a class="headerlink" href="#rotacion-de-espin" title="Permalink to this heading">#</a></h3>
+<h2>Rotación de espín<a class="headerlink" href="#rotacion-de-espin" title="Permalink to this heading">#</a></h2>
 <p>Es común que a la hora de calcular elementos de matriz utilizando los espinores de helicidad de Dirac en secciones eficaces nos aparezca una configuración de espín de salida <span class="math notranslate nohighlight">\(|1, m' \rangle_{\theta}\)</span> en una dirección <span class="math notranslate nohighlight">\({\bf n} = (\sin \theta, 0, \cos \theta)\)</span> que queremos relacionar con configuración de espín inicial en <span class="math notranslate nohighlight">\(|1, m \rangle\)</span> en el eje <span class="math notranslate nohighlight">\(z\)</span>.</p>
 <p>Es el caso de la interacción <span class="math notranslate nohighlight">\(e + e^+ \to \mu + \mu^+\)</span> donde hay cuatro combinaciones posibles de helicidad:</p>
 <table class="colwidths-auto table">
@@ -1386,7 +1557,7 @@ d^j_{m', m} (\theta) = \langle m', j | e^{-i\theta T^2} | j, m \rangle
 </div>
 </div>
 <div class="section" id="su-3">
-<h2>SU(3)<a class="headerlink" href="#su-3" title="Permalink to this heading">#</a></h2>
+<h1>SU(3)<a class="headerlink" href="#su-3" title="Permalink to this heading">#</a></h1>
 <p>SU(3) es el grupo de las <strong>matrices unitarias <span class="math notranslate nohighlight">\(3 \times 3\)</span> con determinante unidad</strong>. Cumplen:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1546,7 +1717,7 @@ T_+ g = r, \; T_- r = g; \;\;\; V_+ b = r, \; V_-r = b; \;\; U_+b = g, \; U_-g =
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/apendice-grupos_47_0.png" src="../_images/apendice-grupos_47_0.png" />
+<img alt="../_images/ext-cpt_58_0.png" src="../_images/ext-cpt_58_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1566,9 +1737,9 @@ T_+ g = r, \; T_- r = g; \;\;\; V_+ b = r, \; V_-r = b; \;\; U_+b = g, \; U_-g =
 </div>
 </div>
 <div class="section" id="relatividad-special">
-<h2>Relatividad special<a class="headerlink" href="#relatividad-special" title="Permalink to this heading">#</a></h2>
+<h1>Relatividad special<a class="headerlink" href="#relatividad-special" title="Permalink to this heading">#</a></h1>
 <div class="section" id="transformacion-de-lorentz">
-<h3>Transformación de Lorentz<a class="headerlink" href="#transformacion-de-lorentz" title="Permalink to this heading">#</a></h3>
+<h2>Transformación de Lorentz<a class="headerlink" href="#transformacion-de-lorentz" title="Permalink to this heading">#</a></h2>
 <p>La transformación de Lorentz nos relaciona el espacio-tiempo <span class="math notranslate nohighlight">\((t, {\bf r})\)</span> en un sistema inercial <span class="math notranslate nohighlight">\(\Sigma\)</span> con el espacio-tiempo <span class="math notranslate nohighlight">\((t' {\bf r}')\)</span> en otros sistema inercial <span class="math notranslate nohighlight">\(\Sigma'\)</span> que se desplaza respecto del primero con velocidad <span class="math notranslate nohighlight">\(v\)</span> en la dirección <span class="math notranslate nohighlight">\(z\)</span>.</p>
 <p>Einstein postuló que la velocidad de la luz, <span class="math notranslate nohighlight">\(c\)</span>, es la misma en los dos sistemas y nada puede viajar más rápido que la luz <span class="math notranslate nohighlight">\(v \lt c\)</span>.</p>
 <p>La luz producida en <span class="math notranslate nohighlight">\(t = t' = 0\)</span>, cuando los dos sistemas coinciden, cumple: <span class="math notranslate nohighlight">\(c^2t^2 - {\bf r}^2 = c^2 t'^2 - {\bf r}'^2\)</span>.</p>
@@ -1612,7 +1783,7 @@ t' = \gamma (1 - \beta z),  \; x' = x, \; y' = y, z' = \gamma (z - \beta t)
 <p>La matriz, <span class="math notranslate nohighlight">\({\bf \Lambda}^{-1}\)</span>, de la segunda transformación, es inversa de la primera, <span class="math notranslate nohighlight">\({\bf \Lambda}\)</span>. Esto es: <span class="math notranslate nohighlight">\({\bf \Lambda} {\bf \Lambda}^{-1} = {\bf I}\)</span></p>
 </div>
 <div class="section" id="cuatro-vectores">
-<h3>cuatro-vectores<a class="headerlink" href="#cuatro-vectores" title="Permalink to this heading">#</a></h3>
+<h2>cuatro-vectores<a class="headerlink" href="#cuatro-vectores" title="Permalink to this heading">#</a></h2>
 <p>La magnitud <span class="math notranslate nohighlight">\({\bf r}^2\)</span>, de un vector 3D, donde <span class="math notranslate nohighlight">\({\bf r} = (x, y, z)\)</span>, es invariante bajo rotaciones.</p>
 <p>El producto escalar, <span class="math notranslate nohighlight">\(x^\mu x_\mu = t^2 - x^2 - y^2 - z^2\)</span>, definido entre cuadri-vectores dados por: <span class="math notranslate nohighlight">\(x^\mu = (t, x, y, z), \;\, x_\mu = (t, -x, -y, -z)\)</span>, es invariante respecto tranformaciones de Lorentz.</p>
 <p>El primero, <span class="math notranslate nohighlight">\(x^\mu\)</span>, se llama cuadri-vector <strong>contra-variante</strong> y el segundo, <span class="math notranslate nohighlight">\(x_\mu\)</span>, <strong>co-variante</strong>.</p>
@@ -1635,7 +1806,7 @@ $<span class="math notranslate nohighlight">\(x'_\mu = \Lambda_\mu ^{\;\; \nu} x
 <p>donde <span class="math notranslate nohighlight">\(\Lambda_\mu^{\;\; \nu}\)</span> corresponde a los índices de la matriz <span class="math notranslate nohighlight">\({\bf \Lambda}^{-1}\)</span></p>
 </div>
 <div class="section" id="cuadri-momento">
-<h3>Cuadri-momento<a class="headerlink" href="#cuadri-momento" title="Permalink to this heading">#</a></h3>
+<h2>Cuadri-momento<a class="headerlink" href="#cuadri-momento" title="Permalink to this heading">#</a></h2>
 <p>La energía y el momento de una partícula relativista de masa <span class="math notranslate nohighlight">\(m\)</span> y velocidad <span class="math notranslate nohighlight">\({bf v}\)</span> son <span class="math notranslate nohighlight">\(E = \gamma m c^2, \, {\bf p } = \gamma m {\bf v}\)</span>, en UN: <span class="math notranslate nohighlight">\(E = \gamma m, \; {\bf p} = \gamma m \bf{\beta}\)</span>.</p>
 <p>Definimos el <strong>cuadrimomento</strong> (como vector contra-variante); <span class="math notranslate nohighlight">\(p^\mu = (E, p_x, p_y, p_z)\)</span></p>
 <p>El producto escalar es un invariante Lorentz:
@@ -1664,7 +1835,7 @@ p^\mu p_\mu = \left(\sum_i E_i \right)^2 - \left( \sum_i {\bf p}_i \right)^2
 <p>Para indicar que el evento está definido en el caso especial del <em>sistema del centro de masas</em>, dode se cumple <span class="math notranslate nohighlight">\(\sum_i {\bf p}_i = {\bf 0}\)</span>, usamos la notación, <span class="math notranslate nohighlight">\(p^*\)</span> para el cuadri-momento, y <span class="math notranslate nohighlight">\(E^*, {\bf p}^*\)</span> para la energía y el momento.</p>
 </div>
 <div class="section" id="derivadas-co-variantes-y-contra-variantes">
-<h3>Derivadas co-variantes y contra-variantes<a class="headerlink" href="#derivadas-co-variantes-y-contra-variantes" title="Permalink to this heading">#</a></h3>
+<h2>Derivadas co-variantes y contra-variantes<a class="headerlink" href="#derivadas-co-variantes-y-contra-variantes" title="Permalink to this heading">#</a></h2>
 <p>La derivadas primeras en el sistema <span class="math notranslate nohighlight">\(\Sigma'\)</span> se relactionan con las del sistema <span class="math notranslate nohighlight">\(\Sigma\)</span> por:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1694,7 +1865,7 @@ lo hace como <em>contra-variante</em>. Es la <em>derivada contra-variante</em>.<
 \]</div>
 </div>
 <div class="section" id="invariables-de-mandelstam">
-<h3>Invariables de Mandelstam<a class="headerlink" href="#invariables-de-mandelstam" title="Permalink to this heading">#</a></h3>
+<h2>Invariables de Mandelstam<a class="headerlink" href="#invariables-de-mandelstam" title="Permalink to this heading">#</a></h2>
 <p>Si consideramos los siguientes diagramas de Feynman,</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1722,7 +1893,7 @@ lo hace como <em>contra-variante</em>. Es la <em>derivada contra-variante</em>.<
 </div>
 </div>
 <div class="section" id="ecuacion-de-dirac">
-<h2>Ecuación de Dirac<a class="headerlink" href="#ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
+<h1>Ecuación de Dirac<a class="headerlink" href="#ecuacion-de-dirac" title="Permalink to this heading">#</a></h1>
 <p>La ecuación de Klein-Gordon se deriva de la equación de momento-energía: <span class="math notranslate nohighlight">\(E^2 = {\bf p}^2 + m^2\)</span>, considerando los operadores cuánticos de momento y energía.</p>
 <p>Dirac propuso una solución lineal en espacio-tiempo, que cumpliese también la equación momento-energía. La <strong>ecuación de Dirac</strong> es:</p>
 <div class="math notranslate nohighlight">
@@ -1753,7 +1924,7 @@ I = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}, \;\;
 \end{split}\]</div>
 <p>Existen otras representaciones útiles, por ejemplo la quiral, pero la física de la ecuación de Dirac no depende de la representación.</p>
 <div class="section" id="representacion-covariante-de-la-ecuacion-de-dirac">
-<h3>Representación covariante de la ecuación de Dirac<a class="headerlink" href="#representacion-covariante-de-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
+<h2>Representación covariante de la ecuación de Dirac<a class="headerlink" href="#representacion-covariante-de-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
 <p>La <strong>matrices-<span class="math notranslate nohighlight">\(\gamma\)</span></strong> se definien:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1784,7 +1955,7 @@ con \)</span>k=1, 2, 3<span class="math notranslate nohighlight">\(, y \)</span>
 \gamma^{0\dagger} = \gamma^0, \;\; \gamma^{k \dagger} = - \gamma^{k}
 \]</div>
 <div class="section" id="matrix-gamma-5">
-<h4>Matrix <span class="math notranslate nohighlight">\(\gamma^5\)</span><a class="headerlink" href="#matrix-gamma-5" title="Permalink to this heading">#</a></h4>
+<h3>Matrix <span class="math notranslate nohighlight">\(\gamma^5\)</span><a class="headerlink" href="#matrix-gamma-5" title="Permalink to this heading">#</a></h3>
 <p>Definimos la matrix <span class="math notranslate nohighlight">\(\gamma^5\)</span> a partir del producto del resto de matrices gamma:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1805,7 +1976,7 @@ con \)</span>k=1, 2, 3<span class="math notranslate nohighlight">\(, y \)</span>
 <p>donde <span class="math notranslate nohighlight">\(I\)</span> es la matriz identidad <span class="math notranslate nohighlight">\(2\times2\)</span>.</p>
 </div>
 <div class="section" id="el-espinor-de-dirac">
-<h4>El espinor de Dirac<a class="headerlink" href="#el-espinor-de-dirac" title="Permalink to this heading">#</a></h4>
+<h3>El espinor de Dirac<a class="headerlink" href="#el-espinor-de-dirac" title="Permalink to this heading">#</a></h3>
 <p>El Hamiltoniano de Dirac actua en un función de onda, <span class="math notranslate nohighlight">\(\Psi\)</span> de cuatro componentes, quer se llama <strong>cuadri-spinor de Dirac</strong>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1820,7 +1991,7 @@ con \)</span>k=1, 2, 3<span class="math notranslate nohighlight">\(, y \)</span>
 $<span class="math notranslate nohighlight">\(\bar{\Psi} = (\psi^*_1, \psi^*_2, -\psi^*_3, -\psi^*_4).\)</span>$</p>
 </div>
 <div class="section" id="densidad-y-corriente-de-probabilidad">
-<h4>Densidad y corriente de probabilidad<a class="headerlink" href="#densidad-y-corriente-de-probabilidad" title="Permalink to this heading">#</a></h4>
+<h3>Densidad y corriente de probabilidad<a class="headerlink" href="#densidad-y-corriente-de-probabilidad" title="Permalink to this heading">#</a></h3>
 <p>La densidad y la corriente de probabilidad del spinor de Dirac son:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1843,7 +2014,7 @@ j^\mu = \Psi^\dagger \gamma^0 \gamma^\mu \Psi = \bar{\Psi} \gamma^\mu \Psi,
 </div>
 </div>
 <div class="section" id="spin-en-la-ecuacion-de-dirac">
-<h3>Spin en la ecuación de Dirac<a class="headerlink" href="#spin-en-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
+<h2>Spin en la ecuación de Dirac<a class="headerlink" href="#spin-en-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
 <p>En mecánica cuántica la evolución temporal de un observable, O, con operador, <span class="math notranslate nohighlight">\(\hat O\)</span>, y hamiltoniano <span class="math notranslate nohighlight">\(\hat H\)</span>, viene dada por:</p>
 <div class="math notranslate nohighlight">
 \[\frac{d O}{dt} = i \langle | \Psi | [\hat H, \hat O] | \Psi \rangle \]</div>
@@ -1874,7 +2045,7 @@ j^\mu = \Psi^\dagger \gamma^0 \gamma^\mu \Psi = \bar{\Psi} \gamma^\mu \Psi,
 \end{split}\]</div>
 </div>
 <div class="section" id="soluciones-de-la-ecuacion-de-dirac">
-<h3>Soluciones de la ecuación de Dirac<a class="headerlink" href="#soluciones-de-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h3>
+<h2>Soluciones de la ecuación de Dirac<a class="headerlink" href="#soluciones-de-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
 <p>Las soluciones de onda plana de una partícula libre serán de la forma:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1888,7 +2059,7 @@ j^\mu = \Psi^\dagger \gamma^0 \gamma^\mu \Psi = \bar{\Psi} \gamma^\mu \Psi,
 <p>que no contiene derivadas.</p>
 </div>
 <div class="section" id="soluciones-de-la-particula-en-reposo">
-<h3>Soluciones de la partícula en reposo<a class="headerlink" href="#soluciones-de-la-particula-en-reposo" title="Permalink to this heading">#</a></h3>
+<h2>Soluciones de la partícula en reposo<a class="headerlink" href="#soluciones-de-la-particula-en-reposo" title="Permalink to this heading">#</a></h2>
 <p>Para una partícula en reposo <span class="math notranslate nohighlight">\({\bf p} = {\bf 0}\)</span>, la onda de la partícula libre es: <span class="math notranslate nohighlight">\(\Psi = u(E)\,e^{-iEt}\)</span>
 y la ecuación para el espinor <span class="math notranslate nohighlight">\(u\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -1916,7 +2087,7 @@ Donde \)</span>N$ es un factor de normalización.</p>
 </ul>
 <p>Asociamos estas soluciones de energía positica con una partícula de spín <span class="math notranslate nohighlight">\(1/2\)</span> y las soluciones de energía negativa con una antipartícla de spín <span class="math notranslate nohighlight">\(1/2\)</span>.</p>
 <div class="section" id="cual-es-el-significado-de-la-solucion-de-energia-negativa">
-<h4>¿Cuál es el significado de la solución de energía negativa?<a class="headerlink" href="#cual-es-el-significado-de-la-solucion-de-energia-negativa" title="Permalink to this heading">#</a></h4>
+<h3>¿Cuál es el significado de la solución de energía negativa?<a class="headerlink" href="#cual-es-el-significado-de-la-solucion-de-energia-negativa" title="Permalink to this heading">#</a></h3>
 <p>Dirac propuso la teoría del «mar de Dirac». El <em>vacio</em> estaba lleno con todos los estados de energía negativos ocupados. Un fotón con <span class="math notranslate nohighlight">\(E &gt; 2 m_e c^2\)</span> podía hacer salat un electrón del vacio a la zona de energía positiva produciendo un electrón y un hueco en vacio que se interpreta como el positrón.</p>
 <p>Feynman y Stückelberg propusieron que en las soluciones de energía negativa se propagaban hacía atrás en el tiempo. De esta forma el factor <span class="math notranslate nohighlight">\(e^{-iEt}\)</span> no cambia <span class="math notranslate nohighlight">\(E \to - E, \; t \to -t\)</span>.</p>
 <p>Pero sí cambia el signo del momento <span class="math notranslate nohighlight">\({\bf p} \to {\bf p}\)</span>. De ahí que en los diagramas de Feynman los anti-fermiones tengan una flecha hacia atrás en el tiempo.</p>
@@ -1929,7 +2100,7 @@ v_2(E, {\bf p}) \, e^{-i ({\bf p} \cdot {\bf x} - Et)} = u_4(-E, -{\bf p}) \; e^
 </div>
 </div>
 <div class="section" id="soluciones-generales-de-la-particula-libre">
-<h3>Soluciones generales de la partícula libre<a class="headerlink" href="#soluciones-generales-de-la-particula-libre" title="Permalink to this heading">#</a></h3>
+<h2>Soluciones generales de la partícula libre<a class="headerlink" href="#soluciones-generales-de-la-particula-libre" title="Permalink to this heading">#</a></h2>
 <p>En el caso <span class="math notranslate nohighlight">\(\Psi = u(E, {\bf p}) \, e^{i({\bf p} \cdot x - E t)}\)</span>, la ecuación sobre el spinor <span class="math notranslate nohighlight">\(u\)</span> queda:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1967,7 +2138,7 @@ u_4 = N \begin{pmatrix} \frac{p_x-ip_y}{E-m} \\ \frac{-p_z}{E-m} \\ 0 \\ 1 \end{
 <p><span class="math notranslate nohighlight">\(u_3, u_4\)</span> están asociados a la energía negativa: <span class="math notranslate nohighlight">\(E = - \sqrt{p^2 + m^2}\)</span></p>
 </div>
 <div class="section" id="spinores-de-las-anti-particulas">
-<h3>Spinores de las anti-partículas<a class="headerlink" href="#spinores-de-las-anti-particulas" title="Permalink to this heading">#</a></h3>
+<h2>Spinores de las anti-partículas<a class="headerlink" href="#spinores-de-las-anti-particulas" title="Permalink to this heading">#</a></h2>
 <p>En la Naturaleza las anti-partículas se comportan como las partículas y van hacia delante en el tiempo.
 Es mejor trabajar con spinores de anti-partículas, <span class="math notranslate nohighlight">\(v_1(E, {\bf p}), v_2(E, {\bf p})\)</span>, en vez de con las soluciones de energía negativa <span class="math notranslate nohighlight">\(u_3, u_4\)</span>.</p>
 <p>Podemos obtenerlos simplemente con los cambios:</p>
@@ -2017,7 +2188,7 @@ v_2 = N \begin{pmatrix} \frac{p_z}{E+m} \\ \frac{p_x + ip_y}{E+m} \\ 1 \\ 0 \end
 \)</span>$</p>
 </div>
 <div class="section" id="conjungacion-de-carga">
-<h3>Conjungación de carga<a class="headerlink" href="#conjungacion-de-carga" title="Permalink to this heading">#</a></h3>
+<h2>Conjungación de carga<a class="headerlink" href="#conjungacion-de-carga" title="Permalink to this heading">#</a></h2>
 <p>La conjungación de carga cambia partículas por antipartículas pero manteniendo el spin, esto es los espinores <span class="math notranslate nohighlight">\(u_i \to v_i\)</span> con <span class="math notranslate nohighlight">\(i=1, 2\)</span>.</p>
 <p>En la representación de Pauli-Dirac, el <strong>operador cojungación de carga</strong> viene dado por:</p>
 <div class="math notranslate nohighlight">
@@ -2032,16 +2203,16 @@ v_2 = N \begin{pmatrix} \frac{p_z}{E+m} \\ \frac{p_x + ip_y}{E+m} \\ 1 \\ 0 \end
 <p>Dado que:
 $$
 i</p>
-<div class="amsmath math notranslate nohighlight" id="equation-49e237d2-e895-48e3-b82a-7747a0c88d82">
-<span class="eqno">()<a class="headerlink" href="#equation-49e237d2-e895-48e3-b82a-7747a0c88d82" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; -i  \\ 0 &amp; 0 &amp; i &amp; 0 \\ 
+<div class="amsmath math notranslate nohighlight" id="equation-3bcb0c8b-d48e-49c8-a49a-f1c04b286c79">
+<span class="eqno">()<a class="headerlink" href="#equation-3bcb0c8b-d48e-49c8-a49a-f1c04b286c79" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; -i  \\ 0 &amp; 0 &amp; i &amp; 0 \\ 
                 0 &amp; i &amp; 0 &amp; 0   \\ -i &amp; 0 &amp; 0 &amp; 0  \end{pmatrix}\]</div>
-<div class="amsmath math notranslate nohighlight" id="equation-b3d07eb8-609b-48f9-8be0-ab22d235a7b7">
-<span class="eqno">()<a class="headerlink" href="#equation-b3d07eb8-609b-48f9-8be0-ab22d235a7b7" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} 1 \\ 0 \\ \frac{p_z}{E+m} \\ \frac{p_x - i p_y}{E+m}\end{pmatrix}\]</div>
-<div class="amsmath math notranslate nohighlight" id="equation-cb041ac7-3413-4d73-b4b7-09f48c6e1925">
-<span class="eqno">()<a class="headerlink" href="#equation-cb041ac7-3413-4d73-b4b7-09f48c6e1925" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} \frac{p_x - ip_y}{E+m} \\ \frac{-p_z}{E+m} \\ 0 \\ 1 \end{pmatrix}\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-202eae58-f447-4a6b-a32b-16c3bd036533">
+<span class="eqno">()<a class="headerlink" href="#equation-202eae58-f447-4a6b-a32b-16c3bd036533" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} 1 \\ 0 \\ \frac{p_z}{E+m} \\ \frac{p_x - i p_y}{E+m}\end{pmatrix}\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-b42fe9f3-3dac-4bdc-9522-52e6c53b6547">
+<span class="eqno">()<a class="headerlink" href="#equation-b42fe9f3-3dac-4bdc-9522-52e6c53b6547" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} \frac{p_x - ip_y}{E+m} \\ \frac{-p_z}{E+m} \\ 0 \\ 1 \end{pmatrix}\]</div>
 <p>$$</p>
 <div class="section" id="operadores-sobre-los-spinores-de-anti-particulas">
-<h4>Operadores sobre los spinores de anti-partículas<a class="headerlink" href="#operadores-sobre-los-spinores-de-anti-particulas" title="Permalink to this heading">#</a></h4>
+<h3>Operadores sobre los spinores de anti-partículas<a class="headerlink" href="#operadores-sobre-los-spinores-de-anti-particulas" title="Permalink to this heading">#</a></h3>
 <p>Recordemos que los operadores <span class="math notranslate nohighlight">\({\hat H} = i \frac{\partial}{\partial t}, \; {\hat {\bf p}} = - i \nabla\)</span>. Al aplicarlos sobre las soluciones de las anti-partículas nos dan:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2053,7 +2224,7 @@ i</p>
 \[{\hat H}^v = - i \frac{\partial}{\partial t}, \; {\hat {\bf p}}^v = i \nabla, \; {\hat S}^v = - {\hat S}\]</div>
 </div>
 <div class="section" id="factor-de-normalizacion">
-<h4>Factor de normalización<a class="headerlink" href="#factor-de-normalizacion" title="Permalink to this heading">#</a></h4>
+<h3>Factor de normalización<a class="headerlink" href="#factor-de-normalizacion" title="Permalink to this heading">#</a></h3>
 <p>Si normalizamos la densidad por unidad de volumen a <span class="math notranslate nohighlight">\(2E\)</span>. Obtenemos, por ejemplo para <span class="math notranslate nohighlight">\(\Psi_1\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2067,7 +2238,7 @@ N = \sqrt{E + m}
 </div>
 </div>
 <div class="section" id="paridad">
-<h3>Paridad<a class="headerlink" href="#paridad" title="Permalink to this heading">#</a></h3>
+<h2>Paridad<a class="headerlink" href="#paridad" title="Permalink to this heading">#</a></h2>
 <p>La operación de paridad, <span class="math notranslate nohighlight">\({\hat P}\)</span>, cambia <span class="math notranslate nohighlight">\({\bf x} to -{\bf x}\)</span>.</p>
 <p>Si exigimos que la función de onda transformada bajo paridad, <span class="math notranslate nohighlight">\(\Psi' = \hat{P} \Psi\)</span>, satisfaga la ecuación de Dirac, y dado que <span class="math notranslate nohighlight">\({\hat P}^2 = I\)</span>, encontramos que: <span class="math notranslate nohighlight">\(\hat{P} = \pm \gamma^0\)</span>.</p>
 <p>Definimos el operador paridad:
@@ -2081,9 +2252,9 @@ $<span class="math notranslate nohighlight">\(
 \]</div>
 </div>
 <div class="section" id="helicidad-y-quiralidad">
-<h3>Helicidad y Quiralidad<a class="headerlink" href="#helicidad-y-quiralidad" title="Permalink to this heading">#</a></h3>
+<h2>Helicidad y Quiralidad<a class="headerlink" href="#helicidad-y-quiralidad" title="Permalink to this heading">#</a></h2>
 <div class="section" id="tercera-componente-de-spin">
-<h4>Tercera componente de spin<a class="headerlink" href="#tercera-componente-de-spin" title="Permalink to this heading">#</a></h4>
+<h3>Tercera componente de spin<a class="headerlink" href="#tercera-componente-de-spin" title="Permalink to this heading">#</a></h3>
 <p>Los espinores en reposo, <span class="math notranslate nohighlight">\(u_i(m, 0), v_i(m, 0)\)</span>, con <span class="math notranslate nohighlight">\(i=1, 2\)</span>, son autoestados del operador spín, <span class="math notranslate nohighlight">\({\hat S}_z\)</span>.</p>
 <p>En ausencia de un campo magnético o un sistema de referencia externo, la dirección <span class="math notranslate nohighlight">\(z\)</span> viene definida por la dirección del momento <span class="math notranslate nohighlight">\({\bf p} = p {\hat k}\)</span>.</p>
 <p>En ese caso los espinores, <span class="math notranslate nohighlight">\(u_i(E, p \hat{k}), v_i(E, p \hat{k})\)</span> también son autoestados del operador spín.</p>
@@ -2103,7 +2274,7 @@ $<span class="math notranslate nohighlight">\(
 </div>
 </div>
 <div class="section" id="helicidad">
-<h3>Helicidad<a class="headerlink" href="#helicidad" title="Permalink to this heading">#</a></h3>
+<h2>Helicidad<a class="headerlink" href="#helicidad" title="Permalink to this heading">#</a></h2>
 <p>Definimos la helicidad como la proyección normalizada del spin sobre el momento:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2144,7 +2315,7 @@ v_{-} = N \begin{pmatrix} \frac{p}{E+m} c \\ \frac{p}{E+m} s e^{i\theta}\\ c \\ 
 <p><strong>La helicidad no es un invariante Lorentz</strong>, para una partícula siempre podemos encontrar un sistema de referencia (con una velocidad mayor) que revierta el momento y por lo tanto la helicidad!</p>
 </div>
 <div class="section" id="quiralidad">
-<h3>Quiralidad<a class="headerlink" href="#quiralidad" title="Permalink to this heading">#</a></h3>
+<h2>Quiralidad<a class="headerlink" href="#quiralidad" title="Permalink to this heading">#</a></h2>
 <p>La quiralidad corresponde a los autoestados del operador <span class="math notranslate nohighlight">\(\gamma^5\)</span>.</p>
 <p>Podemos dar dos operadores de proyección de quiralidad a derechas, <span class="math notranslate nohighlight">\(P_R\)</span>, y a izquierdad, <span class="math notranslate nohighlight">\(P_L\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -2191,7 +2362,7 @@ P_L u_R = 0, \,\, P_L u_L = u_L, \;\; P_L v_R = v_L, \;\; P_L v_L = 0.
 <p>cambia partícula por antipartícula, e izquierda por derecha.</p>
 </div>
 <div class="section" id="relacion-entre-helicidad-y-quiralidad">
-<h3>Relación entre helicidad y quiralidad<a class="headerlink" href="#relacion-entre-helicidad-y-quiralidad" title="Permalink to this heading">#</a></h3>
+<h2>Relación entre helicidad y quiralidad<a class="headerlink" href="#relacion-entre-helicidad-y-quiralidad" title="Permalink to this heading">#</a></h2>
 <p>Los espinores de helicidad para partículas sin masa, <span class="math notranslate nohighlight">\(m = 0\)</span>, o relativistas (<span class="math notranslate nohighlight">\(E &gt;&gt; m, \, E = p\)</span>) son:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -2217,7 +2388,6 @@ v_R \equiv  P_R v_{+} = v_{+}, \;\; v_L \equiv P_L v_{-} = v_{-}
 u_{+} \propto \frac{1}{2} (1 + \kappa) \, u_R + \frac{1}{2} (1 - \kappa) \, u_L
 \]</div>
 <p>En el caso de <span class="math notranslate nohighlight">\(E &gt;&gt; m\)</span> (<span class="math notranslate nohighlight">\(\kappa \to 1\)</span>), los espinores de helicidad positiva convergen a los de quiralidad positiva, y solo tiene una pequeña fracción <span class="math notranslate nohighlight">\((1-\kappa)/2\)</span> de la quiralidad negativa.</p>
-</div>
 </div>
 </div>
 

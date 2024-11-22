@@ -1114,7 +1114,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov 19 15:31:13 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Nov 22 16:53:45 2024
 </pre></div>
 </div>
 </div>
@@ -2481,10 +2481,15 @@ p_T \equiv p \, \sin \theta = 0.3 \, B \, \rho,
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(u_s(p), v_s(p)\)</span> corresponden a los <strong>espinores</strong> (cuatro componentes en columna) de los fermiones y antifermiones respectivamente y el índice <span class="math notranslate nohighlight">\(s=1, 2\)</span> está asociado con las dos posibles componentes de espín de <span class="math notranslate nohighlight">\(1/2\)</span>.</p>
 <p>Notar que la dependencia de las soluciones en <span class="math notranslate nohighlight">\(t, {\bf x}\)</span>  está contenida en la fase y que los espinores dependen sólo en <span class="math notranslate nohighlight">\(p =(E, {\bf p})\)</span></p>
-<p>Por otro lado, al aplicar el operador energía a <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span>, obtenemos:</p>
+<p>Si aplicamos el operador energía y momento a las solcuiones de las partículas:</p>
 <div class="math notranslate nohighlight">
 \[
-i \partial_0 \Phi_s(x) = - E \, \Phi_s(x)
+i \partial_0 \Psi_s(x) =  E \, \Psi_s(x), \;\;\; -i \partial_k \Psi_s(x) =  p_k \, \Psi_s(x)
+\]</div>
+<p>Sin embargo si lo aplicamos a las solciones de las antipartículas,  <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+i \partial_0 \Phi_s(x) = - E \, \Phi_s(x), \;\;\; -i \partial_k \Phi_s(x) =  -p_k \, \Phi_s(x)
 \]</div>
 <p>¡Los anti-fermiones tienen energía negativa!</p>
 <p>Volveremos sobre ello después, antes vamos a indicar cómo obtener las expresiones de los espinores <span class="math notranslate nohighlight">\(u_s(E, {\bf p}), v_s(E, {\bf p})\)</span>, en donde <span class="math notranslate nohighlight">\(E , {\bf p}\)</span> son físicas, esto es <span class="math notranslate nohighlight">\(E &gt;0\)</span>.</p>
@@ -2515,9 +2520,10 @@ u^b_s(p) = \frac{\text{p}}{E+m} (\hat{\bf v} \cdot \vec{\sigma}) \; u^a_s(p)
 \[\begin{split}
 u^a_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \;\;\; u^a_2 = \begin {pmatrix} 0 \\ 1 \end{pmatrix}
 \end{split}\]</div>
-<p>El caso de la partícula en reposo <span class="math notranslate nohighlight">\(\text{p} = 0\)</span> y en movimiento <span class="math notranslate nohighlight">\({\bf p}\)</span>, (o de forma equivalente nos da la transformación del espinor tras un <em>boost</em>).</p>
-<p>Podemos obtener fácilmente las expressiones de los espinores en el caso de que <span class="math notranslate nohighlight">\({\bf p}\)</span> vaya en la dirección <span class="math notranslate nohighlight">\(z\)</span>.</p>
-<p>De forma simular procedemos con las funciones de las anti-partículas <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span> para obtener las soluciones de los espinores <span class="math notranslate nohighlight">\(v_s(p)\)</span>.</p>
+<p>Donde como veremos más adelante corresponden al espinor con la proyección del espín en <span class="math notranslate nohighlight">\(z\)</span> hacia arriba y hacia abajo respectivamente.</p>
+<p>Entre los espinores en reposo <span class="math notranslate nohighlight">\(\text{p} = 0\)</span> y en movimiento <span class="math notranslate nohighlight">\({\bf p}\)</span> sabemos que media un <em>boost</em>. En este caso el <em>boost</em> modifica el bi-espinor de abajo.</p>
+<p><em>cuestión</em>: Escribe explícitamente los espinores de Dirac <span class="math notranslate nohighlight">\(u_s(p)\)</span> donde tomamos <span class="math notranslate nohighlight">\({\bf p}\)</span> en la dirección <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>De forma similar procedemos con las funciones de las anti-partículas <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span> para obtener las soluciones de los espinores <span class="math notranslate nohighlight">\(v_s(p)\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
 (\gamma^\mu \, p_\mu + m) \, v_s(p) = 0
@@ -2548,17 +2554,23 @@ v_{2}(p) = N \begin{pmatrix} \kappa \\ 0       \\ 1      \\ 0        \end{pmatri
 </div>
 <div class="section" id="espin">
 <h4><span class="section-number">3.8.1.3. </span>Espín<a class="headerlink" href="#espin" title="Permalink to this heading">#</a></h4>
-<p>Uno de los principales resultados de la ecuación de Dirac, es que el momento total <span class="math notranslate nohighlight">\({\bf J} = {\bf L} + {\bf S}\)</span>, conmuta con el hamiltoniano, mientras que <span class="math notranslate nohighlight">\({\bf L}\)</span>, el momento angular orbital solo, no conmuta, y que por lo tanto existe un momento angular intrínsico, el espín, que para los electrones vale <span class="math notranslate nohighlight">\(1/2\)</span>. (ver [MT])</p>
+<p>Uno de los principales resultados de la ecuación de Dirac, es que el momento total <span class="math notranslate nohighlight">\({\bf J} = {\bf L} + {\bf S}\)</span>, conmuta con el hamiltoniano, (<span class="math notranslate nohighlight">\([H, {\bf J}] = 0\)</span>), mientras que <span class="math notranslate nohighlight">\({\bf L}\)</span>, el momento angular orbital solo, no conmuta (<span class="math notranslate nohighlight">\([H, {\bf L}] \neq 0\)</span>), y que por lo tanto existe un momento angular intrínsico, el espín, <span class="math notranslate nohighlight">\({\bf S}\)</span>, que para los electrones vale <span class="math notranslate nohighlight">\(1/2\)</span>. (ver demostración en [MT])</p>
 <p>Donde el operador <em>espín</em> es:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 {\bf S} \equiv \frac{1}{2} {\bf \Sigma}, \;\; \Sigma_k \equiv \begin{pmatrix} \sigma_k &amp; 0 \\ 0 &amp; \sigma_k \end{pmatrix}
 \end{split}\]</div>
+<p>Los espinores <span class="math notranslate nohighlight">\(u_s(p)\)</span> que hemos calculado antes, tienen el espín arriba y abajo en <span class="math notranslate nohighlight">\(z\)</span> respectivamente.</p>
+<div class="math notranslate nohighlight">
+\[
+S_3 \, u_1(p) = \frac{1}{2} u_1(p), \;\; S_3 \, u_2(p) = -\frac{1}{2} u_2(p)
+\]</div>
+<p>Para los espinores de las antipartículas, el valor que obtenemos del espín está invertido respecto al valor físico, como ocurría con la energía y el momento.</p>
 </div>
 <div class="section" id="helicidad">
 <h4><span class="section-number">3.8.1.4. </span>Helicidad<a class="headerlink" href="#helicidad" title="Permalink to this heading">#</a></h4>
-<p>A falta de un eje definido, por ejemplo un campo magnético, podemos dar la proyección del espín, <span class="math notranslate nohighlight">\(\Sigma\)</span> en la dirección del momento, <span class="math notranslate nohighlight">\({\bf p}\)</span>, lo que llamamos <strong>helicidad</strong>.</p>
-<p>Aunque no lo demostramos, la helicidad conmuta con el Hamiltoniano, es por lo tanto una constante temporal en un determinado sistema inercial, y podemos dar las soluciones de la ecuación de Dirac en la base de helicidad (ver para ello [MT] o extensión). Esta base es útil para realizar cálculos de secciones eficaces a altas energías.</p>
+<p>A falta de un eje definido, por ejemplo un campo magnético, podemos dar la proyección del espín, <span class="math notranslate nohighlight">\({\bf S}\)</span> en la dirección del momento, <span class="math notranslate nohighlight">\({\bf p}\)</span>, lo que llamamos <strong>helicidad</strong>.</p>
+<p>Aunque no lo demostramos, la helicidad conmuta con el Hamiltoniano, (<span class="math notranslate nohighlight">\([H, h] = 0\)</span>)es por lo tanto una constante temporal en un determinado sistema inercial, y podemos dar las soluciones de la ecuación de Dirac en la base de helicidad (ver para ello [MT] o extensión). Esta base es útil para realizar cálculos de secciones eficaces a altas energías.</p>
 <p>El operador helicidad se define como:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -2662,31 +2674,44 @@ p = 0 \; \to \; \kappa = 0 \, \\ m = 0, \, E \gg m, \, p \simeq E \; \to \; \kap
 \[
 e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t - {\bf p}{\bf x})}
 \]</div>
-<p>Al cambiar <span class="math notranslate nohighlight">\(t\to -t\)</span>, la energía, momento, espín de las antipartículas están en realidad invertidos. Con esta interpretación la energía es siempre positiva y está limitada por abajo.</p>
-<p>Podríamos entonces ver una carga negativa yendo hacia atrás en el tiempo como una positiva yendo hacia delante.</p>
-<p>Las dos interpretaciones son problemáticas. Los físicos usamos energías acotadas inferiormente, y una línea temporal hacia delante.</p>
-<p>La interpretación correcta se obtiene en Teoría Cuántica de Campos (TCQ).</p>
-<p>La solución más general del campo fermiónico, <span class="math notranslate nohighlight">\(\Psi(x)\)</span>, descompuesta en el espacio de momentos es:</p>
+<p>En esta interpretación las antipartículas van «hacia atrás en el tiempo» y podríamos ver una corriente de carga negativa yendo hacia atrás en el tiempo como una positiva yendo hacia delante.</p>
+<p>Al cambiar <span class="math notranslate nohighlight">\(t \to -t\)</span> cambia la energía pero también el momento y espín de las antipartículas. De tal forma que tomamos como los valores físicos de la antipartículas de energía, momento o espín, el inverso del valor obtenido al aplicar los operadores.</p>
+<p>Las dos interpretaciones son problemáticas. Los físicos usamos energías acotadas inferiormente, y una línea temporal hacia delante. La interpretación correcta se obtiene en Teoría Cuántica de Campos (TCQ).</p>
+<p>Se escapa al nivel del curso, pero indicamos aquí como es el campo fermiónico cuantificado. Su descomposición en el espcio de momentos es:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi(x) = \sum_s \int \frac{\mathrm{d}p^3}{(2\pi)^3\sqrt{2E}} \left( a_{p,s} u_s(p) e^{-ipx} + b^\dagger_{p,s} v_s(p) e^{+ipx} \right)
 \]</div>
-<p>Al cuantificar el campo, obtenemos <span class="math notranslate nohighlight">\(\Psi(x), \Psi^\dagger(x)\)</span> como operadores y <span class="math notranslate nohighlight">\(a_{p,s}, b^\dagger_{ps,}\)</span> son los operadores destrucción de una partícula y construcción de antipartícula respectivamente. El resto de operadores se construyen a partir de los operadores creación imponiendo un orden normal (primero los de destrucción).</p>
-<p>Decimos que el operador creacción de partículas, <span class="math notranslate nohighlight">\(a^\dagger_{p,s}\)</span> actuando sobre el vacío, <span class="math notranslate nohighlight">\(|0 \rangle\)</span>, crea una partícula con cuadri-momento <span class="math notranslate nohighlight">\({p}\)</span> y helicidad (o espín) <span class="math notranslate nohighlight">\(s\)</span>, esto es <span class="math notranslate nohighlight">\(| p, s \rangle\)</span>.</p>
+<p>El campo cuantificado <span class="math notranslate nohighlight">\(\Psi(x)\)</span> está compuesto de los operadores y <span class="math notranslate nohighlight">\(a_{p,s}, b^\dagger_{ps,}\)</span> que son los operadores destrucción de una partícula y construcción de antipartícula respectivamente.</p>
+<p>De tal forma que creamos  partículas con carga <span class="math notranslate nohighlight">\(q\)</span> y antipartículas con carga opuesta <span class="math notranslate nohighlight">\(\bar{q}\)</span>, a partir del vacío, <span class="math notranslate nohighlight">\(| 0 \rangle\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-|p, s \rangle = a^\dagger_{p,s} | 0 \rangle
+a^\dagger_{p,s} | 0 \rangle = |p, s, q \rangle, \;\;\; b^\dagger_{p, s} | 0 \rangle = | p, s, \bar{q} \rangle
 \]</div>
-<p>Se escapa al nivel de este curso, pero para que al cuantificar el campo de Dirac éste tenga sentido físico, los operadores de creacción de partículas deben anti-conmutar entre sí, de tal forma que en un mismo <span class="math notranslate nohighlight">\(x\)</span> no pueder existir dos fermiones idénticos con el mismo estado, con el mismo <span class="math notranslate nohighlight">\(p, s\)</span>.</p>
+<p>os las destruimos:</p>
+<div class="math notranslate nohighlight">
+\[
+a_{p, s} |p, s, q \rangle = | 0 \rangle, \;\;\; b_{p, s} |p, s, \bar{q} \rangle = | 0 \rangle
+\]</div>
+<p>Decimos que el operador campo:</p>
+<p><span class="math notranslate nohighlight">\(\Psi(x)\)</span> destruye partículas (destruye <span class="math notranslate nohighlight">\(q\)</span>) o crea anti-partículas (crea <span class="math notranslate nohighlight">\(\bar{q}\)</span>)</p>
+<p><span class="math notranslate nohighlight">\(\Psi^\dagger(x)\)</span> crea partículas (crea <span class="math notranslate nohighlight">\(q\)</span>) o destruye anti-partículas (destruye <span class="math notranslate nohighlight">\(\bar{q}\)</span>)</p>
+<p>Y recuperamos el hecho experimental de que las anti-partículas se comportan como las partículas a excepción de que tienen sus cargas opuestas.</p>
+<p>El resto de operadores en TCQ se construyen a partir de los operadores creación y destrucción imponiendo un orden normal (esto es a la derecha los de destrucción), lo que lleva a que los operadores energía, el momento y espín sobre los espinores de las antipartículas en TCQ den correctamente su valor físico.</p>
+<p>Se escapa al nivel de este curso, pero para que al cuantificar el campo de Dirac éste tenga sentido físico, los operadores de creacción de partículas deben anti-conmutar entre sí, de tal forma que en un mismo <span class="math notranslate nohighlight">\(x\)</span> no pueder existir dos fermiones idénticos con el mismo estado, con el mismo <span class="math notranslate nohighlight">\(p, s\)</span>, lo que hace que los fermiones obedezcan al principio de exclusión de Pauli.</p>
 </div>
 </div>
 <div class="section" id="corriente-fermionica">
 <h4><span class="section-number">3.8.1.6. </span>Corriente fermiónica<a class="headerlink" href="#corriente-fermionica" title="Permalink to this heading">#</a></h4>
-<p>Por último, la corriente fermiónica juega un papel fundamental en la interacciones entre partículas.</p>
-<p>Para obtener una corriente de probabilidad conservada, a partir de la ecución de Dirac, tenemos que introducir el espinor <strong>adjunto</strong>:</p>
+<p>En mecánica cuántica usamos habitualmente la densidad de probabilidad, <span class="math notranslate nohighlight">\(\rho = |\psi(x)|^2\)</span>, a la que asociamos también una corriente de probabilidad, <span class="math notranslate nohighlight">\({\bf j}\)</span> que cumple la ecuación de continuidad de la corriente:</p>
 <div class="math notranslate nohighlight">
 \[
-\bar{\Psi} = \Psi^{\dagger} \gamma^0; \;\;\; \bar{\Psi} = (\psi^*_0, \psi^*_1, -\psi^*_2, -\psi^*_3),
+\frac{\partial \rho}{\partial t} + \nabla \cdot {\bf j} = 0
+\]</div>
+<p>El mismo resultado se obtiene con la ecuación de Dirac, pero para ello debemos introducir primero el espinor <strong>adjunto</strong> como:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi} \equiv \Psi^{\dagger} \gamma^0; \;\;\; \bar{\Psi} = (\psi^*_0, \psi^*_1, -\psi^*_2, -\psi^*_3),
 \]</div>
 <p>este último en la representación Pauli-Dirac.</p>
 <p>A partir de ahí podemos definir una <strong>corriente</strong>:</p>
@@ -2695,14 +2720,19 @@ e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t
 j^\mu =  \bar{\Psi} \gamma^\mu \Psi,\;\;\;  j^\mu = (j^0, {\bf j})
 \]</div>
 <p>Que aunque no demostramos aquí, se comporta como un <strong>vector</strong> bajo transformaciones de Lorentz, esto es, es un <strong>cuadri-vector</strong> (ver [MT ap. B]).</p>
-<p>Esta corriente se conserva, cumple la <strong>ecuación de conservación</strong>:</p>
+<p>El primer elemento de la corriente es la densidad de probabilidad:</p>
+<div class="math notranslate nohighlight">
+\[
+\rho = j^0  \equiv \bar{\Psi} \gamma^0 \Psi = \sum_{\mu} |\psi_\mu(x)|^2
+\]</div>
+<p>Y aunque tampoco lo demostramos (ver [MT4.2]) la corriente se conserva, cumple la <strong>ecuación de conservación</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{\partial \rho}{\partial t} + \nabla \cdot {\bf j} = 0, \;\;\; \partial_\mu j^\mu = 0
 \]</div>
 <p>esto es, la cantidad de <span class="math notranslate nohighlight">\(\rho\)</span> que entra en un volumen diferencial en una unidad de tiempo corresponde al flujo de la corriente <span class="math notranslate nohighlight">\({\bf j}\)</span> que atraviesa las paredes del volumen en ese tiempo.</p>
-<p>Es este caso es la <strong>corriente de probabilidad</strong> del fermión.</p>
-<p>La corriente multiplicada por su carga, nos da la corriente eléctrica.</p>
+<p>Se trata de la <strong>corriente de probabilidad</strong> del fermión. La corriente multiplicada por su carga, nos da la corriente eléctrica.</p>
+<p>La corriente fermiónica va a jugar un papel esencial a la hora de determinar los observables físicos.</p>
 <p>[Para profundizar en el tema MT4.2, MT4.3, MT4.8]</p>
 </div>
 </div>
@@ -2791,20 +2821,21 @@ n \to p + e + \bar{\nu}_e
 <p>Fermi propuso como <span class="math notranslate nohighlight">\(M_{fi}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_{\mu\nu} \left[ \bar{\Psi}_e \gamma^\nu \Psi_{\bar{\nu}_e} \right] = \frac{G_F}{\sqrt{2}} j_{\mathrm{had}} \cdot j_{\mathrm{lep}},
+M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_{\mu\nu} \left[ \bar{\Psi}_e \gamma^\nu \Psi_{\bar{\nu}_e} \right] = \frac{G_F}{\sqrt{2}} \, j_{\mathrm{had}} \cdot j_{\mathrm{lep}},
 \]</div>
+<p>Es decir el acoplo de dos corrientes (su producto escalar) multiplicado por una constante, <span class="math notranslate nohighlight">\(G_F/\sqrt{2}\)</span>, que regula la «intensidad» de la interacción.</p>
 <p>donde:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(G_F = 1.16 \, 10^{-5}\)</span> <span class="math notranslate nohighlight">\(\mathrm{GeV}^{-2}\)</span>, es la constante de acoplo, o de Fermi, que cuantifica la intensidad de la interacción.</p></li>
 <li><p><span class="math notranslate nohighlight">\(j^\mu_{\mathrm{had}} = \bar{\Psi}_p \gamma^\mu \Psi_n\)</span> es la corriente hadrónica.</p></li>
 <li><p><span class="math notranslate nohighlight">\(j^\nu_{\mathrm{lep}} = \bar{\Psi}_e \gamma^\nu \Psi_{\bar{\nu}_e}\)</span> es la corriente leptónica.</p></li>
 </ul>
-<p>Como <span class="math notranslate nohighlight">\(j^\mu_{\mathrm{had}}, \, j^\nu_{\mathrm{lep}}\)</span> son corrientes, cuadri-vectores, <span class="math notranslate nohighlight">\(M_{fi} \propto g_{\mu\nu} j^\mu_{\mathrm{had}} j^\nu_{\mathrm{lep}} = j_{\mathrm{had}} \cdot j_{\mathrm{lep}} \)</span> es un invariante Lorentz.</p>
+<p>Como <span class="math notranslate nohighlight">\(j^\mu_{\mathrm{had}}, \, j^\nu_{\mathrm{lep}}\)</span> son corrientes, cuadri-vectores, <span class="math notranslate nohighlight">\(M_{fi} \propto g_{\mu\nu} j^\mu_{\mathrm{had}} j^\nu_{\mathrm{lep}} = j_{\mathrm{had}} \cdot j_{\mathrm{lep}} \)</span>, su producto escalar es un invariante Lorentz.</p>
 <p>Recordemos que <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> son las matrices de Dirac, <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> el tensor diagonal de la métrica, y cuando aparecen los índices arriba y abajo, se entiende que hay implícito un sumatorio.</p>
 </div>
 <div class="section" id="diagrama-de-feynman">
 <h4><span class="section-number">3.8.2.2. </span>Diagrama de Feynman<a class="headerlink" href="#diagrama-de-feynman" title="Permalink to this heading">#</a></h4>
-<p>El siguiente <strong>diagrama de Feynman</strong> representa la interacción de dos corrientes fermiónicas</p>
+<p>Feyman propuso para representar la interacción <span class="math notranslate nohighlight">\(a + b \to c + d\)</span>, el siguiente diagrama:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -2817,16 +2848,18 @@ M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_
 </tr>
 </tbody>
 </table>
-<p>Identificamos:</p>
+<p>donde podemos indenticar:</p>
 <ul class="simple">
-<li><p>las <strong>corrientes fermiónicas</strong> de las partículas, de <span class="math notranslate nohighlight">\(a\)</span> a <span class="math notranslate nohighlight">\(c\)</span>, y de <span class="math notranslate nohighlight">\(b\)</span> a <span class="math notranslate nohighlight">\(d\)</span>.</p></li>
+<li><p>dos <strong>corrientes fermiónicas</strong> de las partículas, de <span class="math notranslate nohighlight">\(a\)</span> a <span class="math notranslate nohighlight">\(c\)</span>, y de <span class="math notranslate nohighlight">\(b\)</span> a <span class="math notranslate nohighlight">\(d\)</span>.</p></li>
 <li><p>el <strong>mediador</strong> o portador, <span class="math notranslate nohighlight">\(X\)</span></p></li>
 <li><p>los <strong>vértices de acoplo</strong> con intensidad <span class="math notranslate nohighlight">\(g\)</span>.</p></li>
 </ul>
 <p>A cada uno de esos elementos (corriente, mediador, vértices), Feynman les asoció unas reglas matemáticas precisas con las que determinar el elemento de matriz <span class="math notranslate nohighlight">\(M_{fi}\)</span></p>
-<p>En más detalle:</p>
-<ul class="simple">
-<li><p>las <strong>corrientes fermiónicas</strong> estan representadas por líneas. Cada fermión es un segmento de la línea con una flecha asociada. Los fermiones tienen las flechas hacia la derecha y los antifermiones hacia la izquierda.</p></li>
+<p>Algnos detalles más de los diagramas:</p>
+<ul>
+<li><p>las <strong>corrientes fermiónicas</strong> estan representadas por líneas. Cada fermión es un segmento de la línea con una flecha asociada. Los fermiones tienen las flechas hacia la derecha y los antifermiones hacia la izquierda.</p>
+<p>las corrientes tienen un sentido único, no puede haber ni fuentes, ni sumideros.</p>
+</li>
 <li><p>El <strong>mediador</strong> se representa con una línea en senos para el fotón, y los bosones débiles <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y con un muelle para los gluones que median la fuerza fuerte. El mediador introduce un factor en el elemento de matriz denominado <strong>propagador</strong>.</p></li>
 <li><p>La intensidad y características de la interacción está cuantificada por un factor asociado al <strong>vértice</strong>. La <strong>intensidad de la interacción</strong> viene dada por una <strong>«constante» de acoplo</strong> <span class="math notranslate nohighlight">\(g\)</span>.</p></li>
 </ul>
@@ -2834,20 +2867,20 @@ M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_
 </div>
 <div class="section" id="corrientes">
 <h4><span class="section-number">3.8.2.3. </span>Corrientes<a class="headerlink" href="#corrientes" title="Permalink to this heading">#</a></h4>
-<p>Vimos que la forma <span class="math notranslate nohighlight">\(\bar{\Psi} \gamma^\mu \Psi\)</span> es una corriente fermiónica.</p>
-<p>En los diagramas de Feynman las corrientes corresponden a los fermiones y aparecen dibujadas como conexión de lineas fermiónicas con una dirección «temporal» definida.</p>
-<p>Esto es las flechas sobre los fermiones indican un sentido, entran y salen, del diagrama, no forman sumideros ni fuentes de fermiones.</p>
+<p>A las corrientes Feynman les asignó su forma matemática: <span class="math notranslate nohighlight">\(\bar{\Psi}_c \gamma^\mu \Psi_a\)</span>.</p>
+<p>Las corrientes en los diagramas entran y salen, no forman ni sumideros, ni fuentes, y <span class="math notranslate nohighlight">\(\Psi_a\)</span> está asociada al fermión de entrada y <span class="math notranslate nohighlight">\(\bar{\Psi}_c\)</span> al de salida.</p>
 <p><em>Observa</em> en el diagrama genérico anterior las corrientes de los fermiones.</p>
 </div>
 <div class="section" id="vertices">
 <h4><span class="section-number">3.8.2.4. </span>Vértices<a class="headerlink" href="#vertices" title="Permalink to this heading">#</a></h4>
-<p>Matemáticamente, la interacción de un campo vectorial <span class="math notranslate nohighlight">\(A_\mu\)</span>, con uno fermiónico <span class="math notranslate nohighlight">\(\Psi\)</span>, introduce en el lagrangiano un término llamado de interacción:</p>
+<p>A los vértices Feynman les asignó un acoplo <span class="math notranslate nohighlight">\(g\)</span> que caracteriza el intensidad de la interacción. Cada vértice introduce un factor <span class="math notranslate nohighlight">\(g\)</span> en el elemento de Matriz <span class="math notranslate nohighlight">\(M_{fi}\)</span>, esto es, <span class="math notranslate nohighlight">\(M_{fi} \propto g^2\)</span>.</p>
+<p>En el caso de que el vértice sea entre un fermión y un fotón, la intensidad del acoplo viene dada por la carga eléctrica, <span class="math notranslate nohighlight">\(g = -e\)</span>. Lo que da lugar a la electrodinámica cuántica (QED).</p>
+<p>Aunque se escapa al nivel del curso, la interacción de un campo vectorial <span class="math notranslate nohighlight">\(A_\mu\)</span>, con una corriente fermiónica <span class="math notranslate nohighlight">\(\bar{\Psi} \gamma^\mu \Psi\)</span>, introduce en el lagrangiano un término llamado de interacción:</p>
 <div class="math notranslate nohighlight">
 \[
 -g \; \bar{\Psi} \gamma^\mu \Psi \; A_\mu
 \]</div>
-<p>Este término lo asociaremos con un vértice donde se acopla con una intensidad <span class="math notranslate nohighlight">\(g\)</span> una corriente fermionica, <span class="math notranslate nohighlight">\(j^\mu_f \equiv \bar{\Psi} \gamma^\mu \Psi\)</span>, con un bosón, <span class="math notranslate nohighlight">\(A_\mu\)</span>.</p>
-<p>Si la constante de acoplo es <span class="math notranslate nohighlight">\(g = -e\)</span> se trata de la interacción entre la corriente fermiónica de un electrón y el fotón. Lo que da lugar a la electrodinámica cuántica (QED).</p>
+<p>Este término lo asociaremos con un vértice donde se acopla con una intensidad <span class="math notranslate nohighlight">\(g\)</span> una corriente fermionica, <span class="math notranslate nohighlight">\(j^\mu_f \equiv \bar{\Psi} \gamma^\mu \Psi\)</span>, con el campo de un bosón, <span class="math notranslate nohighlight">\(A_\mu\)</span>.</p>
 <p>Los vértices de los diagramas de Feynman para las distintas fuerzas son:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -2868,7 +2901,11 @@ M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_
 \left( \begin{matrix}  \nu_e \\ e \end{matrix} \right)
 \end{split}\]</div>
 <p>Mientras que para los quarks pueden cambiar entre un quark de arriba y uno de abajo.</p>
-<p>Lo veremos con más detalle en el tema de hadrones</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left( \begin{matrix}  u \\ d \end{matrix} \right)
+\end{split}\]</div>
+<p>de cualquier familia. Lo veremos con más detalle en el tema de hadrones</p>
 <p>Para cada fuerza tenemos asociada una <strong>constante de acoplo</strong>:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -2945,7 +2982,7 @@ M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_
 </tbody>
 </table>
 <p>Notar que no observamos los mediadores, en ese sentido son «virtuales».</p>
-<p>Matemáticamente, las reglas de Feynman introducen un <strong>propagador</strong> que actua como un factor que acopla las corrientes.</p>
+<p>Matemáticamente, las reglas de Feynman introducen un <strong>propagador</strong> que actua como un factor que depende del cuadrimomento transferido, <span class="math notranslate nohighlight">\(q\)</span>, y que acopla las corrientes. El propagador se corresponde al intercambio de un bosón vectorial, un <span class="math notranslate nohighlight">\(A_\mu\)</span> en el caso de QED.</p>
 <p>En la tabla se muestra la expresión matemática aproximada de los propagadores:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -2976,8 +3013,8 @@ M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_
 \[
 \frac{g_{\mu\nu}}{q^2 - m^2_W} \to -\frac{g_{\mu\nu}}{m^2_W}.
 \]</div>
-<p>Esto explia que en la teoría de Fermi apareciese solo una costante, <span class="math notranslate nohighlight">\(G_F\)</span>.</p>
-<p>Si consideramos el factor <span class="math notranslate nohighlight">\(g^2_W\)</span> asociado a los dos vértices y el del propagador aproximado <span class="math notranslate nohighlight">\(1/m^2_W\)</span>, el factor que entra en la desintegración del neutrón en <span class="math notranslate nohighlight">\(M_{fi}\)</span> del diagrama de Feynman es <span class="math notranslate nohighlight">\(g^2_W/m^2_W\)</span>, que debe ser proporcional a la constante introducida por Fermi, <span class="math notranslate nohighlight">\(G_F\)</span></p>
+<p>Esto explica que en la teoría de Fermi apareciese solo una costante, <span class="math notranslate nohighlight">\(G_F/\sqrt{2}\)</span>.</p>
+<p>Si consideramos el factor <span class="math notranslate nohighlight">\(g^2_W\)</span> asociado a los dos vértices y el del propagador aproximado <span class="math notranslate nohighlight">\(1/m^2_W\)</span>, el factor que entra en la desintegración del neutrón en <span class="math notranslate nohighlight">\(M_{fi}\)</span> del diagrama de Feynman es <span class="math notranslate nohighlight">\(g^2_W/m^2_W\)</span>, que debe ser proporcional a la constante introducida por Fermi, <span class="math notranslate nohighlight">\(G_F/\sqrt{2}\)</span>.</p>
 <p>La relación exacta, por razones históricas, entre <span class="math notranslate nohighlight">\(G_F\)</span> y <span class="math notranslate nohighlight">\(g_W, m_W\)</span> es:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2997,12 +3034,13 @@ M_{fi} = \frac{G_F}{\sqrt{2}} \; \left[\bar{\Psi}_p \gamma^\mu \Psi_n \right] g_
 </tr>
 </tbody>
 </table>
-<p>El elemento de matriz <span class="math notranslate nohighlight">\(M_{fi}\)</span> correspondería al acoplo de la corrientes electrónica, <span class="math notranslate nohighlight">\(j_e\)</span>, y muónica, <span class="math notranslate nohighlight">\(j_\mu\)</span>, mediante el propagador del fotón y con intensidad <span class="math notranslate nohighlight">\(e^2\)</span> (por los dos vértices)</p>
+<p>Podemos reunir todas las reglas de Feynman para dar el elemento de matriz <span class="math notranslate nohighlight">\(M_{fi}\)</span></p>
 <div class="math notranslate nohighlight">
 \[
 M_{fi} \propto e^2 \; \left[ \bar{\Psi}_e(p_c) \gamma^\mu \Psi_e(p_a) \right] \; \frac{g_{\mu\nu}}{q^2} \; \left[ \bar{\Psi}_\mu(p_d) \gamma^\nu \Psi_\mu(p_b) \right] = 
 e^2 \, \frac{j_e \cdot j_\mu}{q^2} 
 \]</div>
+<p>correspondería al acoplo de la corrientes electrónica, <span class="math notranslate nohighlight">\(j_e\)</span>, y muónica, <span class="math notranslate nohighlight">\(j_\mu\)</span>, mediante el propagador del fotón y con intensidad <span class="math notranslate nohighlight">\(e^2\)</span> (por los dos vértices)</p>
 <p>Donde <span class="math notranslate nohighlight">\(p_a, p_c\)</span> son el cuadrimomento del electrón inicial y final respectivamente, y <span class="math notranslate nohighlight">\(p_b, p_d\)</span> los del muón inicial y final, y el cuadrimomento transferido es <span class="math notranslate nohighlight">\(q = p_c -p_a\)</span>.</p>
 <p>Notar que el índice de <span class="math notranslate nohighlight">\(\Psi_\mu\)</span> indica que se trata del muón.</p>
 <p>Y de nuevo, notar que <span class="math notranslate nohighlight">\(M_{fi}\)</span> es un invariante Lorentz.</p>
@@ -3062,7 +3100,11 @@ M_{fi} \propto e^2 \; \left[ \bar{\Psi}_{e^+}(p_b) \gamma^\mu \Psi_e(p_a) \right
 </tbody>
 </table>
 <p><em>Cuestión</em>: Construye diagramas específicos para cada tipo, dispersión, aniquilación y desintegración. Por ejemplo, da el diagrama de dispersión mediado por un <span class="math notranslate nohighlight">\(W\)</span> y con un <span class="math notranslate nohighlight">\(\nu_e\)</span> en una de las ramas.</p>
-<p>El diagrama de Feynman para la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> de un neutrón es:</p>
+<p>Ahora estamos en disposición de dar el diagrama de Feynman para la desintegración <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+n \to p + e + \bar{\nu}_e
+\]</div>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -3080,6 +3122,10 @@ M_{fi} \propto e^2 \; \left[ \bar{\Psi}_{e^+}(p_b) \gamma^\mu \Psi_e(p_a) \right
 <h4><span class="section-number">3.8.3.1. </span>Diagramas de árbol y de lazo<a class="headerlink" href="#diagramas-de-arbol-y-de-lazo" title="Permalink to this heading">#</a></h4>
 <p>Los diagramas de Feynman que hemos visto son de nivel árbol.</p>
 <p>Otros diagramas pueden contribuir al mismo proceso, por ejemplo, en la dispersión de dos electrones:</p>
+<div class="math notranslate nohighlight">
+\[
+e+e \to e + e
+\]</div>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>

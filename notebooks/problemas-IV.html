@@ -386,7 +386,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov 19 13:09:30 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Nov 22 16:53:53 2024
 </pre></div>
 </div>
 </div>
@@ -433,14 +433,17 @@ title="Print to PDF"
 <p><em>solución</em></p>
 <hr class="docutils" />
 <p><strong>ejercicio</strong></p>
-<p>Verificar que el operador paridad sobre los espinores es <span class="math notranslate nohighlight">\(\hat{P} = \gamma^0\)</span>, de tal forma que <span class="math notranslate nohighlight">\(\hat{P} u_{s}(E, \vec{p}) \equiv \gamma^0 u_s(E, \vec{p}) = u_s(E, - \vec{p})\)</span>. Verificar que la paridad intrísica es +1 para <span class="math notranslate nohighlight">\(u_s(p)\)</span>, y -1 para <span class="math notranslate nohighlight">\(v_s(p)\)</span>.</p>
-<p>Al aplicar paridad sobre la ecuación de Dirac del espinor obtenemos:
-$<span class="math notranslate nohighlight">\(
+<p>Verificar que el operador paridad sobre los espinores es <span class="math notranslate nohighlight">\(P = \gamma^0\)</span>, de tal forma que <span class="math notranslate nohighlight">\(P \, u_{s}(E, \vec{p}) \equiv \gamma^0 u_s(E, \vec{p}) = u_s(E, - \vec{p})\)</span>. Verificar que los espinores en reposo <span class="math notranslate nohighlight">\(u_s(m,{\bf 0}), \, v_s(m, {\bf 0})\)</span>, son autoestados de paridad con autovalores +1 y -1 respecticamente. Verificar con los espinores de helicidad en la dirección <span class="math notranslate nohighlight">\(z\)</span> que la paridad invierte la helicidad.</p>
+<p>Al aplicar inversión por paridad sobre la ecuación de Dirac del espinor obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
 (i\gamma^0 \partial_0 - i \gamma^k \partial_k - m) \, u_s(E, -\vec{p}) = 0
-\)</span>$</p>
-<p>Verificar que si multiplicamos por la izquierda <span class="math notranslate nohighlight">\(\gamma^0\)</span> recuperamos la ec. de Dirac para los espinores sin invertir por paridad.</p>
+\]</div>
+<p>Verificar que si multiplicamos por la izquierda <span class="math notranslate nohighlight">\(\gamma^0\)</span> recuperamos la ec. de Dirac para los espinores <span class="math notranslate nohighlight">\(u_s(E, {\bf p})\)</span>.</p>
 <p><em>solución</em></p>
-<p>Tomemos los espinores como:</p>
+<ol class="simple">
+<li><p>Tomemos los espinores:</p></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 u_s(E, \vec{p}) = N \begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot \hat{{\bf v}}) \chi_s \end{pmatrix} 
@@ -453,11 +456,39 @@ u_s(E, \vec{p}) = N \begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot \hat{{\
 <p>A aplicar</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\gamma^0 u_s(p) = N \begin{pmatrix} I &amp; 0 \\ 0 &amp; -I \end{pmatrix}  \begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot \hat{v}) \chi_s \end{pmatrix}  =  \\
+\gamma^0 u_s(E, \vec{p}) = N \begin{pmatrix} I &amp; 0 \\ 0 &amp; -I \end{pmatrix}  \begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot \hat{v}) \chi_s \end{pmatrix}  =  \\
 N  \begin{pmatrix} \chi_s \\ -\kappa (\vec{\sigma} \cdot \hat{{\bf v}}) \chi_s \end{pmatrix} = 
 N  \begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot (-\hat{{\bf v}})) \chi_s \end{pmatrix} = u_s(E, -\vec{p})
 \end{split}\]</div>
-<p>La ecuación de Dirac aplicando paridad queda (notar que la derividas de las coordenadas espaciales invierten el signo):</p>
+<p>1.b) Los espinores en reposo son simplemente:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_s(m, {\bf 0}) = \sqrt{2m} \begin{pmatrix} \chi_s \\ 0 \end{pmatrix}
+\end{split}\]</div>
+<p>La paridad cambia solo el bi-espinor de abajo, luego:
+$<span class="math notranslate nohighlight">\(
+\gamma^0 u_s(m, {\bf 0}) = u_s(m, {\bf 0})
+\)</span>$</p>
+<p>Mientras que para las antipartículas, sus espinores son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_s(m, {\bf 0}) = \sqrt{2m} \begin{pmatrix} 0 \\ \xi_s \end{pmatrix}
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\xi_2 = \chi_1, \; \xi_2 = \chi_1\)</span></p>
+<p>Al aplicar paridad si cambia los bi-espinores de abajo</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^0 v_s(m, {\bf 0}) = - v_s(m, {\bf 0})
+\]</div>
+<p>Luego <span class="math notranslate nohighlight">\(u_s(m, {\bf 0}), \, v_s(m, {\bf 0}))\)</span> son autoestados de paridad con autovalores <span class="math notranslate nohighlight">\(+1, -1\)</span> respectivamente.</p>
+<p>1.c Si aplicamos paridad a los espinores de helicidad en la dirección <span class="math notranslate nohighlight">\(z\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^0 u_\pm(p) = 
+\]</div>
+<ol class="simple">
+<li><p>La ecuación de Dirac aplicando paridad queda (notar que la derivadas de las coordenadas espaciales invierten el signo):</p></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[
 (i\gamma^0 \partial_0 - i \gamma^k \partial_k - m) \, u_s(E, -\vec{p}) = 0
@@ -472,10 +503,10 @@ N  \begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot (-\hat{{\bf v}})) \chi_s
 <p>que es la ec. de Dirac para los espinores <span class="math notranslate nohighlight">\(u_s(p)\)</span>.</p>
 <hr class="docutils" />
 <p><strong>ejercicio</strong></p>
-<p>La transformación por carga, en la representación Pauli-Dirac, para las soluciones de Dirac es <span class="math notranslate nohighlight">\(\hat{C} \Psi_s(x) \equiv i \gamma^2 \Psi^*_s(x) = \eta_C \Phi_s(x)\)</span>, (siendo <span class="math notranslate nohighlight">\(\eta_C\)</span> una fase compleja), esto es cambiamos partícula por antipartícula. Verificar que para los espinores de helicidad (en la dirección <span class="math notranslate nohighlight">\(z\)</span>) la operación bajo carga es:</p>
+<p>La transformación por carga, en la representación Pauli-Dirac, para las soluciones de Dirac es <span class="math notranslate nohighlight">\(C \, \Psi_s(x) \equiv i \gamma^2 \Psi^*_s(x) = \eta_C \Phi_s(x)\)</span>, (siendo <span class="math notranslate nohighlight">\(\eta_C\)</span> una fase compleja), esto es cambiamos partícula por antipartícula. Verificar que para los espinores de helicidad (en la dirección <span class="math notranslate nohighlight">\(z\)</span>) la operación bajo carga es:</p>
 <div class="math notranslate nohighlight">
 \[
-\hat{C} u_\pm(p) \equiv i\gamma^2 u^{*}_\pm(p) = \pm v_\pm(p)
+C \, u_\pm(p) \equiv i\gamma^2 u^{*}_\pm(p) = \pm v_\pm(p)
 \]</div>
 <p>Considera ahora la ecuación de Dirac con interacción con el campo electromagnético:</p>
 <div class="math notranslate nohighlight">
@@ -552,13 +583,63 @@ Ahora como la <span class="math notranslate nohighlight">\(\gamma^2\)</span> de 
 <p>que es la ec. de Dirac para las antipartículas, pero ahora el signo de <span class="math notranslate nohighlight">\(q\)</span> ha cambiado, antes era <span class="math notranslate nohighlight">\(-q\)</span> y ahora <span class="math notranslate nohighlight">\(+q\)</span>. ¡Luego es la misma ecuación de interacción pero con la carga opuesta!</p>
 <hr class="docutils" />
 <p><strong>ejercicio</strong></p>
-<p>Demostrar que <span class="math notranslate nohighlight">\(P_L = \frac{1}{2}(1-\gamma^5)\)</span> y <span class="math notranslate nohighlight">\(P_R = \frac{1}{2}(1-\gamma^5), \)</span> son proyectores, (los proyectores de <em>quiralidad</em> a inzquierda <span class="math notranslate nohighlight">\(L\)</span> o derecha <span class="math notranslate nohighlight">\(R\)</span>), esto es, cumplen:</p>
+<p>Determina el biespinor <span class="math notranslate nohighlight">\(\xi_\lambda(\hat{\bf v})\)</span> que es autoestado de <span class="math notranslate nohighlight">\((\vec{\sigma} \cdot {\hat {\bf v}})\)</span> con autovalores <span class="math notranslate nohighlight">\(\lambda = \pm 1\)</span>. Usa la expresión de <span class="math notranslate nohighlight">\((\vec{\sigma} \cdot \hat{\bf v})\)</span> en polares.</p>
+<p>Verifica que los espinores dados por:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_\lambda(p) = N \begin{pmatrix} \xi_\lambda(\hat{\bf v}) \\ \lambda \kappa \, \xi_\lambda (\hat{\bf v})\end{pmatrix}
+\end{split}\]</div>
+<p>son autoestados de helicidad con autovalores <span class="math notranslate nohighlight">\(\lambda\)</span> y soluciones de la ec. de Dirac.</p>
+<p><em>solución</em></p>
+<p>(ver extensión cinemática, TM)</p>
+<ol class="simple">
+<li><p>Cálculo de los autoestados</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \cos\theta &amp; e^{-i\phi} \sin\theta \\ e^{i\phi} \sin\theta &amp; -\cos\theta \end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix} = \lambda \begin{pmatrix} a \\ b \end{pmatrix} 
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+a \cos \theta + b e^{-i\phi} \sin \theta = \lambda a \\
+a e^{+i\phi} \sin \theta + b \cos \theta = \lambda b 
+\end{split}\]</div>
+<p>de la primera obtenemos:
+$<span class="math notranslate nohighlight">\(
+\frac{b}{a} = e^{+i\phi} \frac{(\lambda - \cos \theta)} {\sin \theta}
+\)</span>$</p>
+<p>luego para <span class="math notranslate nohighlight">\(\lambda = +1\)</span>:
+$$
+\frac{b}{a} = e^{+i\phi} \frac{(1 - \cos \theta)} {\sin \theta} = e^{i\phi} \tan \frac{\theta}{2} \</p>
+<div class="math notranslate nohighlight">
+\[Para $\lambda = -1$\]</div>
+<p>\frac{b}{a} = -e^{+i\phi} \frac{(1 + \cos \theta)} {\sin \theta} \
+$$</p>
+<p>y podemos tomar</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\xi_+(\hat{\bf v}) = \begin{pmatrix}  \cos \frac{\theta}{2} \\ e^{+i\phi} \sin \frac{\theta}{2} \end{pmatrix}, \;\;\;
+\xi_+(\hat{\bf v}) = \begin{pmatrix}  -\sin \frac{\theta}{2} \\ e^{+i\phi} \cos \frac{\theta}{2} \end{pmatrix}, \;\;\;
+\end{split}\]</div>
+<p>2- Sabemos que los dos bi-espinores de cada espinor de Dirac <span class="math notranslate nohighlight">\(u_\lambda(p)\)</span>, la parte de abajo se relaciona con la de arriba por:</p>
 <div class="math notranslate nohighlight">
 \[
-P^2_R = P^2_L = I, \; P_L + P_R = I, \; P_L P_R = P_R P_L = 0.
+u^b_\lambda = \kappa \, (\vec{\sigma} \cdot \hat{\bf v}) \, u^q_\lambda
+\]</div>
+<p>tomando <span class="math notranslate nohighlight">\(u^a_\lambda = \xi_\lambda(\hat{\bf v})\)</span>, al ser éste autoestado de <span class="math notranslate nohighlight">\((\vec{\sigma} \cdot \hat{\bf v})\)</span> con autovalores <span class="math notranslate nohighlight">\(\lambda = \pm 1\)</span>, los espinores solución de la ec. de Dirac y autoestados de helicidad quedan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_\pm(p) = N \begin{pmatrix} \xi_\lambda(\hat{\bf v}) \\ \lambda \kappa \xi_\lambda(\hat{\bf v})\end{pmatrix}
+\end{split}\]</div>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>Demostrar que <span class="math notranslate nohighlight">\(P_L = \frac{1}{2}(1-\gamma^5)\)</span> y <span class="math notranslate nohighlight">\(P_R = \frac{1}{2}(1-\gamma^5), \)</span> son proyectores, (los proyectores de <em>quiralidad</em> a izquierda <span class="math notranslate nohighlight">\(L\)</span> o derecha <span class="math notranslate nohighlight">\(R\)</span>), esto es, cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+P^2_R = P_R, \; P^2_L = P_L, \; P_L + P_R = I, \; P_L P_R = P_R P_L = 0.
 \]</div>
 <p>Calcula la proyección de quiralidad a izquierda y derecha de <span class="math notranslate nohighlight">\(u_\pm(p_z)\)</span>, los espinores de helicidad, donde <span class="math notranslate nohighlight">\(\vec{p}\)</span> va en la dirección <span class="math notranslate nohighlight">\(z\)</span>. Considera el caso de partícula ultrarelativistas <span class="math notranslate nohighlight">\(E \gg m\)</span>.</p>
-<p>Demostrar que la inversión de paridad revierte los proyectores de quiralidad, esto es: <span class="math notranslate nohighlight">\(\hat{P}^{-1} P_{L/R} \hat{P} = P_{R/L}\)</span>.</p>
+<p>Demostrar que la inversión de paridad revierte los proyectores de quiralidad, esto es: <span class="math notranslate nohighlight">\(P^{-1} \, P_{L/R} \, P = P_{R/L}\)</span>.</p>
 <p><em>solución</em></p>
 <ol class="simple">
 <li><p>Demostramos las condiciones de proyectores:</p></li>
@@ -630,7 +711,7 @@ P_R u_- = 0, \;\; P_L u_+ = 0
 \]</div>
 <hr class="docutils" />
 <p><strong>ejercicio</strong></p>
-<p>Verifica que la corriente fermiónica se puede descomponer en dos correintes, una con quiralidad a izquierdas y otra a derechas.</p>
+<p>Verifica que la corriente fermiónica se puede descomponer en dos corrientes, una con quiralidad a izquierdas y otra a derechas.</p>
 <div class="math notranslate nohighlight">
 \[
 \bar{\Psi} \gamma^\mu \Psi = \bar{\Psi}_L \gamma^\mu \Psi_L + \bar{\Psi}_R \gamma^\mu \Psi_R

@@ -386,7 +386,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Nov 19 13:09:27 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Nov 22 16:53:48 2024
 </pre></div>
 </div>
 </div>
@@ -613,28 +613,102 @@ Usando la trazs prueba podemos estudiar la eficiencia de las cámaras en funció
 <p><em>solución</em></p>
 <p>Se trata de un ejercicio de estadística.</p>
 <p>Si en m días se observarion n eventos, el valor esperado del fondo es <span class="math notranslate nohighlight">\(\mu = n/m\)</span>, que seguirá una distribución de Poisson. La probabilidad de que observemos algún evento debido a <span class="math notranslate nohighlight">\(p_\mu(n \gt 1) = 1 - p(0 | \mu)\)</span>, siendo <span class="math notranslate nohighlight">\(p(n | \mu)\)</span> la probabilidad de Poisson.</p>
-<p>Por otro lado la media estimada de la interacción de neutrinos de la central es <span class="math notranslate nohighlight">\(\nu = 1.2\)</span>, pero éstos se detectan con una eficiencia <span class="math notranslate nohighlight">\(epsilon\)</span> (en fracción). Luego la probabilidad será <span class="math notranslate nohighlight">\(\epsilon (1 - p(0 |\mu))\)</span>.</p>
+<p>Por otro lado la media estimada de la interacción de neutrinos de la central es <span class="math notranslate nohighlight">\(\nu = 1.2\)</span>, pero éstos se detectan con una eficiencia <span class="math notranslate nohighlight">\(\epsilon\)</span> (en fracción). Luego la probabilidad será <span class="math notranslate nohighlight">\((1 - p(0 | \epsilon * \mu))\)</span>.</p>
 <p>Luego la probabilidad de observar <span class="math notranslate nohighlight">\(n \gt 1\)</span> eventos será:</p>
 <div class="math notranslate nohighlight">
 \[
-p(n) = p(n| \mu ) + \epsilon \, p(n| \nu) \, p(0 | \mu)
+p(n) = 1 - p(0 | \mu + \epsilon \nu)
 \]</div>
-<p>Por otro lado la probabilidad de que al medir <span class="math notranslate nohighlight">\(n=1\)</span> evento sea espúreos, esto es la probabilidad condicionada <span class="math notranslate nohighlight">\(p(n | \mu)\)</span>, la obtendremos por Bayes”</p>
+<p>La probabilidad de observan un evento es:</p>
 <div class="math notranslate nohighlight">
 \[
-p(\mu | n) p(n) = p(n | \mu) p(\mu)
+p(1) = p(1|\mu) \, p(0| \epsilon \nu) + p(0 | \mu) p(1 | \epsilon \nu)
 \]</div>
-<p>La probabilidad de medir <span class="math notranslate nohighlight">\(p(n=1)\)</span> evento sea señal o fondo es:</p>
+<p>la probabilidad de que venga de bkg es que no venga de señal,</p>
 <div class="math notranslate nohighlight">
 \[
-p(1) = p(1 | \mu) + p(0 | \mu) \, \epsilon p(1 | \nu)
+p(\mu) = p(0 | \epsilon \nu)
 \]</div>
-<p>La probabilidad de que haya interacciones del fundo es <span class="math notranslate nohighlight">\(p(\mu) = 1\)</span>.</p>
-<p>Luego la probabilidad de que habiendo medido 1 evento sea espúreo es:</p>
+<p>Luego por Bayes”</p>
 <div class="math notranslate nohighlight">
 \[
-p (\mu | 1)= \frac{p(1 | \mu)}{p(1 | \mu) + p(0 | \mu) \, \epsilon\,  p(1 | \nu)}
+p(\mu | 1) = \frac{p(1|\mu) p(0 | \epsilon \nu)}{p(1|\mu) \, p(0| \epsilon \nu) + p(0 | \mu) p(1 | \epsilon \nu)}
 \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">poisson</span><span class="p">,</span> <span class="n">binom</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">nu</span><span class="p">,</span> <span class="n">mu</span> <span class="o">=</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">3.</span><span class="o">/</span><span class="mf">50.</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.62</span>
+
+<span class="n">ndays</span> <span class="o">=</span> <span class="mi">10000000</span>
+<span class="n">nsig</span>  <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">ndays</span><span class="p">)</span> 
+<span class="n">nsig</span>  <span class="o">=</span> <span class="n">binom</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">nsig</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">ndays</span><span class="p">)</span> 
+<span class="n">nbkg</span>  <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">ndays</span><span class="p">)</span>
+<span class="n">nobs</span>  <span class="o">=</span> <span class="n">nsig</span> <span class="o">+</span> <span class="n">nbkg</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">nobs</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">nsig</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">);</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">nobs</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">ndays</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;probabilidad de observar &gt;= 1 </span><span class="si">{:4.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p1</span><span class="p">))</span>
+
+<span class="n">A</span>   <span class="o">=</span> <span class="n">nobs</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="n">B_A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">((</span><span class="n">nbkg</span> <span class="o">==</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">nobs</span> <span class="o">==</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">pbkg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">B_A</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;probilidad de que 1 evento ser espúreo </span><span class="si">{:4.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pbkg</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>probabilidad de observar &gt;= 1 0.5524
+probilidad de que 1 evento ser espúreo 0.0748
+</pre></div>
+</div>
+<img alt="../_images/problemas-III_24_1.png" src="../_images/problemas-III_24_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nueff</span> <span class="o">=</span> <span class="n">epsilon</span> <span class="o">*</span> <span class="n">nu</span> <span class="o">+</span> <span class="n">mu</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nueff</span><span class="p">)</span>
+<span class="n">p1</span>  <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">*</span><span class="n">nu</span> <span class="o">+</span> <span class="n">mu</span><span class="p">)</span>
+<span class="n">p0bkg</span> <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">mu</span><span class="p">)</span>
+<span class="n">p1bkg</span> <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">mu</span><span class="p">)</span>
+<span class="n">p0sig</span> <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nu</span><span class="o">*</span><span class="n">epsilon</span><span class="p">)</span>
+<span class="n">p1sig</span> <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">nu</span><span class="o">*</span><span class="n">epsilon</span><span class="p">)</span>
+<span class="p">(</span><span class="n">p1bkg</span><span class="o">*</span><span class="n">p0sig</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">p1bkg</span><span class="o">*</span><span class="n">p0sig</span><span class="o">+</span> <span class="n">p1sig</span><span class="o">*</span><span class="n">p0bkg</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.804
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.07462686567164178
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ndays</span> <span class="o">=</span> <span class="mi">1000000</span>
+<span class="n">nobs</span>  <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">nu</span><span class="o">*</span><span class="n">epsilon</span> <span class="o">+</span> <span class="n">mu</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">ndays</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">nobs</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">nobs</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">ndays</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;probabilidad de observas 1 evento </span><span class="si">{:4.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>probabilidad de observas 1 evento 0.552
+</pre></div>
+</div>
+<img alt="../_images/problemas-III_26_1.png" src="../_images/problemas-III_26_1.png" />
+</div>
+</div>
 <hr class="docutils" />
 <p><strong>problema 8</strong></p>
 <p>Estima la sección la eficaz (y sus errores estadísticos y sistemáticos) de <span class="math notranslate nohighlight">\(e+e^+ \to \pi^+ + \pi^-\)</span> a <span class="math notranslate nohighlight">\(\sqrt{s} = 1\)</span> GeV con los datos que obtuvo el siguiente experimento:
