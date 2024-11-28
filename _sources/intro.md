@@ -20,7 +20,7 @@ Se precisa un conocimiento previo de la cinemática relativista, de los concepto
 
 Estos apuntes son una recopilación de muy diversas fuentes, entre ellas los dos libros excelentes de M. Thomson y A. Bettini. 
 
-Los apuntes se complementan con diversas extensiones donde se da una cubertura más matemática a algunos de los temas presentados durante el curso.
+Los apuntes se complementan con diversas extensiones donde se trata de forma más matemática de algunos de los temas presentados durante el curso.
 
 -------
 
