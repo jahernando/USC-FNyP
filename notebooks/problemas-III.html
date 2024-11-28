@@ -151,18 +151,23 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="ext-trans-Lorentz.html">
+   9. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="ext-sm.html">
-   9. Extensión: El Modelo Estándar
+   10. Extensión: El Modelo Estándar
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="problemas-prel.html">
-   10. Boletín de problemas - preliminar
+   11. Boletín de problemas - preliminar
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="problemas-I.html">
-   11. Boletín de problemas I
+   12. Boletín de problemas I
   </a>
  </li>
 </ul>
@@ -386,7 +391,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Nov 22 16:53:48 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Nov 28 14:56:01 2024
 </pre></div>
 </div>
 </div>
@@ -662,51 +667,11 @@ p(\mu | 1) = \frac{p(1|\mu) p(0 | \epsilon \nu)}{p(1|\mu) \, p(0| \epsilon \nu) 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>probabilidad de observar &gt;= 1 0.5524
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>probabilidad de observar &gt;= 1 0.5523
 probilidad de que 1 evento ser espúreo 0.0748
 </pre></div>
 </div>
 <img alt="../_images/problemas-III_24_1.png" src="../_images/problemas-III_24_1.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nueff</span> <span class="o">=</span> <span class="n">epsilon</span> <span class="o">*</span> <span class="n">nu</span> <span class="o">+</span> <span class="n">mu</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nueff</span><span class="p">)</span>
-<span class="n">p1</span>  <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">*</span><span class="n">nu</span> <span class="o">+</span> <span class="n">mu</span><span class="p">)</span>
-<span class="n">p0bkg</span> <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">mu</span><span class="p">)</span>
-<span class="n">p1bkg</span> <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">mu</span><span class="p">)</span>
-<span class="n">p0sig</span> <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nu</span><span class="o">*</span><span class="n">epsilon</span><span class="p">)</span>
-<span class="n">p1sig</span> <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">nu</span><span class="o">*</span><span class="n">epsilon</span><span class="p">)</span>
-<span class="p">(</span><span class="n">p1bkg</span><span class="o">*</span><span class="n">p0sig</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">p1bkg</span><span class="o">*</span><span class="n">p0sig</span><span class="o">+</span> <span class="n">p1sig</span><span class="o">*</span><span class="n">p0bkg</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.804
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.07462686567164178
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ndays</span> <span class="o">=</span> <span class="mi">1000000</span>
-<span class="n">nobs</span>  <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">nu</span><span class="o">*</span><span class="n">epsilon</span> <span class="o">+</span> <span class="n">mu</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">ndays</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">nobs</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
-<span class="n">p1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">nobs</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">ndays</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;probabilidad de observas 1 evento </span><span class="si">{:4.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p1</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>probabilidad de observas 1 evento 0.552
-</pre></div>
-</div>
-<img alt="../_images/problemas-III_26_1.png" src="../_images/problemas-III_26_1.png" />
 </div>
 </div>
 <hr class="docutils" />

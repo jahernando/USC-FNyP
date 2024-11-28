@@ -6,7 +6,7 @@ Autor: José Ángel Hernando Morata
 
 Correo electrónico: jose.hernando@usc.es
 
-Versión: Octubre 2024
+Versión: Noviembre 2024
 
 -----
 
@@ -17,6 +17,10 @@ Esta asignatura es una introducción a la Física de Partículas. El objetivo es
 La asignatura consta de cuatro temas: una introducción a la temática de la Física de Partículas; la exposición de los observables relevantes desde una perspectiva experimental y teórica; el desarrollo de las características de los leptones, de los quarks y los hadrones; y finalmente una introducción al modelo estándar.
 
 Se precisa un conocimiento previo de la cinemática relativista, de los conceptos básicos de Física Nuclear. También es conveniente conocer la ecuación de Dirac y una introducción a Teoría Cuántica de Campos.
+
+Estos apuntes son una recopilación de muy diversas fuentes, entre ellas los dos libros excelentes de M. Thomson y A. Bettini. 
+
+Los apuntes se complementan con diversas extensiones donde se da una cubertura más matemática a algunos de los temas presentados durante el curso.
 
 -------
 
