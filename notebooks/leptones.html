@@ -153,23 +153,33 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="ext-trans-Lorentz.html">
-   9. Extensión: Simetrías. Transformaciones Lorentz
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="ext-sm.html">
-   10. Extensión: El Modelo Estándar
+   9. Extensión: El Modelo Estándar
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="problemas-prel.html">
-   11. Boletín de problemas - preliminar
+   10. Boletín de problemas - preliminar
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="problemas-I.html">
-   12. Boletín de problemas I
+   11. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-II.html">
+   12. Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-III.html">
+   13. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-IV.html">
+   14. Boletín de problemas IV
   </a>
  </li>
 </ul>
@@ -462,8 +472,18 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#espinores-de-weyl">
+     4.3.5. Espinores de Weyl
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-neutrino-en-el-sm">
+     4.3.6. El neutrino en el SM
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#desintegracion-del-pion">
-     4.3.5. Desintegración del pión
+     4.3.7. Desintegración del pión
     </a>
    </li>
   </ul>
@@ -608,8 +628,18 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#espinores-de-weyl">
+     4.3.5. Espinores de Weyl
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-neutrino-en-el-sm">
+     4.3.6. El neutrino en el SM
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#desintegracion-del-pion">
-     4.3.5. Desintegración del pión
+     4.3.7. Desintegración del pión
     </a>
    </li>
   </ul>
@@ -671,7 +701,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Dec  2 12:47:25 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Dec  2 15:26:50 2024
 </pre></div>
 </div>
 </div>
@@ -1278,10 +1308,13 @@ P^{-1} \, P_L \, P =  \gamma^0 \frac{1}{2}(1 - \gamma^5) \gamma^0 = \frac{1}{2} 
 \]</div>
 <p><em>ejercicio:</em> Verifica que:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\bar{\Psi} \gamma^\mu \frac{1}{2}(1-\gamma^5) \Psi = \bar{\Psi}_L \gamma^\mu \Psi_L \\
+\[
+\bar{\Psi} \gamma^\mu \frac{1}{2}(1-\gamma^5) \Psi = \bar{\Psi}_L \gamma^\mu \Psi_L
+\]</div>
+<div class="math notranslate nohighlight">
+\[
 \bar{\Psi} \gamma^\mu \frac{1}{2}(1+\gamma^5) \Psi = \bar{\Psi}_R \gamma^\mu \Psi_R
-\end{split}\]</div>
+\]</div>
 <p>Y por lo tanto:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1291,7 +1324,7 @@ P^{-1} \, P_L \, P =  \gamma^0 \frac{1}{2}(1 - \gamma^5) \gamma^0 = \frac{1}{2} 
 <p>La quiralidad es una <strong>propiedad matemática</strong> de los espinores que nos dice si son autovectores de la matriz <span class="math notranslate nohighlight">\(\gamma^5\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{1}{2}(1 \pm \gamma^5) \, u_{R/L} = u_{R/L}, \;\;\, \gamma^5 \, u_{R/L} = \pm \, u_{R/L}
+\frac{1}{2}(1 \pm \gamma^5) \, u_{R/L} = u_{R/L} \;\; \Rightarrow \;\; \gamma^5 \, u_{R/L} = \pm \, u_{R/L}
 \]</div>
 <p>con autovalores <span class="math notranslate nohighlight">\(+1\)</span> para la quiralidad a derechas, <span class="math notranslate nohighlight">\(u_R\)</span>, y <span class="math notranslate nohighlight">\(-1\)</span> para izquierdas, <span class="math notranslate nohighlight">\(u_L\)</span>.</p>
 <p>Luego una teoría que es invariante bajo paridad debe considerar los espinores de quiralidad a izquierdas y derechas en condiciones de igualdad.</p>
@@ -1493,8 +1526,58 @@ P_L \, u_- = \frac{1}{2}(1+\kappa) N \begin{pmatrix} 0 \\ 1 \\ 0  \\ -1 \end{pma
 </tbody>
 </table>
 <p>El experimento [KATRIN] busca actualmente medir directamente la masa de los neutrinos, el límite: <span class="math notranslate nohighlight">\(m_{\nu_e} &lt; 0.2\)</span> eV.</p>
-<p><strong>El Modelo Estandar postulaba que el neutrino no tiene masa</strong>. En todo caso su masa es ridículamente pequeña comparada con sus energías.</p>
-<p>Los neutrinos solo interaccionan débilmente, y <strong>en las interacciones débiles solo intervienen las proyecciones a izquierdas</strong>, esto es <span class="math notranslate nohighlight">\(u_L\)</span> y <span class="math notranslate nohighlight">\(v_R\)</span>. <strong>Solo son reales esos dos espinores</strong> para el neutrino:</p>
+</div>
+<div class="section" id="espinores-de-weyl">
+<h3><span class="section-number">4.3.5. </span>Espinores de Weyl<a class="headerlink" href="#espinores-de-weyl" title="Permalink to this heading">#</a></h3>
+<p>Vamos a ver que el espinor de Dirac de los neutrinos, al carecer de masa, se compone de dos espinores independientes, llamados de Weyl, cada uno con una quiralidad.</p>
+<p>Vamos a considerar la representación de Weyl (o quiral) de las matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix}, \;\;
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0 \end{pmatrix}, \;\;
+\gamma^5 = \begin{pmatrix} -I &amp; 0 \\ 0 &amp; I \end{pmatrix}
+\end{split}\]</div>
+<p>Con lo que que:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_L = \begin{pmatrix} I &amp; 0 \\ 0 &amp; 0 \end{pmatrix}, \;
+P_R = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; I \end{pmatrix} \;
+\end{split}\]</div>
+<p><em>cuestión:</em> Verifica que la matrices de la representación de Weyl cumplen las condiciones de las matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>.</p>
+<p>El espinor de Dirac está compuesto de dos bi-espinores, <span class="math notranslate nohighlight">\(u_L, u_R\)</span>, llamados de Weyl, que corresponden con la parte de quiralidad a izquierdas y a derechas del espinor de Dirac.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u(p) = \begin{pmatrix} u_L(p) \\ u_R(p)\end{pmatrix}
+\end{split}\]</div>
+<p>Si ahora consideramos el caso revelador de <em>un fermión sin masa <span class="math notranslate nohighlight">\(m=0\)</span></em>, la ec. de Dirac queda:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^\mu p_\mu \, u(p) = 0
+\]</div>
+<p>que se descompone en dos ecuaciones independientes:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(E - {\bf p} \cdot \vec{\sigma}) \, u_R(p) = 0, \\
+(E + {\bf p} \cdot \vec{\sigma}) \, u_L(p) = 0.
+\end{split}\]</div>
+<p>Esto es, el espinor de Dirac se compone de dos espinores de Weyl independientes.</p>
+<p>O en otras palabras, es el término de masa en la ec. de Dirac, la que hace que los dos espinores de Weyl estén conectados.</p>
+<p>dado que <span class="math notranslate nohighlight">\(E = \text{p}\)</span>, donde <span class="math notranslate nohighlight">\({\bf p} = \text{p} \hat{\bf v}\)</span>, estas ecuaciones son equivalentes a:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(\hat{\bf v} \cdot \vec{\sigma}) \; u_R(p) = + u_R(p), \\ (\hat{\bf v} \cdot \vec{\sigma}) \; u_L(p) = - u_L(p).
+\end{split}\]</div>
+<p>Esto es, hay una conexión uno a uno entre helicidad y quiralidad. El espinor de Weyl a izquierdas tiene helicidad negativa y el de derechas positiva.</p>
+<div class="math notranslate nohighlight">
+\[
+u_R = u_+, \;\;\; u_L = u_-
+\]</div>
+<p>En este caso de las partículas sin masa, quiralidad y la helicidad son ambas propiedades equivalentes, son cantidades estacionarias e invariantes Lorentz.</p>
+</div>
+<div class="section" id="el-neutrino-en-el-sm">
+<h3><span class="section-number">4.3.6. </span>El neutrino en el SM<a class="headerlink" href="#el-neutrino-en-el-sm" title="Permalink to this heading">#</a></h3>
+<p><em>El Modelo Estandar postulaba que el neutrino no tiene masa</em>. Sus espinores de quiralidad a izquierdad y derechas son independientes.</p>
+<p>Los neutrinos solo interaccionan débilmente, y <em>en las interacciones débiles solo intervienen las proyecciones a izquierdas</em>, esto es <span class="math notranslate nohighlight">\(u_L\)</span> y <span class="math notranslate nohighlight">\(v_R\)</span>. <em>Solo son reales esos dos espinores</em> para el neutrino:</p>
 <div class="math notranslate nohighlight">
 \[
 u_L \equiv u_-, \;\;\; v_R \equiv v_+
@@ -1554,7 +1637,7 @@ u_L \equiv u_-, \;\;\; v_R \equiv v_+
 <p>Y se contestaba: le pediría que repita el experimento de Ms. Wu, que me diga la dirección privilegiada hacia donde salen los electrones de su mundo en una desintegración <span class="math notranslate nohighlight">\(\beta\)</span> fijando la dirección de un campo magnético <span class="math notranslate nohighlight">\(B\)</span>. Si salen en la dirección opuesta le doy la mano, si salen en la misma, pues mejor no.</p>
 </div>
 <div class="section" id="desintegracion-del-pion">
-<h3><span class="section-number">4.3.5. </span>Desintegración del pión<a class="headerlink" href="#desintegracion-del-pion" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.7. </span>Desintegración del pión<a class="headerlink" href="#desintegracion-del-pion" title="Permalink to this heading">#</a></h3>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -1607,6 +1690,7 @@ E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\p
 </div>
 </div>
 <p>El <span class="math notranslate nohighlight">\(\mu\)</span> no es relativista, <span class="math notranslate nohighlight">\(\beta = 0.27\)</span>, pero sí el electrón, <span class="math notranslate nohighlight">\(\beta = 0.99997\)</span>.</p>
+<p>Revisemos la helicidad de las partículas de la desintegración.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
@@ -1619,10 +1703,27 @@ E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\p
 </tr>
 </tbody>
 </table>
-<p>Revisemos la helicidad de las partículas de la desintegración.</p>
 <p>En el CM, el <span class="math notranslate nohighlight">\(\pi^+\)</span> tiene <span class="math notranslate nohighlight">\(J= 0\)</span>, el neutrino, <span class="math notranslate nohighlight">\(\nu_l\)</span>, sabemos que tiene helicidad (-), y para conservar <span class="math notranslate nohighlight">\(J\)</span>, el anti-leptón cargardo, <span class="math notranslate nohighlight">\(l^+\)</span> debe tener helicidad (-).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(l^+\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\nu_l\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>helicidad</p></td>
+<td class="text-align:center"><p>(-)</p></td>
+<td class="text-align:center"><p>(-)</p></td>
+</tr>
+</tbody>
+</table>
 <p>Por otro lado, sabemos que solo la proyección con quiralidad a derechas del <span class="math notranslate nohighlight">\(l^+\)</span> interviene en la desintegración. ¿Cuánto vale esa parte para el <span class="math notranslate nohighlight">\(e^+\)</span> y el <span class="math notranslate nohighlight">\(\mu^+\)</span>?</p>
-<p>Sabemos que el espinor <span class="math notranslate nohighlight">\(v_-\)</span> helicidad (-) tiene como coeficiente de quiralidad a derechas:</p>
+<p>Sabemos que el espinor <span class="math notranslate nohighlight">\(v_-\)</span> con helicidad (-) tiene como coeficiente de quiralidad a derechas:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{1}{2}(1-\kappa) = \frac{1}{2}\left(1 - \frac{p_l}{E_l + m_l} \right)
@@ -1630,9 +1731,8 @@ E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\p
 <p>A partir de la <span class="math notranslate nohighlight">\(E_l, p\)</span> en el CM, obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{1}{2}(1-\kappa) = \frac{1}{2}\left(1 - \frac{p_l}{E_l + m_l} \right)= \frac{m_l}{m_\pi + m_l}
+\frac{1}{2}(1-\kappa) = \frac{m_l}{m_\pi + m_l}
 \]</div>
-<p>El <span class="math notranslate nohighlight">\(\mu\)</span> no es relativista, <span class="math notranslate nohighlight">\(\beta = 0.27\)</span>, pero sí el electrón, <span class="math notranslate nohighlight">\(\beta = 0.99997\)</span>.</p>
 <p>El factor <span class="math notranslate nohighlight">\((1-\kappa)/2\)</span> es mucho más pequeño para <span class="math notranslate nohighlight">\(e\)</span> que para el <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
 <p>El factor asociado a las proyecciones a derechas entre el <span class="math notranslate nohighlight">\(e\)</span> y <span class="math notranslate nohighlight">\(\mu\)</span> que aparece en <span class="math notranslate nohighlight">\(|M_{fi}|^2\)</span> será:</p>
 <div class="math notranslate nohighlight">
@@ -1811,7 +1911,7 @@ P_{\alpha\beta}(L) = \sin^2 2 \theta \sin^2 \frac{1.27 \Delta m^2_{21} [\mathrm{
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/leptones_82_0.png" src="../_images/leptones_82_0.png" />
+<img alt="../_images/leptones_87_0.png" src="../_images/leptones_87_0.png" />
 </div>
 </div>
 </div>
