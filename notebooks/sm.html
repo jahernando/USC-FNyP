@@ -153,8 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="ext-trans-Lorentz.html">
+   9. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="ext-sm.html">
-   9. Extensión: El Modelo Estándar
+   10. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-prel.html">
+   11. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-I.html">
+   12. Boletín de problemas I
   </a>
  </li>
 </ul>
@@ -381,12 +396,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#corrientes-neutras-el-boson-z-0">
-   6.3. Corrientes neutras, el bosón
-   <span class="math notranslate nohighlight">
-    \(Z^0\)
-   </span>
-   .
+  <a class="reference internal nav-link" href="#unificacion-electrodebil">
+   6.3. Unificación electrodébil
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -395,42 +406,23 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#las-corrientes-y-el-vertice">
-     6.3.2. Las corrientes y el vértice
+    <a class="reference internal nav-link" href="#qed-y-la-invariancia-gauge">
+     6.3.2. QED y la invariancia gauge
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#electromagnetimo">
-       6.3.2.1. Electromagnetimo
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#isoespin-debil">
-     6.3.3. Isoespín débil
+    <a class="reference internal nav-link" href="#la-construccion-electro-debil">
+     6.3.3. La construcción electro-debil
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#las-corrientes-cargadas">
-       6.3.3.1. Las corrientes cargadas
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#la-unificacion-electrodebil">
-       6.3.3.2. La unificación electrodébil
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#las-corrientes-neutras">
-       6.3.3.3. Las corrientes neutras
-      </a>
-     </li>
-    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#las-corrientes-neutras">
+     6.3.4. Las corrientes neutras
+    </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#aniquilacion-a-muones-e-e-to-mu-mu-y-la-asimetria-adelante-y-atras">
-     6.3.4. Aniquilación a muones,
+     6.3.5. Aniquilación a muones,
      <span class="math notranslate nohighlight">
       \(e+e^+ \to \mu+\mu^+\)
      </span>
@@ -439,7 +431,7 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#anchura-de-desintegracion-del-z">
-     6.3.5. Anchura de desintegración del
+     6.3.6. Anchura de desintegración del
      <span class="math notranslate nohighlight">
       \(Z\)
      </span>
@@ -447,15 +439,15 @@ title="Print to PDF"
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#anchura-de-desintegracion-parcial">
-       6.3.5.1. Anchura de desintegración parcial
+       6.3.6.1. Anchura de desintegración parcial
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#seccion-eficaz">
+       6.3.6.2. Sección eficaz
       </a>
      </li>
     </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#seccion-eficaz">
-     6.3.6. Sección eficaz
-    </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tres-familias-de-neutrinos">
@@ -470,47 +462,47 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#como-el-higgs-otorga-la-masa-a-fermiones-y-bosones">
-     6.4.1. Cómo el higgs otorga la masa a fermiones y bosones.
+    <a class="reference internal nav-link" href="#la-invariance-gauge">
+     6.4.1. La invariance gauge
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#masa-de-los-fermiones">
+     6.4.2. Masa de los fermiones
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#fermiones">
-       6.4.1.1. Fermiones
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#bosones">
-       6.4.1.2. Bosones
+       6.4.2.1. Bosones
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#el-campo-del-boson-de-higgs">
-     6.4.2. El campo del bosón de Higgs
+     6.4.3. El campo del bosón de Higgs
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#las-masas">
-       6.4.2.1. Las masas
+       6.4.3.1. Las masas
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#las-desintegraciones-del-boson-de-higgs">
-       6.4.2.2. Las desintegraciones del bosón de Higgs
+       6.4.3.2. Las desintegraciones del bosón de Higgs
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#descubrimiento-del-boson-de-higgs">
-     6.4.3. Descubrimiento del bosón de Higgs
+     6.4.4. Descubrimiento del bosón de Higgs
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#el-descubrimiento-del-higgs-en-atlas-y-cms">
-       6.4.3.1. El descubrimiento del Higgs en ATLAS y CMS
+       6.4.4.1. El descubrimiento del Higgs en ATLAS y CMS
       </a>
      </li>
     </ul>
@@ -571,12 +563,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#corrientes-neutras-el-boson-z-0">
-   6.3. Corrientes neutras, el bosón
-   <span class="math notranslate nohighlight">
-    \(Z^0\)
-   </span>
-   .
+  <a class="reference internal nav-link" href="#unificacion-electrodebil">
+   6.3. Unificación electrodébil
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -585,42 +573,23 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#las-corrientes-y-el-vertice">
-     6.3.2. Las corrientes y el vértice
+    <a class="reference internal nav-link" href="#qed-y-la-invariancia-gauge">
+     6.3.2. QED y la invariancia gauge
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#electromagnetimo">
-       6.3.2.1. Electromagnetimo
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#isoespin-debil">
-     6.3.3. Isoespín débil
+    <a class="reference internal nav-link" href="#la-construccion-electro-debil">
+     6.3.3. La construcción electro-debil
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#las-corrientes-cargadas">
-       6.3.3.1. Las corrientes cargadas
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#la-unificacion-electrodebil">
-       6.3.3.2. La unificación electrodébil
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#las-corrientes-neutras">
-       6.3.3.3. Las corrientes neutras
-      </a>
-     </li>
-    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#las-corrientes-neutras">
+     6.3.4. Las corrientes neutras
+    </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#aniquilacion-a-muones-e-e-to-mu-mu-y-la-asimetria-adelante-y-atras">
-     6.3.4. Aniquilación a muones,
+     6.3.5. Aniquilación a muones,
      <span class="math notranslate nohighlight">
       \(e+e^+ \to \mu+\mu^+\)
      </span>
@@ -629,7 +598,7 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#anchura-de-desintegracion-del-z">
-     6.3.5. Anchura de desintegración del
+     6.3.6. Anchura de desintegración del
      <span class="math notranslate nohighlight">
       \(Z\)
      </span>
@@ -637,15 +606,15 @@ title="Print to PDF"
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#anchura-de-desintegracion-parcial">
-       6.3.5.1. Anchura de desintegración parcial
+       6.3.6.1. Anchura de desintegración parcial
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#seccion-eficaz">
+       6.3.6.2. Sección eficaz
       </a>
      </li>
     </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#seccion-eficaz">
-     6.3.6. Sección eficaz
-    </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tres-familias-de-neutrinos">
@@ -660,47 +629,47 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#como-el-higgs-otorga-la-masa-a-fermiones-y-bosones">
-     6.4.1. Cómo el higgs otorga la masa a fermiones y bosones.
+    <a class="reference internal nav-link" href="#la-invariance-gauge">
+     6.4.1. La invariance gauge
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#masa-de-los-fermiones">
+     6.4.2. Masa de los fermiones
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#fermiones">
-       6.4.1.1. Fermiones
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#bosones">
-       6.4.1.2. Bosones
+       6.4.2.1. Bosones
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#el-campo-del-boson-de-higgs">
-     6.4.2. El campo del bosón de Higgs
+     6.4.3. El campo del bosón de Higgs
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#las-masas">
-       6.4.2.1. Las masas
+       6.4.3.1. Las masas
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#las-desintegraciones-del-boson-de-higgs">
-       6.4.2.2. Las desintegraciones del bosón de Higgs
+       6.4.3.2. Las desintegraciones del bosón de Higgs
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#descubrimiento-del-boson-de-higgs">
-     6.4.3. Descubrimiento del bosón de Higgs
+     6.4.4. Descubrimiento del bosón de Higgs
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#el-descubrimiento-del-higgs-en-atlas-y-cms">
-       6.4.3.1. El descubrimiento del Higgs en ATLAS y CMS
+       6.4.4.1. El descubrimiento del Higgs en ATLAS y CMS
       </a>
      </li>
     </ul>
@@ -747,7 +716,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Dec 18 10:45:54 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Dec  2 13:22:58 2024
 </pre></div>
 </div>
 </div>
@@ -780,11 +749,13 @@ title="Print to PDF"
 </div>
 <div class="section" id="los-elementos-del-sm">
 <h2><span class="section-number">6.2. </span>Los elementos del SM<a class="headerlink" href="#los-elementos-del-sm" title="Permalink to this heading">#</a></h2>
+<p>El Modelo Estándar es uno de los grandes logros de la Física del siglo XX. Explica tolos los resultados experimentales obtenidos hasta la fecha (y son muchos), con la excepción de las oscilaciones de neutrinos. No obstante sabemos que está incompleto porque hay fenómenos que no explica, como la asimetría de la materia, antimateria o la materia oscura.</p>
 <p>Varios son los elementos que modelan el SM:</p>
 <ul class="simple">
-<li><p>La <strong>unificación electrodébil</strong> previene que la sección eficaz <span class="math notranslate nohighlight">\(e+e^+ \to W^+ + W^-\)</span> ¡crezca infinitamente!</p></li>
-<li><p>El <strong>mecanismo de Higgs y la rotura espontánea de simetría</strong> dotan de masas a los bosones <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y a los fermiones.</p></li>
-<li><p>Las teorías deben preservar <strong>la simetría gauge local</strong> para ser renormalizables (y evitar que en los cálculos de las amplitudes aparezcan infinitos)</p></li>
+<li><p>El modelo debe <strong>dar cabida a las partículas conocidas</strong> (por construcción) y respetar de conservación de <strong>las interacciones conocidas</strong>, por ejemplo que la corrientes débiles cargadas violan paridad.</p></li>
+<li><p>El modelo debe estar basado en un <strong>lagrangiano invariante Lorentz, que preserve unitariedad</strong>.</p></li>
+<li><p>Las interacciones entre fermiones y campos vectoriales aparecen a partir de la <strong>invariancia gauge local</strong> de lagrangiano, de esta forma la teoría es renormalizable (calculable).</p></li>
+<li><p>Existe el mecanismo de Higgs que dota de masas a los bosones <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y a los fermiones.</p></li>
 </ul>
 <div class="section" id="hitos-de-la-creaccion-del-sm">
 <h3><span class="section-number">6.2.1. </span>Hitos de la creacción del SM<a class="headerlink" href="#hitos-de-la-creaccion-del-sm" title="Permalink to this heading">#</a></h3>
@@ -799,12 +770,26 @@ title="Print to PDF"
 </ul>
 </div>
 </div>
-<div class="section" id="corrientes-neutras-el-boson-z-0">
-<h2><span class="section-number">6.3. </span>Corrientes neutras, el bosón <span class="math notranslate nohighlight">\(Z^0\)</span>.<a class="headerlink" href="#corrientes-neutras-el-boson-z-0" title="Permalink to this heading">#</a></h2>
-<p>La interacción <span class="math notranslate nohighlight">\(e^+ + e \to W^+ + W^-\)</span>, mediada por un fotón, presentaba un problema: crecía indefinidamente con la energía, a no ser que existía un bosón neutro, el <span class="math notranslate nohighlight">\(Z^0\)</span>, que mediase en un nuevo diagrama de Feynman que a su vez interfiriese negativamente con el fotón moderando así la sección eficaz.</p>
-<p>Esto bosón implicaba también la existencia de <strong>corrientes débiles neutras</strong>, en particular que un haz de neutrinos podría interaccionar neutramente con otras partículas, el neutrino se dispersaría, y si el neutrino tuviese la suficiente energía podría romper un nucleón.</p>
+<div class="section" id="unificacion-electrodebil">
+<h2><span class="section-number">6.3. </span>Unificación electrodébil<a class="headerlink" href="#unificacion-electrodebil" title="Permalink to this heading">#</a></h2>
 <div class="section" id="el-descubrimiento-de-las-corrientes-neutras">
 <h3><span class="section-number">6.3.1. </span>El descubrimiento de las corrientes neutras<a class="headerlink" href="#el-descubrimiento-de-las-corrientes-neutras" title="Permalink to this heading">#</a></h3>
+<p>Los bosones <span class="math notranslate nohighlight">\(W^\pm\)</span> son cargados, luego pueden interaccionar con el fotón. Pero el cálculo de la interacción <span class="math notranslate nohighlight">\(e^+ + e \to W^+ + W^-\)</span>, mediada por un fotón, presentaba un problema, no preservaba unitariedad, crecía indefinidamente con la energía.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_eeWW.png"><img alt="../_images/sm_eeWW.png" class="align-center" src="../_images/sm_eeWW.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>sección eficaz <span class="math notranslate nohighlight">\(e+e^+ \to W^++W^-\)</span> vs <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> [LEP]</p></td>
+</tr>
+</tbody>
+</table>
+<p>a no ser que… existese un bosón neutro, el <span class="math notranslate nohighlight">\(Z^0\)</span>, que mediase en un nuevo diagrama de Feynman que interfiriese negativamente con el del fotón controlando de esta manera que la sección eficaz no creciese infinitamente.</p>
+<p>Si existía ese bosón, cabía espera también <strong>corrientes débiles neutras</strong>.</p>
+<p>Cuya observación sin duda sería la interacción débil neutra de neutrinos (dada que no interacional electromagnéticamente), por ejemplo que el neutrino se dispersase con un nucleón, o que tuviese la suficiente energía para colisionar inelásticamente.</p>
 <p><a class="reference external" href="https://home.cern/science/experiments/gargamelle">Gargamelle</a>, en el CERN, en los 70’s, fue el experimento que observó las corrientes neutras. Mediante un haz estaba compuesto principalmente por <span class="math notranslate nohighlight">\(\nu_\mu\)</span>.</p>
 <p>Las corrientes cargadas de neutrinos con los nucleones producían un <span class="math notranslate nohighlight">\(\mu\)</span>, una partícula altamente penetrante.</p>
 <div class="math notranslate nohighlight">
@@ -832,11 +817,64 @@ title="Print to PDF"
 <p>¡El neutrino interacciona con un nucleón sin producir su leptón asociado!</p>
 <p>Las corrientes neutras observadas en Gargamelle estaban de acuerdo con la teoría de unificación electrodébil desarrollada unos años antes.</p>
 </div>
-<div class="section" id="las-corrientes-y-el-vertice">
-<h3><span class="section-number">6.3.2. </span>Las corrientes y el vértice<a class="headerlink" href="#las-corrientes-y-el-vertice" title="Permalink to this heading">#</a></h3>
-<div class="section" id="electromagnetimo">
-<h4><span class="section-number">6.3.2.1. </span>Electromagnetimo<a class="headerlink" href="#electromagnetimo" title="Permalink to this heading">#</a></h4>
-<p>Las corrientes electromagnéticas no cambian la carga, ni el sabor y conservan paridad.</p>
+<div class="section" id="qed-y-la-invariancia-gauge">
+<h3><span class="section-number">6.3.2. </span>QED y la invariancia gauge<a class="headerlink" href="#qed-y-la-invariancia-gauge" title="Permalink to this heading">#</a></h3>
+<p>En la electrodinámica cuántica, QED, la interacción de los fermiones cargados con el fotón provenía de exigir invariance gauge local.</p>
+<p><em>Nota:</em> A partir de aquí, necesitamos al menos introducir los lagrangianos, para poder al menos seguir algunas de las conclusiones de forma natural.</p>
+<p>Los lagrangianos y ec. del movimiento de los campos libres:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>—– Tipo —–</p></td>
+<td class="text-align:center"><p>—– Escalar Complejo ——</p></td>
+<td class="text-align:center"><p>—— Espinor ——–</p></td>
+<td class="text-align:center"><p>– Bosón vectorial —–</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Klein-Gordon</p></td>
+<td class="text-align:center"><p>Dirac</p></td>
+<td class="text-align:center"><p>Maxwell</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Ecuación</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((\partial^\mu\partial_\mu + m^2) \, \phi = 0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((i\gamma^\mu \partial_\mu - m) \, \Psi = 0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\partial_\mu F^{\mu\nu} = 0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Lagrangiano</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((\partial_\mu \phi)^* (\partial^\mu \phi) - m^2 \phi^* \phi\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(i\bar{\Psi}\gamma^\mu \partial_\mu \Psi - m \bar{\Psi}\Psi\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-\frac{1}{4}F^{\mu\nu}F_{\mu\nu}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Donde:</p>
+<div class="math notranslate nohighlight">
+\[
+F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu
+\]</div>
+<p>Pero la física <em>interesante</em> sucede en la interacción entre ellos.</p>
+<p>Si consideramos el lagrangiano con la interacción entre el fotón y el fermión de carga <span class="math notranslate nohighlight">\(Q\)</span> como:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}  = i \bar{\Psi} \gamma^\mu \partial_\mu \Psi - m \bar{\Psi}\Psi -  j^\mu_Q  A_\mu - \frac{1}{4} F_{\mu\nu}F^{\mu\nu}
+\]</div>
+<p>donde definimos <span class="math notranslate nohighlight">\(j^\mu_Q\)</span>, la corriente eléctrica, como:</p>
+<div class="math notranslate nohighlight">
+\[
+j^\mu_Q \equiv Q \, \bar{\Psi} \gamma^\mu \Psi
+\]</div>
+<p>El término de interacción:</p>
+<div class="math notranslate nohighlight">
+\[
+ j^\mu_Q  A_\mu  = Q \bar{\Psi} \gamma^\mu \Psi \, A_\mu
+\]</div>
+<p>correspondería al vértice de los diagramas de Feynman entre una corriente fermiónica y un fotón:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -845,56 +883,105 @@ title="Print to PDF"
 <tbody>
 <tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_emcur.png"><img alt="../_images/sm_emcur.png" class="align-center" src="../_images/sm_emcur.png" style="width: 250px;" /></a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p>Corriente electromagnética</p></td>
+<tr class="row-odd"><td class="text-align:center"><p>vértice electromagnético</p></td>
 </tr>
 </tbody>
 </table>
-<p>En el vértice con un fotón, introducimos (en la reglas de Feynman) la constante de acoplo <span class="math notranslate nohighlight">\(e\)</span> y la carga, <span class="math notranslate nohighlight">\(Q\)</span> del fermión:</p>
+<p>El lagrangiano con la interacción es invariante gauge local, esto es, frente a un cambio local de fase, <span class="math notranslate nohighlight">\(\theta(x)\)</span> del fermión, con carga <span class="math notranslate nohighlight">\(Q\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-Q e \, \bar{\Psi} \gamma^\mu \Psi =  Q e \, \left( \bar{\Psi}_L \gamma^\mu \Psi_L + \bar{\Psi}_R \gamma^\mu \Psi_R \right)
+\Psi'(x) = e^{i Q\, \theta(x)} \, \Psi(x),
 \]</div>
-</div>
-</div>
-<div class="section" id="isoespin-debil">
-<h3><span class="section-number">6.3.3. </span>Isoespín débil<a class="headerlink" href="#isoespin-debil" title="Permalink to this heading">#</a></h3>
-<p>Recordemos que en las corrientes cargadas solo intervienen espinores a izquierdas de los fermiones (y de derechas de los antifermiones).</p>
-<p>Y que las corrientes cargadas tienen lugar en parejas, por ejemplo (<span class="math notranslate nohighlight">\(\nu_e,\; e\)</span>).</p>
-<p>Para representar esta realidad, el SM introduce el grupo de simetría SU(2)<span class="math notranslate nohighlight">\(_L\)</span>, donde <span class="math notranslate nohighlight">\(L\)</span> indica quiralidad a izquierdas, asociado al <strong>isoespín debil</strong>.</p>
-<p>Cada pareja de fermiones a izquierdas, Por ejemplo el <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(e\)</span> formarán un dublete de isopín débil, con tercera componente <span class="math notranslate nohighlight">\(\pm 1/2\)</span> respectivamente, mientras que solo el electrón tendría además su singlete a derechas.</p>
-<p>Sea <span class="math notranslate nohighlight">\(\Psi^{(q)_L}(p)\)</span> el espinor de Dirac a izquierdas del fermión <span class="math notranslate nohighlight">\(q = \nu_e, e\)</span> con cuadrimomento <span class="math notranslate nohighlight">\(p\)</span> se denota habitualmente de forma «compacta»:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{pmatrix} \nu_{eL} \\ 0 \end{pmatrix} \equiv \chi^\uparrow_W \Psi^{(\nu_e)}_L(p) = \begin{pmatrix} 1 \\ 0 \end{pmatrix}_W \Psi^{(\nu_e)}_L(p)
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{pmatrix} 0 \\ e _L\end{pmatrix} \equiv \chi^\downarrow_W \Psi^{(e)}_L(p) = \begin{pmatrix} 0 \\ 1 \end{pmatrix}_W \Psi^{(e)}_L(p) 
-\end{split}\]</div>
-<p>E introducimos los espinores a derechas:</p>
+<p>si el campo vectorial cambia:</p>
 <div class="math notranslate nohighlight">
 \[
-e_R \equiv \Psi^{(e)}_R(p)
+A'_\mu = A_\mu - \partial_\mu \theta
 \]</div>
-<p>Notar que el neutrino no tiene componente a derechas</p>
-<p>Para cada una de las generaciones obtenemos:</p>
+<p>Notemos primero que los siguientes términos son invariantes:</p>
+<ul class="simple">
+<li><p>el término <em>cinético</em> del boson vectorial:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+F'_{\mu\nu}F'^{\mu\nu} = F_{\mu\nu}F^{\mu\nu}
+\]</div>
+<ul class="simple">
+<li><p>el término <em>de masas</em> del campo fermiónico:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+m \bar{\Psi'} \Psi' = m \bar{\Psi} \Psi
+\]</div>
+<p>pero el término <em>cinético</em> del fermión introduce un término más</p>
+<div class="math notranslate nohighlight">
+\[
+i \bar{\Psi'} \gamma^\mu \partial_\mu \Psi' = i \bar{\Psi} \gamma^\mu \partial_\mu \Psi - Q (\bar{\Psi} \gamma^\mu \Psi) \, \partial_\mu \theta(x) 
+\]</div>
+<p>que se cancela con el de interacción</p>
+<div class="math notranslate nohighlight">
+\[
+-Q (\bar{\Psi'} \gamma^\mu \Psi') A'_\mu  = -Q (\bar{\Psi} \gamma^\mu \Psi) A_\mu + Q (\bar{\Psi} \gamma^\mu \Psi) \, \partial_\mu \theta(x)
+\]</div>
+<p>Y el lagrangiano es pues invariante gauge local bajo la transformación del grupo <span class="math notranslate nohighlight">\(U(1)_Q\)</span>, un cambio de fase local asociado a la carga.</p>
+<p>G. t’Hooft demostró que los lagrangianos con invariance gauge local son <em>renormalizables</em>, esto es, al cuantificar los campos y calcular las secciones eficaces se pueden obtener resultados finitos.</p>
+</div>
+<div class="section" id="la-construccion-electro-debil">
+<h3><span class="section-number">6.3.3. </span>La construcción electro-debil<a class="headerlink" href="#la-construccion-electro-debil" title="Permalink to this heading">#</a></h3>
+<p>Respecto a las interaciones débiles cargadas sabemos que:</p>
+<ul class="simple">
+<li><p>Intervienen solo los espinores de quiralidad a izquierdas</p></li>
+<li><p>Siempre aparecen en pares. En la primera familia entre:</p></li>
+</ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{pmatrix} \nu_{eL} \\ e_L \end{pmatrix}, \, e_R; \;\;\;  
-\begin{pmatrix} u_L \\ d'_L \end{pmatrix}, \, u_R, d'_R. 
-\end{split}\]</div>
-<p>Por ejemplo, para el <span class="math notranslate nohighlight">\(\nu_{eL}\)</span>, la tercera componente de isospín débil viene dada por:</p>
+  \begin{pmatrix} \nu_e \\ e \end{pmatrix}, \;\;\;   \begin{pmatrix} u \\ d \end{pmatrix}
+  \end{split}\]</div>
+<p>Y queremos construir una teoría invariante gauge.</p>
+<p>Vamos a exigir que el lagrangiano sea invariante bajo una simetría interna de <em>isospín débil</em> e <em>hypercarga</em>, <span class="math notranslate nohighlight">\(SU(2)_L \times U(1)_Y\)</span></p>
+<ul class="simple">
+<li><p>colocamos sólo los espinores de izquierdas en un duplete de isospín débil y los de derechas en singletes:</p></li>
+</ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\tau^3_W \begin{pmatrix} \nu_{eL} \\ 0 \end{pmatrix} = \frac{1}{2} 
-\begin{pmatrix} 1 &amp; 0 \\ 0  &amp; -1 \end{pmatrix}
-\begin{pmatrix} \nu_{eL} \\ 0 \end{pmatrix} = 
-+ \frac{1}{2} \begin{pmatrix} \nu_{eL} \\ 0 \end{pmatrix}
+L  \equiv 
+\begin{pmatrix} \nu_{eL} \\  e_L \end{pmatrix} 
+\equiv \begin{pmatrix} \Psi^{\nu_e}_L \\ \Psi^{e}_L \end{pmatrix}; \;\; e_R \equiv  \Psi^{e}_R
 \end{split}\]</div>
-<div class="section" id="las-corrientes-cargadas">
-<h4><span class="section-number">6.3.3.1. </span>Las corrientes cargadas<a class="headerlink" href="#las-corrientes-cargadas" title="Permalink to this heading">#</a></h4>
-<p>Las corrientes cargadas acoplan dos fermiones a izquierdas en un duplete de isospín débil con un acoplo <span class="math notranslate nohighlight">\(g_W/\sqrt{2}\)</span>.
-Y en el vértice introducimos las matrices de subida o bajada de isospín débil, <span class="math notranslate nohighlight">\(\sigma^\pm_W = \frac{1}{2}(\sigma^1_W \pm i \sigma^2_W)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q  \equiv 
+\begin{pmatrix} u_L \\  d_L \end{pmatrix} 
+\equiv \begin{pmatrix} \Psi^{u}_L \\ \Psi^{d}_L \end{pmatrix}; \;\; u_R \equiv \Psi^{u}_R, d_R \equiv \Psi^{d}_R
+\end{split}\]</div>
+<ul class="simple">
+<li><p>cada duplete y singlete tendrá una <em>hypercarga</em>, ¡no puede ser la carga eléctrica porque en el duplete hay partículas de distinta carga!</p></li>
+</ul>
+<p><em>Nota adicional</em>: para poder colocar los fermiones en estos dupletes (donde las quiralidades son independientes) y exigir invariance gauge tenemos que asumir que los fermiones y los bosones vectoriales no tienen masa. Será el Higgs con sus interacciones con fermiones y bosones vectoriales quien les dote de masa.</p>
+<p>La invariance gauge local respecto a <span class="math notranslate nohighlight">\(U(1)_Y\)</span> afecta a los dupletes y singletes, de forma similar a como afectaba la de carga eléctrica, por ejemplo para el duplete <span class="math notranslate nohighlight">\(L\)</span> con valor de hypercarga <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+L' = e^{i Y \theta(x)} L
+\]</div>
+<p>que dará lugar a un campo vectorial, <span class="math notranslate nohighlight">\(B_\mu\)</span>.</p>
+<p>La invariancia gauge local respecto a <span class="math notranslate nohighlight">\(SU(2)_L\)</span> afecta a los dupletes con un factor de fase. Por ejemplo al duplete <span class="math notranslate nohighlight">\(L\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+L' = e^{i g_W \vec{\theta}(x) \vec{\tau}}  L
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(g_W\)</span> es la constante de acoplo débil y ahora hay tres fases <span class="math notranslate nohighlight">\(\theta_i(x)\)</span> asociadas a cada uno de los generadores del grupo, <span class="math notranslate nohighlight">\(SU(2)\)</span>, esto es: <span class="math notranslate nohighlight">\(\tau^i = \frac{\sigma^i}{2}\)</span>, donde <span class="math notranslate nohighlight">\(\sigma^i\)</span> son las matrices de Pauli.</p>
+<p>El cambio asociado a <span class="math notranslate nohighlight">\(\partial_\mu \theta_i(x) \tau^i\)</span> se consideramos tres campos vectoriales:</p>
+<p>$<span class="math notranslate nohighlight">\(
+W^1, W^2, W^3  \to W^\pm, W^3
+\)</span>$.</p>
+<p>O de forma equivalente a <span class="math notranslate nohighlight">\(W^\pm, W^3\)</span> que tendrán asociadas los matrices <span class="math notranslate nohighlight">\(\sigma^\pm, \sigma^3\)</span>.</p>
+<p>Por ejemplo, el término de interacción asociado a los bosones vectoriales <span class="math notranslate nohighlight">\(W^+\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{g_W}{\sqrt{2}} (\bar{L} \gamma^\mu \sigma^+ \gamma^\mu L) \, W^+_\mu =  
+\frac{g_W}{\sqrt{2}} \begin{pmatrix}\bar{\Psi}^{\nu_e}_L, &amp; \bar{\Psi}^e_L \end{pmatrix} \gamma^\mu  \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{pmatrix} \begin{pmatrix} \Psi^{\nu_e}_L \\ \Psi^{e}_L\end{pmatrix} W^+_\mu = \\ \frac{g_W}{\sqrt{2}} \bar{\Psi}^{\nu_e}_L \gamma^\mu \Psi^e_L W^+_\mu =  \frac{g_W}{\sqrt{2}} \bar{\Psi}^{\nu_e} \left[ \, \frac{1}{2} \gamma^\mu (I - \gamma^5) \right] \Psi^{e} W^+_\mu 
+\end{split}\]</div>
+<p>esto es recuperamos la expresión conocida de las corrientes cargadas débiles.</p>
+<p>este término de interacción se corresponde se corresponde con el de los vértices de Feynman</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -907,42 +994,76 @@ Y en el vértice introducimos las matrices de subida o bajada de isospín débil
 </tr>
 </tbody>
 </table>
-<p>Por ejemplo la corriente cargada de <span class="math notranslate nohighlight">\(e \to \nu_e\)</span> con <span class="math notranslate nohighlight">\(W^+\)</span> como portador quedaría:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\frac{g_W}{\sqrt{2}} \bar{\Psi}^{(\nu_e)}_L \gamma^\mu \Psi^{(e)}_L  = 
-\frac{g_W}{\sqrt{2}} \begin{pmatrix}\bar{\Psi}^{(\nu_e)}_L, &amp; 0 \end{pmatrix} \gamma^\mu  \sigma^+_W 
-\begin{pmatrix} 0 \\ \Psi^{(e)}_L\end{pmatrix} = \\ \frac{g_W}{\sqrt{2}} \bar{\Psi}^{(\nu_e)} \left[ (\chi^\uparrow)_W^\dagger \sigma^+_W \chi^\downarrow_W \right] \left[ \, \frac{1}{2} \gamma^\mu (I - \gamma^5) \right] \Psi^{(e)} = \\ \frac{g_W}{\sqrt{2}} \bar{\Psi}^{(\nu_e)} \left[ \gamma^\mu \frac{1}{2}(I - \gamma^5) \right] \Psi^{(e)}
-\end{split}\]</div>
-<p>donde hemos omitido el momento <span class="math notranslate nohighlight">\(p_e, p_{\nu_e}\)</span> de <span class="math notranslate nohighlight">\(\Psi\)</span>.</p>
-<p>De otra forma podemos decir del vértice de las corrientes cargadas tiene tres factores:</p>
-<ul class="simple">
-<li><p>la constante de acoplo <span class="math notranslate nohighlight">\(g_W/\sqrt{2}\)</span></p></li>
-<li><p>la proyección de quiralidad a izquierdas  <span class="math notranslate nohighlight">\(\frac{1}{2} (I-\gamma^5)\)</span>.</p></li>
-<li><p>la matriz de subida o bajada de tercera componente de isospín, <span class="math notranslate nohighlight">\(\sigma^\pm_W\)</span>, que medialos estados de los dupletes de isospín débil.</p></li>
-</ul>
-<p>Habitualmente se ignora la matriz <span class="math notranslate nohighlight">\(\sigma^+_W\)</span> en el vértice y simplemente se crean las corrientes con los espinoresde arriba y abajo del duplete.</p>
 </div>
-<div class="section" id="la-unificacion-electrodebil">
-<h4><span class="section-number">6.3.3.2. </span>La unificación electrodébil<a class="headerlink" href="#la-unificacion-electrodebil" title="Permalink to this heading">#</a></h4>
-<p>El SM establece la unificación entre fuerza electromagnética y débil.</p>
-<p>Ambos procesos, electromagnetismo y débil, están ligados.  El parámetro que determina su «mezcla» es el <strong>ángulo de Weinberg</strong>, <span class="math notranslate nohighlight">\(\sin \theta_W\)</span>.</p>
-<p>La intensidad de los acoplos entre las interacciones electromagnética <span class="math notranslate nohighlight">\(e\)</span>, débil cargada, <span class="math notranslate nohighlight">\(g_W\)</span>, y débil neutra, <span class="math notranslate nohighlight">\(g_Z\)</span>, viene dada por:</p>
+<div class="section" id="las-corrientes-neutras">
+<h3><span class="section-number">6.3.4. </span>Las corrientes neutras<a class="headerlink" href="#las-corrientes-neutras" title="Permalink to this heading">#</a></h3>
+<p>La construcción de las corrientes neutras es más compleja.</p>
+<p>Los campos <span class="math notranslate nohighlight">\(W^3_\mu\)</span> y <span class="math notranslate nohighlight">\(B_\mu\)</span>, corresponde ambos con corrientes neutras, pero el campo existente en la naturaleza es <span class="math notranslate nohighlight">\(A_\mu\)</span>, el fotón, y el <span class="math notranslate nohighlight">\(Z_\mu\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(A_\mu\)</span> y <span class="math notranslate nohighlight">\(Z_\mu\)</span> serán una combinación lineal de <span class="math notranslate nohighlight">\(W^3_\mu, B_\mu\)</span>, con un ángulo de mezcla:</p>
 <div class="math notranslate nohighlight">
 \[
-e = g_W \sin \theta_W = g_Z \sin \theta_W \cos \theta_W
+\sin \theta_W
 \]</div>
+<p>O ángulo de Weinberg</p>
 <p>El valor <span class="math notranslate nohighlight">\(\theta_W \simeq 33^o\)</span>, se ha determinado experimentalmente en varios procesos físicos, (ver después):</p>
 <div class="math notranslate nohighlight">
 \[
 \sin^2 \theta_W = 0.23146 \pm 0.000012
 \]</div>
+<p>La teoría electrodébil liga las constantes de acoplo con el ángulo de Weinberg:</p>
+<div class="math notranslate nohighlight">
+\[
+e = g_W \sin \theta_W = g_Z \sin \theta_W \cos \theta_W
+\]</div>
 <p>Eso es, determinamos <span class="math notranslate nohighlight">\(g_W, g_Z\)</span> a partir de la carga del electron <span class="math notranslate nohighlight">\(e\)</span> (o de la constante de estructura fina <span class="math notranslate nohighlight">\(\alpha\)</span>) y del ángulo de Weinberg <span class="math notranslate nohighlight">\(\theta_W\)</span>.</p>
-</div>
-<div class="section" id="las-corrientes-neutras">
-<h4><span class="section-number">6.3.3.3. </span>Las corrientes neutras<a class="headerlink" href="#las-corrientes-neutras" title="Permalink to this heading">#</a></h4>
-<p>Las interacciones con el <span class="math notranslate nohighlight">\(Z\)</span> no cambian el sabor de la partícula, ni tampoco su carga eléctrica, ni su tercera componente de isoespín débil.</p>
-<p>Pero cambia de forma no trivial la paridad, porque el bosón <span class="math notranslate nohighlight">\(Z\)</span> tiene un acoplo diferente para la quiralidad de izquierdas y de derechas, dependiendo del fermión.</p>
+<p>Se escapa al nivel del curso, indicamos solo que la interacción del campo de Higgs con los bosones vectoriales será el responsable de la mezcla.</p>
+<p>En el lagrangiamo nos parecen dos términos de interacción:</p>
+<p>Uno asociado con el campo electromagnético <span class="math notranslate nohighlight">\(A_\mu\)</span> que vale:</p>
+<div class="math notranslate nohighlight">
+\[
+-Q (\bar{\Psi}_L \gamma^\mu \Psi_L + \bar{\Psi}_R \gamma^\mu \Psi_R) A_\mu = -Q (\bar{\Psi} \gamma^\mu \Psi) A_\mu
+\]</div>
+<p>que conserva la simetría <span class="math notranslate nohighlight">\(U(1)_Q\)</span>, asociada a la carga eléctrica, <span class="math notranslate nohighlight">\(Q\)</span>. Esta viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[
+Q = Y - T_3
+\]</div>
+<p>la carga eléctrica <span class="math notranslate nohighlight">\(Q\)</span> es la hypercarga <span class="math notranslate nohighlight">\(Y\)</span> menos la tercera componente de isoespín débil, <span class="math notranslate nohighlight">\(T_3\)</span> del duplete donde está el fermión.</p>
+<p>Por ejemplo, para el electrón y neutrino:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(Y\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(T_3\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(Q\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(e\)</span></p></td>
+<td class="text-align:center"><p>-1/2</p></td>
+<td class="text-align:center"><p>-1/2</p></td>
+<td class="text-align:center"><p>-1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\nu_e\)</span></p></td>
+<td class="text-align:center"><p>-1/2</p></td>
+<td class="text-align:center"><p>+1/2</p></td>
+<td class="text-align:center"><p>0</p></td>
+</tr>
+</tbody>
+</table>
+<p>Notar que la interacción con el fotón trata por igual las dos quiralidades del fermión, luego preserva paridad.</p>
+<p>Y una segunda interacción es con el <span class="math notranslate nohighlight">\(Z^0\)</span>, asociado a la corriente neutra, y que depende de un coeficiente para cada quiralidad, <span class="math notranslate nohighlight">\(c_L, c_R\)</span>, asociado a cada fermión:</p>
+<div class="math notranslate nohighlight">
+\[
+g_Z \left( c_L \, \bar{\Psi}_L \gamma^\mu \bar{\Psi}_L + c_R \, \bar{\Psi}_R \gamma^\mu \bar{\Psi}_R \right) \, Z_\mu
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(g_Z\)</span> es la constante de acoplo del <span class="math notranslate nohighlight">\(Z\)</span></p>
+<p>que correspondería a la siguiente visión del vértice de Feynman:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -955,32 +1076,19 @@ e = g_W \sin \theta_W = g_Z \sin \theta_W \cos \theta_W
 </tr>
 </tbody>
 </table>
-<p>La corriente neutra con el bosón <span class="math notranslate nohighlight">\(Z\)</span> tiene la forma:</p>
+<p>Notar que las corrientes débiles neutras violan también paridad, porque tratan de forma distinta cada quiralidad, pero no de forma máxima como lo hacían las corrientes débiles cargadas.</p>
+<p>Los coeficientes <span class="math notranslate nohighlight">\(c_L, c_R\)</span> son</p>
 <div class="math notranslate nohighlight">
 \[
-g_Z \left( c_L \, \bar{\Psi}_L \gamma^\mu \bar{\Psi}_L + c_R \, \bar{\Psi}_R \gamma^\mu \bar{\Psi}_R \right) 
+c_L  = ^3 - Q \sin^2 \theta_W, \;\; c_R = -Q \sin^2 \theta_W
 \]</div>
-<p>donde <span class="math notranslate nohighlight">\(g_Z\)</span> es la constante de acoplo del <span class="math notranslate nohighlight">\(Z\)</span> y <span class="math notranslate nohighlight">\(c_L, c_R\)</span> los factores asociados a la parte de quiralidad del fermión.</p>
-<p>El modelo estándar establece los coeficientes de acoplo del vértice con el <span class="math notranslate nohighlight">\(Z\)</span>:</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p>———- cL ———-</p></th>
-<th class="text-align:left head"><p>———- cR  ———-</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(I^3_W - Q \sin^2 \theta_W\)</span></p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(-Q \sin^2 \theta_W\)</span></p></td>
-</tr>
-</tbody>
-</table>
-<p>Donde <span class="math notranslate nohighlight">\(Q\)</span> es la carga en unidades de electrón <span class="math notranslate nohighlight">\(e\)</span>, y <span class="math notranslate nohighlight">\(I^3_W\)</span> es la tercerca componente de isospín débil</p>
-<p>Por ejemplo para el <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(e\)</span></p>
+<p>Donde <span class="math notranslate nohighlight">\(Q\)</span> es la carga en unidades de electrón <span class="math notranslate nohighlight">\(e\)</span>, y <span class="math notranslate nohighlight">\(T^3\)</span> es la tercera componente de isospín débil</p>
+<p>Podemos calcular los valores <span class="math notranslate nohighlight">\(c_L, c_R\)</span> para el <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(e\)</span></p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
-<th class="text-align:left head"><p>——- cL ——-</p></th>
-<th class="text-align:left head"><p>——- cR ——-</p></th>
+<th class="text-align:left head"><p>– <span class="math notranslate nohighlight">\(c_L\)</span> –</p></th>
+<th class="text-align:left head"><p>– <span class="math notranslate nohighlight">\(c_R\)</span> –</p></th>
 </tr>
 </thead>
 <tbody>
@@ -998,17 +1106,16 @@ g_Z \left( c_L \, \bar{\Psi}_L \gamma^\mu \bar{\Psi}_L + c_R \, \bar{\Psi}_R \ga
 <p>La corriente neutra del neutrino con el <span class="math notranslate nohighlight">\(Z\)</span> será:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{g_Z}{2} \bar{\Psi}^{(\nu_e)}_L \gamma^\mu \Psi^{(\nu_e)}_L 
+\frac{g_Z}{2} \bar{\Psi}^{\nu_e}_L \gamma^\mu \Psi^{\nu_e}_L \, Z_\mu
 \]</div>
 <p>Mientras que la del electrón:</p>
 <div class="math notranslate nohighlight">
 \[
-g_Z \left(-\frac{1}{2} + s^2_W \right) \, \bar{\Psi}^{(e)}_L \gamma^\mu \Psi^{(e)}_L  + g_Z s^2_W \, \bar{\Psi}^{(e)}_R \gamma^\mu \Psi^{(e)}_R
+g_Z \left(-\frac{1}{2} + s^2_W \right) \, \bar{\Psi}^{e}_L \gamma^\mu \Psi^{e}_L \, Z_\mu + g_Z s^2_W \, \bar{\Psi}^{e}_R \gamma^\mu \Psi^{e}_R \, Z_\mu
 \]</div>
 </div>
-</div>
 <div class="section" id="aniquilacion-a-muones-e-e-to-mu-mu-y-la-asimetria-adelante-y-atras">
-<h3><span class="section-number">6.3.4. </span>Aniquilación a muones, <span class="math notranslate nohighlight">\(e+e^+ \to \mu+\mu^+\)</span> y la asimetría adelante y atrás.<a class="headerlink" href="#aniquilacion-a-muones-e-e-to-mu-mu-y-la-asimetria-adelante-y-atras" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">6.3.5. </span>Aniquilación a muones, <span class="math notranslate nohighlight">\(e+e^+ \to \mu+\mu^+\)</span> y la asimetría adelante y atrás.<a class="headerlink" href="#aniquilacion-a-muones-e-e-to-mu-mu-y-la-asimetria-adelante-y-atras" title="Permalink to this heading">#</a></h3>
 <p>En la aniquilación <span class="math notranslate nohighlight">\(e + e^+ \to \mu + \mu^+\)</span> intervienen el <span class="math notranslate nohighlight">\(\gamma\)</span> y el <span class="math notranslate nohighlight">\(Z\)</span>. Nota que el portador debe ser necesariamente neutro.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1074,12 +1181,12 @@ A_{FB} = \frac{N_F - N_B}{N_F + N_B}
 </table>
 </div>
 <div class="section" id="anchura-de-desintegracion-del-z">
-<h3><span class="section-number">6.3.5. </span>Anchura de desintegración del <span class="math notranslate nohighlight">\(Z\)</span><a class="headerlink" href="#anchura-de-desintegracion-del-z" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">6.3.6. </span>Anchura de desintegración del <span class="math notranslate nohighlight">\(Z\)</span><a class="headerlink" href="#anchura-de-desintegracion-del-z" title="Permalink to this heading">#</a></h3>
 <p>El colisionador LEP <span class="math notranslate nohighlight">\(e+e^+\)</span> que operó durante los 90’s verificó con gran detalle las predicciones del SM, especialmente la física del Z.</p>
 <p>Durante un periodo LEP operó a <span class="math notranslate nohighlight">\(\sqrt{s} = m_Z = 91\)</span> GeV produciendo millones de <span class="math notranslate nohighlight">\(Z\)</span>.</p>
 <p>Uno de los estudios más importantes de LEP es la medición de la anchura de desintegración de <span class="math notranslate nohighlight">\(Z\)</span>.</p>
 <div class="section" id="anchura-de-desintegracion-parcial">
-<h4><span class="section-number">6.3.5.1. </span>Anchura de desintegración parcial<a class="headerlink" href="#anchura-de-desintegracion-parcial" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">6.3.6.1. </span>Anchura de desintegración parcial<a class="headerlink" href="#anchura-de-desintegracion-parcial" title="Permalink to this heading">#</a></h4>
 <p>La anchura de desintegración viene dada por:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1174,9 +1281,8 @@ BR d 15.2 %
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="seccion-eficaz">
-<h3><span class="section-number">6.3.6. </span>Sección eficaz<a class="headerlink" href="#seccion-eficaz" title="Permalink to this heading">#</a></h3>
+<h4><span class="section-number">6.3.6.2. </span>Sección eficaz<a class="headerlink" href="#seccion-eficaz" title="Permalink to this heading">#</a></h4>
 <p>Aunque no la calcularemos, vamos a presentar ahora los distintos elementos que se necesitan en la sección eficaz de <span class="math notranslate nohighlight">\(e+e^+ \to f + \bar{f}\)</span> en el <span class="math notranslate nohighlight">\(Z\)</span>, donde recordemos la contribución del <span class="math notranslate nohighlight">\(\gamma\)</span> es pequeña.</p>
 <p>Sabemos que la sección eficaz viene dada por:</p>
 <div class="math notranslate nohighlight">
@@ -1251,7 +1357,8 @@ sigma max (ee-&gt;Z)    60.2 nbarns
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sm_40_0.png" src="../_images/sm_40_0.png" />
+<img alt="../_images/sm_48_0.png" src="../_images/sm_48_0.png" />
+</div>
 </div>
 </div>
 </div>
@@ -1315,6 +1422,8 @@ N_\nu = 2.9840\pm 0.0082
 <p>El mecanismo de Higgs permite resolver los tres problemas de una forma económica.</p>
 <p>Es imposible discutir sobre el mecanismo de Higgs sin recurrir de forma breve al TCQ y al Lagrangiano del Modelo Estándar.</p>
 <p>Vamos a dar solo unas ideas que nos permitan entender su comportamiento y descubrimiento.</p>
+<div class="section" id="la-invariance-gauge">
+<h3><span class="section-number">6.4.1. </span>La invariance gauge<a class="headerlink" href="#la-invariance-gauge" title="Permalink to this heading">#</a></h3>
 <p>Los tres campos que componen las partículas elementales son:</p>
 <ul class="simple">
 <li><p>escalar (bosón de Higgs),</p></li>
@@ -1353,12 +1462,13 @@ N_\nu = 2.9840\pm 0.0082
 </tr>
 </tbody>
 </table>
-<p>Donde:</p>
+<p>Donde, para incluir las interacciones con los bosones vectoriales, introducimos:</p>
 <div class="math notranslate nohighlight">
 \[
 D_\mu = \partial_\mu + i g A_\mu, \;\;\; F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu
 \]</div>
 <p><span class="math notranslate nohighlight">\(D_\mu\)</span> es la <strong>derivada covariante generalizada</strong>, <span class="math notranslate nohighlight">\(g\)</span> es el acoplo, por ejemplo <span class="math notranslate nohighlight">\(g=-e\)</span> para el electrón en el electromagnetismo, y en ese caso <span class="math notranslate nohighlight">\(A_\mu\)</span> correspondería al campo del fotón.</p>
+<p>De forma similar actuaríamos para el resto de los bosones vectoriales.</p>
 <p>El lagrangiano de espinores y bosones vectoriales (sin masa), por ejemplo del electromagnetismo es:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1369,12 +1479,12 @@ i \bar{\Psi} \gamma^\mu D_\mu \Psi - m \bar{\Psi} \Psi - \frac{1}{4} F^{\mu\nu}F
 \[
 \Psi'(x) = e^{i g \theta(x)} \, \Psi(x), \;\;\; A'_\mu(x) = A_\mu(x) - \partial_\mu \theta(x)
 \]</div>
-<p>Recordemos que para que sea invariante hemos tenido que introducir:</p>
+<p>Recordemos que:</p>
 <div class="math notranslate nohighlight">
 \[
 D_\mu = \partial_\mu + i g A_\mu
 \]</div>
-<p>¡Pero el término de masas del bosón vectorial no es invariante gauge local!:</p>
+<p>¡Pero un término de masas del bosón vectorial no es invariante gauge local!:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{1}{2} m_A^2 A'^\mu A'_\mu  = \frac{1}{2}m_A^2 (A^\mu - \partial^\mu \theta) \, (A_\mu - \partial_\mu \theta) \neq \frac{1}{2} m_A^2 A^\mu A_\mu 
@@ -1387,45 +1497,29 @@ D_\mu = \partial_\mu + i g A_\mu
 <p>que es el acoplo de una corriente fermiónica, si <span class="math notranslate nohighlight">\(g = -e\)</span>, la interacción de la corriente electromagnética del electrón, con el fotón. E interpretamos el término como un vértices de tres ramas con acoplo <span class="math notranslate nohighlight">\(e\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
- e \bar{\Psi} \gamma^\mu \Psi \, A_\mu \equiv e j^\mu_{(e)} \, A_\mu
+ e \bar{\Psi} \gamma^\mu \Psi \, A_\mu
 \]</div>
-<p>Que asociamos al vértice de la interacción electromagnética de un fermión con carga <span class="math notranslate nohighlight">\(Qe\)</span> con el fotón:</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:center head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_emcur.png"><img alt="../_images/sm_emcur.png" class="align-center" src="../_images/sm_emcur.png" style="width: 250px;" /></a></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:center"><p>Corriente electromagnética</p></td>
-</tr>
-</tbody>
-</table>
-<div class="math notranslate nohighlight">
-\[
- - e Q \, \bar{\Psi} \gamma^\mu \Psi \, A_\mu \equiv - e Q  \, j^\mu \, A_\mu
-\]</div>
-<div class="section" id="como-el-higgs-otorga-la-masa-a-fermiones-y-bosones">
-<h3><span class="section-number">6.4.1. </span>Cómo el higgs otorga la masa a fermiones y bosones.<a class="headerlink" href="#como-el-higgs-otorga-la-masa-a-fermiones-y-bosones" title="Permalink to this heading">#</a></h3>
-<div class="section" id="fermiones">
-<h4><span class="section-number">6.4.1.1. </span>Fermiones<a class="headerlink" href="#fermiones" title="Permalink to this heading">#</a></h4>
+<p>y que tiene asociado su correspondiente vértice de Feynman.</p>
+</div>
+<div class="section" id="masa-de-los-fermiones">
+<h3><span class="section-number">6.4.2. </span>Masa de los fermiones<a class="headerlink" href="#masa-de-los-fermiones" title="Permalink to this heading">#</a></h3>
 <p>El término de masa asociado a los fermiones que aparece en el Lagrangiano es:</p>
 <div class="math notranslate nohighlight">
 \[
 m \bar{\Psi} \Psi
 \]</div>
-<p>que podemos obtener si acoplamos los fermiones con un campo escalar <span class="math notranslate nohighlight">\(\phi\)</span>, de la forma:</p>
+<p>que veremos podemos obtener si partimos que los fermiones se acomplan con un campo escalar <span class="math notranslate nohighlight">\(\phi\)</span>, de la forma:</p>
 <div class="math notranslate nohighlight">
 \[
 \lambda \bar{\Psi} \Psi \phi
 \]</div>
-<p>que corresponde a un vértice de tres ramas con un acoplo <span class="math notranslate nohighlight">\(\lambda\)</span> que llamamos de <strong>acoplo de Yukawa</strong>.</p>
-<p>Consideremos ahora un campo complejo escalar particular, <span class="math notranslate nohighlight">\(\phi\)</span>, con un <strong>valor esperado en el vacío</strong>, <span class="math notranslate nohighlight">\(v\)</span>:</p>
+<p>que corresponde a un vértice de tres ramas con un acoplo <span class="math notranslate nohighlight">\(\lambda\)</span>, adimensional, que llamamos <strong>acoplo de Yukawa</strong>.</p>
+<p>Consideremos ahora un campo complejo escalar particular, <span class="math notranslate nohighlight">\(\phi\)</span>, con un <strong>valor esperado en el vacío</strong>, <span class="math notranslate nohighlight">\(v\)</span>, no nulo:</p>
 <div class="math notranslate nohighlight">
 \[
 \phi(x) = \frac{1}{\sqrt{2}}\left(v + h(x)\right) 
 \]</div>
+<p>(el factor <span class="math notranslate nohighlight">\(1/\sqrt{2}\)</span> simplifica luego los cálculos, pero no es relevante).</p>
 <p>La interacción que hemos escrito anteriormente entre fermiones y el campo <span class="math notranslate nohighlight">\(\phi\)</span> queda:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1437,7 +1531,7 @@ m \bar{\Psi} \Psi
 m \bar{\Psi} \Psi = \frac{\lambda v}{\sqrt{2}} \bar{\Psi} \Psi \Rightarrow m= \frac{\lambda v}{\sqrt{2}}.
 \]</div>
 <p>La masa aparece como la fricción, via el acoplo de Yukawa, <span class="math notranslate nohighlight">\(\lambda\)</span>, con el valor esperado del campo escalar (de Higgs) en el vacío, <span class="math notranslate nohighlight">\(v\)</span>.</p>
-<p>El segundo términdo <span class="math notranslate nohighlight">\(\bar{\Psi} \Psi h\)</span> veremos más adelante que lo interpretaremos como la interacción, desintegracion, del Higgs a un par fermión, anti-fermión.</p>
+<p>El segundo términdo <span class="math notranslate nohighlight">\(\bar{\Psi} \Psi h\)</span> veremos más adelante que lo interpretaremos como la interacción del Higgs con un fermión.</p>
 <p>O gráficamente, hemos pasado de la interacción del campo escalar, <span class="math notranslate nohighlight">\(\phi\)</span></p>
 <table class="colwidths-auto table">
 <thead>
@@ -1447,11 +1541,11 @@ m \bar{\Psi} \Psi = \frac{\lambda v}{\sqrt{2}} \bar{\Psi} \Psi \Rightarrow m= \f
 <tbody>
 <tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_higgs_2.png"><img alt="../_images/sm_higgs_2.png" class="align-center" src="../_images/sm_higgs_2.png" style="width: 150px;" /></a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p>Acoplo del campo de Higgs con el fermíon</p></td>
+<tr class="row-odd"><td class="text-align:center"><p>Acoplo del campo de Higgs con el fermión</p></td>
 </tr>
 </tbody>
 </table>
-<p>A la de su desarrollo a partir del valor en el vacío, que nos da la masa y la interacción del higgs:</p>
+<p>A la de su desarrollo a partir del valor en el vacío, que nos da la masa del fermión y su interacción con el higgs:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -1464,9 +1558,8 @@ m \bar{\Psi} \Psi = \frac{\lambda v}{\sqrt{2}} \bar{\Psi} \Psi \Rightarrow m= \f
 </tr>
 </tbody>
 </table>
-</div>
 <div class="section" id="bosones">
-<h4><span class="section-number">6.4.1.2. </span>Bosones<a class="headerlink" href="#bosones" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">6.4.2.1. </span>Bosones<a class="headerlink" href="#bosones" title="Permalink to this heading">#</a></h4>
 <p>El mecanismo que dota de masa a los bosones es más complejo.</p>
 <p>La masa de un bosón vectorial tendría un término (ver el lagrangiano de la tabla anterior)</p>
 <div class="math notranslate nohighlight">
@@ -1475,7 +1568,7 @@ m \bar{\Psi} \Psi = \frac{\lambda v}{\sqrt{2}} \bar{\Psi} \Psi \Rightarrow m= \f
 \]</div>
 <p>A partir de la deriviada covariante aplicada al campo escalar obtenemos:
 $<span class="math notranslate nohighlight">\(
-D_\mu \phi = (\partial_\mu + i g A_\mu) \frac{1}{\sqrt{2}} \left[ v + h(x) \right)  = \frac{1}{\sqrt{2}} \left(\partial_\mu h(x) + ig v \, A_\mu + i g h(x) A_\mu \right]
+D_\mu \phi = (\partial_\mu + i g A_\mu) \frac{1}{\sqrt{2}} \left[ v + h(x) \right]  = \frac{1}{\sqrt{2}} \left(\partial_\mu h(x) + ig v \, A_\mu + i g h(x) A_\mu \right)
 \)</span>$</p>
 <p>En el lagrangiano del campo escalar aparece el producto escalar de la derivada covariante consigo misma, que si lo desarrollamos:</p>
 <div class="math notranslate nohighlight">
@@ -1487,7 +1580,7 @@ D_\mu \phi = (\partial_\mu + i g A_\mu) \frac{1}{\sqrt{2}} \left[ v + h(x) \righ
 \[
 m = g v
 \]</div>
-<p>En el Modelo Estándar, el cálculo es similar y obtenemos:</p>
+<p>En el Modelo Estándar, para la unificación electrodébil, el cálculo es similar, aunque más complejo, y obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
 m_W = \frac{g_W v}{2}, \;\; m_Z = \frac{g_z v}{2} = \frac{g_W v}{2 \cos \theta_W}
@@ -1524,29 +1617,37 @@ m_W \simeq 80.34 \;\; \mathrm{GeV}
 </div>
 </div>
 <div class="section" id="el-campo-del-boson-de-higgs">
-<h3><span class="section-number">6.4.2. </span>El campo del bosón de Higgs<a class="headerlink" href="#el-campo-del-boson-de-higgs" title="Permalink to this heading">#</a></h3>
-<p>Vemos que podemos dotar de masa a los fermiones y bosones vectoriales débiles con un campo con un valor especial en el vacío, <span class="math notranslate nohighlight">\(v\)</span>, ¿pero de donde sale ese valor?</p>
-<p>Modificamos <em>ad hoc</em> el Lagrangiano del campo escalar con masa <span class="math notranslate nohighlight">\(m\)</span>,</p>
+<h3><span class="section-number">6.4.3. </span>El campo del bosón de Higgs<a class="headerlink" href="#el-campo-del-boson-de-higgs" title="Permalink to this heading">#</a></h3>
+<p>Vemos que podemos dotar de masa a los fermiones y bosones vectoriales débiles con un campo escalar cuyo valor en el vacío, <span class="math notranslate nohighlight">\(v\)</span>, sea no nulo, ¿pero cómo obtenemos <span class="math notranslate nohighlight">\(v\)</span>?</p>
+<p>Consideremos un campo escalar complejo, que llamaremos campo de Higgs, cuyo langrangiano es:</p>
 <div class="math notranslate nohighlight">
 \[
 (D_\mu \phi)^\dagger (D^\mu \phi) -  m (\phi^\dagger \phi),
 \]</div>
-<p>por un potencial, <span class="math notranslate nohighlight">\(V(\phi)\)</span>:</p>
+<p>cuyo segundo término, el de masa lo asociamos a un potencial</p>
 <div class="math notranslate nohighlight">
 \[
 (D_\mu \phi)^\dagger (D^\mu \phi) - V(\phi),
 \]</div>
-<p>Un potencial particular conocido como el del sombrero mexicano:</p>
+<p>donde</p>
+<div class="math notranslate nohighlight">
+\[
+V(\phi) =  m (\phi^\dagger \phi)
+\]</div>
+<p>que es la versión más simple, parabólica, en términos de <span class="math notranslate nohighlight">\((\phi^\dagger \phi)\)</span> dado que el lagrangiano es un escalar.</p>
+<p>vamos a considerar la extensión más sencilla del potencial, cuadrática.</p>
 <div class="math notranslate nohighlight">
 \[
 V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger \phi)^2
 \]</div>
+<p>que depende de los parámetros <span class="math notranslate nohighlight">\(\mu, \lambda\)</span>. Si <span class="math notranslate nohighlight">\(\mu = \sqrt{2} m\)</span> y <span class="math notranslate nohighlight">\(\lambda = 0\)</span>, recuperamos el potencial inicial.</p>
+<p>(de nuevo los factores <span class="math notranslate nohighlight">\(1/2, 1/4\)</span> sirven para simplificar los cálculos, pero no son relevantes).</p>
 <p>y desarrollando el campo escalar alrededor del mínimo, <span class="math notranslate nohighlight">\(v\)</span>, del potencial.</p>
 <div class="math notranslate nohighlight">
 \[
 \phi(x) = \frac{1}{\sqrt{2}} \left( v + h(x)\right)
 \]</div>
-<p>Las siguientes figuras muestran el potencial para un campo real y los casos <span class="math notranslate nohighlight">\(\mu^2&gt;0, \mu^2&lt;0\)</span> y su valor den el vacío (el mínimo).</p>
+<p>Las siguientes figuras muestran el potencial para los casos <span class="math notranslate nohighlight">\(\mu^2&gt;0, \mu^2&lt;0\)</span> con <span class="math notranslate nohighlight">\(\lambda &gt; 0\)</span> y su valor den el vacío (el mínimo).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">higgs_potential</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">phi</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">xlambda</span> <span class="p">:</span> <span class="p">((</span><span class="n">mu</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">real</span> <span class="o">*</span> <span class="n">phi</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">xlambda</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">phi</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
@@ -1558,20 +1659,20 @@ V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sm_63_0.png" src="../_images/sm_63_0.png" />
+<img alt="../_images/sm_70_0.png" src="../_images/sm_70_0.png" />
 </div>
 </div>
 <p>El estado del vacío es el estado de mínima energía:</p>
 <ul class="simple">
 <li><p>El el caso <span class="math notranslate nohighlight">\(\mu^2 &gt;0\)</span> el potencial tiene un mínimo en <span class="math notranslate nohighlight">\(v = 0\)</span>.</p></li>
-<li><p>Mientras que el caso <span class="math notranslate nohighlight">\(\mu^2 &lt;0\)</span> tiene mínimos en:</p></li>
+<li><p>Mientras que el caso <span class="math notranslate nohighlight">\(\mu^2 &lt;0\)</span> tiene dos mínimos en:</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
 v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
 \]</div>
 <p>donde a  <span class="math notranslate nohighlight">\(v\)</span> es el <strong>valor esperado en el vacío</strong> (<em>vev</em>).</p>
-<p>El hecho que el estado en el vacío se situe en uno de los mínimos de potencial de los posibles equivalentes se conoce como <strong>rotura espontánea de simetría</strong>.</p>
+<p>La elección de uno de los mínimos, supone romper la simetría. Este proceso se conoce como  <strong>rotura espontánea de simetría</strong>. La selección de qué mínimo no tiene implicaciones físicas, pero la selección de un mínimo, el que sea, sí.</p>
 <p>En el caso de que <span class="math notranslate nohighlight">\(\phi\)</span> sea un complejo obtenemos la curva del potencial conocida como sobrero mexicano, donde uno de los ejes es la componente real del campo y la otra la imaginaria:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1585,6 +1686,7 @@ v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
 </tr>
 </tbody>
 </table>
+<p>Luego la existencia de un campo escalar complejo, con un potencial tipo <em>sombrero mexicano</em>, el más sencillo después del de masa, nos permite obtener un valor esperado en el vacío, con el que dotar de masa a los fermiones y bosones vectoriales.</p>
 <p>Al establecer invariancia gauge, el campo de Higgs da lugar a las interacciones:</p>
 <ul class="simple">
 <li><p>entre los bosones débiles, <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y el valor <span class="math notranslate nohighlight">\(v\)</span> del vacío, que interpretamos como la <strong>masa de los bosones <span class="math notranslate nohighlight">\(W^\pm, Z\)</span></strong>.</p></li>
@@ -1594,7 +1696,7 @@ v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
 </ul>
 <p>Además el higgs se acopla consigo mismo en vértices de tres y cuatro ramas, y con los bosones vectoriales débiles en vértices de cuatro ramas. Esto es, genera nuevas interacciones entre sí, y con los bosones vectoriales.</p>
 <div class="section" id="las-masas">
-<h4><span class="section-number">6.4.2.1. </span>Las masas<a class="headerlink" href="#las-masas" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">6.4.3.1. </span>Las masas<a class="headerlink" href="#las-masas" title="Permalink to this heading">#</a></h4>
 <p>La fricción de los bosones y los fermiones con el <em>vev</em> del Higgs da lugar a las masas:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1631,11 +1733,12 @@ v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
 <li><p>Que la masa de los bosones vectoriales, <span class="math notranslate nohighlight">\(m_W, m_Z\)</span> está fijada por <span class="math notranslate nohighlight">\(v\)</span> y los acoplos, <span class="math notranslate nohighlight">\(g_W, g_Z\)</span>.</p></li>
 <li><p>Que la masa del Higgs depende de <span class="math notranslate nohighlight">\(v^2\)</span> y <span class="math notranslate nohighlight">\(\lambda\)</span>. El parámetro <span class="math notranslate nohighlight">\(\lambda\)</span> solo interviene en la masa del Higgs.</p></li>
 </ul>
-<p>El valor del <span class="math notranslate nohighlight">\(v\)</span> se puede determinar a partir de <span class="math notranslate nohighlight">\(g_W, m_W\)</span>, o simplemente de <span class="math notranslate nohighlight">\(G_F\)</span>:</p>
+<p>El valor del <span class="math notranslate nohighlight">\(v\)</span> es un viejo conocido, se puede determinar a partir de <span class="math notranslate nohighlight">\(g_W, M_W\)</span>, esto es de <span class="math notranslate nohighlight">\(G_F\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-m_W = \frac{1}{2} g_W v \Rightarrow v = \frac{2m_W}{g_W} = \sqrt{\frac{1}{\sqrt{2} G_F}} = 246 \; \mathrm{GeV}
+M_W = \frac{1}{2} g_W v \Rightarrow v = \frac{2M_W}{g_W} = \sqrt{\frac{1}{\sqrt{2} G_F}} = 246 \; \mathrm{GeV}
 \]</div>
+<p>medir <span class="math notranslate nohighlight">\(G_F\)</span> es medir <span class="math notranslate nohighlight">\(v\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">GF</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;Fermi coupling constant&quot;</span><span class="p">)</span> <span class="c1"># 1/GeV^2</span>
@@ -1652,7 +1755,7 @@ m_W = \frac{1}{2} g_W v \Rightarrow v = \frac{2m_W}{g_W} = \sqrt{\frac{1}{\sqrt{
 </div>
 </div>
 <div class="section" id="las-desintegraciones-del-boson-de-higgs">
-<h4><span class="section-number">6.4.2.2. </span>Las desintegraciones del bosón de Higgs<a class="headerlink" href="#las-desintegraciones-del-boson-de-higgs" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">6.4.3.2. </span>Las desintegraciones del bosón de Higgs<a class="headerlink" href="#las-desintegraciones-del-boson-de-higgs" title="Permalink to this heading">#</a></h4>
 <p>La interacción del Higgs con los fermiones y bosones vectoriales determina sus fracciones de desintegración.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1718,7 +1821,7 @@ m_W = \frac{1}{2} g_W v \Rightarrow v = \frac{2m_W}{g_W} = \sqrt{\frac{1}{\sqrt{
 </div>
 </div>
 <div class="section" id="descubrimiento-del-boson-de-higgs">
-<h3><span class="section-number">6.4.3. </span>Descubrimiento del bosón de Higgs<a class="headerlink" href="#descubrimiento-del-boson-de-higgs" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">6.4.4. </span>Descubrimiento del bosón de Higgs<a class="headerlink" href="#descubrimiento-del-boson-de-higgs" title="Permalink to this heading">#</a></h3>
 <p>El bosón de Higgs se descubrió en 2012 en los experimentos ATLAS y CMS del LHC del CERN.</p>
 <p>Con anterioridad los experimentos de LEP y los experimentos CDF y D0 de Fermilab habían constreñido el valor de su masa más ligera entre: <span class="math notranslate nohighlight">\(115-150\)</span> GeV.</p>
 <p>Los experimentos y el acelerador LHC se diseñaron en los 90’s y su operación se inición a finales de los 2000’s.</p>
@@ -1729,7 +1832,7 @@ m_W = \frac{1}{2} g_W v \Rightarrow v = \frac{2m_W}{g_W} = \sqrt{\frac{1}{\sqrt{
 <p>Los canales de desintegración dónde la señal es más fácil distinguible del fondo son <span class="math notranslate nohighlight">\(H\to Z+Z^*\)</span> y <span class="math notranslate nohighlight">\(H \to \gamma \gamma\)</span>.</p>
 <p>Eso equivale a buscar una desintegración relevante entre <span class="math notranslate nohighlight">\(10^{13}\)</span>.</p>
 <div class="section" id="el-descubrimiento-del-higgs-en-atlas-y-cms">
-<h4><span class="section-number">6.4.3.1. </span>El descubrimiento del Higgs en ATLAS y CMS<a class="headerlink" href="#el-descubrimiento-del-higgs-en-atlas-y-cms" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">6.4.4.1. </span>El descubrimiento del Higgs en ATLAS y CMS<a class="headerlink" href="#el-descubrimiento-del-higgs-en-atlas-y-cms" title="Permalink to this heading">#</a></h4>
 <p>En la figura se muestra el esquema del experimento CMS del LHC:</p>
 <table class="colwidths-auto table">
 <thead>

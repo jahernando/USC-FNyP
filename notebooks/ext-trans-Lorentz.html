@@ -475,8 +475,8 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sobre-la-representacion-espinorial">
-     9.4.1. sobre la representación espinorial
+    <a class="reference internal nav-link" href="#representacion-de-los-campos">
+     9.4.1. representación de los campos
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -595,11 +595,26 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#invariancia-de-la-ec-de-dirac">
-     9.7.2. Invariancia de la ec. de Dirac
+    <a class="reference internal nav-link" href="#interaccion-con-el-campo-electromagnetico">
+     9.7.2. interacción con el campo electromagnético.
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inversion-temporal">
+   9.8. Inversión temporal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inversion-cpt">
+   9.9. Inversión CPT
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transformacion-de-las-formas-bilineales-frente-a-c-p-t">
+   9.10. Transformación de las formas bilineales frente a C, P, T
+  </a>
  </li>
 </ul>
 
@@ -717,8 +732,8 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sobre-la-representacion-espinorial">
-     9.4.1. sobre la representación espinorial
+    <a class="reference internal nav-link" href="#representacion-de-los-campos">
+     9.4.1. representación de los campos
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -837,11 +852,26 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#invariancia-de-la-ec-de-dirac">
-     9.7.2. Invariancia de la ec. de Dirac
+    <a class="reference internal nav-link" href="#interaccion-con-el-campo-electromagnetico">
+     9.7.2. interacción con el campo electromagnético.
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inversion-temporal">
+   9.8. Inversión temporal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inversion-cpt">
+   9.9. Inversión CPT
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transformacion-de-las-formas-bilineales-frente-a-c-p-t">
+   9.10. Transformación de las formas bilineales frente a C, P, T
+  </a>
  </li>
 </ul>
 
@@ -863,7 +893,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Nov 28 14:55:38 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Dec  2 12:47:20 2024
 </pre></div>
 </div>
 </div>
@@ -923,7 +953,7 @@ $<span class="math notranslate nohighlight">\(
 \langle \phi | {\tilde U}^\dagger {\tilde U} | \psi \rangle^ = \langle \phi | \psi \rangle^*
 \end{split}\]</div>
 <p>Ambas dejan invariante la norma <span class="math notranslate nohighlight">\(|\langle \phi | \psi \rangle |^2\)</span>.</p>
-<p>En mecánica cuántica exigiremos que las transformaciones son las unitarias (o anti-unitarias). Un operador unitario cumple:</p>
+<p>En mecánica cuántica exigiremos que las transformaciones son las unitarias (y en ciertos casos anti-unitarias). Un operador unitario cumple:</p>
 <div class="math notranslate nohighlight">
 \[
 U^\dagger U = I, \;\; U^{-1} = U^{\dagger}
@@ -940,7 +970,7 @@ U^\dagger U = I, \;\; U^{-1} = U^{\dagger}
 <p>Podemos entender las transformaciones como activas o pasivas. Las activas transforman el estado, mientras que las pasivas transforman el sistema de referencia.</p>
 <p>Cuando verificamos una simetría de forma activa, verificamos que el comportamiento del estado transformado es el mismo que el original, mientras que de forma pasiva, verificamos que describimos el comportamiento del estado con las mismas ecuaciones en el sistema de coordenadas original y transformadio.</p>
 <p>Si hacemos una rotación activa un punto <span class="math notranslate nohighlight">\({\bf x}\)</span> se traslada a otro punto <span class="math notranslate nohighlight">\({\bf x}'\)</span>, pero los dos los damos en el mismo sistema de coordenadas, <span class="math notranslate nohighlight">\(\{{\bf e}_i\}\)</span>. Mientras que cuando hacemos una rotación pasiva, rotamos los ejes de coordenadas y expresamos un mismo punto <span class="math notranslate nohighlight">\(x\)</span> en el sistema inicial <span class="math notranslate nohighlight">\(\{{\bf e}_i\}\)</span> o rotado <span class="math notranslate nohighlight">\(\{{\bf e}'_i\}\)</span>. En las transformaciones activas pensamos en que un punto se traslada en otro y no en un cambio de coordenadas.</p>
-<p>Asi la rotación activa de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de <span class="math notranslate nohighlight">\(z\)</span> en sentido anti-horario nos dice que el punto original <span class="math notranslate nohighlight">\((1, 0, 0)\)</span> se traslada a <span class="math notranslate nohighlight">\((\cos \theta, \sin \theta, 0)\)</span>. Mientras que una rotación pasiva expresaríamos el mismo punto como <span class="math notranslate nohighlight">\((1, 0, 0)\)</span> en el sistema original y <span class="math notranslate nohighlight">\((\cos \theta, -\sin \theta, 0)\)</span> en el nuevo sistema de coordenadas transformado, rotado respecto al original un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> en sentido anti-horario alrededor del eje <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>Asi la rotación activa de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de <span class="math notranslate nohighlight">\(z\)</span> en sentido anti-horario nos dice que el punto original <span class="math notranslate nohighlight">\((1, 0)\)</span> se traslada a <span class="math notranslate nohighlight">\((\cos \theta, \sin \theta)\)</span>. Mientras que una rotación pasiva expresaríamos el mismo punto como <span class="math notranslate nohighlight">\((1, 0)\)</span> en el sistema original y <span class="math notranslate nohighlight">\((\cos \theta, -\sin \theta)\)</span> en el nuevo sistema de coordenadas transformado, rotado respecto al original un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> en sentido anti-horario alrededor del eje <span class="math notranslate nohighlight">\(z\)</span>.</p>
 <p>Es más natural introducir las transformaciones de Lorentz desde un punto de vista pasivo, como cambio de coordenadas, pero resulta más conveniente tomar un punto de vista activo cuando se trabaja con conceptos más abstractos como campos.</p>
 <p>En la literatura aparecen las transformaciones activas y pasivas y a veces no se indica de cuál se trata. Es importante saber siempre con qué tipo de transformación se está trabajando. Nosotros usaremos transformaciones activas.</p>
 </div>
@@ -1042,7 +1072,7 @@ U_I | \psi_1 \psi_2 \rangle = U_I |\psi_1 \psi_2 \rangle = (U_I |\psi_1 \rangle)
 </div>
 <div class="section" id="id1">
 <h2><span class="section-number">9.3. </span>Transformaciones de Lorentz<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>Recordemos que las transformaciones de Lorentz son aquellas que conservan el producto escalar de los cuadri-vectores usando la métrica de Minkowski, y que se representan con matrices que denotamos como <span class="math notranslate nohighlight">\(\Lambda\)</span>.</p>
+<p>Las transformaciones de Lorentz son transformaciones del espacio-tiempo, que preservan el producto escalar de los cuadri-vectores usando la métrica de Minkowski, y que en el espacio-tiempo se representan con matrices que denotamos como <span class="math notranslate nohighlight">\(\Lambda\)</span>.</p>
 <p>La transformación de un caudri-vector, <span class="math notranslate nohighlight">\(x^\mu\)</span>, o de un cuadri-momento, <span class="math notranslate nohighlight">\(p^\mu\)</span>, viene dada por:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1116,6 +1146,7 @@ y en este caso no hay conexión continua con la identidad.</p>
                  \gamma \beta &amp; 0 &amp; 0 &amp; \gamma 
 \end{pmatrix}
 \end{split}\]</div>
+<p>En una rotación activa alredor del eje <span class="math notranslate nohighlight">\(z\)</span> rotamos un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> en sentido antihorario, lo que lleva al punto original <span class="math notranslate nohighlight">\((1, 0, 0)\)</span> en <span class="math notranslate nohighlight">\((x, y, z)\)</span> a transformarse en <span class="math notranslate nohighlight">\((\cos \theta, \sin \theta, 0)\)</span>.</p>
 <p>En un boost activo convertimos una partícula en reposo, con cuadri-momento <span class="math notranslate nohighlight">\(p = (m, {\bf 0})\)</span>, en una partícula en movimiento con velocidad <span class="math notranslate nohighlight">\(\beta\)</span> en dirección <span class="math notranslate nohighlight">\(\hat{{\bf v}}\)</span> cuyo cuadrimomento es <span class="math notranslate nohighlight">\(p' = (E, {\bf p}) = (\gamma m, \gamma \beta \hat{{\bf v}}\)</span>).</p>
 <p>El cambio de una transformación activa a pasiva -y viceversa- implica cambiar <span class="math notranslate nohighlight">\(\theta \to - \theta\)</span> y <span class="math notranslate nohighlight">\(\beta \to -\beta\)</span> en las matrices de sus representaciones.</p>
 <p><em>Ejercicio:</em> Comprueba <span class="math notranslate nohighlight">\(\Lambda^T g \Lambda = g, \;\; \Lambda^{-1}  \Lambda  = I\)</span> con las representaciones de <span class="math notranslate nohighlight">\(\Lambda(\theta)\)</span> y <span class="math notranslate nohighlight">\(\Lambda(\beta)\)</span></p>
@@ -1307,14 +1338,18 @@ K_3 = -i\begin{pmatrix} 0   &amp; 0 &amp; 0 &amp; 1 \\
 </div>
 <div class="section" id="representacion-espinorial">
 <h2><span class="section-number">9.4. </span>Representación espinorial<a class="headerlink" href="#representacion-espinorial" title="Permalink to this heading">#</a></h2>
-<p>En esta sección vamos a construir la representación espinorial de las rotaciones y <em>boost</em> del grupo de Lorentz.</p>
-<p>Esto es para cada transformación de Lorentz <span class="math notranslate nohighlight">\(\Lambda\)</span>, existe una matrix <span class="math notranslate nohighlight">\(S(\Lambda)\)</span>, de tal forma que el espinor de dirac, <span class="math notranslate nohighlight">\(\Psi(x)\)</span> transforma bajo Lorentz como:</p>
+<p>Los campos que componen las física de partículas tienen naturaleza escalar, vectorial, y espinorial.</p>
+<p>Este último corresponde a las soluciones de la ec. de Dirac, que son vectores de 4 componentes con elementos complejos.</p>
+<p>Conocemos como se transforman los campos escalares y vectoriales.</p>
+<p>La cuestión es ¿cómo lo hacen los campos espinoriales?</p>
+<p>Los espinores van a tener asociada una representación en su espacio vectorial de las transformaciones de Lorentz.
+Esto es para una transformación de Lorentz con matriz <span class="math notranslate nohighlight">\(\Lambda\)</span> en el espacio-tiempo le corresponde una matrix <span class="math notranslate nohighlight">\(S(\Lambda)\)</span> en el espacio spinorial (complejo de 4 dimensiones). Esto es:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi(x) \to \Psi'(x) = S(\Lambda) \, \Psi(\Lambda^{-1} x)
 \]</div>
-<div class="section" id="sobre-la-representacion-espinorial">
-<h3><span class="section-number">9.4.1. </span>sobre la representación espinorial<a class="headerlink" href="#sobre-la-representacion-espinorial" title="Permalink to this heading">#</a></h3>
+<div class="section" id="representacion-de-los-campos">
+<h3><span class="section-number">9.4.1. </span>representación de los campos<a class="headerlink" href="#representacion-de-los-campos" title="Permalink to this heading">#</a></h3>
 <p>Recordemos que si hacemos una transformación activa, esto es transformamos los campos manteniendo las coordenadas, un campo escalar, <span class="math notranslate nohighlight">\(\phi(x)\)</span>, y otro vectorial, <span class="math notranslate nohighlight">\(A^\mu(x)\)</span>, transforman de la siguiente manera:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1330,7 +1365,8 @@ A'^\mu(x) = \Lambda^{\mu}_{\;\; \nu} \, A^{\nu} (\Lambda^{-1} x)
 \[
 \Psi'(x) = S(\Lambda) \, \Psi( \Lambda^{-1}x)
 \]</div>
-<p>Al ser <span class="math notranslate nohighlight">\(S(\Lambda)\)</span> una matriz de cumple que la transformación que corresponde a dos transformaciones consecutivas <span class="math notranslate nohighlight">\(\Lambda = \Lambda_2 \Lambda_1\)</span>  es:</p>
+<p>La representación espinorial debe cumplir las mismas reglas multiplicativas del grupo de Lorentz en el espacio-tiempo.</p>
+<p>La transformación que corresponde a dos transformaciones consecutivas <span class="math notranslate nohighlight">\(\Lambda = \Lambda_2 \Lambda_1\)</span>  es:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi'(x) = S(\Lambda) \, \Psi( \Lambda^{-1} x) = S(\Lambda_2) S(\Lambda_1) \, \Psi(\Lambda_1^{-1} \Lambda_2^{-1} x) 
@@ -1339,7 +1375,8 @@ A'^\mu(x) = \Lambda^{\mu}_{\;\; \nu} \, A^{\nu} (\Lambda^{-1} x)
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \Lambda \to S(\Lambda), \\
-\Lambda  =\Lambda_2 \,\Lambda_1 \to S(\Lambda) = S(\Lambda_2) \, S(\Lambda_1)
+\Lambda  =\Lambda_2 \,\Lambda_1 \to S(\Lambda) = S(\Lambda_2) \, S(\Lambda_1), \\
+\Lambda^{-1} \,\Lambda = I  \to S(\Lambda^{-1}) \, S(\Lambda) = I
 \end{split}\]</div>
 <p>A cada transformación de Lorentz le corresponde una matriz en el espacio espinorial que la representa, y la matriz que representa la sucesión de las dos transformaciones es el producto de las matrices de cada transformación por separado.</p>
 <p>A partir de ahora no explicitaremos la dependencia de <span class="math notranslate nohighlight">\(S\)</span> con <span class="math notranslate nohighlight">\(\Lambda\)</span> por simplicidad.</p>
@@ -1462,7 +1499,7 @@ S(\theta) = I +i \theta \, J^S_3
 \[\begin{split}
 S^{-1} \gamma^0 S =  \gamma^0  \\
 S^{-1}\gamma^1 S = \gamma^1 - \theta \, \gamma^2 \\
-S^{-1}\gamma^2 S = \theta \, \gamma^1 + \gamma^2 \\
+S^{-1}\gamma^2 S = \theta \, \gamma^1  + \gamma^2 \\
 S^{-1 }\gamma^3 S = \gamma^3 \\
 \end{split}\]</div>
 <p>Vemos que <span class="math notranslate nohighlight">\(S\)</span> , y por lo tanto <span class="math notranslate nohighlight">\(J^S_3\)</span> deben conmutar con <span class="math notranslate nohighlight">\(\gamma^0, \, \gamma^3\)</span>, luego podemos suponer que:</p>
@@ -1489,7 +1526,7 @@ J^S_3 = -\alpha i \gamma^1\gamma^2
 <p>Obtenemos que:</p>
 <div class="math notranslate nohighlight">
 \[
-J^S_3 = -\frac{1}{2} i \gamma^1\gamma^2 
+J^S_3 = - \frac{1}{2} i \gamma^1\gamma^2 
 \]</div>
 <p>Los generadores, <span class="math notranslate nohighlight">\(J_s, K_3\)</span> en la representación de Pauli-Dirac.</p>
 <div class="math notranslate nohighlight">
@@ -1499,12 +1536,12 @@ K^S_3  = -\frac{1}{2}  i \gamma^0 \gamma^3 = -\frac{1}{2} i \begin{pmatrix} I &a
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-J^S_3 = -\frac{1}{2} i \gamma^1\gamma^2 = -\frac{1}{2} i \begin{pmatrix} 0 &amp; \sigma_1  \\ -\sigma_1 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; \sigma_2  \\ -\sigma_2 &amp; 0 \end{pmatrix} =  - \frac{1}{2} \begin{pmatrix}  \sigma_3 &amp; 0  \\ 0 &amp;  \sigma_3 \end{pmatrix} = - \frac{1}{2}\Sigma_3
+J^S_3 = - \frac{1}{2} i \gamma^1\gamma^2 = - \frac{1}{2} i \begin{pmatrix} 0 &amp; \sigma_1  \\ -\sigma_1 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; \sigma_2  \\ -\sigma_2 &amp; 0 \end{pmatrix} = -  \frac{1}{2} \begin{pmatrix}  \sigma_3 &amp; 0  \\ 0 &amp;  \sigma_3 \end{pmatrix} =  - \frac{1}{2}\Sigma_3
 \end{split}\]</div>
 <p>De forma similar daríamos el resto de rotaciones y boost, obtenemos</p>
 <div class="math notranslate nohighlight">
 \[
-K^S_i = -\frac{1}{2}i \gamma^0\gamma^i, \;\; J^S_k = -\epsilon_{ijk} \, \frac{1}{2} i \gamma^i\gamma^k
+K^S_i = -\frac{1}{2}i \gamma^0\gamma^i, \;\; J^S_k = -\epsilon_{ijk} \, \frac{1}{2} i \gamma^i\gamma^j
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(i \lt j, \, i, j = 1, 2, 3\)</span>.</p>
 <p>De tal forma que recuperamos los generadores en <span class="math notranslate nohighlight">\(z\)</span> y podemos dar además los de <span class="math notranslate nohighlight">\(x, y\)</span>.</p>
@@ -1597,7 +1634,7 @@ S(\theta) = e^{i \theta J^S_s} = e^{-i \theta S_3} = e^{-i \frac{\theta}{2} \Sig
 <p>A partir de:</p>
 <div class="math notranslate nohighlight">
 \[
-S(\theta) = e^{-i \frac{\theta}{2} \Sigma_3} = \sum_{k=0} \frac{1}{k!} \left(\frac{i\theta}{2} \right)^k  (\Sigma_3)^k
+S(\theta) = e^{-i \frac{\theta}{2} \Sigma_3} = \sum_{k=0} \frac{1}{k!} \left(\frac{-i\theta}{2} \right)^k  (\Sigma_3)^k
 \]</div>
 <p>separando en términos pares e impares</p>
 <div class="math notranslate nohighlight">
@@ -1617,7 +1654,7 @@ S(\theta) = \begin{pmatrix} e^{-i\frac{\theta}{2} \sigma_3} &amp; 0 \\ 0 &amp; e
 <p>Para una rotación de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de un eje dado por <span class="math notranslate nohighlight">\(\hat{{\bf n}}\)</span> en sentido anti-horario, la expresión de <span class="math notranslate nohighlight">\(S\)</span> es:</p>
 <div class="math notranslate nohighlight">
 \[
-S(\theta \, \hat{\bf n}) = e^{i\frac{\theta}{2} \hat{\bf n} \, {\bf \Sigma}} = \cos \frac{\theta}{2} I - i \sin \frac{\theta}{2} (\hat{\bf n} \cdot {\bf \Sigma})  
+S(\theta \, \hat{\bf n}) = e^{-i\frac{\theta}{2} \hat{\bf n} \, {\bf \Sigma}} = \cos \frac{\theta}{2} I - i \sin \frac{\theta}{2} (\hat{\bf n} \cdot {\bf \Sigma})  
 \]</div>
 <p>O simplemente:</p>
 <div class="math notranslate nohighlight">
@@ -1626,6 +1663,7 @@ S(\theta \, \hat{\bf n})  = \begin{pmatrix} e^{-i\frac{\theta}{2} \, (\hat{{\bf 
 \end{split}\]</div>
 <p>Vemos que para <span class="math notranslate nohighlight">\(\theta = 2 \pi\)</span> tenemos <span class="math notranslate nohighlight">\(S(2\pi ) = -I\)</span>, y que hacen falta dos vueltas completas, <span class="math notranslate nohighlight">\(\theta = 4 \pi\)</span>, para regresar a la identidad <span class="math notranslate nohighlight">\(S(4\pi) = I\)</span>.</p>
 <p>¡La rotación de un espinor es diferente a la de un vector!</p>
+<p>El nombre de espinor viene precisamente del hecho de hacen falta dos vueltas completas para regresar al estado original.</p>
 <p>También observamos que los dos bi-espinores del espinor de Dirac se transforman igual pero independientemente, sin afectar uno a otro.</p>
 <p>La siguiente figura muestra un dibujo de Escher en el que una hormiga (el espín) tiene que realizar dos vueltas (<span class="math notranslate nohighlight">\(4\pi\)</span> para el espín) en la cinta de Moebius para regresar a su estado inicial. Si la hormiga solo da una vuelta, queda invertida, igual que el espín bajo una rotación de <span class="math notranslate nohighlight">\(2\pi\)</span>.</p>
 <table class="colwidths-auto table">
@@ -1643,18 +1681,18 @@ S(\theta \, \hat{\bf n})  = \begin{pmatrix} e^{-i\frac{\theta}{2} \, (\hat{{\bf 
 <p>Recopilemos: de forma genérica podemos dar ahora la representación <span class="math notranslate nohighlight">\(S\)</span> de una rotación <span class="math notranslate nohighlight">\(\theta\)</span> alrededor de un eje <span class="math notranslate nohighlight">\(\hat{{\bf n}}\)</span> en sentido anti-horario y un boost de rapidez <span class="math notranslate nohighlight">\(\eta\)</span> en dirección <span class="math notranslate nohighlight">\(\hat{{\bf v}}\)</span> como:</p>
 <div class="math notranslate nohighlight">
 \[
-S(\theta \, \hat{{\bf n}}, \, \eta \hat{{\bf v}}) = e^{-i \theta \, \hat{{\bf n}} \cdot {\bf S} + i \eta \, \hat{{\bf v}} \cdot {\bf K^S} }
+S(\theta \, \hat{{\bf n}}, \, \eta \hat{{\bf v}}) = e^{+i \theta \, \hat{{\bf n}} \cdot {\bf S} + i \eta \, \hat{{\bf v}} \cdot {\bf K^S} }
 \]</div>
 <p><em>Ejercicio:</em> A partir de las expresiones de los generadores en la representación Pauli-Dirac comprueba las reglas de conmutación:</p>
 <div class="math notranslate nohighlight">
 \[
 [S_i, S_j] =  i\epsilon_{ijk} S_k, \; [K^S_i, K^S_j] = -i\epsilon_{ijk} S_k, \; [S_i, K^S_j] = i\epsilon_{ijk} K^S_k
 \]</div>
-<p><em>Ejercicio:</em> Rota el espinor en reposo <span class="math notranslate nohighlight">\(u_s(m)\)</span> respecto al eje <span class="math notranslate nohighlight">\(y\)</span> por un ángulo <span class="math notranslate nohighlight">\(\theta\)</span>, y verfica que se trata del espinor cuyo espín entá alineado en la dirección donde queda el vector <span class="math notranslate nohighlight">\({\hat k}\)</span> tras la rotación.</p>
+<p><em>Ejercicio:</em> Rota el espinor en reposo <span class="math notranslate nohighlight">\(u_1(m)\)</span> respecto al eje <span class="math notranslate nohighlight">\(y\)</span> por un ángulo <span class="math notranslate nohighlight">\(\theta\)</span>, y verifica que se trata del espinor cuyo espín entá alineado en la dirección donde queda el vector <span class="math notranslate nohighlight">\({\hat k}\)</span> tras la rotación.</p>
 </div>
 <div class="section" id="no-unitariedad-de-los-boosts">
 <h3><span class="section-number">9.4.4. </span>No unitariedad de los <em>boosts</em><a class="headerlink" href="#no-unitariedad-de-los-boosts" title="Permalink to this heading">#</a></h3>
-<p>Una último apunte importante: <em>Las transformaciones por boost no son unitarias</em>, pero sí las rotaciones.</p>
+<p>Una último apunte importante: <em>Las transformaciones de los boost no son unitarias</em>, pero sí las rotaciones.</p>
 <p>Para que la transformación, <span class="math notranslate nohighlight">\(S\)</span>, sea unitaria debe cumplir</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1670,14 +1708,14 @@ S(\Lambda^{-1}) \, S(\Lambda) = I, \;\; S(\Lambda^{-1}) = S^{-1}(\Lambda)
 $<span class="math notranslate nohighlight">\(
 S^\dagger(\eta) = 
 I + \frac{\eta}{2} (\gamma^0 \gamma^1)^\dagger = I + \frac{\eta}{2} (\gamma^1)^\dagger (\gamma^0)^\dagger = \\
-I + \frac{\eta}{2} (-\gamma^1)(\gamma^0) = I + \frac{1}{2} (\gamma^0\gamma^i) = S(\eta)
+I + \frac{\eta}{2} (-\gamma^1)(\gamma^0) = I + \frac{\eta}{2} (\gamma^0\gamma^i) = S(\eta)
 \)</span>$</p>
 <p>Luego:</p>
 <div class="math notranslate nohighlight">
 \[
  S^{-1}(\eta) \neq S^\dagger(\eta)
 \]</div>
-<p>Esto tendrá consecuencias relevantes cuando más tarde, cuando veamos que el término <span class="math notranslate nohighlight">\(\Psi^\dagger(x) \Psi(x)\)</span> aunque invariante Lorentz no respeta unitariedad.</p>
+<p>Esto tendrá consecuencias relevantes dado que el término <span class="math notranslate nohighlight">\(\Psi^\dagger(x) \Psi(x)\)</span> no será invariante Lorentz.</p>
 <p>Sin embargo, las rotaciones sí respetan unitariedad:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1740,7 +1778,7 @@ S^{-1}(\eta) = S(-\eta) \neq S^\dagger (\eta)
 \bar{\Psi}(x) = (\psi^*_1(x), \psi^*_2(x), -\psi^*_3(x), -\psi^*_4(x)),
 \]</div>
 <p>que tiene forma de vector fila.</p>
-<p>Veremos ahora que término <span class="math notranslate nohighlight">\(\bar{\Psi}(x)\Psi(x)\)</span> es un invariante Lorentz y es unitario, y está asociado a la masa de la partícula.</p>
+<p>Veremos ahora que término <span class="math notranslate nohighlight">\(\bar{\Psi}(x)\Psi(x)\)</span> es un invariante Lorentz y es unitario.</p>
 <p>Hemos visto que para boosts, <span class="math notranslate nohighlight">\(S(\eta)\)</span> no es unitaria, pero que <span class="math notranslate nohighlight">\(S(\theta)\)</span>, asociada a las rotaciones, sí lo es.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1758,7 +1796,7 @@ S^{-1}(\theta) = \gamma^0 S^\dagger(\theta) \gamma^0 = S^\dagger(\theta)
 \Psi^\dagger(y) \gamma^0 \Psi(y) = \bar{\Psi}(y) \Psi(y)
 \end{split}\]</div>
 <p>donde <span class="math notranslate nohighlight">\(y = \Lambda^{-1} x\)</span>.</p>
-<p><em>Cuestión</em>: Verifica que <span class="math notranslate nohighlight">\(\bar{\Psi}(x) \Psi(x) = 2 m\)</span>, para las soluciones de la ec. de Dirac.</p>
+<p><em>Cuestión</em>: Verifica que <span class="math notranslate nohighlight">\(\bar{\Psi}(x) \Psi(x) = 2 m\)</span>, (por convención) para las soluciones de la ec. de Dirac.</p>
 </div>
 <div class="section" id="corriente-fermionica">
 <h3><span class="section-number">9.5.2. </span>Corriente fermiónica<a class="headerlink" href="#corriente-fermionica" title="Permalink to this heading">#</a></h3>
@@ -1831,7 +1869,7 @@ $<span class="math notranslate nohighlight">\(
 \[
 \Psi(x) \to \Psi(x^0, {\bf x}) = S(P) \, \Psi(x^0, -{\bf x})
 \]</div>
-<p>debe cumplir (por las condiciones de las matrices <span class="math notranslate nohighlight">\(S\)</span>, ver extensión [ext-trans-Lorentz]):</p>
+<p>debe cumplir (por las condiciones de las matrices <span class="math notranslate nohighlight">\(S\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 S^{-1}\gamma^0 S = \gamma^0,  \\
@@ -1964,11 +2002,18 @@ S^{-1} \gamma^5 S = \gamma^5, \;\; \gamma^5 S = S \gamma^5
 </div>
 <div class="section" id="inversion-de-carga">
 <h2><span class="section-number">9.7. </span>Inversión de carga<a class="headerlink" href="#inversion-de-carga" title="Permalink to this heading">#</a></h2>
+<p>La inversión de carga consiste en invertir las cargas de una partícula.</p>
+<div class="math notranslate nohighlight">
+\[
+q \to -q
+\]</div>
+<p>pero no cambiamos las coordenadas <span class="math notranslate nohighlight">\(t, {\bf x}\)</span>.</p>
+<p>Esta inversión es la misma que cambiar partícula por antipartícula. Dado que las antipartículas son partículas con las cargas opuestas.</p>
 <div class="section" id="id4">
 <h3><span class="section-number">9.7.1. </span>representación espinorial<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
-<p>La operación de inversión de carga debe cambiar las soluciones de Dirac de fermiones a anti-fermiones, <span class="math notranslate nohighlight">\(\Psi(x) \to \Phi(x)\)</span> (con la excepción de una posible fase).</p>
+<p>La operación de inversión de carga cambia las soluciones de Dirac de fermiones a anti-fermiones, <span class="math notranslate nohighlight">\(\Psi(x) \to \Phi(x)\)</span> (con la excepción de una posible fase).</p>
 <p>Para cambiar la parte espacio-temporal, la operación debe incluir el complejo conjugado.</p>
-<p>La operación de carga debe tener la expresión:</p>
+<p>La operación de carga tiene la expresión:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi(x) \to S(C) \, \Psi^*(x)
@@ -2021,8 +2066,8 @@ i \gamma^2 = i \begin{pmatrix} 0 &amp;  0 &amp;  0 &amp;  -i \\
 \end{split}\]</div>
 <p><em>Ejercicio:</em> Verifica que la conjugación de carga cambia <span class="math notranslate nohighlight">\(\Psi_i(x) \to \Phi_i(x)\)</span>. Usa los espinores autoestados de helicidad que se deplazan en la dirección <span class="math notranslate nohighlight">\(z\)</span></p>
 </div>
-<div class="section" id="invariancia-de-la-ec-de-dirac">
-<h3><span class="section-number">9.7.2. </span>Invariancia de la ec. de Dirac<a class="headerlink" href="#invariancia-de-la-ec-de-dirac" title="Permalink to this heading">#</a></h3>
+<div class="section" id="interaccion-con-el-campo-electromagnetico">
+<h3><span class="section-number">9.7.2. </span>interacción con el campo electromagnético.<a class="headerlink" href="#interaccion-con-el-campo-electromagnetico" title="Permalink to this heading">#</a></h3>
 <p>Para incluir la interacción del fermión con carga <span class="math notranslate nohighlight">\(q\)</span> con un campo electromagnético <span class="math notranslate nohighlight">\(A_\mu\)</span> modificamos de forma mínima la ecuación de Dirac:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2047,6 +2092,136 @@ i\gamma^2 \left[-i (\gamma^\mu)^* \partial_\mu - q (\gamma^\mu)^* A_\mu - m \rig
 \left[i\gamma^\mu(i\partial_\mu + q A_\mu) -m \right] \Phi(x) = 0
 \]</div>
 </div>
+</div>
+<div class="section" id="inversion-temporal">
+<h2><span class="section-number">9.8. </span>Inversión temporal<a class="headerlink" href="#inversion-temporal" title="Permalink to this heading">#</a></h2>
+<p>La inversión temporal nos cambia <span class="math notranslate nohighlight">\(t \to -t\)</span>, no cambia las coordenadas <span class="math notranslate nohighlight">\({\bf x} \to {\bf x}\)</span> pero si el momento <span class="math notranslate nohighlight">\({\bf p} \to -{\bf p}\)</span>.</p>
+<p>El tratamiento en mecánica cuántica de la inversión temporal require cierto cuidado matemático. Se trata de una transformación anti-unitaria, que podemos descomponer en dos, una transformación unitaria, <span class="math notranslate nohighlight">\(T\)</span>, y la toma del complejo conjugado:</p>
+<div class="math notranslate nohighlight">
+\[
+\psi(t, {\bf x}) \to T \, \psi^*(-t, {\bf x})
+\]</div>
+<p>Para las soluciones de la ec. de Dirac tendremos</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi(t, {\bf x}) \to S(T)  \, \Psi^*(-t, {\bf x})
+\]</div>
+<p>Si partimos de que le ec. de Dirac debe ser válida para el estado transformado:</p>
+<div class="math notranslate nohighlight">
+\[
+(i \gamma^\mu \partial_\mu -m) \, S \, \Psi^*(-t, {\bf x}) = 0
+\]</div>
+<p>multiplicando por <span class="math notranslate nohighlight">\(S^{-1}\)</span> por la izquierda obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+[i (S^{-1} \gamma^\mu S) \partial_\mu -m] \, \Psi^*(-t, {\bf x}) = 0
+\]</div>
+<p>si partimos inicialmente de la ec. de Dirac, tomamos su complejo conjugado</p>
+<div class="math notranslate nohighlight">
+\[
+(-i (\gamma^\mu)^* \partial_\mu - m) \Psi^*(t, {\bf x})
+\]</div>
+<p>si cambiamos ahora <span class="math notranslate nohighlight">\(t \to -t\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+(-i \Lambda^\mu_{\;\;\nu} (\gamma^\nu)^*  \partial_\mu - m) \Psi^*(-t, {\bf x})
+\]</div>
+<p>donde:
+$<span class="math notranslate nohighlight">\(
+\Lambda^\mu_{\;\;\nu} = \begin{pmatrix} -1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1  \end{pmatrix}
+\)</span>$</p>
+<p>Luego la condición de <span class="math notranslate nohighlight">\(S\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+S^{-1} \gamma^\mu S = - \Lambda^\mu_{\;\;\nu} (\gamma^\nu)^*
+\]</div>
+<p>que se traduce, en la representación de Pauli-Dirac, en:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S^{-1}\gamma^0 S =  \gamma^0, \\
+S^{-1}\gamma^1 S = - \gamma^1, \\
+S^{-1}\gamma^2 S = \gamma^2, \\
+S^{-1}\gamma^3 S = - \gamma^3.
+\end{split}\]</div>
+<p>que admite como solución:</p>
+<div class="math notranslate nohighlight">
+\[
+S = i\gamma^1\gamma^3
+\]</div>
+<p>Así la inversión por tiempo es:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi(t, {\bf x}) \to i\gamma^1 \gamma^3 \Psi^*(-t, {\bf x})
+\]</div>
+</div>
+<div class="section" id="inversion-cpt">
+<h2><span class="section-number">9.9. </span>Inversión CPT<a class="headerlink" href="#inversion-cpt" title="Permalink to this heading">#</a></h2>
+<p>El teorema CPT de QFT afirma que todo lagrangiano invariante Lorentz, local y hermítico, es invariante bajo la inversión conjunta de tiempo, paridad y carga, o CPT.</p>
+<p>La consecuencia de dicho teorema es que la partículas y antipartículas tienen la carga opuesta, misma masa y mismo tiempo de vida media, lo que se ha confirmado experimentalmente hasta la fecha.</p>
+<p>Luego CPT es una inversión exacta en la Naturaleza.</p>
+<p>También implica que una violación de una de ellas implica a las otras dos, esto es, si se viola <span class="math notranslate nohighlight">\(P\)</span> se viola <span class="math notranslate nohighlight">\(CT\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+P \leftrightarrow CT, \;\; CP \leftrightarrow T
+\]</div>
+<p>En el caso de los espinores de Dirac, la inversión combinada queda:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+CPT : \Psi(t, {\bf x}) \to CP : i\gamma^1 \gamma^3 \Psi^*(-t, {\bf x})  \\ 
+\to C: -i \gamma^0 \gamma^1 \gamma^3 \Psi^*(-t, -{\bf x}) \\ \to \gamma^2 \gamma^0 \gamma^1 \gamma^3 \Psi(-t, -{\bf x}) =  \gamma^5 \Psi(-t, -{\bf x}) 
+\end{split}\]</div>
+</div>
+<div class="section" id="transformacion-de-las-formas-bilineales-frente-a-c-p-t">
+<h2><span class="section-number">9.10. </span>Transformación de las formas bilineales frente a C, P, T<a class="headerlink" href="#transformacion-de-las-formas-bilineales-frente-a-c-p-t" title="Permalink to this heading">#</a></h2>
+<p>Podemos dar la tabla de las transformaciones de las formas bilineales (a excepción de unas fases):</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>C</p></td>
+<td class="text-align:center"><p>P</p></td>
+<td class="text-align:center"><p>T</p></td>
+<td class="text-align:center"><p>CPT</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(x\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(x\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(t, -{\bf x}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((-t, {\bf x})\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-x\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(S \equiv \bar{\Psi}(x) \Psi(x)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(S\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(S\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(S\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(S\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(P \equiv \bar{\Psi}(x) \gamma^5 \Psi(x)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(P\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-P\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(-P\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(P\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(V^\mu \equiv \bar{\Psi} \gamma^\mu \Psi\)</span></p></td>
+<td class="text-align:center"><p>-<span class="math notranslate nohighlight">\(V^\mu\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(V_\mu\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(V_\mu\)</span></p></td>
+<td class="text-align:center"><p>- <span class="math notranslate nohighlight">\(V^\mu\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(A^\mu \equiv \bar{\Psi} \gamma^\mu \gamma^5\Psi\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(A^\mu\)</span></p></td>
+<td class="text-align:center"><p>-<span class="math notranslate nohighlight">\(A_\mu\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(A_\mu\)</span></p></td>
+<td class="text-align:center"><p>-<span class="math notranslate nohighlight">\(A^\mu\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

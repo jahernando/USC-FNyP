@@ -497,8 +497,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-representacion-weyl-o-quiral">
+     8.5.2. La representación Weyl o quiral
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#la-norma-y-la-corriente-bajo-quiralidad">
-     8.5.2. la norma y la corriente bajo quiralidad
+     8.5.3. la norma y la corriente bajo quiralidad
     </a>
    </li>
   </ul>
@@ -641,8 +646,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-representacion-weyl-o-quiral">
+     8.5.2. La representación Weyl o quiral
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#la-norma-y-la-corriente-bajo-quiralidad">
-     8.5.2. la norma y la corriente bajo quiralidad
+     8.5.3. la norma y la corriente bajo quiralidad
     </a>
    </li>
   </ul>
@@ -667,7 +677,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Nov 28 15:23:06 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Dec  2 12:47:15 2024
 </pre></div>
 </div>
 </div>
@@ -818,8 +828,8 @@ E = (\gamma^0)^\dagger m + (\gamma^0 \gamma^k)^\dagger p_k, \\
 </div>
 <div class="section" id="el-espinor-adjunto-la-norma-y-la-corriente">
 <h2><span class="section-number">8.3. </span>El espinor adjunto, la norma y la corriente<a class="headerlink" href="#el-espinor-adjunto-la-norma-y-la-corriente" title="Permalink to this heading">#</a></h2>
-<p>En mecánica cuántica nuestra función de ondas esta normalizada, y todas transformación válida debe preservar la norma, y además existe una corriente de probabilidad.</p>
-<p>Vamos a identificar la norma y la corriente para los soluciones de la ec. de Dirac, pero para ello necesitamos introducir antes el espinor adjunto.</p>
+<p>En mecánica cuántica nuestra función de ondas esta normalizada, toda transformación física preserva la norma. Además exite una corriente de probabilidad que cumple la ecuación de continuidad.</p>
+<p>Vamos a identificar ahora la norma y la corriente para los soluciones de la ec. de Dirac, pero para ello necesitamos introducir antes el espinor adjunto.</p>
 <div class="section" id="el-espinor-adjunto">
 <h3><span class="section-number">8.3.1. </span>El espinor adjunto<a class="headerlink" href="#el-espinor-adjunto" title="Permalink to this heading">#</a></h3>
 <p>Definimos el espinor adjunto como:</p>
@@ -836,8 +846,7 @@ E = (\gamma^0)^\dagger m + (\gamma^0 \gamma^k)^\dagger p_k, \\
 </div>
 <div class="section" id="la-ecuacion-de-dirac-para-el-espinor-adjunto">
 <h3><span class="section-number">8.3.2. </span>La ecuación de Dirac para el espinor adjunto<a class="headerlink" href="#la-ecuacion-de-dirac-para-el-espinor-adjunto" title="Permalink to this heading">#</a></h3>
-<p>Vamos a determinar la ecuación de Dirac para el espinor adjunto.</p>
-<p>para ello, aplicamos primero el transpuesto conjugado a la ec. de Dirac:</p>
+<p>La ec. de Dirac para el espinor adjunto se obtiene tras aplicar el transpuesto conjugado a la ec. de Dirac:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 - i \partial_\mu \Psi^\dagger \, (\gamma^\mu)^\dagger - m \Psi^\dagger = 0 \\
@@ -864,7 +873,7 @@ i\partial_\mu \bar{\Psi} \, \gamma^\mu + m \bar{\Psi}= 0
 \[
 \bar{\Psi}(x)\Psi(x)
 \]</div>
-<p>que se trata de un escalar Lorentz, preserva unitariedad (ver sección [ext-trans-Lorents]) y cuyo valor (por convencción) se toma como <span class="math notranslate nohighlight">\(2m\)</span>.</p>
+<p>que se trata de un escalar Lorentz, preserva unitariedad (ver extensión]y cuyo valor (por convención) se toma como <span class="math notranslate nohighlight">\(2m\)</span>.</p>
 </div>
 <div class="section" id="corriente-fermionica-de-probabilidad">
 <h3><span class="section-number">8.3.4. </span>Corriente fermiónica de probabilidad<a class="headerlink" href="#corriente-fermionica-de-probabilidad" title="Permalink to this heading">#</a></h3>
@@ -1493,8 +1502,50 @@ P_R = \frac{1}{2}\begin{pmatrix} I &amp; I \\ I &amp; I \end{pmatrix}, \;\;\;
 P_L = \frac{1}{2}\begin{pmatrix} I &amp; -I \\ -I &amp; I \end{pmatrix},
 \end{split}\]</div>
 </div>
+<div class="section" id="la-representacion-weyl-o-quiral">
+<h3><span class="section-number">8.5.2. </span>La representación Weyl o quiral<a class="headerlink" href="#la-representacion-weyl-o-quiral" title="Permalink to this heading">#</a></h3>
+<p>Vamos a considerar la representación de Weyl (o quiral) de las matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix}, \;\;
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0 \end{pmatrix}, \;\;
+\gamma^5 = \begin{pmatrix} -I &amp; 0 \\ 0 &amp; I \end{pmatrix}
+\end{split}\]</div>
+<p>Con lo que que:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_L = \begin{pmatrix} I &amp; 0 \\ 0 &amp; 0 \end{pmatrix}, \;
+P_R = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; I \end{pmatrix} \;
+\end{split}\]</div>
+<p>Esto es el espinor de Dirac está compuesto de dos bi-espinores, <span class="math notranslate nohighlight">\(u_L, u_R\)</span>, llamados de Weyl, que corresponden con la parte de quiralidad a izquierdas y a derechas del espinor de Dirac.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u(p) = \begin{pmatrix} u_L(p) \\ u_R(p)\end{pmatrix}
+\end{split}\]</div>
+<p>Si ahora consideramos el caso revelador de un fermión sin masa <span class="math notranslate nohighlight">\(m=0\)</span>, la ec. de Dirac queda:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^\mu p_\mu \, u(p) = 0
+\]</div>
+<p>que se descompone en dos ecuaciones independientes:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(E - {\bf p} \cdot \vec{\sigma}) \, u_R(p) = 0, \\
+(E + {\bf p} \cdot \vec{\sigma}) \, u_L(p) = 0.
+\end{split}\]</div>
+<p>Esto es, el espinor de Dirac se compone de dos espinores de Weyl independientes.</p>
+<p>O en otras palabras, es el término de masa en la ec. de Dirac, la que hace que los dos espinores de Weyl estén conectados.</p>
+<p>dado que <span class="math notranslate nohighlight">\(E = \text{p}\)</span>, donde <span class="math notranslate nohighlight">\({\bf p} = \text{p} \hat{\bf v}\)</span>, estas ecuaciones son equivalentes a:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(\hat{\bf v} \cdot \vec{\sigma}) \; u_R(p) = + u_R(p), \\ (\hat{\bf v} \cdot \vec{\sigma}) \; u_L(p) = - u_L(p).
+\end{split}\]</div>
+<p>Esto es, hay una conexión uno a uno entre helicidad y quiralidad. El espinor de Weyl a izquierdas tiene helicidad negativa y el de derechas positiva.</p>
+<p>En este caso de las partículas sin masa, quiralidad y la helicidad son ambas propiedades estacionarias e invariantes Lorentz.</p>
+<p>En el Modelo Estándard este caso correspondía al neutrino.</p>
+</div>
 <div class="section" id="la-norma-y-la-corriente-bajo-quiralidad">
-<h3><span class="section-number">8.5.2. </span>la norma y la corriente bajo quiralidad<a class="headerlink" href="#la-norma-y-la-corriente-bajo-quiralidad" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.5.3. </span>la norma y la corriente bajo quiralidad<a class="headerlink" href="#la-norma-y-la-corriente-bajo-quiralidad" title="Permalink to this heading">#</a></h3>
 <p>Como <span class="math notranslate nohighlight">\((\gamma^5)^\dagger = \gamma^5\)</span>, los projectores no se ven afectados por la operación <span class="math notranslate nohighlight">\(\dagger\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
