@@ -736,7 +736,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Dec  2 16:04:10 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Dec  3 13:15:32 2024
 </pre></div>
 </div>
 </div>
@@ -908,7 +908,7 @@ j^\mu_Q \equiv Q \, \bar{\Psi} \gamma^\mu \Psi
 </tr>
 </tbody>
 </table>
-<p>El lagrangiano con la interacción es invariante gauge local: es invariante frente a un cambio local de fase, <span class="math notranslate nohighlight">\(\theta(x)\)</span> del fermión, con carga <span class="math notranslate nohighlight">\(Q\)</span>:</p>
+<p>El lagrangiano con la interacción es invariante gauge local, es invariante frente a un cambio local de fase, <span class="math notranslate nohighlight">\(\theta(x)\)</span> del fermión, con carga <span class="math notranslate nohighlight">\(Q\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi'(x) = e^{i Q\, \theta(x)} \, \Psi(x),
@@ -918,6 +918,7 @@ j^\mu_Q \equiv Q \, \bar{\Psi} \gamma^\mu \Psi
 \[
 A'_\mu = A_\mu - \partial_\mu \theta
 \]</div>
+<p>Decimos que el lagrangiano es invariante <span class="math notranslate nohighlight">\(U(1)_Q\)</span>, el grupo de rotaciones unitarias de dimensión 1, asociado a las carga eléctrica, <span class="math notranslate nohighlight">\(A\)</span></p>
 <p>Notemos primero que los siguientes términos son invariantes:</p>
 <ul class="simple">
 <li><p>el término <em>cinético</em> del boson vectorial:</p></li>
@@ -990,26 +991,33 @@ L' = e^{i Y \theta(x)} L
 L' = e^{i g_W \vec{\theta}(x) \vec{\tau}}  L
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(g_W\)</span> es la constante de acoplo débil y ahora hay tres fases <span class="math notranslate nohighlight">\(\theta_i(x)\)</span> asociadas a cada uno de los generadores del grupo, <span class="math notranslate nohighlight">\(SU(2)\)</span>, esto es: <span class="math notranslate nohighlight">\(\tau^i = \frac{\sigma^i}{2}\)</span>, donde <span class="math notranslate nohighlight">\(\sigma^i\)</span> son las matrices de Pauli.</p>
-<p>El cambio asociado a <span class="math notranslate nohighlight">\(\partial_\mu \theta_i(x) \tau^i\)</span> se cancela si consideramos tres campos vectoriales:</p>
+<p>El cambio asociado al aplicar la variación gauge es  <span class="math notranslate nohighlight">\( - g_W \partial_\mu \theta_i(x) \tau^i\)</span> que podemos cancelar con tres campos vectoriales, cada uno de ellos asociado a un genrador de la invariancia.</p>
 <p>$<span class="math notranslate nohighlight">\(
-W^1, W^2, W^3  \to W^\pm, W^3
+W^1, W^2, W^3 
 \)</span>$.</p>
-<p>O de forma equivalente a <span class="math notranslate nohighlight">\(W^\pm, W^3\)</span> que tendrán asociadas los matrices <span class="math notranslate nohighlight">\(\sigma^\pm, \sigma^3\)</span>.</p>
-<p>Por ejemplo, el término de interacción asociado a los bosones vectoriales <span class="math notranslate nohighlight">\(W^-\)</span> es:</p>
+<p>que cambian acordemente, similar a como sucedía con el campo <span class="math notranslate nohighlight">\(A_\mu\)</span> en el electromagnetismo.</p>
+<p>Podemos redifinir los campos vectoriales:</p>
+<div class="math notranslate nohighlight">
+\[
+W^\pm = \frac{1}{\sqrt{2}} (W^1 \mp i W^2), \;\; W^3
+\]</div>
+<p>donde ahora <span class="math notranslate nohighlight">\(W^\pm\)</span> está asociado a las matrices <span class="math notranslate nohighlight">\(\sigma^\pm\)</span>.</p>
+<p>Por ejemplo, el término de interacción asociado a los bosones vectoriales <span class="math notranslate nohighlight">\(W^+\)</span> es:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\frac{g_W}{\sqrt{2}} (\bar{L} \gamma^\mu \sigma^+ \gamma^\mu L) \, W^-_\mu =  
-\frac{g_W}{\sqrt{2}} \begin{pmatrix}\bar{\Psi}^{\nu_e}_L, &amp; \bar{\Psi}^e_L \end{pmatrix} \gamma^\mu  \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix} \begin{pmatrix} \Psi^{\nu_e}_L \\ \Psi^{e}_L\end{pmatrix} W^-_\mu = \\ \frac{g_W}{\sqrt{2}} \bar{\Psi}^{\nu_e}_L \gamma^\mu \Psi^e_L W^-_\mu =  \frac{g_W}{\sqrt{2}} \bar{\Psi}^{\nu_e} \left[ \, \frac{1}{2} \gamma^\mu (I - \gamma^5) \right] \Psi^{e} W^-_\mu 
+\frac{g_W}{\sqrt{2}} (\bar{L} \gamma^\mu \sigma^+ \gamma^\mu L) \, W^+_\mu =  
+\frac{g_W}{\sqrt{2}} \begin{pmatrix}\bar{\Psi}^{\nu_e}_L, &amp; \bar{\Psi}^e_L \end{pmatrix} \gamma^\mu  \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix} \begin{pmatrix} \Psi^{\nu_e}_L \\ \Psi^{e}_L\end{pmatrix} W^+_\mu = \\ \frac{g_W}{\sqrt{2}} \bar{\Psi}^{\nu_e}_L \gamma^\mu \Psi^e_L \, W^+_\mu =  \frac{g_W}{\sqrt{2}} \bar{\Psi}^{\nu_e} \left[ \, \frac{1}{2} \gamma^\mu (I - \gamma^5) \right] \Psi^{e} \, W^+_\mu 
 \end{split}\]</div>
 <p>esto es recuperamos la expresión conocida de las corrientes cargadas débiles.</p>
 <p>este término de interacción se corresponde se corresponde con el de los vértices de Feynman</p>
+<p>[TODO]</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_wcur.png"><img alt="../_images/sm_wcur.png" class="align-center" src="../_images/sm_wcur.png" style="width: 350px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p>#</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>Corriente cargada</p></td>
 </tr>
@@ -1019,7 +1027,7 @@ W^1, W^2, W^3  \to W^\pm, W^3
 <div class="section" id="las-corrientes-neutras">
 <h3><span class="section-number">6.3.4. </span>Las corrientes neutras<a class="headerlink" href="#las-corrientes-neutras" title="Permalink to this heading">#</a></h3>
 <p>La construcción de las corrientes neutras es más compleja.</p>
-<p>Los campos <span class="math notranslate nohighlight">\(W^3_\mu\)</span> y <span class="math notranslate nohighlight">\(B_\mu\)</span>, corresponden ambos con corrientes neutras, pero el campo existente en la naturaleza es <span class="math notranslate nohighlight">\(A_\mu\)</span>, el fotón, y el <span class="math notranslate nohighlight">\(Z_\mu\)</span>.</p>
+<p>Los campos <span class="math notranslate nohighlight">\(W^3_\mu\)</span> y <span class="math notranslate nohighlight">\(B_\mu\)</span>, corresponden ambos con corrientes neutras, -esto es el mediador no transmite carga eléctrica- pero el campo existente en la naturaleza es <span class="math notranslate nohighlight">\(A_\mu\)</span>, el fotón, y el <span class="math notranslate nohighlight">\(Z_\mu\)</span>.</p>
 <p><span class="math notranslate nohighlight">\(A_\mu\)</span> y <span class="math notranslate nohighlight">\(Z_\mu\)</span> serán una combinación lineal de <span class="math notranslate nohighlight">\(W^3_\mu, B_\mu\)</span>, con un ángulo de mezcla:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1031,22 +1039,26 @@ W^1, W^2, W^3  \to W^\pm, W^3
 \[
 \sin^2 \theta_W = 0.23146 \pm 0.000012
 \]</div>
-<p>La teoría electrodébil liga las constantes de acoplo con el ángulo de Weinberg:</p>
+<p>La teoría electrodébil introduce dos parámetros, <span class="math notranslate nohighlight">\(e, \sin \theta_W\)</span> y liga las constantes de acoplo a través del ángulo de Weinberg:</p>
 <div class="math notranslate nohighlight">
 \[
 e = g_W \sin \theta_W = g_Z \sin \theta_W \cos \theta_W
 \]</div>
-<p>Eso es, determinamos <span class="math notranslate nohighlight">\(g_W, g_Z\)</span> a partir de la carga del electron <span class="math notranslate nohighlight">\(e\)</span> (o de la constante de estructura fina <span class="math notranslate nohighlight">\(\alpha\)</span>) y del ángulo de Weinberg <span class="math notranslate nohighlight">\(\theta_W\)</span>.</p>
-<p>En el lagrangiamo nos parecen dos términos de interacción:</p>
+<p>Esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+g_W = \frac{e}{\sin \theta_W}, \;\; g_z = \frac{e}{\sin \theta_W \cos \theta_W} = \frac{g_W}{\cos \theta_W}
+\]</div>
+<p>Considerando este mezcla de campos, en el lagrangiamo nos parecen finalmente dos términos de interacción:</p>
 <p>Uno asociado con el campo electromagnético <span class="math notranslate nohighlight">\(A_\mu\)</span> que vale:</p>
 <div class="math notranslate nohighlight">
 \[
 -Q (\bar{\Psi}_L \gamma^\mu \Psi_L + \bar{\Psi}_R \gamma^\mu \Psi_R) A_\mu = -Q (\bar{\Psi} \gamma^\mu \Psi) A_\mu
 \]</div>
-<p>que conserva la simetría <span class="math notranslate nohighlight">\(U(1)_Q\)</span>, asociada a la carga eléctrica, <span class="math notranslate nohighlight">\(Q\)</span>. Esta viene dada por:</p>
+<p>asociado a la carga eléctrica, <span class="math notranslate nohighlight">\(Q\)</span>, que viene dada por:</p>
 <div class="math notranslate nohighlight">
 \[
-Q = Y - T_3
+Q = Y + T_3
 \]</div>
 <p>la carga eléctrica <span class="math notranslate nohighlight">\(Q\)</span> es la hypercarga <span class="math notranslate nohighlight">\(Y\)</span> menos la tercera componente de isoespín débil, <span class="math notranslate nohighlight">\(T_3\)</span> del duplete donde está el fermión.</p>
 <p>Por ejemplo, para el electrón y neutrino:</p>
@@ -1097,7 +1109,7 @@ g_Z \left( c_L \, \bar{\Psi}_L \gamma^\mu \bar{\Psi}_L + c_R \, \bar{\Psi}_R \ga
 </tbody>
 </table>
 <p>Notar que las corrientes débiles neutras violan también paridad, porque tratan de forma distinta cada quiralidad, pero no de forma máxima como lo hacían las corrientes débiles cargadas.</p>
-<p>Los coeficientes <span class="math notranslate nohighlight">\(c_L, c_R\)</span> son</p>
+<p>Los coeficientes <span class="math notranslate nohighlight">\(c_L, c_R\)</span> son:</p>
 <div class="math notranslate nohighlight">
 \[
 c_L  = T^3 - Q \sin^2 \theta_W, \;\; c_R = -Q \sin^2 \theta_W
@@ -1377,7 +1389,7 @@ sigma max (ee-&gt;Z)    60.2 nbarns
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sm_48_0.png" src="../_images/sm_48_0.png" />
+<img alt="../_images/sm_49_0.png" src="../_images/sm_49_0.png" />
 </div>
 </div>
 </div>
@@ -1477,14 +1489,14 @@ N_\nu = 2.9840\pm 0.0082
 \[
 D_\mu = \partial_\mu + i g A_\mu, \;\;\; F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu
 \]</div>
-<p>En este caso por ejemplo <span class="math notranslate nohighlight">\(g=-e\)</span> para el electrón en el electromagnetismo, y  <span class="math notranslate nohighlight">\(A_\mu\)</span> correspondería al campo del fotón.</p>
+<p>En este caso por ejemplo <span class="math notranslate nohighlight">\(g=Q\)</span> la carga eleéctrica y  <span class="math notranslate nohighlight">\(A_\mu\)</span> correspondería al campo del fotón.</p>
 <p>De forma similar actuaríamos para el resto de los bosones vectoriales.</p>
 <p>El lagrangiano de espinores y bosones vectoriales (sin masa), por ejemplo del electromagnetismo es:</p>
 <div class="math notranslate nohighlight">
 \[
 i \bar{\Psi} \gamma^\mu D_\mu \Psi - m \bar{\Psi} \Psi - \frac{1}{4} F^{\mu\nu}F_{\mu\nu}
 \]</div>
-<p>que invariante bajo la <strong>simetría gauge local</strong>, dada por un <em>cambio de fase local continuo</em>, <span class="math notranslate nohighlight">\(g\theta(x)\)</span>, en cada punto <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<p>que invariante bajo la <strong>simetría gauge local</strong>, dada por un <em>cambio de fase local continuo</em>, <span class="math notranslate nohighlight">\(e^{ig\theta(x)}\)</span>, en cada punto <span class="math notranslate nohighlight">\(x\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi'(x) = e^{i g \theta(x)} \, \Psi(x), \;\;\; A'_\mu(x) = A_\mu(x) - \partial_\mu \theta(x)
@@ -1513,7 +1525,7 @@ i \bar{\Psi} \gamma^\mu D_\mu \Psi - m \bar{\Psi} \Psi - \frac{1}{4} F^{\mu\nu}F
 \[
 m \bar{\Psi} \Psi
 \]</div>
-<p>que veremos podemos obtener si partimos que los fermiones se acomplan con un campo escalar <span class="math notranslate nohighlight">\(\phi\)</span>, de la forma:</p>
+<p>Si suponemos que los fermiones se acoplan con un campo escalar <span class="math notranslate nohighlight">\(\phi\)</span>, tendríamos un término en el lagrangiano como:</p>
 <div class="math notranslate nohighlight">
 \[
 \lambda \bar{\Psi} \Psi \phi
@@ -1595,7 +1607,7 @@ m_W = \frac{g_W v}{2}, \;\; m_Z = \frac{g_z v}{2} = \frac{g_W v}{2 \cos \theta_W
 \[
 \frac{m_W}{m_Z} = \cos \theta_W
 \]</div>
-<p>A partir de los datos experimentales, <span class="math notranslate nohighlight">\(M_z, \sin^2 \theta_W\)</span>, el SM predice,</p>
+<p>A partir de los datos experimentales, <span class="math notranslate nohighlight">\(m_z, \sin^2 \theta_W\)</span>, el SM predice,</p>
 <div class="math notranslate nohighlight">
 \[
 m_W \simeq 80.34 \;\; \mathrm{GeV}
@@ -1624,7 +1636,7 @@ m_W \simeq 80.34 \;\; \mathrm{GeV}
 <div class="section" id="el-campo-del-boson-de-higgs">
 <h3><span class="section-number">6.4.3. </span>El campo del bosón de Higgs<a class="headerlink" href="#el-campo-del-boson-de-higgs" title="Permalink to this heading">#</a></h3>
 <p>Vemos que podemos dotar de masa a los fermiones y bosones vectoriales débiles con un campo escalar cuyo valor en el vacío, <span class="math notranslate nohighlight">\(v\)</span>, sea no nulo, ¿pero cómo obtenemos <span class="math notranslate nohighlight">\(v\)</span>?</p>
-<p>Consideremos un campo escalar complejo, que llamaremos campo de Higgs, cuyo langrangiano es:</p>
+<p>Consideremos un campo escalar complejo, que llamaremos campo de Higgs, su langrangiano es:</p>
 <div class="math notranslate nohighlight">
 \[
 (D_\mu \phi)^\dagger (D^\mu \phi) -  m (\phi^\dagger \phi),
@@ -1639,20 +1651,22 @@ m_W \simeq 80.34 \;\; \mathrm{GeV}
 \[
 V(\phi) =  m (\phi^\dagger \phi)
 \]</div>
-<p>que es la versión más simple, parabólica, en términos de <span class="math notranslate nohighlight">\((\phi^\dagger \phi)\)</span> dado que el lagrangiano es un escalar.</p>
-<p>vamos a considerar la extensión más sencilla del potencial, cuadrática.</p>
+<p>que es la versión más simple, parabólica en términos de <span class="math notranslate nohighlight">\((\phi^\dagger \phi)\)</span>, de un potencial.</p>
+<p>vamos a considerar la extensión más sencilla que sería cuadrática.</p>
 <div class="math notranslate nohighlight">
 \[
 V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger \phi)^2
 \]</div>
-<p>que depende de los parámetros <span class="math notranslate nohighlight">\(\mu, \lambda\)</span>. Si <span class="math notranslate nohighlight">\(\mu = \sqrt{2} m\)</span> y <span class="math notranslate nohighlight">\(\lambda = 0\)</span>, recuperamos el potencial inicial.</p>
+<p>que depende de los parámetros <span class="math notranslate nohighlight">\(\mu, \lambda\)</span>.</p>
+<p>Notar que si <span class="math notranslate nohighlight">\(\mu = \sqrt{2 m}\)</span> y <span class="math notranslate nohighlight">\(\lambda = 0\)</span>, recuperamos el potencial inicial.</p>
 <p>(de nuevo los factores <span class="math notranslate nohighlight">\(1/2, 1/4\)</span> sirven para simplificar los cálculos, pero no son relevantes).</p>
-<p>y desarrollando el campo escalar alrededor del mínimo, <span class="math notranslate nohighlight">\(v\)</span>, del potencial.</p>
+<p>si calculamos el mínimo del potencial <span class="math notranslate nohighlight">\(v\)</span> y luego desarrollamos el campo escalar alrededor del mínimo, obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
 \phi(x) = \frac{1}{\sqrt{2}} \left( v + h(x)\right)
 \]</div>
-<p>Las siguientes figuras muestran el potencial para los casos <span class="math notranslate nohighlight">\(\mu^2&gt;0, \mu^2&lt;0\)</span> con <span class="math notranslate nohighlight">\(\lambda &gt; 0\)</span> y su valor den el vacío (el mínimo).</p>
+<p>Las siguientes figuras muestran el potencial para los casos <span class="math notranslate nohighlight">\(\mu^2&gt;0, \mu^2&lt;0\)</span> con <span class="math notranslate nohighlight">\(\lambda &gt; 0\)</span>.
+Observa el valor <span class="math notranslate nohighlight">\(v\)</span>, que corresponde al mínimo.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">higgs_potential</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">phi</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">xlambda</span> <span class="p">:</span> <span class="p">((</span><span class="n">mu</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">real</span> <span class="o">*</span> <span class="n">phi</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">xlambda</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">phi</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
@@ -1664,7 +1678,7 @@ V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sm_69_0.png" src="../_images/sm_69_0.png" />
+<img alt="../_images/sm_71_0.png" src="../_images/sm_71_0.png" />
 </div>
 </div>
 <p>El estado del vacío es el estado de mínima energía:</p>
@@ -1677,7 +1691,7 @@ V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger 
 v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
 \]</div>
 <p>donde a  <span class="math notranslate nohighlight">\(v\)</span> es el <strong>valor esperado en el vacío</strong> (<em>vev</em>).</p>
-<p>La elección de uno de los mínimos, supone romper la simetría. Este proceso se conoce como  <strong>rotura espontánea de simetría</strong>. La selección de qué mínimo no tiene implicaciones físicas, pero la selección de un mínimo, el que sea, sí.</p>
+<p>La elección de un mínimo da lugar a la  <strong>rotura espontánea de simetría</strong>. La selección de qué mínimo no debe y no tiene implicaciones físicas, pero la selección de un mínimo, el que sea, sí.</p>
 <p>En el caso de que <span class="math notranslate nohighlight">\(\phi\)</span> sea un complejo obtenemos la curva del potencial conocida como sobrero mexicano, donde uno de los ejes es la componente real del campo y la otra la imaginaria:</p>
 <table class="colwidths-auto table">
 <thead>
