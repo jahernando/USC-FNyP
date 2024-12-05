@@ -757,7 +757,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Dec  5 13:35:54 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Dec  5 13:44:16 2024
 </pre></div>
 </div>
 </div>
@@ -829,9 +829,9 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-<p>a no ser que… existiese un bosón neutro, el <span class="math notranslate nohighlight">\(Z^0\)</span>, que mediase la interacción e introdujese en un nuevo diagrama de Feynman que interfiriese negativamente con el del fotón y de esta forma la sección eficaz no creciese infinitamente.</p>
+<p>a no ser que… existiese un bosón neutro, el <span class="math notranslate nohighlight">\(Z^0\)</span>, que mediase la interacción e introdujese en un nuevo diagrama de Feynman que interfiriese negativamente con el del fotón y controlase que la sección eficaz no creciese infinitamente.</p>
 <p>Si existía ese bosón, cabía espera también <strong>corrientes débiles neutras</strong>.</p>
-<p>La observación más clara de esas corrientes <em>débiles</em> neutras sería la interacción de los neutrinos (dada que no interacional electromagnéticamente) con los nucleones. La dispersión elástica o inelástica de un neutrino con un nucleón.</p>
+<p>La observación más clara de esas corrientes <em>débiles</em> neutras sería la interacción de los neutrinos (dada que no interacionan electromagnéticamente) con los nucleones.</p>
 <p><a class="reference external" href="https://home.cern/science/experiments/gargamelle">Gargamelle</a>, en el CERN, en los 70’s, fue el experimento que observó las corrientes neutras. Mediante un haz estaba compuesto principalmente por <span class="math notranslate nohighlight">\(\nu_\mu\)</span>.</p>
 <p>Las corrientes cargadas de neutrinos con los nucleones producían un <span class="math notranslate nohighlight">\(\mu\)</span>, una partícula altamente penetrante.</p>
 <div class="math notranslate nohighlight">
@@ -931,11 +931,6 @@ F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
 \[
 \Psi'(x) = e^{i Q\, \theta(x)} \, \Psi(x),
 \]</div>
-<p>si el campo vectorial cambia de acuerdo a:</p>
-<div class="math notranslate nohighlight">
-\[
-A'_\mu = A_\mu - \partial_\mu \theta
-\]</div>
 <p>Decimos que el lagrangiano es invariante <span class="math notranslate nohighlight">\(U(1)_Q\)</span>, el grupo de rotaciones unitarias de dimensión 1, asociado a las carga eléctrica, y que la invariancia gauge local respecto a este grupo da lugar al campo <span class="math notranslate nohighlight">\(A\)</span> y la interacción electro magnética del fermión cargado con el fotón.</p>
 <p><em>ejercicio:</em> Verifica que el lagrangiano anterior es invariante gauge local.</p>
 <p>G. t’Hooft demostró que los lagrangianos con invariance gauge local son <em>renormalizables</em>, esto es, al cuantificar los campos y calcular las secciones eficaces se pueden obtener resultados finitos.</p>
@@ -971,14 +966,14 @@ Q  \equiv \begin{pmatrix} \Psi^{u}_L \\ \Psi^{d}_L \end{pmatrix}; \;\; \Psi^{u}_
 \[
 i\bar{L} \gamma^\mu \partial_\mu L + i \bar{\Psi}^e_R \gamma^\mu \partial_\mu \Psi^e_R 
 \]</div>
-<p>Si desarrollamos el primer témino, asociado al duplete:</p>
+<p>Si desarrollamos el primer término, el asociado al duplete:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 i \bar{L} \gamma^\mu  \partial_\mu L  + i \gamma^\mu = 
 i \begin{pmatrix} \bar{\Psi}^{\nu}_L, \bar{\Psi}^{e}_L \end{pmatrix} \gamma^\mu \partial_\mu \begin{pmatrix} \bar{\Psi}^{\nu}_L \\ \bar{\Psi}^{e}_L \end{pmatrix} = \\
 i \bar{\Psi}^{\nu}_L \gamma^\mu  \partial_\mu \Psi^{\nu}_L + i \gamma^\mu \bar{\Psi}^{e}_L \gamma^\mu  \partial_\mu \Psi^{e}_L   \\
 \end{split}\]</div>
-<p>Si añadimos el término del lagragiano asociado al singlete, obtenemos:</p>
+<p>Si añadimos ahora  de nuevo el segundo término, el asociado al singlete, obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 i \bar{\Psi}^{\nu}_L \gamma^\mu  \partial_\mu \Psi^{\nu}_L + i \gamma^\mu \bar{\Psi}^{e}_L \gamma^\mu  \partial_\mu \Psi^{e}_L + i \gamma^\mu \bar{\Psi}^{e}_R \gamma^\mu  \partial_\mu \Psi^{e}_R = \\ i \bar{\Psi}^{\nu}_L \gamma^\mu  \partial_\mu \Psi^{\nu}_L + i \bar{\Psi}^{e} \gamma^\mu  \partial_\mu \Psi^e   
@@ -1103,12 +1098,6 @@ c_L  = T^3 - Q \sin^2 \theta_W, \;\; c_R = -Q \sin^2 \theta_W
 \]</div>
 <p>Donde <span class="math notranslate nohighlight">\(Q\)</span> es la carga en unidades de electrón <span class="math notranslate nohighlight">\(e\)</span>, y <span class="math notranslate nohighlight">\(T^3\)</span> es la tercera componente de isospín débil</p>
 <p>Las corrientes débiles neutras violan también paridad, porque tratan de forma distinta cada quiralidad, pero no de forma máxima como lo hacían las corrientes débiles cargadas.</p>
-<p>Los coeficientes <span class="math notranslate nohighlight">\(c_L, c_R\)</span> son:</p>
-<div class="math notranslate nohighlight">
-\[
-c_L  = T^3 - Q \sin^2 \theta_W, \;\; c_R = -Q \sin^2 \theta_W
-\]</div>
-<p>Donde <span class="math notranslate nohighlight">\(Q\)</span> es la carga en unidades de electrón <span class="math notranslate nohighlight">\(e\)</span>, y <span class="math notranslate nohighlight">\(T^3\)</span> es la tercera componente de isospín débil</p>
 <p>Podemos calcular los valores <span class="math notranslate nohighlight">\(c_L, c_R\)</span> para el <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(e\)</span></p>
 <table class="colwidths-auto table">
 <thead>
@@ -1482,7 +1471,7 @@ N_\nu = 2.9840\pm 0.0082
 \[
 D_\mu = \partial_\mu + i g A_\mu, \;\;\; F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu
 \]</div>
-<p>En este caso por ejemplo <span class="math notranslate nohighlight">\(g=Q\)</span> la carga eleéctrica y  <span class="math notranslate nohighlight">\(A_\mu\)</span> correspondería al campo del fotón.</p>
+<p>En este caso por ejemplo <span class="math notranslate nohighlight">\(g=Q\)</span> la carga eléctrica y  <span class="math notranslate nohighlight">\(A_\mu\)</span> correspondería al campo del fotón.</p>
 <p>De forma similar actuaríamos para el resto de los bosones vectoriales.</p>
 <p>El lagrangiano de espinores y bosones vectoriales (sin masa), por ejemplo del electromagnetismo es:</p>
 <div class="math notranslate nohighlight">
