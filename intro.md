@@ -6,21 +6,24 @@ Autor: José Ángel Hernando Morata
 
 Correo electrónico: jose.hernando@usc.es
 
-Versión: Noviembre 2024
+Versión: Diciembre 2024
 
 -----
 
 ## Sobre la asignatura
 
-Esta asignatura es una introducción a la Física de Partículas. El objetivo es presentar una visión actual de las partículas fundamentales y las fuerzas que median entre ellas sin entrar en el desarrollo matemático.
+Esta asignatura es una introducción a la Física de Partículas, cuyo objetivo es presentar una visión actual de las partículas fundamentales, las fuerzas que median entre ellas, y sus características principales.
 
-La asignatura consta de cuatro temas: una introducción a la temática de la Física de Partículas; la exposición de los observables relevantes desde una perspectiva experimental y teórica; el desarrollo de las características de los leptones, de los quarks y los hadrones; y finalmente una introducción al modelo estándar.
+
+La asignatura consta de seis temas: una introducción a la temática de la Física de Partículas; la exposición de los observables relevantes, de una perspectiva experimental y teórica; el desarrollo de las características de los leptones, de los quarks y los hadrones; y finalmente una introducción a la teoría electrodébil y el bosón de Higgs.
 
 Se precisa un conocimiento previo de la cinemática relativista y de los conceptos básicos de Física Nuclear. También es conveniente conocer la ecuación de Dirac y una introducción a Teoría Cuántica de Campos.
 
-Estos apuntes son una recopilación de muy diversas fuentes, principalmente de los libros de M. Thomson y A. Bettini. 
+Los apuntes se complementan con ciertas extensiones donde se presentan de forma breve algunos fundamentos matemáticos relevantes.
 
-Los apuntes se complementan con diversas extensiones donde se trata de forma más matemática de algunos temas presentados durante el curso.
+
+Estos apuntes son una recopilación de muy diversas fuentes, pero principalmente de los libros de M. Thomson y A. Bettini.
+
 
 -------
 
@@ -42,3 +45,4 @@ Los apuntes se complementan con diversas extensiones donde se trata de forma má
  * [DP] D. H. Perkins, "Introduction to High Energy Physics", Cambridge
 
  * [AFS] A. Ferrer, "Física Nuclear y de Partículas", UPV
+
