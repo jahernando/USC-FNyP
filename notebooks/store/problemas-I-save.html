@@ -1,0 +1,1926 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción a Física de Partículas &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../introduccion.html">
+   1. Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../observables.html">
+   2. Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../leptones.html">
+   3. Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../quarks_hadrons.html">
+   4. Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sm.html">
+   5. Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-cinematica.html">
+   6. Extensión: cinemática
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-dirac.html">
+   7. Extensión: La ecuación de Dirac
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-trans-Lorentz.html">
+   8. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-grupos.html">
+   9. Extensión: grupos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-sm.html">
+   10. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-prel.html">
+   11. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-I.html">
+   12. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-II.html">
+   13. Boletín de problemas II
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-III.html">
+   14. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-IV.html">
+   15. Boletín de problemas IV
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/store/problemas-I-save.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/store/problemas-I-save.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/notebooks/store/problemas-I-save.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boletin-de-problemas-i">
+   Boletín de problemas I
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unidades">
+   Unidades
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experimentos-de-blanco-fijo-y-colisionador">
+   Experimentos de blanco fijo y colisionador
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio">
+     2.5 ejercicio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cambios-de-sistema-de-referencia">
+   Cambios de sistema de referencia
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     3.1 ejercicio
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     3.5 ejercicio
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-3-6">
+     Ejercicio 3.6
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Ejercicio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basicos-de-diagramas-de-feynman">
+   4 Básicos de diagramas de Feynman
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#detectors">
+   4 Detectors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     4.1 ejercicio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#otros">
+   Otros
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bibliografia">
+     Bibliografía
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introducción a Física de Partículas</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boletin-de-problemas-i">
+   Boletín de problemas I
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unidades">
+   Unidades
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experimentos-de-blanco-fijo-y-colisionador">
+   Experimentos de blanco fijo y colisionador
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio">
+     2.5 ejercicio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cambios-de-sistema-de-referencia">
+   Cambios de sistema de referencia
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     3.1 ejercicio
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     3.5 ejercicio
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejercicio-3-6">
+     Ejercicio 3.6
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Ejercicio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basicos-de-diagramas-de-feynman">
+   4 Básicos de diagramas de Feynman
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#detectors">
+   4 Detectors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     4.1 ejercicio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#otros">
+   Otros
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bibliografia">
+     Bibliografía
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduccion-a-fisica-de-particulas">
+<h1>Introducción a Física de Partículas<a class="headerlink" href="#introduccion-a-fisica-de-particulas" title="Permalink to this heading">#</a></h1>
+<div class="section" id="boletin-de-problemas-i">
+<h2>Boletín de problemas I<a class="headerlink" href="#boletin-de-problemas-i" title="Permalink to this heading">#</a></h2>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Octubre 2024</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Dec 18 17:08:56 2024
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="unidades">
+<h2>Unidades<a class="headerlink" href="#unidades" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hbar = </span><span class="si">{:4e}</span><span class="s1"> J/s&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">hbar</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;c  = </span><span class="si">{:4e}</span><span class="s1"> m/s&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="p">))</span>
+<span class="n">GeV_to_Julio</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">giga</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">eV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;GeV  = </span><span class="si">{:4e}</span><span class="s1"> J &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GeV_to_Julio</span><span class="p">))</span>
+<span class="n">hbarc</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">hbar</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span> <span class="o">/</span> <span class="p">(</span><span class="n">GeV_to_Julio</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">femto</span><span class="p">)</span> <span class="c1"># GeV fm</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hbar c  =  </span><span class="si">{:4e}</span><span class="s1"> GeV fm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hbarc</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hbar = 1.054572e-34 J/s
+c  = 2.997925e+08 m/s
+GeV  = 1.602177e-10 J 
+hbar c  =  1.973270e-01 GeV fm
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">me</span> <span class="o">=</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">m_e</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">GeV_to_Julio</span><span class="p">)</span> <span class="c1"># GeV</span>
+<span class="n">mp</span> <span class="o">=</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">m_p</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">GeV_to_Julio</span><span class="p">)</span> <span class="c1"># GeV</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;electron mass </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">me</span> <span class="o">*</span><span class="mf">1e3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;proton   mass </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mp</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>electron mass 0.511 MeV
+proton   mass 0.938 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">energy</span>         <span class="o">=</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">,</span> <span class="n">p</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">m</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">p</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">momentum</span>       <span class="o">=</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">,</span> <span class="n">E</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">E</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">m</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">gamma_lorentz</span>  <span class="o">=</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">,</span> <span class="n">E</span> <span class="p">:</span> <span class="n">m</span><span class="o">/</span><span class="n">E</span>
+<span class="n">beta_lorentz</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">,</span> <span class="n">E</span> <span class="p">:</span> <span class="n">p</span><span class="o">/</span><span class="n">E</span>
+<span class="n">kinetic_energy</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">,</span> <span class="n">E</span> <span class="p">:</span> <span class="n">E</span> <span class="o">-</span> <span class="n">m</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mass_invariant</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">momentum_module</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">momentum_module</span>  <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="p">)</span>
+<span class="n">phi_angle</span>        <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan2</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">theta_angle</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+    <span class="n">rho</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan2</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+    <span class="n">phi</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan2</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">theta</span> <span class="k">if</span> <span class="n">phi</span> <span class="o">&lt;</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span> <span class="k">else</span> <span class="o">-</span><span class="n">theta</span>
+
+<span class="k">def</span> <span class="nf">lorentz_matrix</span><span class="p">(</span><span class="n">beta</span><span class="p">):</span>
+    <span class="n">gamma</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">lorentz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="n">lorentz</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">gamma</span><span class="p">;</span> <span class="n">lorentz</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span>  <span class="n">gamma</span> <span class="o">*</span> <span class="n">beta</span>
+    <span class="n">lorentz</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>    <span class="p">;</span> <span class="n">lorentz</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">lorentz</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">gamma</span><span class="p">;</span> <span class="n">lorentz</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span>  <span class="n">gamma</span><span class="o">*</span><span class="n">beta</span>
+    <span class="k">return</span> <span class="n">lorentz</span>
+
+<span class="k">def</span> <span class="nf">lorentz_transform</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+    <span class="n">lorentz</span> <span class="o">=</span> <span class="n">lorentz_matrix</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">lorentz</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">transpose</span><span class="p">())</span>
+
+<span class="k">def</span> <span class="nf">p_write</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:s}</span><span class="s1">:  p  = [</span><span class="si">{:4.3f}</span><span class="s1">, </span><span class="si">{:4.3f}</span><span class="s1">, </span><span class="si">{:4.3f}</span><span class="s1">, </span><span class="si">{:4.3f}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">*</span><span class="n">p</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:s}</span><span class="s1">: |p| =  </span><span class="si">{:4.3f}</span><span class="s1">, mass = </span><span class="si">{:4.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">momentum_module</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="n">mass_invariant</span><span class="p">(</span><span class="n">p</span><span class="p">)))</span>
+    <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">energy_cm_2body_s</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span> <span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">:</span> <span class="p">(</span><span class="n">s</span> <span class="o">+</span> <span class="n">mb</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">mc</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">energy_cm_2body</span>     <span class="o">=</span> <span class="k">lambda</span> <span class="n">ma</span><span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">:</span> <span class="n">energy_cm_2body_s</span><span class="p">(</span><span class="n">ma</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">)</span>  
+<span class="n">momentum_cm_2body_s</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span> <span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span> <span class="p">(</span><span class="n">s</span> <span class="o">-</span> <span class="p">(</span><span class="n">mb</span> <span class="o">+</span> <span class="n">mc</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span> <span class="n">s</span> <span class="o">-</span> <span class="p">(</span><span class="n">mb</span> <span class="o">-</span> <span class="n">mc</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span><span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">momentum_cm_2body</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">ma</span><span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">:</span> <span class="n">momentum_cm_2body_s</span><span class="p">(</span><span class="n">ma</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>problema 1</strong></p>
+<p>Da en unidades naturales los valores:</p>
+<ul class="simple">
+<li><p>a) fs y fm en potencias de GeVs.</p></li>
+<li><p>b) m, s en potencias de eV.</p></li>
+<li><p>c) barn en función de GeV.</p></li>
+</ul>
+<p><em>solución:</em></p>
+<p>a) sabemos <span class="math notranslate nohighlight">\(\hbar c = 197 \)</span> MeV fm = 1, luego fm <span class="math notranslate nohighlight">\(= \frac{1}{197}\)</span> MeV<span class="math notranslate nohighlight">\(^{-1}\)</span></p>
+<p>c) sabemos <span class="math notranslate nohighlight">\(c = 2.9998 \, 10^8\)</span> m/s = 1,luego s <span class="math notranslate nohighlight">\(= 2.9998 \, 10^8\)</span> m, luego fs = c fm</p>
+<p>d) sabemos 1 barn = <span class="math notranslate nohighlight">\(10^{-28}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>, cambiamos m a 1/GeV</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hbarc = </span><span class="si">{:e}</span><span class="s1"> GeV fm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hbarc</span><span class="p">))</span>
+<span class="n">fm_un</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">hbarc</span> <span class="c1">#1/GeV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;fm    = </span><span class="si">{:e}</span><span class="s1"> 1/GeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fm_un</span><span class="p">))</span>
+<span class="n">ps_un</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">femto</span> <span class="o">*</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">c</span> <span class="o">/</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">femto</span><span class="p">))</span> <span class="o">*</span> <span class="n">fm_un</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;fs    = </span><span class="si">{:e}</span><span class="s1"> 1/GeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ps_un</span><span class="p">))</span>
+<span class="n">m_un</span> <span class="o">=</span> <span class="n">fm_un</span><span class="o">/</span><span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">femto</span><span class="p">)</span> <span class="c1"># 1/GeV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;m  = </span><span class="si">{:e}</span><span class="s1"> 1/eV, eV = </span><span class="si">{:e}</span><span class="s1"> 1/m &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m_un</span><span class="o">/</span><span class="n">units</span><span class="o">.</span><span class="n">giga</span><span class="p">,</span> <span class="n">units</span><span class="o">.</span><span class="n">giga</span><span class="o">/</span><span class="n">m_un</span><span class="p">))</span>
+<span class="c1">#s_un = fs_un / (units.femto)</span>
+<span class="c1">#print(&#39;s  = {:e} 1/eV, eV = {:e} 1/s &#39;.format(s_un/units.giga, units.giga/s_un))</span>
+<span class="n">m_un</span> <span class="o">=</span> <span class="n">fm_un</span> <span class="o">/</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">femto</span><span class="p">)</span>
+<span class="n">barn</span> <span class="o">=</span> <span class="mf">1e-28</span> <span class="o">*</span> <span class="p">(</span><span class="n">m_un</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;barn = </span><span class="si">{:e}</span><span class="s1"> 1/GeV2 &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">barn</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hbarc = 1.973270e-01 GeV fm
+fm    = 5.067731e+00 1/GeV 
+fs    = 1.519267e+09 1/GeV 
+m  = 5.067731e+06 1/eV, eV = 1.973270e-07 1/m 
+barn = 2.568189e+03 1/GeV2 
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>problema 2</strong></p>
+<p>Compara energía de un Boeing 747, cuya masa es 400 toneladas, a su velocidad crucero de 850 km/h, con la aniquilación de un mosquito por un antimosquito, siendo la masa del mosquito 1 mg.</p>
+<p>[AB.1P1]</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mb</span> <span class="o">=</span> <span class="mf">400e3</span>  <span class="c1"># kg</span>
+<span class="n">mm</span> <span class="o">=</span> <span class="mf">1.0e-6</span> <span class="c1"># kg</span>
+<span class="n">v</span>  <span class="o">=</span> <span class="mf">850e3</span><span class="o">/</span><span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span> <span class="c1"># m/s</span>
+<span class="n">boeing_ene</span>   <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">mb</span> <span class="o">*</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">mosquito_ene</span> <span class="o">=</span> <span class="mi">2</span>   <span class="o">*</span> <span class="n">mm</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;energy boeing/mosquito </span><span class="si">{:4.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">boeing_ene</span><span class="o">/</span><span class="n">mosquito_ene</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;boeing </span><span class="si">{:e}</span><span class="s1"> J, mosquito </span><span class="si">{:e}</span><span class="s1"> J&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">boeing_ene</span><span class="p">,</span> <span class="n">mosquito_ene</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;boeing </span><span class="si">{:e}</span><span class="s1"> GeV, mosquito </span><span class="si">{:e}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">boeing_ene</span><span class="o">/</span><span class="n">GeV_to_Julio</span><span class="p">,</span> <span class="n">mosquito_ene</span><span class="o">/</span><span class="n">GeV_to_Julio</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>energy boeing/mosquito 0.062
+boeing 1.114969e+10 J, mosquito 1.797510e+11 J
+boeing 6.959090e+19 GeV, mosquito 1.121918e+21 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>problema 3</strong></p>
+<p>¿Cuál es la energía y velocidad de una partícula de 3 GeV de masa con un momento de 4 GeV en la dirección <span class="math notranslate nohighlight">\(z\)</span>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="p">,</span> <span class="n">p</span>   <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span> <span class="c1"># GeV</span>
+<span class="n">E</span>      <span class="o">=</span> <span class="n">energy</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+<span class="n">b</span>      <span class="o">=</span> <span class="n">beta_lorentz</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;energy   (MeV) </span><span class="si">{:3.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">E</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;velocity (beta) </span><span class="si">{:3.2f}</span><span class="s1"> velocity (m/s) </span><span class="si">{:2e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">b</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="p">))</span>
+
+<span class="n">ps</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ps</span><span class="p">,</span> <span class="n">energy</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">ps</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;E&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39; p (GeV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;E (GeV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;m = 3 GeV&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ps</span><span class="p">,</span> <span class="n">beta_lorentz</span><span class="p">(</span><span class="n">ps</span><span class="p">,</span> <span class="n">energy</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">ps</span><span class="p">)),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;$\beta$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\beta$&#39;</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">4</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>energy   (MeV) 5.000
+velocity (beta) 0.80 velocity (m/s) 2.398340e+08
+</pre></div>
+</div>
+<img alt="../../_images/problemas-I-save_18_1.png" src="../../_images/problemas-I-save_18_1.png" />
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>problema 4</strong></p>
+<p>Sea una partícula <span class="math notranslate nohighlight">\(a\)</span> con masa <span class="math notranslate nohighlight">\(m_a\)</span> que se desintegra a otras dos <span class="math notranslate nohighlight">\(a \to b+c\)</span>, con masas <span class="math notranslate nohighlight">\(m_b, m_c\)</span>. Da las expresiones de la energía y momento de <span class="math notranslate nohighlight">\(b, c\)</span> en el CM. Demostrar que el momento de las partículas hijas en el CM es:</p>
+<div class="math notranslate nohighlight">
+\[
+p^* = \frac{1}{2m_a} \sqrt{[m^2_a - (m_b+m_c)^2] [m^2_a - (m_b - m_c)^2]}
+\]</div>
+<p>[AB1.P11]</p>
+<p><em>solución</em></p>
+<p>Ver [Extensión cinemática], sección del invariante s]</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E^*_b = \frac{m^2_a + m^2_b - m^2_c}{2 m_a}, \\
+E^*_c = \frac{m^2_a + m^2_c - m^2_b}{2 m_a}, \\
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+p^*   = \frac{\sqrt{\left[m^2_a - (m_b+m_c)^2 \right] \left[ m^2_a - (m_b - m_a)^2 \right]}}{2m_a}   
+\]</div>
+<hr class="docutils" />
+<p><strong>ejercicio 5</strong></p>
+<p>Sean <span class="math notranslate nohighlight">\(\Lambda \to p + \pi^-\)</span> y <span class="math notranslate nohighlight">\(\Xi^- \to \Lambda + \pi^-\)</span>. ¿Cuál es la carga de <span class="math notranslate nohighlight">\(\Lambda\)</span>? Indica si son bariones o mesones <span class="math notranslate nohighlight">\(\Lambda\)</span> y <span class="math notranslate nohighlight">\(\Xi^-\)</span>. Busca sus masas en PDG, sus vidad medias y su fracción de desintegración. ¿Qué tipo de desintegración es, débil o fuerte? Da el momento y energía en CM de la desintegración</p>
+<p>[AB1.P12]</p>
+<p><em>solución</em></p>
+<p>Del <a class="reference external" href="https://pdg.lbl.gov/2021/listings/contents_listings.html">PDG</a></p>
+<p><span class="math notranslate nohighlight">\(m(\Lambda) = 1115.683 \pm 0.006\)</span> MeV, <span class="math notranslate nohighlight">\(\mathcal{Br}(\Lambda \to p + \pi^-) = 63.9 \pm 0.5\)</span> %, <span class="math notranslate nohighlight">\(\tau = (2.632 \pm 0.02) \, 10^{-10}\)</span> s</p>
+<p>Del <a class="reference external" href="https://pdg.lbl.gov/2021/listings/contents_listings.html">PDG</a></p>
+<p><span class="math notranslate nohighlight">\(m(\Xi^-) = 1321.71 \pm 0.07\)</span> MeV, <span class="math notranslate nohighlight">\(\mathcal{Br}(\Xi^- \to \Lambda + \pi^-) = 99.9\)</span> %, <span class="math notranslate nohighlight">\(\tau = (1.639 \pm 0.015) \, 10^{-10}\)</span> s</p>
+<p>Los dos son bariones, <span class="math notranslate nohighlight">\(\Lambda\)</span> tiene carga 0, y por el valor de la vida media se desintegran débilmente.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">energy_cm_2body_s</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span> <span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">:</span> <span class="p">(</span><span class="n">s</span> <span class="o">+</span> <span class="n">mb</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">mc</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">energy_cm_2body</span>     <span class="o">=</span> <span class="k">lambda</span> <span class="n">ma</span><span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">:</span> <span class="n">energy_cm_2body_s</span><span class="p">(</span><span class="n">ma</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">)</span>  
+<span class="n">momentum_cm_2body_s</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span> <span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span> <span class="p">(</span><span class="n">s</span> <span class="o">-</span> <span class="p">(</span><span class="n">mb</span> <span class="o">+</span> <span class="n">mc</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span> <span class="n">s</span> <span class="o">-</span> <span class="p">(</span><span class="n">mb</span> <span class="o">-</span> <span class="n">mc</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span><span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">momentum_cm_2body</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">ma</span><span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">:</span> <span class="n">momentum_cm_2body_s</span><span class="p">(</span><span class="n">ma</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">mb</span><span class="p">,</span> <span class="n">mc</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mlambda</span> <span class="o">=</span> <span class="mf">1115.68</span> <span class="c1"># MeV</span>
+<span class="n">mp</span>      <span class="o">=</span> <span class="mf">938.27</span> <span class="c1"># MeV</span>
+<span class="n">mpi</span>     <span class="o">=</span> <span class="mf">139.6</span> <span class="c1"># MeV</span>
+<span class="n">ep</span>  <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mlambda</span><span class="p">,</span> <span class="n">mp</span> <span class="p">,</span> <span class="n">mpi</span><span class="p">)</span>
+<span class="n">epi</span> <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mlambda</span><span class="p">,</span> <span class="n">mpi</span><span class="p">,</span> <span class="n">mp</span><span class="p">)</span>
+<span class="n">pp</span>  <span class="o">=</span> <span class="n">momentum_cm_2body</span><span class="p">(</span><span class="n">mlambda</span><span class="p">,</span> <span class="n">mp</span> <span class="p">,</span> <span class="n">mpi</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E p </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span>   <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E pi   </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epi</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p      </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pp</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E p 943.642 MeV
+E pi   172.038 MeV
+p      100.544 MeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mxi</span>     <span class="o">=</span> <span class="mf">1321.71</span> <span class="c1"># MeV</span>
+<span class="n">ep</span>  <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mxi</span><span class="p">,</span> <span class="n">mlambda</span><span class="p">,</span> <span class="n">mpi</span><span class="p">)</span>
+<span class="n">epi</span> <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mxi</span><span class="p">,</span> <span class="n">mpi</span>    <span class="p">,</span> <span class="n">mlambda</span><span class="p">)</span>
+<span class="n">pp</span>  <span class="o">=</span> <span class="n">momentum_cm_2body</span><span class="p">(</span><span class="n">mxi</span><span class="p">,</span> <span class="n">mlambda</span><span class="p">,</span> <span class="n">mpi</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E p </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span>   <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E pi   </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epi</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p      </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pp</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E p 1124.366 MeV
+E pi   197.344 MeV
+p      139.487 MeV
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>Considera la desintegración <span class="math notranslate nohighlight">\(K^- \to \mu + \bar{\nu}_\mu\)</span>. Calcula la energía y momento en el CM del <span class="math notranslate nohighlight">\(\mu, \bar{\nu}_\mu\)</span> y el máximo momento del <span class="math notranslate nohighlight">\(\mu\)</span> si el <span class="math notranslate nohighlight">\(K^-\)</span> tienen un momento de 5 GeV.</p>
+<p>La energía y momento del leptón son:
+$<span class="math notranslate nohighlight">\(
+E_l = \frac{m^2_K + m^2_l}{2 m_K}, \; \; p_l = \frac{m^2_K - m^2_l}{2 m_K}, \;\;
+\)</span>$</p>
+<p>El momento máximo corresponderá al momento del <span class="math notranslate nohighlight">\(\mu\)</span> en la dirección y sentido del <span class="math notranslate nohighlight">\(K\)</span> incidente, que recibirá un <em>boost</em> de <span class="math notranslate nohighlight">\(\gamma = E_K/m_K, \; \beta = p_K/E_K\)</span>. Asi:</p>
+<div class="math notranslate nohighlight">
+\[
+p'_\mu = \gamma \beta E^*_\mu + \gamma p^*_\mu
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ene_cm</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span><span class="p">,</span> <span class="n">mhad</span> <span class="o">=</span> <span class="n">mpi</span> <span class="p">:</span> <span class="p">(</span><span class="n">mhad</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mhad</span><span class="p">)</span>
+<span class="n">p_cm</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span><span class="p">,</span> <span class="n">mhad</span> <span class="o">=</span> <span class="n">mpi</span> <span class="p">:</span> <span class="p">(</span><span class="n">mhad</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mhad</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mkaon</span> <span class="o">=</span> <span class="mf">493.67</span> <span class="c1"># MeV</span>
+<span class="n">mmu</span> <span class="o">=</span> <span class="mf">105.66</span>  <span class="c1"># MeV</span>
+
+<span class="n">e_mu</span><span class="p">,</span> <span class="n">p_mu</span> <span class="o">=</span> <span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">,</span> <span class="n">mkaon</span><span class="p">),</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">,</span> <span class="n">mkaon</span><span class="p">)</span>
+<span class="n">e_nu</span><span class="p">,</span> <span class="n">p_nu</span> <span class="o">=</span> <span class="n">p_mu</span><span class="p">,</span> <span class="n">p_mu</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; energy mu  = </span><span class="si">{:5.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e_mu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; momento mu = </span><span class="si">{:5.3f}</span><span class="s1"> MeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p_mu</span><span class="p">))</span>
+
+<span class="n">e_kaon</span> <span class="o">=</span> <span class="mi">5000</span> <span class="c1"># MeV</span>
+<span class="n">p_kaon</span> <span class="o">=</span> <span class="n">momentum</span><span class="p">(</span><span class="n">mkaon</span><span class="p">,</span> <span class="n">e_kaon</span><span class="p">)</span>
+<span class="n">gamma_kaon</span><span class="p">,</span> <span class="n">beta_kaon</span> <span class="o">=</span> <span class="n">e_kaon</span><span class="o">/</span><span class="n">mkaon</span><span class="p">,</span> <span class="n">p_kaon</span><span class="o">/</span><span class="n">e_kaon</span>
+<span class="n">p_max_mu</span> <span class="o">=</span> <span class="n">gamma_kaon</span> <span class="o">*</span> <span class="n">beta_kaon</span> <span class="o">*</span> <span class="n">e_mu</span> <span class="o">+</span> <span class="n">gamma_kaon</span> <span class="o">*</span> <span class="n">p_mu</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; momentum mu maximo en lab = </span><span class="si">{:5.3f}</span><span class="s1"> MeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p_max_mu</span><span class="p">))</span>
+<span class="n">p_min_nu</span> <span class="o">=</span> <span class="n">gamma_kaon</span> <span class="o">*</span> <span class="n">beta_kaon</span> <span class="o">*</span> <span class="n">e_nu</span> <span class="o">-</span> <span class="n">gamma_kaon</span> <span class="o">*</span> <span class="n">p_nu</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; momentum nu minimo en lab = </span><span class="si">{:5.3f}</span><span class="s1"> MeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p_min_nu</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> energy mu  = 258.142 MeV
+ momento mu = 235.528 MeV 
+ momentum mu maximo en lab = 4987.225 MeV 
+ momentum nu minimo en lab = -11.656 MeV 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">139.6</span> <span class="c1"># MeV</span>
+<span class="n">me</span>  <span class="o">=</span> <span class="mf">0.511</span> <span class="c1"># MeV</span>
+<span class="n">emu</span> <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="n">me</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">enu</span> <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">me</span><span class="p">)</span>
+<span class="n">pcm</span> <span class="o">=</span> <span class="n">momentum_cm_2body</span><span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="n">me</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E elec </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">emu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E nu   </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">enu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p      </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pcm</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E elec 69.801 MeV
+E nu   69.799 MeV
+p      69.799 MeV
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>ejercicio 7</strong></p>
+<p>La partícula <span class="math notranslate nohighlight">\(\Lambda\)</span>, se desintegra <span class="math notranslate nohighlight">\(\Lambda \to p + \pi^-\)</span>. Si <span class="math notranslate nohighlight">\(p_\Lambda = 2\)</span> GeV y el <span class="math notranslate nohighlight">\(p\)</span> sale con <span class="math notranslate nohighlight">\(\theta^* = 30^o\)</span> en el CM respecto la dirección de <span class="math notranslate nohighlight">\(\Lambda\)</span>, calcular:</p>
+<p>a) la energía de <span class="math notranslate nohighlight">\(\Lambda, \pi^-\)</span> en el CM.</p>
+<p>b) el factor de Lorentz <span class="math notranslate nohighlight">\(\gamma\)</span> y <span class="math notranslate nohighlight">\(\beta\)</span> entre el sistema laboratorio y el CM.</p>
+<p>c) ángulo y momento del <span class="math notranslate nohighlight">\(\pi, p\)</span> en el sistema laboratorio.</p>
+<p>[AB1.15]</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mlambda</span> <span class="o">=</span> <span class="mf">1115.68</span> <span class="c1"># MeV</span>
+<span class="n">mp</span>      <span class="o">=</span> <span class="mf">938.27</span> <span class="c1"># MeV</span>
+<span class="n">mpi</span>     <span class="o">=</span> <span class="mf">139.57</span> <span class="c1"># MeV</span>
+<span class="n">ep</span>  <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mlambda</span><span class="p">,</span> <span class="n">mp</span> <span class="p">,</span> <span class="n">mpi</span><span class="p">)</span>
+<span class="n">epi</span> <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mlambda</span><span class="p">,</span> <span class="n">mpi</span><span class="p">,</span> <span class="n">mp</span><span class="p">)</span>
+<span class="n">pp</span>  <span class="o">=</span> <span class="n">momentum_cm_2body</span><span class="p">(</span><span class="n">mlambda</span><span class="p">,</span> <span class="n">mp</span> <span class="p">,</span> <span class="n">mpi</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E p  = </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E pi = </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epi</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p    = </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pp</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E p  = 943.645 MeV
+E pi = 172.035 MeV
+p    = 100.579 MeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plambda</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">elambda</span> <span class="o">=</span> <span class="n">energy</span><span class="p">(</span><span class="n">mlambda</span><span class="p">,</span> <span class="n">plambda</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lambda energy </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">elambda</span><span class="p">))</span>
+<span class="n">gamma</span> <span class="o">=</span> <span class="n">gamma_lorentz</span><span class="p">(</span><span class="n">elambda</span><span class="p">,</span> <span class="n">mlambda</span><span class="p">)</span>
+<span class="n">beta</span>  <span class="o">=</span> <span class="n">beta_lorentz</span> <span class="p">(</span><span class="n">plambda</span><span class="p">,</span> <span class="n">elambda</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;beta = </span><span class="si">{:4.3f}</span><span class="s1">, gamma </span><span class="si">{:4.3f}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">gamma</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>lambda energy 2290.140 MeV
+beta = 0.873, gamma 2.053 
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se cumple que:
+$<span class="math notranslate nohighlight">\(
+ p_x  = p \sin \theta = p^* \sin \theta^*,\\ 
+p_z  = p \cos \theta = \gamma(\beta E + p^* \cos \theta^*) 
+\)</span><span class="math notranslate nohighlight">\(
+donde \)</span>p, \theta$ es el momento y el ángulo en el lab.</p>
+<p>Luego:</p>
+<div class="math notranslate nohighlight">
+\[
+\tan \theta = \frac{p^* \sin \theta}{\gamma(\beta E + p^* \cos \theta^*)}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta_cm</span> <span class="o">=</span> <span class="p">(</span><span class="mf">30.</span><span class="o">/</span><span class="mf">180.</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">pp_cm</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="n">ep</span> <span class="p">,</span>  <span class="n">pp</span> <span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta_cm</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span>  <span class="n">pp</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">theta_cm</span><span class="p">)))</span>
+<span class="n">ppi_cm</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="n">epi</span><span class="p">,</span> <span class="o">-</span><span class="n">pp</span> <span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta_cm</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="n">pp</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span> <span class="p">(</span><span class="n">theta_cm</span><span class="p">)))</span>
+<span class="n">pla_cm</span>  <span class="o">=</span> <span class="n">ppi_cm</span> <span class="o">+</span> <span class="n">pp_cm</span>
+
+<span class="n">p_write</span><span class="p">(</span><span class="n">ppi_cm</span><span class="p">,</span> <span class="s1">&#39;pi&#39;</span><span class="p">)</span>
+<span class="n">p_write</span><span class="p">(</span><span class="n">pp_cm</span> <span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">)</span>
+<span class="n">p_write</span><span class="p">(</span><span class="n">pla_cm</span><span class="p">,</span> <span class="s1">&#39;lambda&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pi : theta = </span><span class="si">{:4.1f}</span><span class="s1"> (o) &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta_angle</span><span class="p">(</span><span class="n">ppi_cm</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">180</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pi:  p  = [172.035, -50.289, 0.000, -87.104]
+pi: |p| =  100.579, mass = 139.570
+p:  p  = [943.645, 50.289, 0.000, 87.104]
+p: |p| =  100.579, mass = 938.270
+lambda:  p  = [1115.680, 0.000, 0.000, 0.000]
+lambda: |p| =  0.000, mass = 1115.680
+pi : theta = -150.0 (o) 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lorentz</span> <span class="o">=</span> <span class="n">lorentz_matrix</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span>
+<span class="n">pp_lab</span>  <span class="o">=</span> <span class="n">lorentz</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span> <span class="n">pp_cm</span> <span class="o">.</span><span class="n">transpose</span><span class="p">()</span> <span class="p">)</span>
+<span class="n">ppi_lab</span> <span class="o">=</span> <span class="n">lorentz</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span> <span class="n">ppi_cm</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span> <span class="p">)</span>
+<span class="n">pla_lab</span> <span class="o">=</span> <span class="n">ppi_lab</span> <span class="o">+</span> <span class="n">pp_lab</span>
+
+<span class="n">p_write</span><span class="p">(</span><span class="n">ppi_lab</span><span class="p">,</span> <span class="s1">&#39;pi&#39;</span><span class="p">)</span>
+<span class="n">p_write</span><span class="p">(</span><span class="n">pp_lab</span> <span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">)</span>
+<span class="n">p_write</span><span class="p">(</span><span class="n">pla_lab</span><span class="p">,</span> <span class="s1">&#39;lambda&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p  : theta = </span><span class="si">{:4.1f}</span><span class="s1"> (o) &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta_angle</span><span class="p">(</span><span class="n">pp_lab</span> <span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">180</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pi : theta = </span><span class="si">{:4.1f}</span><span class="s1"> (o) &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta_angle</span><span class="p">(</span><span class="n">ppi_lab</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">180</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pi:  p  = [196.988, -50.289, 0.000, 129.597]
+pi: |p| =  139.013, mass = 139.570
+p:  p  = [2093.152, 50.289, 0.000, 1870.403]
+p: |p| =  1871.079, mass = 938.270
+lambda:  p  = [2290.140, 0.000, 0.000, 2000.000]
+lambda: |p| =  2000.000, mass = 1115.680
+p  : theta =  1.5 (o) 
+pi : theta = -21.2 (o) 
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>ejercicio 8</strong></p>
+<p>Encontrar el ángulo mínimo de apertura entre los fotones de la desintegración <span class="math notranslate nohighlight">\(\pi^0 \to \gamma \gamma\)</span> si la energía del pión es 10 GeV. [MT2.9]</p>
+<p><em>solución</em></p>
+<p>Sea <span class="math notranslate nohighlight">\(a \to b + c\)</span>, <span class="math notranslate nohighlight">\(p_a = p_b + p_c\)</span>, en el sistema laboratorio
+$<span class="math notranslate nohighlight">\(
+s = (E_b + E_c, {\bf p}_b + {\bf p_c})^2 = (E_b + E_c)^2 - E^2_b - E^2_c- 2 E_b E_c \cos \theta_{bc} \\
+ s = 2 E_b E_c ( 1 - \cos \theta_{bc}) = 4 E^2 x (1-x) \sin^2 \frac{\theta_{bc}}{2} \\
+ \sin \frac{\theta_{bc}}{2} = \sqrt{\frac{s}{4 E^2 x (1-x)}}
+\)</span><span class="math notranslate nohighlight">\(
+donde \)</span>x  \in [0, 1]<span class="math notranslate nohighlight">\(, siendo \)</span>s = m^2_\pi = (0.135)^2<span class="math notranslate nohighlight">\( GeV\)</span>^2<span class="math notranslate nohighlight">\( y \)</span>E = 10$ GeV.</p>
+<p>El valor mínimo de <span class="math notranslate nohighlight">\(\theta_{bc}\)</span> corresponde al máximo de <span class="math notranslate nohighlight">\(x(1-x)\)</span> que es <span class="math notranslate nohighlight">\(x = 1/2\)</span>, esto es <span class="math notranslate nohighlight">\(E_b = E_c = 5\)</span> GeV</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">0.135</span> <span class="c1">## GeV</span>
+<span class="n">E</span>   <span class="o">=</span> <span class="mi">10</span> <span class="c1"># GeV</span>
+
+<span class="k">def</span> <span class="nf">pi_theta</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">ss</span><span class="p">,</span> <span class="n">E</span><span class="p">):</span>    
+    <span class="n">den</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">E</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">den</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span> <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">ss</span><span class="o">/</span><span class="n">den</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span>  <span class="mi">100</span><span class="p">)</span>
+<span class="n">thetas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">180</span> <span class="o">*</span> <span class="n">pi_theta</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="n">mpi</span><span class="o">*</span><span class="n">mpi</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span><span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span> <span class="o">*</span> <span class="n">xs</span><span class="p">,</span> <span class="n">thetas</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$E_b$ foton (GeV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\theta_</span><span class="si">{bc}</span><span class="s1">$ ($^O$)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
+
+<span class="n">theta_min</span> <span class="o">=</span> <span class="n">pi_theta</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">mpi</span><span class="o">*</span><span class="n">mpi</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;theta min angle </span><span class="si">{:5.4f}</span><span class="s1"> rad, </span><span class="si">{:5.3f}</span><span class="s1"> degrees&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta_min</span><span class="p">,</span> <span class="mi">180</span><span class="o">*</span><span class="n">theta_min</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>theta min angle 0.0270 rad, 1.547 degrees
+</pre></div>
+</div>
+<img alt="../../_images/problemas-I-save_44_1.png" src="../../_images/problemas-I-save_44_1.png" />
+</div>
+</div>
+<p>Por otro lado el valor mínimo de la energía, de la fracción <span class="math notranslate nohighlight">\(x\)</span>, debe corresponder al máximo <span class="math notranslate nohighlight">\(\theta = \pi, \sin^2 \theta/2 = 1\)</span>, por lo que:</p>
+<p>$$
+x(1-x) = \frac{s}{4E^2},;; x = \frac{1 - \sqrt{1 - s/E^2}}{2}</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">0.135</span> <span class="c1"># GeV</span>
+<span class="n">E</span>   <span class="o">=</span> <span class="mf">10.</span> <span class="c1"># GeV</span>
+<span class="n">xmin</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">mpi</span><span class="o">*</span><span class="n">mpi</span><span class="o">/</span><span class="n">E</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;minimum energy </span><span class="si">{:4.3f}</span><span class="s1"> keV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">E</span> <span class="o">*</span> <span class="n">xmin</span> <span class="o">*</span> <span class="mf">1e6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>minimum energy 455.646 keV
+</pre></div>
+</div>
+</div>
+</div>
+<p>Otra forma de hacer el ejercicio es mediante las transformaciones de Lorentz.</p>
+<p>En el sistema CM, los cuadrimomentos de los fotones son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+p_b = \frac{m_\pi}{2} (1, 0, \sin \theta^*, \cos \theta^*), \\
+p_c = \frac{m_\pi}{2} (1, 0, -\sin \theta^*, -\cos \theta^*),
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\theta^*\)</span> es el ángulo respecto al eje <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>En el sistema de laboratorio, los cuadrimomentos son:
+$<span class="math notranslate nohighlight">\(
+p'_b = \frac{m_\pi}{2} \left(\gamma(1 + \beta \cos \theta^*), 0, \sin \theta^*, \gamma(\beta + \cos \theta^*) \right), \\
+p'_c = \frac{m_\pi}{2} \left(\gamma(1 - \beta \cos \theta^*), 0, -\sin \theta^*, \gamma(\beta - \cos \theta^*) \right),
+\)</span>$</p>
+<p>En producto escalar de los momentos de los fotones en el sistema laboratorio es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+{\bf p'}_{b} {\bf p'}_c = \frac{m^2_\pi}{4} \left( - \sin^2 \theta^* + \gamma^2 (\beta^2 - \cos^2 \theta^*)\right) \\
+= \frac{m^2_\pi}{4} \gamma^2 \left( -(1 - \beta^2) (1-\cos^2\theta^*) + (\beta^2 - \cos^2 \theta^*) )\right)
+= \frac{m^2_\pi}{4}\gamma^2 \left( \beta^2 - 1 - \beta^2 \cos^2\theta^* \right)
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\gamma^2 = (1-\beta^2)^{-1}\)</span></p>
+<p>Por otra parte: <span class="math notranslate nohighlight">\({\bf p'}_{b} {\bf p'}_c = E_b E_c \cos \theta_{bc}\)</span>, así:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E_b = \frac{m_\pi}{2} \gamma (1 + \beta \cos \theta^*), \\
+E_c = \frac{m_\pi}{2} \gamma (1 - \beta \cos \theta^*), \\
+\cos \theta_{bc} = \frac{2\beta^2 -1 - \beta^2 \cos^2 \theta^*}{1 - \beta^2 \cos^2 \theta^*}
+\end{split}\]</div>
+<p>En este caso para <span class="math notranslate nohighlight">\(\theta^* = \pi/2\)</span> tenemos <span class="math notranslate nohighlight">\(\theta_{bc}\)</span> mínimo:
+$<span class="math notranslate nohighlight">\(
+\cos \theta_{bc} = 2\beta^2 -1
+\)</span><span class="math notranslate nohighlight">\(
+Donde:
+\)</span><span class="math notranslate nohighlight">\(
+    \beta = \frac{p}{E} = \sqrt{1 - \frac{m^2}{E^2}}
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">E</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">mpi</span><span class="o">*</span><span class="n">mpi</span><span class="p">)</span><span class="o">/</span><span class="n">E</span>
+<span class="n">ctheta</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">beta</span><span class="o">*</span><span class="n">beta</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">thetamin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">ctheta</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;theta min </span><span class="si">{:4.3f}</span><span class="s1"> rad, </span><span class="si">{:4.3f}</span><span class="s1"> degrees&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">thetamin</span><span class="p">,</span> <span class="mi">180</span> <span class="o">*</span> <span class="n">thetamin</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> 
+
+<span class="n">ctheta_bc</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">theta</span><span class="p">:</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">beta</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">thetas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">thetas</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">ctheta_bc</span><span class="p">(</span><span class="n">thetas</span><span class="p">)));</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\theta^*$ (rad)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\theta_</span><span class="si">{bc}</span><span class="s1">$ (rad)&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>theta min 0.027 rad, 1.547 degrees
+</pre></div>
+</div>
+<img alt="../../_images/problemas-I-save_50_1.png" src="../../_images/problemas-I-save_50_1.png" />
+</div>
+</div>
+<p>La energía mínima de <span class="math notranslate nohighlight">\(E_c\)</span> correspondera para el caso <span class="math notranslate nohighlight">\(\theta^* = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+E^{min}_c = \frac{m_\pi}{2} \gamma (1 - \beta)
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">emin</span> <span class="o">=</span> <span class="p">(</span><span class="n">mpi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="n">mpi</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E foton min </span><span class="si">{:4.3f}</span><span class="s1"> KeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">emin</span> <span class="o">*</span> <span class="mf">1e6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E foton min 455.646 KeV
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<hr class="docutils" />
+<p>La vida media del <span class="math notranslate nohighlight">\(\pi^0\)</span> es <span class="math notranslate nohighlight">\(\tau_{\pi} = 8.4 \, 10^{-17}\)</span> s, ¿cuál es su anchura de desintegración?. La anchura del mesón <span class="math notranslate nohighlight">\(\eta\)</span> es <span class="math notranslate nohighlight">\(\Gamma_\eta = \)</span> 1.3 keV, ¿Cuál es su vida media? [AB.1.5]</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gamma</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">tau</span>   <span class="p">:</span> <span class="n">units</span><span class="o">.</span><span class="n">hbar</span> <span class="o">/</span> <span class="p">(</span><span class="n">tau</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">eV</span><span class="p">)</span>
+<span class="n">tau</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">gamma</span> <span class="p">:</span> <span class="n">units</span><span class="o">.</span><span class="n">hbar</span> <span class="o">/</span> <span class="p">(</span><span class="n">gamma</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">eV</span><span class="p">)</span>
+<span class="n">tau_pi</span>    <span class="o">=</span> <span class="mf">8.4e-17</span> <span class="c1"># 1/s</span>
+<span class="n">gamma_eta</span> <span class="o">=</span> <span class="mf">1.3e3</span>  <span class="c1"># eV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Gamma pi </span><span class="si">{:e}</span><span class="s1"> eV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gamma</span><span class="p">(</span><span class="n">tau_pi</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; tau eta </span><span class="si">{:e}</span><span class="s1"> s&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tau</span><span class="p">(</span><span class="n">gamma_eta</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Gamma pi 7.835857e+00 eV
+ tau eta 5.063169e-19 s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hbarc = </span><span class="si">{:e}</span><span class="s1"> GeV fm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hbarc</span><span class="p">))</span>
+<span class="n">fm_un</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">hbarc</span> <span class="c1">#1/GeV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;fm    = </span><span class="si">{:e}</span><span class="s1"> 1/GeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fm_un</span><span class="p">))</span>
+<span class="n">ps_un</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">femto</span> <span class="o">*</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">c</span> <span class="o">/</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">femto</span><span class="p">))</span> <span class="o">*</span> <span class="n">fm_un</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;fs    = </span><span class="si">{:e}</span><span class="s1"> 1/GeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ps_un</span><span class="p">))</span>
+<span class="n">m_un</span> <span class="o">=</span> <span class="n">fm_un</span><span class="o">/</span><span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">femto</span><span class="p">)</span> <span class="c1"># 1/GeV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;m  = </span><span class="si">{:e}</span><span class="s1"> 1/eV, eV = </span><span class="si">{:e}</span><span class="s1"> 1/m &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m_un</span><span class="o">/</span><span class="n">units</span><span class="o">.</span><span class="n">giga</span><span class="p">,</span> <span class="n">units</span><span class="o">.</span><span class="n">giga</span><span class="o">/</span><span class="n">m_un</span><span class="p">))</span>
+<span class="c1">#s_un = fs_un / (units.femto)</span>
+<span class="c1">#print(&#39;s  = {:e} 1/eV, eV = {:e} 1/s &#39;.format(s_un/units.giga, units.giga/s_un))</span>
+<span class="n">m_un</span> <span class="o">=</span> <span class="n">fm_un</span> <span class="o">/</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">femto</span><span class="p">)</span>
+<span class="n">barn</span> <span class="o">=</span> <span class="mf">1e-28</span> <span class="o">*</span> <span class="p">(</span><span class="n">m_un</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;barn = </span><span class="si">{:e}</span><span class="s1"> 1/GeV2 &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">barn</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hbarc = 1.973270e-01 GeV fm
+fm    = 5.067731e+00 1/GeV 
+fs    = 1.519267e+09 1/GeV 
+m  = 5.067731e+06 1/eV, eV = 1.973270e-07 1/m 
+barn = 2.568189e+03 1/GeV2 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="experimentos-de-blanco-fijo-y-colisionador">
+<h2>Experimentos de blanco fijo y colisionador<a class="headerlink" href="#experimentos-de-blanco-fijo-y-colisionador" title="Permalink to this heading">#</a></h2>
+<p>### 2.1 ejercicio</p>
+<p>Demostrar que los procesos: <span class="math notranslate nohighlight">\(\gamma \to e + e^+\)</span>, <span class="math notranslate nohighlight">\(e + \gamma \to e\)</span> no pueden tener lugar. [AB1.4]</p>
+<p>En ambos casos no se conserva la energía y el momento entre el estado inicial y final</p>
+<p>a) Para <span class="math notranslate nohighlight">\(\gamma \to e + e^+\)</span>.</p>
+<p>Sea <span class="math notranslate nohighlight">\(a = \gamma, b = e, c = e^+\)</span>, se cumple <span class="math notranslate nohighlight">\(p_a = p_b + p_c\)</span>. En el CM del sistema final  <span class="math notranslate nohighlight">\(p_b = (E, {\bf p}), p_c = (E, - {\bf p})\)</span>, que hace <span class="math notranslate nohighlight">\(p_b + p_c = (2E, {\bf 0})\)</span>, donde <span class="math notranslate nohighlight">\(E = 2 \sqrt{m^2_e + p^2} \ge 2m_e \gt 0\)</span> mientras que en estado inicial <span class="math notranslate nohighlight">\(p_a = (E_i, E_i)\)</span>, lo que obligaría a que el fotón estuviese en reposo y en ese caso <span class="math notranslate nohighlight">\(E_i = 0\)</span>, .</p>
+<p>b) Para el caso <span class="math notranslate nohighlight">\(e + \gamma \to e\)</span>. Sea <span class="math notranslate nohighlight">\(a + b \to c\)</span>. En el CM el estado final es <span class="math notranslate nohighlight">\((m_e, {\bf0})\)</span> que debe ser igual a <span class="math notranslate nohighlight">\(p_a + p_b, \, p_a= (E_e, {\bf p}), p_b = (p, -{\bf p})\)</span>, Ese hace:</p>
+<div class="math notranslate nohighlight">
+\[
+m^2_e = E^2_e + p^2 + 2Ep = m^2_e + 2 E_e p
+\]</div>
+<p>pero como <span class="math notranslate nohighlight">\(E_e \gt m_e\)</span>, no puede cumplirse</p>
+<p>### 2.2 ejercicio</p>
+<p>Sean tres protones de <span class="math notranslate nohighlight">\(p = 3\)</span> GeV emitidos entre ellos <span class="math notranslate nohighlight">\(120^o\)</span> en un plano. ¿cuál es su masa invariante? [AB1.P2]</p>
+<p>La masa invariante de un sistema de n-partículas con cuadrimomentos <span class="math notranslate nohighlight">\(p_i\)</span> con <span class="math notranslate nohighlight">\(i=1, \dots, n\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+m^2 = \left( \sum_i p_i\right)^2
+\]</div>
+<p>En la suma de los cuadrimomentos el momento se anula y la energís es:</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_i p_i = (3E, 0)
+\]</div>
+<p>Luego la masa es <span class="math notranslate nohighlight">\(3E\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pp</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># GeV</span>
+<span class="n">mp</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">m_p</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">GeV_to_Julio</span> <span class="c1"># GeV</span>
+<span class="n">ene</span> <span class="o">=</span> <span class="n">energy</span><span class="p">(</span><span class="n">mp</span><span class="p">,</span> <span class="n">pp</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;mass </span><span class="si">{:4.3f}</span><span class="s1"> GeV &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">ene</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mass 9.430 GeV 
+</pre></div>
+</div>
+</div>
+</div>
+<p>### 2.3 ejercicio</p>
+<p>Calcula la luminosidad equivalente de un haz de protones de intensidad <span class="math notranslate nohighlight">\(10^{13}\)</span> 1/s que golpea un tanque de 10 cm de hidrógeno líquido, <span class="math notranslate nohighlight">\(\rho = 60\)</span> kg/m<span class="math notranslate nohighlight">\(^3\)</span>. [AB1.6]</p>
+<p>La razón de interacción en un blanco fijo es:
+$<span class="math notranslate nohighlight">\(
+R = \phi_a \sigma N_b
+\)</span>$</p>
+<p>donde <span class="math notranslate nohighlight">\(\phi_a\)</span> es el flujo, <span class="math notranslate nohighlight">\(\sigma\)</span>, la sección eficaz, <span class="math notranslate nohighlight">\(N_b\)</span>, el número de partículas blanco.</p>
+<p>Y en función de la luminosidad <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> de un colisionador:
+$<span class="math notranslate nohighlight">\(
+R = \mathcal{L} \sigma
+\)</span>$</p>
+<p>Por lo tanto, la luminosidad equivalente en un blanco fijo es:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L} = \phi_a N_b
+\]</div>
+<p>En este caso, dada una intensidad <span class="math notranslate nohighlight">\(I_a\)</span>, en una seccion <span class="math notranslate nohighlight">\(S\)</span> tenemos un flujo:</p>
+<div class="math notranslate nohighlight">
+\[
+\phi_a = I_a / S
+\]</div>
+<p>Y en esa sección <span class="math notranslate nohighlight">\(S\)</span>, una longitud <span class="math notranslate nohighlight">\(L\)</span> y densidad <span class="math notranslate nohighlight">\(\rho\)</span> (en kg/m<span class="math notranslate nohighlight">\(^3\)</span>) tenemos tantos nucleones blanco:</p>
+<div class="math notranslate nohighlight">
+\[
+N_b = 10^{3} \rho S L N_A,
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(N_A = 6.022 \, 10^{23}\)</span> es el número de Avogadro de átomos en un mol.</p>
+<p>Luego la luminosidad equivalente es:
+$<span class="math notranslate nohighlight">\(
+\mathcal{L} = \phi_a N_b = I_a \rho 10^3 L
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rho</span>    <span class="o">=</span> <span class="mi">60</span> <span class="c1"># kg/m3</span>
+<span class="n">length</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># m</span>
+<span class="n">I_a</span>    <span class="o">=</span> <span class="mf">1e13</span>
+<span class="n">n_sec</span>  <span class="o">=</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">length</span> <span class="o">*</span> <span class="mf">1e3</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">N_A</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Luminosity </span><span class="si">{:e}</span><span class="s1"> 1/(m2 s)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">I_a</span> <span class="o">*</span> <span class="n">n_sec</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Luminosity 3.613284e+40 1/(m2 s)
+</pre></div>
+</div>
+</div>
+</div>
+<p>### 2.4 ejercicio</p>
+<p>Sea la colisión de <span class="math notranslate nohighlight">\(p + p \to p + p + a\)</span>, donde <span class="math notranslate nohighlight">\(a\)</span> es una nueva partícula. ¿Cuál es la energía umbral del haz para producir la partícula <span class="math notranslate nohighlight">\(a\)</span> con masa <span class="math notranslate nohighlight">\(m_a\)</span> en:</p>
+<ul class="simple">
+<li><p>a) blanco fijo,</p></li>
+<li><p>b) colisión en el CM? Sea esa partícula un <span class="math notranslate nohighlight">\(\pi\)</span>,</p></li>
+</ul>
+<p>¿Cuál es el momento del pión y la energía umbral en cada caso?</p>
+<p>[AB1.P6]</p>
+<p>a) en el caso de colisión en el CM, en el estado de menor energía las partículas están en reposo, tenemos, que los protones antes de la colisión tienen cuadrimomentos <span class="math notranslate nohighlight">\(p_i = (E_i, {\bf p}_i)\)</span> y después <span class="math notranslate nohighlight">\((E_f, {\bf p}_f)\)</span>, y la partícula a, <span class="math notranslate nohighlight">\(p_a = (m_a, {\bf 0})\)</span>. La conservación de energía momento queda: <span class="math notranslate nohighlight">\((2E_i,0) = (2E_f + m_a)\)</span>. Por lo tanto <span class="math notranslate nohighlight">\( E_i = E_f + m_a/2\)</span>. Si consideramos que los protones finales quedan en reposo:</p>
+<div class="math notranslate nohighlight">
+\[
+E_i \ge m_p + m_a/2
+\]</div>
+<p>b) en el caso de blanco fijo, el invariante <span class="math notranslate nohighlight">\(s\)</span>, que es un invariante Lorentz y no cambia antes y después de la interacción, es en laboratorio antes de la colisión <span class="math notranslate nohighlight">\(s = (E_i+m_p, {\bf p})^2\)</span> y en el CM después, <span class="math notranslate nohighlight">\(s = (2m_p +m_a, {\bf 0})^2\)</span>. Así pues:</p>
+<div class="math notranslate nohighlight">
+\[
+(E_i+m_p)^2 - p^2 = (2m_p + m_a)^2, \;\; E_i^2 + 2 m_p E_i + m_p^2 - (E_i^2 - m^2_p) = (2m_p + m_a)^2, \;\;2 m_p E_i = (2m_p + m_a)^2 - 2 m^2_p
+\]</div>
+<p>Esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+E_i = m_p + 2 m_a + \frac{m^2_a}{m_p}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ene_thr_tar</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">ma</span><span class="p">,</span> <span class="n">mp</span> <span class="p">:</span> <span class="n">mp</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">ma</span> <span class="o">+</span> <span class="n">ma</span> <span class="o">*</span> <span class="n">ma</span><span class="o">/</span><span class="n">mp</span>
+<span class="n">ene_thr_col</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">ma</span><span class="p">,</span> <span class="n">mp</span> <span class="p">:</span> <span class="n">mp</span> <span class="o">+</span> <span class="n">ma</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">mp</span> <span class="o">=</span> <span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">m_p</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">GeV_to_Julio</span><span class="p">)</span> <span class="c1"># GeV</span>
+<span class="n">ma</span> <span class="o">=</span> <span class="mf">0.135</span> <span class="c1"># GeV</span>
+
+<span class="n">e0lab</span> <span class="o">=</span> <span class="n">ene_thr_tar</span><span class="p">(</span><span class="n">ma</span><span class="p">,</span> <span class="n">mp</span><span class="p">)</span>
+<span class="n">plab</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">e0lab</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">mp</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ekinlab</span> <span class="o">=</span> <span class="n">e0lab</span> <span class="o">-</span> <span class="n">mp</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;threshold energy in (target)      = </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e0lab</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;momentum of proton (target)       = </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">plab</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kinetic energy of proton (target) = </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ekinlab</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>threshold energy in (target)      = 1.228 GeV
+momentum of proton (target)       = 0.792 GeV
+kinetic energy of proton (target) = 0.289 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">e0col</span> <span class="o">=</span> <span class="n">ene_thr_col</span><span class="p">(</span><span class="n">ma</span><span class="p">,</span> <span class="n">mp</span><span class="p">)</span>
+<span class="n">pcol</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">e0col</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">mp</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> 
+<span class="n">ekincol</span> <span class="o">=</span> <span class="n">e0col</span> <span class="o">-</span> <span class="n">mp</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;threshold energy in (coll)     = </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e0col</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;momentum of proton (coll)      = </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pcol</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kinetic energy of proton (col) = </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ekincol</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>threshold energy in (coll)     = 1.006 GeV
+momentum of proton (coll)      = 0.362 GeV
+kinetic energy of proton (col) = 0.067 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">mas</span><span class="p">,</span> <span class="n">ene_thr_tar</span><span class="p">(</span><span class="n">mas</span><span class="p">,</span> <span class="n">mp</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;target&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">mas</span><span class="p">,</span> <span class="n">ene_thr_col</span><span class="p">(</span><span class="n">mas</span><span class="p">,</span> <span class="n">mp</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;collider&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$m_a$ (GeV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Energy (GeV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/problemas-I-save_72_0.png" src="../../_images/problemas-I-save_72_0.png" />
+</div>
+</div>
+<div class="section" id="ejercicio">
+<h3>2.5 ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this heading">#</a></h3>
+<p>En un experimento de blanco fijo un haz de protones golpea un blanco, encontrar la energía del haz, <span class="math notranslate nohighlight">\(E\)</span>, para que tenga lugar el proceso:</p>
+<div class="math notranslate nohighlight">
+\[
+p + p \to p + p + p + \bar{p}
+\]</div>
+<p>El invariante <span class="math notranslate nohighlight">\(s\)</span> es igual en los casos:</p>
+<p>i) inicial en el laboratorio: <span class="math notranslate nohighlight">\(s = (E+m_p,  {\bf p})^2\)</span></p>
+<p>ii) final en el CM con el caso de menor energía en el que las partículas quedan en reposo: <span class="math notranslate nohighlight">\(s = (4 m_p, {\bf 0})\)</span></p>
+<p>Así:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(E+m_p)^2 - p^2 = 16 m^2_p, \;\; E^2 + 2Em_p + m^2_p - p^2 = 16 m^2_p, \\
+m^2_p + p^2 + 2 E m_p + m^2_p - p^2 = 16 m^2_p \\
+2 E m_p = 14 m^2_p, \;\; E = 7 m_p
+\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Threshold energy </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">7</span> <span class="o">*</span> <span class="n">mp</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Threshold energy 6.568 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<p>### 2.5 ejercicio</p>
+<p>Considera un experimento de blanco fijo <span class="math notranslate nohighlight">\(p+p\)</span>, ¿cuál es la energía del haz de protones para que en el CM tenga la energía del LHC, <span class="math notranslate nohighlight">\(\sqrt{s} = 14\)</span> TeV?</p>
+<p>[MT1.P10]</p>
+<p>En el sistema de laboratorio: <span class="math notranslate nohighlight">\(s = (E + m_p, {\bf p})\)</span>, por lo que:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(E+m_p)^2 - p^2 = s, \;\; 2E m_p + 2m^2_p = s \\
+E = \frac{s- 2m^2_p}{2m_p}
+\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ss</span>   <span class="o">=</span> <span class="p">(</span><span class="mi">14</span> <span class="o">*</span> <span class="mf">1e3</span><span class="p">)</span> <span class="o">**</span><span class="mi">2</span> <span class="c1">## GeV^2</span>
+<span class="n">ethr</span> <span class="o">=</span>  <span class="p">(</span><span class="n">ss</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">mp</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mp</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Energy threshold </span><span class="si">{:e}</span><span class="s1"> TeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ethr</span><span class="o">/</span><span class="mf">1e3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Energy threshold 1.044473e+05 TeV
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>ejercicio</em>: La producción resonante del barión <span class="math notranslate nohighlight">\(\Delta^0\)</span> ocurren en la interacción de <span class="math notranslate nohighlight">\(\pi^- + p\)</span> en un experimento de blanco fijo con el momento del <span class="math notranslate nohighlight">\(\pi^-\)</span> es 300 MeV. Indica el valor de la masa del <span class="math notranslate nohighlight">\(\Delta^0\)</span>.</p>
+<p><em>ejercicio</em>: En LEP el colisionador <span class="math notranslate nohighlight">\(e + e^+\)</span> las corrientes de los haces eran de 1 mA, tenía una circunferencia de 27 km y cuatro paquetes en cada haz con una sección <span class="math notranslate nohighlight">\(1.8 \, 10^4\)</span> <span class="math notranslate nohighlight">\(\mu\)</span>m<span class="math notranslate nohighlight">\(^2\)</span>. Calcula la luminosidad instantánea, <span class="math notranslate nohighlight">\(\mathcal{L}(t)\)</span>.</p>
+<p><em>ejercicio</em>: En un futuro colisionador <span class="math notranslate nohighlight">\(e+e^+\)</span> con <span class="math notranslate nohighlight">\(\sqrt{s} = 250\)</span> GeV, la sección eficaz <span class="math notranslate nohighlight">\(e+e^+ \to H + Z\)</span> es 250 fbarns. Si su luminosidad instantánea es <span class="math notranslate nohighlight">\(\mathcal{L}(t) = 2 \, 10^{34}\)</span> cm<span class="math notranslate nohighlight">\(^{-2}\)</span>s<span class="math notranslate nohighlight">\(^{-1}\)</span> y está operacional el 60% del tiempo, ¿cuántos bosones de Higgs produce en 5 años?</p>
+<p><em>ejercicio</em>: En el colisionador HERA colisionaban protones de 820 GeV con electrones de 27.5 GeV, calcula su energía en el centro de masas.</p>
+</div>
+</div>
+<div class="section" id="cambios-de-sistema-de-referencia">
+<h2>Cambios de sistema de referencia<a class="headerlink" href="#cambios-de-sistema-de-referencia" title="Permalink to this heading">#</a></h2>
+<div class="section" id="id1">
+<h3>3.1 ejercicio<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>El siguiente proceso se llama fotoproducción, <span class="math notranslate nohighlight">\(\gamma + p \to p + \pi^0\)</span>, con en protón en reposo, encuentra la energía umbral del fotón.</p>
+<p>Los fotones de la radiación electromagnética de fondo del Universo tienen una energía máxima de 1 meV (el pico de la distribución está en 0.37 meV, corresponde a una temperatura de 3 K). Calcula la energía mínima de los protones de los rayos cósmicos para que se produzca fotoproducción.</p>
+<p>[AB1.P7]</p>
+<p>a) El invariante <span class="math notranslate nohighlight">\(s\)</span> antes de la interacción en el laboratorio y después en el CM son iguales:</p>
+<div class="math notranslate nohighlight">
+\[
+(E_\gamma + m_p, {\bf p_\gamma})^2 = (m_p + m_\pi, {\bf 0})^2
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(|{\bf p}_\gamma| = E_\gamma\)</span>, luego:
+$<span class="math notranslate nohighlight">\(
+(E_\gamma + m_p)^2 - E^2_\gamma = (m_p + m_\pi)^2, \\
+2E_\gamma m_p + m^2_p = m^2_p + 2 m_p m_\pi + m^2_\pi \\
+\)</span>$</p>
+<p>Por lo tanto:
+$<span class="math notranslate nohighlight">\(
+E_\gamma = m_\pi + \frac{m^2_\pi}{2m_p} 
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">0.135</span> <span class="c1"># GeV</span>
+<span class="n">photoprod_ethr</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">mpi</span><span class="p">,</span> <span class="n">mp</span> <span class="p">:</span> <span class="n">mpi</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">mpi</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span><span class="n">mp</span>
+<span class="n">egamma</span> <span class="o">=</span> <span class="n">photoprod_ethr</span><span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="n">mp</span><span class="p">)</span>
+<span class="n">ss</span>  <span class="o">=</span> <span class="p">(</span><span class="n">mpi</span> <span class="o">+</span> <span class="n">mp</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E threshold of photoproduction </span><span class="si">{:4.3f}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">egamma</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;s           of photoproduction </span><span class="si">{:4.3f}</span><span class="s1"> GeV^2&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ss</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E threshold of photoproduction 0.145 GeV
+s           of photoproduction 1.152 GeV^2
+</pre></div>
+</div>
+</div>
+</div>
+<p>b) La colisión <span class="math notranslate nohighlight">\(\gamma + p \)</span> es máxima si es enfrentada, en ese caso tenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+s = (E_\gamma + E_p, {\bf p}_\gamma + {\bf p}_p)^2 = (E_\gamma + E_p)^2 - ({\bf p}_\gamma + {\bf p}_p) = E^2_\gamma + E^2_p + 2E_\gamma E_p - E^2_\gamma - p^2_p - 2 E_\gamma p_p \\
+s = m^2_p + 2 E_\gamma (E_p + p_p)
+\end{split}\]</div>
+<p>La energía del protón, que como veremos es muy alta ypor lo tanto podemos aproximar <span class="math notranslate nohighlight">\(p_p \simeq E_p, es\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+E_p \simeq \frac{s-m^2_p}{4E_\gamma}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">egamma</span> <span class="o">=</span> <span class="mf">1e-3</span> <span class="o">/</span> <span class="n">units</span><span class="o">.</span><span class="n">giga</span><span class="c1"># # GeV</span>
+<span class="n">ep</span>     <span class="o">=</span> <span class="p">(</span><span class="n">ss</span> <span class="o">-</span> <span class="n">mp</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">egamma</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;proton energy </span><span class="si">{:e}</span><span class="s1"> GeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>proton energy 6.788962e+10 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<p>### 3.3 ejercicio</p>
+<p>Calcula la energía y momento de las partículas finales en el CM en la desintegración <span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span> y <span class="math notranslate nohighlight">\(\pi^+ \to e^+ + \nu_e\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">139.6</span> <span class="c1"># MeV</span>
+<span class="n">mmu</span> <span class="o">=</span> <span class="mf">105.6</span> <span class="c1"># MeV</span>
+<span class="n">ss</span>  <span class="o">=</span> <span class="n">mpi</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">emu</span> <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="n">mmu</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">enu</span> <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="mi">0</span>  <span class="p">,</span> <span class="n">mmu</span><span class="p">)</span>
+<span class="n">pcm</span> <span class="o">=</span> <span class="n">momentum_cm_2body</span><span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="n">mmu</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E muon </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">emu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E nu   </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">enu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p      </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pcm</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E muon 109.740 MeV
+E nu   29.860 MeV
+p      29.860 MeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">139.6</span> <span class="c1"># MeV</span>
+<span class="n">me</span>  <span class="o">=</span> <span class="mf">0.511</span> <span class="c1"># MeV</span>
+<span class="n">emu</span> <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="n">me</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">enu</span> <span class="o">=</span> <span class="n">energy_cm_2body</span>  <span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">me</span><span class="p">)</span>
+<span class="n">pcm</span> <span class="o">=</span> <span class="n">momentum_cm_2body</span><span class="p">(</span><span class="n">mpi</span><span class="p">,</span> <span class="n">me</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E elec </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">emu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E nu   </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">enu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p      </span><span class="si">{:4.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pcm</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E elec 69.801 MeV
+E nu   69.799 MeV
+p      69.799 MeV
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>3.5 ejercicio<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>Encontrar el ángulo mínimo de apertura entre los fotones de la desintegración <span class="math notranslate nohighlight">\(\pi^0 \to \gamma \gamma\)</span> si la energía del pión es 10 GeV. [MT2.9]</p>
+<p>Sea <span class="math notranslate nohighlight">\(a \to b + c\)</span>, <span class="math notranslate nohighlight">\(p_a = p_b + p_c\)</span>, en el sistema laboratorio
+$<span class="math notranslate nohighlight">\(
+s = (E_b + E_c, {\bf p}_b + {\bf p_c})^2 = (E_b + E_c)^2 - E^2_b - E^2_c- 2 E_b E_c \cos \theta_{bc} \\
+ s = 2 E_b E_c ( 1 - \cos \theta_{bc}) = 4 E^2 x (1-x) \sin^2 \frac{\theta_{bc}}{2} \\
+ \sin \frac{\theta_{bc}}{2} = \sqrt{\frac{s}{4 E^2 x (1-x)}}
+\)</span><span class="math notranslate nohighlight">\(
+donde \)</span>x  \in [0, 1]<span class="math notranslate nohighlight">\(, siendo \)</span>s = m^2_\pi = (0.135)^2<span class="math notranslate nohighlight">\( GeV\)</span>^2<span class="math notranslate nohighlight">\( y \)</span>E = 10$ GeV.</p>
+<p>El valor mínimo de <span class="math notranslate nohighlight">\(\theta_{bc}\)</span> corresponde al máximo de <span class="math notranslate nohighlight">\(x(1-x)\)</span> que es <span class="math notranslate nohighlight">\(x = 1/2\)</span>, esto es <span class="math notranslate nohighlight">\(E_b = E_c = 5\)</span> GeV</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">0.135</span> <span class="c1">## GeV</span>
+<span class="n">E</span>   <span class="o">=</span> <span class="mi">10</span> <span class="c1"># GeV</span>
+
+<span class="k">def</span> <span class="nf">pi_theta</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">ss</span><span class="p">,</span> <span class="n">E</span><span class="p">):</span>    
+    <span class="n">den</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">E</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">den</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span> <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">ss</span><span class="o">/</span><span class="n">den</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span>  <span class="mi">100</span><span class="p">)</span>
+<span class="n">thetas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">180</span> <span class="o">*</span> <span class="n">pi_theta</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="n">mpi</span><span class="o">*</span><span class="n">mpi</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span><span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">E</span> <span class="o">*</span> <span class="n">xs</span><span class="p">,</span> <span class="n">thetas</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$E_b$ foton (GeV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\theta_</span><span class="si">{bc}</span><span class="s1">$ ($^O$)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
+
+<span class="n">theta_min</span> <span class="o">=</span> <span class="n">pi_theta</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">mpi</span><span class="o">*</span><span class="n">mpi</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;theta min angle </span><span class="si">{:5.4f}</span><span class="s1"> rad, </span><span class="si">{:5.3f}</span><span class="s1"> degrees&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta_min</span><span class="p">,</span> <span class="mi">180</span><span class="o">*</span><span class="n">theta_min</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>theta min angle 0.0270 rad, 1.547 degrees
+</pre></div>
+</div>
+<img alt="../../_images/problemas-I-save_94_1.png" src="../../_images/problemas-I-save_94_1.png" />
+</div>
+</div>
+<p>Por otro lado el valor mínimo de la energía, de la fracción <span class="math notranslate nohighlight">\(x\)</span>, debe corresponder al máximo <span class="math notranslate nohighlight">\(\theta = \pi, \sin^2 \theta/2 = 1\)</span>, por lo que:</p>
+<div class="math notranslate nohighlight">
+\[
+x(1-x) = \frac{s}{4E^2},\;\; x = \frac{1 - \sqrt{1 - s/E^2}}{2} 
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">0.135</span> <span class="c1"># GeV</span>
+<span class="n">E</span>   <span class="o">=</span> <span class="mf">10.</span> <span class="c1"># GeV</span>
+<span class="n">xmin</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">mpi</span><span class="o">*</span><span class="n">mpi</span><span class="o">/</span><span class="n">E</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;minimum energy </span><span class="si">{:4.3f}</span><span class="s1"> keV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">E</span> <span class="o">*</span> <span class="n">xmin</span> <span class="o">*</span> <span class="mf">1e6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>minimum energy 455.646 keV
+</pre></div>
+</div>
+</div>
+</div>
+<p>Otra forma de hacer el ejercicio es mediante las transformaciones de Lorentz.</p>
+<p>En el sistema CM, los cuadrimomentos de los fotones son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+p_b = \frac{m_\pi}{2} (1, 0, \sin \theta^*, \cos \theta^*), \\
+p_c = \frac{m_\pi}{2} (1, 0, -\sin \theta^*, -\cos \theta^*),
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\theta^*\)</span> es el ángulo respecto al eje <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>En el sistema de laboratorio, los cuadrimomentos son:
+$<span class="math notranslate nohighlight">\(
+p'_b = \frac{m_\pi}{2} \left(\gamma(1 + \beta \cos \theta^*), 0, \sin \theta^*, \gamma(\beta + \cos \theta^*) \right), \\
+p'_c = \frac{m_\pi}{2} \left(\gamma(1 - \beta \cos \theta^*), 0, -\sin \theta^*, \gamma(\beta - \cos \theta^*) \right),
+\)</span>$</p>
+<p>En producto escalar de los momentos de los fotones en el sistema laboratorio es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+{\bf p'}_{b} {\bf p'}_c = \frac{m^2_\pi}{4} \left( - \sin^2 \theta^* + \gamma^2 (\beta^2 - \cos^2 \theta^*)\right) \\
+= \frac{m^2_\pi}{4} \gamma^2 \left( -(1 - \beta^2) (1-\cos^2\theta^*) + (\beta^2 - \cos^2 \theta^*) )\right)
+= \frac{m^2_\pi}{4}\gamma^2 \left( \beta^2 - 1 - \beta^2 \cos^2\theta^* \right)
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\gamma^2 = (1-\beta^2)^{-1}\)</span></p>
+<p>Por otra parte: <span class="math notranslate nohighlight">\({\bf p'}_{b} {\bf p'}_c = E_b E_c \cos \theta_{bc}\)</span>, así:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E_b = \frac{m_\pi}{2} \gamma (1 + \beta \cos \theta^*), \\
+E_c = \frac{m_\pi}{2} \gamma (1 - \beta \cos \theta^*), \\
+\cos \theta_{bc} = \frac{2\beta^2 -1 - \beta^2 \cos^2 \theta^*}{1 - \beta^2 \cos^2 \theta^*}
+\end{split}\]</div>
+<p>En este caso para <span class="math notranslate nohighlight">\(\theta^* = \pi/2\)</span> tenemos <span class="math notranslate nohighlight">\(\theta_{bc}\)</span> mínimo:
+$<span class="math notranslate nohighlight">\(
+\cos \theta_{bc} = 2\beta^2 -1
+\)</span><span class="math notranslate nohighlight">\(
+Donde:
+\)</span><span class="math notranslate nohighlight">\(
+    \beta = \frac{p}{E} = \sqrt{1 - \frac{m^2}{E^2}}
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">E</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">mpi</span><span class="o">*</span><span class="n">mpi</span><span class="p">)</span><span class="o">/</span><span class="n">E</span>
+<span class="n">ctheta</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">beta</span><span class="o">*</span><span class="n">beta</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">thetamin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">ctheta</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;theta min </span><span class="si">{:4.3f}</span><span class="s1"> rad, </span><span class="si">{:4.3f}</span><span class="s1"> degrees&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">thetamin</span><span class="p">,</span> <span class="mi">180</span> <span class="o">*</span> <span class="n">thetamin</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> 
+
+<span class="n">ctheta_bc</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">theta</span><span class="p">:</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">beta</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">thetas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">thetas</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">ctheta_bc</span><span class="p">(</span><span class="n">thetas</span><span class="p">)));</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\theta^*$ (rad)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\theta_</span><span class="si">{bc}</span><span class="s1">$ (rad)&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>theta min 0.027 rad, 1.547 degrees
+</pre></div>
+</div>
+<img alt="../../_images/problemas-I-save_100_1.png" src="../../_images/problemas-I-save_100_1.png" />
+</div>
+</div>
+<p>La energía mínima de <span class="math notranslate nohighlight">\(E_c\)</span> correspondera para el caso <span class="math notranslate nohighlight">\(\theta^* = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+E^{min}_c = \frac{m_\pi}{2} \gamma (1 - \beta)
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">emin</span> <span class="o">=</span> <span class="p">(</span><span class="n">mpi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="n">mpi</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E foton min </span><span class="si">{:4.3f}</span><span class="s1"> KeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">emin</span> <span class="o">*</span> <span class="mf">1e6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E foton min 455.646 KeV
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-3-6">
+<h3>Ejercicio 3.6<a class="headerlink" href="#ejercicio-3-6" title="Permalink to this heading">#</a></h3>
+<p>La partícula <span class="math notranslate nohighlight">\(\Lambda\)</span>, se desintegra <span class="math notranslate nohighlight">\(\Lambda \to p + \pi^-\)</span>. Si <span class="math notranslate nohighlight">\(p_\Lambda = 2\)</span> GeV y el <span class="math notranslate nohighlight">\(p\)</span> sale con <span class="math notranslate nohighlight">\(\theta^* = 30^o\)</span> en el CM respecto la dirección de <span class="math notranslate nohighlight">\(\Lambda\)</span>, calcular:</p>
+<p>a) la energía de <span class="math notranslate nohighlight">\(\Lambda, \pi^-\)</span> en el CM.</p>
+<p>b) el factor de Lorentz <span class="math notranslate nohighlight">\(\gamma\)</span> y <span class="math notranslate nohighlight">\(\beta\)</span> entre el sistema laboratorio y el CM.</p>
+<p>c) ángulo y momento del <span class="math notranslate nohighlight">\(\pi, p\)</span> en el sistema laboratorio.</p>
+<p>[AB1.15]</p>
+</div>
+<div class="section" id="id3">
+<h3>Ejercicio<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>Calcula el número de <span class="math notranslate nohighlight">\(Z\)</span> producidos en OPAL en la energía <span class="math notranslate nohighlight">\(\sqrt{s}= m_Z\)</span> y durante un año (<span class="math notranslate nohighlight">\(10^7\)</span> s). Calcula el número de pares <span class="math notranslate nohighlight">\(\tau + \tau^+\)</span> producidos, la distancia media que recorren, y el número de eventos esperados <span class="math notranslate nohighlight">\(\mu+ \mu^+\)</span> que provienen de <span class="math notranslate nohighlight">\(\tau + \tau^+\)</span>.</p>
+<p>Calcula la distancia media recorrida por los <span class="math notranslate nohighlight">\(\tau\)</span></p>
+<p>La luminosidad del LEP <span class="math notranslate nohighlight">\(\mathcal{L} = 10^{32}\)</span> 1/cm<span class="math notranslate nohighlight">\(^2\)</span>s, y la sección eficaz en el pico <span class="math notranslate nohighlight">\(\sigma = \)</span></p>
+<p>La amchura desintegración a <span class="math notranslate nohighlight">\(\tau + \tau^+\)</span> es <span class="math notranslate nohighlight">\(\Gamma_{\tau\tau}\)</span> siendo la total <span class="math notranslate nohighlight">\(\Gamma_Z = 2.5\)</span> GeV</p>
+<p>Y finalmente la fracción de desintegración <span class="math notranslate nohighlight">\(\mathcal{Br}(\tau \to \mu + \bar{\nu}_\mu + \nu_\tau)\)</span></p>
+<p>Luego</p>
+<div class="math notranslate nohighlight">
+\[
+N = \mathcal{L} \, \sigma \, t \, \frac{\Gamma_{\tau\tau}}{\Gamma_Z} \, \mathcal{Br}^2
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sigma</span> <span class="o">=</span> <span class="mf">60e-9</span>   <span class="c1"># nb</span>
+<span class="n">barn</span>  <span class="o">=</span> <span class="mf">1e-24</span> <span class="c1"># cm2</span>
+<span class="n">lumi</span>  <span class="o">=</span> <span class="mf">5e31</span>  <span class="c1"># 1/cm2s</span>
+<span class="n">time</span>  <span class="o">=</span> <span class="mf">1e7</span>
+<span class="n">G_Z</span>   <span class="o">=</span> <span class="mf">2.5</span>   <span class="c1"># GeV</span>
+<span class="n">G_Zmu</span> <span class="o">=</span> <span class="mf">0.085</span> <span class="c1"># GeV</span>
+<span class="n">eff</span>   <span class="o">=</span> <span class="mf">1.</span> 
+
+<span class="n">nZ</span>      <span class="o">=</span> <span class="n">lumi</span> <span class="o">*</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">barn</span> <span class="o">*</span> <span class="n">time</span>
+<span class="n">nZ_mumu</span> <span class="o">=</span> <span class="n">nZ</span> <span class="o">*</span> <span class="n">G_Zmu</span><span class="o">/</span><span class="n">G_Z</span>
+<span class="n">n_mumu</span>  <span class="o">=</span> <span class="n">nZ_mumu</span> <span class="o">*</span> <span class="p">(</span><span class="n">eff</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Z producced </span><span class="si">{:4.4f}</span><span class="s1"> M &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nZ</span><span class="o">/</span><span class="mf">1e6</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Z mumu producced </span><span class="si">{:4.4f}</span><span class="s1"> M&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nZ_mumu</span><span class="o">/</span><span class="mf">1e6</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Z mumu detected  </span><span class="si">{:4.4f}</span><span class="s1"> M&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_mumu</span><span class="o">/</span><span class="mf">1e6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Z producced 30.0000 M 
+Z mumu producced 1.0200 M
+Z mumu detected  1.0200 M
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span>  <span class="o">=</span> <span class="n">n_mumu</span>
+<span class="n">nZ</span> <span class="o">=</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">barn</span> <span class="o">*</span> <span class="n">time</span> <span class="o">*</span> <span class="n">lumi</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Z producted </span><span class="si">{:4.1f}</span><span class="s1"> M&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nZ</span><span class="o">/</span><span class="mf">1e6</span><span class="p">))</span>
+<span class="n">nZ_mumu</span> <span class="o">=</span> <span class="n">n</span><span class="o">/</span><span class="p">(</span><span class="n">eff</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Zmumu estimated </span><span class="si">{:4.3f}</span><span class="s1"> M&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nZ_mumu</span><span class="o">/</span><span class="mf">1e6</span><span class="p">))</span>
+<span class="n">Br</span>   <span class="o">=</span> <span class="n">nZ_mumu</span> <span class="o">/</span> <span class="n">nZ</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Br (Z-&gt;mumu) </span><span class="si">{:4.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Br</span><span class="p">))</span>
+<span class="n">G_mumu</span> <span class="o">=</span> <span class="n">Br</span> <span class="o">*</span> <span class="n">G_Z</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gamma Z-&gt;mumu </span><span class="si">{:4.4f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1e3</span><span class="o">*</span><span class="n">G_mumu</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Z producted 30.0 M
+Zmumu estimated 1.020 M
+Br (Z-&gt;mumu) 0.0340
+Gamma Z-&gt;mumu 85.0000 MeV
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>ejercicio</em>: En el proceso <span class="math notranslate nohighlight">\(a + b \to c + d\)</span>, consideramos los tres invarantes de Maldelstam, <span class="math notranslate nohighlight">\(s = (p_a+p_b)^2, \, t = (p_c-p_a)^2, \, u = (p_d-p_a)^2\)</span>, demostrar que:</p>
+<div class="math notranslate nohighlight">
+\[
+s + t + u = m^2_a + m^2_b + m^2_c + m^2_d
+\]</div>
+</div>
+</div>
+<div class="section" id="basicos-de-diagramas-de-feynman">
+<h2>4 Básicos de diagramas de Feynman<a class="headerlink" href="#basicos-de-diagramas-de-feynman" title="Permalink to this heading">#</a></h2>
+<p><em>ejercicio</em>: Indica si son posibles o no y por qué los siguientes vértices:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(e, e, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu_e, \nu_e, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, e^+, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu_e, \nu_e, Z\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \mu, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \nu_e, W\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \tau, Z\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \nu_\mu, W\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, e, g\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(b, b, g\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(d, s, g\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma, \gamma, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(u, u, W\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(u, d, W\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(d, t, W\)</span></p></li>
+</ul>
+<p><em>ejercicio</em>: Dibuja los diagramas de Feynman para los siguientes procesos:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau \to \pi^- + \nu_\tau\)</span>, siendo <span class="math notranslate nohighlight">\(\pi^-\)</span> la combinación de quarks (<span class="math notranslate nohighlight">\(d\bar{u}\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(K^+ \to  \mu^+ + \nu_\mu\)</span>, siendo <span class="math notranslate nohighlight">\(K^+\)</span> la combinación (<span class="math notranslate nohighlight">\(s\bar{u}\)</span>)</p></li>
+</ul>
+<p><em>ejercicio</em>: Dibuja los diagramas de Fynman para los sigientes procesos:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau \to \mu + \bar{\nu}_\mu + \nu_\tau\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau \to e + \bar{\nu}_e + \nu_\tau\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu \to e + \bar{\nu}_e + \nu_\mu\)</span></p></li>
+</ul>
+<p><em>ejercicio</em>: Considera <span class="math notranslate nohighlight">\(\pi^0\)</span> una combinación <span class="math notranslate nohighlight">\((u\bar{u})\)</span> y dibuja e indica su relativa intensidad de las siguientes desintegraciones teniendo en cuenta en número de vértices:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\pi^0 \to \gamma \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^0 \to \gamma + e + e^+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^0 \to e + e^+\)</span></p></li>
+</ul>
+<p><em>ejercicio</em>: Dibuja los diagramas árbol de las posible interacciones, e indica si son aniquilaciones o interacciones:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(e+e\to e+e\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e + e^+ \to e + e^+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e + \nu_e \to e + \nu_e\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e + \bar{\nu}_e \to e + \bar{\nu}_e\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="detectors">
+<h2>4 Detectors<a class="headerlink" href="#detectors" title="Permalink to this heading">#</a></h2>
+<div class="section" id="id4">
+<h3>4.1 ejercicio<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p>Sea un <span class="math notranslate nohighlight">\(\pi^\pm\)</span> y un <span class="math notranslate nohighlight">\(K^\pm\)</span> con el mismo momento <span class="math notranslate nohighlight">\(p\)</span> 4 GeV, evaluar la distancia <span class="math notranslate nohighlight">\(L\)</span> que deben recorrer entre dos centelleadores cuya resolución temporal es <span class="math notranslate nohighlight">\(\sigma_t = 300\)</span> ps, para que puedan distinguirse con la medida de su tiempo de vuelo en al menos dos descibaciones estándard.</p>
+<p>[AB1.24]</p>
+</div>
+</div>
+<div class="section" id="otros">
+<h2>Otros<a class="headerlink" href="#otros" title="Permalink to this heading">#</a></h2>
+<p><em>ejercicio</em>: Demostrar que en un sistema de partículas con cuadrimomentos <span class="math notranslate nohighlight">\(p_i\)</span>, <span class="math notranslate nohighlight">\(i = 1, \dots, n\)</span>, la cantidad:
+$<span class="math notranslate nohighlight">\(
+\left( \sum_i E_i \right)^2 - \left( \sum_i {\bf p}_i \right)^2
+\)</span>$
+es un invariante Lorentz</p>
+<p><em>ejercicio</em>: Demostrar que <span class="math notranslate nohighlight">\(\hat{P} \, u_+ (\theta, \phi) = v_-(\pi-\theta, \pi + \theta)\)</span></p>
+<div class="section" id="bibliografia">
+<h3>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>«Elementary Particle Physics», S. Bettini, Cambridge.</p></li>
+<li><p>«Modern Particle Physics», Mark Thomson, Cambridge.</p></li>
+<li><p>«Lepton and Quark», Francis Halzen, Alan D. Martin, Josh Wiley &amp; Sons.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks/store"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
