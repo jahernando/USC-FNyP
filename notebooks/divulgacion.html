@@ -1,0 +1,1038 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A quick look at Particle Physics &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduccion.html">
+   1. Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observables.html">
+   2. Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="leptones.html">
+   3. Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quarks_hadrons.html">
+   4. Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sm.html">
+   5. Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-cinematica.html">
+   6. Extensión: cinemática
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-dirac.html">
+   7. Extensión: La ecuación de Dirac
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-trans-Lorentz.html">
+   8. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-grupos.html">
+   9. Extensión: grupos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-sm.html">
+   10. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-prel.html">
+   11. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-I.html">
+   12. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-II.html">
+   13. Boletín de problemas II
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-III.html">
+   14. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-IV.html">
+   15. Boletín de problemas IV
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/divulgacion.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/divulgacion.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/divulgacion.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cern-is-here">
+   CERN is here
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-particle-physics">
+   What is particle Physics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#escale">
+     Escale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-experiments">
+     The experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-accelerate-particles">
+     How to accelerate particles?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particles-at-high-energy">
+     Particles at High Energy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-fabulous-four">
+     The Fabulous four
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-big-science">
+     The big Science
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-big-laboratories">
+     The big laboratories
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aplicaciones-practicas">
+     Aplicaciones prácticas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-the-standard-model">
+   Introduction to the Standard Model
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>A quick look at Particle Physics</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cern-is-here">
+   CERN is here
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-particle-physics">
+   What is particle Physics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#escale">
+     Escale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-experiments">
+     The experiments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-accelerate-particles">
+     How to accelerate particles?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particles-at-high-energy">
+     Particles at High Energy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-fabulous-four">
+     The Fabulous four
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-big-science">
+     The big Science
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-big-laboratories">
+     The big laboratories
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aplicaciones-practicas">
+     Aplicaciones prácticas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-the-standard-model">
+   Introduction to the Standard Model
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="a-quick-look-at-particle-physics">
+<h1>A quick look at Particle Physics<a class="headerlink" href="#a-quick-look-at-particle-physics" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Sep 10 15:20:26 2025
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Do you know who is this man?</em></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_borges.jpg"><img alt="../_images/div_borges.jpg" class="align-center" src="../_images/div_borges.jpg" style="width: 200px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Read his mathematical short stories about laberithms, mirrors, maps…</p>
+<p>«There is a tribu where names do not exits. Things are named by they properties, their adjectives…»</p>
+<div class="section" id="cern-is-here">
+<h2>CERN is here<a class="headerlink" href="#cern-is-here" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_CERN_logo.png"><img alt="../_images/div_CERN_logo.png" class="align-center" src="../_images/div_CERN_logo.png" style="width: 120px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="https://www.home.cern/about">CERN</a> is the world’s largest particle physics laboratory.</p>
+<p>Hundreds of crucial discoveries and measurements in particle physics have been made there.</p>
+<p>It is one of the most successful examples of European collaboration.</p>
+</div>
+<div class="section" id="what-is-particle-physics">
+<h2>What is particle Physics<a class="headerlink" href="#what-is-particle-physics" title="Permalink to this heading">#</a></h2>
+<p>It is the part of Physics that studies the most elementary elements of Nature and their interactions.</p>
+<div class="section" id="escale">
+<h3>Escale<a class="headerlink" href="#escale" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_distances_scale.jpg"><img alt="../_images/intro_distances_scale.jpg" class="align-center" src="../_images/intro_distances_scale.jpg" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>We look for distance bellow <span class="math notranslate nohighlight">\(10^{-15}\)</span> m, That is quite small!!</p>
+<p>Matter is made up of atoms.</p>
+<p>The atom is like a solar system: the nucleus is at the center and contains almost all the mass, and electrons orbit around it.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_atom.jpg"><img alt="../_images/div_atom.jpg" class="align-center" src="../_images/div_atom.jpg" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>If the CERN globe were an atom, all its weight would be in the center, in a very small point (the nucleus), and the electrons would be like flies outside the globe.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_CERN_globe.jpg"><img alt="../_images/div_CERN_globe.jpg" class="align-center" src="../_images/div_CERN_globe.jpg" style="width: 200px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/div_peso_nucleo.png"><img alt="../_images/div_peso_nucleo.png" class="align-center" src="../_images/div_peso_nucleo.png" style="width: 200px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/div_mosca.png"><img alt="../_images/div_mosca.png" class="align-center" src="../_images/div_mosca.png" style="width: 150px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>To study the interior of a particle, we need another particle as a probe.
+To reach increasingly shorter distances, probes with increasingly higher energies are needed.</p>
+<p>Relation of distance and energy:</p>
+<p>The basic energy is eV, that is the energy of the attachment of electrons in light atoms.</p>
+<p>Particle Physics study very small distances <span class="math notranslate nohighlight">\(10^{-15}\)</span> m or very large energies <span class="math notranslate nohighlight">\(10^9\)</span> eV (GeV) or <span class="math notranslate nohighlight">\(10^{12}\)</span> eV (TeV)</p>
+<p>Probing with electrons the nucleon and proton we discover they were made of another more elementary particle: <em>quarks</em>!</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_nucleons_quarks.jpg"><img alt="../_images/div_nucleons_quarks.jpg" class="align-center" src="../_images/div_nucleons_quarks.jpg" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Electrons are “still” elementary</p>
+</div>
+<div class="section" id="the-experiments">
+<h3>The experiments<a class="headerlink" href="#the-experiments" title="Permalink to this heading">#</a></h3>
+<p>We are very primitive: we study interaction with two types of experiments: target and collision experiments</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_dispersion.png"><img alt="../_images/intro_dispersion.png" class="align-center" src="../_images/intro_dispersion.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/intro_colision.png"><img alt="../_images/intro_colision.png" class="align-center" src="../_images/intro_colision.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Targer</p></td>
+<td class="text-align:center"><p>Colision</p></td>
+</tr>
+</tbody>
+</table>
+<p>We smash bunch of particles at high energy with a targer or between them, and observe and measure what happens!</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_indio.jpg"><img alt="../_images/div_indio.jpg" class="align-center" src="../_images/div_indio.jpg" style="width: 250px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/div_train_crash.jpg"><img alt="../_images/div_train_crash.jpg" class="align-center" src="../_images/div_train_crash.jpg" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Target</p></td>
+<td class="text-align:center"><p>Colision</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="how-to-accelerate-particles">
+<h3>How to accelerate particles?<a class="headerlink" href="#how-to-accelerate-particles" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>We can construct acelerators, for example the  <strong>LHC</strong> <a class="reference external" href="https://www.youtube.com/watch?v=pQhbhpU9Wrg">[&gt;]</a> where we crush trains of protons agains trains of protons at TeV energies</p></li>
+<li><p>In the cosmos there are <em>natural accelerator</em> that send to the Earth bunch or particles, the IceCube <a class="reference external" href="https://www.youtube.com/watch?v=D50LNnioXQc">[&gt;]</a> look for high energy neutrinos.</p></li>
+</ul>
+</div>
+<div class="section" id="particles-at-high-energy">
+<h3>Particles at High Energy<a class="headerlink" href="#particles-at-high-energy" title="Permalink to this heading">#</a></h3>
+<p>But during the first seconds of the Universe, the particles had high energies. The initial moments where a “soup” of high energy particles.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_universe_history_2.jpg"><img alt="../_images/intro_universe_history_2.jpg" class="align-center" src="../_images/intro_universe_history_2.jpg" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>[PDG]</p></td>
+</tr>
+</tbody>
+</table>
+<p>The Universe started with a Big Banf but now goes “zen” and quiet as time pass.</p>
+<p>When the Universe cooled slightly, particles first formed protons, neutrons, then nuclei, then atoms, and finally, stars and galaxies.</p>
+<p>We now know that some particles decay and become others, for example:</p>
+<div class="math notranslate nohighlight">
+\[
+n \to p + e + \bar{\nu}_e
+\]</div>
+<p>And we are very, very lucky!!</p>
+<p>After its creation, the neutron lives for 10 minutes, long enough to create the first stable helium nuclei in the Universe, which took 6 minutes!</p>
+</div>
+<div class="section" id="the-fabulous-four">
+<h3>The Fabulous four<a class="headerlink" href="#the-fabulous-four" title="Permalink to this heading">#</a></h3>
+<p>In the neutron decay there are the main four particles that compose our Universe today:</p>
+<div class="math notranslate nohighlight">
+\[
+n \to p + e + \bar{\nu}_e
+\]</div>
+<p>This is call: <em>beta decay</em>!</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_beta_decay.png"><img alt="../_images/div_beta_decay.png" class="align-center" src="../_images/div_beta_decay.png" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="the-big-science">
+<h3>The big Science<a class="headerlink" href="#the-big-science" title="Permalink to this heading">#</a></h3>
+<p>The accelerator and experiments are <em>unique</em> and complex. They planning takes decades. Like <a class="reference external" href="https://atlas.cern/">ATLAS</a> at LHC,</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_atlas.jpg"><img alt="../_images/intro_atlas.jpg" class="align-center" src="../_images/intro_atlas.jpg" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>In ATLAS works thousand physicist from all the World.</p>
+</div>
+<div class="section" id="the-big-laboratories">
+<h3>The big laboratories<a class="headerlink" href="#the-big-laboratories" title="Permalink to this heading">#</a></h3>
+<p>The experiments are carried out in large laboratories.</p>
+<p>CERN was created in the 1950s to bring together and foster European science. Since then, it has been a model for science and humanity.</p>
+<p>Do you know who is she?</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/Dr_Fabiola_Gianotti.jpg"><img alt="../_images/Dr_Fabiola_Gianotti.jpg" class="align-center" src="../_images/Dr_Fabiola_Gianotti.jpg" style="width: 200px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="aplicaciones-practicas">
+<h3>Aplicaciones prácticas<a class="headerlink" href="#aplicaciones-practicas" title="Permalink to this heading">#</a></h3>
+<p>Do you know that the <a class="reference external" href="https://www.youtube.com/watch?v=sSqZ_hJu9zA">WWW</a> born at CERN in the late 80’s?</p>
+<p>It was designed to share information between the physicist around the World.</p>
+<p>What you will do without Internet and the Web?</p>
+</div>
+</div>
+<div class="section" id="introduction-to-the-standard-model">
+<h2>Introduction to the Standard Model<a class="headerlink" href="#introduction-to-the-standard-model" title="Permalink to this heading">#</a></h2>
+<p>The Standard Model of Particle Physics is one of the greatest achievements in physics. Unfortunately, its name is very poor!</p>
+<p>It classifies all elementary particles and the interactions between them.</p>
+<p>All we know, with the devil details, is here:  <em>Particle Data Group</em> (<a class="reference external" href="https://pdg.lbl.gov/">PDG</a>)</p>
+<p>Let’s go back to the <em>beta decay</em>.</p>
+<p>This decay can happen in certain nucleus, a neutron convert to a proton, and an electron and neutrino that escapes.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_beta_dec_nucl.png"><img alt="../_images/div_beta_dec_nucl.png" class="align-center" src="../_images/div_beta_dec_nucl.png" style="width: 350px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>But at the begining this was a mistery!</p>
+<p>The daughter nucleus has less mass than the mother nucleus, but the electron’s energy is not as high as it should be. Where did the energy go?</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_bspectrum_1935.png"><img alt="../_images/intro_bspectrum_1935.png" class="align-center" src="../_images/intro_bspectrum_1935.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Remember Einstein relation between mass and energy:</p>
+<div class="math notranslate nohighlight">
+\[
+E = m c^2
+\]</div>
+<p>Of course, The missing energy was taken away by the neutrino, that escaped undetected!</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Wolfgang_Pauli">Pauli</a> wrote his famous letter proposing the neutrino</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_Pauli_letter.jpg"><img alt="../_images/intro_Pauli_letter.jpg" class="align-center" src="../_images/intro_Pauli_letter.jpg" style="width: 800px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>B. Pontecorvo proposed that, if there is a large neutrino flux and a massive target, we could detect them even if their interaction is very weak.</p>
+<p>F. Reines and C. L. Cowan detected the first neutrinos using the neutrino flux generated in the first nuclear reactor at Savanna River, South Carolina, USA, in 1953.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_cowan_reines_telegram.png"><img alt="../_images/intro_cowan_reines_telegram.png" class="align-center" src="../_images/intro_cowan_reines_telegram.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>For a moment, everything was simple: neutron, proton, electron, neutrino.</p>
+<p>But when observing the interactions of cosmic rays (extraterrestrial particles entering the atmosphere), a new particle appeared: the muon!</p>
+<p>The muon was like the electron, but with greater mass. The muon is the electron’s sister!</p>
+<p>Why do we need the muon? Our universe was so simple, with only four particles!</p>
+<p>Not only that, this man:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_Paul_Dirac.jpg"><img alt="../_images/div_Paul_Dirac.jpg" class="align-center" src="../_images/div_Paul_Dirac.jpg" style="width: 150px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Proposed an equation for the free electron in 1932.</p>
+<div class="math notranslate nohighlight">
+\[
+i \gamma^\mu \partial_\mu \Psi - m \Psi = 0
+\]</div>
+<p>This equation is so important that you should put it as a magnet on your refrigerator!</p>
+<p>Why is so important?</p>
+<p>Dirac unified the two great revolutions, Relativity and Quantum Mechanics, to get his equation.</p>
+<p>And he predicted that the electron was not alone. The electron should have its anti-particle, the positron. Same mass, but oposite charge.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_antiparticle.png"><img alt="../_images/div_antiparticle.png" class="align-center" src="../_images/div_antiparticle.png" style="width: 200px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>One year later they found the positron!</p>
+<p>Each particle has its anti-particle!
+But why there is no anti-particles in our Universe! Where did they go? We have no idea!!</p>
+<p>Soon they were discover so many particles and anti-particles, all unstable, that physicists went mad!!</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_fisico_loco.jpg"><img alt="../_images/div_fisico_loco.jpg" class="align-center" src="../_images/div_fisico_loco.jpg" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/intro_lifetimes.png"><img alt="../_images/intro_lifetimes.png" class="align-center" src="../_images/intro_lifetimes.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>But in the 60’s we got peace. The physicists put order in the quaos!</p>
+<p>There are of two types of particles:</p>
+<ul class="simple">
+<li><p><strong>hadrons</strong>, like the neutron and proton, that are made of <strong>quarks</strong>.</p></li>
+<li><p><strong>leptons</strong>, like the electron and the neutrino, and the muon, the muon neutrino, and the tau and the tau neutrino!</p></li>
+</ul>
+<p>Only the quarks <span class="math notranslate nohighlight">\((u, d)\)</span> that makes the proton and  neutron and the (e, <span class="math notranslate nohighlight">\(\nu\)</span>) are estable!</p>
+<p>Quarks have electric charge: u (2/3), and d (-1/3), and they always show in groups never alone! they form <strong>hadrons</strong>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_beta_decay.png"><img alt="../_images/div_beta_decay.png" class="align-center" src="../_images/div_beta_decay.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>These are the elementary particles in Nature:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_SM_table.png"><img alt="../_images/intro_SM_table.png" class="align-center" src="../_images/intro_SM_table.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Las partículas del modelo estandar</p></td>
+</tr>
+</tbody>
+</table>
+<p>But there was a problem. The data agreed with the theory, but… the theory required that particles be massless.</p>
+<p>Mass is not a property of a particle! Mass appears when a particle interacts with the Higgs field! It’s a characteristic of an interaction!</p>
+<p>But years passed, and the Higgs particle was not discovered.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_snow.jpg"><img alt="../_images/div_snow.jpg" class="align-center" src="../_images/div_snow.jpg" style="width: 300px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The theory in a T-shirt!</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/div_SM_theory.jpg"><img alt="../_images/div_SM_theory.jpg" class="align-center" src="../_images/div_SM_theory.jpg" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/det_CMS_subdetectors.png"><img alt="../_images/det_CMS_subdetectors.png" class="align-center" src="../_images/det_CMS_subdetectors.png" style="width: 700px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>But then finally the LHC found the Higgs particle. Remember <span class="math notranslate nohighlight">\(E = m c^2\)</span></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/sm_higgs_CMS_ATLAS.png"><img alt="../_images/sm_higgs_CMS_ATLAS.png" class="align-center" src="../_images/sm_higgs_CMS_ATLAS.png" style="width: 750px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>But there are still many misteries:</p>
+<ul class="simple">
+<li><p>Where is the anti-matter?</p></li>
+<li><p>Why are only 3 families?</p></li>
+<li><p>Why the Higgs interacts differently with each particle?</p></li>
+<li><p>Is the anti-neutrino the same as the neutrino?</p></li>
+<li><p>But we know the Universe has also other matter, that we do not know about it, that we call <em>dark matter</em></p></li>
+</ul>
+<p>Do you want to be a detective in Physics?</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/div_pantera_rosa.jpg"><img alt="../_images/div_pantera_rosa.jpg" class="align-center" src="../_images/div_pantera_rosa.jpg" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

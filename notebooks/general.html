@@ -1,0 +1,1403 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conceptos básicos &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduccion.html">
+   1. Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observables.html">
+   2. Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="leptones.html">
+   3. Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quarks_hadrons.html">
+   4. Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sm.html">
+   5. Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-cinematica.html">
+   6. Extensión: cinemática
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-dirac.html">
+   7. Extensión: La ecuación de Dirac
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-trans-Lorentz.html">
+   8. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-grupos.html">
+   9. Extensión: grupos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-sm.html">
+   10. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-prel.html">
+   11. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-I.html">
+   12. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-II.html">
+   13. Boletín de problemas II
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-III.html">
+   14. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-IV.html">
+   15. Boletín de problemas IV
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/general.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/general.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/general.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#radiacion-alpha-beta-gamma">
+   Radiación
+   <span class="math notranslate nohighlight">
+    \(\alpha, \beta, \gamma\)
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-los-griegos-clasicos-a-nuestros-dias">
+     De los griegos clásicos a nuestros días
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-tabla-periodica">
+     La tabla periódica
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#radiaciones-ionizantes">
+   Radiaciones ionizantes: α, β, γ
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radiacion-alpha">
+     Radiación
+     <span class="math notranslate nohighlight">
+      \(\alpha\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radiacion-beta">
+     radiación beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radiacion-gamma">
+     radiación
+     <span class="math notranslate nohighlight">
+      \(\gamma\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-electromagnetica-debil-y-fuerte">
+     Interacciones electromagnética, débil y fuerte.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#de-los-nucleos-a-los-quarks">
+   De los nucleos a los quarks
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dispersion-del-nucleo">
+     Dispersión del núcleo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dispersion-de-mott">
+     Dispersión de Mott
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descubrimiento-del-proton">
+     Descubrimiento del protón
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descibrimiento-del-neutron">
+     Descibrimiento del neutrón
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-cuatro-magnificos">
+     Los cuatro magníficos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dispersion-de-electrones-a-alta-energia">
+     Dispersión de electrones a alta energía.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#three-quark-for-the-muster-mark">
+     Three quark for the Muster Mark!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-cuatro-y-su-compania">
+     Los cuatro y su compañía
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Conceptos básicos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sistema-del-laboratorio-y-centro-de-masas">
+     Sistema del laboratorio y centro de masas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cantidades-continuas-conservadas">
+     Cantidades continuas conservadas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cantidades-discretas">
+     Cantidades discretas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oservables-principales-seccion-efifaz-y-tiempo-de-vida-media">
+   Oservables principales: sección efifaz y tiempo de vida media
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seccion-eficaz">
+     Sección eficaz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vida-media">
+     vida media
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Conceptos básicos</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#radiacion-alpha-beta-gamma">
+   Radiación
+   <span class="math notranslate nohighlight">
+    \(\alpha, \beta, \gamma\)
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-los-griegos-clasicos-a-nuestros-dias">
+     De los griegos clásicos a nuestros días
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-tabla-periodica">
+     La tabla periódica
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#radiaciones-ionizantes">
+   Radiaciones ionizantes: α, β, γ
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radiacion-alpha">
+     Radiación
+     <span class="math notranslate nohighlight">
+      \(\alpha\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radiacion-beta">
+     radiación beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radiacion-gamma">
+     radiación
+     <span class="math notranslate nohighlight">
+      \(\gamma\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interacciones-electromagnetica-debil-y-fuerte">
+     Interacciones electromagnética, débil y fuerte.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#de-los-nucleos-a-los-quarks">
+   De los nucleos a los quarks
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dispersion-del-nucleo">
+     Dispersión del núcleo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dispersion-de-mott">
+     Dispersión de Mott
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descubrimiento-del-proton">
+     Descubrimiento del protón
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descibrimiento-del-neutron">
+     Descibrimiento del neutrón
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-cuatro-magnificos">
+     Los cuatro magníficos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dispersion-de-electrones-a-alta-energia">
+     Dispersión de electrones a alta energía.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#three-quark-for-the-muster-mark">
+     Three quark for the Muster Mark!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-cuatro-y-su-compania">
+     Los cuatro y su compañía
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Conceptos básicos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sistema-del-laboratorio-y-centro-de-masas">
+     Sistema del laboratorio y centro de masas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cantidades-continuas-conservadas">
+     Cantidades continuas conservadas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cantidades-discretas">
+     Cantidades discretas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oservables-principales-seccion-efifaz-y-tiempo-de-vida-media">
+   Oservables principales: sección efifaz y tiempo de vida media
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seccion-eficaz">
+     Sección eficaz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vida-media">
+     vida media
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliografia">
+   Bibliografía
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="conceptos-basicos">
+<h1>Conceptos básicos<a class="headerlink" href="#conceptos-basicos" title="Permalink to this heading">#</a></h1>
+<div class="section" id="radiacion-alpha-beta-gamma">
+<h2>Radiación <span class="math notranslate nohighlight">\(\alpha, \beta, \gamma\)</span><a class="headerlink" href="#radiacion-alpha-beta-gamma" title="Permalink to this heading">#</a></h2>
+<div class="section" id="de-los-griegos-clasicos-a-nuestros-dias">
+<h3>De los griegos clásicos a nuestros días<a class="headerlink" href="#de-los-griegos-clasicos-a-nuestros-dias" title="Permalink to this heading">#</a></h3>
+<p>En el De Rerum Natura de <a class="reference external" href="https://es.wikipedia.org/wiki/Lucrecio">Lucrecio</a> (siglo I a.C.), el poeta romano, inspirado por Epicuro y en última instancia por Demócrito, expone una visión la visión de la Naturaleza: <em>todo lo que existe está hecho de átomos y vacío</em>.</p>
+<p>En nuestra visión contemporanea: el mundo está consitutido por partículas fundamentales y por vacío.</p>
+<p>También argumenta que:</p>
+<p><em>«Haud igitur redit ad nihilum res ulla, sed omnes
+dissoluuntur et in res cunctas remeare videntur.»</em></p>
+<p>(Ninguna cosa vuelve a la nada: todas se disuelven y parecen regresar a otros cuerpos.)</p>
+<p>En nuestra versión moderna: La energía ni se crea ni se destruye, se conserva. Las partículas se transforman unas en otras.</p>
+<div class="math notranslate nohighlight">
+\[
+E = m \, c^2
+\]</div>
+<p>En la actualidad nuestro conocimiento de los componentes fundamentales de la Naturaleza está contenida en el <em>Modelo Estándar</em></p>
+<p>(un nombre muy desafortunado y modesto para la embargadura del proyecto)</p>
+<p>Clasificar y comprender las interacciones de las partículas es una tarea comunitaria que dura desde finales del siglo XIX, se inicial con el descubrimiento del electrón, y llega hasta nuestros días, siendo el último gran descubrimiento el del bosón de Higgs en 2012.</p>
+<p>No obstante la imagen que surge del Modelo Estándard, aunque poco intuitiva, es relativamente simple.</p>
+</div>
+<div class="section" id="la-tabla-periodica">
+<h3>La tabla periódica<a class="headerlink" href="#la-tabla-periodica" title="Permalink to this heading">#</a></h3>
+<p>Mendeleev (1869) clasifica por propiedades los átomos y Moseley (1913) los ordena por Z.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_tabla_periodica.png"><img alt="../_images/gen_tabla_periodica.png" class="align-center" src="../_images/gen_tabla_periodica.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Table periódica de los elementos <a class="reference external" href="https://es.wikipedia.org/wiki/Tabla_peri%C3%B3dica_de_los_elementos">Wikipedia</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>La table periódica supone una ordenación de los elementos.</p>
+<ul class="simple">
+<li><p>Disposición por <strong>número atómico</strong> (Z).</p></li>
+<li><p><strong>Periodos</strong> (filas) y <strong>grupos</strong> (columnas).</p></li>
+<li><p>Bloques electrónicos: <strong>s, p, d, f</strong>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="radiaciones-ionizantes">
+<h2>Radiaciones ionizantes: α, β, γ<a class="headerlink" href="#radiaciones-ionizantes" title="Permalink to this heading">#</a></h2>
+<p>A finales del siglo XIX y del siglo XX se descubrieron distintos tipos de radiaciones, cuyos nombres aún se utilizan: <span class="math notranslate nohighlight">\(\alpha, \beta, \gamma\)</span>. Y que corresponden respectivamente a interacciones fuerte, débil y electromágnética.</p>
+<p>Estas radiaciones tienen un rango típico de energía de MeV.</p>
+<div class="section" id="radiacion-alpha">
+<h3>Radiación <span class="math notranslate nohighlight">\(\alpha\)</span><a class="headerlink" href="#radiacion-alpha" title="Permalink to this heading">#</a></h3>
+<p>La radiación nuclear la descubrió (accidentalmente) Becquerel (1896) y la estudió en detalle Marie Curie.</p>
+<p>Henri Becquerel, físico francés, estaba estudiando la fluorescencia de sales de uranio.
+Creía que, al exponerse al sol, éstas emitirían rayos X.</p>
+<p>Un día nublado, sin sol, guardó sus placas fotográficas envueltas junto con el uranio.
+Cuando las reveló, vio que estaban veladas.</p>
+<p>«Les sels d’uranium émettent spontanément des rayonnements capables d’impressionner une plaque photographique à travers un papier opaque.» (H. Becquerel)</p>
+<p>El uranio emitía una radiación invisible, espontánea, sin necesidad de excitación externa.
+Eso fue el nacimiento del concepto de radiactividad natural.</p>
+<p>Actualmente el becquerio se usa como unidad para indicar desintegraciones/segundo.</p>
+<p>Posteriormente <a class="reference external" href="https://en.wikipedia.org/wiki/Marie_Curie">Maria Curie (Skłodowska)</a> y su marido Pièrre Curie descubrieron dos nuevos elementos mucho más radiactivos que el uranio: Polonio y el Radio.</p>
+<p>Marie acuñó el término “radioactividad”.</p>
+<p>En esta desintegración del uranio se emite una radiación <span class="math notranslate nohighlight">\(\alpha\)</span>, esto es un núcleo de helio (esto es con carga +2):</p>
+<div class="math notranslate nohighlight">
+\[
+{}^{238}_{92}\mathrm{U} \rightarrow {}^{234}_{90}\mathrm{Th} + {}^{4}_{2}\mathrm{He}
+\]</div>
+<p>La radiación <span class="math notranslate nohighlight">\(\alpha\)</span> es poco penetrante.</p>
+<p>Actualmente el becquerio se usa como unidad para medir las desintegraciones/segundo.</p>
+</div>
+<div class="section" id="radiacion-beta">
+<h3>radiación beta<a class="headerlink" href="#radiacion-beta" title="Permalink to this heading">#</a></h3>
+<p>Se trata de la emisión por un núcleo de electrón, por ejemplo:</p>
+<div class="math notranslate nohighlight">
+\[
+{}^{14}_{6}\mathrm{C} \;\rightarrow\; {}^{14}_{7}\mathrm{N} \;+\; e \;+\; \bar{\nu}_e
+\]</div>
+<p>En 1899 Wilhelm Wien y Ernest Rutherford notan que algunas partículas emitidas de núcleos radiactivos son mucho más ligeras que las alfa y se comportan como electrones.</p>
+<p>En 1913 James Chadwick estudia la dispersión de estas partículas y confirma que son electrones emitidos desde el núcleo.</p>
+<p>La desintegración <span class="math notranslate nohighlight">\(\beta\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+n \;\rightarrow\; p \;+\; e \;+\; \bar{\nu}_e
+\]</div>
+<p>será nuestra guía para entender las desintegraciones débiles</p>
+</div>
+<div class="section" id="radiacion-gamma">
+<h3>radiación <span class="math notranslate nohighlight">\(\gamma\)</span><a class="headerlink" href="#radiacion-gamma" title="Permalink to this heading">#</a></h3>
+<p>Finalmente, algunos núcleos emiten fotones de alta energía, penetrantes, que se denominan rayos <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>Como es el caso del Cobalto:</p>
+<div class="math notranslate nohighlight">
+\[
+{}^{60}_{27}\mathrm{Co} \;\xrightarrow{\beta}\; {}^{60}_{28}\mathrm{Ni}^* + e^- + \bar{\nu}_e \;\xrightarrow{\gamma}\; {}^{60}_{28}\mathrm{Ni} + \gamma
+\]</div>
+<p>En 1900 y 1903 Ernest Rutherford y Paul Villard estudian la radiación del torio y del radio, notando que hay un componente extremadamente penetrante: lo llaman rayos gamma. Rutherford identifica que no son partículas cargadas (como <span class="math notranslate nohighlight">\(\alpha\)</span> o <span class="math notranslate nohighlight">\(\beta\)</span>), sino radiación electromagnética de alta energía.</p>
+<p>Más adelante utilizaremos los diagramas de niveles para indicar las desintegraciones:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_Co60_decay.png"><img alt="../_images/gen_Co60_decay.png" class="align-center" src="../_images/gen_Co60_decay.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Diagrama de desintegración del <span class="math notranslate nohighlight">\({}^{60}\mathrm{Co}\)</span> [Wikipedia]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Puedes explorar <a class="reference external" href="https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html">aquí</a> otros diagramas de niveles</p>
+</div>
+<div class="section" id="interacciones-electromagnetica-debil-y-fuerte">
+<h3>Interacciones electromagnética, débil y fuerte.<a class="headerlink" href="#interacciones-electromagnetica-debil-y-fuerte" title="Permalink to this heading">#</a></h3>
+<p>Recordemos que la energía típica de las radiaciones nucleares <span class="math notranslate nohighlight">\(\alpha, \beta, \gamma\)</span> son del MeV.</p>
+<p>La radiación <span class="math notranslate nohighlight">\(\gamma\)</span> es <em>electromagnética</em>, tiene referente clásico.</p>
+<p>La desintegración <span class="math notranslate nohighlight">\(\beta\)</span> es <em>débil</em>, tiene un rago muy pequeño <span class="math notranslate nohighlight">\(10^{-3}\)</span> fm (fm = <span class="math notranslate nohighlight">\(10^{-15}\)</span>m), y aparece por primera vez en la reacciones nucleares. Su tratamiento es cuántico.</p>
+<p>La desintegración <span class="math notranslate nohighlight">\(\alpha\)</span> es una manifestación de la interacción <em>fuerte</em>, la responsable de la existencia del núcleo, entre otros fenómenos, y su alcance es del fm. De nuevo su tratamiento es cuántico.</p>
+<p>En Física Nuclear haremos un tratamiento cuántico y -en general- no relativista, mientras que en Física de Partículas, el tratamiento es cuántico y -casi siempre- relativista.</p>
+</div>
+</div>
+<div class="section" id="de-los-nucleos-a-los-quarks">
+<h2>De los nucleos a los quarks<a class="headerlink" href="#de-los-nucleos-a-los-quarks" title="Permalink to this heading">#</a></h2>
+<div class="section" id="dispersion-del-nucleo">
+<h3>Dispersión del núcleo<a class="headerlink" href="#dispersion-del-nucleo" title="Permalink to this heading">#</a></h3>
+<p>En 1909, H. Geiger and E. Marsden estudiaban la dispersión de partículas alfa en una lámina de oro, y E. Rutherford sugerió estudiar si existían dispersiones a altos ángulos.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_alphaexp_diagram.png"><img alt="../_images/gen_alphaexp_diagram.png" class="align-center" src="../_images/gen_alphaexp_diagram.png" style="width: 240px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Esquema de dispersión [Geiger, Marsen]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Rutherford: “It was quite the most incredible event that has ever happened to me in my
+life. It was almost as incredible as if you fired a 15-inch shell at a piece of
+tissue paper and it came back and hit you.”</p>
+<p>Rutherford: “It was quite the most incredible event that has ever happened to me in my
+life. It was almost as incredible as if you fired a 15-inch shell at a piece of
+tissue paper and it came back and hit you.”</p>
+<p>Rutherford concluyó, entre otras cosas, que la mayor
+parte de la masa y la carga positiva del átomo se concentran en una región
+extremadamente pequeña, a lo que se denominó núcleo.</p>
+<p>Rutherford describió la dispersión de las partículas alfa a través de ka
+interacción electromagnética. Asumiendo que el núcleo no tenía retroceso e
+ignorando la interacción con los electrones, la situación es matemáticamente la
+misma que las soluciones de Kepler a las órbitas planetarias: la partícula alfa recorre
+una hipérbola</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_alphadisp_parabol.png"><img alt="../_images/gen_alphadisp_parabol.png" class="align-center" src="../_images/gen_alphadisp_parabol.png" style="width: 240px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Dispersión parábólica [Rutherford]</p></td>
+</tr>
+</tbody>
+</table>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\Omega} \;=\;
+\left( \frac{1}{4\pi \varepsilon_0} \,
+\frac{Z_1 Z_2 e^2}{4E} \right)^{\!2}
+\frac{1}{\sin^4\!\left(\tfrac{\theta}{2}\right)}
+\]</div>
+</div>
+<div class="section" id="dispersion-de-mott">
+<h3>Dispersión de Mott<a class="headerlink" href="#dispersion-de-mott" title="Permalink to this heading">#</a></h3>
+<p>Mott estudió la dispersión de electrones de alta energía en los núcleos, para ello hay que tener en cuenta el espín del electrón y la mecánica cuántica relativista.</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\Omega} \;=\;
+\left( \frac{Z e^2}{16 \pi \varepsilon_0 E} \right)^2
+\frac{1}{\sin^4\!\left(\tfrac{\theta}{2}\right)}
+\;\Big[ 1 - \beta^2 \sin^2\!\left(\tfrac{\theta}{2}\right) \Big]
+\]</div>
+<p>Y si consideramos el retroceso del núcleo:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\Omega} \;=\;
+\left( \frac{Z e^2}{16 \pi \varepsilon_0 E} \right)^2
+\frac{1}{\sin^4\!\left(\tfrac{\theta}{2}\right)} \; \frac{E}{E'} \;
+\;\Big[ 1 - \beta^2 \sin^2\!\left(\tfrac{\theta}{2}\right) \Big]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\quad \text{con} \quad
+E' = \frac{E}{1 + \frac{2 E}{M c^2} \sin^2(\theta/2)}, 
+%\quad Q^2 = 4 E E' \sin^2(\theta/2)
+\]</div>
+<p>donde:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Z\)</span>: número atómico del núcleo</p></li>
+<li><p><span class="math notranslate nohighlight">\(E\)</span>: energía total del electrón incidente</p></li>
+<li><p><span class="math notranslate nohighlight">\(M\)</span>: masa del núcleo</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta\)</span>: ángulo de dispersión en el laboratorio</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">constants</span> <span class="k">as</span> <span class="n">const</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># 1) Dispersión de Rutherford</span>
+<span class="k">def</span> <span class="nf">sigma_rutherford</span><span class="p">(</span><span class="n">Z1</span><span class="p">,</span> <span class="n">Z2</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">theta</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Sección eficaz diferencial de Rutherford</span>
+<span class="sd">    Z1: carga de la partícula incidente</span>
+<span class="sd">    Z2: carga del núcleo</span>
+<span class="sd">    E: energía cinética [J]</span>
+<span class="sd">    theta: ángulo de dispersión [rad]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">factor</span> <span class="o">=</span> <span class="p">(</span><span class="n">Z1</span> <span class="o">*</span> <span class="n">Z2</span> <span class="o">*</span> <span class="n">const</span><span class="o">.</span><span class="n">e</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">16</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">const</span><span class="o">.</span><span class="n">epsilon_0</span> <span class="o">*</span> <span class="n">E</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="n">factor</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># 2) Dispersión de Mott con retroceso del núcleo</span>
+<span class="k">def</span> <span class="nf">sigma_mott</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">theta</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Sección eficaz diferencial de Mott con recoil</span>
+<span class="sd">    Z: número atómico del blanco</span>
+<span class="sd">    E: energía del electrón incidente [J]</span>
+<span class="sd">    M: masa del núcleo [kg]</span>
+<span class="sd">    theta: ángulo de dispersión [rad]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># energía del electrón dispersado considerando retroceso</span>
+    <span class="n">E_prime</span> <span class="o">=</span> <span class="n">E</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">E</span><span class="o">/</span><span class="p">(</span><span class="n">M</span><span class="o">*</span><span class="n">const</span><span class="o">.</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="c1"># corrección relativista por espín (aproximada)</span>
+    <span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">const</span><span class="o">.</span><span class="n">m_e</span> <span class="o">*</span> <span class="n">const</span><span class="o">.</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">E</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">factor</span> <span class="o">=</span> <span class="p">(</span><span class="n">Z</span> <span class="o">*</span> <span class="n">const</span><span class="o">.</span><span class="n">e</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">16</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">const</span><span class="o">.</span><span class="n">epsilon_0</span> <span class="o">*</span> <span class="n">E</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="n">factor</span> <span class="o">*</span> <span class="p">(</span><span class="n">E_prime</span> <span class="o">/</span> <span class="n">E</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># </span>
+
+<span class="k">def</span> <span class="nf">plot_cross_sections</span><span class="p">(</span><span class="n">E_alpha</span> <span class="o">=</span> <span class="mf">5e6</span><span class="p">,</span> <span class="n">E_electron</span> <span class="o">=</span> <span class="mf">5e6</span><span class="p">,</span> <span class="n">M_nucleus</span> <span class="o">=</span> <span class="mi">197</span><span class="p">):</span>
+    <span class="n">theta</span>       <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="n">E_alpha</span>    <span class="o">*=</span> <span class="n">const</span><span class="o">.</span><span class="n">e</span>       <span class="c1"># MeV en julios</span>
+    <span class="n">E_electron</span> <span class="o">*=</span> <span class="n">const</span><span class="o">.</span><span class="n">e</span>  <span class="c1"># MeV en julios</span>
+    <span class="n">M_nucleus</span>  <span class="o">*=</span> <span class="n">const</span><span class="o">.</span><span class="n">u</span>         <span class="c1"># masa en kg (1 u = 1.660539e-27 kg)</span>
+
+    <span class="n">sigma_R</span> <span class="o">=</span> <span class="n">sigma_rutherford</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="n">E_alpha</span><span class="p">,</span> <span class="n">theta</span><span class="p">)</span>
+    <span class="n">sigma_M</span> <span class="o">=</span> <span class="n">sigma_mott</span><span class="p">(</span><span class="mi">79</span><span class="p">,</span> <span class="n">E_electron</span><span class="p">,</span> <span class="n">M_nucleus</span><span class="p">,</span> <span class="n">theta</span><span class="p">)</span>
+
+    <span class="n">barn</span> <span class="o">=</span> <span class="mf">1e-24</span>  <span class="c1"># 1 barn en m²</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">sigma_R</span><span class="o">/</span><span class="n">barn</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Rutherford (α)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">sigma_M</span><span class="o">/</span><span class="n">barn</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Mott ($\beta$)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Ángulo de dispersión [rad]&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;dσ/dΩ [barn/sr]&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;cross sections: Rutherford α and Mott β&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Energy in eV, Mass in amu</span>
+<span class="n">plot_cross_sections</span><span class="p">(</span><span class="n">E_alpha</span> <span class="o">=</span> <span class="mf">5e6</span><span class="p">,</span> <span class="n">E_electron</span> <span class="o">=</span> <span class="mf">5e6</span><span class="p">,</span> <span class="n">M_nucleus</span> <span class="o">=</span> <span class="mi">197</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/general_15_0.png" src="../_images/general_15_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="descubrimiento-del-proton">
+<h3>Descubrimiento del protón<a class="headerlink" href="#descubrimiento-del-proton" title="Permalink to this heading">#</a></h3>
+<p>Fue Ernest Rutherford, en 1917, identificó el protón. Al borbardear nitrógeno con partículas alfa observó que en la colisión aparecía una partícula más ligera que la alfa, con la misma carga positiva pero de masa mucho menor.</p>
+<div class="math notranslate nohighlight">
+\[
+{}^{14}\text{N} + \alpha \;\;\longrightarrow\;\; {}^{17}\text{O} + p
+\]</div>
+<p>En 1919, Rutherfod concluyó que el núcleo del hidrógeno era un constituyente fundamental de la materia, presente en todos los núcleos atómicos. Así nació el concepto de protón como partícula elemental de carga positiva.</p>
+<p>Permitió entender que todos los núcleos podían concebirse como combinaciones de protones (y más tarde neutrones, tras su descubrimiento en 1932).</p>
+<p>Abrió la puerta a la idea de transmutaciones nucleares: un elemento podía convertirse en otro.</p>
+</div>
+<div class="section" id="descibrimiento-del-neutron">
+<h3>Descibrimiento del neutrón<a class="headerlink" href="#descibrimiento-del-neutron" title="Permalink to this heading">#</a></h3>
+<p>El modelo nuclear de Rutherford planteaba que los núcleos estaban compuestos únicamente de protones, pero la masa de los núcleos era mayor de lo que explicaba el número de protones.</p>
+<p>Por ejemplo, el núcleo de helio debía tener masa ~4 amu, pero con 2 protones y 2 electrones (como se especulaba) no cuadraba. Faltaba “algo” en el núcleo.</p>
+<p>En 1930, Walther Bothe y Herbert Becker bombardearon berilio con partículas alfa y detectaron una radiación muy penetrante, más que los rayos gamma. Al principio se pensó que era radiación gamma de alta energía.</p>
+<p>James Chadwick, en el laboratorio Cavendish (Cambridge), estudió con detalle esa radiación: Usó como blanco el berilio:</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha + \, {}^9\text{Be} \;\longrightarrow\; \,{} ^{12}\text{C} + \, n
+\]</div>
+<p>Esa radiación impactaba en parafina (rica en protones), expulsando protones de la cera. Si fueran fotones gamma, la energía necesaria para expulsar protones sería enorme, Concluyó que la radiación no eran fotones, sino partículas neutras de masa comparable a la del protón. Chadwick llamó a estas partículas neutrones.</p>
+<p>De esta forma los núcleos estaban formados por protones y neutrones (llamados ambos nucleones).</p>
+<p>Explicó por qué los núcleos no explotaban electrostáticamente: los neutrones añadían masa y la fuerza fuerte es la que ligua los nucleones en el núcleo.</p>
+</div>
+<div class="section" id="los-cuatro-magnificos">
+<h3>Los cuatro magníficos<a class="headerlink" href="#los-cuatro-magnificos" title="Permalink to this heading">#</a></h3>
+<p>La Naturaleza está formada por átomos eléctricamente neutros formados por un núcleo masivo y electrones en capas. El núcleo está formado por protonoes (asociado con el número atómico <span class="math notranslate nohighlight">\(Z\)</span>) y neutrones (que conjuntamente dan el número másico <span class="math notranslate nohighlight">\(A\)</span>). Los electrones solo aportan del orden del 0.1 % de la masa del átomo.</p>
+<p>El átomo está vacío, los núcloes tiene un tamaño del orde del 1-10 fm (fm = <span class="math notranslate nohighlight">\(10^{-15}\)</span> m), mientras que el átomo tiene <span class="math notranslate nohighlight">\(10^{-10}\)</span> m, esto es, entre ambos ¡hay un factor <span class="math notranslate nohighlight">\(10^5\)</span>!</p>
+<p>Así pues en primera aproximación la Naturaleza está compuesta por:</p>
+<div class="math notranslate nohighlight">
+\[
+p, \;\; n, \;\ e
+\]</div>
+<p>Además del neutrino, <span class="math notranslate nohighlight">\(\nu\)</span>, que aparece en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> (y cuya historia contaremos más adelante)</p>
+<p>Esto es la materia del Universo está compuesta por 4 partículas «fundamentales»:</p>
+<div class="math notranslate nohighlight">
+\[
+p, \;\; n, \;\; e, \;\; \nu
+\]</div>
+<p>Está visión del mundo construido con <span class="math notranslate nohighlight">\(p, n, e\)</span> duro 100 días ¡hasta que se descubrió el positrón!</p>
+</div>
+<div class="section" id="dispersion-de-electrones-a-alta-energia">
+<h3>Dispersión de electrones a alta energía.<a class="headerlink" href="#dispersion-de-electrones-a-alta-energia" title="Permalink to this heading">#</a></h3>
+<p>En la década de los 50’s Hofstadter realizó una serie de experimentos con el acelerador Mark III en Stanford (California, EEUU) de dispersión de núcleos con electrones de muy alta energía (100 MeV). Y descubrió que los electrones exploraban la estructura nuclear al penetrar dentro del núcleo. Acuñó el tamaño de fermi (fm = <span class="math notranslate nohighlight">\(10^{-15}\)</span> m) y estableció que el núcleo no es una bola rígida.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_hofstadter_diagram.png"><img alt="../_images/gen_hofstadter_diagram.png" class="align-center" src="../_images/gen_hofstadter_diagram.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Diagerama de la dispersión de Hofstadler</p></td>
+</tr>
+</tbody>
+</table>
+<p>Holfstadter verificó que la dispersión de Mott se modifica por un factor, llamado de forma, <span class="math notranslate nohighlight">\(F(q^2)\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\left(\frac{d\sigma}{d\Omega}\right)_{\text{exp}}
+\;=\;
+\left(\frac{d\sigma}{d\Omega}\right)_{\text{Mott}}
+\;\; |F(q^2)|^2
+\]</div>
+<p>donde</p>
+<div class="math notranslate nohighlight">
+\[
+q = p - p' =  (E - E', \; {\bf p} - {\bf p}')
+\]</div>
+<p>siendo <span class="math notranslate nohighlight">\(p, \; p'\)</span> el cuadrimomento inicial y final del electrón. A <span class="math notranslate nohighlight">\(q\)</span> se le llama cuadrimomento transferido.</p>
+<p>Este factor de forma, como veremos en la parte de Nuclear, depende de la estructura del núcleo:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_factorforma.png"><img alt="../_images/gen_factorforma.png" class="align-center" src="../_images/gen_factorforma.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Factores de forma</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="three-quark-for-the-muster-mark">
+<h3>Three quark for the Muster Mark!<a class="headerlink" href="#three-quark-for-the-muster-mark" title="Permalink to this heading">#</a></h3>
+<p>En la década de los 60 usando electrones de más alta energía se pudo explorar el interior de los propios nucleones.</p>
+<p>Así, la distribuciones de forma mostraban patrones que coincidían con la posible existencia de partículas puntuales en el interior de los nucleones. R. Feynman los llamó partones.</p>
+<p>Los conocemos como quarks. El término fue introducido por Murray Gell-Mann en 1964 cuando propuso su modelo de “quarks” para explicar la estructura de los hadrones (protones, neutrones, mesones), que tomó el nombre de la novela “Finnegans Wake” (1939) de James Joyce, un libro experimental y casi impenetrable, famoso por su lenguaje inventivo. Gell-Mann creía que los quarks era solo una herramiento matemática para explicar la composición de las partículas llamadas hadrones descubiertas hasta la fecha</p>
+<p>De forma simultánea, George Zweig en el CERN también propuso un modelo de constituyentes internos para los hadrones.
+Él los llamó “aces” (como los ases de una baraja). Él si creía que eran reales.</p>
+<p>Actualemente decimos que el protón y el neutrón están formados por dos quarks.</p>
+<p>El quark <em>up</em> (<span class="math notranslate nohighlight">\(u\)</span>) con carga <span class="math notranslate nohighlight">\(2|e|/3\)</span>  y el quark <em>down</em> (<span class="math notranslate nohighlight">\(d\)</span>) con carga <span class="math notranslate nohighlight">\(-1|e|/3\)</span>.</p>
+<p>De tal forma cada nucleón esta compuesto por tres quarks mediante la fuerza fuerte y cuya carga entera:</p>
+<div class="math notranslate nohighlight">
+\[
+n = udd, \;\; p = uud
+\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/gen_proton_neutron.jpg"><img alt="../_images/gen_proton_neutron.jpg" class="align-center" src="../_images/gen_proton_neutron.jpg" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Estructura del protón y del neutrón [Wikipedia]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="los-cuatro-y-su-compania">
+<h3>Los cuatro y su compañía<a class="headerlink" href="#los-cuatro-y-su-compania" title="Permalink to this heading">#</a></h3>
+<p>Las cuatro partículas fundamentales son:</p>
+<div class="math notranslate nohighlight">
+\[
+u, \;\; d, \;\; e, \;\; \nu
+\]</div>
+<p>Pero la Naturaleza es más diversa:</p>
+<ul class="simple">
+<li><p>además de las partículas, existen las <em>antipartículas</em>, que tiene las cargas opuestas a las partículas, por ejemplo el positrón, <span class="math notranslate nohighlight">\(e^+\)</span></p></li>
+<li><p>existen partículas como otros <em>leptones</em> (que se comportan como el electrón) y los <em>hadrones</em> (que están formados por quarks) y que son inestables.</p></li>
+</ul>
+<p>Clasificar y ordenar las partículas en la tabla de partículas del Modelo Estándar supuso un reto durante más de 40 años.</p>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Conceptos básicos<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>Las interacciones, tanto las nucleares como las de las partículas, las describimos mediante ecuaciones como la siguiente:</p>
+<div class="math notranslate nohighlight">
+\[ 
+a + b \to c + d
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(a, b\)</span> son las partículas iniciales y <span class="math notranslate nohighlight">\(c, d\)</span> son las finales.</p>
+<p>O en las desintegraciónes:</p>
+<div class="math notranslate nohighlight">
+\[
+a \to b + c + d
+\]</div>
+<p>donde la partícula <span class="math notranslate nohighlight">\(a\)</span>  se desintegra a las partículas <span class="math notranslate nohighlight">\(b, \, c, \, d\)</span></p>
+<p>En este caso aparecen 4 partículas en la interaccion o desintegración, pero pueden ser otro número.</p>
+<p>Por ejemplo:
+$<span class="math notranslate nohighlight">\(
+\alpha + \, {}^9\text{Be} \;\longrightarrow\; \,{} ^{12}\text{C} + \, n \\
+n \to p \, + e + \bar{\nu}_e
+\)</span>$</p>
+<div class="section" id="sistema-del-laboratorio-y-centro-de-masas">
+<h3>Sistema del laboratorio y centro de masas<a class="headerlink" href="#sistema-del-laboratorio-y-centro-de-masas" title="Permalink to this heading">#</a></h3>
+<p>Las interacciones las referimos habitualmente a dos sistemas de referencia:</p>
+<ul class="simple">
+<li><p>sistema del centro de masas (el suma de los momentos lineales de las partículas iniciales es cero)</p></li>
+<li><p>sistema de laboratorio (una de las partículas iniciales está en reposo, típicamente <span class="math notranslate nohighlight">\(b\)</span>).</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/intro_collider_target.png"><img alt="../_images/intro_collider_target.png" class="align-center" src="../_images/intro_collider_target.png" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>colisión en el centro de masas (izda) y en blanco fijo (derecha) de dos partículas <span class="math notranslate nohighlight">\(a, \, b\)</span>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="cantidades-continuas-conservadas">
+<h3>Cantidades continuas conservadas<a class="headerlink" href="#cantidades-continuas-conservadas" title="Permalink to this heading">#</a></h3>
+<p>Sabemos por el teorema de M. Noether que por cada simetría continua que presenta un sistema físico se conserva una cantidad asociada.</p>
+<p>En este caso para:</p>
+<ul class="simple">
+<li><p>simetría temporal, conservación de la energía</p></li>
+<li><p>simetría traslacional, conservación del momento lineal.</p></li>
+<li><p>simetría rotacional, conservación del momento angular</p></li>
+</ul>
+<p>Definimos la energía de la interacción, <span class="math notranslate nohighlight">\(a + b \to c + d\)</span>, o <span class="math notranslate nohighlight">\(Q\)</span> como la diferencia de masas iniciales y finales:</p>
+<div class="math notranslate nohighlight">
+\[
+Q = (m_a + m_b - m_c - m_d) \, c^2
+\]</div>
+<p>como la energía liberada tras la interacción (si <span class="math notranslate nohighlight">\(Q&gt;0\)</span>) o la energía mínima necesaria para que la interacción puede tener lugar (si <span class="math notranslate nohighlight">\(Q &lt;0\)</span>).</p>
+<p>En el caso de la desintegraciones: <span class="math notranslate nohighlight">\(a \to b + c + d\)</span>, para que tenga lugar debe cumplirse que:</p>
+<div class="math notranslate nohighlight">
+\[
+Q =  (m_a - m_b - m_c - m_d) \, c^2 &gt; 0
+\]</div>
+<p>En el caso del momento lineal se cumple que la suma de los momentos lineales antes y después de la interacción es la misma.</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_i^{iniciales} \mathrm{p}_i = \sum_j^{finales} \mathrm{p}_j
+\]</div>
+<p>En el caso de que estemos en el entro de masa la suma de los momentos lineales antes y después es nula.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_plab.png"><img alt="../_images/gen_plab.png" class="align-center" src="../_images/gen_plab.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/gen_pcm.png"><img alt="../_images/gen_pcm.png" class="align-center" src="../_images/gen_pcm.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>momento en el sis. lab</p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>¿Qué valor tiene <span class="math notranslate nohighlight">\(p_b\)</span>? ¿Y <span class="math notranslate nohighlight">\(p'_b\)</span>?</p>
+<p>Es muy útil considerar cantidades invariantes Lorentz y por lo tanto no dependan del sistema de coordenadas</p>
+<p>En particular en la iteracción <span class="math notranslate nohighlight">\(a + b \to c+ d\)</span> donde hay cuatro cuadrimomentos, los iniciales <span class="math notranslate nohighlight">\(p_a, p_b\)</span> y los finales <span class="math notranslate nohighlight">\(p_c, p_d\)</span>, podemos definir cuatro invariantes Lorentz llamados los invariantes de Mandelstam:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+s = (p_a + p_b)^2 = (p_c + p_d)^2 \\
+t = (p_a - p_c)^2 = (p_b - p_d)^2 \\
+u = (p_a - p_d)^2 = (p_b - P_c)^2 \\
+\end{split}\]</div>
+<p>Veremos más adelante el significado y utilidad del invariante <span class="math notranslate nohighlight">\(s\)</span>.</p>
+<p>En particular en el caso de la conservación del momento angular debemos considera el espín de las partículas!</p>
+<div class="math notranslate nohighlight">
+\[
+J_a + J_b + I_{ab} = J_c + J_d + I_{cd}
+\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_jlab.png"><img alt="../_images/gen_jlab.png" class="align-center" src="../_images/gen_jlab.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/gen_jcm.png"><img alt="../_images/gen_jcm.png" class="align-center" src="../_images/gen_jcm.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="cantidades-discretas">
+<h3>Cantidades discretas<a class="headerlink" href="#cantidades-discretas" title="Permalink to this heading">#</a></h3>
+<p>En las interacciones se conservan determinadas cantidades aditivas:</p>
+<ul class="simple">
+<li><p>la carga eléctrica</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\sum_i^{iniciales} Q_i = \sum_j^{finales} Q_j
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(Q_i\)</span> es la carga de cada partícula.</p>
+<p>Y veremos que las interacciones se conservan diversos números cuánticos aditivos:</p>
+<ul class="simple">
+<li><p>número leptónico</p></li>
+<li><p>número bariónico</p></li>
+</ul>
+<p>Lo que nos permite saber si una interacción se realiza o no en la Natureleza</p>
+<p>Una de las propiedades que estudiaremos de las interacciones es su comportamiento frente a dos transformaciones discretas:</p>
+<ul class="simple">
+<li><p>la conjugación de carga: cambiar partículas por antipartículas y viceversa</p></li>
+<li><p>la inversión de paridad: cambiar el sistema de referencia <span class="math notranslate nohighlight">\({\bf x} \to -{\bf x}\)</span></p></li>
+</ul>
+<p>Veremos que tienen asociados unos números cuánticos multiplicativos.</p>
+<p>En particular, la carga y la paridad no conservan en las interacciones electromagnéticas y fuertes, pero no en la débiles.</p>
+<p>En concreto no se conserva paridad en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span>:  <span class="math notranslate nohighlight">\(n \to p + e + \bar{\nu}_e\)</span></p>
+<p>Podemos «ilustrar» la conjugación de carga e inversión de paridad con una imagen de Escher:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_escher_daynight.jpg"><img alt="../_images/gen_escher_daynight.jpg" class="align-center" src="../_images/gen_escher_daynight.jpg" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/gen_escher_daynight_p.jpg"><img alt="../_images/gen_escher_daynight_p.jpg" class="align-center" src="../_images/gen_escher_daynight_p.jpg" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_escher_daynight_p.jpg"><img alt="../_images/gen_escher_daynight_p.jpg" class="align-center" src="../_images/gen_escher_daynight_p.jpg" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/gen_escher_daynight.jpg"><img alt="../_images/gen_escher_daynight.jpg" class="align-center" src="../_images/gen_escher_daynight.jpg" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Frente a la paridad, clasificaremos las cantitades en:</p>
+<ul class="simple">
+<li><p>escalares: <span class="math notranslate nohighlight">\(X \to X\)</span></p></li>
+<li><p>pseudo-escalares <span class="math notranslate nohighlight">\(Y \to -Y\)</span></p></li>
+<li><p>vectoriales: <span class="math notranslate nohighlight">\(\mathrm{V} \to -\mathrm{V}\)</span></p></li>
+<li><p>pseudo-vectoriales <span class="math notranslate nohighlight">\(\mathrm{A} \to \mathrm{A}\)</span></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="oservables-principales-seccion-efifaz-y-tiempo-de-vida-media">
+<h2>Oservables principales: sección efifaz y tiempo de vida media<a class="headerlink" href="#oservables-principales-seccion-efifaz-y-tiempo-de-vida-media" title="Permalink to this heading">#</a></h2>
+<div class="section" id="seccion-eficaz">
+<h3>Sección eficaz<a class="headerlink" href="#seccion-eficaz" title="Permalink to this heading">#</a></h3>
+<p>Una buena parte de los experimentos en Nuclear y Partículas son de dispersión: lanzamos partículas sonda contra un blando de otras partículas.  Y estudiamos la dispersión de las partículas sonda <span class="math notranslate nohighlight">\(a\)</span> o las interacciones <span class="math notranslate nohighlight">\(a + b \to c + d\)</span>.</p>
+<p>Para ello determinamos primero el número de interacciones que tienen lugar respecto al flujo de partículas sonda y de partículas blanco (en el caso de experimentos en blanco fijo), definimos la sección eficaz como</p>
+<p>en blanco fijo), definimos la sección eficaz como</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/gen_xsec.png"><img alt="../_images/gen_xsec.png" class="align-center" src="../_images/gen_xsec.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>ilustración de sección eficaz diferencial [M.Caamaño]</p></td>
+</tr>
+</tbody>
+</table>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{N}{N_b \phi_a}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(N\)</span> es el número de interacciones de un determiando tipo, <span class="math notranslate nohighlight">\(a + b \to c + d\)</span>, <span class="math notranslate nohighlight">\(N_b\)</span> en número de partículas blanco, y <span class="math notranslate nohighlight">\(\phi_a\)</span> el flujo de partículas sonda, esto es <span class="math notranslate nohighlight">\(N_a/S\)</span>, donde <span class="math notranslate nohighlight">\(S\)</span> el el área de exposición.</p>
+<p>La sección eficaz tiene dimensiones de área <span class="math notranslate nohighlight">\(\mathrm{m}^2\)</span> y la unidad habitual es el barn <span class="math notranslate nohighlight">\(b = 10^{-24}\, \mathrm{cm}^2\)</span></p>
+<p>En muchas ocasiones, consderamos la sección eficaz diferencial respecto a la energía de la partícula sonda:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d} \sigma}{\mathrm{d}E} \rightarrow \sigma = \int \frac{\mathrm{d} \sigma}{\mathrm{d}E} \, \mathrm{d}E
+\]</div>
+<p>O respecto al ángulo de dispersión</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d} \sigma}{\mathrm{d}\Omega} \rightarrow \sigma = \int \frac{\mathrm{d} \sigma}{\mathrm{d}\Omega} \, \mathrm{d}\Omega = 2 \pi \int \frac{\mathrm{d}\sigma}{\mathrm{d}\theta} \sin \theta \, \mathrm{d}\theta
+\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_xsec_omega.png"><img alt="../_images/gen_xsec_omega.png" class="align-center" src="../_images/gen_xsec_omega.png" style="width: 400px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/gen_xsecdif.png"><img alt="../_images/gen_xsecdif.png" class="align-center" src="../_images/gen_xsecdif.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>ilustración de sección eficaz diferencial [M. Caamaño]</p></td>
+<td class="text-align:center"><p>[Wiki]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vida-media">
+<h3>vida media<a class="headerlink" href="#vida-media" title="Permalink to this heading">#</a></h3>
+<p>Otro de los observables principales en Física Nuclear y de Partículas es el tiempo de desintegración.</p>
+<p>Si consideramos la desintegración <span class="math notranslate nohighlight">\(a \to b + c +d\)</span>, y disponemos de <span class="math notranslate nohighlight">\(N_a\)</span> partículas <span class="math notranslate nohighlight">\(a\)</span> independientes, en una unidad de tiempo esperamos que se produzcan un número de desintegracional proporcional a <span class="math notranslate nohighlight">\(N_a\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}N}{\mathrm{d}t} = - \frac{N_a}{\tau} \to N(t) = N_a \, e^{-t/\tau}
+\]</div>
+<p>Las desintegraciones siguen una ley exponencial con una constante característica que llamamos tiempo de vida media, <span class="math notranslate nohighlight">\(\tau\)</span>.</p>
+<p>Por ejemplo, para la desintegración del neutrón, <span class="math notranslate nohighlight">\(n  \to + p + e + \bar{\nu}_e\)</span>, el tiempo de vida es 878.4 s.</p>
+</div>
+</div>
+<div class="section" id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<p>M. Caamaño, material para el curso de Física Nuclear y de Partículas.</p>
+<p><a class="reference external" href="https://scholar.google.com/scholar_url?url=https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.1909.0054%3Fdownload%3Dtrue&amp;hl=es&amp;sa=T&amp;oi=ucasa&amp;ct=ufr&amp;ei=ZPi7aPLdOPvoieoPtJ70sAg&amp;scisig=AAZF9b9liGIxuWb0WdsEmpLWlvJk">[Geiger, Marshen]</a> «On a Diffuse Reflection of the α-Particles». Proceedings of the Royal Society of London A. 82, 557 (1909) 495</p>
+<p><a class="reference external" href="https://web.mit.edu/8.13/8.13c/references-fall/rutherford/rutherford-scattering-of-alpha-and-beta-particles.pdf">[Rutherford]</a> «LXXIX. The scattering of α and β particles by matter and the
+structure of the atom”. Philosophical Magazine Series 6, 21, 125 (1911) 669</p>
+<p><a class="reference external" href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.92.978">[Hofstadter]</a> R. Hofstadter et al. “High-Energy Electron Scattering and Nuclear Structure
+Determinations”. Physical Review 92, 4 (1953) 978</p>
+<p><em>Para estos apuntes se utilizó IA</em></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
