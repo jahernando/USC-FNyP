@@ -1,0 +1,1346 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extensión: grupos &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../introduccion.html">
+   1. Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../observables.html">
+   2. Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../leptones.html">
+   3. Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../quarks_hadrons.html">
+   4. Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sm.html">
+   5. Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-cinematica.html">
+   6. Extensión: cinemática
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-dirac.html">
+   7. Extensión: La ecuación de Dirac
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-trans-Lorentz.html">
+   8. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-grupos.html">
+   9. Extensión: grupos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-sm.html">
+   10. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-prel.html">
+   11. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-I.html">
+   12. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-II.html">
+   13. Boletín de problemas II
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-III.html">
+   14. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probs/problemas-IV.html">
+   15. Boletín de problemas IV
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/store/apendice-grupos.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/store/apendice-grupos.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/notebooks/store/apendice-grupos.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Extensión: grupos
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objeticos">
+   Objeticos
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sobre-los-grupos">
+     sobre los grupos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#definion-de-grupo">
+       Definión de grupo
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#clasificacion-de-grupos">
+         Clasificación de grupos
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#representaciones">
+       Representaciones
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#representacion-irreducible">
+         representación irreducible
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-grupo-u-1">
+     El grupo U(1)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#relacion-con-so-2">
+       Relación con SO(2)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#generadores">
+       Generadores
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-grupo-su-2">
+     El grupo SU(2)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       representaciones
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reglas-de-combinacion-de-espinores">
+       reglas de combinación de espinores:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#relacion-con-el-grupo-so-3">
+       Relación con el grupo SO(3)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#rotacion-de-espin">
+       Rotación de espín
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-grupo-su-3">
+     El grupo SU(3)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Extensión: grupos</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Extensión: grupos
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objeticos">
+   Objeticos
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sobre-los-grupos">
+     sobre los grupos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#definion-de-grupo">
+       Definión de grupo
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#clasificacion-de-grupos">
+         Clasificación de grupos
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#representaciones">
+       Representaciones
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#representacion-irreducible">
+         representación irreducible
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-grupo-u-1">
+     El grupo U(1)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#relacion-con-so-2">
+       Relación con SO(2)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#generadores">
+       Generadores
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-grupo-su-2">
+     El grupo SU(2)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       representaciones
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reglas-de-combinacion-de-espinores">
+       reglas de combinación de espinores:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#relacion-con-el-grupo-so-3">
+       Relación con el grupo SO(3)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#rotacion-de-espin">
+       Rotación de espín
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-grupo-su-3">
+     El grupo SU(3)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="section" id="extension-grupos">
+<h1>Extensión: grupos<a class="headerlink" href="#extension-grupos" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Dec 18 20:19:50 2024
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="objeticos">
+<h1>Objeticos<a class="headerlink" href="#objeticos" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Definición de grupo, representaciones y representaciones irreducibles</p></li>
+<li><p>Grupo U(1) y O(2)</p></li>
+<li><p>Grupo SU(2) y O(3), ejemplos de isoespín, representaciones y relación con las rotaciones espaciales.</p></li>
+<li><p>Grupo SU(3), ejemplos isoespín y color, hypercarga.</p></li>
+</ul>
+<div class="section" id="sobre-los-grupos">
+<h2>sobre los grupos<a class="headerlink" href="#sobre-los-grupos" title="Permalink to this heading">#</a></h2>
+<p>Los grupos de simetría son una de las herramientas matemáticas principales de la Física de Partículas:</p>
+<ul class="simple">
+<li><p>están relacionadas con las <strong>cantidades conservada</strong>s, las cargas, que definen la partícula.</p></li>
+<li><p>sirven para <strong>representar los estados de las partículas</strong>. Asignamos dichos estados con los elementos de la base de las representaciones irreducibles de los grupos.</p></li>
+</ul>
+<p>Vamos a recordar el concepto de grupo, de representación, y después revisaremos los grupos principales en Partículas</p>
+<p>Los grupos más comunes en física de partículas son:</p>
+<ul>
+<li><p>El <strong>grupo de Lorentz-Poincaré</strong>, asociado a las rotaciones, traslaciones y cambios de sistemas de referencia inerciales en el espacio-tiempo.</p>
+<p>Las representaciones más comunes que encontramos son: <strong>escalar, vectorial, espinorial</strong></p>
+</li>
+<li><p>Los <strong>grupos unitarios</strong> (cuya representación son matrices unitarias) de dimensiones pequeñas:</p>
+<ul class="simple">
+<li><p><strong>U(1)</strong> rotación de una fase de un número complejo, que asociamos con la conservación de la carga eléctrica.</p></li>
+<li><p><strong>SU(2)</strong> matrices unitarias de dimensión 2 con determinante positivo, que asociamos al espín, y a otras contidades físicas como el iso-espín débil. Su base fundamental es un duplete con posiciones arriba y abajo.</p></li>
+<li><p><strong>SU(3)</strong> matrices unitarias de dimensión 3 con determinante positivo, que asociamos al color. Su base fundamental es un triplete, que asociamos en el caso del color con los tres colores: rojo, verde y azul.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="definion-de-grupo">
+<h3>Definión de grupo<a class="headerlink" href="#definion-de-grupo" title="Permalink to this heading">#</a></h3>
+<p>Un grupo es una colección de elementos <span class="math notranslate nohighlight">\({g_i}\)</span>, finito o infinito entre los que hay definida una operación, la multiplicación (<span class="math notranslate nohighlight">\(\cdot\)</span>), y que cumplen las siguientre propiedades:</p>
+<ul class="simple">
+<li><p>completitud: <span class="math notranslate nohighlight">\(g_i \cdot g_j = g_k\)</span> (la multiplicación de dos elementos del grupo da otro elemento del grupo)</p></li>
+<li><p>asociación: <span class="math notranslate nohighlight">\(g_i \cdot (g_j \cdot g_k) = (g_i \cdot g_j) \cdot g_k\)</span></p></li>
+<li><p>existencia de la identidad, <span class="math notranslate nohighlight">\(1\)</span>: <span class="math notranslate nohighlight">\( g_i \cdot 1 = 1 \cdot g_i = g_i\)</span></p></li>
+<li><p>existencia de la inversa, <span class="math notranslate nohighlight">\(g_i \cdot g^{-1}_i = 1\)</span> para todo <span class="math notranslate nohighlight">\(g_i\)</span> del grupo.</p></li>
+</ul>
+<p>Decimos que el grupo es abeliano si es conmutativo: <span class="math notranslate nohighlight">\(g_i \cdot g_j = g_j \cdot g_i\)</span>, si no, es no-abeliano</p>
+<div class="section" id="clasificacion-de-grupos">
+<h4>Clasificación de grupos<a class="headerlink" href="#clasificacion-de-grupos" title="Permalink to this heading">#</a></h4>
+<p>Los grupos principales son:</p>
+<ul class="simple">
+<li><p>espacio-temporales, lo que incluye el grupo de Lorentz</p></li>
+<li><p>simetrías internas es una espacio interno, llamado <em>isotópico</em>, que pueden ser globales o locales (esto es que depende del punto espacio-temporal).</p></li>
+</ul>
+<p>Tambien se pueden clasificar los grupos en:</p>
+<ul class="simple">
+<li><p>continuos, si el grupo depende de un parámetro <span class="math notranslate nohighlight">\(\theta\)</span> continuo, que puede ser compacto o no dependiendo si el intervalo del valor que toma <span class="math notranslate nohighlight">\(\theta\)</span> es abierto o cerrado. Por ejemplo el grupo de Lorentz que depende del parámetro <span class="math notranslate nohighlight">\(\beta = v/c\)</span> no es compacto porque no puede tomar el valor <span class="math notranslate nohighlight">\(\beta = 1\)</span>.</p></li>
+<li><p>discretos, donde hay un grupo finito de elementos. Por ejemplo la inversión por paridad forma un grupo discreto de un elemento.</p></li>
+</ul>
+<p>En Física de Partículas juegan un papel fundamental los <strong>grupos de Lie</strong> que son aquellos cuya elementos se relacionan de forma continua y diferenciable con respecto a un conjunto de parámetros <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+</div>
+</div>
+<div class="section" id="representaciones">
+<h3>Representaciones<a class="headerlink" href="#representaciones" title="Permalink to this heading">#</a></h3>
+<p>Llamamos <strong>representación <span class="math notranslate nohighlight">\(D(g)\)</span></strong> lineal al conjunto de matrices asociadas con los elementos <span class="math notranslate nohighlight">\(g\)</span> de un grupo <span class="math notranslate nohighlight">\(G\)</span> que cumplen <strong>las mismas reglas de multiplicación</strong> que los elementos de <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<p>Esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+ g_i \cdot g_j = g_k \; \Rightarrow D(g_i) \, \cdot D(g_j) = D(g_k)
+\]</div>
+<p>La <strong>dimensión de la representación</strong>, <span class="math notranslate nohighlight">\(n\)</span>, es la dimensión de las matrices.</p>
+<p>Los vectores de dimensión <span class="math notranslate nohighlight">\(n\)</span> sobre los que actuan las matrices forman la <strong>base de la representación</strong>.</p>
+<p>Llamamos <strong>representación fundamental</strong> aquella representación del grupo con la dimensión menor.</p>
+<div class="section" id="representacion-irreducible">
+<h4>representación irreducible<a class="headerlink" href="#representacion-irreducible" title="Permalink to this heading">#</a></h4>
+<p>Decimos que una representación <span class="math notranslate nohighlight">\(D(g)\)</span> de un grupo <span class="math notranslate nohighlight">\(G\)</span> es reducible si puede descomponerse en representaciones más pequeñas.</p>
+<p>Sea la representación <span class="math notranslate nohighlight">\(D(g)\)</span> de matrices de dimensión <span class="math notranslate nohighlight">\(n\times n\)</span> de un grupo, la representación es redudible si la matrix <span class="math notranslate nohighlight">\(D(g)\)</span> se pueden descomponer en diagonal con matrices de menor dimensión, <span class="math notranslate nohighlight">\(D_1(g), D_2(g)\)</span>, de la forma:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+D(g) = \begin{pmatrix} D_1(g) &amp; 0 \\ 0 &amp; D_2(g) \end{pmatrix}
+\end{split}\]</div>
+<p>También podemos decir que la base de la representación <span class="math notranslate nohighlight">\(D(g)\)</span> se puede descomponer en varias bases, de tal forma que los elementos de cada sub-base forma su propio grupo. Los elementos de la base <span class="math notranslate nohighlight">\(D_1(g)\)</span> no se mezclan con los elementos de la base de <span class="math notranslate nohighlight">\(D_2(g)\)</span>.</p>
+<p>Como dijimos antes los estados de las partículas se representan en las bases de la representación irreducible.</p>
+<p><strong>Ejemplo: espín</strong></p>
+<p>El ejemplo conocido, y que veremos luego, es la combinación de espíns 1/2:</p>
+<p>El duplete:
+$<span class="math notranslate nohighlight">\(
+\uparrow = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \;\; \downarrow = \begin{pmatrix} 0 \\ 1 \end{pmatrix}.
+\)</span><span class="math notranslate nohighlight">\(
+es la base de la representación fundamental de \)</span>SU(2)<span class="math notranslate nohighlight">\( que tiene \)</span>2$ elementos.</p>
+<p>Asociamos los elementos de la base a los estados de espín <span class="math notranslate nohighlight">\(|j, m\rangle\)</span>, donde <span class="math notranslate nohighlight">\(j=1/2, m = \pm 1/2\)</span>.</p>
+<p>El producto de dos dupletes, que se denota por <span class="math notranslate nohighlight">\({\bf 2} \otimes {\bf 2}\)</span>, es: <span class="math notranslate nohighlight">\(\uparrow\uparrow, \uparrow\downarrow,
+\downarrow\uparrow, \downarrow\downarrow\)</span>.</p>
+<p>La representación del la composición <span class="math notranslate nohighlight">\({\bf 2} \otimes {\bf 2}\)</span> tienen dimensión 4, cuya representación irreducible está formada por un triplete y un singlete, que se denota como <span class="math notranslate nohighlight">\({\bf 3} \oplus {\bf 1}\)</span>.</p>
+<p>El triplete es:
+$<span class="math notranslate nohighlight">\(
+|1, 1 \rangle = \; \uparrow\uparrow, \;\;\;
+|1, 0 \rangle = \frac{1}{\sqrt{2}} (\uparrow\downarrow + \downarrow\uparrow),  \;\;\; |1, -1 \rangle, = \; \downarrow\downarrow, 
+\)</span><span class="math notranslate nohighlight">\(
+y el singlete:
+\)</span><span class="math notranslate nohighlight">\(
+|0, 0 \rangle = \frac{1}{\sqrt{2}}(\uparrow\downarrow - \downarrow\uparrow)
+\)</span>$</p>
+<p>Que asociamos con los estados, <span class="math notranslate nohighlight">\(|j, m\rangle\)</span>, donde <span class="math notranslate nohighlight">\(j\)</span> es el espín total <span class="math notranslate nohighlight">\(j = |j_1-j_2| \le j \le j_1 + j_2\)</span> y <span class="math notranslate nohighlight">\(m = -j, \dots, j\)</span>, su tercera componente de espín.</p>
+<p>Veremos abajo cómo se contruye esta representación irredudible.</p>
+</div>
+</div>
+</div>
+<div class="section" id="el-grupo-u-1">
+<h2>El grupo U(1)<a class="headerlink" href="#el-grupo-u-1" title="Permalink to this heading">#</a></h2>
+<p>Consideremos un número complejo, <span class="math notranslate nohighlight">\(x\)</span>, relacionado con otro número complejo, <span class="math notranslate nohighlight">\(x'\)</span>, simplemente por una fase <span class="math notranslate nohighlight">\(x' = e^{i\theta} x\)</span>, ambos números complejos tiene la misma norma, <span class="math notranslate nohighlight">\(|x'| = |x|\)</span>.</p>
+<p>También podemos pensar en una función de onda <span class="math notranslate nohighlight">\(\psi(x)\)</span> relacionada con otra función de onda <span class="math notranslate nohighlight">\(\psi'(x)\)</span> mediante una fase complaje, <span class="math notranslate nohighlight">\(\Psi'(x) = e^{i\theta} \psi(x)\)</span>. La Física depende solo de la norma de la función de ondas, y en este caso las dos son iguales <span class="math notranslate nohighlight">\(|\phi'(x)| = |\psi(x)|\)</span>.</p>
+<p>En ambos casos hay una simetría, una rotación en el espacio complejo, <span class="math notranslate nohighlight">\(D(\theta) = e^{i \theta} \)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+x' = D(\theta) \, x = \, e ^{i\theta} \, x
+\]</div>
+<p>deja invariante la norma.</p>
+<p>El grupo de las rotaciones, <span class="math notranslate nohighlight">\(D(\theta)\)</span>, en el espacio complejo se denomina <strong>grupo unitario</strong> U(1).</p>
+<p>La multiplicación de los elementos del grupo es:</p>
+<div class="math notranslate nohighlight">
+\[
+D(\theta_1) \cdot D(\theta_2) = D(\theta_1 + \theta_2), \;\;\; D(\theta + 2 \pi) = D(\theta)
+\]</div>
+<p>Nos dice que es un grupo abeliano. No importa el orden en que se realizan dos rotaciones. Esto es el orden de multiplicación.</p>
+<p>La inversa es simplemente:</p>
+<div class="math notranslate nohighlight">
+\[
+D(\theta) = e^{i\theta}, \;\;\; D^{-1}(\theta) = D(-\theta) = e^{-i\theta}
+\]</div>
+<p>Vemos pues que la representación fundamental tiene dimensión 1.</p>
+<div class="section" id="relacion-con-so-2">
+<h3>Relación con SO(2)<a class="headerlink" href="#relacion-con-so-2" title="Permalink to this heading">#</a></h3>
+<p>El grupo SO(2) está formado por la matrices propias de las rotaciones en dos dimensiones, <span class="math notranslate nohighlight">\(R(\theta)\)</span>.
+Las matrices propias tiene el determinante positivo, <span class="math notranslate nohighlight">\(\mathrm{det}(R(\theta)) &gt; 0\)</span></p>
+<p>Vamos a ver cómo el grupo U(1) está relacionado con el grupo SO(2).</p>
+<p>Sea <span class="math notranslate nohighlight">\((x, y)\)</span> un punto del espacio bi-dimensional, el efecto de una rotación es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} x' \\ y'\end{pmatrix} =
+\begin{pmatrix} \cos \theta &amp; \sin \theta \\ - \sin \theta &amp; \cos \theta \end{pmatrix} \, 
+\begin{pmatrix} x \\ y \end{pmatrix}
+\end{split}\]</div>
+<p>Donde
+$<span class="math notranslate nohighlight">\(
+R(\theta) = \begin{pmatrix} \cos \theta &amp; \sin \theta \\ - \sin \theta &amp; \cos \theta \end{pmatrix}, \;\;\; 
+\mathrm{det}(D(\theta)) = 1
+\)</span>$</p>
+<p>El grupo SO(2) es continuo y compacto, con <span class="math notranslate nohighlight">\(\theta \in [0, 2 \pi]\)</span>.</p>
+<p>Las rotaciones preservan el modulo del vector:</p>
+<div class="math notranslate nohighlight">
+\[
+x'^2 + y'^2 = x^2 + y^2
+\]</div>
+<p>esto es, existe simetría rotacional y se preserva la norma del vector.</p>
+<p>Las reglas de multiplicación de las matrices <span class="math notranslate nohighlight">\(R(\theta)\)</span> son:</p>
+<div class="math notranslate nohighlight">
+\[
+R(\theta_1) \cdot R(\theta_2) = R(\theta_1 + \theta_2), \;\;\; R(\theta + 2 \pi) = R(\theta)
+\]</div>
+<p>Si hacemos una rotación de <span class="math notranslate nohighlight">\(\theta_2\)</span> después de hacer una rotación previa de <span class="math notranslate nohighlight">\(\theta_1\)</span> es equivalente a rotar desde el principio con <span class="math notranslate nohighlight">\(\theta_1+\theta_2\)</span></p>
+<p>Se trata de un grupo abeliano, <span class="math notranslate nohighlight">\(D(\theta_1) \cdot D(\theta_2) = D(\theta_2) \cdot D(\theta_1)\)</span></p>
+<p>La inversa de una rotación con <span class="math notranslate nohighlight">\(\theta\)</span> es simplemente rotar con <span class="math notranslate nohighlight">\(-\theta\)</span>:
+$<span class="math notranslate nohighlight">\(
+R^{-1}(\theta) = R(-\theta)
+\)</span>$</p>
+<p>En la representación matricial <span class="math notranslate nohighlight">\(2\times2\)</span>, la inversa es la transpuesta:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R(\theta)  = \begin{pmatrix} \cos \theta &amp; \sin \theta \\ - \sin \theta &amp; \cos \theta \end{pmatrix}, \;\;\;
+R^{-1}(\theta)  = R(-\theta) = R^T(\theta) = \begin{pmatrix} \cos \theta &amp; -\sin \theta \\  \sin \theta &amp; \cos \theta \end{pmatrix}
+\end{split}\]</div>
+</div>
+<div class="section" id="generadores">
+<h3>Generadores<a class="headerlink" href="#generadores" title="Permalink to this heading">#</a></h3>
+<p>Podemos definir las rotaciones usdando la notación de la exponencial y su desarrollo de Taylor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R(\theta) = e ^{i \theta T} = \sum_n \frac{(i\theta T)^n}{n!} = 1 + i \theta T - \frac{\theta^2}{2} T^2 + \dots  = 
+I \cos \theta + T \sin \theta = 
+\begin{pmatrix} \cos \theta &amp; \sin \theta \\ - \sin \theta &amp; \cos \theta \end{pmatrix},
+\end{split}\]</div>
+<p>si  definimos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T = -i \begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix}
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(T\)</span> es el <strong>generador</strong> de la rotación infinitesimal <span class="math notranslate nohighlight">\(\delta \theta\)</span> del grupo SO(2):</p>
+<div class="math notranslate nohighlight">
+\[
+U(\delta \theta) \simeq 1 + i T \, \delta \theta
+\]</div>
+<p>Recordar que el generador es hermítico: <span class="math notranslate nohighlight">\(T^\dagger = T^T = T\)</span></p>
+<p>Las reglas de multiplicación del grupo <span class="math notranslate nohighlight">\(SO(2)\)</span> y <span class="math notranslate nohighlight">\(U(1)\)</span> son las mismas:</p>
+<div class="math notranslate nohighlight">
+\[
+D(\theta_1) \cdot D(\theta_2) = D(\theta_1 + \theta_2), \;\;\; D(\theta + 2 \pi) = D(\theta)
+\]</div>
+<p>Decimos que dos grupos son <strong>isomorfos</strong> si comparten las mismas reglas de multiplicación.</p>
+<p>En este caso SO(2) y U(1) son isomorfos.</p>
+<div class="math notranslate nohighlight">
+\[
+SO(2) \sim U(1)
+\]</div>
+<p>La base de uno y otro se relacionan por:</p>
+<div class="math notranslate nohighlight">
+\[
+|a| e^{i\phi} \leftrightarrow (x, y) = (|a| \cos \theta, |a| \sin \theta)
+\]</div>
+<p>Notar que el generador de U(1) es simplemente 1.</p>
+</div>
+</div>
+<div class="section" id="el-grupo-su-2">
+<h2>El grupo SU(2)<a class="headerlink" href="#el-grupo-su-2" title="Permalink to this heading">#</a></h2>
+<p>Consideremos el caso de un grupo con los dos quarks ligeros <span class="math notranslate nohighlight">\(u\)</span> y <span class="math notranslate nohighlight">\(d\)</span>, con masas muy similares, podemos distinguirlos por sus cargas eléctricas, pero desde el punto de vista de la interacción fuerte son iguales.
+Podemos situarlos como los elementos de un duplete de <em>isoespín</em>, y la fuerza fuerte debe ser invariante bajo rotación dentro de ese espacio interno
+$<span class="math notranslate nohighlight">\(
+u \equiv \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \;\;\; d \equiv \begin{pmatrix} 0 \\ 1 \end{pmatrix} 
+\)</span>$</p>
+<p>La rotación unitaria, <span class="math notranslate nohighlight">\(U(\theta)\)</span>, de <span class="math notranslate nohighlight">\(u, d\)</span> a <span class="math notranslate nohighlight">\(u', d'\)</span>
+$$</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7bc082e4-1829-4f1c-ad42-a047a60f87e4">
+<span class="eqno">()<a class="headerlink" href="#equation-7bc082e4-1829-4f1c-ad42-a047a60f87e4" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} u' \\ d' \end{pmatrix}\]</div>
+<p>$$
+no debe afectar a las interacciones fuertes.</p>
+<p>El conjunto de matrices unitarias que nos cambiarían el par <span class="math notranslate nohighlight">\(u, d\)</span> forman un grupo.</p>
+<p>Llamamos <strong>SU(2)</strong> es el grupo que forman las <strong>matrices complejas unitarias <span class="math notranslate nohighlight">\(2 \times 2\)</span> con determinante unidad</strong>.</p>
+<div class="math notranslate nohighlight">
+\[
+U^\dagger U = I, \;\; \mathrm{det}(U) = 1
+\]</div>
+<p>Las matrices de SU(2) se definen con 3 parámetros, o ángulos: <span class="math notranslate nohighlight">\(\theta_i, \, i = 1, 2, 3\)</span>.</p>
+<p>Notar que hay 8 parámetros reales en <span class="math notranslate nohighlight">\(U\)</span>, la condición de unitariedad impone 4 ligaduras, y la del determinante una más.</p>
+<p>Las matrices pueden construirse a partir de los ángulos <span class="math notranslate nohighlight">\(\theta_i\)</span> y 3 <strong>generadores</strong> <span class="math notranslate nohighlight">\(T_i\)</span>, con <span class="math notranslate nohighlight">\(i=1, 2, 3\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+U({\bf \theta}) = e^{i \vec{\theta }\cdot {\bf T}} = e^{i \sum_i \theta_i T^i}
+\]</div>
+<p>recordemos que los generadores son hermíticos.</p>
+<p>Los generadores de <span class="math notranslate nohighlight">\(SU(2)\)</span> son las matrices de Pauli:</p>
+<div class="math notranslate nohighlight">
+\[
+T^i = \frac{1}{2} \sigma^i
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sigma^1 = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}, \;\;
+\sigma^2 = \begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix}, \;\;
+\sigma^3 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1\end{pmatrix}.
+\end{split}\]</div>
+<p>que cumplen la siguientes relaciones:</p>
+<div class="math notranslate nohighlight">
+\[
+[T^1, T^2] = i T^3, \;\; [T^2, T^3] = i T^1, \;\; [T^3, T^1] = i T^2,
+\]</div>
+<p>esto es:
+$<span class="math notranslate nohighlight">\(
+[T^i, T^j] = i \epsilon_{ijk} T^k,
+\)</span><span class="math notranslate nohighlight">\(
+donde \)</span>\epsilon_{ijk}$ es el tensor de Levi-Civita de 3 dimensiones.</p>
+<p>La relación anterior es la <strong>algebra de Lie</strong> de grupo. Todos los grupos que tengan esta álgebra son isomorfos.</p>
+<p>Reconocemos en ellas las reglas de conmutación del momento angular y del espín <span class="math notranslate nohighlight">\({\bf S}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+[S^i, S^j] = i \epsilon_{ijk} S^k
+\]</div>
+<p>Por similitud con el espín, sabemos que existen dos operadores que conmutan, <span class="math notranslate nohighlight">\({\bf T}^2\)</span>, que llamaremos <strong>isoespín</strong> para distinguirlo del espín, y la tercera componente de isospin, <span class="math notranslate nohighlight">\(T_3\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+{\bf T}^2 = (T^1)^2 + (T^2)^2 + (T^3)^2, \;\; T_3; \;\; [{\bf T}^2, T_3] = 0
+\]</div>
+<p>Sabemos igualmente que podemos dar los estados con los autovalores del <span class="math notranslate nohighlight">\({\bf T}^2, T_3\)</span>, <span class="math notranslate nohighlight">\(|I, I_3 \rangle\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+{\bf T}^2 \, |I, I_3 \rangle = I (I+1) \, | I, I_3 \rangle, \\ T_3 \, |I, I_3 \rangle = I_3 \, |I, I_3 \rangle.
+\end{split}\]</div>
+<p>La base de la representación fundamental de SU(2) será, por similitud con el espín, <span class="math notranslate nohighlight">\(|1/2, \pm 1/2 \rangle\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u \equiv \begin{pmatrix} 1 \\ 0 \end{pmatrix} = |1/2, 1/2 \rangle = \uparrow, \;\; 
+d \equiv \begin{pmatrix} 0 \\ 1 \end{pmatrix} = |1/2, -1/2 \rangle = \downarrow.
+\end{split}\]</div>
+<div class="section" id="id1">
+<h3>representaciones<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>Podemos construir representaciones de SU(2) de mayor dimensión a partir del producto (o combinación) de los estados de la base de la representación fundamental: <span class="math notranslate nohighlight">\(\uparrow\)</span> y <span class="math notranslate nohighlight">\(\downarrow\)</span>.</p>
+<p>El producto de dos dupletes, <span class="math notranslate nohighlight">\({\bf 2} \otimes {\bf 2}\)</span>, es:
+$<span class="math notranslate nohighlight">\(
+\uparrow \uparrow, \;\; \uparrow \downarrow, \;\; 
+\downarrow \uparrow, \;\; \downarrow, \downarrow
+\)</span><span class="math notranslate nohighlight">\(
+tiene dimensión 4. Su representación irreducible es un triplete y un singlete: \)</span>\bf{3} \oplus {\bf 1}$</p>
+<p>Para construirla utilizamos los operadores escalera:
+$<span class="math notranslate nohighlight">\(
+T^\pm \equiv T^1 \pm i T^2 
+\)</span>$</p>
+<p>que en la representación fundamental son simplemente:
+$<span class="math notranslate nohighlight">\(
+T^+ = \sigma^+ = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix}, \;\;\;
+T^- = \sigma^- = \begin{pmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{pmatrix}.
+\)</span>$</p>
+<p>Aplicando los operadores escalera obtenemos los estados del triplete, <span class="math notranslate nohighlight">\(\bf 3\)</span>, <span class="math notranslate nohighlight">\(I = 1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+|1, 1 \rangle = \uparrow \uparrow\\
+|1, 0 \rangle \propto T_- \, \uparrow\uparrow = (T_-\uparrow)\uparrow + \uparrow (T_- \uparrow), \\
+|1, -1 \rangle \propto T_- \left(\uparrow\downarrow + \downarrow\uparrow \right) = 2 \downarrow \downarrow
+\end{split}\]</div>
+<p>Que si normalizamos:
+$<span class="math notranslate nohighlight">\(
+|1, 1 \rangle =  \uparrow\uparrow, \;\; 
+|1, 0 \rangle = \frac{1}{\sqrt{2}} (\uparrow\downarrow + \downarrow\uparrow), \;\;
+|1, -1 \rangle = \downarrow\downarrow.
+\)</span>$</p>
+<p>y finalmente, el miembro del singlete, <span class="math notranslate nohighlight">\(\bf 0\)</span>, <span class="math notranslate nohighlight">\(I= 0\)</span> es el ortogonal a <span class="math notranslate nohighlight">\(|1, 0 \rangle\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+|0, 0 \rangle = \frac{1}{\sqrt{2}}(\uparrow\downarrow - \downarrow\uparrow)
+\]</div>
+<p>Los miembros del triplete son simétricos bajo el intercambio <span class="math notranslate nohighlight">\(\uparrow \leftrightarrow \downarrow\)</span> y el singlete anti-simétrico.</p>
+</div>
+<div class="section" id="reglas-de-combinacion-de-espinores">
+<h3>reglas de combinación de espinores:<a class="headerlink" href="#reglas-de-combinacion-de-espinores" title="Permalink to this heading">#</a></h3>
+<p>Para construir las representaciones de SU(2) de mayor dimensión recurrimos a las reglas que conocemos del espín. O a partir de primeros principios con los operadores escalera.</p>
+<p>Recordemos que los operadores escalera actuan sobre la base <span class="math notranslate nohighlight">\(|I, I_3 \rangle\)</span> de la siguiente forma:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T_+ \, |I, I_3 \rangle = \sqrt{I (I+1) - I_3 (I_3+1)} \, |I, I_3 \rangle, \\
+T_- \, |I, I_3 \rangle = \sqrt{I (I+1) - I_3 (I_3-1)} \; |I, I_3 \rangle. \\
+\end{split}\]</div>
+<p>suben arriba y abajo en los elementos de la base.</p>
+<p>Una representación irreducible tiene como base <span class="math notranslate nohighlight">\(|I, I_3 \rangle\)</span> donde <span class="math notranslate nohighlight">\(I\)</span> puede tomar los valores:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I = 0, \frac{1}{2}, 1, \frac{3}{2}, \dots\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(I_3 = -I, \dots, I\)</span>, con incrementos de 1.</p></li>
+</ul>
+<p>La dimesión de la representación irreducible es <span class="math notranslate nohighlight">\(2I + 1\)</span>.</p>
+<p>La representación irreducible de la combinación de dos representaciones de menor dimension, cuyas bases son, <span class="math notranslate nohighlight">\(|I^1, I^1_3 \rangle, \; | I^2, I^2_3 \rangle\)</span>, tendrá una dimensión <span class="math notranslate nohighlight">\((2I^1+1) (2I^2+1)\)</span>, y se compondrá de varios multipletes <span class="math notranslate nohighlight">\(| I, I_3 \rangle\)</span>, con valores de <span class="math notranslate nohighlight">\(I, I_3\)</span> que vienen dados por:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I = |I^1 - I^2|, \dots, I^1 + I^2\)</span>, en incrementos de 1.</p></li>
+<li><p><span class="math notranslate nohighlight">\(I_3 = -I , \dots, I \)</span>, en incrementos de 1.</p></li>
+</ul>
+<p>Los elementos de la base <span class="math notranslate nohighlight">\(|I, I_3 \rangle\)</span> se relacionan con los iniciales <span class="math notranslate nohighlight">\(|I^1, I^1_3\rangle |I^2, I^2_3 \rangle\)</span> mediante los coeficientes de <a class="reference external" href="https://pdg.lbl.gov/2018/reviews/rpp2018-rev-clebsch-gordan-coefs.pdf">Clebsch-Gordan</a>.</p>
+</div>
+<div class="section" id="relacion-con-el-grupo-so-3">
+<h3>Relación con el grupo SO(3)<a class="headerlink" href="#relacion-con-el-grupo-so-3" title="Permalink to this heading">#</a></h3>
+<p>Llamamos SO(3) al grupo de las rotaciones en el espacio vectorial de tres dimensiones, cuya matriz de rotación tiene determinate positivo.</p>
+<div class="math notranslate nohighlight">
+\[
+x' = R({\bf \theta}) \, x, \;\;\; \mathrm{det}(R(\theta)) = 1
+\]</div>
+<p><span class="math notranslate nohighlight">\(R(\theta)\)</span> una matriz real <span class="math notranslate nohighlight">\(3 \times 3\)</span>, y <span class="math notranslate nohighlight">\(x = (x, y, z)\)</span> un vector tridimensional.</p>
+<p>Las rotaciones nos dejan invariante la norma del vector <span class="math notranslate nohighlight">\((x, y, z)\)</span>.</p>
+<p>Las matrices, <span class="math notranslate nohighlight">\(R(\theta)\)</span>, quedan definidas con tres ángulos, <span class="math notranslate nohighlight">\(\theta_i\)</span>, con <span class="math notranslate nohighlight">\(i=1, 2, 3\)</span>,</p>
+<p>La matrix <span class="math notranslate nohighlight">\(R(\theta)\)</span> puede obtenerse a partir de los 3 generadores <span class="math notranslate nohighlight">\(T^i\)</span> del grupo:</p>
+<div class="math notranslate nohighlight">
+\[
+U(\theta) = e^{i \vec{\theta} \cdot T} = e^{i \sum_{i=1}^3 \theta_i T^i}
+\]</div>
+<p>Notar que <span class="math notranslate nohighlight">\(\vec{\theta} \cdot T\)</span> es el producto de los tres angulos <span class="math notranslate nohighlight">\(\theta_i\)</span> con tres generadores <span class="math notranslate nohighlight">\(T^i\)</span>, con <span class="math notranslate nohighlight">\(i=1, 2, 3\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T^1 = -i \begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ 0 &amp; -1 &amp; 0\end{pmatrix}, \;\;
+T^2 = -i \begin{pmatrix} 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0\end{pmatrix}, \;\;
+T^3 = -i \begin{pmatrix} 0 &amp; 1 &amp; 0 \\ -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0\end{pmatrix}. 
+\end{split}\]</div>
+<p>Las reglas de conmutación de los generadores son:</p>
+<div class="math notranslate nohighlight">
+\[
+[T^1, T^2] = iT^3, \;\;\; [T^2, T^3] = i T^1, \;\;\; [T^3, T^1] = i T^2
+\]</div>
+<p>Esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+[T^i, T^j] = i \, \epsilon_{ijk} \, T^k
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\epsilon_{ijk}\)</span> es el tensor Levi-Civita.</p>
+<p>Notar que las reglas de conmutación coinciden con las del grupo <span class="math notranslate nohighlight">\(SU(2)\)</span> y son las del momento angular y el espín.</p>
+<p>El grupo SU(2) es por lo tanto isomorfo a SO(3)</p>
+<div class="math notranslate nohighlight">
+\[
+SU(2) \sim SO(3)
+\]</div>
+<p>En el caso <span class="math notranslate nohighlight">\(SO(2)\)</span> y <span class="math notranslate nohighlight">\(U(1)\)</span>, habíamos visto que sus elementos se relacionaban:</p>
+<div class="math notranslate nohighlight">
+\[
+(x, y) \sim a e^{i\phi}
+\]</div>
+<p>En este caso la relación viene de:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(x, y, z) \sim \sigma \cdot x = \begin{pmatrix} z &amp; x - i y \\ x + iy &amp; z \end{pmatrix}
+\end{split}\]</div>
+</div>
+<div class="section" id="rotacion-de-espin">
+<h3>Rotación de espín<a class="headerlink" href="#rotacion-de-espin" title="Permalink to this heading">#</a></h3>
+<p>Es común que a la hora de calcular elementos de matriz utilizando los espinores de helicidad de Dirac en secciones eficaces nos aparezca una configuración de espín de salida <span class="math notranslate nohighlight">\(|1, m' \rangle_{\theta}\)</span> en una dirección <span class="math notranslate nohighlight">\({\bf n} = (\sin \theta, 0, \cos \theta)\)</span> que queremos relacionar con configuración de espín inicial en <span class="math notranslate nohighlight">\(|1, m \rangle\)</span> en el eje <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>Es el caso de la interacción <span class="math notranslate nohighlight">\(e + e^+ \to \mu + \mu^+\)</span> donde hay cuatro combinaciones posibles de helicidad:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="notebooks/store/imgs/hadrons_eemumu_helicities_2.png"><img alt="notebooks/store/imgs/hadrons_eemumu_helicities_2.png" class="align-center" src="notebooks/store/imgs/hadrons_eemumu_helicities_2.png" style="width: 700px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Las posibles combinaciones de helicidad de <span class="math notranslate nohighlight">\(e^++e \to \mu^+ + \mu\)</span> en el CM, negro (momento), azul (espín)</p></td>
+</tr>
+</tbody>
+</table>
+<p>En la figura representamos el plano <span class="math notranslate nohighlight">\((x, z)\)</span> donde el eje <span class="math notranslate nohighlight">\(z\)</span> viene dado por la dirección del electrón incidente, la dirección de salida del muón, es por lo tanto <span class="math notranslate nohighlight">\({\bf n} = (\sin \theta, 0, \cos \theta)\)</span></p>
+<p>Por ejemplo, en la interacción <span class="math notranslate nohighlight">\(RL\to RL\)</span> (derecha) la composición de espín de entrada es <span class="math notranslate nohighlight">\(|1, 1 \rangle\)</span> y la de salida <span class="math notranslate nohighlight">\(|1, 1 \rangle_{\theta}\)</span>.</p>
+<p>Los generadores de las rotaciones que se corresponden a la representación de dimensión 1 del grupo SU(2) se pueden obtener a partir de los operadores escalera.</p>
+<p>La matriz de rotación de un ángulo <span class="math notranslate nohighlight">\(\theta\)</span> en torno al eje <span class="math notranslate nohighlight">\(y\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+U(\theta) = e^{i \theta T^2} = \sum_n \frac{(i\theta T^2)^n}{n!}
+\]</div>
+<p>Donde
+$<span class="math notranslate nohighlight">\(
+T^2 = - \frac{i}{2} (T^+ - T^-)
+\)</span>$</p>
+<p>Teniendo en cuenta el funcionamiento de los operadores escalera para <span class="math notranslate nohighlight">\(I = 1\)</span> (ver la definición anterior) construimos su representación matricial:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T^+ = \begin{pmatrix} 0 &amp; \sqrt{2} &amp; 0 \\ 0 &amp; 0 &amp; \sqrt{2} \\ 0 &amp; 0 &amp; 0 \end{pmatrix}, \;\;\;
+T^- = \begin{pmatrix} 0 &amp; 0 &amp; 0 \\ \sqrt{2} &amp; 0 &amp; 0\\ 0 &amp; \sqrt{2} &amp; 0\end{pmatrix}
+\end{split}\]</div>
+<p>Y por lo tanto:
+$<span class="math notranslate nohighlight">\(
+T^2 = -\frac{i}{\sqrt{2}} \begin{pmatrix} 0 &amp; 1 &amp; 0 \\ -1 &amp; 0 &amp; 1 \\ 0 &amp; -1 &amp; 0\end{pmatrix}
+\)</span>$</p>
+<p>Se puede comprobar fácilmente que: <span class="math notranslate nohighlight">\((T^2)^{2n+1} = T^2\)</span>, y:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(T^2)^{2n} = \frac{1}{2} \begin{pmatrix}1  &amp; 0 &amp; -1 \\ 0 &amp; 2 &amp; 0 \\ -1 &amp; 0 &amp; 1 \end{pmatrix}
+\end{split}\]</div>
+<p>con <span class="math notranslate nohighlight">\(n=1, 2, \dots\)</span></p>
+<p>Del desarrollo:</p>
+<div class="math notranslate nohighlight">
+\[
+U(\theta) = I + i \theta T^2 - \frac{\theta^2}{2} (T^2)^2 + \dots = I + i T^2 \sin \theta + (T^2)^2 (\cos \theta -1)
+\]</div>
+<p>Obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U(\theta) = \begin{pmatrix} 
+\frac{1}{2} (1+\cos \theta) &amp; \frac{1}{\sqrt{2}} \sin \theta &amp;\frac{1}{2}(1-\cos \theta) \\
+-\frac{1}{\sqrt{2}} \sin \theta &amp; \cos \theta &amp;  \frac{1}{\sqrt{2}}\sin \theta  \\
+\frac{1}{2} (1-\cos \theta) &amp; -\frac{1}{\sqrt{2}} \sin \theta &amp;\frac{1}{2}(1+\cos \theta) \\
+\end{pmatrix}
+\end{split}\]</div>
+<p>El estado de espín total de salida, <span class="math notranslate nohighlight">\(|1, 1 \rangle_{\theta}\)</span>, se relaciona con los posibles estados de espín total de entrada, <span class="math notranslate nohighlight">\(|1, m \rangle\)</span> con <span class="math notranslate nohighlight">\(m=1, 2, 3\)</span>, por:</p>
+<div class="math notranslate nohighlight">
+\[
+| 1, 1 \rangle_{\theta} = \frac{1}{2}(1+\cos \theta) \, |1, 1 \rangle + \frac{1}{\sqrt{2}} \sin \theta \, |1, 0 \rangle + \frac{1}{2}(1-\cos \theta) \, |1, -1 \rangle
+\]</div>
+<p>En el caso de <span class="math notranslate nohighlight">\(RL\to RL\)</span> (derecha), el factor asociado al espín que entra en el elemento de Matriz, <span class="math notranslate nohighlight">\(M_{fi}\)</span>, es:</p>
+<div class="math notranslate nohighlight">
+\[
+\langle 1, 1 | 1, 1 \rangle_\theta = \frac{1}{2}(1+\cos \theta)
+\]</div>
+<p>Puede observarse por el dibujo (derecha) que para <span class="math notranslate nohighlight">\(\theta = 0\)</span> el factor es 1 (el espín total de entrada y salida están alineados) y para <span class="math notranslate nohighlight">\(\theta = \pi\)</span>, el factor es nulo (el espín total de entrada y salida son opuestos)</p>
+<p>La matriz anterior <span class="math notranslate nohighlight">\(U_{m', m} (\theta)\)</span>, donde <span class="math notranslate nohighlight">\(m\)</span> corresponde a los índices <span class="math notranslate nohighlight">\(m = -1, 0, 1\)</span> del espín total de entrada y <span class="math notranslate nohighlight">\(m' = -1, 0, 1\)</span> del de salida, es la (transpuesta) de la matriz «<em>Darkstellung</em>» <span class="math notranslate nohighlight">\(d^j_{m, m'}(\theta)\)</span> de Wigner con <span class="math notranslate nohighlight">\(j=1\)</span>.</p>
+<p>Los elementos <span class="math notranslate nohighlight">\(d^j_{m, m'}(\theta)\)</span> de la matrices <span class="math notranslate nohighlight">\(d\)</span> se definen:</p>
+<div class="math notranslate nohighlight">
+\[
+d^j_{m', m} (\theta) = \langle m', j | e^{-i\theta T^2} | j, m \rangle
+\]</div>
+<p>Los valores <span class="math notranslate nohighlight">\(d^j_{m', m}(\theta)\)</span> de las configuraciones de <span class="math notranslate nohighlight">\(j\)</span> menores se recogen en la tabla del PDG de los <a class="reference external" href="https://pdg.lbl.gov/2018/reviews/rpp2018-rev-clebsch-gordan-coefs.pdf">Clebsch-Gordan</a>.</p>
+<p>En nuestro caso, donde <span class="math notranslate nohighlight">\(\theta\)</span> es la rotación del sistema de referencia, utilizaríamos:</p>
+<div class="math notranslate nohighlight">
+\[
+|j, m' \rangle_{\theta} = \sum_{m=-j}^j d^j_{m', m}(-\theta) \, |j, m \rangle = \sum_{m=-j}^j d^j_{m, m'}(\theta) \, |j, m \rangle
+\]</div>
+</div>
+</div>
+<div class="section" id="el-grupo-su-3">
+<h2>El grupo SU(3)<a class="headerlink" href="#el-grupo-su-3" title="Permalink to this heading">#</a></h2>
+<p>Podemos extender nuestra analogía con los quarks, y a pesar de sus diferencias de masas, considerar que para la fuerza fuerte es invariante bajo transformaciones unitarias entre los tres quarks ligeros <span class="math notranslate nohighlight">\(u, d, s\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \;\; d = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \;\;
+c = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
+\end{split}\]</div>
+<p>Una transformación unitaria, <span class="math notranslate nohighlight">\(U(\theta)\)</span>, entre los estados <span class="math notranslate nohighlight">\((u, d, c)\)</span> a <span class="math notranslate nohighlight">\((u', d', c')\)</span> de nuevo no debe afectar (en primer orden) la interacción fuerte.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} u' \\ d' \\ c' \end{pmatrix} = U(\theta) \begin{pmatrix} u \\ d \\ c \end{pmatrix}
+\end{split}\]</div>
+<p>Otro ejemplo de simetría <span class="math notranslate nohighlight">\(SU(3)\)</span> es el color.</p>
+<p>La fuerza fuerza establece que tenemos tres colores, que podemos asociar a un triplete, y exiguiremos que sea invariante bajo transformaciones uniatarias de ese triplete.</p>
+<p>Los tres colores correponden</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+r = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \;\; g = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \;\;
+b = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
+\end{split}\]</div>
+<p>Y la transformación unitaria, <span class="math notranslate nohighlight">\(U(\theta)\)</span>, cambia <span class="math notranslate nohighlight">\((r, g, b)\)</span> a <span class="math notranslate nohighlight">\((r', g', b')\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} r' \\ g' \\ b' \end{pmatrix} = U(\theta) \begin{pmatrix} r \\ g \\ b \end{pmatrix}
+\end{split}\]</div>
+<p>las <strong>matrices unitarias <span class="math notranslate nohighlight">\(3 \times 3\)</span> con determinante unidad</strong> forman el grupo <span class="math notranslate nohighlight">\(SU(3)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+U^\dagger U = I, \;\; \mathrm{det}(U) = 1
+\]</div>
+<p>El número de parámetros reales libres de SU(3) es 8. Hay <span class="math notranslate nohighlight">\(18 = 3 \times 3 \times 2\)</span> parámetros reales en <span class="math notranslate nohighlight">\(U\)</span>, 9 ligaduras de la condición de unitariedad y 1 por ser el determinante unidad.</p>
+<p>Las matrices de SU(3) pueden construirse a partir 8 generadores hemíticos, <span class="math notranslate nohighlight">\(T_i\)</span>, y <span class="math notranslate nohighlight">\(\theta_i\)</span> con <span class="math notranslate nohighlight">\(i = 1, \dots, 8\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+U(\theta) = e^{i \theta \cdot {\bf T}}
+\]</div>
+<p>Una opción conveniente para los generadores es construirlos a partir de las matrices <span class="math notranslate nohighlight">\(\lambda\)</span> de Gell-Mann.</p>
+<div class="math notranslate nohighlight">
+\[
+T_i = \frac{1}{2} \lambda_i
+\]</div>
+<p>Donde:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\lambda_1 = \begin{pmatrix} 0 &amp; 1 &amp; 0  \\  1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}, \;
+\lambda_2 = \begin{pmatrix} 0 &amp; -i &amp; 0 \\  i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}, \;
+\lambda_3 = \begin{pmatrix} 1 &amp; 0 &amp; 0  \\ 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}, \;
+\lambda_4 = \begin{pmatrix} 0 &amp; 0 &amp; 1  \\ 0 &amp; 0 &amp; 0  \\ 1 &amp; 0 &amp; 0 \end{pmatrix}, \\
+\lambda_5 = \begin{pmatrix} 0 &amp; 0 &amp; -i \\ 0 &amp; 0 &amp; 0  \\ i &amp; 0 &amp; 0 \end{pmatrix}, \;
+\lambda_6 = \begin{pmatrix} 0 &amp; 0 &amp; 0  \\ 0 &amp; 0 &amp; 1  \\ 0 &amp; 1 &amp; 0 \end{pmatrix}, \;
+\lambda_7 = \begin{pmatrix} 0 &amp; 0 &amp; 0  \\ 0 &amp; 0 &amp; -i \\ 0 &amp; i &amp; 0 \end{pmatrix}, \;
+\lambda_8 = \frac{1}{\sqrt{3}}\begin{pmatrix} 1 &amp; 0 &amp; 0  \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; -2 \end{pmatrix}.
+\end{split}\]</div>
+<p>Solo tres de los generadores conmutan entre ellos, <span class="math notranslate nohighlight">\({\bf T}^2, T_3, Y_8\)</span>. Asociaremos <span class="math notranslate nohighlight">\(I_3\)</span> a la tercera componente del isoespín e <span class="math notranslate nohighlight">\(Y\)</span> a la <em>hypercarga</em>.</p>
+<p>Esto es podemos dar el elemento como <span class="math notranslate nohighlight">\(|{\bf T}^2, T_3, Y_8 \rangle\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+{\bf T}^2 = \sum_{i=1}^8 T^2_i = \frac{4}{3}    \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp;  1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}, \;
+T_3 = \frac{1}{2} \lambda_3 = \frac{1}{2} \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}, \;
+\;\; Y = \frac{1}{\sqrt{3}} \lambda_8   = \frac{1}{3} \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; -2 \end{pmatrix}, 
+\end{split}\]</div>
+<p>Si definimos como los elementos del tripplete de color, <span class="math notranslate nohighlight">\({\bf 3}\)</span> son:</p>
+<div class="math notranslate nohighlight">
+\[
+r = |4/3, 1/2, 1/3 \rangle, \;\;
+g = |4/3, -1/2, 1/3 \rangle, \;
+b = |4/3, 0, -2/3 \rangle
+\]</div>
+<p>Y los elementos del triplete <span class="math notranslate nohighlight">\(\bar{3}\)</span> tendrán cargas opuestas.
+$<span class="math notranslate nohighlight">\(
+r = |4/3, -1/2, -1/3 \rangle, \;\;
+g = |4/3, +1/2, -1/3 \rangle, \;
+b = |4/3, 0, 2/3 \rangle
+\)</span>$</p>
+<p>La figura muestra los dos tripletes de color <span class="math notranslate nohighlight">\({\bf 3}\)</span> de los quarks y anti-quarks <span class="math notranslate nohighlight">\({\bf \bar{3}}\)</span> en el plano <span class="math notranslate nohighlight">\(T_3, Y\)</span>. Notar la oposición de cargas.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="notebooks/store/imgs/groups_su3_color.png"><img alt="notebooks/store/imgs/groups_su3_color.png" class="align-center" src="notebooks/store/imgs/groups_su3_color.png" style="width: 500px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Posición de <span class="math notranslate nohighlight">\(r, g, b\)</span> en <span class="math notranslate nohighlight">\((T_3, Y)\)</span>, <span class="math notranslate nohighlight">\({\bf 3}\)</span>, y la dirección de los operadores <span class="math notranslate nohighlight">\(T_\pm, V_\pm, U_\pm\)</span> (izda) y de los <span class="math notranslate nohighlight">\(\bar{r}, \bar{g}, \bar{b}\)</span>, <span class="math notranslate nohighlight">\({\bf \bar{3}}\)</span>, (derecha)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Existen ahora tres operadores escalera:
+$<span class="math notranslate nohighlight">\(
+T_{\pm} = \frac{1}{2}(\lambda_1 \pm i \lambda_2), \; V_{\pm} = \frac{1}{2} (\lambda_4 \pm i \lambda_5), \; 
+U_{\pm} = \frac{1}{2}(\lambda_6 \pm 9 \lambda_7)
+\)</span>$</p>
+<p>que suben y bajan los spinores a lo largo de la direcciones del triángulo (ver figura):</p>
+<div class="math notranslate nohighlight">
+\[
+T_+ g = r, \; T_- r = g; \;\;\; V_+ b = r, \; V_-r = b; \;\; U_+b = g, \; U_-g = b
+\]</div>
+<p>La combinación de quark y antiquark (mesón), <span class="math notranslate nohighlight">\({\bf 3} \otimes {\bf \bar{3}}\)</span>, se efectua colocando el triplete <span class="math notranslate nohighlight">\({\bf \bar{3}}\)</span> sobre los vértices del <span class="math notranslate nohighlight">\({\bf 3}\)</span>. Lo que da lugar a un octete y un singlete en su representación irreducible.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="notebooks/store/imgs/groups_su3_33b.png"><img alt="notebooks/store/imgs/groups_su3_33b.png" class="align-center" src="notebooks/store/imgs/groups_su3_33b.png" style="width: 550px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Combinación <span class="math notranslate nohighlight">\({\bf 3} \otimes {\bf \bar{3}} = {\bf 8} \oplus {\bf 1}\)</span> [MT]</p></td>
+</tr>
+</tbody>
+</table>
+<p>El único singlete (<span class="math notranslate nohighlight">\(T_3, Y = 0\)</span>), sin color, es:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{\sqrt{3}} (r\bar{r} + g\bar{g} + b \bar{b})
+\]</div>
+<p>La combinación de dos quarks, <span class="math notranslate nohighlight">\({\bf 3} \otimes {\bf 3}\)</span>, no da un singlete de color pero sí la de tres quarks, <span class="math notranslate nohighlight">\({\bf 3} \otimes {\bf 3} \otimes {\bf 3}\)</span> (ver figura).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="notebooks/store/imgs/groups_su3_333.png"><img alt="notebooks/store/imgs/groups_su3_333.png" class="align-center" src="notebooks/store/imgs/groups_su3_333.png" style="width: 550px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Combinación <span class="math notranslate nohighlight">\({\bf 3} \otimes {\bf \bar{3}} = {\bf 10} \oplus {\bf 8} \otimes {\bf 8} \otimes {\bf 1}\)</span> [MT]</p></td>
+</tr>
+</tbody>
+</table>
+<p>El singlete (<span class="math notranslate nohighlight">\(T_3, Y = 0\)</span>), sin color, es:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{\sqrt{6}} (rgb - rbg + gbr - grb + brg - brg)
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;grey&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;grey&#39;</span><span class="p">);</span>
+<span class="n">opts</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;length_includes_head&#39;</span> <span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;head_width&#39;</span> <span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span> <span class="s1">&#39;head_length&#39;</span> <span class="p">:</span> <span class="mf">0.1</span><span class="p">}</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;magenta&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span> <span class="o">**</span><span class="n">opts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;magenta&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span> <span class="o">**</span><span class="n">opts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;cyan&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span>  <span class="o">**</span><span class="n">opts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;cyan&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span>  <span class="o">**</span><span class="n">opts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span>  <span class="o">**</span><span class="n">opts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span>  <span class="o">**</span><span class="n">opts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">((</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">200</span> <span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">((</span><span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">);</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">6</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span> <span class="o">+</span> <span class="n">epsilon</span><span class="p">),</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span> <span class="o">+</span> <span class="n">epsilon</span><span class="p">),</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span> <span class="o">-</span> <span class="n">epsilon</span><span class="p">),</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;$T_{\pm}$&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span> <span class="o">+</span> <span class="n">epsilon</span><span class="p">),</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;$V_{\pm}$&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>  <span class="o">+</span> <span class="n">epsilon</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">),</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;$U_{\pm}$&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span>  <span class="o">-</span> <span class="n">epsilon</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">),</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$T_3$&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">);</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">200</span> <span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">((</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">((</span><span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">);</span>
+<span class="c1">#plt.annotate(s = &#39;r&#39;, xy =  (0, 0), xytext = (1/2, 1/3), fontsize = 16)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;grey&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;grey&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ls</span> <span class="o">=</span> <span class="s1">&#39;--&#39;</span> <span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span>  <span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ls</span> <span class="o">=</span> <span class="s1">&#39;--&#39;</span> <span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="mi">0</span>  <span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ls</span> <span class="o">=</span> <span class="s1">&#39;--&#39;</span> <span class="p">)</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">6</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\bar</span><span class="si">{r}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">epsilon</span><span class="p">),</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\bar</span><span class="si">{g}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">epsilon</span><span class="p">),</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\bar</span><span class="si">{b}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">/</span><span class="mi">3</span> <span class="o">+</span> <span class="n">epsilon</span><span class="p">),</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$T_3$&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/apendice-grupos_45_0.png" src="../../_images/apendice-grupos_45_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks/store"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,945 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12. Boletín de problemas - preliminar &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="13. Boletín de problemas I" href="problemas-I.html" />
+    <link rel="prev" title="11. Extensión: El Modelo Estándar" href="ext-sm.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduccion.html">
+   1. Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observables.html">
+   3. Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="leptones.html">
+   4. Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quarks_hadrons.html">
+   5. Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sm.html">
+   6. Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-cinematica.html">
+   7. Extensión: cinemática
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-dirac.html">
+   8. Extensión: La ecuación de Dirac
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-trans-Lorentz.html">
+   9. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-grupos.html">
+   10. Extensión: grupos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-sm.html">
+   11. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   12. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-I.html">
+   13. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-II.html">
+   14. Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-III.html">
+   15. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-IV.html">
+   16. Boletín de problemas IV
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/problemas-prel.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/problemas-prel.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebooks/problemas-prel.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Boletín de problemas - preliminar</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="boletin-de-problemas-preliminar">
+<h1><span class="section-number">12. </span>Boletín de problemas - preliminar<a class="headerlink" href="#boletin-de-problemas-preliminar" title="Permalink to this heading">#</a></h1>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Octubre 2024</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Nov 28 14:56:08 2024
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hbar = </span><span class="si">{:4e}</span><span class="s1"> J/s&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">hbar</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;c  = </span><span class="si">{:4e}</span><span class="s1"> m/s&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">units</span><span class="o">.</span><span class="n">c</span><span class="p">))</span>
+<span class="n">GeV_to_Julio</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">giga</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">eV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;GeV  = </span><span class="si">{:4e}</span><span class="s1"> J &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GeV_to_Julio</span><span class="p">))</span>
+<span class="n">hbarc</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">hbar</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">c</span> <span class="o">/</span> <span class="p">(</span><span class="n">GeV_to_Julio</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">femto</span><span class="p">)</span> <span class="c1"># GeV fm</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hbar c  =  </span><span class="si">{:4e}</span><span class="s1"> GeV fm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hbarc</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hbar = 1.054572e-34 J/s
+c  = 2.997925e+08 m/s
+GeV  = 1.602177e-10 J 
+hbar c  =  1.973270e-01 GeV fm
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>problema 1</strong></p>
+<p>Considera que el protón pudiera desintegrarse a <span class="math notranslate nohighlight">\(p \to e^+ + \pi^0\)</span> y considera el límite en el tiempo parcial de vida media publicado en <a class="reference external" href="https://arxiv.org/abs/2010.16098">SK</a>¿Cómo compara con la edad del Universo? ¿Qué cantidad de agua necesitarías para detectar u obtener un límite de la vida media del protón mejor que el actual considerando que se desintegran los protones del H del agua? Los artículos en HEP aparecen habitualmente en el siguiente <a class="reference external" href="https://arxiv.org/archive/hep-ex">archivo</a> y en la base de datos  <a class="reference external" href="https://inspirehep.net/">INSPIRE</a>. ¿Puedes encontrar cuál es el artículo más citado del experimento SuperKamiokande?</p>
+<p><em>solución</em></p>
+<p>Del artículo obtenemos</p>
+<div class="math notranslate nohighlight">
+\[
+\tau/B &gt; 2.4 \times 10^{34} \;\; \mathrm{años}
+\]</div>
+<p>La edad del universo es aproximadamente <span class="math notranslate nohighlight">\(13.7 \times 10^{9}\)</span> años.</p>
+<p><em>Cuestión</em> ¿Es la desintegración, <span class="math notranslate nohighlight">\(p \to e^+ + \pi^0\)</span>, posible?</p>
+<p>No, no lo es porque violaría el número leptónico y el número bariónico.</p>
+<p>Comentario: Sin embargo no viola B-L. B-L se debe conservar para que no se cree carga eléctrica neta.</p>
+<p><em>Cuestión</em> ¿Qué significa <span class="math notranslate nohighlight">\(\tau/B\)</span>?</p>
+<p>Es el tiempo de vida parcial de esa desintegración, la posible <span class="math notranslate nohighlight">\( p \to e^+ + \pi^0\)</span>, pero el protón pudiera desintegrarse de otras formas, a otros canales.</p>
+<p>Recordemos la relación entre anchura de desintegración y tiempo de vida:</p>
+<div class="math notranslate nohighlight">
+\[\tau = 1/\Gamma\]</div>
+<p>La anchura total se obtiene de la suma de las parciales:</p>
+<div class="math notranslate nohighlight">
+\[\Gamma = \sum_i \Gamma_i\]</div>
+<p>Y la fracción de desintegración <span class="math notranslate nohighlight">\(\mathcal{B}_i\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{B}_i = \frac{\Gamma_i}{\Gamma}
+\]</div>
+<p>Esto es la vida parcial</p>
+<div class="math notranslate nohighlight">
+\[
+\tau_i = \frac{1}{\Gamma_i} = \frac{1}{\Gamma} \frac{\Gamma}{\Gamma_i} = \frac{\tau}{\mathcal{B}_i}
+\]</div>
+<p><em>Cuestión</em> ¿Cuál es la masa necesario para poner un límite mejor que el actual en este canal?</p>
+<p>En realidad se trata de le exposición: kton año</p>
+<p>Sea <span class="math notranslate nohighlight">\(M\)</span> la masa de agua en g, sea <span class="math notranslate nohighlight">\(M_A = 18\)</span> g/mol, siendo <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, el número de protones <span class="math notranslate nohighlight">\(N\)</span> del Hidrógeno es:</p>
+<div class="math notranslate nohighlight">
+\[
+N = 2 N_A \, \frac{M}{M_A}
+\]</div>
+<p>Si tenenos <span class="math notranslate nohighlight">\(N\)</span> protones y la vida media es <span class="math notranslate nohighlight">\(\tau\)</span> en <span class="math notranslate nohighlight">\(t=1\)</span> año sobreviven, dado que <span class="math notranslate nohighlight">\(t \ll \tau\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+N(t) = N_0 e^{-t/\tau} = N_0 \left( 1-\frac{t}{\tau} \right)
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\tau\)</span> aquí es la vida media parcial <span class="math notranslate nohighlight">\(\tau_i\)</span>, pero omitimos el sub-índice.</p>
+<p>En un año <span class="math notranslate nohighlight">\(t=1\)</span> se han desintegrado</p>
+<div class="math notranslate nohighlight">
+\[
+\nu = N_0 \frac{t}{\tau} 
+\]</div>
+<p>¿Qué masa necesitamos para ver una desintegración si la cuota <span class="math notranslate nohighlight">\(\tau\)</span> fuera el valor real?</p>
+<div class="math notranslate nohighlight">
+\[
+N_0 \frac{t}{\tau} = 1
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tau</span> <span class="o">=</span> <span class="mf">2.4e34</span> <span class="c1"># partial proton mean lifetime </span>
+<span class="n">NA</span>  <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">N_A</span> <span class="c1"># Avogadro number</span>
+<span class="n">MA</span>  <span class="o">=</span> <span class="mi">18</span> <span class="c1"># g/mol</span>
+
+<span class="n">M</span> <span class="o">=</span>  <span class="n">tau</span> <span class="o">*</span> <span class="n">MA</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">NA</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;water mass </span><span class="si">{:1.2e}</span><span class="s1"> k tons&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="o">*</span><span class="p">(</span><span class="mf">1e-9</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>water mass 3.59e+02 k tons
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Cuestión</em> Si <span class="math notranslate nohighlight">\(\tau\)</span> es tal que para <span class="math notranslate nohighlight">\(N_0\)</span> esperamos en un año <span class="math notranslate nohighlight">\(t=1\)</span>, <span class="math notranslate nohighlight">\(\nu = 1\)</span> eventos, ¿qué podemos esperar? ¿Siempre mediremos 1 evento? ¿qué distribución sigue?</p>
+<p>No, no siempre medimos 1 evento, la distribución de las medidas sigue una distribución de poisson, Porque la probabilidad de que se produzca una desintegración es <span class="math notranslate nohighlight">\(1/\tau\)</span>, ridículamente pequeña, y el número de intentos de intentos muy alto, luego la binomial original con <span class="math notranslate nohighlight">\(p\)</span> muy pequeña y <span class="math notranslate nohighlight">\(N\)</span> intentos altos, es una distribución de poisson con <span class="math notranslate nohighlight">\(\nu = p N = 1\)</span>, siendo <span class="math notranslate nohighlight">\(p = 1/\tau\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">poisson</span>
+
+<span class="n">nu</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">ns</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="n">nu</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$n$&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;pmf$(n | \nu)$&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/problemas-prel_17_0.png" src="../_images/problemas-prel_17_0.png" />
+</div>
+</div>
+<p><em>Cuestión</em> ¿Qué límite ponemos a la vida media al 90% CL si al hacer un experimento observamos 0 eventos?</p>
+<p>Decimos, por convención, que los valores excluidos del parámetro relevante (en este caso la vida media) al 90% CL son aquellos valores que nos daría una probabilidad de obtener un resultado como el que hemos obtenido o peor menor del 10%.</p>
+<p>La cuestión se convierte entonces en ¿Cuál es la probabilidad de medir 0 si la media de Poisson es <span class="math notranslate nohighlight">\(\nu\)</span>? ¿Cuándo dicha probabilidad es menor del 10% (esto es el límite al 90%CL)?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nus</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nus</span><span class="p">,</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nus</span><span class="p">));</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\nu$&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;pmf$(0 | \nu)$&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/problemas-prel_20_0.png" src="../_images/problemas-prel_20_0.png" />
+</div>
+</div>
+<p>Esto es si no observamos ninguna desintegración. <span class="math notranslate nohighlight">\(n = 0\)</span>, en un año <span class="math notranslate nohighlight">\(t=1\)</span>, en <span class="math notranslate nohighlight">\(N_0\)</span> protones el valor del posible <span class="math notranslate nohighlight">\(\nu\)</span> que nos daría que nuestro resultado de obtener 0 tiene una probabilidad menor del 10% (de ahí el 90% CL), es 2.4.</p>
+<p>Luego, si medimos <span class="math notranslate nohighlight">\(n=0\)</span>, al 90% CL le corresponde un valor <span class="math notranslate nohighlight">\(\nu = 2.4\)</span>, luego el valor del límite <span class="math notranslate nohighlight">\(\tau\)</span> se obtendría de:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{t}{\tau} = \frac{\nu}{N_0} \Rightarrow \tau = \frac{N_0}{\nu} t
+\]</div>
+<p><em>Nota</em> Esto no quiere decir que el valor <span class="math notranslate nohighlight">\(\tau\)</span> del límite no sea el valor verdadero, existe todavía un 10% de posibilidades de con ese valor, si realizase un experimento obtuvera un resultado como el que obtenido (en este caso 0) o peor.</p>
+<p><em>Cuestión</em> ¿Qué pasa en el caso más general? ¿Qué región de nuestro parámetro <span class="math notranslate nohighlight">\(\tau\)</span> decimos que esta excluida al 90% CL?</p>
+<p>En el caso general al hacer un experimento de búsqueda de una nueva señal esperamos encontrar en nuestra muestra <span class="math notranslate nohighlight">\(b\)</span> eventos de fondo (distribuidos poisson, siendo <span class="math notranslate nohighlight">\(b\)</span> pequeño) y observamos <span class="math notranslate nohighlight">\(n\)</span>, por lo que necesitamos una construcción que nos permita encontrar a partir de <span class="math notranslate nohighlight">\((b, n)\)</span> qué valores teóricos <span class="math notranslate nohighlight">\(\nu\)</span> de señal nos darían una probabilidad de obtener una observación como la que hemos obtenido o peor menor con un 10% probabilidades.</p>
+<p>La <a class="reference external" href="https://arxiv.org/abs/physics/9711021">construcción moderna</a> se debe a dos físicos de neutrinos, G. Feldman y B. Cousins, que proposieron un método que lleva su nombre.</p>
+<p><em>Cuestión</em> ¿Cuál es el artículo más citado?</p>
+<p>En INSPIRE seleccionar experimento SuperKamiokande, luego en ordenar artículos escoger “most cited”,</p>
+<p>«Evidence for oscillation of atmospheric neutrinos», <a class="reference external" href="https://arxiv.org/abs/hep-ex/9807003">hep-exp/9807003</a>, Phys. Rev. Lett 81, 1562-1567,1998</p>
+<p><em>Cuestión</em> Lee el abstract. Nota la precaución con la que indican la posible presencia de oscilaciones, por las que después el director del experimento. T. Kajita recibiría el premio Nobel en 2015.</p>
+<hr class="docutils" />
+<p><strong>2) Problema</strong></p>
+<p>¿Cuál es la masa del neutrino? ¿Qué experimento tiene la cuota más baja hasta la fecha? Los experimentos de oscilaciones de neutrinos han medido no obstante las dos diferencias de masas al cuadrado entre los tres neutrinos existentes. <span class="math notranslate nohighlight">\(\Delta m^2_{21} = m^2_2 - m^2_1\)</span>, es la diferencia de masas al cuadrado entre el neutrino 2 y el 1. Si los resultados experimentales son <span class="math notranslate nohighlight">\(\Delta m^2_{21} = 7.5 \times 10^{-5}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span>, y <span class="math notranslate nohighlight">\(|\Delta m^2_{31}| = 2.5 \times 10^{-3}\)</span> eV<span class="math notranslate nohighlight">\(^2\)</span>. ¿Puedes hacer un gráfico de la masa de los neutrinos en función de la masa del más ligero?</p>
+<p><em>Solución</em></p>
+<p>La melor cuota de la masa del neutrino la ha publicado el experimento <a class="reference external" href="https://en.wikipedia.org/wiki/KATRIN">KATRIN</a> en 2024, <a class="reference external" href="https://arxiv.org/abs/2406.13516">arXic.2406.13517</a> y es <span class="math notranslate nohighlight">\(m_\nu \lt 0.45\)</span> eV al 90% C.L.</p>
+<p>Sabemos que la masa del neutrino <span class="math notranslate nohighlight">\(m_2 \gt m_{light}\)</span>, siendo <span class="math notranslate nohighlight">\(m_{light}\)</span> el más ligero, pero nos sabemos, dado que solo conocemos el valor absoluto de <span class="math notranslate nohighlight">\(|\Delta m^2_{31}|\)</span>, si el neutrino 1 o el neutrino 3 son los más ligeros.</p>
+<p>Vamos</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dm21</span> <span class="o">=</span> <span class="mf">7.5e-5</span>
+<span class="n">dm31</span> <span class="o">=</span> <span class="mf">2.5e-3</span>
+
+<span class="n">m0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">1e-5</span><span class="p">,</span> <span class="mf">1e-4</span><span class="p">,</span> <span class="mf">1e-3</span><span class="p">,</span> <span class="mf">5e-3</span><span class="p">,</span> <span class="mf">1e-2</span><span class="p">,</span> <span class="mf">5e-2</span><span class="p">,</span> <span class="mf">1e-1</span><span class="p">,</span> <span class="mf">5e-1</span><span class="p">,</span> <span class="mf">1.</span><span class="p">))</span>
+
+<span class="n">m2</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">m0</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">dm21</span><span class="o">+</span><span class="n">m0</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">mup</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">m0</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">dm31</span><span class="o">+</span><span class="n">m0</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">m0</span><span class="p">,</span> <span class="n">m0</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;$m_1$&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">m0</span><span class="p">,</span> <span class="n">m2</span><span class="p">(</span><span class="n">m0</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$m_2$&#39;</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">m0</span><span class="p">,</span> <span class="n">mup</span><span class="p">(</span><span class="n">m0</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;m3&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$m_</span><span class="si">{light}</span><span class="s1">$ (eV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(eV)&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Normal&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">m0</span><span class="p">,</span> <span class="n">m0</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;$m_3$&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">m0</span><span class="p">,</span> <span class="n">mup</span><span class="p">(</span><span class="n">m0</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$m_1$&#39;</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">m0</span><span class="p">,</span> <span class="n">mup</span><span class="p">(</span><span class="n">m0</span><span class="p">)</span> <span class="o">+</span> <span class="n">m2</span><span class="p">(</span><span class="n">m0</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;m2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$m_</span><span class="si">{light}</span><span class="s1">$ (eV)&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(eV)&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Inverted&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Inverted&#39;)
+</pre></div>
+</div>
+<img alt="../_images/problemas-prel_30_1.png" src="../_images/problemas-prel_30_1.png" />
+</div>
+</div>
+<hr class="docutils" />
+<p>**<em>problema</em> A partir de los datos del <a class="reference external" href="https://pdglive.lbl.gov">PDF</a> elabora una tabla con la masa, carga, espín, paridad, vida media y desintegración principal de los leptones.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(e\)</span></p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(\mu\)</span></p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(\tau\)</span></p></th>
+<th class="text-align:left head"><p><span class="math notranslate nohighlight">\(\nu\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>masa</p></td>
+<td class="text-align:left"><p>0.511 MeV</p></td>
+<td class="text-align:left"><p>105.7 MeV</p></td>
+<td class="text-align:left"><p>1777 MeV</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\le\)</span> 1 eV</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>carga</p></td>
+<td class="text-align:left"><p>-1</p></td>
+<td class="text-align:left"><p>-1</p></td>
+<td class="text-align:left"><p>-1</p></td>
+<td class="text-align:left"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>vida media (<span class="math notranslate nohighlight">\(\tau\)</span>)</p></td>
+<td class="text-align:left"><p>estable</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(2.197\)</span> <span class="math notranslate nohighlight">\(\mu\mathrm{s}\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(290.6\)</span> fs</p></td>
+<td class="text-align:left"><p>estable</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:right head"><p>Fracción de desintegración</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mu  \to e + \bar{\nu_e} + \nu_\mu\)</span></p></td>
+<td class="text-align:right"><p><span class="math notranslate nohighlight">\(\sim 100\)</span> %</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau \to \mu + \bar{\nu_\mu} + \nu_\tau\)</span></p></td>
+<td class="text-align:right"><p><span class="math notranslate nohighlight">\(17.4\)</span> %</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau \to e + \bar{\nu_e} + \nu_\tau\)</span></p></td>
+<td class="text-align:right"><p><span class="math notranslate nohighlight">\(17.8\)</span> %</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau \to \mathrm{hadrons}+ \nu_\tau\)</span></p></td>
+<td class="text-align:right"><p><span class="math notranslate nohighlight">\(\sim 64\)</span> %</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p>Crea una segunda tabla con la composición de quarks, masa, carga, espín, paridad, vida media y desintegración principal de los siguientes mesones $\pi^\pm, \pi^0<span class="math notranslate nohighlight">\(, \)</span>K^\pm,<span class="math notranslate nohighlight">\( \)</span>K^0, D^\pm, D^0, J/\Psi, \Upsilon, B^0, B^0_s$.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>nombre</p></th>
+<th class="text-align:center head"><p>  quark composition</p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(J^{P}\)</span></p></th>
+<th class="text-align:center head"><p>     mass (MeV)   </p></th>
+<th class="text-align:center head"><p>       life-time  </p></th>
+<th class="text-align:left head"><p>        main decays    </p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\pi^0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((\bar{u}u, \bar{d}d)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0^-\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(134.97\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(8.43\pm0.6 \, 10^{-17}\)</span>  s</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(2\gamma\)</span>  (98%)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\pi^\pm\)</span></p></td>
+<td class="text-align:center"><p>(<span class="math notranslate nohighlight">\(u\bar{d}, \bar{u}d\)</span>)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(139.57\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(26.033\pm0.05\)</span> ns</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mu + \bar{\nu}_\mu\)</span> (98%)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\rho\)</span></p></td>
+<td class="text-align:center"><p>(<span class="math notranslate nohighlight">\(u\bar{u}, \bar{d}d\)</span>)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1^-\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(7775.5\pm0.4\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(194.4\pm1\)</span> MeV</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(2\pi\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(K^\pm\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((\bar{s}u, s\bar{u})\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(493.677\pm 0.016\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(12.39\pm0.02\)</span> ns</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mu+ \bar{\nu}_\mu\)</span> (63%), <span class="math notranslate nohighlight">\(\pi^- \pi^0\)</span> (20 %)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(K^0_S\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((\bar{s}d, \bar{d}s)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(497.648\pm0.022\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(89.5\pm0.05\)</span> ps</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\pi^++\pi^-\)</span> (69%), <span class="math notranslate nohighlight">\(2\pi^0 \)</span> (30%)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(K^0_L\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((\bar{s}d, \bar{d}s)\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(497.648\pm0.022\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(51.14\pm0.21\)</span> ns</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\pi^\pm + e^\pm + \nu_e\)</span> (40%), <span class="math notranslate nohighlight">\(\pi^\pm + \mu^\pm + \bar{\nu}_\mu\)</span> (27%)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\phi\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((s\bar{s})\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1^-\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1019.46\pm0.019\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(4.26\pm0.05\)</span> MeV</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(K+\bar{K}, \pi^++\pi^-+\pi^0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(D^\pm\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((c\bar{d},d\bar{c})\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1869.3\pm0.4\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0.500\pm 0.007\)</span> ps</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(K+...\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(D^0, \bar{D}^0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((c\bar{u},u\bar{c})\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1864.5\pm0.4\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0.410\pm 0.002\)</span> ps</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(K+...\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(B^0, \bar{B}^0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((b\bar{d},d\bar{b})\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(5279.4\pm0.5\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.530\pm 0.009\)</span> ps</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(D+...\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(B^0_s, \bar{B}^0_s\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((b\bar{s},s\bar{b})\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(5367.5\pm1.8\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1.466\pm 0.059\)</span> ps</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(D^\pm_s+...\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(J/\Psi\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((c\bar{c})\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(3096.92\pm0.011\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(93.4\pm2.1\)</span> keV</p></td>
+<td class="text-align:left"><p>hadrons (87%), <span class="math notranslate nohighlight">\(\mu+\mu^+, e+e^+\)</span> (6%)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\Upsilon\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\((b\bar{b})\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1^{-}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(9460.3\pm0.3\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(31.98\pm2.63\)</span> keV</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(l+l^+\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p><strong>problema</strong> Identifica los bariones que se forman con los quarks ligeros <span class="math notranslate nohighlight">\((u, d, s)\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>nombre</p></th>
+<th class="text-align:center head"><p>  quark composition</p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(J^{P}\)</span></p></th>
+<th class="text-align:center head"><p>     mass (MeV)   </p></th>
+<th class="text-align:center head"><p>       life-time  </p></th>
+<th class="text-align:left head"><p>        main decays    </p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(p\)</span></p></td>
+<td class="text-align:center"><p>(uud)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/2^+\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(938.27\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(&gt;3.6 \, 10^{29}\)</span> y</p></td>
+<td class="text-align:left"><p>None</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(n\)</span></p></td>
+<td class="text-align:center"><p>(udd)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/2^+\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(939.56\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(874.4\pm0.6\)</span> s</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(p +e +\bar{\nu}_e\)</span> (100%)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\Delta\)</span></p></td>
+<td class="text-align:center"><p>(uuu)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(3/2^+\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1232 \pm 2\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(118 \pm 2\)</span> MeV</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(p + \pi^-, n+ \pi^0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\Lambda\)</span></p></td>
+<td class="text-align:center"><p>(uus)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/2^+\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1115.683 \pm 0.006\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(263 \pm2\)</span> ps</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(p + \pi^0, n+ \pi^+\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\Sigma^0\)</span></p></td>
+<td class="text-align:center"><p>(uds)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1/2^+\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1182.64 \pm 0.02\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(7.4 \pm 0.7 \, 10^{-20}\)</span> s</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\Lambda+\gamma\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\Omega^-\)</span></p></td>
+<td class="text-align:center"><p>(sss)</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(3/2^+\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1672.45 \pm 0.29\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(82.1\pm 1.1\)</span> ps</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\Lambda+K^+, ...\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Omega_baryon">Sobre el descubrimiento de <span class="math notranslate nohighlight">\(\Omega^-\)</span></a></p>
+<hr class="docutils" />
+<p><strong>problema</strong> Sean <span class="math notranslate nohighlight">\(\Lambda \rightarrow p + \pi^-\)</span> y <span class="math notranslate nohighlight">\(\Xi^- \rightarrow \Lambda+\pi^-\)</span>. ¿Cuál es la carga de <span class="math notranslate nohighlight">\(\Lambda\)</span>? Indica si <span class="math notranslate nohighlight">\(\Lambda\)</span> y <span class="math notranslate nohighlight">\(\Xi^-\)</span> son bariones o mesones. Indicas sus masa, sus vidas medias y su fracción de desintegración. ¿Qué tipo de desintegración es, débil o fuerte?</p>
+<p>Del <a class="reference external" href="https://pdg.lbl.gov/2021/listings/contents_listings.html">PDG</a></p>
+<p><span class="math notranslate nohighlight">\(m(\Lambda) = 1115.683 \pm 0.006\)</span> MeV, <span class="math notranslate nohighlight">\(\mathcal{Br}(\Lambda \to p + \pi^-) = 63.9 \pm 0.5\)</span> %, <span class="math notranslate nohighlight">\(\tau = (2.632 \pm 0.02) \, 10^{-10}\)</span> s</p>
+<p>Del <a class="reference external" href="https://pdg.lbl.gov/2021/listings/contents_listings.html">PDG</a></p>
+<p><span class="math notranslate nohighlight">\(m(\Xi^-) = 1321.71 \pm 0.07\)</span> MeV, <span class="math notranslate nohighlight">\(\mathcal{Br}(\Xi^- \to \Lambda + \pi^-) = 99.9\)</span> %, <span class="math notranslate nohighlight">\(\tau = (1.639 \pm 0.015) \, 10^{-10}\)</span> s</p>
+<p>Los dos son bariones, <span class="math notranslate nohighlight">\(\Lambda\)</span> tiene carga 0, y por el valor de la vida media se desintegran débilmente.</p>
+<hr class="docutils" />
+<p><strong>problema</strong> Recientemente el CERN ha festejado su 70 aniversario. ¿Indica cuáles han sido los dos grandes colionadores del CERN y sus parámetros principales? ¿Cuáles son los hitos y descubrimientos principales realizados en el CERN?</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://home.cern/news/news/physics/w-boson-turns-40#:~:text=Exactly%20four%20decades%20ago%20today,elementary%20particle%20%E2%80%93%20the%20W%20boson.">Discovery of the <span class="math notranslate nohighlight">\(W^\pm\)</span> bosons</a></p></li>
+<li><p><a class="reference external" href="https://home.cern/news/news/physics/forty-years-neutral-currents">Discovery of the neutral currents</a></p></li>
+<li><p><a class="reference external" href="https://home.cern/news/opinion/physics/thirty-years-leps-z0-line-shape">Verification of the <span class="math notranslate nohighlight">\(Z^0\)</span> propierties and the 3 neutrino flavours</a></p></li>
+<li><p><a class="reference external" href="https://home.cern/science/physics/higgs-boson">Discovery of the Higgs</a></p></li>
+<li><p><a class="reference external" href="https://home.cern/science/computing/birth-web">Invention of the WWW</a></p></li>
+</ul>
+<p>Aceleradores</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://home.cern/science/accelerators/large-hadron-collider">LHC</a> protón-protón colisions at 7, 13 TeV CM energy</p></li>
+<li><p><a class="reference external" href="https://home.cern/science/accelerators/large-electron-positron-collider">LEP</a>, e+ + e- colider at 91 GeV CM Energy and up to 200 GeV in Run-II</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>problema</strong> Investiga brevemente la bibliografía y contribuciones de los siguientes físicos:  Paul Dirac, Ettore Majorana, Wolfgang Pauli, Enrico Fermi, Richard Feynman, Chien-Shiung Wu, Bruno Pontecorvo, Sheldon Glashow, Steven Weinberg, Abdus Salam y Peter Higgs.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Paul_Dirac">Paul Dirac</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Ettore_Majorana">Ettore Majorana</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Wolfgang_Pauli">Wolfgang Pauli</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Enrico_Fermi">Erico Fermi</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Richard_Feynman">Richar Feynman</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Chien-Shiung_Wu">Chien-Shiung Wu</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Bruno_Pontecorvo">Bruno Pontecorvo</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Sheldon_Glashow">Sheldon Glashow</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Steven_Weinberg">Steven Weinberg</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Abdus_Salam">Abdus Salam</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Peter_Higgs">Peter Higgs</a></p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>problema</strong> Identifica el objetivo, detectores, periodo de operación y tamaño de los siguientes experimentos: SuperKamiokande, ATLAS, LHCb, IceCube, ALEPH, DELPHI, Gargamelle, BaBar, UA1, Gerda y SNO.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www-sk.icrr.u-tokyo.ac.jp/en/sk/">SuperKamiokande</a></p></li>
+<li><p><a class="reference external" href="https://atlas.cern/">ATLAS</a></p></li>
+<li><p><a class="reference external" href="https://home.cern/science/experiments/lhcb">LHCb</a></p></li>
+<li><p><a class="reference external" href="https://icecube.wisc.edu/">IceCube</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/ALEPH_experiment">ALEPH</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/DELPHI_experiment">DElPHI</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Gargamelle">Gargamelle</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/BaBar_experiment">BaBar</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/UA1_experiment">UA1</a></p></li>
+<li><p><a class="reference external" href="https://www.mpi-hd.mpg.de/gerda/">Gerda</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Sudbury_Neutrino_Observatory">SNO</a></p></li>
+</ul>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="ext-sm.html" title="anterior página">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title"><span class="section-number">11. </span>Extensión: El Modelo Estándar</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="problemas-I.html" title="siguiente página">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Boletín de problemas I</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -153,8 +153,43 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="ext-trans-Lorentz.html">
+   8. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-grupos.html">
+   9. Extensión: grupos
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="ext-sm.html">
-   8. Extensión: El Modelo Estándar
+   10. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-prel.html">
+   11. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-I.html">
+   12. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-II.html">
+   13. Boletín de problemas II
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-III.html">
+   14. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-IV.html">
+   15. Boletín de problemas IV
   </a>
  </li>
 </ul>
@@ -431,8 +466,8 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#anti-fermiones">
-       1.3.2.1. anti-fermiones
+      <a class="reference internal nav-link" href="#las-anti-particulas">
+       1.3.2.1. las anti-partículas
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -487,13 +522,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sobre-la-materia-del-universo">
-     1.4.2. Sobre la materia del Universo
+    <a class="reference internal nav-link" href="#detectores-experimentos-teoria">
+     1.4.2. Detectores, Experimentos, Teoría
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#algunas-preguntas-sin-respuesta">
-     1.4.3. Algunas preguntas sin respuesta
+    <a class="reference internal nav-link" href="#preguntas-sin-respuesta">
+     1.4.3. Preguntas sin respuesta
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -595,8 +630,8 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#anti-fermiones">
-       1.3.2.1. anti-fermiones
+      <a class="reference internal nav-link" href="#las-anti-particulas">
+       1.3.2.1. las anti-partículas
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -651,13 +686,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sobre-la-materia-del-universo">
-     1.4.2. Sobre la materia del Universo
+    <a class="reference internal nav-link" href="#detectores-experimentos-teoria">
+     1.4.2. Detectores, Experimentos, Teoría
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#algunas-preguntas-sin-respuesta">
-     1.4.3. Algunas preguntas sin respuesta
+    <a class="reference internal nav-link" href="#preguntas-sin-respuesta">
+     1.4.3. Preguntas sin respuesta
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -692,7 +727,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Oct 21 12:54:13 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Dec 18 20:19:35 2024
 </pre></div>
 </div>
 </div>
@@ -717,37 +752,38 @@ title="Print to PDF"
 <div class="section" id="objetivos">
 <h2><span class="section-number">1.1. </span>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Dar una visión del entorno de la Física de Partículas:</p>
+<li><p>Dar una visión del campo de la Física de Partículas:</p>
 <ul>
-<li><p>Historia, relaciones con otras ramas, los laboratorios.</p></li>
+<li><p>su propósito, sus relaciones con otras ramas de la Física y los laboratorios principales.</p></li>
 </ul>
 </li>
-<li><p>Dar una introducción general del Modelo Estándar.</p>
+<li><p>Dar una introducción general del Modelo Estándar:</p>
 <ul>
-<li><p>La materia (fermiones),  las fuerzas (bosones), y el aglutinador (Higgs)</p></li>
+<li><p>de los componentes de la materia (fermiones) y de las fuerzas (bosones) que median entre ellas.</p></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="sobre-la-fisica-de-particulas">
 <h2><span class="section-number">1.2. </span>Sobre la Física de Partículas<a class="headerlink" href="#sobre-la-fisica-de-particulas" title="Permalink to this heading">#</a></h2>
-<p>Física de Partículas es la rama de la Física que estudia los <strong>corpúsculos</strong> más pequeños (¿elementales?) de la Naturaleza y las <strong>interacciones</strong> que median entre ellos.</p>
+<p>La Física de Partículas es la rama de la Física que estudia los <strong>corpúsculos</strong> más pequeños (algunos de ellos quizás elementales) de la Naturaleza y las <strong>interacciones</strong> que median entre ellos.</p>
 <div class="section" id="escala-de-la-fisica-de-particulas">
 <h3><span class="section-number">1.2.1. </span>Escala de la Física de Partículas<a class="headerlink" href="#escala-de-la-fisica-de-particulas" title="Permalink to this heading">#</a></h3>
-<p>La escala de Física de Partículas es inferior al fm.</p>
+<p>La siguiente figura muestra las diferentes escalas en <em>distancia</em> (m). Conforme reducimos la escala pasamos del sólido, al átomo, al núcleo, y finalmente a las partículas.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_distances_scale.jpg"><img alt="../_images/intro_distances_scale.jpg" class="align-center" src="../_images/intro_distances_scale.jpg" style="width: 800px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_distances_scale.jpg"><img alt="../_images/intro_distances_scale.jpg" class="align-center" src="../_images/intro_distances_scale.jpg" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
-<p>Si exploramos la materia con una partículas sonda, por la relación de Broglie, <span class="math notranslate nohighlight">\(\lambda = h /p\)</span>, necesitamos cada vez más energía para explorar distancias más pequeñas.</p>
-<p>La escala de energía de Física de Partículas es a partir de GeV</p>
-<p>Las escalas de <strong>distancia</strong> (m) y <strong>energía</strong> (eV):</p>
+<p>La escala en distancia que corresponde a la Física de Partículas es inferior al femtometro,  <span class="math notranslate nohighlight">\(&lt; 10^{-15}\)</span> m.</p>
+<p>Profundizamos en el interior de las partículas usando otras partículas como sonda, por ejemplo electrones.</p>
+<p>Para explorar distancias cada vez más pequeñas, por la relación de Broglie, <span class="math notranslate nohighlight">\(\lambda = h /p\)</span>, necesitamos cada vez sondas con energías mayores.</p>
+<p>La siguiente tabla muestra las escalas típicas de <strong>distancia</strong> (m) y <strong>energía</strong> (eV):</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -774,10 +810,13 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
+<p>En rango de energías de Física de Partículas es <span class="math notranslate nohighlight">\(&gt;\)</span> GeV.</p>
+<p>Por eso a la Física de Partículas también se la conoce como <strong>Física de Altas Energías</strong>.</p>
+<p>En general, a estas energías, las partículas son relativistas. Así que nuestro entorno será la física cuántica y relativista.</p>
 </div>
 <div class="section" id="metodologia">
 <h3><span class="section-number">1.2.2. </span>Metodología<a class="headerlink" href="#metodologia" title="Permalink to this heading">#</a></h3>
-<p>Estudiamos la física de las parttículas principalmente mediante pruebas con dispersión (<em>scattering</em>) o colisiones.</p>
+<p>Estudiamos las interacciones de las partículas mediante  dos tipos de experimentos: <strong>dispersión</strong> (<em>scattering</em>) o <strong>colisiones</strong>.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -785,131 +824,155 @@ title="Print to PDF"
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_dispersion.png"><img alt="../_images/intro_dispersion.png" class="align-center" src="../_images/intro_dispersion.png" style="width: 400px;" /></a></p></td>
-<td class="text-align:center"><p><a class="reference internal" href="../_images/intro_colision.png"><img alt="../_images/intro_colision.png" class="align-center" src="../_images/intro_colision.png" style="width: 400px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_dispersion.png"><img alt="../_images/intro_dispersion.png" class="align-center" src="../_images/intro_dispersion.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/intro_colision.png"><img alt="../_images/intro_colision.png" class="align-center" src="../_images/intro_colision.png" style="width: 300px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>Esquema de dispersión</p></td>
 <td class="text-align:center"><p>Esquema de  colisión</p></td>
 </tr>
 </tbody>
 </table>
-<p>Literalmente lanzamos unas partículas (<span class="math notranslate nohighlight">\(e, p, \nu\)</span>) contra otras a muy altas energías (GeV-TeV) y observamos sus productos.</p>
+<p>Literalmente lanzamos haces de partículas (principalmente <span class="math notranslate nohighlight">\(e, p, \nu\)</span>) a muy altas energías (GeV-TeV) contra blancos (formados por otras partículas, principalmente nucleones) y observamos las partículas que se producen y sus distribuciones en energía y angulares.</p>
 </div>
 <div class="section" id="fisica-de-altas-energias-y-aceleradores">
 <h3><span class="section-number">1.2.3. </span>Física de Altas energías y aceleradores<a class="headerlink" href="#fisica-de-altas-energias-y-aceleradores" title="Permalink to this heading">#</a></h3>
-<p>Se conoce también a Física de Partículas como <strong>Física de Altas Energías</strong>.</p>
-<p>La Física de Partículas está asociada con el desarrollo de <strong>aceleradores de partículas</strong> y detectores.</p>
-<ul class="simple">
-<li><p>El acelerador más potente es el LHC <a class="reference external" href="https://www.youtube.com/watch?v=pQhbhpU9Wrg">[&gt;]</a></p></li>
-<li><p>Existen aceleradores cósmicos naturales que producen rayos cósmicos que alcanzan la Tierra. Ver el detector IceCube <a class="reference external" href="https://www.youtube.com/watch?v=D50LNnioXQc">[&gt;]</a></p></li>
-</ul>
+<p>En general la materia ordinaria, a excepción de los rayos cósmicos, no es relativista.</p>
+<p>¿Cómo podemos obtener haces de partículas a altas energías?</p>
+<p>Mediante <strong>aceleradores de partículas</strong> como el <strong>LHC</strong> <a class="reference external" href="https://www.youtube.com/watch?v=pQhbhpU9Wrg">[&gt;]</a>, o mediante los <strong>rayos cósmicos</strong> que alcanzan la Tierra (principalmente protones, pero también neutrinos) producidos en estructuras del Cosmos que actuan como aceleradores naturales.</p>
+<p>Por ejemplo el detector IceCube <a class="reference external" href="https://www.youtube.com/watch?v=D50LNnioXQc">[&gt;]</a> detecta interacciones de neutrinos atmosféricos, solares y cósmicos.</p>
 </div>
 <div class="section" id="particulas-y-cosmologia">
 <h3><span class="section-number">1.2.4. </span>Partículas y Cosmología<a class="headerlink" href="#particulas-y-cosmologia" title="Permalink to this heading">#</a></h3>
-<p>Durante los primeros segundos el Universo se regía por la Física de Partículas</p>
+<p>La Física de Partículas está muy relacionada con la Cosmología.</p>
+<p>Durante los primeros segundos del Universo, éste se componía de una sopa de partículas.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_universe_history_2.jpg"><img alt="../_images/intro_universe_history_2.jpg" class="align-center" src="../_images/intro_universe_history_2.jpg" style="width: 600px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_universe_history_2.jpg"><img alt="../_images/intro_universe_history_2.jpg" class="align-center" src="../_images/intro_universe_history_2.jpg" style="width: 500px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>Esquema de la evolución del Universo [PDG]</p></td>
 </tr>
 </tbody>
 </table>
-<p>La Física de Partículas nos permite entender la evolución primigenia del Universo (Cosmología).</p>
-<p>A partir de los <span class="math notranslate nohighlight">\(10^{-32}\)</span> s después del Big Bang el Universo se rige por el Modelo Estándar, (SM) y depués de 100 s tiene lugar la Nucleosíntesis (Nuclear).</p>
-<p>Existe una relación de continuidad entre ramas de la física:</p>
+<p>Conforme el Universo se enfrió, las partículas crearon primero bariones, luego núcleos, átomos, y finalmente las estrellas y galaxias.</p>
+<p>A partir de <span class="math notranslate nohighlight">\(10^{-32}\)</span> s después del Big Bang, el Universo se rige por el Modelo Estándar hasta 100 s después cuando empiezan a formarse núcleos.</p>
+<p>Detengámanos por ejemplo, en la desintegración del neutrón, la desintegración <span class="math notranslate nohighlight">\(\beta\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+n \to p + e + \bar{\nu}_e
+\]</div>
+<p>Después de su creacción, el neutrón vive aproximadamente 10 mins, tiempo suficiente afortunadamente para que se formasen los primeros núcleos de Helio estables, lo que sucedió aproximadamente a los 6 mins.</p>
+<p>Podemos decir por lo tanto que existe una relación de continuidad entre ramas de la física:</p>
 <div class="math notranslate nohighlight">
 \[
 \mathrm{Astropartículas} \Leftrightarrow \mathrm{Partículas} \Leftrightarrow \mathrm{Nuclear}
 \]</div>
-<p>El <em>Instituto Galego de Física de Altas Enerxías</em>, <a class="reference external" href="https://igfae.usc.es/igfae/gl/">IGFAE</a>, cubre las tres ramas y sus posibles aplicaciones.</p>
+<p>El <em>Instituto Galego de Física de Altas Enerxías</em>, <a class="reference external" href="https://igfae.usc.es/igfae/gl/">IGFAE</a>, cubre las tres ramas y sus posibles aplicaciones. Puedes explorar su página web para más información.</p>
 </div>
 <div class="section" id="relacion-entre-teoria-experimentos-y-detectores">
 <h3><span class="section-number">1.2.5. </span>Relación entre teoría, experimentos y detectores<a class="headerlink" href="#relacion-entre-teoria-experimentos-y-detectores" title="Permalink to this heading">#</a></h3>
-<p>La Física de Partículas es una rama que involucra a la física teórica, experimental y la de detectores.</p>
-<ul class="simple">
-<li><p>Los avances en detección hacen posible nuevos discubrimientos</p></li>
-<li><p>Los descubrimientos marcan las líneas permitidas de las teorías</p></li>
-<li><p>La teoría indica qué experimentos son de interés</p></li>
-</ul>
+<p>La Física de Partículas involucra a la física teórica, experimental y la de detectores.</p>
 <div class="math notranslate nohighlight">
 \[
 \mathrm{Detectores} \Leftrightarrow \mathrm{Experimentos} \Leftrightarrow \mathrm{Teorías}
  \]</div>
-<p>y se relaciona con otras áreas: ingeniería, química y computación.</p>
+<p>Las tres son esenciales y se complementan:</p>
+<ul class="simple">
+<li><p>Los avances en detección hacen posible nuevos descubrimientos</p></li>
+<li><p>Los descubrimientos marcan las líneas permitidas de las teorías</p></li>
+<li><p>La teoría indica qué experimentos son de interés</p></li>
+</ul>
+<p>Pero no unicamente, también es son cruciales la ingeniería, química y computación.</p>
 </div>
 <div class="section" id="la-gran-ciencia">
 <h3><span class="section-number">1.2.6. </span>La gran ciencia<a class="headerlink" href="#la-gran-ciencia" title="Permalink to this heading">#</a></h3>
-<p>Los experimentos y los acelerados son grandes construcciones, únicas, que requieren de la participación de cientos o miles de científicos y una gran financiación.</p>
-<p>Los experimentos son complejos. Su planificación, construcción y explotación duran décadas. Un ejemplo: <a class="reference external" href="https://atlas.cern/">ATLAS</a></p>
+<p>Los aceleradores y los experimentos de partículas son grandes construcciones, en muchas ocasiones únicas y singulares, que requieren de la participación de cientos o miles de científicos y una gran financiación.</p>
+<p>Los experimentos son muy complejos. Su planificación, construcción y explotación duran a veces décadas. Por ejemplo, <a class="reference external" href="https://atlas.cern/">ATLAS</a> en el LHC,</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_atlas.jpg"><img alt="../_images/intro_atlas.jpg" class="align-center" src="../_images/intro_atlas.jpg" style="width: 600px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_atlas.jpg"><img alt="../_images/intro_atlas.jpg" class="align-center" src="../_images/intro_atlas.jpg" style="width: 500px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>Imagen del detector ATLAS durante su construcción [ATLAS]</p></td>
 </tr>
 </tbody>
 </table>
-<p>El experimento <a class="reference external" href="https://atlas.cern/">ATLAS</a> del LHC es uno de los más grandes experimentos construidos.</p>
+<p>es uno de los más grandes experimentos construidos y donde trabajan más de 2000 físicos del todo el mundo.</p>
 </div>
 <div class="section" id="los-grandes-laboratorios">
 <h3><span class="section-number">1.2.7. </span>Los grandes Laboratorios<a class="headerlink" href="#los-grandes-laboratorios" title="Permalink to this heading">#</a></h3>
-<p>Los experimentos de Física de Partículas tienen lugar en grandes laboratorios internacionales.</p>
+<p>Los experimentos de Física de Partículas tienen lugar principalmente en grandes laboratorios internacionales.</p>
+<p>El CERN, en Ginebra, Suiza, fundando en los años 50 del siglo XX, es desde los 80 el principal laboratorio de Física de Partículas. El CERN es un gran campus europeo de investigación donde han tenido lugar experimentos esenciales en Física de Partículas, avances fundamentales como la aparición de la <em>www</em>, y descubrimientos como los de los bosones vectoriales <span class="math notranslate nohighlight">\(W^\pm, Z^0\)</span> y el Higgs.</p>
+<p>La actual directora del CERN es F. Gianotti.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/Dr_Fabiola_Gianotti.jpg"><img alt="../_images/Dr_Fabiola_Gianotti.jpg" class="align-center" src="../_images/Dr_Fabiola_Gianotti.jpg" style="width: 200px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/Dr_Fabiola_Gianotti.jpg"><img alt="../_images/Dr_Fabiola_Gianotti.jpg" class="align-center" src="../_images/Dr_Fabiola_Gianotti.jpg" style="width: 100px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>F. Gianotti, directora del <a class="reference external" href="https://home.cern">CERN</a></p></td>
 </tr>
 </tbody>
 </table>
-<p>Basados en aceleradores:</p>
+<p>Los principales laboratorios de partículas son:</p>
+<p>basados en aceleradores:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://home.cern">CERN</a> (Ginebra, Suiza).</p></li>
 <li><p><a class="reference external" href="https://www.fnal.gov/">Fermilab</a> (Chicago, Illinois), <a class="reference external" href="https://www6.slac.stanford.edu/">SLAC</a> (Stanford, California), <a class="reference external" href="https://www.bnl.gov/world/">Brookhaven</a> (New York)</p></li>
 <li><p><a class="reference external" href="https://www.kek.jp/en/">KEK</a> (Japón)</p></li>
 </ul>
-<p>Subterráneos:</p>
+<p>y subterráneos:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.lngs.infn.it/en">LNGS</a> (Italia), <a class="reference external" href="http://www-sk.icrr.u-tokyo.ac.jp/index-e.html">Kamioka</a> (Japon), <a class="reference external" href="https://www.snolab.ca/">SNOLAB</a> (Canada), <a class="reference external" href="https://lsc-canfranc.es/">Canfranc</a> (Spain).</p></li>
+<li><p><a class="reference external" href="https://www.lngs.infn.it/en">LNGS</a> (Italia), <a class="reference external" href="http://www-sk.icrr.u-tokyo.ac.jp/index-e.html">Kamioka</a> (Japon), <a class="reference external" href="https://www.snolab.ca/">SNOLAB</a> (Canada), <a class="reference external" href="https://lsc-canfranc.es/">Canfranc</a> [<a class="reference external" href="https://lsc-canfranc.es/media-videos/">&gt;</a>] (Spain).</p></li>
 </ul>
 </div>
 <div class="section" id="aplicaciones-practicas">
 <h3><span class="section-number">1.2.8. </span>Aplicaciones prácticas<a class="headerlink" href="#aplicaciones-practicas" title="Permalink to this heading">#</a></h3>
-<p>Las técnicas desarrolladas para los detectores y los algoritmos para el tratamiento de datos han generados aplicaciones fundamentales en otros campos:</p>
+<p>Las técnicas de construcción de los detectores y de desarrollo de los algoritmos de tratamiento de datos han dado lugar a aplicaciones importantísimas en otros campos:</p>
 <ul>
-<li><p>Física Médica (rayos-X, PEP, terapia hadrónica)</p></li>
-<li><p>World Wide Web (<a class="reference external" href="https://home.cern/science/computing/birth-web/short-history-web">WWW</a>)</p>
-<p>Por la necesidad de mantener la información públicamente disponible y actualizada.</p>
+<li><p>en Física Médica, como por ejemplo, los rayos-X, o la terapia hadrónica.</p></li>
+<li><p>o la aparición de la <em>World Wide Web</em> (<a class="reference external" href="https://home.cern/science/computing/birth-web/short-history-web">WWW</a>), quizás unos de los momentos revolucionaros de la Humanidad.</p>
+<p>La <em>web</em> se desarrolló en el CERN para poder presentar y compartir la información.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="section" id="introduccion-al-modelo-estandar">
 <h2><span class="section-number">1.3. </span>Introducción al modelo estandar<a class="headerlink" href="#introduccion-al-modelo-estandar" title="Permalink to this heading">#</a></h2>
-<p>EL modelo estandar (SM) de Física de Partículas clasifica las partículas elementales y establece sus interacciones a través de las fuerzas electromagnética, débil y fuerte.</p>
-<p>El <em>Particle Data Group</em> (<a class="reference external" href="https://pdg.lbl.gov/">PDG</a>) recopila toda la información relevante sobre física de partículas.</p>
+<p>EL modelo estandar (SM) de Física de Partículas es uno de los grandes logros de la Física (a pesar de su pobre nombre).</p>
+<p>El Modelo clasifica todas partículas elementales y establece las interacciones entre ellas.</p>
+<p>El <em>Particle Data Group</em> (<a class="reference external" href="https://pdg.lbl.gov/">PDG</a>) es un grupo de trabajo que se encarga de recopilar y publicar toda la información relevante sobre física de partículas. Puedes consultar su página donde está <em>toda</em> la información.</p>
+<p>En esta sección veremos brevemente cómo se clasifican las partículas y sus características principales.</p>
+<p>Hasta donde sabemos la Naturaleza está compuesta de 12 partículas que forman la materia, que llamamos fermiones, 12 bosones que transmiten la fuerzas y una última, el bosón de Higgs, que les <em>otorga</em> las masas.</p>
+<p>Aunque la materia ordinaria, y la mayoría del Universo, está formada por 4 partículas de materia. Esencialmente el protón, el neutrón, el electrón y el neutrino. De ellas son estables el protón, el electrón y el neutrino.</p>
+<p>El resto de partículas jugaron un papel relevante durante los primeros segundos del Universo. En la actualidad, se producen principalmente en los experimentos, y son, con excepción del neutrino, inestables y se desintegran.</p>
+<p>Junto a las partículas tenemos sus antipartículas, que a pesar de su nombre, son igual a las partículas pero con  sus cargas opuestas.</p>
+<p>Las antipartículas aparecen en condición de igualdad y de forma complementaria a las partículas en las ecuaciones de la teoría. Sin embargo, el Universo actual está prácticamente formado por materia. No sabemos qué ocurrió en los primeros segundos del Universo que provocó que sobreviviese solamente la materia.</p>
+<p>En cuanto a las fuerzas, sabemos que hay 3 interacciones principales:</p>
+<ul class="simple">
+<li><p>la electromagnética, mediada por el fotón.</p></li>
+<li><p>la débil, mediada, cuando se produce cambio de carga eléctrica, por los bosones vectoriales, <span class="math notranslate nohighlight">\(W^\pm\)</span>, (donde el signo hace referencia a la carga), y las que no cambian la carga eléctrica, mediadas por el <span class="math notranslate nohighlight">\(Z\)</span></p></li>
+<li><p>la fuerte fundamental, mediada por los gruones. La fuerza responsable de la estabilidad y dinámica de los núcleos, es una fuerza fuerte residual. Similar al papel que juega el electromagnetismo en la formación de moléculas.</p></li>
+</ul>
+<p>Finalmente, la masa, que en principio es una propiedad de la partícula, es en realidad la consecuencia de la interacción de la partícula con el bosón de Higgs. Cuanto más masa tiene una partícula, más fuerte interacciona con el bosón de Higgs.</p>
 <div class="section" id="el-sm-a-simple-vista">
 <h3><span class="section-number">1.3.1. </span>El SM a simple vista<a class="headerlink" href="#el-sm-a-simple-vista" title="Permalink to this heading">#</a></h3>
+<p>La siguiente tabla muestra las partículas fundamentales y sus propiedades principales:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_SM_table.png"><img alt="../_images/intro_SM_table.png" class="align-center" src="../_images/intro_SM_table.png" style="width: 600px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_SM_table.png"><img alt="../_images/intro_SM_table.png" class="align-center" src="../_images/intro_SM_table.png" style="width: 500px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>Las partículas del modelo estandar</p></td>
 </tr>
@@ -921,10 +984,12 @@ title="Print to PDF"
 </div>
 <div class="section" id="fermiones">
 <h3><span class="section-number">1.3.2. </span>Fermiones<a class="headerlink" href="#fermiones" title="Permalink to this heading">#</a></h3>
+<p>Los fermiones son las partículas que constituyen la materia, tienen spín <span class="math notranslate nohighlight">\(1/2\)</span> y obedecen a la ecuación de Dirac.</p>
+<p>Los fermiones obedecen a la estadística de Fermi, por ello no encontramos dos fermiones en un mismo estado, de ahí que formen los componentes, los bloques, de la materia.</p>
 <p>Los fermiones se dividen en:</p>
 <ul class="simple">
 <li><p><strong>quarks</strong> : si interaccionan fuertemente</p></li>
-<li><p><strong>leptons</strong>: si no interaccionan fuertemente</p></li>
+<li><p><strong>leptones</strong>: si no interaccionan fuertemente</p></li>
 </ul>
 <table class="colwidths-auto table">
 <thead>
@@ -940,17 +1005,16 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-<div class="section" id="anti-fermiones">
-<h4><span class="section-number">1.3.2.1. </span>anti-fermiones<a class="headerlink" href="#anti-fermiones" title="Permalink to this heading">#</a></h4>
-<p>Los fermiones se rigen por la ecuación de Dirac. Son espinores de Dirac. (ver [Apéndice-Dirac])</p>
-<p>Por cada fermión existe un antifermión.</p>
-<p>Una <strong>antipartícula</strong> tiene las cargas y los números cuánticos opuestos a su partícula, a excepción del espín y la masa que no cambian.</p>
-<p>Si <span class="math notranslate nohighlight">\(f\)</span> es un fermión, denotamos <span class="math notranslate nohighlight">\(\bar{f}\)</span> como su antifermión.</p>
-<p>Indicamos los antileptones con carga (+): <span class="math notranslate nohighlight">\(e^+, \mu^+, \tau^+\)</span></p>
+<div class="section" id="las-anti-particulas">
+<h4><span class="section-number">1.3.2.1. </span>las anti-partículas<a class="headerlink" href="#las-anti-particulas" title="Permalink to this heading">#</a></h4>
+<p>Sabemos que los fermiones se rigen por la ecuación de Dirac, y se describen con un nuevo objeto matemático, los <strong>espinores de Dirac</strong>.</p>
+<p>Fue Dirac quien a partir de su famosa ecuación, propuso que cada partícula, tiene su <strong>anti-partícula</strong>. La diferencia entre ellas son las cargas. Las antipartículas tienen las cargas opuestas a la partícula, pero tienen la misma masa, espín y vida media.</p>
+<p>Si <span class="math notranslate nohighlight">\(f\)</span> es un fermión, denotamos <span class="math notranslate nohighlight">\(\bar{f}\)</span> como su antifermión, aunque para los antileptones, que tienen carga eléctrica (+), los llamaremos simplemente: <span class="math notranslate nohighlight">\(e^+, \mu^+, \tau^+\)</span>.</p>
 </div>
 <div class="section" id="generaciones">
 <h4><span class="section-number">1.3.2.2. </span>generaciones<a class="headerlink" href="#generaciones" title="Permalink to this heading">#</a></h4>
-<p>Los fermiones (tanto leptones como quarks) aparecen en <strong>tres generaciones</strong> o familias.</p>
+<p>Por alguna razón que desconocemos, existen tres generaciones o familias idénticas de partículas, que son una copia con más masa, de la primera familia. Pero sí sabemos que solo hay 3 familias.</p>
+<p>Decimos que los fermiones (tanto leptones como quarks) aparecen en <strong>tres generaciones</strong> o familias.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{pmatrix} \nu_e \\ e \end{pmatrix}, \begin{pmatrix} \nu_\mu \\ \mu \end{pmatrix}, 
@@ -961,51 +1025,51 @@ title="Print to PDF"
 \begin{pmatrix} u \\ d \end{pmatrix}, \begin{pmatrix} c \\ s \end{pmatrix}, 
 \begin{pmatrix} t \\ b \end{pmatrix} \\
 \end{split}\]</div>
-<p>A veces decimos que las partículas se presentan con <strong>sabores</strong>. Por ejemplo neutrino se presenta en sabor electrónico, muónico y tauónico.</p>
 <p>En cada generación, tanto leptones como quarks, se agrupan en <strong>dupletes</strong> con posiciones <strong>arriba</strong> y <strong>abajo</strong>.</p>
-<p>¡No hay una motivación de por qué hay tres generaciones!</p>
-<p>Las tres generaciones de leptones se comportan con <strong>universalidad</strong> (de igual manera) frente a las interacciones si se tiene en cuenta que sus masas son diferentes.</p>
+<p>Decimos que las tres generaciones de leptones se comportan con <strong>universalidad</strong> (de igual manera) frente a las interacciones si se tiene en cuenta que sus masas son diferentes.</p>
+<p>Decimos también que las partículas tienen <strong>sabor</strong>, que en realidad se corresponde con la identidad de la partícula. Por ejemplo decimos que el quark <em>s</em> tiene <em>extrañeza</em>, el quark <em>b</em>, belleza, el neutrino electrónico tiene <em>sabor electrónico</em>. Y para los leptones cargados, decimos un leptón cargado de sabor <em>electrónico</em>, para referirnos al electrón.</p>
+<p>Por alguna razón que desconocemos las partículas desde el punto de la interacción débil no se corresponden exactamente con las partículas de masa, en otras palabras, la interacción con los campos vectoriales no está alineada con la interacción con el bosón de Higgs. Lo que da lugar a una física compleja y muy rica, que se conoce como <strong>física del sabor</strong>. Un ejemplo de esta física son las oscilaciones de neutrinos.</p>
 <p>La siguiente tabla muestra los fermiones agrupados por familias, su carga eléctrica y las fuerzas que sienten:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
-<th class="text-align:left head"><p>posición</p></th>
-<th class="text-align:left head"><p></p></th>
-<th class="text-align:left head"><p>generación</p></th>
-<th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p>1</p></th>
+<th class="text-align:left head"><p>2</p></th>
+<th class="text-align:left head"><p>3</p></th>
 <th class="text-align:left head"><p>Q (e)</p></th>
 <th class="text-align:left head"><p>fuerte</p></th>
-<th class="text-align:left head"><p>electromagnética</p></th>
+<th class="text-align:left head"><p>electromag.</p></th>
 <th class="text-align:left head"><p>débil</p></th>
+<th class="text-align:left head"><p>Higgs</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p></p></td>
 <td class="text-align:left"><p></p></td>
-<td class="text-align:left"><p>I</p></td>
-<td class="text-align:left"><p>II</p></td>
-<td class="text-align:left"><p>III</p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
 <td class="text-align:left"><p></p></td>
 <td class="text-align:left"><p></p></td>
 <td class="text-align:left"><p></p></td>
 <td class="text-align:left"><p></p></td>
 </tr>
 <tr class="row-odd"><td><p>quarks</p></td>
-<td class="text-align:left"><p>up</p></td>
-<td class="text-align:left"><p>u  (2 MeV)</p></td>
-<td class="text-align:left"><p>c (1.2 GeV)</p></td>
-<td class="text-align:left"><p>t (170 GeV)</p></td>
+<td class="text-align:left"><p>u</p></td>
+<td class="text-align:left"><p>c</p></td>
+<td class="text-align:left"><p>t</p></td>
 <td class="text-align:left"><p><span class="math notranslate nohighlight">\(\frac{2}{3}\)</span></p></td>
+<td class="text-align:left"><p>sí</p></td>
 <td class="text-align:left"><p>sí</p></td>
 <td class="text-align:left"><p>sí</p></td>
 <td class="text-align:left"><p>sí</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
-<td class="text-align:left"><p>down</p></td>
-<td class="text-align:left"><p>d  (5 MeV)</p></td>
-<td class="text-align:left"><p>s (93 MeV)</p></td>
-<td class="text-align:left"><p>b (4.2 GeV)</p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\frac{-1}{3}\)</span></p></td>
+<td class="text-align:left"><p>d</p></td>
+<td class="text-align:left"><p>s</p></td>
+<td class="text-align:left"><p>b</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(-\frac{1}{3}\)</span></p></td>
+<td class="text-align:left"><p>sí</p></td>
 <td class="text-align:left"><p>sí</p></td>
 <td class="text-align:left"><p>sí</p></td>
 <td class="text-align:left"><p>sí</p></td>
@@ -1021,28 +1085,65 @@ title="Print to PDF"
 <td class="text-align:left"><p></p></td>
 </tr>
 <tr class="row-even"><td><p>leptons</p></td>
-<td class="text-align:left"><p>up</p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_e\)</span> (&lt; eV)</p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_\mu\)</span> (&lt; eV)</p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_\tau\)</span> (&lt;eV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_e\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_\mu\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_\tau\)</span></p></td>
 <td class="text-align:left"><p>0</p></td>
 <td class="text-align:left"><p>no</p></td>
 <td class="text-align:left"><p>no</p></td>
 <td class="text-align:left"><p>sí</p></td>
+<td class="text-align:left"><p>?</p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
-<td class="text-align:left"><p>down</p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(e\)</span>   (511 keV)</p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mu\)</span>  (106 MeV)</p></td>
-<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau\)</span>  (1.77 GeV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(e\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mu\)</span></p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau\)</span></p></td>
 <td class="text-align:left"><p>-1</p></td>
 <td class="text-align:left"><p>no</p></td>
+<td class="text-align:left"><p>sí</p></td>
 <td class="text-align:left"><p>sí</p></td>
 <td class="text-align:left"><p>sí</p></td>
 </tr>
 </tbody>
 </table>
 <p>La carga eléctrica depende de su posición en el duplete. El fermión de arriba tiene una carga <span class="math notranslate nohighlight">\(+1\)</span> comparada con la del de abajo.</p>
+<p>La siguiente tabla muestra la masa de los fermiones</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>u  (2 MeV)</p></td>
+<td class="text-align:left"><p>c (1.2 GeV)</p></td>
+<td class="text-align:left"><p>t (170 GeV)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>d  (5 MeV)</p></td>
+<td class="text-align:left"><p>s (93 MeV)</p></td>
+<td class="text-align:left"><p>b (4.2 GeV)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_e\)</span> (&lt; eV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_\mu\)</span> (&lt; eV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\nu_\tau\)</span> (&lt;eV)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(e\)</span>   (511 keV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mu\)</span>  (106 MeV)</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau\)</span>  (1.77 GeV)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Podemos notar que el quark top es extremadamente pesado, mientras que el neutrino, del que no sabemos su masa es extraordinariamente ligero, del orden de <span class="math notranslate nohighlight">\(10^6\)</span> veces más ligero que el electrón.</p>
+<p>De las dos tablas anteriores vemos que el neutrino es particular, diferente, solo interacciona débilmente. Veremos a lo largo de estas clases como el neutrino ejemplifica muy bien las características fundamentales del Modelo Estándar, además, hoy en día oculta todavía varios misterios por resolver, como si es o no su propia antiparticula o como interacciona con el bosón de Higgs.</p>
 <p>La siguiente figura muestra de forma gráfica la disparidad de masas entre los fermiones:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1050,15 +1151,14 @@ title="Print to PDF"
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_masas.png"><img alt="../_images/intro_masas.png" class="align-center" src="../_images/intro_masas.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/intro_masas.png"><img alt="../_images/intro_masas.png" class="align-center" src="../_images/intro_masas.png" style="width: 400px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>Masas de los fermiones [MT1.1]</p></td>
 </tr>
 </tbody>
 </table>
-<p>El electrón es 2000 veces más ligero que el protón.</p>
-<p>Del neutrino desconocemos su masa, pero ésta es al menos <span class="math notranslate nohighlight">\(5 \times 10^5\)</span> veces más pequeña que el electrón.</p>
-<p>Como veremos en el [Tema-SM] la masa de los fermiones aparece de su interacción con el bosón de Higgs. En el SM aparecen las masas como parámetros libres del modelo.</p>
+<p>No sabemos por qué los fermiones tienen este patrón de masas, que al final, equivale a decir que no sabemos por qué se acoplan al bosón de Higgs de forma tan dispar.</p>
+<p>Puede que necesitamos conocer mejor la física de Higgs para entender el origen de los valores de las masas de los fermiones.</p>
 </div>
 </div>
 <div class="section" id="leptones">
@@ -1070,17 +1170,17 @@ title="Print to PDF"
 \begin{pmatrix} \nu_\tau \\ \tau \end{pmatrix}
 \end{split}\]</div>
 <p>Los leptones cargados <span class="math notranslate nohighlight">\(\mu, \tau\)</span> son una copia con más masa del <span class="math notranslate nohighlight">\(e\)</span>.</p>
-<p>Las interacciones conservan el <strong>número leptónico</strong>, <span class="math notranslate nohighlight">\(L\)</span>, que es el número de leptones menos el de anti-leptones.</p>
+<p>En la Naturaleza, hasta la fecha, hemos verificado que las interacciones conservan el <strong>número leptónico</strong>, <span class="math notranslate nohighlight">\(L\)</span>, que es el número de leptones menos el de anti-leptones.</p>
 <p>Por ejemplo en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 n \to p + e + \bar{\nu}_e
 \]</div>
 <p>El número leptónico antes y después de de la desintegración es <span class="math notranslate nohighlight">\(L = 0\)</span>. Dado que <span class="math notranslate nohighlight">\(e\)</span> es un leptón, <span class="math notranslate nohighlight">\(L = +1\)</span>  y <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span> un anti-lepton, <span class="math notranslate nohighlight">\(L=-1\)</span>.</p>
-<p>Notar que en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> <strong>se conserva la carga eléctrica.</strong></p>
-<p><strong>El electrón</strong>, que es el leptón cargado más ligero, <strong>es estable</strong>.</p>
-<p>Los leptones cargados se desintegran débilmente:</p>
-<p>Sus vidas medias son:</p>
+<p>Por lo tanto <strong>el neutrino</strong>, que es el leptón más ligero, <strong>es estable</strong>.</p>
+<p>Por supuesto, todas las interacciones conservan la energía, el momento lineal y angular, y la carga eléctrica.</p>
+<p>Los leptones cargados se desintegran via las interacciones débiles.</p>
+<p>La siguiente tabla muestras sus vidas medias:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p><span class="math notranslate nohighlight">\(e\)</span></p></th>
@@ -1095,13 +1195,13 @@ n \to p + e + \bar{\nu}_e
 </tr>
 </tbody>
 </table>
-<p>Los electrones interaccionan con los átomos de la materia, ionizando y radiando fotones por <em>Bremsstrahlung</em>.</p>
-<p>Los muones son partículas penetrantes, del orden de <span class="math notranslate nohighlight">\(\mathcal{O}(10)\)</span> m (depende de su momento) porque su radiación de <em>Bremsstrahlung</em> está suprimida por <span class="math notranslate nohighlight">\(1/m^2_\mu\)</span> comparada con los electrones.</p>
-<p>Los tauones se desintegran al poco de ser producidos. Pueden llegar a recorrer <span class="math notranslate nohighlight">\(\mathcal{O}\)</span>(cm).</p>
+<p><strong>El electrón es estable</strong>, porque todas las interacciones conservan la carga eléctrica, y es el leptón cargado más ligero.</p>
+<p>Los muones de 10 GeV, recorren habitualmente unos metros antes de desintegrarse.</p>
+<p>Mientras que los tauones se desintegran al poco de ser producidos, a 45 GeV por ejemplo a recorren unos mm.</p>
 <p>Existen tres neutrinos de sabor, <span class="math notranslate nohighlight">\(\nu_e, \nu_\mu, \nu_\tau\)</span> asociados a sus parejas leptónicas <span class="math notranslate nohighlight">\(e, \mu, \tau\)</span> respectivamente.</p>
-<p><strong>El SM postula que no tienen masa</strong>, pero gracias a los experimentos de oscilaciones de neutrinos sabemos que tienen masa.</p>
-<p>Su masa se desconoce pero es muy pequeña <span class="math notranslate nohighlight">\(\lt 1\)</span> eV, a comprar con los 511 keV del electrón.</p>
-<p><strong>Los neutrinos</strong> no tienen carga eléctrica, <strong>tienen una masa muy pequeña</strong>, <strong>son estables</strong>, y <strong>sólo interactuan débilmente</strong>.  ¡Son muy <em>cool</em>!</p>
+<p><strong>El SM postulaba que no tienen masa</strong>, pero gracias a los experimentos de oscilaciones de neutrinos sabemos que tienen masa.</p>
+<p>Su masa se desconoce pero es muy pequeña <span class="math notranslate nohighlight">\(\lt 1\)</span> eV, a comparar con los 511 keV del electrón.</p>
+<p><strong>Los neutrinos</strong> no tienen carga eléctrica, <strong>tienen una masa muy pequeña</strong>, <strong>son estables</strong>, y <strong>sólo interactuan débilmente</strong>.  ¡Son muy <em>cool</em>! Solo hace falta ver las tablas anteriores para dease cuenta.</p>
 <p>Son los leptones más peculiares del SM y que tengan masa es <strong>la única prueba hasta el momento de que el SM es incompleto o incorrecto</strong>.</p>
 <p>Las características de los leptones y las peculiaridades de la desintegración débil y de los neutrinos las estudiaremos en el [Tema-leptones].</p>
 </div>
@@ -1114,13 +1214,17 @@ n \to p + e + \bar{\nu}_e
 \begin{pmatrix} t \\ b \end{pmatrix} \\
 \end{split}\]</div>
 <p>Los quarks <span class="math notranslate nohighlight">\((c, s)\)</span>, encanto y extrañeza respectivamente, y <span class="math notranslate nohighlight">\((t, b)\)</span>, top y bottom (o belleza), son copias con más masa del par <span class="math notranslate nohighlight">\((u, d)\)</span>, arriba y abajo.</p>
-<p>Los quarks <span class="math notranslate nohighlight">\(u, d, s\)</span> son ligeros, los quark <span class="math notranslate nohighlight">\(c, b\)</span> son pesados. El top, <span class="math notranslate nohighlight">\(t\)</span>, es incluso más pesado que los bosones vectoriales <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y el Higgs, <span class="math notranslate nohighlight">\(H\)</span>, y no llega a producir hadrones.</p>
-<p><strong>Los quarks tienen carga fraccionaria</strong>: los de arriba <span class="math notranslate nohighlight">\(+2/3\)</span> y los de abajo <span class="math notranslate nohighlight">\(-1/3\)</span> en unidades de <span class="math notranslate nohighlight">\(e\)</span>.</p>
+<p>Los quarks <span class="math notranslate nohighlight">\(u, d, s\)</span> son ligeros, los quark <span class="math notranslate nohighlight">\(c, b\)</span> son pesados. El top, <span class="math notranslate nohighlight">\(t\)</span>, es incluso más pesado que los bosones vectoriales <span class="math notranslate nohighlight">\(W^\pm, Z\)</span> y no llega a producir hadrones. Esta diferencia hará que la física de los hadrones formados por quark ligeros y pesados sea diferente.</p>
+<p><strong>Los quarks tienen carga fraccionaria</strong>: los de arriba <span class="math notranslate nohighlight">\(+2/3\)</span> y los de abajo <span class="math notranslate nohighlight">\(-1/3\)</span> en unidades de <span class="math notranslate nohighlight">\(e\)</span>. No hay nada extraño en que la carga sea fraccionaria. Debemos a uno de los padres de la constitución americana, B. Flanklin, que el electrón se defina como carga eléctrica negativa, pero eso es solo una convención.</p>
 <p><strong>Los quarks no son libres</strong>, sólo aparecen en partíclas compuestas, los <strong>hadrones</strong>. Este fenómeno se conoce como <strong>confinamiento</strong>.</p>
+<p>Si los quarks fueran partículas libres, los habríamos detectado facilmente, ya que en presencia de un campo magnético, sus trayectorias se curvarían de acuerdo a su carga.</p>
+<p>Todavía no tenemos una explicación exacta del confinamiento de los quarks, pero la teoría que rigue las interacciones fuertes, la <strong>cromodinámica cuántica</strong>, QCD, permite una explicación.</p>
 <p>Los quarks aparecen con tres cargas fuertes o de <strong>color</strong>, que se denominan: <strong>rojo, verde y azul</strong>, <span class="math notranslate nohighlight">\(r, g, b\)</span>. Y por supuesto no tiene nada que ver con los colores habituales.</p>
-<p>Un mismo quark existe en tres colores, por ejemplo el quark belleza, <span class="math notranslate nohighlight">\(b\)</span>, puede ser rojo, verde o azul. Hay por lo tanto 18 quarks diferentes.</p>
-<p>Los únicos hadrones que existen son <strong>neutros al color</strong>, digamos que son <em>descoloridos</em> o <em>blancos</em>, de forma similar al hecho de que los átomos sean eléctricamente neutros.</p>
+<p>Esto es, un mismo quark existe en tres colores, por ejemplo el quark belleza, <span class="math notranslate nohighlight">\(b\)</span>, puede ser rojo, verde o azul. Esto quiere decir que en realidad no tenemos 6 quarks sino 18. Decimos que <em>cada quark de sabor se presenta en tres colores</em> (no solo hay simetría en física, a veces, también hay poesía).</p>
+<p>Para cada color existe también su anti-color, esto es anti-rojo, anti-verde o anti-azul, que viene asociado a los anti-quarks.</p>
+<p>Sin embargo, la QCD exige que los únicos hadrones reales sean <strong>neutros al color</strong>, digamos que son <em>descoloridos</em> o <em>blancos</em>, de forma similar al hecho de que los átomos son eléctricamente neutros.</p>
 <p>Estudiaremos los quarks, los hadrones y el color en el [Tema-quarks].</p>
+<p>Sólo hay dos posibilidades de combinación de quarks para que los hadrones sean <em>incoloros</em>, o bien mediante una combinación de tres quarks (o antiquarks), cada uno con un color, lo que llamamos barión (o antibarión), o un mesón, formado por un quark y un antiquark con colores complementarios (por ejemplo, rojo y anti-rojo)</p>
 <p>Los <strong>hadrones</strong> se clasifican en.</p>
 <ul class="simple">
 <li><p><strong>bariones</strong>, formados por tres quarks.</p></li>
@@ -1132,24 +1236,23 @@ n \to p + e + \bar{\nu}_e
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/intro_hadrons.png"><img alt="../_images/intro_hadrons.png" class="align-center" src="../_images/intro_hadrons.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/intro_hadrons.png"><img alt="../_images/intro_hadrons.png" class="align-center" src="../_images/intro_hadrons.png" style="width: 300px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p>Imagen esquemática de un mesón y un barión</p></td>
 </tr>
 </tbody>
 </table>
-<p>que como veremos ([Tema-quarks]) son las únicas combinaciones de singletes de color y por lo tanto los únicos hadrones blancos.</p>
-<p>Notar que la carga eléctrica de los hadrones es entera.</p>
-<p>El protón y el neutrón son bariones.</p>
-<p>El protón está formado por el trío de quarks de valencia (<span class="math notranslate nohighlight">\(uud\)</span>), cuya carga es <span class="math notranslate nohighlight">\(+e\)</span>,  y el neutrón por (<span class="math notranslate nohighlight">\(udd\)</span>), cuya carga es nula.</p>
-<p>En las interacciones se conserva <strong>el número bariónico</strong>, <span class="math notranslate nohighlight">\(B\)</span>, (el número de bariones menos el de antibariones).</p>
+<p>Con estas dos posibilidades, la carga eléctrica de los hadrones es entera.</p>
+<p>El protón y el neutrón son bariones. El protón está formado por el trío de quarks de valencia (<span class="math notranslate nohighlight">\(uud\)</span>), cuya carga es <span class="math notranslate nohighlight">\(+e\)</span>,  y el neutrón por (<span class="math notranslate nohighlight">\(udd\)</span>), cuya carga es nula.</p>
+<p>También, en la Naturaleza, hasta le fecha, hemos comprobado que se conserva el número de quarks, decimos que se conserva <strong>el número bariónico</strong>, <span class="math notranslate nohighlight">\(B\)</span>, (el número de bariones menos el de antibariones).</p>
+<p>Notar que los mesones tienen número de quarks nulo porque son la combinación de un quark y un antiquark. Así que en vez de contar quarks contamos bariones en las interacciones.</p>
 <p>Por ejemplo, de nuevo, en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 n \to p + e + \bar{\nu}_e.
 \]</div>
 <p>A ambos lados de la interacción el número bariónico es 1. El <span class="math notranslate nohighlight">\(p\)</span> y el <span class="math notranslate nohighlight">\(n\)</span> tienen los dos <span class="math notranslate nohighlight">\(B = 1\)</span></p>
-<p><strong>El protón</strong>, que es el barión más ligero, <strong>es estable</strong>.</p>
+<p>Como <strong>el protón</strong>, que es el barión más ligero, <strong>es estable</strong>.</p>
 <p>Remarquemos que la desintegración <span class="math notranslate nohighlight">\(\beta\)</span></p>
 <div class="math notranslate nohighlight">
 \[
@@ -1157,12 +1260,15 @@ n \to p + e + \bar{\nu}_e.
 \]</div>
 <p>y el resto de <strong>interacciones conservan</strong>:</p>
 <ul class="simple">
-<li><p>la <strong>carga eléctrica</strong>, <span class="math notranslate nohighlight">\(Q\)</span>,</p></li>
-<li><p>el <strong>número leptónico</strong>, <span class="math notranslate nohighlight">\(L\)</span>,</p></li>
-<li><p>el <strong>número bariónico</strong>, <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>la <em>carga eléctrica</em>, <span class="math notranslate nohighlight">\(Q\)</span>,</p></li>
+<li><p>el <em>número leptónico</em>, <span class="math notranslate nohighlight">\(L\)</span>,</p></li>
+<li><p>el <em>número bariónico</em>, <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 </ul>
-<p>A excepción del protón, el resto de hadrones, así como los leptones cargados <span class="math notranslate nohighlight">\(\mu, \tau\)</span>, se desintegran:</p>
-<p>La vida media de la desintegración depende:</p>
+<p>La anterior desintegración es posible energéticamente, porque el <span class="math notranslate nohighlight">\(n\)</span> tiene una masa (939  MeV) ligeramente superior al <span class="math notranslate nohighlight">\(p\)</span> (938.3 MeV). De esa pequeña diferencia proviene que la vida media del neutrón sea aproximadamente de 10 mins.</p>
+<p>Dado que la partícula estable de los leptones es el <span class="math notranslate nohighlight">\(e\)</span> y de los bariones el <span class="math notranslate nohighlight">\(p\)</span>. La conservación del número leptónico y bariónico, a igualdad del número de ambas partículas, nos asegura que el Universo sea eléctricamente neutro.</p>
+<p>Muy diferente sería si la Naturaleza si el neutrino hubiese sido una partícula masiva con posibilidad de desintegrarse, o si el protón tuviera más masa que el neutrón.</p>
+<p>El resto de hadrones, (ya sean mesones o bariones), así como leptones cargados <span class="math notranslate nohighlight">\(\mu, \tau\)</span>, se desintegran:</p>
+<p>La vida media de la desintegración depende de:</p>
 <ul class="simple">
 <li><p>del tipo de desintegración permitida, ya sea ésta fuerte (via gluones), electromagnética (via un fotón) o débil (vía bosones <span class="math notranslate nohighlight">\(W^\pm\)</span>).</p></li>
 <li><p>del espacio fásico permitido. A mayor diferencia de masas entre la partícula madre y las hijas más espacio fásico.</p></li>
@@ -1174,7 +1280,7 @@ n \to p + e + \bar{\nu}_e.
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/intro_lifetimes.png"><img alt="../_images/intro_lifetimes.png" class="align-center" src="../_images/intro_lifetimes.png" style="width: 900px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/intro_lifetimes.png"><img alt="../_images/intro_lifetimes.png" class="align-center" src="../_images/intro_lifetimes.png" style="width: 400px;" /></a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p>Vida media de algunas partículas dependiendo del tipo de desintegración [MT1.1]</p></td>
 </tr>
@@ -1193,10 +1299,10 @@ n \to p + e + \bar{\nu}_e.
 </ul>
 <div class="section" id="propiedades-de-los-portadores">
 <h4><span class="section-number">1.3.5.1. </span>Propiedades de los portadores<a class="headerlink" href="#propiedades-de-los-portadores" title="Permalink to this heading">#</a></h4>
-<p>La interacción se describe como el intercambio de un mediador o portador de la fuerza entre corrientes de fermiones.</p>
-<p>Cada portador interviene según la carga (por ejemplo eléctrica o color) de los fermiones a los que se acopla.</p>
+<p>Describimos las interacciones de las partículas como el intercambio de un mediador o portador de la fuerza entre ellas.</p>
+<p>Cada portador interviene según la carga (por ejemplo eléctrica o color) de los fermiones a los que interacciona.</p>
 <p>Los portadores <strong>son bosones vectoriales</strong> (spín 1) y obedecen la ecuación de Maxwell.</p>
-<p>En la tabla se muestra intensidad aproximada de las distintas fuerzas:</p>
+<p>En la tabla se muestra la intensidad aproximada de las distintas fuerzas, su carga eléctrica y su masa:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>fuerza</p></th>
@@ -1239,12 +1345,16 @@ n \to p + e + \bar{\nu}_e.
 </tr>
 </tbody>
 </table>
-<p>La masa del bosón determina el rango (en distancia) de la interacción. El rango de la interacciones débiles es de <span class="math notranslate nohighlight">\(&lt;10^{-18}\)</span> m.</p>
-<p>El rango de <span class="math notranslate nohighlight">\(100\)</span> GeV, aproximadamente la masa del bosón <span class="math notranslate nohighlight">\(Z\)</span>, se conoce como <strong>escala electrodébil.</strong></p>
-<p>Los bosones <span class="math notranslate nohighlight">\(W^\pm\)</span> son cargados. Sus interacciones se conocen como <strong>corrientes cargadas</strong> (CC).</p>
-<p>Las interacciones del bosón <span class="math notranslate nohighlight">\(Z^0\)</span> se denominan también <strong>corrientes neutras</strong> (NC).</p>
-<p>Existen 8 tipos de gluones, que cambian el color de los quarks, son electricamente neutros y de masa nula. Los gluones tienen carga de color e interaccionan entre sí, generando «lazos» entre ellos y reduciendo la interacción fuerte al rango de fm.</p>
-<p>El rango de los fotones en infinito mientras que el de los bosones débiles y los gluones es puntual.</p>
+<p>El fotón carece de masa, es el responsable de las interacciones electromagnéticas, y éstas tienen rango <em>infinito</em>, lo que está relacionado con su masa.</p>
+<p>Sin embargo, los bosones vectoriales débiles, <span class="math notranslate nohighlight">\(W^\pm, Z^0\)</span>, tiene una masa elevada <span class="math notranslate nohighlight">\(80\)</span> y <span class="math notranslate nohighlight">\(91\)</span> GeV respectivamente, y su alcance es <em>puntual</em>.</p>
+<p>Fue Yukawa quien para explicar la fuerza que mantenía los nucleones en el interior del núcleo, sugirió un potencial que decayera exponencialmente a partir de un radio típico, (el fm). Asociado a ese potencial debía existir una partícula masiva (200 MeV), el pión, que cuyo alcance de acción estuviera en ese rango de distancia del nucleón.</p>
+<p>Las interacciones débiles, mediadas por portadores muy masivos, tienen, en la interpretación de Yukawa, un rango puntual.</p>
+<p>A la escala de masa de los portadores débiles la llamamos <strong>escala electrodébil</strong>, <span class="math notranslate nohighlight">\(\mathcal{O}(100)\)</span> GeV, que corresonde a una interacción puntual de <span class="math notranslate nohighlight">\(10^{-18}\)</span> m.</p>
+<p>Los bosones <span class="math notranslate nohighlight">\(W^\pm\)</span> son cargados eléctricamente. En las interacciones que median trasportan consigo una carga eléctrica (<span class="math notranslate nohighlight">\(\pm\)</span>). Por eso sus interacciones se conocen también, por abuso del lenguaje, como <strong>corrientes cargadas</strong> (CC).</p>
+<p>Las interacciones del bosón <span class="math notranslate nohighlight">\(Z^0\)</span> se denominan también <strong>corrientes neutras</strong> (NC). Y en este caso, como en el del fotón, el portador no transmite carga eléctrica.</p>
+<p>Existen 8 tipos de gluones, que son electricamente neutros y de masa nula, pero sí tienen color. Intercambian el color de los quarks. Por ejemplo, decimos que un gluón cambia un quark rojo en azul y a cambio convierte un quark azul en rojo.</p>
+<p>Como los gluones transmiten color, pueden interaccionar entre sí, intercambiandose entre ellos colores, esto es, interaccionan entre ellos.</p>
+<p>De nuevo aunque no tenemos una expliación exacta en QCD, podemos entender el rango de interacción de los gluones limitado por las propias interacciones entre ellos.</p>
 </div>
 <div class="section" id="propiedades-de-las-fuerzas">
 <h4><span class="section-number">1.3.5.2. </span>Propiedades de las fuerzas<a class="headerlink" href="#propiedades-de-las-fuerzas" title="Permalink to this heading">#</a></h4>
@@ -1254,31 +1364,38 @@ n \to p + e + \bar{\nu}_e.
 <li><p><strong>el sabor</strong>,</p></li>
 <li><p><strong>la paridad</strong>.</p></li>
 </ul>
-<p>Recordemos que paridad es la inversión de <span class="math notranslate nohighlight">\({\bf x} \to - {\bf x}\)</span>, cambio de signo en las coordenadas espaciales; y la inversión de carga cambia todas las cargas de las partículas (a excepción del espín y la masa).</p>
-<p>La conservación del sabor implica que el número de partículas menos el antipartículas de un sabor, por ejemplo del quark belleza, se conserva antes y después de una interacción.</p>
-<p>En los temas siguientes veremos también que:</p>
-<p><strong>las interacciones débiles violan</strong>:</p>
-<ul class="simple">
-<li><p><strong>paridad</strong>, (las cargadas de forma máxima),</p></li>
-<li><p><strong>carga y paridad</strong>, CP, mínimamente y solo en corrientes cargadas en hadrones, (no sabemos si también se viola en leptones).</p></li>
-</ul>
-<p><strong>las corrientes cargadas cambian el sabor, pero las neutras lo conservan</strong>.</p>
+<p>Recordemos que paridad es la inversión de <span class="math notranslate nohighlight">\({\bf x} \to - {\bf x}\)</span>, cambio de signo en las coordenadas espaciales; y la inversión de carga cambia todas las cargas de las partículas.</p>
 <p><strong>La interacción fuerte conserva</strong> además:</p>
 <ul class="simple">
 <li><p>las cargas de <strong>color</strong>.</p></li>
 </ul>
-<p><em>Las interacciones débiles son «peculiares», especialmente la cargada.</em></p>
+<p>Esto es si los quarks iniciales son rojo y azul, entre los quarks finales hay rojo y azul.</p>
+<p>En este sentido, las interacciones fuertes y electromagnéticas, son <em>clásicas</em>.</p>
+<p>Por el contrario, la interacciones débiles, son <em>peculiares</em> y <em>sorprendentes</em>, poque violan</p>
+<ul class="simple">
+<li><p>la <strong>paridad</strong>, (las cargadas de forma máxima).</p></li>
+</ul>
+<p>Lo que es una caractística esencial de la interacción débil y una de las piezas angulares del Modelo Estándar.</p>
+<ul class="simple">
+<li><p>la inversión conjunta de <strong>carga y paridad</strong>, CP.</p></li>
+</ul>
+<p>Se viola de forma mínima y solo en corrientes cargadas en hadrones, (no sabemos hoy en día si también se viola en leptones). Aunque esta violación es muy relevante, sin embargo no tiene un caracter fundamental en la teoría, sino que aparece como una posibilidad al existir tres generaciones. Tampoco sabemos por qué se produce este nivel de violación CP, que matemáticamente se traduce en el valor de una fase compleja en una matriz unitaria (ver tema quark-hadrones).</p>
+<p>Además, <strong>las corrientes cargadas cambian el sabor, pero las neutras lo conservan</strong>.</p>
+<p>Por ejemplo, la interacción débil neutra entre un neutrino y un leptón cargado iniciales da lugar a una dispersión con el mismo neutrino y leptón cargado en el estado final.</p>
+<p>Luego, la interacción más peculiar de todas, es con diferencia <em>la interacción débil cargada</em>, la que media la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> del neutrón.</p>
 </div>
 </div>
 <div class="section" id="el-boson-de-higgs">
 <h3><span class="section-number">1.3.6. </span>El bosón de Higgs<a class="headerlink" href="#el-boson-de-higgs" title="Permalink to this heading">#</a></h3>
-<p>El bosón de Higgs es un <strong>scalar</strong>, su espín es <span class="math notranslate nohighlight">\(0\)</span>.</p>
-<p>Juega un papel crucial en el SM:</p>
+<p>Ahora sabemos, o entendemos, que las partículas de forma primigenia no tienen masa, y ésta no es una propiedad intrínsica suya, sino que aparece por la interacción de cada tipo de fermión con el bosón de Higgs.</p>
+<p>El bosón de Higgs es un <strong>scalar</strong>, su espín es <span class="math notranslate nohighlight">\(0\)</span>, y obedece a la ecuación de Klein-Gordon.</p>
+<p>Y como vemos juega un papel crucial en el SM:</p>
 <ul class="simple">
 <li><p><strong>dota de masas a las partículas</strong>.</p></li>
-<li><p>dota de masas <strong>a los bosones véctoriales débiles <span class="math notranslate nohighlight">\(W^\pm, Z\)</span></strong>, <strong>manteniendo las simetrías</strong> de la teoría.</p></li>
+<li><p>dota de masas <strong>a los bosones véctoriales débiles <span class="math notranslate nohighlight">\(W^\pm, Z^0\)</span></strong>.</p></li>
 </ul>
-<p>Sin embargo el SM introduce las masas de los fermiones como parámetros libres del modelo.</p>
+<p>Aunque la masa aparece como consecuencia de la interacción con el Higgs, el modelo no predice sin embargo qué masa tienen los fermiones, ni qué masa tiene el Higgs. Lo que hace que las masas sean parámetros libres del modelo.</p>
+<p>El Higgs además presenta interacciones entre otros higgs, con los bosones vectoriales débiles, y con los fermiones, lo que da lugar a la predicción de una física muy rica y compleja que es motivo de estudio actual en el LHC y lo será con seguridad en futuros aceleradores.</p>
 <p>Estudiaremos las características del SM y del bosón de Higgs en el [Tema-SM]</p>
 </div>
 </div>
@@ -1286,6 +1403,7 @@ n \to p + e + \bar{\nu}_e.
 <h2><span class="section-number">1.4. </span>Un repaso a la historia<a class="headerlink" href="#un-repaso-a-la-historia" title="Permalink to this heading">#</a></h2>
 <div class="section" id="hitos-principales">
 <h3><span class="section-number">1.4.1. </span>Hitos principales<a class="headerlink" href="#hitos-principales" title="Permalink to this heading">#</a></h3>
+<p>La siguiente tabla presenta algunos de los hitos principales en Física de Partículas, experimental, teórica y de detectores.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p></p></th>
@@ -1300,13 +1418,17 @@ n \to p + e + \bar{\nu}_e.
 </table>
 <p>A vuelo de pájaro:</p>
 <ul class="simple">
-<li><p>Durante las primeras décadas del siglo XX se descubrieron los componentes del núcleo</p></li>
-<li><p>En las décadas siguientes se descrubrieron hadrones y leptones que se desintegraban (<em>¿Quién ha ordenado ésto? Rabi</em>)</p></li>
+<li><p>Durante las primeras décadas del siglo XX se descubrieron los componentes del núcleo (<em>los componentes de la materia ordinaria: protón, neutrón, electrón, neutrino</em>).</p></li>
+<li><p>En las décadas siguientes se descubrieron nuevos hadrones y leptones que se desintegraban (<em>¿Quién ha ordenado ésto?, ¿por qué este bestiario de nuevas partículas?</em>)</p></li>
 <li><p>A principios de los 60” a partir del estudio de la estructura de los nucleones, se establece la existencia de los quarks (<em>¡orden al fin!</em>)</p></li>
-<li><p>En la década de los 80-90 se confirma el Modelo Estándar (<em>todo encaja, pero falta una pieza, el bosón de Higgs</em>)</p></li>
+<li><p>En las décadas de los 80-90 se confirma el Modelo Estándar (<em>todo encaja, pero falta una pieza, el bosón de Higgs</em>)</p></li>
 <li><p>En el 2012 de descubre el bosón de Higgs (<em>El modelo está completo, pero no es suficiente…</em>)</p></li>
 </ul>
-<p>Los grandes desarrollos de detectores y aceleradores se traducen en descubrimientos científicos.</p>
+</div>
+<div class="section" id="detectores-experimentos-teoria">
+<h3><span class="section-number">1.4.2. </span>Detectores, Experimentos, Teoría<a class="headerlink" href="#detectores-experimentos-teoria" title="Permalink to this heading">#</a></h3>
+<p>Enumeramos ahora como las tres ramas: detectores, experimental y teoría se complementan, y como han influido unas en otras a lo largo de la historia de la Física de Partículas</p>
+<p>Nuevos detectores permiten nuevos descubrimientos:</p>
 <ul class="simple">
 <li><p>Las emulsiones fotográficas permitieron la observación de partículas, <span class="math notranslate nohighlight">\(\mu, \pi\)</span></p></li>
 <li><p>Las centelleadores y los reactores nucleares el descubrimiento del neutrino <span class="math notranslate nohighlight">\(\nu_e\)</span>.</p></li>
@@ -1326,7 +1448,7 @@ n \to p + e + \bar{\nu}_e.
 <li><p>La unificación electro-débil predice las corrientes neutras de neutrinos.</p></li>
 <li><p>La rotura espontánea de simetría postula la existencia del bosón de Higgs.</p></li>
 </ul>
-<p>Los avacen experimentales más relevantes:</p>
+<p>Algunos de los avaces experimentales más relevantes son:</p>
 <ul class="simple">
 <li><p>El descubrimento del positron (antimateria)</p></li>
 <li><p>El descubrimiento de partículas inesperadas: <span class="math notranslate nohighlight">\(\mu, ...\)</span></p></li>
@@ -1334,7 +1456,7 @@ n \to p + e + \bar{\nu}_e.
 <li><p>La violación de Paridad y de CP en corrientes débiles</p></li>
 <li><p>La existencia de los quarks y los gluones</p></li>
 <li><p>La existencia de las corrientes neutras y la verificación del SM</p></li>
-<li><p>La verificación de la matrix de mezclas CKM</p></li>
+<li><p>La verificación de la matrix de mezclas CKM que rige la física del sabor de los hadrones.</p></li>
 <li><p>El descubrimiento de oscilaciones de neutrinos</p></li>
 <li><p>El descubrimiento del bosón de Higgs</p></li>
 </ul>
@@ -1349,28 +1471,20 @@ n \to p + e + \bar{\nu}_e.
 <li><p>El mecanismo de Higgs y Englert.</p></li>
 </ul>
 </div>
-<div class="section" id="sobre-la-materia-del-universo">
-<h3><span class="section-number">1.4.2. </span>Sobre la materia del Universo<a class="headerlink" href="#sobre-la-materia-del-universo" title="Permalink to this heading">#</a></h3>
-<p>El Universo está compuesto por materia. No hay evidencia de partes del Universo estén formadas por antimateria.</p>
-<p>Los átomos están formados por electrones y núcleos, éstos a su vez por protones (que son un trío de quarks (<span class="math notranslate nohighlight">\(uud\)</span>) y neutrones (<span class="math notranslate nohighlight">\(udd\)</span>)).</p>
-<p>El Universo está compuesto pues <strong>por electrones, neutrinos y quarks <span class="math notranslate nohighlight">\((u, d)\)</span>.</strong>
-Decimos que el Universo es de «baja» energía.</p>
-<p>El Universo primigenio estaba a más energía, y existían leptones y quarks (hadrones) de las otras generaciones.</p>
-<p>Conforme el Universo se enfrió solo los elementos estables sobrevivieron.</p>
-<p>No sabemos por qué en el Universo solo sobrevivió la materia dado que inicialmente debió existir la misma cantidad de partículas que anti-partículas.</p>
-<p>Aún es más grave, solo el ~5% del Universo es materia conocida, el ~26% es materia oscura, que hemos detectado gravitacionalmente.</p>
-</div>
-<div class="section" id="algunas-preguntas-sin-respuesta">
-<h3><span class="section-number">1.4.3. </span>Algunas preguntas sin respuesta<a class="headerlink" href="#algunas-preguntas-sin-respuesta" title="Permalink to this heading">#</a></h3>
+<div class="section" id="preguntas-sin-respuesta">
+<h3><span class="section-number">1.4.3. </span>Preguntas sin respuesta<a class="headerlink" href="#preguntas-sin-respuesta" title="Permalink to this heading">#</a></h3>
+<p>Aún quedan por resolver bastantes preguntas de las que no conocemos la respuesta:</p>
 <ul class="simple">
+<li><p>¿Se conserva el número bariónico? ¿Se desintegra el protón?</p></li>
+<li><p>¿Se conserva el número leptónico? ¿Es el neutrino su propia anti-partícula?</p></li>
 <li><p>¿Son los quarks y leptones elementales? ¿Y el bosón de Higgs?</p></li>
 <li><p>¿Por qué hay 3 generaciones?</p></li>
-<li><p>¿Hay un patrón de masas de los fermiones?</p></li>
-<li><p>¿Por qué hay tanta disparidad de masas entre el neutrino y el resto de fermiones?</p></li>
-<li><p>¿Es el neutrino su propia anti-partícula?</p></li>
+<li><p>¿Hay un patrón que explique las masas de los fermiones?</p></li>
+<li><p>¿Por qué hay tanta disparidad de masas entre el neutrino y el resto de fermiones? ¿Se acopla el neutrino al bosón de Higgs?</p></li>
 <li><p>¿Por qué el Universo está formado por materia y no por anti-materia? ¿Qué paso con la anti-materia del Universo?</p></li>
 <li><p>¿Qué forma la materia oscura?</p></li>
 </ul>
+<p>Si tenemos en cuenta que la materia del Universo que conocemos o decimos conocer supone un 5% del total, nos damos cuenta que queda aún mucho camino por recorrer…</p>
 </div>
 <div class="section" id="nomenclatura">
 <h3><span class="section-number">1.4.4. </span>Nomenclatura:<a class="headerlink" href="#nomenclatura" title="Permalink to this heading">#</a></h3>

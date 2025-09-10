@@ -1,0 +1,785 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14. Boletín de problemas III &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="15. Boletín de problemas IV" href="problemas-IV.html" />
+    <link rel="prev" title="13. Boletín de problemas II" href="problemas-II.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../introduccion.html">
+   1. Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../observables.html">
+   2. Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../leptones.html">
+   3. Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../quarks_hadrons.html">
+   4. Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sm.html">
+   5. Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-cinematica.html">
+   6. Extensión: cinemática
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-dirac.html">
+   7. Extensión: La ecuación de Dirac
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-trans-Lorentz.html">
+   8. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-grupos.html">
+   9. Extensión: grupos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-sm.html">
+   10. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-prel.html">
+   11. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-I.html">
+   12. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-II.html">
+   13. Boletín de problemas II
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   14. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-IV.html">
+   15. Boletín de problemas IV
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/probs/problemas-III.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/probs/problemas-III.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/notebooks/probs/problemas-III.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Boletín de problemas III</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="section" id="boletin-de-problemas-iii">
+<h1><span class="section-number">14. </span>Boletín de problemas III<a class="headerlink" href="#boletin-de-problemas-iii" title="Permalink to this heading">#</a></h1>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Noviembre 2021</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Dec 18 20:19:41 2024
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>ejercicio 1</strong></p>
+<p>Para medir la sección eficaz de la interacción <span class="math notranslate nohighlight">\(\pi^+ + p\)</span> enviamos un haz de <span class="math notranslate nohighlight">\(\pi^+\)</span> de 20 GeV de energía a un tanque de longitud <span class="math notranslate nohighlight">\(L = 1\)</span> m, que en una primera configuración está vacío y luego lleno de hidrógeno líquido, y medimos los flujos tras el tanque normalizados al mismo flujo incidente y obtenemos <span class="math notranslate nohighlight">\(N_0 = 7.5 \times 10^5\)</span> y <span class="math notranslate nohighlight">\(N_H = 6.9 \times 10^5\)</span> respectivamente. Calcula la sección eficaz y su error estadístico. Datos: <span class="math notranslate nohighlight">\(\rho_H = 60\)</span> <span class="math notranslate nohighlight">\(\mathrm{kg/cm}^3\)</span></p>
+<p><em>solución</em></p>
+<p>El número de eventos después del tanque es <span class="math notranslate nohighlight">\(N_0\)</span> y <span class="math notranslate nohighlight">\(N_H\)</span>, luego el número de eventos que se han producido al pasar el tanque con H es
+<span class="math notranslate nohighlight">\(N_0 - N_H\)</span></p>
+<p>luego:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{(N_0 - N_H)}{L} \frac{M_H}{N_A \rho_H}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(n = N_A \rho_H/M_H\)</span>, <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, y <span class="math notranslate nohighlight">\(M_H\)</span> la masa molar del Hidrógeno.</p>
+<p>El error estará asociado al error en el número de eventos que viene dado por <span class="math notranslate nohighlight">\(\sqrt{N_0 + N_H}\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">N0</span>  <span class="o">=</span> <span class="mf">7.5e5</span>
+<span class="n">NH</span>  <span class="o">=</span> <span class="mf">6.9e5</span>
+<span class="n">NA</span>  <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">N_A</span>
+<span class="n">L</span>   <span class="o">=</span> <span class="mi">100</span> <span class="c1"># cm</span>
+<span class="n">rho</span> <span class="o">=</span> <span class="mf">60e3</span> <span class="c1"># g/cm3</span>
+<span class="n">MH</span>  <span class="o">=</span> <span class="mf">2.015</span> <span class="c1">#g/mol</span>
+
+<span class="n">sigma</span> <span class="o">=</span> <span class="p">((</span><span class="n">N0</span> <span class="o">-</span> <span class="n">NH</span><span class="p">)</span><span class="o">/</span><span class="n">L</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">MH</span><span class="o">/</span><span class="p">(</span><span class="n">NA</span><span class="o">*</span><span class="n">rho</span><span class="p">))</span> <span class="c1"># cm2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sigma </span><span class="si">{:1.2e}</span><span class="s1"> b&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sigma</span> <span class="o">*</span> <span class="mf">1e24</span><span class="p">))</span>
+<span class="n">usigma</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">N0</span> <span class="o">+</span> <span class="n">NH</span><span class="p">)</span><span class="o">/</span><span class="n">L</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">MH</span><span class="o">/</span><span class="p">(</span><span class="n">NA</span><span class="o">*</span><span class="n">rho</span><span class="p">))</span> <span class="c1"># cm2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;error estadístico </span><span class="si">{:1.2e}</span><span class="s1"> b&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">usigma</span> <span class="o">*</span> <span class="mf">1e24</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sigma 3.35e-02 b
+error estadístico 6.69e-04 b
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>ejercicio 2</strong></p>
+<p>Los muones de alta energía pierden energía atravesando la materia según:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{\rho} \frac{\mathrm{d}E}{\mathrm{d}x} \simeq a + b \,E 
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(a \simeq 2.5 \; \mathrm{MeV \, cm^2 /g}\)</span> está asociado a la pérdida por ionización y <span class="math notranslate nohighlight">\(b \simeq 3.5 \times 10^{-6} \, \mathrm{cm^2/g}\)</span> a Bremsstrahlung para el caso de tratarse de roca. Considerar <span class="math notranslate nohighlight">\(A = 22, \; Z=11\)</span> y <span class="math notranslate nohighlight">\(\rho = 2.65 \; \mathrm{g/cm^3}\)</span>.</p>
+<p>¿A qué energía la pérdida de energía por ionización es igual a la de Bremsstrahlung? ¿Cuanta distancia recorre en promedio un muon cósmico de 100 GeV en roca?</p>
+<p><em>solución</em></p>
+<p>La energía a la que son comparables es: <span class="math notranslate nohighlight">\( a = b E \to E  = a/b\)</span></p>
+<p>La pérdida de energía por distancia de un muón de <span class="math notranslate nohighlight">\(E = 100\)</span> en la roca es:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}E}{\mathrm{d}x} \simeq (a + b \,E) \rho
+\]</div>
+<p>Luego la distancia hasta que se detenga considerando la pérdida siempre similar</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{d}x = \frac{\mathrm{dE}}{(a + b E) \rho}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+L = \frac{1}{\rho b} \ln{\frac{a + b E}{a}}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">2.5</span> <span class="c1"># MeV cm2/g</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">3.5e-6</span> <span class="c1"># cm2/g</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Energy </span><span class="si">{:1.2f}</span><span class="s2"> GeV&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.e-3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Energy 714.29 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Emu</span> <span class="o">=</span> <span class="mf">100e3</span> <span class="c1"># MeV</span>
+<span class="n">rho</span> <span class="o">=</span> <span class="mf">2.65</span> <span class="c1"># g/cm3</span>
+<span class="n">dEdx</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">*</span> <span class="n">Emu</span><span class="p">)</span> <span class="o">*</span> <span class="n">rho</span> <span class="c1"># MeV/cm</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dE/dx </span><span class="si">{:1.2f}</span><span class="s1"> MeV/cm&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dEdx</span><span class="p">))</span>
+<span class="n">L</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">*</span> <span class="n">Emu</span><span class="p">)</span><span class="o">/</span><span class="n">a</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">rho</span><span class="o">*</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;length </span><span class="si">{:1.2f}</span><span class="s1"> m&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">L</span> <span class="o">*</span> <span class="mf">1e-2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dE/dx 7.55 MeV/cm
+length 141.27 m
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>ejercicio 3</strong></p>
+<p>Calcula la distancia que deben recorrer en Pb un haz 10 GeV de muones, fotones y neutrinos. Considerar la sección eficaz del neutrino <span class="math notranslate nohighlight">\(\sigma = 10^{-46}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^{2}\)</span>, la densidad del Pb <span class="math notranslate nohighlight">\(\rho = \)</span> y su longitud de radiación <span class="math notranslate nohighlight">\(X_0 = 0.56\)</span> cm.</p>
+<hr class="docutils" />
+<p><strong>ejercicio 4</strong></p>
+<p>Considera dos partículas de masas <span class="math notranslate nohighlight">\(m_1, m_2\)</span> con el mismo momento <span class="math notranslate nohighlight">\(p\)</span>, si situamos dos detectores de centelleo a una distancia <span class="math notranslate nohighlight">\(L\)</span> que las partículas atriesan perpendicularmente, ¿Cuál es la diferencia temporal entre la llegada de las dos partículas al segundo centelleador? Si la resolución temporal de los centelleadores es de 300 ps, ¿A qué distancia deben estar situados los centelleadores para separar <span class="math notranslate nohighlight">\(\pi\)</span> de <span class="math notranslate nohighlight">\(K\)</span> de 4 GeV de momento a 3 desviaciones estándar?</p>
+<p><em>solución</em></p>
+<p>La velocidad de una partícula es:</p>
+<div class="math notranslate nohighlight">
+\[
+\beta = \frac{p}{E} = \frac{p}{\sqrt{p^2 +m^2}} = \frac{1}{\sqrt{1+(m/p)^2}}  \simeq1 - \frac{m^2}{2p^2}
+\]</div>
+<p>La diferencia del tiempo de llegada al segundo centelleador es:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta t = L \frac{m^2_2 - m^2_1}{p^2}
+\]</div>
+<p>Y para separar las dos partículas si la resolución es <span class="math notranslate nohighlight">\(\sigma\)</span>, exigimos <span class="math notranslate nohighlight">\(\Delta t \gt 3 \sigma\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m_pi</span> <span class="o">=</span> <span class="mf">0.139</span> <span class="c1"># GeV</span>
+<span class="n">m_K</span>  <span class="o">=</span> <span class="mf">0.493</span> <span class="c1"># GeV</span>
+<span class="n">pp</span>   <span class="o">=</span> <span class="mi">4</span>     <span class="c1"># GeV</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mf">300e-12</span> <span class="c1"># s</span>
+<span class="n">nn</span>   <span class="o">=</span> <span class="mi">3</span> <span class="c1"># number of sigmas</span>
+<span class="n">cc</span>   <span class="o">=</span> <span class="mf">3e8</span> <span class="c1"># m/s</span>
+
+<span class="n">L</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">nn</span> <span class="o">*</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">cc</span> <span class="o">*</span> <span class="p">(</span><span class="n">pp</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">m_K</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">m_pi</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;distance L &#39;</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>distance L  38.61832224844454
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>ejercicio 5</strong></p>
+<p>Considera un espectrométro de longitud <span class="math notranslate nohighlight">\(L\)</span> y campo magnético <span class="math notranslate nohighlight">\(B\)</span> y tres cámaras de detección situadas antes, en el medio y después del espectrómetro, que nos permiten estimar la sagitta <span class="math notranslate nohighlight">\(s = x_2 - (x_3+x_1)/2\)</span>, calcula el momento transverso de la partícula y su incertidumbre si la resolución de cada cámara es <span class="math notranslate nohighlight">\(\sigma_x\)</span>. Considerar <span class="math notranslate nohighlight">\(\theta\)</span> pequeño.</p>
+<a class="reference internal image-reference" href="notebooks/probs/imgs/prob_sagitta.png"><img alt="notebooks/probs/imgs/prob_sagitta.png" class="align-center" src="notebooks/probs/imgs/prob_sagitta.png" style="width: 200px;" /></a>
+<p><em>solución</em></p>
+<p>La relación entre el momento transverso, <span class="math notranslate nohighlight">\(p_T\)</span> (GeV), el campo magnético <span class="math notranslate nohighlight">\(B\)</span> (T) y el radio de curvatura es <span class="math notranslate nohighlight">\(R\)</span> (m)</p>
+<div class="math notranslate nohighlight">
+\[
+p_T = 0.3 B R
+\]</div>
+<p>por otro lado la relación entre la sagitta y su ángulo, si <span class="math notranslate nohighlight">\(\theta\)</span> pequeño:</p>
+<div class="math notranslate nohighlight">
+\[
+s = R (1- \cos \theta/2) \simeq \frac{R \theta^2}{8}, \;\;\; L = 2 R \sin \theta/2 \simeq R \theta
+\]</div>
+<p>luego</p>
+<div class="math notranslate nohighlight">
+\[
+s = R \frac{L^2}{8R^2} = \frac{L^2}{8 R} = 0.3 \frac{BL^2}{8 p_T}
+\]</div>
+<p>esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+p_T = 0.3 \frac{BL^2}{8s}
+\]</div>
+<p>La resolución en <span class="math notranslate nohighlight">\(p_T\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{p_T} = p_T \frac{\sigma_s}{s} \to \frac{\sigma_{p_T}}{p_T} = \frac{\sigma_s}{s}
+\]</div>
+<p>y la incertidumbre en la sagitta:</p>
+<div class="math notranslate nohighlight">
+\[
+s = \sqrt{3} \sigma_x
+\]</div>
+<p>luego:</p>
+<p>$$
+\sigma_{p_T} = 0.3 \frac{BL^2}{8s^2} \sqrt{3} \sigma_x</p>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>El detector de vértices del LHCb está formado por sensores de silicio posicionados verticalmetne a distintas distancias de <span class="math notranslate nohighlight">\(z\)</span>, siendo <span class="math notranslate nohighlight">\(z\)</span> el eje de colisión. Sea la resolución espacial de cada plano <span class="math notranslate nohighlight">\(\sigma_0\)</span> en la dirección <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span>. Considera los dos primeros puntos que deja una partícula, en los planos situados en <span class="math notranslate nohighlight">\(z_1, z_2\)</span>, y que no existe campo magnético en la zona de interacción (lo que es el caso en el LHCb). Estima la resolución del parámetro de impacto en el plano transverso. Decimos que el parámetro de impacto es la distancia de la extrapolación de la traza al vértice primario (con coordenadas <span class="math notranslate nohighlight">\((x_v, y_v, z_v)\)</span>.  Esta resolución es fundamental para determinar si las partículas que provienen del vértice de interacción.</p>
+<p>Pero al atravesar el sensor, la traza sufre un pequeño error en el ángulo debido al <em>multiple scattering</em> que podemos parametrizar por <span class="math notranslate nohighlight">\(\theta_0 = k/p f(x/X0)\)</span>, donde <span class="math notranslate nohighlight">\(k\)</span> es una constante y <span class="math notranslate nohighlight">\(f(x/X_0)\)</span> una función que depende de la distancia, <span class="math notranslate nohighlight">\(x\)</span>, y del material, <span class="math notranslate nohighlight">\(X_0\)</span>, que atraviesa la partícula, y <span class="math notranslate nohighlight">\(p\)</span> el momento de la partícula. Muestra la dependencia de la resolución del parámetro de impacto con respecto el momento transverso. ¿Qué resolución tienen las trazas de alto momento transverso comparadas con las de bajo?</p>
+<hr class="docutils" />
+<p><strong>cuestión 1</strong></p>
+<p>Un experimiento ha diseñado un sistema de disparo basado en seleccionar un muón que con un momento transverso bajo <span class="math notranslate nohighlight">\(p_T &gt; 4\)</span> GeV (LPT) y otro de alto momento con <span class="math notranslate nohighlight">\(p_T &gt;\)</span> 20 GeV (HPT). La eficiencia en un muon de la desintegración <span class="math notranslate nohighlight">\(Z \to \mu + \mu^+\)</span> es de 89% y 62% para el LPT y HPT respectivamente. ¿Cuál sería la eficinia para un trigger basado en dos muones con las siguientes configuraciones: a) LPT1 y LPT2, 2) HPT2 o HPT2?</p>
+<p><em>solución</em></p>
+<ol class="simple">
+<li><p>para LPT2 &amp; LPT2</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\epsilon = \epsilon^2_{LPT}
+\]</div>
+<ol class="simple">
+<li><p>para HPT1 OR HPT2</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\epsilon = 2 \epsilon_{HPT} - \epsilon^2_{HPT}
+\]</div>
+<hr class="docutils" />
+<p><strong>cuestión 2</strong></p>
+<p>Para caracterizar los detectores de trazas, estimamos la eficiencia de reconstrucción, que puede depender del momento <span class="math notranslate nohighlight">\(p\)</span> de la partícula, o de su dirección <span class="math notranslate nohighlight">\({\bf p}\)</span>. Una forma habitual de estimar la eficiencia de las cámaras de muones es seleccionar eventos donde el mesón <span class="math notranslate nohighlight">\(J/\Psi\)</span> se desintegra a dos muones, usando a la vez las trazas de la cámaras de muones y el sistema de tracking del experimento. ¿Podrías diseñar una estrategia para calcular la eficiencia de las cámaras de muones a partir de los eventos <span class="math notranslate nohighlight">\(J/\Psi \to \mu + \mu^+\)</span>?</p>
+<p><em>solucion</em></p>
+<p>Seleccionamos eventos con dos trazas que forman la masa invariange del <span class="math notranslate nohighlight">\(J/Psi\)</span> y que uno de ellos sean un muón identificado por las cámaras de muones, la otra traza sará nuetra traza prueba. Sabemos que tiene que ser un muón por la desintegración <span class="math notranslate nohighlight">\(J/\Psi \to \mu + \mu^+\)</span> pero no hemos verificado si las cámaras de muones la detectraros.
+Usando la trazs prueba podemos estudiar la eficiencia de las cámaras en función de <span class="math notranslate nohighlight">\(\text{p}\)</span> o <span class="math notranslate nohighlight">\(p_T\)</span>.</p>
+<hr class="docutils" />
+<p><strong>ejercicio 7</strong></p>
+<p>Un experimento de neutrinos opera cerca de una central nuclear. La estimación de esperimento es que interaccionan 1.2 neutrinos al día provinientes de la central, pero que la eficiencia de detección es del 62%. Primero operaron el detector mientras la central estuvo parada durante 50 días -por una protestas- y observaron 3 eventos similares a los esperados. ¿Qué probabilidad hay de que cuando la central entré en funcionamiento observe al menos 1 evento el primer día? Si se observa un evento ¿cuál es la probabilidad de que sea espúreo?</p>
+<p>Recordatorio del teorema de Bayes: <span class="math notranslate nohighlight">\(P(A | B) P(B) = P (B | A) P(A)\)</span>, donde <span class="math notranslate nohighlight">\(P(A | B)\)</span> es la probabilidad de que suceda <span class="math notranslate nohighlight">\(A\)</span> si sucedió <span class="math notranslate nohighlight">\(B\)</span> y <span class="math notranslate nohighlight">\(P(B)\)</span> es la probabilidad de que suceda <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p><em>solución</em></p>
+<p>Se trata de un ejercicio de estadística.</p>
+<p>Si en m días se observarion n eventos, el valor esperado del fondo es <span class="math notranslate nohighlight">\(\mu = n/m\)</span>, que seguirá una distribución de Poisson. La probabilidad de que observemos algún evento debido a <span class="math notranslate nohighlight">\(p_\mu(n \gt 1) = 1 - p(0 | \mu)\)</span>, siendo <span class="math notranslate nohighlight">\(p(n | \mu)\)</span> la probabilidad de Poisson.</p>
+<p>Por otro lado la media estimada de la interacción de neutrinos de la central es <span class="math notranslate nohighlight">\(\nu = 1.2\)</span>, pero éstos se detectan con una eficiencia <span class="math notranslate nohighlight">\(\epsilon\)</span> (en fracción). Luego la probabilidad será <span class="math notranslate nohighlight">\((1 - p(0 | \epsilon * \mu))\)</span>.</p>
+<p>Luego la probabilidad de observar <span class="math notranslate nohighlight">\(n \gt 1\)</span> eventos será:</p>
+<div class="math notranslate nohighlight">
+\[
+p(n) = 1 - p(0 | \mu + \epsilon \nu)
+\]</div>
+<p>La probabilidad de observan un evento es:</p>
+<div class="math notranslate nohighlight">
+\[
+p(1) = p(1|\mu) \, p(0| \epsilon \nu) + p(0 | \mu) p(1 | \epsilon \nu)
+\]</div>
+<p>la probabilidad de que venga de bkg es que no venga de señal,</p>
+<div class="math notranslate nohighlight">
+\[
+p(\mu) = p(0 | \epsilon \nu)
+\]</div>
+<p>Luego por Bayes”</p>
+<div class="math notranslate nohighlight">
+\[
+p(\mu | 1) = \frac{p(1|\mu) p(0 | \epsilon \nu)}{p(1|\mu) \, p(0| \epsilon \nu) + p(0 | \mu) p(1 | \epsilon \nu)}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">poisson</span><span class="p">,</span> <span class="n">binom</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">nu</span><span class="p">,</span> <span class="n">mu</span> <span class="o">=</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">3.</span><span class="o">/</span><span class="mf">50.</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.62</span>
+
+<span class="n">ndays</span> <span class="o">=</span> <span class="mi">10000000</span>
+<span class="n">nsig</span>  <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">ndays</span><span class="p">)</span> 
+<span class="n">nsig</span>  <span class="o">=</span> <span class="n">binom</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">nsig</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">ndays</span><span class="p">)</span> 
+<span class="n">nbkg</span>  <span class="o">=</span> <span class="n">poisson</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">ndays</span><span class="p">)</span>
+<span class="n">nobs</span>  <span class="o">=</span> <span class="n">nsig</span> <span class="o">+</span> <span class="n">nbkg</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">nobs</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">nsig</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">);</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">nobs</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">ndays</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;probabilidad de observar &gt;= 1 </span><span class="si">{:4.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p1</span><span class="p">))</span>
+
+<span class="n">A</span>   <span class="o">=</span> <span class="n">nobs</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="n">B_A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">((</span><span class="n">nbkg</span> <span class="o">==</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">nobs</span> <span class="o">==</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">pbkg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">B_A</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;probilidad de que 1 evento ser espúreo </span><span class="si">{:4.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pbkg</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>probabilidad de observar &gt;= 1 0.5524
+probilidad de que 1 evento ser espúreo 0.0747
+</pre></div>
+</div>
+<img alt="../../_images/problemas-III_24_1.png" src="../../_images/problemas-III_24_1.png" />
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>problema 8</strong></p>
+<p>Estima la sección la eficaz (y sus errores estadísticos y sistemáticos) de <span class="math notranslate nohighlight">\(e+e^+ \to \pi^+ + \pi^-\)</span> a <span class="math notranslate nohighlight">\(\sqrt{s} = 1\)</span> GeV con los datos que obtuvo el siguiente experimento:
+con una lumonisidad integrada de <span class="math notranslate nohighlight">\(\mathcal{L}_{int} = 2.43\)</span> <span class="math notranslate nohighlight">\(\mathrm{fb}^{-1}\)</span>, se observaron 128 eventos candidatos, la eficiencia de selección se estimó en <span class="math notranslate nohighlight">\(\epsilon = 52 \pm 0.2\)</span> % y el fondo de contaminación en <span class="math notranslate nohighlight">\(14\pm 1.8\)</span> eventos.</p>
+<p>La sección eficaz se espera teóricamente que sea:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma(s) = \frac{\pi \alpha^2}{s} \beta^3_\pi |F(s)|^2
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\beta_\pi\)</span> es la <span class="math notranslate nohighlight">\(\beta\)</span> del pión, <span class="math notranslate nohighlight">\(\alpha\)</span> la constante de estrutura fina, y <span class="math notranslate nohighlight">\(F(s)\)</span> es un factor teórico. ¿Puedes estimar el valor y la incertidumbre de <span class="math notranslate nohighlight">\(F(s)\)</span> a partir de las medidas del experimento?</p>
+<hr class="docutils" />
+<p><strong>cuestión</strong></p>
+<p>Sea un colisionador con dos haces de <span class="math notranslate nohighlight">\(n\)</span> paquetes que contienen <span class="math notranslate nohighlight">\(N\)</span> partículas, y que recorren en anillo con una frecuencia <span class="math notranslate nohighlight">\(\nu\)</span>, al colisionar se reducen los paquetes a una sección de radio <span class="math notranslate nohighlight">\(\sigma\)</span>, ¿Cuál es la luminosidad del colisionador?</p>
+<p>Sería:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L} = n \nu \frac{N^2}{\pi \sigma^2}
+\]</div>
+<p><span class="math notranslate nohighlight">\(n\)</span> paquetes con <span class="math notranslate nohighlight">\(N\)</span> partículas cruzan con una frecuenca <span class="math notranslate nohighlight">\(\nu\)</span> una sección <span class="math notranslate nohighlight">\(\pi \sigma^2\)</span> contra un blanco (el otro paquete) de <span class="math notranslate nohighlight">\(N\)</span> partículas.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks/probs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="problemas-II.html" title="anterior página">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title"><span class="section-number">13. </span>Boletín de problemas II</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="problemas-IV.html" title="siguiente página">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>Boletín de problemas IV</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

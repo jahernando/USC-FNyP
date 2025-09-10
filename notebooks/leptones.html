@@ -144,17 +144,52 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ext-cinematica.html">
-   6. Fundamentos de cinemática
+   6. Extensión: cinemática
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ext-dirac.html">
-   7. Fundamentos de la ecuación de Dirac
+   7. Extensión: La ecuación de Dirac
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-trans-Lorentz.html">
+   8. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ext-grupos.html">
+   9. Extensión: grupos
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ext-sm.html">
-   8. Fundamentos del Modelo Estándar
+   10. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-prel.html">
+   11. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-I.html">
+   12. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-II.html">
+   13. Boletín de problemas II
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-III.html">
+   14. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="probs/problemas-IV.html">
+   15. Boletín de problemas IV
   </a>
  </li>
 </ul>
@@ -425,8 +460,8 @@ title="Print to PDF"
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#proyeccion-de-quiralidad">
-       3.3.2.3. Proyección de quiralidad
+      <a class="reference internal nav-link" href="#la-quiralidad">
+       3.3.2.3. La quiralidad
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -447,8 +482,18 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#espinores-de-weyl">
+     3.3.5. Espinores de Weyl
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-neutrino-en-el-sm">
+     3.3.6. El neutrino en el SM
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#desintegracion-del-pion">
-     3.3.5. Desintegración del pión
+     3.3.7. Desintegración del pión
     </a>
    </li>
   </ul>
@@ -571,8 +616,8 @@ title="Print to PDF"
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#proyeccion-de-quiralidad">
-       3.3.2.3. Proyección de quiralidad
+      <a class="reference internal nav-link" href="#la-quiralidad">
+       3.3.2.3. La quiralidad
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -593,8 +638,18 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#espinores-de-weyl">
+     3.3.5. Espinores de Weyl
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#el-neutrino-en-el-sm">
+     3.3.6. El neutrino en el SM
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#desintegracion-del-pion">
-     3.3.5. Desintegración del pión
+     3.3.7. Desintegración del pión
     </a>
    </li>
   </ul>
@@ -648,9 +703,6 @@ title="Print to PDF"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="sobre-los-leptones">
 <h1><span class="section-number">3. </span>Sobre los leptones<a class="headerlink" href="#sobre-los-leptones" title="Permalink to this heading">#</a></h1>
-<p>Jose A. Hernando</p>
-<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
-<p>Noviembre 2023</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
@@ -659,7 +711,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Dec 11 17:52:49 2023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Dec  5 13:35:49 2024
 </pre></div>
 </div>
 </div>
@@ -841,8 +893,8 @@ d = \, \gamma \, \beta \, \tau \, c, \;\; \gamma = \frac{E}{m}, \; \beta = \frac
 <li><p>en 1975 M. Perl en el colisionador <span class="math notranslate nohighlight">\(e^+e^-\)</span> de SLAC descubrió <strong>el tau</strong> en la producción de pares <span class="math notranslate nohighlight">\(e+e^+ \to \tau+\tau^+\)</span>, donde éstos se desintegraban leptónicamente <span class="math notranslate nohighlight">\(\tau \to\mu +\bar{\nu}_\mu + \nu_\tau\)</span></p></li>
 </ul>
 <ul class="simple">
-<li><p>En 1930 <strong>Pauli</strong> propuso <strong>el neutrino</strong> como solución desperada para resolver el problema de la no conservación de energía y momento en las desintegraciones <span class="math notranslate nohighlight">\(\beta\)</span>, la existencia de una partícula neutra de pequeña masa que escaparía indetectada.</p></li>
-<li><p>En 1956 <strong>Reines y Cowan</strong> detectaron el <span class="math notranslate nohighlight">\(\nu_e\)</span>. A partir del flujo intenso de neutrinos del reactor nuclear de Savannah, Carolina del Sur, detectaron la interacción inversa <span class="math notranslate nohighlight">\(\bar{\nu}_e + p \to e^+ +n \)</span> en un detector con líquido centelleador y agua como blanco.</p></li>
+<li><p>En 1930 <strong>Pauli</strong> propuso <strong>el neutrino</strong> como solución desperada para resolver el problema de la no conservación de energía y momento en las desintegraciones <span class="math notranslate nohighlight">\(\beta\)</span>, la existencia de un fermión neutro de pequeña masa que escaparía indetectada.</p></li>
+<li><p>En 1956 <strong>Reines y Cowan</strong> detectaron el <span class="math notranslate nohighlight">\(\nu_e\)</span>. A partir del flujo intenso de neutrinos del reactor nuclear de Savannah, Carolina del Sur, detectaron la interacción <span class="math notranslate nohighlight">\(\beta\)</span> inversa <span class="math notranslate nohighlight">\(\bar{\nu}_e + p \to e^+ +n \)</span> en un detector con líquido centelleador y agua como blanco.</p></li>
 <li><p>En 1962 Schwartz, Lederman y Steinberger descubrieron el <span class="math notranslate nohighlight">\(\nu_\mu\)</span> con el haz de <span class="math notranslate nohighlight">\(\nu_\mu\)</span> producido en el AGS de Brookhaven, Nueva York, con un detector de placas alternadas de material pasivo y cámaras de chispas. Demostraron que los <span class="math notranslate nohighlight">\(\nu_\mu\)</span> son distintos a los <span class="math notranslate nohighlight">\(\nu_e\)</span> y que aparecen en parejas con sus fermiones cargados <span class="math notranslate nohighlight">\(\mu\)</span>.</p></li>
 <li><p>En 2001 la colaboración DONUT de Fermilab en emulsiones fotográficas observó la primera interacción de un <span class="math notranslate nohighlight">\(\nu_{\tau}\)</span>.</p></li>
 </ul>
@@ -904,7 +956,7 @@ d = \, \gamma \, \beta \, \tau \, c, \;\; \gamma = \frac{E}{m}, \; \beta = \frac
 </tr>
 </tbody>
 </table>
-<p>F. Reines and C. L. Cowan detectaron el neutrino con la interacción <span class="math notranslate nohighlight">\(\beta\)</span> inversa usando el flujo de neutrinos, <span class="math notranslate nohighlight">\(\Phi \simeq 10^{17}\)</span> <span class="math notranslate nohighlight">\(\nu\mathrm{/(m^2 \, s)}\)</span>, generado en el reactor nuclear de Savanna River, SC, EEUU.</p>
+<p>F. Reines and C. L. Cowan detectaron el neutrino con la interacción <span class="math notranslate nohighlight">\(\beta\)</span> inversa usando el flujo de neutrinos, <span class="math notranslate nohighlight">\(\Phi \simeq 10^{17}\)</span> <span class="math notranslate nohighlight">\(\nu\mathrm{/(m^2 \, s)}\)</span>, generado en el reactor nuclear de Savanna River, SC, EE.UU.</p>
 <p>Se trataba de un contador de positrones (detectaban simultaneamente en los centelleadores gammas de 511 keV provinientes de la aniquilación del positrón) en coincidencia retardada con la detección de los gammas emitidos en la captura del neutrón por un núcleo de Cd.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -928,24 +980,18 @@ d = \, \gamma \, \beta \, \tau \, c, \;\; \gamma = \frac{E}{m}, \; \beta = \frac
 <h3><span class="section-number">3.3.1. </span>Universalidad leptónica<a class="headerlink" href="#universalidad-leptonica" title="Permalink to this heading">#</a></h3>
 <p>La <strong>Universalidad leptónica</strong> nos dice que la intensidad del acoplo de los vértices de las corrientes cargadas es igual para las tres generaciones de leptones.</p>
 <p>Vamos a probar con los datos experimentales, que efectivamente es así.</p>
-<p>Podemos suponer que en las corrientes de Fermi la constante <span class="math notranslate nohighlight">\(G^\alpha_F\)</span>, con <span class="math notranslate nohighlight">\(\alpha = e, \mu, \tau\)</span> es <em>distinta para cada sabor</em>.</p>
+<p>Podemos suponer que en la constante de acoplo débil <span class="math notranslate nohighlight">\(g_W^\alpha\)</span>, con <span class="math notranslate nohighlight">\(\alpha = e, \mu, \tau\)</span> es <em>distinta para cada sabor</em>.</p>
 <p>La anchura de desintegración del <span class="math notranslate nohighlight">\(\mu\)</span>, que se calcula en un curso más avanzado, es:</p>
 <div class="math notranslate nohighlight">
 \[
-\Gamma (\mu \to e + \bar{\nu}_e + \nu_\mu) \equiv  \frac{1}{\tau_\mu} = \frac{G^e_F G^\mu_F m^5_\mu}{192 \pi^3},
+\Gamma (\mu \to e + \bar{\nu}_e + \nu_\mu) \equiv  \frac{1}{\tau_\mu} = \frac{G^2_F m^5_\mu}{192 \pi^3} = \frac{g^4_W}{32 m^4_W} \frac{m^5_\mu}{192 \pi^3}
 \]</div>
 <p><em>Cuestión</em>: verifica que las dimensiones en la fórmula de la anchura de desintegración son correctas.</p>
-<p>Donde <span class="math notranslate nohighlight">\(G^{e}_F, (G^\mu_F)\)</span> aparece del cuadrado de <span class="math notranslate nohighlight">\(g^{(e)}_W (g^{(\mu)}_W)\)</span> en <span class="math notranslate nohighlight">\(|M_{fi}|^2\)</span> asociados a cada vértice.</p>
-<div class="math notranslate nohighlight">
-\[
-G^e_F = \frac{\sqrt{2}}{8} \frac{(g_W^{(e)})^2}{m^2_W}, \;\;\; 
-G^\mu_F = \frac{\sqrt{2}}{8} \frac{(g_W^{(\mu)})^2}{m^2_W}, 
-\]</div>
-<p>Para la desintegración <span class="math notranslate nohighlight">\(\tau \to e + \bar{\nu}_e + \nu_\tau\)</span> intervendrán las constantes <span class="math notranslate nohighlight">\(G^\tau_F\)</span> en la corriente tauónica y <span class="math notranslate nohighlight">\(G^e_F\)</span> en la eléctrica.</p>
+<p>Para la desintegración <span class="math notranslate nohighlight">\(\tau \to e + \bar{\nu}_e + \nu_\tau\)</span> intervendrán las constantes <span class="math notranslate nohighlight">\(g^\tau_W\)</span> en la corriente tauónica y <span class="math notranslate nohighlight">\(g^e_W\)</span> en la eléctrica, que pueden ser diferentes.</p>
 <p>La anchura de desintegración parcial:</p>
 <div class="math notranslate nohighlight">
 \[
-\Gamma (\tau \to e + \bar{\nu}_e + \nu_\tau) = \frac{G^\tau_F G^e_F m^5_\tau}{192 \pi^3},
+\Gamma (\tau \to e + \bar{\nu}_e + \nu_\tau) = \frac{(g^\tau_W)^2 (g^e_W)^2}{32 m^4_W} \frac{m^5_\tau}{192 \pi^3},
 \]</div>
 <p>La anchura de desintegración total es la suma de las parciales: <span class="math notranslate nohighlight">\(\Gamma = \sum_i \Gamma \equiv 1/\tau_\tau\)</span>, y la fracción de desintegración, <span class="math notranslate nohighlight">\(Br\)</span>, se relaciona con la anchura total y parcial por:</p>
 <div class="math notranslate nohighlight">
@@ -961,12 +1007,12 @@ Br(\tau \to e + \bar{\nu}_e + \nu_\tau) = \frac{\Gamma(\tau \to e + \bar{\nu}_e 
 <p>A partir de la razón entre las dos anchuras:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\Gamma(\tau \to \nu_\tau + e + \bar{\nu}_e)}{\Gamma(\mu \to \nu_\mu + e + \bar{\nu}_e)} = \frac{\tau_\mu}{\tau_\tau} \mathcal{Br}(\tau \to \nu_\tau + e + \bar{\nu}_e) = \frac{G^\tau_F m^5_\tau}{G^\mu_F m^5_\mu}
+\frac{\Gamma(\tau \to \nu_\tau + e + \bar{\nu}_e)}{\Gamma(\mu \to \nu_\mu + e + \bar{\nu}_e)} = \frac{\tau_\mu}{\tau_\tau} \mathcal{Br}(\tau \to \nu_\tau + e + \bar{\nu}_e) = \frac{(g^\tau_W)^2 m^5_\tau}{(g^\mu_W)^2 m^5_\mu}
 \]</div>
 <p>Podemos despejar la razón entre las constantes de Fermi para cada sabor, y sustituyendo por sus valores experimentales obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{G^\tau_F}{G^\mu_F} = \frac{m^5_\mu \tau_\mu}{m^5_\tau \tau_\tau} \, Br(\tau \to e + \bar{\nu}_e + \nu_\tau) = 1.0023 \pm 0.033
+\left( \frac{g^\tau_W}{g^\mu_W} \right)^2= \frac{m^5_\mu \tau_\mu}{m^5_\tau \tau_\tau} \, Br(\tau \to e + \bar{\nu}_e + \nu_\tau) = 1.0023 \pm 0.033
 \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -997,15 +1043,15 @@ G_F = 1.166 \times 10^{-5} \;\; \mathrm{GeV}^{-2}.
 \frac{G_F}{\sqrt{2}} = \frac{g^2_W}{8 m^2_W},
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(m_W = 80.385 \pm 0.015\)</span> GeV es la masa del <span class="math notranslate nohighlight">\(W\)</span>.</p>
-<p><em>Cuestión</em>: A partir de las anchuras de desintegración <span class="math notranslate nohighlight">\(\Gamma(\tau \to \mu + \nu_\mu + \bar{\nu}_\tau)\)</span> y <span class="math notranslate nohighlight">\(\Gamma(\tau \to e + \nu_e + \bar{\nu}_\tau)\)</span> calcular <span class="math notranslate nohighlight">\(G^e_F/G^\mu_F\)</span>. La desviación respecto de la unidad se compensa con un factor de espacio de fase.</p>
+<p><em>Cuestión</em>: A partir de las anchuras de desintegración <span class="math notranslate nohighlight">\(\Gamma(\tau \to \mu + \nu_\mu + \bar{\nu}_\tau)\)</span> y <span class="math notranslate nohighlight">\(\Gamma(\tau \to e + \nu_e + \bar{\nu}_\tau)\)</span> calcular <span class="math notranslate nohighlight">\((g^e_W/g^\mu_W)^2\)</span>. La desviación respecto de la unidad se compensa con un factor de espacio de fase.</p>
 <p>[Para esta sección ver AB7.2]</p>
 </div>
 <div class="section" id="violacion-de-paridad">
 <h3><span class="section-number">3.3.2. </span>Violación de Paridad<a class="headerlink" href="#violacion-de-paridad" title="Permalink to this heading">#</a></h3>
-<p>Recordemos que es la operación de inversión por paridad, <span class="math notranslate nohighlight">\({\hat P}\)</span>:</p>
+<p>Recordemos que es la operación de inversión por paridad, <span class="math notranslate nohighlight">\(P\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-{\hat P}  \, : \; {\bf x} \to - {\bf x}, \;\;\;  \Psi({\bf x}, t) \to  \Psi(-{\bf x}, t).
+P  \, : \; {\bf x} \to - {\bf x}, \;\;\;  \Psi({\bf x}, t) \to  \Psi(-{\bf x}, t).
 \]</div>
 <p>Recordemos también cómo se clasifican distintas magnitudes bajo paridad:</p>
 <table class="colwidths-auto table">
@@ -1091,7 +1137,7 @@ G_F = 1.166 \times 10^{-5} \;\; \mathrm{GeV}^{-2}.
 </tr>
 </tbody>
 </table>
-<p>En la figura se observa que los electrones se emitían con preferencia en la dirección opuesta al campo magnético</p>
+<p>En la figura se observa la asimetría arriba abajo en función del tiempo de la prueba (el periodo durante el cual la muestra estaba fría y los nucleos estaban polarizados). Vemos que los electrones se emitieron con preferencia en la dirección opuesta al campo magnético.</p>
 <p>Luego las desintegraciones <span class="math notranslate nohighlight">\(\beta\)</span> o <strong>las corrientes cargadas violan paridad</strong>.</p>
 <p>Nota: el <span class="math notranslate nohighlight">\(^{60}\mathrm{Co}\)</span> se desmagnetizaba al cabo de un tiempo, al perder temperatura la muestra.</p>
 <table class="colwidths-auto table">
@@ -1106,7 +1152,7 @@ G_F = 1.166 \times 10^{-5} \;\; \mathrm{GeV}^{-2}.
 </tr>
 </tbody>
 </table>
-<p><em>Cuestión:</em> ¿Cuál de las imágenes es la original y cuál su reflejo en el espejo?</p>
+<p><em>Cuestión:</em> Observa las imágenes, la una es el espejo de la otra, pero solo una es real ¿Cuál de las imágenes es la original y cuál su reflejo en el espejo?</p>
 </div>
 <div class="section" id="las-corrientes-bajo-paridad">
 <h4><span class="section-number">3.3.2.2. </span>Las corrientes bajo paridad<a class="headerlink" href="#las-corrientes-bajo-paridad" title="Permalink to this heading">#</a></h4>
@@ -1118,28 +1164,43 @@ M_{fi} \propto j^\mu_{\mathrm{had}}  \, g_{\mu\nu} \, j^\nu_{\mathrm{lep}} = j_{
 <p>Cada corriente cambia bajo paridad:</p>
 <div class="math notranslate nohighlight">
 \[
-\hat{P} \; : \; j^\mu = (\rho, {\bf j}) \to (\rho, - {\bf j}),
+P \; : \; j^\mu = (\rho, {\bf j}) \to (\rho, - {\bf j}),
 \]</div>
 <p>pero <span class="math notranslate nohighlight">\(M_{fi}\)</span> es invariante bajo paridad</p>
 <div class="math notranslate nohighlight">
 \[
-\hat{P} \; : \; (\rho, {\bf j})_{\mathrm{had}} \cdot (\rho, {\bf j})_{\mathrm{lep}} = (\rho, - {\bf j})_{\mathrm{had}} \cdot (\rho, - {\bf j})_{\mathrm{lep}}
+P \; : \; (\rho, {\bf j})_{\mathrm{had}} \cdot (\rho, {\bf j})_{\mathrm{lep}} = (\rho, - {\bf j})_{\mathrm{had}} \cdot (\rho, - {\bf j})_{\mathrm{lep}}
 \]</div>
 <p>¡Luego no representa la física de las corrientas cargadas!</p>
-<p>Nota:</p>
-<p>En la representación Pauli-Dirac, la operación paridad es simplemente: <span class="math notranslate nohighlight">\(\hat{P} = \gamma^0\)</span></p>
-<p>La corriente de probabilidad <span class="math notranslate nohighlight">\(j^\mu = \bar{\Psi} \gamma^\mu \Psi\)</span> bajo paridad es, <span class="math notranslate nohighlight">\(\hat{P} j^\mu : {\bar \Psi} \gamma^0 \gamma^\mu \gamma^0 \Psi\)</span>, esto es:</p>
+<p><em>cuestión</em>: Aplicar paridad <span class="math notranslate nohighlight">\(P = \gamma^0\)</span> sobre la corriente fermiónica <span class="math notranslate nohighlight">\(\bar{\Psi} \gamma^\mu \Psi\)</span>.</p>
+<p>En la representación Pauli-Dirac, la operación paridad es simplemente: <span class="math notranslate nohighlight">\(P = \gamma^0\)</span></p>
+<p>La corriente de probabilidad <span class="math notranslate nohighlight">\(j^\mu = \bar{\Psi} \gamma^\mu \Psi\)</span> bajo paridad se transforma a <span class="math notranslate nohighlight">\({\bar \Psi} \gamma^0 \gamma^\mu \gamma^0 \Psi\)</span>, esto es:</p>
 <div class="math notranslate nohighlight">
 \[
-\hat{P} \, j^\mu = (j^0, -{\bf j}^k)
+(j^0, {\bf j}) \to (j^0, -{\bf j}^k)
 \]</div>
 <p>dado que:
 $<span class="math notranslate nohighlight">\(
 \gamma^0 \gamma^k = - \gamma^k \gamma^0
 \)</span>$</p>
 <p>donde <span class="math notranslate nohighlight">\(k = 1, 2, 3\)</span></p>
-<p>Podemos construir el elemento de matrix <span class="math notranslate nohighlight">\(M_{fi}\)</span> que ses invariante Lorentz a partir de las distintas formas génericas <span class="math notranslate nohighlight">\( {\bar \Psi} \, \Gamma \, \Psi \)</span>, donde <span class="math notranslate nohighlight">\(\Gamma\)</span> es una matrix <span class="math notranslate nohighlight">\(4 \times 4\)</span> construida con la matrices <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
-<p>Solo existen cinco posibilidades de <span class="math notranslate nohighlight">\(\Gamma\)</span>:</p>
+<p>En este punto tenemos que introducir la matriz <span class="math notranslate nohighlight">\(\gamma^5\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^5 = i \gamma^0 \gamma^1 \gamma^2 \gamma^3 \gamma^4
+\]</div>
+<p>que en la representación Pauli-Dirac es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^5 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix}
+\end{split}\]</div>
+<p>La matriz <span class="math notranslate nohighlight">\(\gamma^5\)</span> cumple las siguientes propiedades</p>
+<div class="math notranslate nohighlight">
+\[
+(\gamma^5)^2 = I, \;\;\; (\gamma^5)^\dagger = \gamma^5, \;\;\; \gamma^5\gamma^\mu = - \gamma^\mu \gamma^5
+\]</div>
+<p><em>cuestión:</em> verifica las propiedades anteriores de <span class="math notranslate nohighlight">\(\gamma^5\)</span>.</p>
+<p>Todas las posibles formas bilineales en <span class="math notranslate nohighlight">\(\Psi\)</span> del tipo <span class="math notranslate nohighlight">\(\bar{\Psi} \Gamma \Psi\)</span>, donde <span class="math notranslate nohighlight">\(\Gamma\)</span> son las posibles combinaciones independientes que podemos crear con las matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>) si son:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
@@ -1176,7 +1237,9 @@ $<span class="math notranslate nohighlight">\(
 </tr>
 </tbody>
 </table>
-<p>A partir del estudio de las desintegraciones de los muones se determinó las <span class="math notranslate nohighlight">\(\Gamma\)</span> que intervienen en el acoplo de las corrientes</p>
+<p>La matriz <span class="math notranslate nohighlight">\(\gamma^5\)</span> nos cambia la escalar en pseudo-escalar y el vector en pseudo-vector.</p>
+<p>Estas son las formas que usamos para definir nuestro elemento de matrix genérico, <span class="math notranslate nohighlight">\(M_{fi}\)</span>, ¿cuál es la que ha escogido la Naturaleza?</p>
+<p>A partir del estudio de las desintegraciones de los muones <span class="math notranslate nohighlight">\(\mu \to e + \nu_\mu + \bar{\nu}_e\)</span> se determinó qué formas que intervienen en el acoplo de las corrientes débiles cargadas.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
@@ -1194,13 +1257,16 @@ $<span class="math notranslate nohighlight">\(
 \[
 {\bar \Psi} \left[ \gamma^\mu \frac{1}{2}(I - \gamma^5) \right] \Psi
 \]</div>
-<p>La corriente <span class="math notranslate nohighlight">\(j^\mu_V = \frac{1}{2}{\bar \Psi} \gamma^\mu \Psi\)</span> es <strong>vectorial</strong> porque cambia como un vector frente a paridad.</p>
-<p>La corriente <span class="math notranslate nohighlight">\(j^\mu_A = \frac{1}{2}{\bar \Psi} \gamma^\mu \gamma^5 \Psi\)</span> es <strong>axial</strong> porque cambia como un axial-vector frente a paridad.</p>
+<p>Esto es intervienen dos corrientes:</p>
+<ul class="simple">
+<li><p>La corriente <span class="math notranslate nohighlight">\(j^\mu_V = \frac{1}{2}{\bar \Psi} \gamma^\mu \Psi\)</span> es <strong>vectorial</strong> porque cambia como un vector frente a paridad.</p></li>
+<li><p>La corriente <span class="math notranslate nohighlight">\(j^\mu_A = \frac{1}{2}{\bar \Psi} \gamma^\mu \gamma^5 \Psi\)</span> es <strong>axial</strong> porque cambia como un axial-vector frente a paridad.</p></li>
+</ul>
 <p>Decimos que las corrientes cargadas tienen una <strong>estructura <span class="math notranslate nohighlight">\(V-A\)</span></strong></p>
 <p>¿Cómo cambia <span class="math notranslate nohighlight">\(M_{fi}\)</span> ahora bajo paridad?</p>
 <div class="math notranslate nohighlight">
 \[
-\hat{P} \;  \; : j^\mu_V - j^\mu_A = (\rho_V - \rho_A, \; {\bf j}_V - {\bf j}_A) \to (\rho_V + \rho_A, - {\bf j}_V - {\bf j}_A)
+P \, : \, j^\mu_V - j^\mu_A = (\rho_V - \rho_A, \; {\bf j}_V - {\bf j}_A) \to (\rho_V + \rho_A, - {\bf j}_V - {\bf j}_A)
 \]</div>
 <p>Y ahora <span class="math notranslate nohighlight">\(M_{fi}\)</span>, al ser el producto de dos corrientes <span class="math notranslate nohighlight">\(V-A\)</span>, ¡cambia bajo paridad!</p>
 <div class="math notranslate nohighlight">
@@ -1210,13 +1276,9 @@ $<span class="math notranslate nohighlight">\(
 \]</div>
 <p>aunque sigue siendo un invariante Lorentz.</p>
 </div>
-<div class="section" id="proyeccion-de-quiralidad">
-<h4><span class="section-number">3.3.2.3. </span>Proyección de quiralidad<a class="headerlink" href="#proyeccion-de-quiralidad" title="Permalink to this heading">#</a></h4>
-<p>¿Qué es la matriz:</p>
-<div class="math notranslate nohighlight">
-\[
-P_L \equiv \frac{1}{2} (I-\gamma^5) \, \mathrm{?}
-\]</div>
+<div class="section" id="la-quiralidad">
+<h4><span class="section-number">3.3.2.3. </span>La quiralidad<a class="headerlink" href="#la-quiralidad" title="Permalink to this heading">#</a></h4>
+<p>En vez de ver la interacción como <span class="math notranslate nohighlight">\(V-A\)</span> podemos preguntarnos ¿qué es <span class="math notranslate nohighlight">\(P_L \equiv \frac{1}{2} (I-\gamma^5)\)</span>?</p>
 <p>Es un proyector que actua sobre el sobre el espinor de Dirac:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1237,28 +1299,71 @@ I = P_R + P_L, \;\; P^2_R = P_R, \;\; P^2_L = P_L, \; P_R P_L = P_L P_R = 0
 <p>De tal forma que un <strong>espinor de Dirac</strong> se descompone en dos proyecciones, <strong>quiralidad a izquierdas y derechas</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
-\Psi_R = P_R \, \Psi, \;\;\; \Psi_L = P_L \, \Psi, \;\;\; \Psi = \Psi_R + \Psi_L =  P_R \Psi + P_L \Psi = (P_R + P_L) \, \Psi
+\Psi = \Psi_R + \Psi_L 
 \]</div>
-<p><strong>La quiralidad se invierte al aplicar paridad</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
-\hat{P} : P_L \leftrightarrow P_R, \;\; \Psi_L \leftrightarrow \Psi_R
+\Psi_R = P_R \, \Psi, \;\;\; \Psi_L = P_L \, \Psi,
 \]</div>
-<p>Nota: La transformación paridad <span class="math notranslate nohighlight">\(\hat{P} = \gamma^0\)</span> cambia los proyectores de quiralidad:</p>
+<p><strong>la quiralidad se invierte al aplicar paridad</strong>:</p>
+<p>Comprobémoslo:</p>
 <div class="math notranslate nohighlight">
 \[
-\hat{P} \; P_L : \gamma^0 \frac{1}{2}(1 - \gamma^5) = \frac{1}{2} (1+\gamma^5) \gamma^0 = P_R \, \hat{P}
+P : P_L \leftrightarrow P_R, \;\; \Psi_L \leftrightarrow \Psi_R
 \]</div>
-<p>Podemos decir entonces que, <strong>las corrientas cargadas</strong></p>
+<p>La transformación paridad <span class="math notranslate nohighlight">\(P = \gamma^0\)</span> cambia los proyectores de quiralidad:</p>
+<div class="math notranslate nohighlight">
+\[
+P^{-1} \, P_L \, P =  \gamma^0 \frac{1}{2}(1 - \gamma^5) \gamma^0 = \frac{1}{2} (1+\gamma^5) (\gamma^0)^2 = P_R 
+\]</div>
+<p><em>ejercicio:</em> Verifica que:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi} \gamma^\mu \frac{1}{2}(1-\gamma^5) \Psi = \bar{\Psi}_L \gamma^\mu \Psi_L
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi} \gamma^\mu \frac{1}{2}(1+\gamma^5) \Psi = \bar{\Psi}_R \gamma^\mu \Psi_R
+\]</div>
+<p>Y por lo tanto:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi} \gamma^\mu \Psi = \bar{\Psi}_L \gamma^\mu \Psi_L + \bar{\Psi}_R \gamma^\mu \Psi_R
+\]</div>
+<p>¿Cómo podemos definir la quiralidad?</p>
+<p>La quiralidad es una <strong>propiedad matemática</strong> de los espinores que nos dice si son autovectores de la matriz <span class="math notranslate nohighlight">\(\gamma^5\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{2}(1 \pm \gamma^5) \, u_{R/L} = u_{R/L} \;\; \Rightarrow \;\; \gamma^5 \, u_{R/L} = \pm \, u_{R/L}
+\]</div>
+<p>con autovalores <span class="math notranslate nohighlight">\(+1\)</span> para la quiralidad a derechas, <span class="math notranslate nohighlight">\(u_R\)</span>, y <span class="math notranslate nohighlight">\(-1\)</span> para izquierdas, <span class="math notranslate nohighlight">\(u_L\)</span>.</p>
+<p>Luego una teoría que es invariante bajo paridad debe considerar los espinores de quiralidad a izquierdas y derechas en condiciones de igualdad.</p>
+<p>Una teoría que viole paridad favorece una quiralidad respecto a la otra.</p>
+<p>Los físicos del siglo XX utilizaron definiciones que llevan a la confusión, como el abuso de los diversos «isoespins», pero especial cuiado hay que tener de no confundir la <em>helicidad</em> con la <em>quiralidad</em>.</p>
+<p>Otro punto de confusión, viene dado porque cuando trabajamos con espinores directamente (esto es, no trabajamos directamente en TCQ), el resultado físico de algunos operadores sobre las antipartículas requiere invertir el signo, como es de nuevo el caso para la quiralidad.</p>
+<div class="math notranslate nohighlight">
+\[
+v_{R/L} = \mp \gamma^5 v_{R/L} 
+\]</div>
+<p>Desafortunadamente, de esta forma, la proyección de quiralidad a derechas del espinor <span class="math notranslate nohighlight">\(v(p)\)</span> viene dada por:</p>
+<div class="math notranslate nohighlight">
+\[
+v_R(p) = \frac{1}{2}(1-\gamma^5) \, v(p)
+\]</div>
+<p>Podemos decir de forma equivalente que, <strong>las corrientas cargadas</strong></p>
 <ul class="simple">
 <li><p><strong>Son de tipo V-A</strong>, <span class="math notranslate nohighlight">\(\; {\bar \Psi} \, \frac{1}{2}\gamma^\mu (I - \gamma^5) \, \Psi\)</span></p></li>
 <li><p>O <strong>solo intervienen los espinores a izquierdas de los fermiones</strong>, <span class="math notranslate nohighlight">\(u_L = \frac{1}{2} (I - \gamma^5) \, u\)</span>, y <strong>de derechas a los anti-fermiones</strong>, <span class="math notranslate nohighlight">\(v_R\)</span></p></li>
 </ul>
 <p>En las corrientes cargadas <em>solo</em> interviene la parte a izquierdas de los espinores de las partículas, la parte a derechas no juega ningún papel. Para las anti-partículas es al contrario, solo interviene su espinor a derechas.</p>
-<p>En una teoría que conserva paridad la parte a izquierdas y a derechas de las partículas debe entrar igual en el elemento de matriz, como pasa con las interacciones electromagnéticas y fuertes.</p>
+<p>Podemos intentar el simil de las cartas de juego de naipes para comprender el efecto de la quiralidad y la inversión de paridad.</p>
+<p>Las cartas tienen dos caras, la de la figura y el reverso, similar a los espinores que tiene la quiralidad a izquierdas y de derechas. La inversión de cara nos da la vuelta a la carta. La inversión por paridad nos cambia la quiralidad de espinor.</p>
+<p>Un juego de cartas invariante respecto a la inversión de caras sería simplemente contarlas, poquito más, algo muy aburrido. Los juegos de cartas violan la inversión de caras, solo usamos la cara de la figura, y ahí es dónde las cosas se hacen divertidas.</p>
+<p>Algo así sucede en la Naturaleza, los espinores tienen dos quiralidades, la inversión de paridad invierte la quiralidad. En las interacciones débiles y fuertes no han distinción de las quiralidades de los espinores, preservan la paridad, pero sí hay distinción en las interaciones débiles. En las corrientes débiles cargadas (mediadas por <span class="math notranslate nohighlight">\(W^\pm\)</span>) solo se juega con los espinores a izquierdas de las partículas y los de derechas de las antipartículas, esto es, se viola paridad.</p>
 </div>
 <div class="section" id="proyeccion-de-los-espinores-de-helicidad">
 <h4><span class="section-number">3.3.2.4. </span>Proyección de los espinores de helicidad<a class="headerlink" href="#proyeccion-de-los-espinores-de-helicidad" title="Permalink to this heading">#</a></h4>
+<p>Aunque <em>helicidad</em> y <em>quiralidad</em> no son lo mismo, hay un caso muy relevante, donde coinciden.</p>
 <p>En la representación de Pauli-Dirac, los proyectores de quiralidad son simplemente:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1335,12 +1440,14 @@ P_L \, u_- = \frac{1}{2}(1+\kappa) N \begin{pmatrix} 0 \\ 1 \\ 0  \\ -1 \end{pma
 </tbody>
 </table>
 <p>Esto es <strong>para partículas sin masa o ultra-relativistas la quiralidad y la helicidad coinciden</strong>.</p>
-<p><em>En esos dos casos</em>, que son los más comunes a alta energías, en las corrientes cargadas solo participan los espinores de los fermiones <span class="math notranslate nohighlight">\(u_-\)</span> con helicidad negativa y de los antifermiones <span class="math notranslate nohighlight">\(v_+\)</span> con helicidad positiva.</p>
+<p><em>En esos dos casos</em>, <em>¡que son los más comunes a alta energías!</em>, en las corrientes cargadas solo participan los espinores de los fermiones <span class="math notranslate nohighlight">\(u_-\)</span> con helicidad negativa y de los antifermiones <span class="math notranslate nohighlight">\(v_+\)</span> con helicidad positiva.</p>
 </div>
 </div>
 <div class="section" id="helicidad-del-neutrino">
 <h3><span class="section-number">3.3.3. </span>Helicidad del neutrino<a class="headerlink" href="#helicidad-del-neutrino" title="Permalink to this heading">#</a></h3>
-<p>En 1957 Goldhaber y colaboradores midieron  en Brookhaven, NY, la helicidad del neutrino, que resultó ser negativa.</p>
+<p>En 1957 Goldhaber y colaboradores midieron  en Brookhaven, NY, la helicidad del neutrino, que resultó ser siempre negativa.</p>
+<p>Este es uno de los experimentos más sofisticados de la historía de Física de Partículas.</p>
+<p>Si recordamos que la masa del neutrino es muy pequeña (&lt; eV), si la masa es nula la helicidad del neutrino equivale a su quiralidad, como acabamos de ver.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
@@ -1358,11 +1465,6 @@ P_L \, u_- = \frac{1}{2}(1+\kappa) N \begin{pmatrix} 0 \\ 1 \\ 0  \\ -1 \end{pma
 \[
 ^{152}\mathrm{Eu}(J = 0) + e \to ^{152}\mathrm{Sm}^*(J = 1) + \nu_e \to ^{150}\mathrm{Sm}(J =0) + \gamma
 \]</div>
-<p>La dirección <span class="math notranslate nohighlight">\(z\)</span> es la «vertical» definida por el eje del campo <span class="math notranslate nohighlight">\({\bf B}\)</span>.</p>
-<p>El campo <span class="math notranslate nohighlight">\({\bf B}\)</span> polariza el electrón de la captura de <span class="math notranslate nohighlight">\(^{152}\mathrm{Eu}\)</span> arriba o abajo, <span class="math notranslate nohighlight">\(S_z(e) = \pm 1/2\)</span> dependiendo de la orientación del campo.</p>
-<p>Se seleccionan los fotones que salen hacia abajo por lo que el neutrino sale hacia arriba.</p>
-<p>La tercera componente del spín <span class="math notranslate nohighlight">\(\pm 1/2\)</span> en <span class="math notranslate nohighlight">\(z\)</span> se conserva.</p>
-<p>Lo que implica que la helicidad del neutrino es la del fotón (ver más adelante).</p>
 <p>Se cambia la polaridad del campo <span class="math notranslate nohighlight">\({\bf B}\)</span> y se determina el número de fotones en cada orientación del campo.</p>
 <p>Si se producen neutrinos con las dos helicidades independientemente de la polaridad de <span class="math notranslate nohighlight">\({\bf B}\)</span> se medirán el mismo número de fotones.</p>
 <table class="colwidths-auto table">
@@ -1377,6 +1479,11 @@ P_L \, u_- = \frac{1}{2}(1+\kappa) N \begin{pmatrix} 0 \\ 1 \\ 0  \\ -1 \end{pma
 </tr>
 </tbody>
 </table>
+<p>La dirección <span class="math notranslate nohighlight">\(z\)</span> es la «vertical» definida por el eje del campo <span class="math notranslate nohighlight">\({\bf B}\)</span>.</p>
+<p>El campo <span class="math notranslate nohighlight">\({\bf B}\)</span> polariza el electrón de la captura de <span class="math notranslate nohighlight">\(^{152}\mathrm{Eu}\)</span> arriba o abajo, <span class="math notranslate nohighlight">\(S_z(e) = \pm 1/2\)</span> dependiendo de la orientación del campo.</p>
+<p>Se seleccionan los fotones que salen hacia abajo por lo que el neutrino sale hacia arriba.</p>
+<p>La tercera componente del spín <span class="math notranslate nohighlight">\(\pm 1/2\)</span> en <span class="math notranslate nohighlight">\(z\)</span> se conserva.</p>
+<p>Lo que implica que la helicidad del neutrino es la del fotón.</p>
 <p>La siguiente tabla muestra las dos posibilidades de espín y helicidades posibles en el experimento de Goldhaber.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1429,8 +1536,58 @@ P_L \, u_- = \frac{1}{2}(1+\kappa) N \begin{pmatrix} 0 \\ 1 \\ 0  \\ -1 \end{pma
 </tbody>
 </table>
 <p>El experimento [KATRIN] busca actualmente medir directamente la masa de los neutrinos, el límite: <span class="math notranslate nohighlight">\(m_{\nu_e} &lt; 0.2\)</span> eV.</p>
-<p><strong>El Modelo Estandar postulaba que el neutrino no tiene masa</strong>. En todo caso su masa es ridículamente pequeña comparada con sus energías.</p>
-<p>Los neutrinos solo interaccionan débilmente, y <strong>en las interacciones débiles solo intervienen las proyecciones a izquierdas</strong>, esto es <span class="math notranslate nohighlight">\(u_L\)</span> y <span class="math notranslate nohighlight">\(v_R\)</span>. <strong>Solo son reales esos dos espinores</strong> para el neutrino:</p>
+</div>
+<div class="section" id="espinores-de-weyl">
+<h3><span class="section-number">3.3.5. </span>Espinores de Weyl<a class="headerlink" href="#espinores-de-weyl" title="Permalink to this heading">#</a></h3>
+<p>Vamos a ver que el espinor de Dirac de los neutrinos, al carecer de masa, se compone de dos espinores independientes, llamados de Weyl, cada uno con una quiralidad.</p>
+<p>Vamos a considerar la representación de Weyl (o quiral) de las matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix}, \;\;
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma^k \\ -\sigma^k &amp; 0 \end{pmatrix}, \;\;
+\gamma^5 = \begin{pmatrix} -I &amp; 0 \\ 0 &amp; I \end{pmatrix}
+\end{split}\]</div>
+<p>Con lo que que:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_L = \begin{pmatrix} I &amp; 0 \\ 0 &amp; 0 \end{pmatrix}, \;
+P_R = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; I \end{pmatrix} \;
+\end{split}\]</div>
+<p><em>cuestión:</em> Verifica que la matrices de la representación de Weyl cumplen las condiciones de las matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>.</p>
+<p>El espinor de Dirac está compuesto de dos bi-espinores, <span class="math notranslate nohighlight">\(u_L, u_R\)</span>, llamados de Weyl, que corresponden con la parte de quiralidad a izquierdas y a derechas del espinor de Dirac.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u(p) = \begin{pmatrix} u_L(p) \\ u_R(p)\end{pmatrix}
+\end{split}\]</div>
+<p>Si ahora consideramos el caso revelador de <em>un fermión sin masa <span class="math notranslate nohighlight">\(m=0\)</span></em>, la ec. de Dirac queda:</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^\mu p_\mu \, u(p) = 0
+\]</div>
+<p>que se descompone en dos ecuaciones independientes:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(E - {\bf p} \cdot \vec{\sigma}) \, u_R(p) = 0, \\
+(E + {\bf p} \cdot \vec{\sigma}) \, u_L(p) = 0.
+\end{split}\]</div>
+<p>Esto es, el espinor de Dirac se compone de dos espinores de Weyl independientes.</p>
+<p>O en otras palabras, es el término de masa en la ec. de Dirac, la que hace que los dos espinores de Weyl estén conectados.</p>
+<p>dado que <span class="math notranslate nohighlight">\(E = \text{p}\)</span>, donde <span class="math notranslate nohighlight">\({\bf p} = \text{p} \hat{\bf v}\)</span>, estas ecuaciones son equivalentes a:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(\hat{\bf v} \cdot \vec{\sigma}) \; u_R(p) = + u_R(p), \\ (\hat{\bf v} \cdot \vec{\sigma}) \; u_L(p) = - u_L(p).
+\end{split}\]</div>
+<p>Esto es, hay una conexión uno a uno entre helicidad y quiralidad. El espinor de Weyl a izquierdas tiene helicidad negativa y el de derechas positiva.</p>
+<div class="math notranslate nohighlight">
+\[
+u_R = u_+, \;\;\; u_L = u_-
+\]</div>
+<p>En este caso de las partículas sin masa, quiralidad y la helicidad son ambas propiedades equivalentes, son cantidades estacionarias e invariantes Lorentz.</p>
+</div>
+<div class="section" id="el-neutrino-en-el-sm">
+<h3><span class="section-number">3.3.6. </span>El neutrino en el SM<a class="headerlink" href="#el-neutrino-en-el-sm" title="Permalink to this heading">#</a></h3>
+<p><em>El Modelo Estandar postulaba que el neutrino no tiene masa</em>. Sus espinores de quiralidad a izquierdad y derechas son independientes.</p>
+<p>Los neutrinos solo interaccionan débilmente, y <em>en las interacciones débiles solo intervienen las proyecciones a izquierdas</em>, esto es <span class="math notranslate nohighlight">\(u_L\)</span> y <span class="math notranslate nohighlight">\(v_R\)</span>. <em>Solo son reales esos dos espinores</em> para el neutrino:</p>
 <div class="math notranslate nohighlight">
 \[
 u_L \equiv u_-, \;\;\; v_R \equiv v_+
@@ -1485,9 +1642,12 @@ u_L \equiv u_-, \;\;\; v_R \equiv v_+
 </tbody>
 </table>
 <p>Efecto de aplicar paridad (reflejo, izquierda-derecha) y carga (invertir grises, arriba-abajo) en un dibujo inicial de M.C. Escher. CP se conserva.</p>
+<p>Los físicos de partículas se sintieron muy reconfortados (durante un breve periodo) al considerar que aunque la inversión por paridad, <span class="math notranslate nohighlight">\(P\)</span>, y la inversión por carga, <span class="math notranslate nohighlight">\(C\)</span>, se violaban, se mantenía la inversión conjunta <span class="math notranslate nohighlight">\(CP\)</span>.</p>
+<p>En este sentido, a mitad del siglo XX cuando los extraterrestres estaban de moda, Feynman se preguntaba, ¿Cómo estar seguro de estrechar la mano de un alienígena cuando éste puede estar compuesto de sólo antipartículas?</p>
+<p>Y se contestaba: le pediría que repita el experimento de Ms. Wu, que me diga la dirección privilegiada hacia donde salen los electrones de su mundo en una desintegración <span class="math notranslate nohighlight">\(\beta\)</span> fijando la dirección de un campo magnético <span class="math notranslate nohighlight">\(B\)</span>. Si salen en la dirección opuesta le doy la mano, si salen en la misma, pues mejor no.</p>
 </div>
 <div class="section" id="desintegracion-del-pion">
-<h3><span class="section-number">3.3.5. </span>Desintegración del pión<a class="headerlink" href="#desintegracion-del-pion" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.3.7. </span>Desintegración del pión<a class="headerlink" href="#desintegracion-del-pion" title="Permalink to this heading">#</a></h3>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -1508,8 +1668,39 @@ u_L \equiv u_-, \;\;\; v_R \equiv v_+
 \]</div>
 <p>Sin embargo el espacio fásico disponible para el <span class="math notranslate nohighlight">\(e\)</span> es mayor que el del <span class="math notranslate nohighlight">\(\mu\)</span> dado que la razón entre ellos viene dada por <span class="math notranslate nohighlight">\(p^*_e/p^*_\mu\)</span>, y el momento <span class="math notranslate nohighlight">\(p^*_e &gt; p^*_\mu\)</span>.</p>
 <p>¿Por qué es así entonces?</p>
-<p><strong>C</strong>uestión: Calcula <span class="math notranslate nohighlight">\(p^*_l, E^*_l\)</span> en el CM.</p>
-<p><strong>C</strong>uestión: Calcula la razón entre el <span class="math notranslate nohighlight">\(p^*_e/p^*_\mu\)</span>.</p>
+<p><em>Cuestión:</em> Calcula <span class="math notranslate nohighlight">\(p^*_l, E^*_l\)</span> en el CM.</p>
+<p><em>Cuestión:</em> Calcula la razón entre el <span class="math notranslate nohighlight">\(p^*_e/p^*_\mu\)</span>.</p>
+<p>En el CM
+$<span class="math notranslate nohighlight">\(
+E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\pi}
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">139.51</span>  <span class="c1"># MeV</span>
+<span class="n">mmu</span> <span class="o">=</span> <span class="mf">105.66</span>  <span class="c1"># MeV</span>
+<span class="n">me</span>  <span class="o">=</span>   <span class="mf">0.511</span> <span class="c1"># MeV</span>
+<span class="n">ene_cm</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span> <span class="p">:</span> <span class="p">(</span><span class="n">mpi</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mpi</span><span class="p">)</span>
+<span class="n">p_cm</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span> <span class="p">:</span> <span class="p">(</span><span class="n">mpi</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mpi</span><span class="p">)</span>
+<span class="n">a_R</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span> <span class="p">:</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">ml</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">ml</span><span class="p">)</span> <span class="o">+</span> <span class="n">ml</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">beta_mu</span><span class="p">,</span> <span class="n">beta_e</span> <span class="o">=</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">)</span><span class="o">/</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">),</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span><span class="o">/</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span>
+<span class="n">espace_phase</span>    <span class="o">=</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span><span class="o">/</span><span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; beta mu   = </span><span class="si">{:7.6f}</span><span class="s1">   , beta   e = </span><span class="si">{:7.6f}</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">beta_mu</span><span class="p">,</span> <span class="n">beta_e</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; energy mu = </span><span class="si">{:5.3f}</span><span class="s1"> MeV, energy e = </span><span class="si">{:5.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">),</span> <span class="n">ene_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; espacio fásico          = </span><span class="si">{:e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">espace_phase</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> beta mu   = 0.270970   , beta   e = 0.999973    
+ energy mu = 109.767 MeV, energy e = 69.756 MeV
+ espacio fásico          = 2.345194e+00
+</pre></div>
+</div>
+</div>
+</div>
+<p>El <span class="math notranslate nohighlight">\(\mu\)</span> no es relativista, <span class="math notranslate nohighlight">\(\beta = 0.27\)</span>, pero sí el electrón, <span class="math notranslate nohighlight">\(\beta = 0.99997\)</span>.</p>
+<p>Revisemos la helicidad de las partículas de la desintegración.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
@@ -1522,20 +1713,18 @@ u_L \equiv u_-, \;\;\; v_R \equiv v_+
 </tr>
 </tbody>
 </table>
-<p>Revisemos la helicidad de las partículas de la desintegración.</p>
-<p>En el CM, el <span class="math notranslate nohighlight">\(\pi^+\)</span> tiene <span class="math notranslate nohighlight">\(J= 0\)</span>, el neutrino sabemos, <span class="math notranslate nohighlight">\(\nu_l\)</span>, que tiene helicidad (-), y para conservar <span class="math notranslate nohighlight">\(J\)</span>, el anti-leptón cargardo, <span class="math notranslate nohighlight">\(l^+\)</span> debe tener helicidad (-).</p>
+<p>En el CM, el <span class="math notranslate nohighlight">\(\pi^+\)</span> tiene <span class="math notranslate nohighlight">\(J= 0\)</span>, el neutrino, <span class="math notranslate nohighlight">\(\nu_l\)</span>, sabemos que tiene helicidad (-), y para conservar <span class="math notranslate nohighlight">\(J\)</span>, el anti-leptón cargardo, <span class="math notranslate nohighlight">\(l^+\)</span> debe tener helicidad (-).</p>
 <p>Por otro lado, sabemos que solo la proyección con quiralidad a derechas del <span class="math notranslate nohighlight">\(l^+\)</span> interviene en la desintegración. ¿Cuánto vale esa parte para el <span class="math notranslate nohighlight">\(e^+\)</span> y el <span class="math notranslate nohighlight">\(\mu^+\)</span>?</p>
-<p>Sabemos que el espinor <span class="math notranslate nohighlight">\(v_-\)</span> helicidad (-) tiene como coeficiente de quiralidad a derechas:</p>
+<p>Sabemos que el espinor <span class="math notranslate nohighlight">\(v_-\)</span> con helicidad (-) tiene como coeficiente de quiralidad a derechas:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{1}{2}(1-\kappa) = \frac{1}{2}\left(1 - \frac{p_l}{E_l + m_l} \right)
 \]</div>
-<p>En el CM
-$<span class="math notranslate nohighlight">\(
-E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\pi}, \;\;
-\frac{1}{2}(1-\kappa) = \frac{1}{2}\left(1 - \frac{p_l}{E_l + m_l} \right)= \frac{m_l}{m_\pi + m_l}
-\)</span>$</p>
-<p>El <span class="math notranslate nohighlight">\(\mu\)</span> no es relativista, <span class="math notranslate nohighlight">\(\beta = 0.27\)</span>, pero sí el electrón, <span class="math notranslate nohighlight">\(\beta = 0.99997\)</span>.</p>
+<p>A partir de la <span class="math notranslate nohighlight">\(E_l, p\)</span> en el CM, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{2}(1-\kappa) = \frac{m_l}{m_\pi + m_l}
+\]</div>
 <p>El factor <span class="math notranslate nohighlight">\((1-\kappa)/2\)</span> es mucho más pequeño para <span class="math notranslate nohighlight">\(e\)</span> que para el <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
 <p>El factor asociado a las proyecciones a derechas entre el <span class="math notranslate nohighlight">\(e\)</span> y <span class="math notranslate nohighlight">\(\mu\)</span> que aparece en <span class="math notranslate nohighlight">\(|M_{fi}|^2\)</span> será:</p>
 <div class="math notranslate nohighlight">
@@ -1543,47 +1732,23 @@ E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\p
 \frac{m^2_e}{m^2_\mu} \frac{(m_\pi + m_e)^2}{(m_\pi + m_\mu)^2}\sim 7 \, 10^{-5}
 \]</div>
 <p>La desintegración de <span class="math notranslate nohighlight">\(\pi^+\)</span> a <span class="math notranslate nohighlight">\(e^+\)</span> está muy suprimida porque la componente de quiralidad a derechas del <span class="math notranslate nohighlight">\(e^+\)</span> está muy suprimida dado que la helicidad del <span class="math notranslate nohighlight">\(e^+\)</span> es negativa, por conservación del momento angular en la desintegración, y porque <span class="math notranslate nohighlight">\(e^+\)</span> en la desintegración es ultra-relativista, <span class="math notranslate nohighlight">\(\beta \simeq 1\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpi</span> <span class="o">=</span> <span class="mf">139.51</span>  <span class="c1"># MeV</span>
-<span class="n">mmu</span> <span class="o">=</span> <span class="mf">105.66</span>  <span class="c1"># MeV</span>
-<span class="n">me</span>  <span class="o">=</span>   <span class="mf">0.511</span> <span class="c1"># MeV</span>
-<span class="n">ene_cm</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span> <span class="p">:</span> <span class="p">(</span><span class="n">mpi</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mpi</span><span class="p">)</span>
-<span class="n">p_cm</span>   <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span> <span class="p">:</span> <span class="p">(</span><span class="n">mpi</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">ml</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mpi</span><span class="p">)</span>
-<span class="n">a_R</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">ml</span> <span class="p">:</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">ml</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">ml</span><span class="p">)</span> <span class="o">+</span> <span class="n">ml</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
-
-<span class="n">beta_mu</span><span class="p">,</span> <span class="n">beta_e</span> <span class="o">=</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">)</span><span class="o">/</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">),</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span><span class="o">/</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; beta mu   = </span><span class="si">{:7.6f}</span><span class="s1">   , beta   e = </span><span class="si">{:7.6f}</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">beta_mu</span><span class="p">,</span> <span class="n">beta_e</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; energy mu = </span><span class="si">{:5.3f}</span><span class="s1"> MeV, energy e = </span><span class="si">{:5.3f}</span><span class="s1"> MeV&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ene_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">),</span> <span class="n">ene_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> beta mu   = 0.270970   , beta   e = 0.999973    
- energy mu = 109.767 MeV, energy e = 69.756 MeV
-</pre></div>
-</div>
-</div>
-</div>
+<p>Luego las fracciones de desintegración de <span class="math notranslate nohighlight">\(\pi^+\)</span> se explican por la naturaleza <span class="math notranslate nohighlight">\(V-A\)</span> de las interacciones débiles cargadas.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">helicity_supres</span> <span class="o">=</span> <span class="n">a_R</span><span class="p">(</span><span class="n">me</span><span class="p">)</span><span class="o">/</span><span class="n">a_R</span><span class="p">(</span><span class="n">mmu</span><span class="p">)</span>
-<span class="n">espace_phase</span>    <span class="o">=</span> <span class="n">p_cm</span><span class="p">(</span><span class="n">me</span><span class="p">)</span><span class="o">/</span><span class="n">p_cm</span><span class="p">(</span><span class="n">mmu</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; supresion por helicidad = </span><span class="si">{:e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">helicity_supres</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; espacio fásico          = </span><span class="si">{:e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">espace_phase</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; total                   = </span><span class="si">{:e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">espace_phase</span> <span class="o">*</span> <span class="n">helicity_supres</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> supresion por helicidad = 7.170821e-05
- espacio fásico          = 2.345194e+00
  total                   = 1.681697e-04
 </pre></div>
 </div>
 </div>
 </div>
-<p>Distribución de la energía del espectro de electrones en las desintegraciones del <span class="math notranslate nohighlight">\(\pi\)</span>.</p>
+<p>En la siguiente distribución de la energía del espectro de electrones en las desintegraciones del <span class="math notranslate nohighlight">\(\pi^+\)</span>.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
@@ -1610,7 +1775,7 @@ E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\p
 <h3><span class="section-number">3.4.1. </span>El puzzle solar<a class="headerlink" href="#el-puzzle-solar" title="Permalink to this heading">#</a></h3>
 <p>En la década de los 60, el experimento de R. David en la mina de Homestake, Dakota del Sur, midió el flujo de <span class="math notranslate nohighlight">\(\nu_e\)</span>  solares y resultaba ser <span class="math notranslate nohighlight">\(1/3\)</span> del esperado según el modelo teórico del Sol desarrollado por J. Bahcall.</p>
 <p>Durante aproximadamente 40 años los resultados de los experimentos que medían el flujo de <span class="math notranslate nohighlight">\(\nu_e\)</span> solares mostraban un deficit respecto al flujo esperado según el modelo solar.</p>
-<p>En el 2004 El experimento SNO (en Canada) midió el flujo total (la suma de los flujos de los diferentes sabores) de neutrinos y verificó que estaba en acuerdo con el esperado por el modelo solar para los neutrinos, todos <span class="math notranslate nohighlight">\(\nu_e\)</span>, producidos en el Sol. Por lo tanto los neutrinos que llegan a la tierra corresponden con los emitidos del Sol, solo que allí se producen de sabor <span class="math notranslate nohighlight">\(e\)</span> y en la Tierra se detectan solo 1/3 con ese sabor, el 2/3 restante cambia de sabor.</p>
+<p>En el 2004 El experimento SNO (en Canada) midió el flujo total (la suma de los flujos de los diferentes sabores) de neutrinos y verificó que estaba en acuerdo con el esperado por el modelo solar para los neutrinos, todos <span class="math notranslate nohighlight">\(\nu_e\)</span>, producidos en el Sol. Por lo tanto los neutrinos que llegan a la tierra corresponden con los emitidos del Sol, solo que allí se producen como <span class="math notranslate nohighlight">\(\nu_e\)</span> y en la Tierra se detectan solo 1/3 con ese sabor, el 2/3 restante cambia de sabor.</p>
 <p>Pontecorbo en los 50’s adelantó que los neutrinos podrían oscilar entre sus diversos sabores si tenían masas distintas.</p>
 </div>
 <div class="section" id="neutrinos-atmosfericos">
@@ -1680,7 +1845,7 @@ E_l = \frac{m^2_\pi + m^2_l}{2 m_\pi}, \; \; p_l = \frac{m^2_\pi - m^2_l}{2 m_\p
 | \nu (t) \rangle  = \cos \theta e^{+i({\bf p x} - E_1t)}| \nu_1 \rangle + \sin \theta e^{+i({\bf p x} - E_2t)}| \nu_2 \rangle
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(E_i = \sqrt{m^2_i + p^2}\)</span>, con <span class="math notranslate nohighlight">\(i = 1, 2\)</span></p>
-<p>En un determinato tiempo <span class="math notranslate nohighlight">\(t\)</span>, o equivalentemente a una distancia <span class="math notranslate nohighlight">\(L\)</span>, podemos detectar el neutrino con otro sabor <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
+<p>En un determinado tiempo <span class="math notranslate nohighlight">\(t\)</span>, o equivalentemente a una distancia <span class="math notranslate nohighlight">\(L\)</span>, podemos detectar el neutrino con otro sabor <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
 | \nu_\beta \rangle = -\sin \theta | \nu_1 \rangle + \cos \theta | \nu_2 \rangle
@@ -1721,7 +1886,7 @@ P_{\alpha\beta}(L) = \sin^2 2 \theta \sin^2 \frac{\Delta m^2_{21}L}{4E}
 P_{\alpha\beta}(L) = \sin^2 2 \theta \sin^2 \frac{1.27 \Delta m^2_{21} [\mathrm{eV}^2]L [\mathrm{km}]}{4E[\mathrm{GeV}]}
 \]</div>
 <p>Se trata de una probabilidad de forma oscilatoria, cuya amplitud están controlada por <span class="math notranslate nohighlight">\(\theta\)</span>, si <span class="math notranslate nohighlight">\(\theta = 0\)</span> no hay oscilación, y su frecuencia por <span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span>, si los dos neutrinos tienen igual masa, tampoco hay oscilación.</p>
-<p>Para observar la oscilación, dado un <span class="math notranslate nohighlight">\(\Delta m^2_{12}\)</span> y una energía <span class="math notranslate nohighlight">\(E\)</span> debemos colocar el detector a una distancia <span class="math notranslate nohighlight">\(L\)</span> adecuada.</p>
+<p>En la fórmula anterior hay dos parámetros físicos, <span class="math notranslate nohighlight">\(\Delta m^2_{21}\)</span> y <span class="math notranslate nohighlight">\(\theta\)</span> y dos experimentales <span class="math notranslate nohighlight">\(E\)</span> y <span class="math notranslate nohighlight">\(L\)</span>. Para observar la oscilación, dado un <span class="math notranslate nohighlight">\(\Delta m^2_{12}\)</span> y una energía <span class="math notranslate nohighlight">\(E\)</span> debemos colocar el detector a una distancia <span class="math notranslate nohighlight">\(L\)</span> adecuada.</p>
 <p>Consideremos el caso de <span class="math notranslate nohighlight">\(\Delta m^2 = 2 \times 10^{-3} \; \mathrm{eV}^2\)</span> y <span class="math notranslate nohighlight">\(\theta = 47^o\)</span></p>
 <p>Vamos a calcular la probabilidad de oscilación <span class="math notranslate nohighlight">\(P_{\alpha\beta}(L)\)</span></p>
 <p><em>Cuestion</em>: ¿A qué distancia deberíamos colocar el detector para observar la oscilación máxima?</p>
@@ -1738,7 +1903,7 @@ P_{\alpha\beta}(L) = \sin^2 2 \theta \sin^2 \frac{1.27 \Delta m^2_{21} [\mathrm{
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/leptones_76_0.png" src="../_images/leptones_76_0.png" />
+<img alt="../_images/leptones_87_0.png" src="../_images/leptones_87_0.png" />
 </div>
 </div>
 </div>
