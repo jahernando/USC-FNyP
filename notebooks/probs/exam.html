@@ -1,0 +1,953 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problemas &#8212; Introducción a la Física de Partículas - USC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introducción a la Física de Partículas - USC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../introduccion.html">
+   1. Introducción a Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../observables.html">
+   2. Observables en Física de Partículas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../leptones.html">
+   3. Sobre los leptones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../quarks_hadrons.html">
+   4. Sobre los quarks y los hadrones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sm.html">
+   5. Sobre el Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-cinematica.html">
+   6. Extensión: cinemática
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-dirac.html">
+   7. Extensión: La ecuación de Dirac
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-trans-Lorentz.html">
+   8. Extensión: Simetrías. Transformaciones Lorentz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-grupos.html">
+   9. Extensión: grupos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ext-sm.html">
+   10. Extensión: El Modelo Estándar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-prel.html">
+   11. Boletín de problemas - preliminar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-I.html">
+   12. Boletín de problemas I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-II.html">
+   13. Boletín de problemas II
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-III.html">
+   14. Boletín de problemas III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemas-IV.html">
+   15. Boletín de problemas IV
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/master?urlpath=tree/docs/notebooks/probs/exam.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/probs/exam.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/notebooks/probs/exam.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Problemas</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="section" id="problemas">
+<h1>Problemas<a class="headerlink" href="#problemas" title="Permalink to this heading">#</a></h1>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Febrero 2025</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Last version &#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">()</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Sep 10 15:20:42 2025
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># general imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">reload_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+
+<span class="c1"># numpy and matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">scipy.constants</span> <span class="k">as</span> <span class="nn">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p><strong>problema</strong></p>
+<p>La sección eficaz de interacción inelástica en colisiones <span class="math notranslate nohighlight">\(p + p\)</span> a <span class="math notranslate nohighlight">\(\sqrt{s} = 13\)</span> TeV es 60 mb. Si la luminosidad de LHC es <span class="math notranslate nohighlight">\(\mathcal{L} = 10^{34}\)</span> <span class="math notranslate nohighlight">\(\mathrm{1/(cm^2 s)}\)</span> ¿Cuál es la razón de colisiones? y si la frecuencia de cruce entre paquetes del LHC es <span class="math notranslate nohighlight">\(40\)</span> MHz, ¿Cuál es el promedio de colisiones esperadas cada cruce? ¿Cuál es la probabilidad de que en un cruze se produzca alguna colisión?</p>
+<p>La fracción de desintegración <span class="math notranslate nohighlight">\(H \to \gamma + \gamma\)</span> es 0.2 %, si la eficiencia de detección de un gamma es del <span class="math notranslate nohighlight">\(80\)</span> % y observamos 6830 eventos con dos gammas compatibles con un Higgs de masa 125 GeV en un año (toma un año como <span class="math notranslate nohighlight">\(10^7\)</span> s), estima la sección eficaz de producción de Higgs.</p>
+<p>Si conocemos el vértice primario de la interacción donde se produce y desintegra el <span class="math notranslate nohighlight">\(H\)</span>, la posición en el calorímetro donde interacciona uno de los gammas, y su energía, dada una masa del Higgs <span class="math notranslate nohighlight">\(m_H\)</span>, ¿cuál es la energía que esperamos tenga el otro gamma en función del ángulo entre los dos gammas?</p>
+<p>Dado que la fracción de desintegración de <span class="math notranslate nohighlight">\(H \to Z + Z\)</span> es 2.7 %, y la del <span class="math notranslate nohighlight">\(Z \to \mu + \mu^+\)</span> es de 3.8 %, ¿Cuántos eventos esperamos en un año con 4 muones provinientes de un Higgs? Y si la eficiencia de detección de un muón es de 86 % ¿Cuánto eventos esperamos observar?</p>
+<p><em>solución:</em></p>
+<p>a) La razón de producción es, <span class="math notranslate nohighlight">\(\sigma = 60\)</span> mb, <span class="math notranslate nohighlight">\(\mathcal{L} = 10^{34}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\nu = \sigma \, \mathcal{L} \simeq 600 \, \mathrm{MHz}
+\]</div>
+<p>Y el número de colisiones por choque es, donde <span class="math notranslate nohighlight">\(\Omega = 40\)</span> MHz:</p>
+<div class="math notranslate nohighlight">
+\[
+n = \frac{\nu}{\Omega} \simeq 15
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sigma</span> <span class="o">=</span> <span class="mf">60e-3</span>
+<span class="n">lumi</span>  <span class="o">=</span> <span class="mf">1e34</span>
+<span class="n">barn</span>  <span class="o">=</span> <span class="mf">1e-24</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mf">40e6</span>
+
+<span class="n">nu</span>    <span class="o">=</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">lumi</span> <span class="o">*</span> <span class="n">barn</span>
+<span class="n">n</span>     <span class="o">=</span> <span class="n">nu</span><span class="o">/</span><span class="n">omega</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;production rate </span><span class="si">{:e}</span><span class="s1"> MHz&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nu</span><span class="o">/</span><span class="mf">1e6</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;interaction per crossing </span><span class="si">{:4.1f}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>production rate 6.000000e+02 MHz
+interaction per crossing 15.0 
+</pre></div>
+</div>
+</div>
+</div>
+<p>b) la sección eficaz <span class="math notranslate nohighlight">\(\sigma_H\)</span> se calcula a partir de</p>
+<p><span class="math notranslate nohighlight">\(
+N_{H\gamma\gamma} = \sigma_H \, \mathcal{L} \, \mathcal{T} \, \mathcal{B}_{H\gamma\gamma} \, \epsilon^2
+\)</span></p>
+<p>con <span class="math notranslate nohighlight">\(N_{H\gamma\gamma} = 6830\)</span>, <span class="math notranslate nohighlight">\(T = 10^7\)</span> s, <span class="math notranslate nohighlight">\(\mathcal{B}_{H\gamma\gamma} = 0.002\)</span>, <span class="math notranslate nohighlight">\(\epsilon = 0.8\)</span></p>
+<p>obtenemos <span class="math notranslate nohighlight">\(\sigma_{H} = 53 \)</span> pbarn</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Nhgg</span> <span class="o">=</span> <span class="mi">6830</span>
+<span class="n">T</span>    <span class="o">=</span> <span class="mf">1e7</span>
+<span class="n">BHgg</span> <span class="o">=</span> <span class="mf">0.002</span>
+<span class="n">epsilon_g</span> <span class="o">=</span> <span class="mf">0.8</span>
+
+<span class="n">sigmah</span> <span class="o">=</span> <span class="n">Nhgg</span><span class="o">/</span><span class="p">(</span><span class="n">lumi</span> <span class="o">*</span> <span class="n">T</span> <span class="o">*</span> <span class="n">BHgg</span> <span class="o">*</span> <span class="n">epsilon_g</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;xsection pp-&gt; h </span><span class="si">{:e}</span><span class="s1"> pbarn&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sigmah</span><span class="o">/</span><span class="p">(</span><span class="n">barn</span><span class="o">*</span><span class="mf">1e-12</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>xsection pp-&gt; h 5.335938e+01 pbarn
+</pre></div>
+</div>
+</div>
+</div>
+<p>c) Para calcular la energía en función del ángulo usamos</p>
+<div class="math notranslate nohighlight">
+\[
+m^2_H = (E+E', {\bf p} + {\bf p}')^2 = E^2+E'^2 + 2 EE' -p^2 - p'^2 - 2 p p' \cos \theta = 2 E E' (1-\cos \theta)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E' = \frac{m^2_H}{2 E (1-\cos \theta)}
+\]</div>
+<p>d) Para el número de eventos esperados de <span class="math notranslate nohighlight">\(H \to 4 l\)</span>, donde</p>
+<p><span class="math notranslate nohighlight">\(
+N = \sigma_H \, \mathcal{L} \, T \, \mathcal{B}_{HZZ} \, \mathcal{B}^2_{Z\mu\mu} = 208
+\)</span></p>
+<p>Para los observados:</p>
+<p><span class="math notranslate nohighlight">\(
+N' = N \epsilon^4_\mu = 113.8
+\)</span></p>
+<p>Por lo tanto:</p>
+<p>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bhzz</span> <span class="o">=</span> <span class="mf">0.027</span> 
+<span class="n">bzmm</span> <span class="o">=</span> <span class="mf">0.038</span>
+<span class="n">epsilon_mu</span> <span class="o">=</span> <span class="mf">0.86</span>
+<span class="n">nh4mu</span>   <span class="o">=</span> <span class="n">sigmah</span> <span class="o">*</span> <span class="n">lumi</span> <span class="o">*</span> <span class="n">T</span> <span class="o">*</span> <span class="n">bhzz</span> <span class="o">*</span> <span class="n">bzmm</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">nh4mu_o</span> <span class="o">=</span> <span class="n">nh4mu</span> <span class="o">*</span> <span class="n">epsilon_mu</span><span class="o">**</span><span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of expected H-&gt;4mu </span><span class="si">{:4.1f}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nh4mu</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of observed H-&gt;4mu </span><span class="si">{:4.1f}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nh4mu_o</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>number of expected H-&gt;4mu 208.0 
+number of observed H-&gt;4mu 113.8 
+</pre></div>
+</div>
+</div>
+</div>
+<p>A partir de ésta última expresión:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(\vec{\sigma} \cdot \vec{p})^2 = \text{p}^2 \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}
+\end{split}\]</div>
+<p><em>solución</em></p>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>Verificar que el operador paridad sobre los espinores es <span class="math notranslate nohighlight">\(P = \gamma^0\)</span>, de tal forma que <span class="math notranslate nohighlight">\(P \, u_{s}(E, \vec{p}) \equiv \gamma^0 u_s(E, \vec{p}) = u_s(E, - \vec{p})\)</span>. Verificar que los espinores en reposo <span class="math notranslate nohighlight">\(u_s(m,{\bf 0}), \, v_s(m, {\bf 0})\)</span>, son autoestados de paridad con autovalores +1 y -1 respecticamente. Verificar con los espinores de helicidad en la dirección <span class="math notranslate nohighlight">\(z\)</span> que la paridad invierte la helicidad.</p>
+<p>Al aplicar inversión por paridad sobre la ecuación de Dirac del espinor obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+(i\gamma^0 \partial_0 - i \gamma^k \partial_k - m) \, u_s(E, -\vec{p}) = 0
+\]</div>
+<p>Verificar que si multiplicamos por la izquierda <span class="math notranslate nohighlight">\(\gamma^0\)</span> recuperamos la ec. de Dirac para los espinores <span class="math notranslate nohighlight">\(u_s(E, {\bf p})\)</span>.</p>
+<p><em>solución</em></p>
+<ol class="simple">
+<li><p>Tomemos los espinores:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_s(E, \vec{p}) = N \begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot \hat{{\bf v}}) \chi_s \end{pmatrix} 
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(N = \sqrt{E+m}\)</span> es una factor de normalización, <span class="math notranslate nohighlight">\(\kappa = \text{p}/(E+m)\)</span> es un factor cinemático, y <span class="math notranslate nohighlight">\(\hat{{\bf v}}\)</span> el vector unitario de la velocidad y</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\chi_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \;\;\; \chi_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}.
+\end{split}\]</div>
+<p>A aplicar</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 u_s(E, \vec{p}) = N \begin{pmatrix} I &amp; 0 \\ 0 &amp; -I \end{pmatrix}  \begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot \hat{v}) \chi_s \end{pmatrix}  =  \\
+N  \begin{pmatrix} \chi_s \\ -\kappa (\vec{\sigma} \cdot \hat{{\bf v}}) \chi_s \end{pmatrix} = 
+N  \begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot (-\hat{{\bf v}})) \chi_s \end{pmatrix} = u_s(E, -\vec{p})
+\end{split}\]</div>
+<p>1.b) Los espinores en reposo son simplemente:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_s(m, {\bf 0}) = \sqrt{2m} \begin{pmatrix} \chi_s \\ 0 \end{pmatrix}
+\end{split}\]</div>
+<p>La paridad cambia solo el bi-espinor de abajo, luego:
+$<span class="math notranslate nohighlight">\(
+\gamma^0 u_s(m, {\bf 0}) = u_s(m, {\bf 0})
+\)</span>$</p>
+<p>Mientras que para las antipartículas, sus espinores son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_s(m, {\bf 0}) = \sqrt{2m} \begin{pmatrix} 0 \\ \xi_s \end{pmatrix}
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\xi_2 = \chi_1, \; \xi_2 = \chi_1\)</span></p>
+<p>Al aplicar paridad si cambia los bi-espinores de abajo</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^0 v_s(m, {\bf 0}) = - v_s(m, {\bf 0})
+\]</div>
+<p>Luego <span class="math notranslate nohighlight">\(u_s(m, {\bf 0}), \, v_s(m, {\bf 0}))\)</span> son autoestados de paridad con autovalores <span class="math notranslate nohighlight">\(+1, -1\)</span> respectivamente.</p>
+<p>1.c Si aplicamos paridad a los espinores de helicidad en la dirección <span class="math notranslate nohighlight">\(z\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^0 u_\pm(p) = 
+\]</div>
+<ol class="simple">
+<li><p>La ecuación de Dirac aplicando paridad queda (notar que la derivadas de las coordenadas espaciales invierten el signo):</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+(i\gamma^0 \partial_0 - i \gamma^k \partial_k - m) \, u_s(E, -\vec{p}) = 0
+\]</div>
+<p>Si multiplicamos por <span class="math notranslate nohighlight">\(\gamma^0\)</span> por la derecha (esto es aplicamos la inversión por paridad de nuevo), dado que <span class="math notranslate nohighlight">\(\gamma^0 \gamma^k = - \gamma^k \gamma^0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma^0 (i\gamma^0 \partial_0 - i \gamma^k \partial_k - m) \, u_s(E, -\vec{p}) = 0 \\
+(i\gamma^0 \partial_0 + i \gamma^k \partial_k - m) \, \gamma^0 \, u_s(E, -\vec{p}) = \\
+(i\gamma^\mu \partial_\mu - m) \, u_s(E, \vec{p}) = 0
+\end{split}\]</div>
+<p>que es la ec. de Dirac para los espinores <span class="math notranslate nohighlight">\(u_s(p)\)</span>.</p>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>La transformación por carga, en la representación Pauli-Dirac, para las soluciones de Dirac es <span class="math notranslate nohighlight">\(C \, \Psi_s(x) \equiv i \gamma^2 \Psi^*_s(x) = \eta_C \Phi_s(x)\)</span>, (siendo <span class="math notranslate nohighlight">\(\eta_C\)</span> una fase compleja), esto es cambiamos partícula por antipartícula. Verificar que para los espinores de helicidad (en la dirección <span class="math notranslate nohighlight">\(z\)</span>) la operación bajo carga es:</p>
+<div class="math notranslate nohighlight">
+\[
+C \, u_\pm(p) \equiv i\gamma^2 u^{*}_\pm(p) = \pm v_\pm(p)
+\]</div>
+<p>Considera ahora la ecuación de Dirac con interacción con el campo electromagnético:</p>
+<div class="math notranslate nohighlight">
+\[
+[\gamma^\mu( i \partial_\mu   - q A_\mu) - m] \, \Psi_s(x) = 0
+\]</div>
+<p>Aplicar la operación conjugación de Carga sobre la ecuación, esto es, aplica el complejo conjugado y luego multiplica por <span class="math notranslate nohighlight">\(i\gamma^2\)</span> por la derecha, y verifica que obtienes la ec. de Dirac para las antipartículas. Usa que el campo electromagnético <span class="math notranslate nohighlight">\(A_\mu\)</span> es hermítico. En vista de la ecuación que queda, ¿qué carga tienen las antipartículas?</p>
+<p><em>solución:</em></p>
+<p>Recordemos que en la representación de Pauli-Dirac, <span class="math notranslate nohighlight">\(\gamma^2\)</span> es la única matriz compleja (el resto son reales)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+i \gamma^2 = i \begin{pmatrix} 0 &amp; \sigma^2 \\ - \sigma^2 &amp; 0 \end{pmatrix}  = 
+\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}
+\end{split}\]</div>
+<p>Si lo aplicamos sobre <span class="math notranslate nohighlight">\(u_\pm(p)\)</span>, los espinores de helicidad en la dirección <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+i \gamma^2 u^*_+(p) = N \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}
+\begin{pmatrix} 1 \\ 0 \\ \kappa \\ 0 \end{pmatrix}  = N \begin{pmatrix} 0 \\ -\kappa \\ 0 \\ 1 \end{pmatrix} = v_+(p)
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+i \gamma^2 u^*_-(p) = N \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}
+\begin{pmatrix} 0 \\ 1 \\ 0 \\ -\kappa \end{pmatrix}  = N \begin{pmatrix} -\kappa \\ 0 \\ -1 \\ 0 \end{pmatrix} = - v_-(p)
+\end{split}\]</div>
+<p>Podemos hacerlo de forma génerica con <span class="math notranslate nohighlight">\(u_s(p)\)</span></p>
+<p>A partir de la expresión <span class="math notranslate nohighlight">\(u_s(p)\)</span> en polares:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+i \gamma^2 u^*_s(p) = N \, i \begin{pmatrix} 0 &amp;  \sigma^2 \\ -\sigma^2 &amp; 0 \end{pmatrix} 
+\begin{pmatrix} \chi_s \\ \kappa (\vec{\sigma} \cdot \hat{v})^* \chi_s \end{pmatrix} 
+\end{split}\]</div>
+<p>analicemos el caso <span class="math notranslate nohighlight">\(s = 1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{C} u^*_1(p) = N \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \\ \kappa \, \cos \theta \\ \kappa  e^{-i\phi} \sin \theta  \end{pmatrix} = N \begin{pmatrix} \kappa  e^{-i\phi} \sin \theta \\ -\kappa \, \cos \theta \\ 0 \\ 1  \end{pmatrix} 
+\end{split}\]</div>
+<p>y por otro lado, la expresión de <span class="math notranslate nohighlight">\(v_1(p)\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_1(p) = N \begin{pmatrix} \kappa e^{-i\phi} \sin \theta \\ - \kappa \cos \theta \\ 0 \\ 1\end{pmatrix}
+\end{split}\]</div>
+<p>para <span class="math notranslate nohighlight">\(s = 2\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{C} u^*_2(p) = N \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \\ \kappa \, e^{i\theta }\sin \theta \\ -\kappa  \cos \theta  \end{pmatrix} = - N \begin{pmatrix}  \kappa  \cos \theta \\ \kappa \, e^{i\phi} \sin \theta \\ 1 \\ 0  \end{pmatrix} 
+\end{split}\]</div>
+<p>y por otro lado, la expresión de <span class="math notranslate nohighlight">\(v_1(p)\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_2(p) = N \begin{pmatrix} \kappa \cos \theta \\ \kappa e^{i \phi} \sin \theta \\ 1 \\ 0\end{pmatrix}
+\end{split}\]</div>
+<p>Para la ec. de Dirac en presencia del campo <span class="math notranslate nohighlight">\(A_\mu\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+[\gamma^\mu(i\partial_\mu - q A_\mu) -m] \, \Psi_s = 0
+\]</div>
+<p>Si tomamos el complejo conjugado y multiplicamos por la izquierda por <span class="math notranslate nohighlight">\(i \gamma^2\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+i \gamma^2 \; [(\gamma^\mu)^* (-i\partial_\mu - q A_\mu) -m] \, \Psi_s^* = 0
+\]</div>
+<p>La única <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> que cambia al aplicar el conjugado es la <span class="math notranslate nohighlight">\(\mu=2\)</span>, como <span class="math notranslate nohighlight">\((\gamma^2)^* = - \gamma^2\)</span>.
+Ahora como la <span class="math notranslate nohighlight">\(\gamma^2\)</span> de la izquierda anti-conmuta con todas las gammas, <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> a excepción de con <span class="math notranslate nohighlight">\(\gamma^2\)</span> con la que conmuta, tenemos.</p>
+<div class="math notranslate nohighlight">
+\[
+[-(\gamma^\mu) (-i\partial_\mu -q A_\mu) - m] \; (i \gamma^2) \, \Psi_s^* = 0
+\]</div>
+<p>Luego</p>
+<div class="math notranslate nohighlight">
+\[
+[\gamma^\mu (i \partial_\mu + q A_\mu) - m] \, \eta_C \Phi_s(x) = 0
+\]</div>
+<p>que es la ec. de Dirac para las antipartículas, pero ahora el signo de <span class="math notranslate nohighlight">\(q\)</span> ha cambiado, antes era <span class="math notranslate nohighlight">\(-q\)</span> y ahora <span class="math notranslate nohighlight">\(+q\)</span>. ¡Luego es la misma ecuación de interacción pero con la carga opuesta!</p>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>Determina el biespinor <span class="math notranslate nohighlight">\(\xi_\lambda(\hat{\bf v})\)</span> que es autoestado de <span class="math notranslate nohighlight">\((\vec{\sigma} \cdot {\hat {\bf v}})\)</span> con autovalores <span class="math notranslate nohighlight">\(\lambda = \pm 1\)</span>. Usa la expresión de <span class="math notranslate nohighlight">\((\vec{\sigma} \cdot \hat{\bf v})\)</span> en polares.</p>
+<p>Verifica que los espinores dados por:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_\lambda(p) = N \begin{pmatrix} \xi_\lambda(\hat{\bf v}) \\ \lambda \kappa \, \xi_\lambda (\hat{\bf v})\end{pmatrix}
+\end{split}\]</div>
+<p>son autoestados de helicidad con autovalores <span class="math notranslate nohighlight">\(\lambda\)</span> y soluciones de la ec. de Dirac.</p>
+<p><em>solución</em></p>
+<p>(ver extensión cinemática, TM)</p>
+<ol class="simple">
+<li><p>Cálculo de los autoestados</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \cos\theta &amp; e^{-i\phi} \sin\theta \\ e^{i\phi} \sin\theta &amp; -\cos\theta \end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix} = \lambda \begin{pmatrix} a \\ b \end{pmatrix} 
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+a \cos \theta + b e^{-i\phi} \sin \theta = \lambda a \\
+a e^{+i\phi} \sin \theta + b \cos \theta = \lambda b 
+\end{split}\]</div>
+<p>de la primera obtenemos:
+$<span class="math notranslate nohighlight">\(
+\frac{b}{a} = e^{+i\phi} \frac{(\lambda - \cos \theta)} {\sin \theta}
+\)</span>$</p>
+<p>luego para <span class="math notranslate nohighlight">\(\lambda = +1\)</span>:
+$$
+\frac{b}{a} = e^{+i\phi} \frac{(1 - \cos \theta)} {\sin \theta} = e^{i\phi} \tan \frac{\theta}{2} \</p>
+<div class="math notranslate nohighlight">
+\[Para $\lambda = -1$\]</div>
+<p>\frac{b}{a} = -e^{+i\phi} \frac{(1 + \cos \theta)} {\sin \theta} \
+$$</p>
+<p>y podemos tomar</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\xi_+(\hat{\bf v}) = \begin{pmatrix}  \cos \frac{\theta}{2} \\ e^{+i\phi} \sin \frac{\theta}{2} \end{pmatrix}, \;\;\;
+\xi_+(\hat{\bf v}) = \begin{pmatrix}  -\sin \frac{\theta}{2} \\ e^{+i\phi} \cos \frac{\theta}{2} \end{pmatrix}, \;\;\;
+\end{split}\]</div>
+<p>2- Sabemos que los dos bi-espinores de cada espinor de Dirac <span class="math notranslate nohighlight">\(u_\lambda(p)\)</span>, la parte de abajo se relaciona con la de arriba por:</p>
+<div class="math notranslate nohighlight">
+\[
+u^b_\lambda = \kappa \, (\vec{\sigma} \cdot \hat{\bf v}) \, u^q_\lambda
+\]</div>
+<p>tomando <span class="math notranslate nohighlight">\(u^a_\lambda = \xi_\lambda(\hat{\bf v})\)</span>, al ser éste autoestado de <span class="math notranslate nohighlight">\((\vec{\sigma} \cdot \hat{\bf v})\)</span> con autovalores <span class="math notranslate nohighlight">\(\lambda = \pm 1\)</span>, los espinores solución de la ec. de Dirac y autoestados de helicidad quedan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_\pm(p) = N \begin{pmatrix} \xi_\lambda(\hat{\bf v}) \\ \lambda \kappa \xi_\lambda(\hat{\bf v})\end{pmatrix}
+\end{split}\]</div>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>Demuestra que la matriz <span class="math notranslate nohighlight">\(\gamma^5\)</span> cumple:</p>
+<div class="math notranslate nohighlight">
+\[
+(\gamma^5)^2 = I, \;\; (\gamma^5)^\dagger = \gamma^5, \;\; \gamma^5 \gamma^\mu = - \gamma^\mu \gamma^5
+\]</div>
+<p>Demostrar que <span class="math notranslate nohighlight">\(P_L = \frac{1}{2}(1-\gamma^5)\)</span> y <span class="math notranslate nohighlight">\(P_R = \frac{1}{2}(1-\gamma^5), \)</span> son proyectores, (los proyectores de <em>quiralidad</em> a izquierda <span class="math notranslate nohighlight">\(L\)</span> o derecha <span class="math notranslate nohighlight">\(R\)</span>), esto es, cumplen:</p>
+<div class="math notranslate nohighlight">
+\[
+P^2_R = P_R, \; P^2_L = P_L, \; P_L + P_R = I, \; P_L P_R = P_R P_L = 0.
+\]</div>
+<p>Calcula la proyección de quiralidad a izquierda y derecha de <span class="math notranslate nohighlight">\(u_\pm(p_z)\)</span>, los espinores de helicidad, donde <span class="math notranslate nohighlight">\(\vec{p}\)</span> va en la dirección <span class="math notranslate nohighlight">\(z\)</span>. Considera el caso de partícula ultrarelativistas <span class="math notranslate nohighlight">\(E \gg m\)</span>.</p>
+<p>Demostrar que la inversión de paridad revierte los proyectores de quiralidad, esto es: <span class="math notranslate nohighlight">\(P^{-1} \, P_{L/R} \, P = P_{R/L}\)</span>.</p>
+<p><em>solución</em></p>
+<ol class="simple">
+<li><p>Demostramos las condiciones de proyectores:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+P^2_L = \frac{1}{2}(1-\gamma^5) \frac{1}{2}(1-\gamma^5) = \frac{1}{4} (1 - 2 \gamma^5 + (\gamma^5)^2) = 
+\frac{1}{4}(2 - 2 \gamma^5) = \frac{1}{2} (1 - \gamma^5) = P_L
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+P^2_R = \frac{1}{2}(1+\gamma^5) \frac{1}{2}(1+\gamma^5) = \frac{1}{4} (1 + 2 \gamma^5 + (\gamma^5)^2) = 
+\frac{1}{4}(2 + 2 \gamma^5) = \frac{1}{2} (1 + \gamma^5) = P_R
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+P_L + P_ R = \frac{1}{2}(1-\gamma^5) + \frac{1}{2}(1+\gamma^5) = I
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+P_L P_R = \frac{1}{2}(1-\gamma^5)  \frac{1}{2}(1+\gamma^5) = \frac{1}{4} (I - \gamma^5 + \gamma^5 - (\gamma^5)^2) = 0
+\]</div>
+<ol class="simple">
+<li><p>Calculamos las proyecciones de quiralidad de los espinores de helicidad en <span class="math notranslate nohighlight">\(z\)</span></p></li>
+</ol>
+<p>La forma explícita de <span class="math notranslate nohighlight">\(P_L, \, P_R\)</span> en la representación Pauli-Dirac</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_L = \frac{1}{2} \begin{pmatrix} I &amp; -I \\ -I &amp; I \end{pmatrix}, \;\;\; 
+P_R = \frac{1}{2} \begin{pmatrix} I &amp; I \\ I &amp; I \end{pmatrix}
+\end{split}\]</div>
+<p>Luego aplicada a los espinores de helicidad (en la dirección <span class="math notranslate nohighlight">\(z\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_L \, u_+(p) = \frac{1}{2} \begin{pmatrix} I &amp; -I \\ -I &amp; I \end{pmatrix}
+N  \begin{pmatrix} 1 \\ 0 \\ \kappa \\ 0\end{pmatrix} = 
+\frac{N}{2} (1 - \kappa) \begin{pmatrix} 1 \\ 0 \\ -1 \\ 0 \end{pmatrix} \\
+P_R \, u_+(p) = \frac{1}{2} \begin{pmatrix} I &amp; I \\ I &amp; I \end{pmatrix}
+N  \begin{pmatrix} 1 \\ 0 \\ \kappa \\ 0\end{pmatrix} = 
+\frac{N}{2} (1 + \kappa) \begin{pmatrix} 1 \\ 0 \\ 1 \\ 0 \end{pmatrix} \\
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_L \, u_-(p) = \frac{1}{2} \begin{pmatrix} I &amp; -I \\ -I &amp; I \end{pmatrix}
+N  \begin{pmatrix} 0 \\ 1 \\ 0 \\ - \kappa \end{pmatrix} = 
+\frac{N}{2} (1 + \kappa) \begin{pmatrix} 0 \\ 1 \\ 0 \\ -1 \end{pmatrix} \\
+P_R \, u_-(p) = \frac{1}{2} \begin{pmatrix} I &amp; I \\ I &amp; I \end{pmatrix}
+N  \begin{pmatrix} 0 \\ 1 \\ 0 \\  -\kappa \end{pmatrix} = 
+\frac{N}{2} (1 - \kappa) \begin{pmatrix} 0 \\ 1 \\ 0 \\ 1 \end{pmatrix} \\
+\end{split}\]</div>
+<p>En el caso de la partícula ultra relativista <span class="math notranslate nohighlight">\(\kappa \to 1\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+P_L u_- = u_-, \;\; P_R u_+ = u_+
+\]</div>
+<p>Mientras que:</p>
+<div class="math notranslate nohighlight">
+\[
+P_R u_- = 0, \;\; P_L u_+ = 0
+\]</div>
+<p>helicidad y quiralidad coinciden el caso ultra-relativista.</p>
+<ol class="simple">
+<li><p>El operador paridad sobre los espinores es <span class="math notranslate nohighlight">\(\hat{P} = \gamma^0\)</span>, y <span class="math notranslate nohighlight">\(\hat{P}^{-1} = \gamma\)</span>, dado que <span class="math notranslate nohighlight">\((\gamma^0)^2 = I\)</span>.</p></li>
+</ol>
+<p>Luego</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{P}^{-1} P_{R/L} \hat{P} = \gamma^0 \, \frac{1}{2} (1 \pm \gamma^5) \, \gamma^0 = \frac{1}{2} (1 \mp  \gamma^5) \, (\gamma^0)^2 = P_{L/R}
+\]</div>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p>Verifica que la corriente fermiónica se puede descomponer en dos corrientes, una con quiralidad a izquierdas y otra a derechas.</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi} \gamma^\mu \Psi = \bar{\Psi}_L \gamma^\mu \Psi_L + \bar{\Psi}_R \gamma^\mu \Psi_R
+\]</div>
+<p>Mientras que el término escalar, mezcla ambas quiralidades:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi} \Psi = \bar{\Psi}_L \Psi_R + \bar{\Psi}_R \Psi_L 
+\]</div>
+<p><em>solución</em></p>
+<hr class="docutils" />
+<p><strong>ejercicio</strong></p>
+<p><em>ejercicio</em>: Indica si son posibles o no y por qué los siguientes vértices:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(e, e, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu_e, \nu_e, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, e^+, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu_e, \nu_e, Z\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \mu, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \nu_e, W\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \tau, Z\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \nu_\mu, W\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, e, g\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(b, b, g\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(d, s, g\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma, \gamma, \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(u, u, W\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(u, d, W\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(d, t, W\)</span></p></li>
+</ul>
+<p><em>solución</em></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(e, e, \gamma\)</span>: Sí, interacción electromagnética</p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu_e, \nu_e, \gamma\)</span>: No, el neutrino no interacciona con el fotón</p></li>
+<li><p><span class="math notranslate nohighlight">\(e, e^+, \gamma\)</span>: Sí, aniquilación</p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu_e, \nu_e, Z\)</span>: Sí, el neutrino interacciona débil con el <span class="math notranslate nohighlight">\(Z\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \mu, \gamma\)</span>: No, se produce un cambio de sabor de la partícula que no está permitido en las interaccionel electromagnéticas.</p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \nu_e, W\)</span>: Sí, interacción débil cargada</p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \tau, Z\)</span>: No, el <span class="math notranslate nohighlight">\(Z\)</span> no cambia el sabor de las partículas,</p></li>
+<li><p><span class="math notranslate nohighlight">\(e, \nu_\mu, W\)</span>: No, el nuetrino debería ser electrónico,</p></li>
+<li><p><span class="math notranslate nohighlight">\(e, e, g\)</span>: No, el electrón no interacciona fuertemente</p></li>
+<li><p><span class="math notranslate nohighlight">\(b, b, g\)</span>: Sí, el gluón conserva el sabor e interacciona con los quarks</p></li>
+<li><p><span class="math notranslate nohighlight">\(d, s, g\)</span>: No, el gluón conserva el sabor</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma, \gamma, \gamma\)</span>: No, los fotones no interacciona entre sí</p></li>
+<li><p><span class="math notranslate nohighlight">\(u, u, W\)</span>: No, el W cambia el sabor y combina un quark (o leptón) del duplete de arriba con uno de abajo</p></li>
+<li><p><span class="math notranslate nohighlight">\(u, d, W\)</span>: Sí, es una corriente cargada débil</p></li>
+<li><p><span class="math notranslate nohighlight">\(d, t, W\)</span>: Sí, es una corriente cargada débil (el <span class="math notranslate nohighlight">\(d\)</span> está abajo en el duplete y el <span class="math notranslate nohighlight">\(t\)</span> arriba)</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>ejercicio</strong> Dibuja los siguientes diagramas de Feynman.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau \to \mu + \bar{\nu}_\mu + \nu_\tau\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau \to e + \bar{\nu}_e + \nu_\tau\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu \to e + \bar{\nu}_e + \nu_\mu\)</span></p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>ejercicio</strong>: Dibuja los diagramas de Feynman para los siguientes procesos:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau \to \pi^- + \nu_\tau\)</span>, siendo <span class="math notranslate nohighlight">\(\pi^-\)</span> la combinación de quarks (<span class="math notranslate nohighlight">\(d\bar{u}\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(K^+ \to  \mu^+ + \nu_\mu\)</span>, siendo <span class="math notranslate nohighlight">\(K^+\)</span> la combinación (<span class="math notranslate nohighlight">\(s\bar{u}\)</span>)</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>ejercicio</strong>: Dibuja los diagramas árbol de las posible interacciones, e indica si son aniquilaciones o interacciones:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(e+e\to e+e\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e+e^+ \to \mu + \mu^+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e + e^+ \to e + e^+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e + \nu_e \to e + \nu_e\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e + \bar{\nu}_e \to e + \bar{\nu}_e\)</span></p></li>
+</ul>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks/probs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By J. Ángel Hernando Morata<br/>
+  
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
