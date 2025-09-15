@@ -1025,7 +1025,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Sep 11 15:38:11 2025
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Sep 15 15:42:38 2025
 </pre></div>
 </div>
 </div>
@@ -1502,6 +1502,23 @@ J_a + J_b + I_{ab} = J_c + J_d + I_{cd}
 </tr>
 </tbody>
 </table>
+<p>solución:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Delta N_a = - \sigma \, \phi_a \, \Delta N_b  = - \sigma \frac{N_a}{S} \, \frac{\rho S \Delta x}{M_B} N_A \\
+\frac{\partial N_a}{\partial x} = -  \frac{\rho \, \sigma}{M_B} N_A \, N_a = - \frac{N_a}{\lambda}
+\end{split}\]</div>
+<p>esto es:</p>
+<div class="math notranslate nohighlight">
+\[
+N_a(x) = N_a \, e^{-x/\lambda} \; \Rightarrow \; \phi_a(x) = \phi_a \, e^{-x/\lambda}
+\]</div>
+<p>donde:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda =  \frac{M_B}{\rho \, \sigma \, N_A }{N_a} 
+\]</div>
+<p>que corresponde a la longitud de interacción.</p>
 </div>
 </div>
 <div class="section" id="vida-media">
@@ -1513,7 +1530,7 @@ J_a + J_b + I_{ab} = J_c + J_d + I_{cd}
 \frac{\mathrm{d}N}{\mathrm{d}t} = - \frac{N_a}{\tau} \to N(t) = N_a \, e^{-t/\tau}
 \]</div>
 <p>Las desintegraciones siguen una ley exponencial con una constante característica que llamamos tiempo de vida media, <span class="math notranslate nohighlight">\(\tau\)</span>.</p>
-<p>Por ejemplo, para la desintegración del neutrón, <span class="math notranslate nohighlight">\(n  \to + p + e + \bar{\nu}_e\)</span>, el tiempo de vida es 878.4 s.</p>
+<p>Por ejemplo, para la desintegración del neutrón, <span class="math notranslate nohighlight">\(n  \to p + e + \bar{\nu}_e\)</span>, el tiempo de vida es 878.4 s.</p>
 </div>
 </div>
 <div class="section" id="radiacion-alpha-beta-gamma">
@@ -1795,7 +1812,7 @@ E' = \frac{E}{1 + \frac{2 E}{M c^2} \sin^2(\theta/2)},
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/introduccion_51_0.png" src="../_images/introduccion_51_0.png" />
+<img alt="../_images/introduccion_52_0.png" src="../_images/introduccion_52_0.png" />
 </div>
 </div>
 </div>
@@ -1941,7 +1958,7 @@ u, \;\; d, \;\; e, \;\; \nu
 <ul class="simple">
 <li><p>la electromagnética, mediada por el fotón.</p></li>
 <li><p>la débil, mediada, cuando se produce cambio de carga eléctrica, por los bosones vectoriales, <span class="math notranslate nohighlight">\(W^\pm\)</span>, (donde el signo hace referencia a la carga), y las que no cambian la carga eléctrica, mediadas por el <span class="math notranslate nohighlight">\(Z\)</span></p></li>
-<li><p>la fuerte fundamental, mediada por los gruones. La fuerza responsable de la estabilidad y dinámica de los núcleos, es una fuerza fuerte residual. Similar al papel que juega el electromagnetismo en la formación de moléculas.</p></li>
+<li><p>la fuerte fundamental, mediada por los gluones. La fuerza responsable de la estabilidad y dinámica de los núcleos, es una fuerza fuerte residual. Similar al papel que juega el electromagnetismo en la formación de moléculas.</p></li>
 </ul>
 <p>Finalmente, la masa, que en principio es una propiedad de la partícula, es en realidad la consecuencia de la interacción de la partícula con el bosón de Higgs. Cuanto más masa tiene una partícula, más fuerte interacciona con el bosón de Higgs.</p>
 <div class="section" id="el-sm-a-simple-vista">
@@ -2009,7 +2026,7 @@ u, \;\; d, \;\; e, \;\; \nu
 <p>En cada generación, tanto leptones como quarks, se agrupan en <strong>dupletes</strong> con posiciones <strong>arriba</strong> y <strong>abajo</strong>.</p>
 <p>Decimos que las tres generaciones de leptones se comportan con <strong>universalidad</strong> (de igual manera) frente a las interacciones si se tiene en cuenta que sus masas son diferentes.</p>
 <p>Decimos también que las partículas tienen <strong>sabor</strong>, que en realidad se corresponde con la identidad de la partícula. Por ejemplo decimos que el quark <em>s</em> tiene <em>extrañeza</em>, el quark <em>b</em>, belleza, el neutrino electrónico tiene <em>sabor electrónico</em>. Y para los leptones cargados, decimos un leptón cargado de sabor <em>electrónico</em>, para referirnos al electrón.</p>
-<p>Por alguna razón que desconocemos las partículas desde el punto de la interacción débil no se corresponden exactamente con las partículas de masa, en otras palabras, la interacción con los campos vectoriales no está alineada con la interacción con el bosón de Higgs. Lo que da lugar a una física compleja y muy rica, que se conoce como <strong>física del sabor</strong>. Un ejemplo de esta física son las oscilaciones de neutrinos.</p>
+<p>Las partículas desde el punto de la interacción débil no se corresponden exactamente con las partículas de masa, en otras palabras, la interacción con los campos vectoriales no está alineada con la interacción con el bosón de Higgs. Lo que da lugar a una física compleja y muy rica, que se conoce como <strong>física del sabor</strong>. Un ejemplo de esta física son las oscilaciones de neutrinos.</p>
 <p>La siguiente tabla muestra los fermiones agrupados por familias, su carga eléctrica y las fuerzas que sienten:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -2245,7 +2262,7 @@ n \to p + e + \bar{\nu}_e.
 <li><p>el <em>número leptónico</em>, <span class="math notranslate nohighlight">\(L\)</span>,</p></li>
 <li><p>el <em>número bariónico</em>, <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 </ul>
-<p>La anterior desintegración es posible energéticamente, porque el <span class="math notranslate nohighlight">\(n\)</span> tiene una masa (939  MeV) ligeramente superior al <span class="math notranslate nohighlight">\(p\)</span> (938.3 MeV). De esa pequeña diferencia proviene que la vida media del neutrón sea aproximadamente de 10 mins.</p>
+<p>La anterior desintegración es posible energéticamente, porque el <span class="math notranslate nohighlight">\(n\)</span> tiene una masa (939  MeV) ligeramente superior al <span class="math notranslate nohighlight">\(p\)</span> (938.3 MeV). De esa pequeña diferencia proviene que la vida media del neutrón sea aproximadamente de 14 mins.</p>
 <p>Dado que la partícula estable de los leptones es el <span class="math notranslate nohighlight">\(e\)</span> y de los bariones el <span class="math notranslate nohighlight">\(p\)</span>. La conservación del número leptónico y bariónico, a igualdad del número de ambas partículas, nos asegura que el Universo sea eléctricamente neutro.</p>
 <p>Muy diferente sería si la Naturaleza si el neutrino hubiese sido una partícula masiva con posibilidad de desintegrarse, o si el protón tuviera más masa que el neutrón.</p>
 <p>El resto de hadrones, (ya sean mesones o bariones), así como leptones cargados <span class="math notranslate nohighlight">\(\mu, \tau\)</span>, se desintegran:</p>
@@ -2363,7 +2380,7 @@ n \to p + e + \bar{\nu}_e.
 <p>Se viola de forma mínima y solo en corrientes cargadas en hadrones, (no sabemos hoy en día si también se viola en leptones). Aunque esta violación es muy relevante, sin embargo no tiene un caracter fundamental en la teoría, sino que aparece como una posibilidad al existir tres generaciones. Tampoco sabemos por qué se produce este nivel de violación CP, que matemáticamente se traduce en el valor de una fase compleja en una matriz unitaria (ver tema quark-hadrones).</p>
 <p>Además, <strong>las corrientes cargadas cambian el sabor, pero las neutras lo conservan</strong>.</p>
 <p>Por ejemplo, la interacción débil neutra entre un neutrino y un leptón cargado iniciales da lugar a una dispersión con el mismo neutrino y leptón cargado en el estado final.</p>
-<p>Luego, la interacción más peculiar de todas, es con diferencia <em>la interacción débil cargada</em>, la que media la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> del neutrón.</p>
+<p>Luego, la interacción más peculiar de todas es con diferencia <em>la interacción débil cargada</em>, la que media la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> del neutrón.</p>
 </div>
 </div>
 <div class="section" id="el-boson-de-higgs">
