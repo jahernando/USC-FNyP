@@ -871,7 +871,7 @@ una hipérbola</p>
 <tbody>
 <tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/gen_alphadisp_parabol.png"><img alt="../_images/gen_alphadisp_parabol.png" class="align-center" src="../_images/gen_alphadisp_parabol.png" style="width: 240px;" /></a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:center"><p>Dispersión parábólica [Rutherford]</p></td>
+<tr class="row-odd"><td class="text-align:center"><p>Dispersión hyperbólica [Rutherford]</p></td>
 </tr>
 </tbody>
 </table>
@@ -882,6 +882,85 @@ una hipérbola</p>
 \frac{Z_1 Z_2 e^2}{4E} \right)^{\!2}
 \frac{1}{\sin^4\!\left(\tfrac{\theta}{2}\right)}
 \]</div>
+<p>Dispersión de Rutherford: derivación clásica</p>
+<p>Con un potencial central la trayectoria de la partícula corresponde a una hypérbola</p>
+<div class="math notranslate nohighlight">
+\[
+\tan \frac{\theta}{2} = \frac{1}{\sqrt
+\]</div>
+<p>Relación parámetro de impacto-ángulo:</p>
+<div class="math notranslate nohighlight">
+\[
+\tan \frac{\theta}{2} = \frac{k\,q_1 q_2}{2E} \frac{1}{b}
+\qquad a \equiv \frac{k\,q_1 q_2}{2E}.
+\]</div>
+<p>Sección eficaz diferencial</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\Omega} = \frac{b}{\sin\theta}\left|\frac{db}{d\theta}\right|.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{db}{d\theta} = -\frac{a}{2}\csc^2\frac{\theta}{2}
+\quad\Rightarrow\quad
+\left|\frac{db}{d\theta}\right| = \frac{a}{2}\csc^2\frac{\theta}{2}.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{b}{\sin\theta} = \frac{a}{2\sin^2(\theta/2)}.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\Omega}
+= \frac{a^2}{4}\,\frac{1}{\sin^4(\theta/2)}.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\Omega}
+= \left(\frac{k\,q_1 q_2}{4E}\right)^2 \frac{1}{\sin^4(\theta/2)}.
+\]</div>
+<p>En términos de números atómicos <span class="math notranslate nohighlight">\(Z_1, Z_2\)</span> y carga elemental <span class="math notranslate nohighlight">\(e\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\Omega}
+= \left(\frac{1}{4\pi\varepsilon_0} \frac{Z_1 Z_2 e^2}{4E}\right)^2 
+\frac{1}{\sin^4(\theta/2)} 
+\]</div>
+<p>Dispersión de Rutherford: derivación clásica</p>
+<p>Relación parámetro de impacto–ángulo}
+$<span class="math notranslate nohighlight">\(
+b = \frac{k\,q_1 q_2}{2E}\cot\frac{\theta}{2}, 
+\qquad a \equiv \frac{k\,q_1 q_2}{2E}.
+\)</span>$</p>
+<p>\subsection*{2) Sección eficaz diferencial}
+[
+\frac{d\sigma}{d\Omega} = \frac{b}{\sin\theta}\left|\frac{db}{d\theta}\right|.
+]</p>
+<p>[
+\frac{db}{d\theta} = -\frac{a}{2}\csc^2\frac{\theta}{2}
+\quad\Rightarrow\quad
+\left|\frac{db}{d\theta}\right| = \frac{a}{2}\csc^2\frac{\theta}{2}.
+]</p>
+<p>[
+\frac{b}{\sin\theta} = \frac{a}{2\sin^2(\theta/2)}.
+]</p>
+<p>[
+\frac{d\sigma}{d\Omega}
+= \frac{a^2}{4},\frac{1}{\sin^4(\theta/2)}.
+]</p>
+<p>\subsection*{3) Forma final}
+[
+\frac{d\sigma}{d\Omega}
+= \left(\frac{k,q_1 q_2}{4E}\right)^2 \frac{1}{\sin^4(\theta/2)}.
+]</p>
+<p>En términos de números atómicos <span class="math notranslate nohighlight">\(Z_1, Z_2\)</span> y carga elemental <span class="math notranslate nohighlight">\(e\)</span>:
+[
+\boxed{
+\frac{d\sigma}{d\Omega}
+= \left(\frac{Z_1 Z_2 e^2}{16\pi \varepsilon_0 E}\right)^2
+\frac{1}{\sin^4(\theta/2)} }
+]</p>
+<p>\end{document}</p>
 </div>
 <div class="section" id="dispersion-de-mott">
 <h3>Dispersión de Mott<a class="headerlink" href="#dispersion-de-mott" title="Permalink to this heading">#</a></h3>
@@ -984,7 +1063,7 @@ E' = \frac{E}{1 + \frac{2 E}{M c^2} \sin^2(\theta/2)},
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/general_15_0.png" src="../_images/general_15_0.png" />
+<img alt="../_images/general_19_0.png" src="../_images/general_19_0.png" />
 </div>
 </div>
 </div>
