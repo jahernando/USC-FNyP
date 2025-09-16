@@ -471,13 +471,18 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#notacion-y-convenciones">
+       7.4.1.1. Notación y convenciones
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#proyecciones-de-espin">
-       7.4.1.1. proyecciones de espín
+       7.4.1.2. proyecciones de espín
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#proyecciones-de-helicidad">
-       7.4.1.2. proyecciones de helicidad
+       7.4.1.3. proyecciones de helicidad
       </a>
      </li>
     </ul>
@@ -620,13 +625,18 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#notacion-y-convenciones">
+       7.4.1.1. Notación y convenciones
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#proyecciones-de-espin">
-       7.4.1.1. proyecciones de espín
+       7.4.1.2. proyecciones de espín
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#proyecciones-de-helicidad">
-       7.4.1.2. proyecciones de helicidad
+       7.4.1.3. proyecciones de helicidad
       </a>
      </li>
     </ul>
@@ -697,7 +707,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Dec  2 12:47:15 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Sep 16 15:32:12 2025
 </pre></div>
 </div>
 </div>
@@ -725,10 +735,10 @@ title="Print to PDF"
 \[
 (i \gamma^\mu \partial_\mu  - m) \, \Psi = 0.
 \]</div>
-<p>donde <span class="math notranslate nohighlight">\(\partial_\mu\)</span> es la  <strong>derivada covariante</strong>:</p>
+<p>donde <span class="math notranslate nohighlight">\(\partial_\mu\)</span> es la  <strong>derivada covariante</strong> que definimos como:</p>
 <div class="math notranslate nohighlight">
 \[
-\partial_\mu = \left( \frac{\partial}{\partial t}, \frac{\partial}{\partial x},  
+\partial_\mu \equiv \left( \frac{\partial}{\partial t}, \frac{\partial}{\partial x},  
                 \frac{\partial}{\partial y}, \frac{\partial}{\partial z}  \right),
 \]</div>
 <p>y <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>, con <span class="math notranslate nohighlight">\(\mu = 0, 1, 2, 3\)</span>, son la matrices gamma.</p>
@@ -738,6 +748,7 @@ title="Print to PDF"
 \gamma^\mu \, \partial_\mu \equiv \sum_{\nu= 0}^{3} \gamma^\nu \partial_\nu
 \]</div>
 <p>En estos apuntes, y habitualmente en la literatura, los índices griegos, <span class="math notranslate nohighlight">\(\mu, \nu = 0, 1,2, 3\)</span>, estarán asociados a las componente temporales y especiales, meintras que los índices latinos, <span class="math notranslate nohighlight">\(i, j, k = 1, 2, 3\)</span>, representarán las componentes espaciales. En ambos caso si aparecen contraidos, implican un sumatorio.</p>
+<p>Notar que <span class="math notranslate nohighlight">\(m\)</span> es en realidad la matrix unidad multiplicada por el valor de <span class="math notranslate nohighlight">\(m\)</span>.</p>
 <div class="section" id="las-matrices-gamma">
 <h4><span class="section-number">7.2.1.1. </span>Las matrices <span class="math notranslate nohighlight">\(\gamma\)</span><a class="headerlink" href="#las-matrices-gamma" title="Permalink to this heading">#</a></h4>
 <p>Las matrices-<span class="math notranslate nohighlight">\(\gamma\)</span> cumplen:</p>
@@ -760,14 +771,14 @@ g_{\mu\nu} = \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &am
 <p>Si hacemos la asociación habitual de mecánica cuántica:</p>
 <div class="math notranslate nohighlight">
 \[
-i\partial_0 \Psi(x) = E, \;\;\; -i\partial_i \Psi(x) = p_i,
+E \to i\partial_0 \Psi(x), \;\;\; p_i \to -i\partial_i \Psi(x)
 \]</div>
-<p>y elevando al cuadro la ec. de Dirac, obtenemos:</p>
+<p>y elevando al cuadro la ec. de Dirac debemos obtener <span class="math notranslate nohighlight">\(E^2 - p^2 = m^2\)</span>, donde <span class="math notranslate nohighlight">\(i\gamma^\mu \partial_\mu = i \gamma^0\partial_0 + i \gamma^k \partial_k\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-E - p^2 =  \left(\gamma^0 E - \sum_k \gamma^k p_k \right) \left(\gamma^0 E - \sum_i\gamma^i p_i\right) = \\
-(\gamma^0)^2 E^2 + \sum_k (\gamma^k)^2 p^2_k +\\
- \sum_{k, i, k \neq 1}(\gamma^k \gamma^i + \gamma^i \gamma^k) p_k p_i -   \sum_k(\gamma^0 \gamma^k + \gamma^k \gamma^0) E p_k
+E^2 - p^2 =  \left(\gamma^0 E - \sum_k \gamma^k p_k \right) \left(\gamma^0 E - \sum_i\gamma^i p_i\right) = \\
+(\gamma^0)^2 E^2 + \sum_k (\gamma^k)^2 p^2_k +
+ \sum_{k, i}(\gamma^k \gamma^i + \gamma^i \gamma^k) p_k p_i -   \sum_k(\gamma^0 \gamma^k + \gamma^k \gamma^0) E p_k
 \end{split}\]</div>
 <p>con <span class="math notranslate nohighlight">\(k, i = 1, 2, 3\)</span>.</p>
 <p><em>Nota:</em> A partir de ahora no explicitaremos los sumatorios.</p>
@@ -796,8 +807,7 @@ H = i \partial_0 = \gamma^0 (m -i \gamma^k \partial_k) \\
 \)</span>$</p>
 <p>Si escribimos:
 $<span class="math notranslate nohighlight">\(
-E = \gamma^0  m +  \gamma^0 \gamma^k p_k\\
-E = (\gamma^0)^\dagger m + (\gamma^0 \gamma^k)^\dagger p_k, \\
+\gamma^0  m - i  \gamma^0 \gamma^k p_k = (\gamma^0)^\dagger m + i (\gamma^0 \gamma^k)^\dagger p_k, \\
 \)</span>$</p>
 <p>obtenemos:</p>
 <div class="math notranslate nohighlight">
@@ -1004,6 +1014,42 @@ p_\mu \equiv g_{\mu\nu} \, p^\nu = \begin{pmatrix} E \\ -{\bf p} \end{pmatrix},
 p^\mu = \begin{pmatrix} E \\ {\bf p} \end{pmatrix}
 \end{split}\]</div>
 <p>Llamamos a <span class="math notranslate nohighlight">\(p_\mu\)</span> vector <em>covariante</em> y a <span class="math notranslate nohighlight">\(p^\mu\)</span> <em>contra-variante</em>.</p>
+<div class="section" id="notacion-y-convenciones">
+<h4><span class="section-number">7.4.1.1. </span>Notación y convenciones<a class="headerlink" href="#notacion-y-convenciones" title="Permalink to this heading">#</a></h4>
+<p>Cuadrimomento contravariante (componentes)
+$<span class="math notranslate nohighlight">\(
+p^\mu = \big(p^0,\, p^1,\, p^2,\, p^3\big) = \big(E,\; \mathbf{p}\big),
+\)</span>$
+donde (E=p^0) es la energía y (\mathbf p=(p^1,p^2,p^3)) el momento espacial.</p>
+<p>Cuadrimomento covariante (bajando índices con la métrica)
+$<span class="math notranslate nohighlight">\(
+p_\mu = g_{\mu\nu} p^\nu
+\quad\Rightarrow\quad
+p_\mu = \big(p_0,\, p_1,\, p_2,\, p_3\big) = \big(E,\; -\mathbf{p}\big).
+\)</span>$</p>
+<p>Producto escalar (invariante) o norma del cuadrimomento
+$<span class="math notranslate nohighlight">\(
+p^\mu p_\mu = g_{\mu\nu} p^\mu p^\nu = (p^0)^2 - \mathbf{p}^2 = E^2 - \mathbf{p}^2 = m^2.
+\)</span>$</p>
+<p>Forma matricial
+$$
+p^\mu =</p>
+<div class="amsmath math notranslate nohighlight" id="equation-89eae5cd-4dc4-40f8-8e00-1d41050a273a">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-89eae5cd-4dc4-40f8-8e00-1d41050a273a" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} E \\ \mathbf{p} \end{pmatrix}\]</div>
+<p>\qquad
+p_\mu =</p>
+<div class="amsmath math notranslate nohighlight" id="equation-41a0e5e1-56fb-41d8-bd91-f8bbeb68454c">
+<span class="eqno">(7.2)<a class="headerlink" href="#equation-41a0e5e1-56fb-41d8-bd91-f8bbeb68454c" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} 1 &amp; 0 \\[2pt] 0 &amp; -\mathbf{I}_{3} \end{pmatrix}\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-b379b656-846f-4f61-84a8-24d9a43e0a8d">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-b379b656-846f-4f61-84a8-24d9a43e0a8d" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} E \\ \mathbf{p} \end{pmatrix}\]</div>
+<p>=</p>
+<div class="amsmath math notranslate nohighlight" id="equation-225567ee-54c6-496e-98e4-7fe21934883e">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-225567ee-54c6-496e-98e4-7fe21934883e" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} E \\ -\mathbf{p} \end{pmatrix}\]</div>
+<div class="math notranslate nohighlight">
+\[Ejemplo: en el sistema de reposo (rest frame)
+\]</div>
+<p>p^\mu_{\text{rest}} = (m,, 0,,0,,0), \qquad p_{\mu,\text{rest}}=(m,,0,,0,,0).
+$$</p>
 <p>Podemos dar las cuatro componentes del espinor <span class="math notranslate nohighlight">\(u_s(p)\)</span> con dos bi-spinores, <span class="math notranslate nohighlight">\(u^a_s(p), \, u^b_s(p)\)</span>, cada uno de ellos a su vez compuestos por dos componentes en vertical.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1082,8 +1128,9 @@ u_s(m) = \sqrt{2m} \begin{pmatrix} \chi_s \\ 0 \end{pmatrix}
 u_1(m) = \sqrt{2m} \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}, \;\; 
 u_2(m) = \sqrt{2m} \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix},  
 \end{split}\]</div>
+</div>
 <div class="section" id="proyecciones-de-espin">
-<h4><span class="section-number">7.4.1.1. </span>proyecciones de espín<a class="headerlink" href="#proyecciones-de-espin" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">7.4.1.2. </span>proyecciones de espín<a class="headerlink" href="#proyecciones-de-espin" title="Permalink to this heading">#</a></h4>
 <p>Introducimos ahora el operador <strong>espín</strong>, <span class="math notranslate nohighlight">\({\bf S}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1108,7 +1155,7 @@ u_2(p) = \sqrt{E+m} \begin{pmatrix} 0 \\ 1 \\ 0 \\ - \kappa \end{pmatrix},
 \end{split}\]</div>
 </div>
 <div class="section" id="proyecciones-de-helicidad">
-<h4><span class="section-number">7.4.1.2. </span>proyecciones de helicidad<a class="headerlink" href="#proyecciones-de-helicidad" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">7.4.1.3. </span>proyecciones de helicidad<a class="headerlink" href="#proyecciones-de-helicidad" title="Permalink to this heading">#</a></h4>
 <p>Definimos el operador <strong>helicidad</strong>, <span class="math notranslate nohighlight">\(h\)</span>, como la componente (o proyección) del espín en la dirección del momento:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
