@@ -17,14 +17,22 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-Ejercicio
+m_p = units.value("proton mass energy equivalent in MeV")
+m_n = units.value("neutron mass energy equivalent in MeV")
+m_e = units.value("electron mass energy equivalent in MeV") 
+E = ((m_n + m_e)**2 - m_p**2)/(2 * m_p)
+print("Energía umbral del nuetrino = {:4.3f} MeV".format(E))
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-[0;32m/var/folders/56/_pmdccc97ljb_l3v3s6gkrxm0000gn/T/ipykernel_4092/2716437163.py[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0mEjercicio[0m[0;34m[0m[0;34m[0m[0m
-[0m
-[0;31mNameError[0m: name 'Ejercicio' is not defined
-NameError: name 'Ejercicio' is not defined
+[0;32m/var/folders/56/_pmdccc97ljb_l3v3s6gkrxm0000gn/T/ipykernel_4040/1369934174.py[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mm_p[0m [0;34m=[0m [0munits[0m[0;34m.[0m[0mvalue[0m[0;34m([0m[0;34m"proton mass energy equivalent in MeV"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0mm_n[0m [0;34m=[0m [0munits[0m[0;34m.[0m[0mvalue[0m[0;34m([0m[0;34m"neutron mass energy equivalent in MeV"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      3[0m [0mm_e[0m [0;34m=[0m [0munits[0m[0;34m.[0m[0mvalue[0m[0;34m([0m[0;34m"electron mass energy equivalent in MeV"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m [0mE[0m [0;34m=[0m [0;34m([0m[0;34m([0m[0mm_n[0m [0;34m+[0m [0mm_e[0m[0;34m)[0m[0;34m**[0m[0;36m2[0m [0;34m-[0m [0mm_p[0m[0;34m**[0m[0;36m2[0m[0;34m)[0m[0;34m/[0m[0;34m([0m[0;36m2[0m [0;34m*[0m [0mm_p[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0mprint[0m[0;34m([0m[0;34m"Energía umbral del nuetrino = {:4.3f} MeV"[0m[0;34m.[0m[0mformat[0m[0;34m([0m[0mE[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mNameError[0m: name 'units' is not defined
+NameError: name 'units' is not defined
 
