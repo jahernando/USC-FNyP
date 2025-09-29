@@ -1547,7 +1547,7 @@ E = \frac{(m_n+m_e)^2 - m^2_p}{2 m_p}.
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">56</span><span class="o">/</span><span class="n">_pmdccc97ljb_l3v3s6gkrxm0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_4040</span><span class="o">/</span><span class="mf">1369934174.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">56</span><span class="o">/</span><span class="n">_pmdccc97ljb_l3v3s6gkrxm0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_4781</span><span class="o">/</span><span class="mf">1369934174.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">m_p</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;proton mass energy equivalent in MeV&quot;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">m_n</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;neutron mass energy equivalent in MeV&quot;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">m_e</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;electron mass energy equivalent in MeV&quot;</span><span class="p">)</span>
@@ -2360,7 +2360,7 @@ e^- + (A, Z) \to e^- + \gamma + (A, Z)
 <p>Y después introduciremos los diagramas de Feynman y indicaremos como se utilizan para calcular los observables físicos de sección eficaz o tiempo de vida media.</p>
 <div class="section" id="sobre-la-ecuacion-de-dirac">
 <h2><span class="section-number">8.1. </span>Sobre la ecuación de Dirac<a class="headerlink" href="#sobre-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
-<p>Dirac propuso en 1932 una ecuación, que lleva su nombre, que describe la dinámica relativista de los fermiones libres. Inicialmente la propuso para describir los electrones débiles.</p>
+<p>Dirac propuso en 1932 una ecuación, que lleva su nombre, que describe la dinámica relativista de los fermiones libres. Inicialmente la propuso para describir los electrones libres.</p>
 <p>Unificó en una sola ecuación las dos revoluciones de principios del siglo XX: la mecánica cuántica y la relatividad espacial.</p>
 <p>La ecuación de Dirac (¡<em>enmarcada</em>!):</p>
 <div class="math notranslate nohighlight">
@@ -2378,7 +2378,7 @@ e^- + (A, Z) \to e^- + \gamma + (A, Z)
 <li><p>La coordenada temporal y las espaciales,  <span class="math notranslate nohighlight">\(\partial_0, \partial_i, \;\; i = 1, 2, 3\)</span>, aparecen linealmente y en igualdad de condiciones.</p></li>
 <li><p>Considerando la asociación con los operadores energía y momento, <span class="math notranslate nohighlight">\(i\partial_0 \to E, \;\; -i\partial_i = p_i\)</span>, al elevar al cuadrado la ecuación obtenemos la ecuación de Einstein, <span class="math notranslate nohighlight">\(E^2-{\bf p}^2 = m^2\)</span></p></li>
 </ol>
-<p><a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">Sobre la ecuación de Dirac</span></a></p>
+<p><a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">Ver ext-dirac</span></a></p>
 <p>La ecuación de Dirac es una de los logros cumbre de la física teórica porque explicó la naturaleza del espín 1/2 de electrón y predijo la existencia de las anti-partículas.</p>
 <div class="section" id="las-matrices-gamma">
 <h3><span class="section-number">8.1.1. </span>Las matrices <span class="math notranslate nohighlight">\(\gamma\)</span><a class="headerlink" href="#las-matrices-gamma" title="Permalink to this heading">#</a></h3>
@@ -2413,19 +2413,38 @@ e^- + (A, Z) \to e^- + \gamma + (A, Z)
 \[\begin{split}
 \Psi = \begin{pmatrix} \psi_0 \\ \psi_1 \\ \psi_2 \\ \psi_3\end{pmatrix}.
 \end{split}\]</div>
-<p>Las soluciones generales son cuatro ondas planas, que asociamos a los <strong>fermiones</strong>, <span class="math notranslate nohighlight">\(\Psi_s(x)\)</span> y <strong>anti-fermiones</strong> <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span> con sus dos componentes de espín (<span class="math notranslate nohighlight">\(s=1/2\)</span>):</p>
+<p>Las soluciones generales son cuatro ondas planas, que asociamos a los <strong>fermiones</strong>, <span class="math notranslate nohighlight">\(\Psi_s(x)\)</span> y <strong>anti-fermiones</strong> <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span> con sus dos componentes de espín (<span class="math notranslate nohighlight">\(s=1, 2\)</span>, o <span class="math notranslate nohighlight">\(\uparrow, \downarrow \)</span>):</p>
+<p>Podemos dar las soluciones como:</p>
 <div class="math notranslate nohighlight">
 \[
 \Psi_s(x) = u_s(p) \, e^{-i(Et - {\bf p x})}, \;\;\;\; \Phi_s(x) = v_s(p) \, e^{+i(E t - {\bf p x})}
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(u_s(p), v_s(p)\)</span> corresponden a los <strong>espinores</strong> (cuatro componentes en columna) de los fermiones y antifermiones respectivamente y el índice <span class="math notranslate nohighlight">\(s=1, 2\)</span> está asociado con las dos posibles componentes de espín de <span class="math notranslate nohighlight">\(1/2\)</span>.</p>
+<p>Notar:</p>
+<ul class="simple">
+<li><p>La dependencia con <span class="math notranslate nohighlight">\((t, {\bf x})\)</span> está en la fase: <span class="math notranslate nohighlight">\(e^{-i(Et - {\bf p x})}\)</span></p></li>
+<li><p>los espinores,  <span class="math notranslate nohighlight">\(u_s(p)\)</span>, depende <span class="math notranslate nohighlight">\(p =(E, {\bf p})\)</span> pero no de <span class="math notranslate nohighlight">\((t, {\bf x}\)</span>).</p></li>
+</ul>
 <p>¡El espinor es un nuevo objeto en Física!</p>
-<p>Notar que la dependencia de las soluciones en <span class="math notranslate nohighlight">\(t, {\bf x}\)</span>  está contenida en la fase y que los espinores dependen sólo en <span class="math notranslate nohighlight">\(p =(E, {\bf p})\)</span></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference internal" href="../_images/dirac_Escher_Moebius.jpg"><img alt="../_images/dirac_Escher_Moebius.jpg" class="align-center" src="../_images/dirac_Escher_Moebius.jpg" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Hormiga en una cita de Moebius por Escher</p></td>
+</tr>
+</tbody>
+</table>
+<p>Recibe ese nombre porque tenemos que hacer un giro de <span class="math notranslate nohighlight">\(4\pi\)</span> to regresar al mismo espinor inicial, como la hormiga en la cita de Moebius, tiene que recorrerla dos veces.</p>
 <p>Si aplicamos el operador energía y momento a las soluciones de las partículas, <span class="math notranslate nohighlight">\(\Psi_s(x)\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 i \partial_0 \Psi_s(x) =  E \, \Psi_s(x), \;\;\; -i \partial_k \Psi_s(x) =  p_k \, \Psi_s(x)
 \]</div>
+<p><a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">Ver ext-dirac</span></a></p>
 <p>Sin embargo si lo aplicamos a las soluciones de las antipartículas,  <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span>, obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2443,6 +2462,13 @@ i \partial_0 \Phi_s(x) = - E \, \Phi_s(x), \;\;\; -i \partial_k \Phi_s(x) =  -p_
 \[\begin{split}
 u_s(p) \equiv \begin{pmatrix} u^a_s(p) \\ u^b_s(p) \end{pmatrix} 
 \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[ E \begin{pmatrix} I &amp; 0 \\ 0 &amp; -I \end{pmatrix}  -
+       \text{p} \begin{pmatrix} 0 &amp; \hat{\bf v} \cdot \vec{\sigma} \\ -\hat{\bf v} \cdot \vec{\sigma} &amp; 0 \end{pmatrix}
+       - m \begin{pmatrix} I &amp; 0 \\ 0 &amp; I \end{pmatrix} \right]
+       \begin{pmatrix} u^a_s(p) \\ u^b_s(p) \end{pmatrix} = 0
+\end{split}\]</div>
 <p>Nos quedan así dos ecuaciones acopladas:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -2455,6 +2481,7 @@ u_s(p) \equiv \begin{pmatrix} u^a_s(p) \\ u^b_s(p) \end{pmatrix}
 \[
 u^b_s(p) = \frac{\text{p}}{E+m} (\hat{\bf v} \cdot \vec{\sigma}) \; u^a_s(p)
 \]</div>
+<p><a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">Ver ext-dirac</span></a></p>
 <p>Y tomar como:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -2609,13 +2636,12 @@ p = 0 \; \to \; \kappa = 0 \, \\ m = 0, \, E \gg m, \, p \simeq E \; \to \; \kap
 \[
 \Psi(x) \propto e^{-i(Et - {\bf p} {\bf x})}, \;\;\; \Phi(x) \propto e^{+i(Et - {\bf p} {\bf x})}
 \]</div>
-<p>podemos ver que si <span class="math notranslate nohighlight">\(E \to - E\)</span>, siendo ahora <span class="math notranslate nohighlight">\(E &gt;0\)</span> en la parte de la derecha, podemos trasladar el signo (-) al tiempo (-t), con lo que <span class="math notranslate nohighlight">\({\bf p}\)</span> también cambia <span class="math notranslate nohighlight">\({-\bf p}\)</span>. Asi la fase de las antipartículas queda:</p>
+<p>Si consideramos la <span class="math notranslate nohighlight">\(E &gt;0\)</span>, y hacemos la inversión del tiempo, <span class="math notranslate nohighlight">\(t \to -t\)</span>, con lo que <span class="math notranslate nohighlight">\({\bf p}\)</span> también cambia <span class="math notranslate nohighlight">\({-\bf p}\)</span> (notar que también cambiaría el espín). Asi la fase de las antipartículas queda:</p>
 <div class="math notranslate nohighlight">
 \[
 e^{+i (Et - {\bf p} {\bf x})} \to e^{+i (E (-t) + {\bf p} {\bf x})} = e^{-i (E t - {\bf p}{\bf x})}
 \]</div>
-<p>En esta interpretación las antipartículas van «hacia atrás en el tiempo» y podríamos ver una corriente de carga negativa yendo hacia atrás en el tiempo como una positiva yendo hacia delante.</p>
-<p>Al cambiar <span class="math notranslate nohighlight">\(t \to -t\)</span> cambia la energía pero también el momento y espín de las antipartículas. De tal forma que tomamos como los valores físicos de energía, momento o espín, de las antipartículas el inverso del valor obtenido al aplicar los operadores.</p>
+<p>Al cambiar <span class="math notranslate nohighlight">\(t \to -t\)</span> cambia el energía pero también el momento y espín de las antipartículas. De tal forma que tomamos como los valores físicos de energía, momento o espín, de las antipartículas el inverso del valor obtenido al aplicar los operadores.</p>
 <p>Las dos interpretaciones son problemáticas. Los físicos usamos energías acotadas inferiormente, y una línea temporal hacia delante. La interpretación correcta se obtiene en Teoría Cuántica de Campos (TCQ).</p>
 </div>
 </div>
@@ -2700,6 +2726,7 @@ j^k (x) \equiv \bar{\Psi} (x) \gamma^k \Psi(x)
 \frac{\partial \rho}{\partial t} + \nabla \cdot {\bf j} = 0 \; \Rightarrow \; \partial_\mu j^\mu = 0
 \]</div>
 <p>esto es, la cantidad de <span class="math notranslate nohighlight">\(\rho\)</span> que entra en un volumen diferencial en una unidad de tiempo corresponde al flujo de la corriente <span class="math notranslate nohighlight">\({\bf j}\)</span> que atraviesa las paredes del volumen en ese tiempo.</p>
+<p><a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">Ver [ext-dirac]</span></a></p>
 <p>La corriente de probabilidad multiplicada por su carga, nos da la corriente eléctrica.</p>
 <p>La corriente fermiónica va a jugar un papel esencial a la hora de determinar los observables físicos.</p>
 </div>
@@ -2711,21 +2738,22 @@ j^k (x) \equiv \bar{\Psi} (x) \gamma^k \Psi(x)
 <p>Pero las partículas se crean y se destruyen, la función de ondas <span class="math notranslate nohighlight">\(\psi(x)\)</span> no es suficiente.</p>
 <p>La Naturaleza crea partículas iguales, por ejemplo un protón de un átomo de Hidrógeno es idéntico al de un rayo cósmico originario de una galaxia muy lejana.</p>
 <p>Necesitamos pues operadores que creen y destruyan partículas iguales.</p>
-<p>Ya hemos encontrado en cuántica operadores similares, los operadores escalera, que suben y bajan, en el caso del oscilador armónico.</p>
+<p>Ya hemos encontrado en cuántica operadores similares, los operadores escalera en el caso del oscilador armónico.</p>
 <div class="section" id="campos">
 <h3><span class="section-number">8.2.1. </span>Campos<a class="headerlink" href="#campos" title="Permalink to this heading">#</a></h3>
-<p>La teoría cuántica de campos cuantifica los campos, esto significa que los campos están constituidos por operadores de creacción de partículas y anti-partículas.</p>
-<p>Por ejemplo, creamos partículas con carga <span class="math notranslate nohighlight">\(q\)</span> y antipartículas con carga opuesta <span class="math notranslate nohighlight">\(\bar{q}\)</span>, a partir del estado del vacío, <span class="math notranslate nohighlight">\(| 0 \rangle\)</span>:</p>
+<p>La teoría cuántica de campos cuantifica los campos, esto significa que los campos están constituidos por operadores de creacción y destrucción de partículas y anti-partículas.</p>
+<p>Por ejemplo, creamos, con el operador <span class="math notranslate nohighlight">\(a^\dagger_{p,s}\)</span>, una partícula con carga <span class="math notranslate nohighlight">\(q\)</span>, cuadrimomento <span class="math notranslate nohighlight">\(p\)</span>, y espín <span class="math notranslate nohighlight">\(s\)</span>,  y con <span class="math notranslate nohighlight">\(b^\dagger(p, s)\)</span> una antipartículas con carga opuesta <span class="math notranslate nohighlight">\(\bar{q}\)</span>, a partir del estado del vacío, <span class="math notranslate nohighlight">\(| 0 \rangle\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 a^\dagger_{p,s} | 0 \rangle = |\mathrm{p}, s, q \rangle, \;\;\; b^\dagger_{p, s} | 0 \rangle = | p, s, \bar{q} \rangle
 \]</div>
 <p>Aquí <span class="math notranslate nohighlight">\(\mathrm{p}\)</span> es el momento, <span class="math notranslate nohighlight">\(s\)</span> el espín.</p>
-<p>Los operadores destrucción:</p>
+<p>y los operadores destrucción:</p>
 <div class="math notranslate nohighlight">
 \[
 a_{p, s} |p, s, q \rangle = | 0 \rangle, \;\;\; b_{p, s} |p, s, \bar{q} \rangle = | 0 \rangle
 \]</div>
+<p>destruyen la partícula y antipartícula y la devuelvel an vacío.</p>
 <p>y así las anti-partículas son partículas a excepción de que tienen sus cargas opuestas, como sucede experimentalmente.</p>
 <p>En TQC, el resto de operadores se construyen a partir de los operadores creacción y destrucción.</p>
 <p>De esta forma los operadores energía, el momento y espín al aplicarlos sobre las antipartículas dan el valor físico.</p>
@@ -2755,7 +2783,7 @@ a_{p, s} |p, s, q \rangle = | 0 \rangle, \;\;\; b_{p, s} |p, s, \bar{q} \rangle 
 </tr>
 </tbody>
 </table>
-<p>y cada partícula tiene una unidad de energía mínima para crearse, su masa <span class="math notranslate nohighlight">\(m\)</span>.</p>
+<p>y cada partícula tiene su quanto de energía mínima para crearse, su masa <span class="math notranslate nohighlight">\(m\)</span>.</p>
 <p>Estas ecuaciones corresponden a los campos libres. Pero la diversión aparece cuando los campos interaccionan entre ellos.</p>
 <p>La ec. de Dirac de un campo fermiónico, <span class="math notranslate nohighlight">\(\Psi(x)\)</span>, con carga eléctrica <span class="math notranslate nohighlight">\(q\)</span>, que intereacciona con un campo eléctrico, <span class="math notranslate nohighlight">\(A_\mu(x)\)</span>, es:</p>
 <div class="math notranslate nohighlight">
@@ -2803,7 +2831,7 @@ A'_\mu(x) = A_\mu(x) - \partial_\mu \theta(x)
 \nu = (2\pi) |M_{fi}|^2 \rho(E)
 \]</div>
 <p>Recordemos que <span class="math notranslate nohighlight">\(M_{fi} = \langle f | H_{int}| i \rangle\)</span> es el elemento de la matriz de transición entre los estados iniciales, <span class="math notranslate nohighlight">\(| i \rangle\)</span> y finales, <span class="math notranslate nohighlight">\(\langle f|\)</span>, mediante un hamiltoniano de interacción <span class="math notranslate nohighlight">\(H_{int}\)</span>.</p>
-<p>La parte cinématica puede resolverse <em>fácilmente</em>.</p>
+<p>La parte cinématica puede resolverse «fácilmente».</p>
 <p>Los dos casos comunes en el CM se muestran en el tabla:</p>
 <ul class="simple">
 <li><p>anchura de desintegración de la partícula <span class="math notranslate nohighlight">\(a \to b + c\)</span></p></li>
@@ -2868,7 +2896,7 @@ n \to p + e + \bar{\nu}_e
 <p>Fermi basó su teoría en:</p>
 <ul class="simple">
 <li><p>que la interacción era <em>puntual</em></p></li>
-<li><p>que debían intervenir las funciones de onda de las 4 partículas <span class="math notranslate nohighlight">\(\Psi_n, \Psi_p, \Psi_e, \Psi_{\bar{\nu}_e}\)</span></p></li>
+<li><p>que debían intervenir los espinores  de las 4 partículas: <span class="math notranslate nohighlight">\(\Psi_n, \Psi_p, \Psi_e, \Psi_{\bar{\nu}_e}\)</span></p></li>
 <li><p>que el elemento de matriz debía ser un invariante Lorentz</p></li>
 </ul>
 <p>Fermi propuso como <span class="math notranslate nohighlight">\(M_{fi}\)</span>:</p>
