@@ -522,6 +522,18 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#bibliografia">
    17.5. Bibliografía
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potencial-efectivo-del-higgs-latex">
+     17.5.1. Potencial efectivo del Higgs (LaTeX)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#convenciones-h-es-el-doblete-de-higgs-en-la-direccion-real-del-campo-de-valor-de-vacio-usamos-phi">
+     17.5.2. Convenciones: H es el doblete de Higgs, en la dirección real del campo de valor de vacío usamos \phi.
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -666,6 +678,18 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#bibliografia">
    17.5. Bibliografía
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potencial-efectivo-del-higgs-latex">
+     17.5.1. Potencial efectivo del Higgs (LaTeX)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#convenciones-h-es-el-doblete-de-higgs-en-la-direccion-real-del-campo-de-valor-de-vacio-usamos-phi">
+     17.5.2. Convenciones: H es el doblete de Higgs, en la dirección real del campo de valor de vacío usamos \phi.
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -687,7 +711,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Tue Sep 16 15:32:13 2025
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Sep 29 15:09:08 2025
 </pre></div>
 </div>
 </div>
@@ -2140,6 +2164,61 @@ m_u = \frac{1}{\sqrt{2}} \lambda_u v, \;\;\; m_u = \frac{1}{\sqrt{2}} \lambda_u 
 <li><p>[TP] Antonio Pich, «The Standard Model of Electroweak Interactions», (2012), <a class="reference external" href="https://arxiv.org/abs/1201.0537v1">arXiv:1201.0537v1</a></p></li>
 <li><p>[PK] M. Peskin, Lectures on the Theory of the Weak Interaction, SLAC–PUB–17142, (2017), <a class="reference external" href="https://arxiv.org/abs/1708.09043">arXiv:1708.0943v1</a></p></li>
 </ul>
+<div class="section" id="potencial-efectivo-del-higgs-latex">
+<h3><span class="section-number">17.5.1. </span>Potencial efectivo del Higgs (LaTeX)<a class="headerlink" href="#potencial-efectivo-del-higgs-latex" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="convenciones-h-es-el-doblete-de-higgs-en-la-direccion-real-del-campo-de-valor-de-vacio-usamos-phi">
+<h3><span class="section-number">17.5.2. </span>Convenciones: H es el doblete de Higgs, en la dirección real del campo de valor de vacío usamos \phi.<a class="headerlink" href="#convenciones-h-es-el-doblete-de-higgs-en-la-direccion-real-del-campo-de-valor-de-vacio-usamos-phi" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+V_{\text{tree}}(\phi) \;=\; -\tfrac{1}{2} m^2 \phi^2 + \tfrac{1}{4}\lambda \,\phi^4
+\]</div>
+<p>(para (\phi) grande el término cúbico/lineal no aparece: la parte dominante es (\tfrac14\lambda\phi^4)).</p>
+<div class="math notranslate nohighlight">
+\[
+V_{\text{1-loop}}(\phi) \;=\; \sum_i \frac{n_i\, m_i^4(\phi)}{64\pi^2}\left[\ln\!\bigg(\frac{m_i^2(\phi)}{\mu^2}\bigg)-c_i\right],
+\]</div>
+<p>donde:</p>
+<ul class="simple">
+<li><p>(i) recorre los grados de libertad que acoplan a (\phi) (top, W, Z, Higgs, Goldstones, \dots),</p></li>
+<li><p>(n_i) cuenta grados de libertad con signo (p. ej. (n_t=-12) para el quark top: - para fermiones, 3 colores y factor 4 de Dirac),</p></li>
+<li><p>(m_i(\phi)) son las masas dependientes del campo (ver más abajo),</p></li>
+<li><p>(\mu) es la escala de renormalización,</p></li>
+<li><p>(c_i) depende del esquema: en (\overline{\mathrm{MS}}) típicamente (c_{,\text{scalars/fermions}}=\tfrac{3}{2}), (c_{,\text{gauge}}=\tfrac{5}{6}).</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+m_t(\phi)=\frac{y_t}{\sqrt{2}}\phi,\qquad
+m_W(\phi)=\frac{g}{2}\phi,\qquad
+m_Z(\phi)=\frac{\sqrt{g^2+g'^2}}{2}\phi,\qquad
+m_h^2(\phi)= -m^2 + 3\lambda\phi^2.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+V_{\text{eff}}(\phi)\simeq \frac{1}{4}\,\lambda_{\text{eff}}(\mu=\phi)\;\phi^4,
+\]</div>
+<p>donde (\lambda_{\text{eff}}(\mu)) es la constante de acoplamiento (\lambda) evaluada con las ecuaciones de renormalización grupal (RG) hasta la escala (\mu\sim\phi). La estabilidad del vacío depende esencialmente del signo de (\lambda_{\text{eff}}(\mu)) a escalas altas.</p>
+<div class="math notranslate nohighlight">
+\[
+\beta_\lambda \equiv \mu\frac{d\lambda}{d\mu}
+= \frac{1}{16\pi^2}\Big( 12\lambda^2 + 6\lambda y_t^2 - 3 y_t^4 - 3\lambda (3g^2+g'^2) + \tfrac{3}{8}(2g^4+(g^2+g'^2)^2) \Big) + \cdots
+\]</div>
+<p>(la contribución principal que empuja (\lambda) hacia valores negativos viene del término (-\tfrac{3}{16\pi^2}y_t^4) cuando (y_t) es grande).</p>
+<div class="math notranslate nohighlight">
+\[
+\exists\; \mu_* \quad\text{tal que}\quad \lambda_{\text{eff}}(\mu_*) &lt; 0
+\quad\Longrightarrow\quad \text{el vacío electrodébil es metastable (falso mínimo).}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\Gamma/V \;\simeq\; A\, e^{-S_E[\phi_{\text{bounce}}]/\hbar},
+\]</div>
+<p>con la estimación de orden de magnitud (para un potencial dominado por \phi^4 negativa)
+$<span class="math notranslate nohighlight">\(
+S_E \;\approx\; \frac{8\pi^2}{3\,|\lambda_{\text{eff}}(\mu_B)|},
+\)</span>$
+donde (\mu_B) es la escala característica del \emph{bounce} (aproximadamente la escala donde (\lambda_{\text{eff}}) alcanza su valor mínimo negativo). El prefactor (A) es típicamente (\sim \mu_B^4) hasta factores adimensionales.</p>
+</div>
 </div>
 </div>
 

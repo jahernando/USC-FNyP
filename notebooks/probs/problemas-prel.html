@@ -413,7 +413,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Dec 18 17:08:26 2024
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Sep 29 15:09:29 2025
 </pre></div>
 </div>
 </div>
@@ -467,7 +467,7 @@ hbar c  =  1.973270e-01 GeV fm
 <p>La edad del universo es aproximadamente <span class="math notranslate nohighlight">\(13.7 \times 10^{9}\)</span> años.</p>
 <p><em>Cuestión</em> ¿Es la desintegración, <span class="math notranslate nohighlight">\(p \to e^+ + \pi^0\)</span>, posible?</p>
 <p>No, no lo es porque violaría el número leptónico y el número bariónico.</p>
-<p>Comentario: Sin embargo no viola B-L. B-L se debe conservar para que no se cree carga eléctrica neta.</p>
+<p>Comentario: Sin embargo no viola B-L.</p>
 <p><em>Cuestión</em> ¿Qué significa <span class="math notranslate nohighlight">\(\tau/B\)</span>?</p>
 <p>Es el tiempo de vida parcial de esa desintegración, la posible <span class="math notranslate nohighlight">\( p \to e^+ + \pi^0\)</span>, pero el protón pudiera desintegrarse de otras formas, a otros canales.</p>
 <p>Recordemos la relación entre anchura de desintegración y tiempo de vida:</p>
@@ -486,7 +486,7 @@ hbar c  =  1.973270e-01 GeV fm
 \[
 \tau_i = \frac{1}{\Gamma_i} = \frac{1}{\Gamma} \frac{\Gamma}{\Gamma_i} = \frac{\tau}{\mathcal{B}_i}
 \]</div>
-<p><em>Cuestión</em> ¿Cuál es la masa necesario para poner un límite mejor que el actual en este canal?</p>
+<p><em>Cuestión</em> ¿Cuál es la masa necesaria para poner un límite mejor que el actual en este canal?</p>
 <p>En realidad se trata de le exposición: kton año</p>
 <p>Sea <span class="math notranslate nohighlight">\(M\)</span> la masa de agua en g, sea <span class="math notranslate nohighlight">\(M_A = 18\)</span> g/mol, siendo <span class="math notranslate nohighlight">\(N_A\)</span> el número de Avogadro, el número de protones <span class="math notranslate nohighlight">\(N\)</span> del Hidrógeno es:</p>
 <div class="math notranslate nohighlight">
@@ -514,8 +514,9 @@ N_0 \frac{t}{\tau} = 1
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tau</span> <span class="o">=</span> <span class="mf">2.4e34</span> <span class="c1"># partial proton mean lifetime </span>
 <span class="n">NA</span>  <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">N_A</span> <span class="c1"># Avogadro number</span>
 <span class="n">MA</span>  <span class="o">=</span> <span class="mi">18</span> <span class="c1"># g/mol</span>
+<span class="n">Z</span>   <span class="o">=</span> <span class="mi">2</span> <span class="c1"># number of protons in H2O</span>
 
-<span class="n">M</span> <span class="o">=</span>  <span class="n">tau</span> <span class="o">*</span> <span class="n">MA</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">NA</span><span class="p">)</span>
+<span class="n">M</span> <span class="o">=</span>  <span class="n">tau</span> <span class="o">*</span> <span class="n">MA</span><span class="o">/</span><span class="p">(</span><span class="n">Z</span><span class="o">*</span><span class="n">NA</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;water mass </span><span class="si">{:1.2e}</span><span class="s1"> k tons&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="o">*</span><span class="p">(</span><span class="mf">1e-9</span><span class="p">)))</span>
 </pre></div>
@@ -533,7 +534,7 @@ N_0 \frac{t}{\tau} = 1
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">poisson</span>
 
-<span class="n">nu</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">nu</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">ns</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="n">nu</span><span class="p">))</span>
@@ -546,7 +547,7 @@ N_0 \frac{t}{\tau} = 1
 </div>
 </div>
 <p><em>Cuestión</em> ¿Qué límite ponemos a la vida media al 90% CL si al hacer un experimento observamos 0 eventos?</p>
-<p>Decimos, por convención, que los valores excluidos del parámetro relevante (en este caso la vida media) al 90% CL son aquellos valores que nos daría una probabilidad de obtener un resultado como el que hemos obtenido o peor menor del 10%.</p>
+<p>Llamamos excluidos al 90% CL a aquellos valores del parámetro (aquí, la vida media) para los cuales la probabilidad de reproducir un resultado como el de nuestro experimento —o uno más extremo— es menor al 10%.</p>
 <p>La cuestión se convierte entonces en ¿Cuál es la probabilidad de medir 0 si la media de Poisson es <span class="math notranslate nohighlight">\(\nu\)</span>? ¿Cuándo dicha probabilidad es menor del 10% (esto es el límite al 90%CL)?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -560,8 +561,9 @@ N_0 \frac{t}{\tau} = 1
 <img alt="../../_images/problemas-prel_20_0.png" src="../../_images/problemas-prel_20_0.png" />
 </div>
 </div>
-<p>Esto es si no observamos ninguna desintegración. <span class="math notranslate nohighlight">\(n = 0\)</span>, en un año <span class="math notranslate nohighlight">\(t=1\)</span>, en <span class="math notranslate nohighlight">\(N_0\)</span> protones el valor del posible <span class="math notranslate nohighlight">\(\nu\)</span> que nos daría que nuestro resultado de obtener 0 tiene una probabilidad menor del 10% (de ahí el 90% CL), es 2.4.</p>
-<p>Luego, si medimos <span class="math notranslate nohighlight">\(n=0\)</span>, al 90% CL le corresponde un valor <span class="math notranslate nohighlight">\(\nu = 2.4\)</span>, luego el valor del límite <span class="math notranslate nohighlight">\(\tau\)</span> se obtendría de:</p>
+<p>En el caso de no observar ningún evento, <span class="math notranslate nohighlight">\(n = 0\)</span>. tras un año de exposición con <span class="math notranslate nohighlight">\(N_0\)</span> protones, el número esperado de desintegraciones <span class="math notranslate nohighlight">\(\nu\)</span> que hace que la probabilidad de ver cero sucesos sea menor al 10% corresponde a
+<span class="math notranslate nohighlight">\(\nu = 2.4\)</span>.</p>
+<p>Luego en principio el límite al 90 % C.L es:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{t}{\tau} = \frac{\nu}{N_0} \Rightarrow \tau = \frac{N_0}{\nu} t
@@ -570,7 +572,7 @@ N_0 \frac{t}{\tau} = 1
 <p><em>Cuestión</em> ¿Qué pasa en el caso más general? ¿Qué región de nuestro parámetro <span class="math notranslate nohighlight">\(\tau\)</span> decimos que esta excluida al 90% CL?</p>
 <p>En el caso general al hacer un experimento de búsqueda de una nueva señal esperamos encontrar en nuestra muestra <span class="math notranslate nohighlight">\(b\)</span> eventos de fondo (distribuidos poisson, siendo <span class="math notranslate nohighlight">\(b\)</span> pequeño) y observamos <span class="math notranslate nohighlight">\(n\)</span>, por lo que necesitamos una construcción que nos permita encontrar a partir de <span class="math notranslate nohighlight">\((b, n)\)</span> qué valores teóricos <span class="math notranslate nohighlight">\(\nu\)</span> de señal nos darían una probabilidad de obtener una observación como la que hemos obtenido o peor menor con un 10% probabilidades.</p>
 <p>La <a class="reference external" href="https://arxiv.org/abs/physics/9711021">construcción moderna</a> se debe a dos físicos de neutrinos, G. Feldman y B. Cousins, que proposieron un método que lleva su nombre.</p>
-<p><em>Cuestión</em> ¿Cuál es el artículo más citado?</p>
+<p><em>Cuestión</em> ¿Cuál es el artículo más citado de SK?</p>
 <p>En INSPIRE seleccionar experimento SuperKamiokande, luego en ordenar artículos escoger “most cited”,</p>
 <p>«Evidence for oscillation of atmospheric neutrinos», <a class="reference external" href="https://arxiv.org/abs/hep-ex/9807003">hep-exp/9807003</a>, Phys. Rev. Lett 81, 1562-1567,1998</p>
 <p><em>Cuestión</em> Lee el abstract. Nota la precaución con la que indican la posible presencia de oscilaciones, por las que después el director del experimento. T. Kajita recibiría el premio Nobel en 2015.</p>

@@ -471,18 +471,13 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#notacion-y-convenciones">
-       14.4.1.1. Notación y convenciones
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#proyecciones-de-espin">
-       14.4.1.2. proyecciones de espín
+       14.4.1.1. proyecciones de espín
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#proyecciones-de-helicidad">
-       14.4.1.3. proyecciones de helicidad
+       14.4.1.2. proyecciones de helicidad
       </a>
      </li>
     </ul>
@@ -493,13 +488,18 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#la-interpretacion-de-las-anti-particulas">
+       14.4.2.1. La interpretación de las anti-partículas
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#interpretacion-de-las-antiparticulas">
-       14.4.2.1. Interpretación de las antipartículas
+       14.4.2.2. Interpretación de las antipartículas
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#ecuacion-de-dirac-para-el-espinor-de-los-anti-fermiones">
-       14.4.2.2. Ecuación de dirac para el espinor de los anti-fermiones
+       14.4.2.3. Ecuación de dirac para el espinor de los anti-fermiones
       </a>
      </li>
     </ul>
@@ -625,18 +625,13 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#notacion-y-convenciones">
-       14.4.1.1. Notación y convenciones
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#proyecciones-de-espin">
-       14.4.1.2. proyecciones de espín
+       14.4.1.1. proyecciones de espín
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#proyecciones-de-helicidad">
-       14.4.1.3. proyecciones de helicidad
+       14.4.1.2. proyecciones de helicidad
       </a>
      </li>
     </ul>
@@ -647,13 +642,18 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#la-interpretacion-de-las-anti-particulas">
+       14.4.2.1. La interpretación de las anti-partículas
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#interpretacion-de-las-antiparticulas">
-       14.4.2.1. Interpretación de las antipartículas
+       14.4.2.2. Interpretación de las antipartículas
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#ecuacion-de-dirac-para-el-espinor-de-los-anti-fermiones">
-       14.4.2.2. Ecuación de dirac para el espinor de los anti-fermiones
+       14.4.2.3. Ecuación de dirac para el espinor de los anti-fermiones
       </a>
      </li>
     </ul>
@@ -707,7 +707,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Fri Sep 19 15:44:41 2025
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Sep 29 15:09:06 2025
 </pre></div>
 </div>
 </div>
@@ -722,7 +722,7 @@ title="Print to PDF"
 <h2><span class="section-number">14.2. </span>Sobre la ecuación de Dirac<a class="headerlink" href="#sobre-la-ecuacion-de-dirac" title="Permalink to this heading">#</a></h2>
 <p>Dirac propuso en los años 30 del siglo XX una ecuación que describe la dinámica de los fermiones libres.</p>
 <p>Construyó su ecuación de tal forma que fuera invariente Lorentz, apareciesen linealmente los operadores de energía y momento de la mecánica cuántica,  <span class="math notranslate nohighlight">\(\hat{E} = i \partial_0, \; \hat{p} = -i \nabla\)</span>, y que contuviese implícitamente la ecuación de Einstein, <span class="math notranslate nohighlight">\(E = m^2 + p^2\)</span>.</p>
-<p>La solución de la ecuación de dirac, <span class="math notranslate nohighlight">\(\Psi(x)\)</span>, contiene un nuevo tipo de objeto físico, un <strong>espinor</strong>, que describe los fermiones libres, partículas con un momento angular intrínseco o espín de <span class="math notranslate nohighlight">\(1/2\)</span>. <span class="math notranslate nohighlight">\(\Psi(x)\)</span> no es sólo una función de ondas, si no cuatro, puestas en forma de columna. Este nuevo objeto se transformará con una reglas específicas bajo transformaciones Lorentz, que veremos, se derivan de la invariancia Lorentz de la propia ecuación de Dirac. En particular un espinor bajo rotaciones regresa a a su forma original tras girar dos veces, <span class="math notranslate nohighlight">\(4\pi\)</span>, esto es, un giro le afecta «la mitad», de ahí que su <em>espín</em> sea 1/2.</p>
+<p>La solución de la ecuación de dirac, <span class="math notranslate nohighlight">\(\Psi(x)\)</span>, es un nuevo tipo de objeto físico, un <strong>espinor</strong>, que describe los fermiones libres, partículas con un momento angular intrínseco o espín de <span class="math notranslate nohighlight">\(1/2\)</span>. <span class="math notranslate nohighlight">\(\Psi(x)\)</span> no es sólo una función de ondas, si no cuatro, puestas en forma de columna. Este nuevo objeto se transformará con una reglas específicas bajo transformaciones Lorentz, que veremos, se derivan de la invariancia Lorentz de la propia ecuación de Dirac. En particular un espinor bajo rotaciones regresa a a su forma original tras girar dos veces, <span class="math notranslate nohighlight">\(4\pi\)</span>, esto es, un giro le afecta «la mitad», de ahí que su <em>espín</em> sea 1/2.</p>
 <p>Dos de las soluciones de Dirac tenían energía negativa. Dirac mismo propuso una interpretación muy iluminadora de su significado, indicando que las soluciones de energía negativa se correspondían con anti-partículas. Anti-partícula sería la <em>ausencia</em> de partícula, y por lo tanto tendría sus cargas opuestas. El descubrimiento del positrón supuso el espaldarazo de la existencia de las anti-partículas y de la ecuación de Dirac.</p>
 <p>Las cuatro soluciones indenpendientes de Dirac corresponden a un fermión y sus dos componentes de espín, por ejemplo el electrón con carga <span class="math notranslate nohighlight">\(-e\)</span>, y al anti-fermión, por ejemplo, el positrón, que tiene la cargas opuesta, <span class="math notranslate nohighlight">\(+e\)</span>, y sus dos componentes de espín. La ecuación de Dirac introduce de forma natural el <strong>espín</strong>, el momento angular intrínsico de una partícula, y a las <strong>antipartículas</strong>. ¡Todo un logro!</p>
 <p>En la ecuación aparecen ademas cuatro matrices, <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> con <span class="math notranslate nohighlight">\(\mu = 0, 1, 2, 3\)</span>, iguales en todos los sistemas inerciales, que aunque admiten diversas representaciones, cumplen unas reglas de conmutación que permiten como un engranaje, al asociarlas al momento y la energía de la partícula, recuperar de nuevo la relación <span class="math notranslate nohighlight">\(E^2 = m^2 + p^2\)</span>. Podemos decir que las matrices <span class="math notranslate nohighlight">\(\gamma\)</span> asociadas con los operadores energía y momento están codificando, «encriptando», linealmente la famosa ecuación de Einstein.</p>
@@ -733,7 +733,9 @@ title="Print to PDF"
 <p>La representación covariante de la ecuación de Dirac es:</p>
 <div class="math notranslate nohighlight">
 \[
-(i \gamma^\mu \partial_\mu  - m) \, \Psi = 0.
+\boxed{
+(i \gamma^\mu \partial_\mu  - m) \, \Psi = 0
+}
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(\partial_\mu\)</span> es la  <strong>derivada covariante</strong> que definimos como:</p>
 <div class="math notranslate nohighlight">
@@ -771,14 +773,21 @@ g_{\mu\nu} = \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &am
 <p>Si hacemos la asociación habitual de mecánica cuántica:</p>
 <div class="math notranslate nohighlight">
 \[
-E \to i\partial_0, \;\;\; p_i \to -i\partial_i
+\hat{E} \to i\partial_0, \;\;\; \hat{p}_i \to -i\partial_i
 \]</div>
-<p>A partir de: <span class="math notranslate nohighlight">\(\;\; i\gamma^\mu \partial_\mu = m^2, \;\; i \gamma^0\partial_0 + i \gamma^k \partial_k = m^2 \)</span>, sustituimos y elevamos al cuadrado.</p>
+<p>A partir de:
+$<span class="math notranslate nohighlight">\(
+i\gamma^\mu \partial_\mu \, \Psi(x) = m \,\Psi(x), \\
+[i \gamma^0\partial_0 + i \gamma^k \partial_k] \, \Psi(x) = m \Psi(x) \\
+\gamma^0 E - \vec{\gamma} \bf{p} = m
+\)</span>$</p>
+<p>Elevándolo al cuadrado:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-  \left(\gamma^0 E - \sum_k \gamma^k p_k \right) \left(\gamma^0 E - \sum_i\gamma^i p_i\right) =  E^2 - p^2  = m^2 \\
+  \left(\gamma^0 E - \sum_k \gamma^k p_k \right) \left(\gamma^0 E - \sum_i\gamma^i p_i\right) \\
 = (\gamma^0)^2 E^2 + \sum_k (\gamma^k)^2 p^2_k +
- \sum_{k, i}(\gamma^k \gamma^i + \gamma^i \gamma^k) p_k p_i -   \sum_k(\gamma^0 \gamma^k + \gamma^k \gamma^0) E p_k
+ \sum_{k, i}(\gamma^k \gamma^i + \gamma^i \gamma^k) p_k p_i -   \sum_k(\gamma^0 \gamma^k + \gamma^k \gamma^0) E p_k \\
+  \equiv  E^2 - p^2  = m^2
 \end{split}\]</div>
 <p>con <span class="math notranslate nohighlight">\(k, i = 1, 2, 3\)</span>.</p>
 <p><em>Nota:</em> A partir de ahora no explicitaremos los sumatorios.</p>
@@ -792,13 +801,17 @@ E \to i\partial_0, \;\;\; p_i \to -i\partial_i
 <p>Esto es:</p>
 <div class="math notranslate nohighlight">
 \[
+\boxed{
 \{\gamma^\mu, \gamma^\nu\} = 2 g^{\mu\nu},
+}
 \]</div>
 <p>con <span class="math notranslate nohighlight">\(\mu, \nu = 0, 1, 2, 3.\)</span></p>
 <p>Veamos además que la matrix <span class="math notranslate nohighlight">\(\gamma^0\)</span> es hermítica y las <span class="math notranslate nohighlight">\(\gamma^k\)</span> anti-hermíticas:</p>
 <div class="math notranslate nohighlight">
 \[
+\boxed{
 \gamma^{0\dagger} = \gamma^0, \;\; \gamma^{k \dagger} = - \gamma^{k}
+}
 \]</div>
 <p>Estas propiedades se derivan de que el hamiltoniano es hermítico, <span class="math notranslate nohighlight">\(H^\dagger = H\)</span>, dado que sus autovalores debe ser reales.</p>
 <p>El Hamiltoniano de Dirac es:
@@ -807,9 +820,9 @@ H = i \partial_0 = \gamma^0 (m -i \gamma^k \partial_k) \\
 \)</span>$</p>
 <p>Si escribimos:
 $<span class="math notranslate nohighlight">\(
-\gamma^0  m - i  \gamma^0 \gamma^k p_k = (\gamma^0)^\dagger m + i (\gamma^0 \gamma^k)^\dagger p_k, \\
+\gamma^0  m - i  \gamma^0 \gamma^k \partial_k = (\gamma^0)^\dagger m + i (\gamma^0 \gamma^k)^\dagger \partial_k, \\
 \)</span>$</p>
-<p>obtenemos:</p>
+<p>obtenemos que:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 (\gamma^0)^\dagger = \gamma^0; \\
@@ -835,9 +848,11 @@ $<span class="math notranslate nohighlight">\(
 <p>La matrices <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> adimiten diversas representaciones, la más común, que usaremos aquí, es la <strong>representación de Pauli-Dirac</strong>, dada por:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+\boxed{
 \gamma^0 = \begin{pmatrix} I &amp; 0 \\ 0 &amp; -I \end{pmatrix}, \;\;
 \gamma^k = \begin{pmatrix} 0 &amp; \sigma_k \\ -\sigma_k &amp; 0 \end{pmatrix}, \;\;
 \gamma^5 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix},
+}
 \end{split}\]</div>
 <p>donde <span class="math notranslate nohighlight">\(I\)</span> es la matriz identidad <span class="math notranslate nohighlight">\(2\times2\)</span>, y <span class="math notranslate nohighlight">\(\sigma_k\)</span> son las matrices de Pauli:</p>
 <div class="math notranslate nohighlight">
@@ -932,7 +947,7 @@ i\partial_\mu \bar{\Psi} \, \gamma^\mu + m \bar{\Psi}= 0
 <p>Podemos comprobar que es cierto:</p>
 <div class="math notranslate nohighlight">
 \[
-\partial_\mu \left(\bar{\Psi} \gamma^\mu \Psi\right) = (\partial_\mu \bar{\Psi}) \gamma^\mu \Psi + \bar{\Psi} \gamma^\mu \partial_\mu\Psi
+\partial_\mu \left(\bar{\Psi} \gamma^\mu \Psi\right) = (\partial_\mu \bar{\Psi}) \gamma^\mu \Psi + \bar{\Psi} \gamma^\mu (\partial_\mu\Psi)
 \]</div>
 <p>De las ecuaciones de Dirac del espinor y el espinor adjunto, tenemos que:</p>
 <div class="math notranslate nohighlight">
@@ -970,7 +985,9 @@ i\partial_\mu \bar{\Psi} \, \gamma^\mu + m \bar{\Psi}= 0
 <p>Las soluciones admiten, como veremos en breve, la expresión:</p>
 <div class="math notranslate nohighlight">
 \[
+\boxed{
 \Psi_s(x) = u_s(p) \, e^{-i \, x \cdot p}, \;\;\; \Phi_s(x) = v_s(p) \, e^{+i \, x \cdot p}.
+}
 \]</div>
 <p>Que tiene dos partes,</p>
 <ul class="simple">
@@ -1004,51 +1021,20 @@ u_s(p) i (-Ei)\, e^{-i\, xp} = E  \, u_s(p) \, e^{-i\, xp} = E \, \Psi_s(x)
 <p>Esto es:</p>
 <div class="math notranslate nohighlight">
 \[
+\boxed{
 (\gamma^\mu \, p_\mu - m) \, u_s(p) = 0
+}
 \]</div>
-<p>Notar que en esta notación, donde se baja el índice, <span class="math notranslate nohighlight">\(p_\mu\)</span> corresponde a:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-p_\mu \equiv g_{\mu\nu} \, p^\nu = \begin{pmatrix} E \\ -{\bf p} \end{pmatrix}, \;\;\;
-p^\mu = \begin{pmatrix} E \\ {\bf p} \end{pmatrix}
-\end{split}\]</div>
-<p>Llamamos a <span class="math notranslate nohighlight">\(p_\mu\)</span> vector <em>covariante</em> y a <span class="math notranslate nohighlight">\(p^\mu\)</span> <em>contra-variante</em>.</p>
-<div class="section" id="notacion-y-convenciones">
-<h4><span class="section-number">14.4.1.1. </span>Notación y convenciones<a class="headerlink" href="#notacion-y-convenciones" title="Permalink to this heading">#</a></h4>
-<p>Cuadrimomento contravariante (componentes)
+<p>Recordemos que para la subida y bajada de índices de un cuadrivector</p>
+<p>llamamos vector <em>contra-variante</em>:
 $<span class="math notranslate nohighlight">\(
-p^\mu = \big(p^0,\, p^1,\, p^2,\, p^3\big) = \big(E,\; \mathbf{p}\big),
-\)</span>$
-donde (E=p^0) es la energía y (\mathbf p=(p^1,p^2,p^3)) el momento espacial.</p>
-<p>Cuadrimomento covariante (bajando índices con la métrica)
-$<span class="math notranslate nohighlight">\(
-p_\mu = g_{\mu\nu} p^\nu
-\quad\Rightarrow\quad
-p_\mu = \big(p_0,\, p_1,\, p_2,\, p_3\big) = \big(E,\; -\mathbf{p}\big).
+p^\mu = (E, {\bf p}) 
 \)</span>$</p>
-<p>Producto escalar (invariante) o norma del cuadrimomento
-$<span class="math notranslate nohighlight">\(
-p^\mu p_\mu = g_{\mu\nu} p^\mu p^\nu = (p^0)^2 - \mathbf{p}^2 = E^2 - \mathbf{p}^2 = m^2.
-\)</span>$</p>
-<p>Forma matricial
-$$
-p^\mu =</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1dbd3034-c7e2-400e-afe7-c435503be091">
-<span class="eqno">(14.1)<a class="headerlink" href="#equation-1dbd3034-c7e2-400e-afe7-c435503be091" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} E \\ \mathbf{p} \end{pmatrix}\]</div>
-<p>\qquad
-p_\mu =</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b89b96cb-97f3-47a3-94e1-db6243db8f4b">
-<span class="eqno">(14.2)<a class="headerlink" href="#equation-b89b96cb-97f3-47a3-94e1-db6243db8f4b" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} 1 &amp; 0 \\[2pt] 0 &amp; -\mathbf{I}_{3} \end{pmatrix}\]</div>
-<div class="amsmath math notranslate nohighlight" id="equation-40a26494-fba9-4d79-9a8b-ebbb675166a9">
-<span class="eqno">(14.3)<a class="headerlink" href="#equation-40a26494-fba9-4d79-9a8b-ebbb675166a9" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} E \\ \mathbf{p} \end{pmatrix}\]</div>
-<p>=</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4ca824fe-8bca-493a-aa66-aaed99d9b28c">
-<span class="eqno">(14.4)<a class="headerlink" href="#equation-4ca824fe-8bca-493a-aa66-aaed99d9b28c" title="Enlace permanente a esta ecuación">#</a></span>\[\begin{pmatrix} E \\ -\mathbf{p} \end{pmatrix}\]</div>
+<p>Y vector <em>covarainte</em>:</p>
 <div class="math notranslate nohighlight">
-\[Ejemplo: en el sistema de reposo (rest frame)
+\[
+p_\mu \equiv g_{\mu\nu} \, p^\nu = (E, -{\bf p})
 \]</div>
-<p>p^\mu_{\text{rest}} = (m,, 0,,0,,0), \qquad p_{\mu,\text{rest}}=(m,,0,,0,,0).
-$$</p>
 <p>Podemos dar las cuatro componentes del espinor <span class="math notranslate nohighlight">\(u_s(p)\)</span> con dos bi-spinores, <span class="math notranslate nohighlight">\(u^a_s(p), \, u^b_s(p)\)</span>, cada uno de ellos a su vez compuestos por dos componentes en vertical.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1077,7 +1063,9 @@ u^b_s(p) = \frac{\text{p}}{E+m} (\hat{\bf v} \cdot \vec{\sigma}) \, u^a_s(p)
 <p>Si definimos el factor:</p>
 <div class="math notranslate nohighlight">
 \[
+\boxed{
 \kappa \equiv \frac{\text{p}}{E+m}
+}
 \]</div>
 <p>Observamos que toma el valor:</p>
 <ul class="simple">
@@ -1127,13 +1115,14 @@ u_s(m) = \sqrt{2m} \begin{pmatrix} \chi_s \\ 0 \end{pmatrix}
 u_1(m) = \sqrt{2m} \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}, \;\; 
 u_2(m) = \sqrt{2m} \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix},  
 \end{split}\]</div>
-</div>
 <div class="section" id="proyecciones-de-espin">
-<h4><span class="section-number">14.4.1.2. </span>proyecciones de espín<a class="headerlink" href="#proyecciones-de-espin" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">14.4.1.1. </span>proyecciones de espín<a class="headerlink" href="#proyecciones-de-espin" title="Permalink to this heading">#</a></h4>
 <p>Introducimos ahora el operador <strong>espín</strong>, <span class="math notranslate nohighlight">\({\bf S}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+\boxed{
 {\bf S} \equiv \frac{1}{2} {\bf \Sigma}, \;\; \Sigma_k \equiv \begin{pmatrix} \sigma_k &amp; 0 \\ 0 &amp; \sigma_k \end{pmatrix}
+}
 \end{split}\]</div>
 <p>Comprobamos que la tercera componente de espín del espinor en reposo, <span class="math notranslate nohighlight">\(u_1(m)\)</span> es hacia arriba, y de <span class="math notranslate nohighlight">\(u_2(m)\)</span> hacia abajo:</p>
 <div class="math notranslate nohighlight">
@@ -1154,12 +1143,14 @@ u_2(p) = \sqrt{E+m} \begin{pmatrix} 0 \\ 1 \\ 0 \\ - \kappa \end{pmatrix},
 \end{split}\]</div>
 </div>
 <div class="section" id="proyecciones-de-helicidad">
-<h4><span class="section-number">14.4.1.3. </span>proyecciones de helicidad<a class="headerlink" href="#proyecciones-de-helicidad" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">14.4.1.2. </span>proyecciones de helicidad<a class="headerlink" href="#proyecciones-de-helicidad" title="Permalink to this heading">#</a></h4>
 <p>Definimos el operador <strong>helicidad</strong>, <span class="math notranslate nohighlight">\(h\)</span>, como la componente (o proyección) del espín en la dirección del momento:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+\boxed{
 h = {\bf S} \cdot \hat{\bf v} = \frac{1}{2}
 \begin{pmatrix} (\hat{\bf v} \cdot \vec{\sigma}) &amp; 0 \\ 0 &amp; (\hat{\bf v} \cdot \vec{\sigma}) \end{pmatrix}
+}
 \end{split}\]</div>
 <p>Para el caso de espinor <span class="math notranslate nohighlight">\(u_s(p)\)</span> cuyo momento va en la dirección <span class="math notranslate nohighlight">\(z\)</span>, la tercera componente de espín y helicidad, por definición, coinciden, <span class="math notranslate nohighlight">\(\text{S}_3 = h\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -1196,15 +1187,50 @@ v_s(p) \, i \, (+Ei) e^{+i\, xp} = -E \, v_s(p) \,  e^{+i\, xp}  = - E \, \Phi_(
 v_s(p) \, (-i) (-i p_k) \, e^{+i\, xp} = - p_k \, v_s(p) \, e^{+i\, xp}  = - p_k \, \Phi(x)
 \end{split}\]</div>
 <p>¡están invertidas!</p>
+<div class="section" id="la-interpretacion-de-las-anti-particulas">
+<h4><span class="section-number">14.4.2.1. </span>La interpretación de las anti-partículas<a class="headerlink" href="#la-interpretacion-de-las-anti-particulas" title="Permalink to this heading">#</a></h4>
+<p>Dirac propuso una ingeniosa y iluminadora idea para explicar las soluciones de energía negativa, basada en que en el vacío todos los estados negativos están ocupados. Esta idea también se conoce como el mar de Dirac.</p>
+<p>De tal forma que la energía mínima para crear un electrón, para hacerlo saltar de la energía negativa, es de <span class="math notranslate nohighlight">\(2m_e\)</span>. Al hacer saltar un electrón del mar, en éste queda un hueco, que se comporta como una partícula de carga positiva: el positrón.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/obs_Dirac_see.png"><img alt="../_images/obs_Dirac_see.png" class="align-center" src="../_images/obs_Dirac_see.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Imagen del mar de Dirac [Springer]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Esta idea es muy útil en otras ramas de Física, por ejemplo aparece en los pares electrón/hueco de los semi-conductores.</p>
+<p>Pero ¿qué sentido tiene que el mar sea infinitamente negativo, que el nivel inferior de energía no esté acotado?</p>
+</div>
 <div class="section" id="interpretacion-de-las-antiparticulas">
-<h4><span class="section-number">14.4.2.1. </span>Interpretación de las antipartículas<a class="headerlink" href="#interpretacion-de-las-antiparticulas" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">14.4.2.2. </span>Interpretación de las antipartículas<a class="headerlink" href="#interpretacion-de-las-antiparticulas" title="Permalink to this heading">#</a></h4>
 <p>Fue Feynman y Stückelberg quienes propusieron que las anti-partículas son «partículas que van hacia atrás en el tiempo».</p>
+<div class="math notranslate nohighlight">
+\[
+e^{+i |E| \, t} \to e^{-i |E| \, (-t)}
+\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_reloj.png"><img alt="../_images/dirac_reloj.png" class="align-center" src="../_images/dirac_reloj.png" style="width: 100px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>inversion de phase</p></td>
+</tr>
+</tbody>
+</table>
 <p>Con esta interpretación, la inversion temporal implica cambiar  <span class="math notranslate nohighlight">\(t \to -t\)</span>, pero también <span class="math notranslate nohighlight">\({\bf p} \to - {\bf p}\)</span>, con lo que la fase asociada a <span class="math notranslate nohighlight">\(\Psi_s(x)\)</span> cambia:</p>
 <div class="math notranslate nohighlight">
 \[
 e^{+i(Et - {\bf p} {\bf x}) } \to \, e^{-i (E t - {\bf p} \cdot {\bf x})}
 \]</div>
-<p>es ahora un función de ondas de una partícula.</p>
+<p>es ahora una phase como la de la partícula.</p>
 <p>Notar que la parte espacio-temporal de la función de ondas cambia de signo, lo que recupera el signo adecuado de la energía y el momento. Veámoslo:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1216,7 +1242,7 @@ i \partial_0 \, \Phi_s(-t,{\bf x}) = E \, \Phi_s(-t,{\bf x}), \;\; -i \partial_k
 <p>Tanto en TCQ como experimentalmente, la antipartícula es igual que su partícula en espín, masa, vida media pero con las cargas opuestas.</p>
 </div>
 <div class="section" id="ecuacion-de-dirac-para-el-espinor-de-los-anti-fermiones">
-<h4><span class="section-number">14.4.2.2. </span>Ecuación de dirac para el espinor de los anti-fermiones<a class="headerlink" href="#ecuacion-de-dirac-para-el-espinor-de-los-anti-fermiones" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">14.4.2.3. </span>Ecuación de dirac para el espinor de los anti-fermiones<a class="headerlink" href="#ecuacion-de-dirac-para-el-espinor-de-los-anti-fermiones" title="Permalink to this heading">#</a></h4>
 <p>La ecuación de Dirac aplicada ahora sobre las soluciones de las antipartículas, <span class="math notranslate nohighlight">\(\Phi_s(x)\)</span>, queda:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1228,7 +1254,9 @@ i \partial_0 \, \Phi_s(-t,{\bf x}) = E \, \Phi_s(-t,{\bf x}), \;\; -i \partial_k
 <p>que traduce en una ecuación para los espinores <span class="math notranslate nohighlight">\(v_s(p)\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
+\boxed{
 (\gamma^\mu p_\mu + m) \, v_s(p) = 0
+}
 \]</div>
 <p>donde en <span class="math notranslate nohighlight">\(p = (E, {\bf p})\)</span> tanto la energía como el momento son físicas, esto es <span class="math notranslate nohighlight">\(E &gt;0\)</span> y <span class="math notranslate nohighlight">\({\bf p}\)</span> es el momento de la antipartícula.</p>
 <p>Si escribimos <span class="math notranslate nohighlight">\(v_s(p)\)</span> también con dos bi-spinores, <span class="math notranslate nohighlight">\(v^a_s(p), \, v^b_s(p)\)</span>, cada uno a su vez con dos componentes en vertical.</p>
@@ -1309,9 +1337,15 @@ h \, v_s(p) =  \frac{1}{2} ((-{\bf \Sigma}) \cdot (- \hat{\bf v})) \, v_s(p) = \
 <p>Así pues, las cuatro soluciones generales de la ecuación de Dirac son:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Psi_s(x) = \sqrt{E+m} \begin{pmatrix} \chi_s \\ \kappa \, (\hat{\bf v} \cdot \vec{\sigma}) \chi_s \end{pmatrix} \, e^{-i \, px}; \\
+\boxed{
+\Psi_s(x) = \sqrt{E+m} \begin{pmatrix} \chi_s \\ \kappa \, (\hat{\bf v} \cdot \vec{\sigma}) \chi_s \end{pmatrix} \, e^{-i \, px};}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\boxed{
 \Phi_s(x) = \sqrt{E+m} \begin{pmatrix} \kappa \,  (\hat{\bf v} \cdot \vec{\sigma}) \, \xi_s \\ \xi_s \end{pmatrix}
-\, e^{+i \, px},
+\, e^{+i \, px}
+}
 \end{split}\]</div>
 <p>donde <span class="math notranslate nohighlight">\(s = 1, 2\)</span>.</p>
 </div>
@@ -1395,10 +1429,12 @@ v_r(p) = \begin{pmatrix} -\lambda_r \kappa \, \xi_r(\hat{\bf v}) \\ \xi_r(\hat{\
 <p>Si reescribimos explícitamente los espinores de helicidad en la dirección <span class="math notranslate nohighlight">\(z\)</span>, (<span class="math notranslate nohighlight">\(\theta = \phi = 0\)</span>), volvemos a obtener:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+\boxed{
 u_{+}(p) = N \begin{pmatrix} 1 \\ 0 \\ \kappa  \\ 0 \end{pmatrix}, \;
 u_{-}(p) = N \begin{pmatrix} 0 \\ 1 \\ 0 \\ -\kappa \end{pmatrix}, \;
 v_{+}(p) = N \begin{pmatrix} 0  \\ -\kappa \\ 0 \\ 1 \end{pmatrix}, \;
 v_{-}(p) = N \begin{pmatrix} \kappa  \\ 0 \\ 1 \\ 0 \end{pmatrix}. 
+}
 \end{split}\]</div>
 <p>con el factor de normalización <span class="math notranslate nohighlight">\(N = \sqrt{E+m}\)</span></p>
 <p>Los espinores de quiralidad se suelen representar de forma gráfica con la siguientes figuras:</p>
@@ -1427,7 +1463,9 @@ v_{-}(p) = N \begin{pmatrix} \kappa  \\ 0 \\ 1 \\ 0 \end{pmatrix}.
 <p>Decimos que un espinor tiene quiralidad a derechas o izquierdas si es autoestado de <span class="math notranslate nohighlight">\(\gamma^5\)</span> con autovalores +1 y -1 respectivamente. Esto es:</p>
 <div class="math notranslate nohighlight">
 \[
-\gamma^5 \, u_R = + u_R, \;\;\; \gamma^5 \, u_L = - u_L
+\boxed{
+\gamma^5 \, u_R \equiv + u_R, \;\;\; \gamma^5 \, u_L \equiv - u_L
+}
 \]</div>
 <p>La quiralidad es una propiedad <em>matemática</em> que no tiene un equivalente simple físico. Contrariamente a la helicidad, que si tiene un equivalente físico: la proyección del espín en la dirección el momento.</p>
 <p>Veremos que un espinor de Dirac puede descomponerse en un espinor de quiralidad a izquierdas y otro a derechas, tales que la inversión de paridad intercambia la quiralidad, la derecha por la izquierda y viceversa.</p>
@@ -1435,7 +1473,9 @@ v_{-}(p) = N \begin{pmatrix} \kappa  \\ 0 \\ 1 \\ 0 \end{pmatrix}.
 <p>Los proyectores de quiralidad son:</p>
 <div class="math notranslate nohighlight">
 \[
+\boxed{
 P_L = \frac{1}{2} (1-\gamma^5), \;\;\; P_R = \frac{1}{2} (1+\gamma^5)
+}
 \]</div>
 <p>De tal forma que <span class="math notranslate nohighlight">\(\Psi(x)\)</span> se descompone en dos partes, a izquierdas y derechas.</p>
 <div class="math notranslate nohighlight">
