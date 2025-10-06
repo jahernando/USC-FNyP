@@ -8,6 +8,7 @@ options:
 # -caption: Apuntes
 chapters:
 #  - file: intro.md
+  - file: notebooks/general.ipynb
   - file: notebooks/introduccion.ipynb
   - file: notebooks/observables.ipynb
   - file: notebooks/leptones.ipynb
@@ -20,11 +21,11 @@ chapters:
   - file: notebooks/ext-grupos.ipynb
   - file: notebooks/ext-sm.ipynb
 #- caption: Problemas
-  - file: notebooks/probs/problemas-prel.ipynb
-  - file: notebooks/probs/problemas-I.ipynb
-  - file: notebooks/probs/problemas-II.ipynb
-  - file: notebooks/probs/problemas-III.ipynb
-  - file: notebooks/probs/problemas-IV.ipynb
+#  - file: notebooks/probs/problemas-prel.ipynb
+#  - file: notebooks/probs/problemas-I.ipynb
+#  - file: notebooks/probs/problemas-II.ipynb
+#  - file: notebooks/probs/problemas-III.ipynb
+#  - file: notebooks/probs/problemas-IV.ipynb
 
 
 
