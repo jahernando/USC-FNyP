@@ -26,7 +26,7 @@ print("Energía umbral del nuetrino = {:4.3f} MeV".format(E))
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-[0;32m/var/folders/56/_pmdccc97ljb_l3v3s6gkrxm0000gn/T/ipykernel_17058/1369934174.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/var/folders/56/_pmdccc97ljb_l3v3s6gkrxm0000gn/T/ipykernel_31485/1369934174.py[0m in [0;36m<module>[0;34m[0m
 [0;32m----> 1[0;31m [0mm_p[0m [0;34m=[0m [0munits[0m[0;34m.[0m[0mvalue[0m[0;34m([0m[0;34m"proton mass energy equivalent in MeV"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m[1;32m      2[0m [0mm_n[0m [0;34m=[0m [0munits[0m[0;34m.[0m[0mvalue[0m[0;34m([0m[0;34m"neutron mass energy equivalent in MeV"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      3[0m [0mm_e[0m [0;34m=[0m [0munits[0m[0;34m.[0m[0mvalue[0m[0;34m([0m[0;34m"electron mass energy equivalent in MeV"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
