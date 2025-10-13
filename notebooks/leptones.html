@@ -691,7 +691,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Oct  9 15:34:21 2025
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Oct 13 16:42:33 2025
 </pre></div>
 </div>
 </div>
@@ -1076,8 +1076,10 @@ P  \, : \; {\bf x} \to - {\bf x}, \;\;\;  \Psi(t, {\bf x}) \to  \Psi(t, -{\bf x}
 <p>En la década de los 50, Lee y Yang sospecharon que en las interacciones débiles podrían violar paridad. En 1957 Chien-Shiung Wu descubrió que las corrientes cargadas no conservan paridad.</p>
 <p>Wu Midió la dirección de la emisión de los electrones en la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> de una muestra <span class="math notranslate nohighlight">\(^{60}\mathrm{Co}\)</span> a muy bajas temperaturas y bajo un campo magnético <span class="math notranslate nohighlight">\({\bf B}\)</span>.</p>
 <p>El <span class="math notranslate nohighlight">\(^{60}\mathrm{Co}\)</span> se desintegra <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
-<p>$$
-^{60}\mathrm{Co} \to ^{60}\mathrm{Ni}^* + e + \bar{\nu}_e.</p>
+<div class="math notranslate nohighlight">
+\[
+^{60}\mathrm{Co} \to ^{60}\mathrm{Ni}^* + e + \bar{\nu}_e.
+\]</div>
 <p>Wu midió de electrones que salen «hacia arriba» cuando colocamos un campo magnético hacia arriba o hacia abajo.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1543,6 +1545,17 @@ P_R = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; I \end{pmatrix} \;
 \[\begin{split}
 u(p) = \begin{pmatrix} u_L(p) \\ u_R(p)\end{pmatrix}
 \end{split}\]</div>
+<p>Podemos comprobar que las proyecciones de quiralidad son:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+\begin{pmatrix} u_L \\ 0 \end{pmatrix} = \begin{pmatrix} I &amp; 0 \\ 0 &amp; 0 \end{pmatrix} \,  \begin{pmatrix} u_L \\ u_R\end{pmatrix}, \;\;\;\,\end{split}\\\begin{split}\begin{pmatrix} 0 \\ u_R\end{pmatrix} = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; I \end{pmatrix} \, \begin{pmatrix} u_L \\ u_R\end{pmatrix}, \;\;\;\,
+\end{split}\end{aligned}\end{align} \]</div>
+<p>Y también que la paridad, cuya respresentación espinorial es <span class="math notranslate nohighlight">\(\gamma^0\)</span>, cambia intercambia las quiralidades</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} u_R \\ u_L\end{pmatrix} = 
+ \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix} \, \begin{pmatrix} u_L \\ u_R\end{pmatrix}
+\end{split}\]</div>
 <p>Si ahora consideramos el caso revelador de <em>un fermión sin masa <span class="math notranslate nohighlight">\(m=0\)</span></em>, la ec. de Dirac queda:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1567,6 +1580,27 @@ u(p) = \begin{pmatrix} u_L(p) \\ u_R(p)\end{pmatrix}
 u_R = u_+, \;\;\; u_L = u_-
 \]</div>
 <p>En este caso de las partículas sin masa, quiralidad y la helicidad son ambas propiedades equivalentes, son cantidades estacionarias e invariantes Lorentz.</p>
+<p>Ya vimos que el espinor de Dirac presenta un comportamiento frente a las rotaciones que desafía nuestra intuición clásica. Al girarlo <span class="math notranslate nohighlight">\(2\pi\)</span>, el espinor cambia de signo; sólo tras un giro completo de <span class="math notranslate nohighlight">\(4\pi\)</span> recupera su estado inicial.</p>
+<p>Es el mismo tipo de paradoja visual que encontramos en la hormiga de Escher recorriendo la cinta de Möbius: un mundo donde lo que parece idéntico al regresar, en realidad ha cambiado de faz.</p>
+<p>El espinor de Dirac posee dos quiralidades, que se transforman entre sí bajo una reflexión espacial, es decir, mediante la acción de la paridad o imagen especular.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_Escher_Moebius.jpg"><img alt="../_images/dirac_Escher_Moebius.jpg" class="align-center" src="../_images/dirac_Escher_Moebius.jpg" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_Escher_Moebius_pinv.jpg"><img alt="../_images/dirac_Escher_Moebius_pinv.jpg" class="align-center" src="../_images/dirac_Escher_Moebius_pinv.jpg" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Cinta de Möbius (izquierda)</p></td>
+<td class="text-align:center"><p>Cinta de Möbius (derecha)</p></td>
+</tr>
+</tbody>
+</table>
+<p>De forma análoga, una cinta de Möbius puede construirse en dos versiones quirales: una obtenida al unir los extremos de una tira con un giro hacia la izquierda, y la otra con un giro hacia la derecha.
+Cada una es la imagen especular de la otra, pero no pueden superponerse mediante rotaciones en el espacio tridimensional.</p>
+<p>Así como las dos cintas de Möbius están relacionadas por una reflexión, las dos componentes del espinor —zurda y diestra— se conectan a través de la operación de paridad.</p>
 </div>
 <div class="section" id="el-neutrino-en-el-sm">
 <h3><span class="section-number">4.3.6. </span>El neutrino en el SM<a class="headerlink" href="#el-neutrino-en-el-sm" title="Permalink to this heading">#</a></h3>
@@ -1887,7 +1921,7 @@ P_{\alpha\beta}(L) = \sin^2 2 \theta \sin^2 \frac{1.27 \Delta m^2_{21} [\mathrm{
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/leptones_90_0.png" src="../_images/leptones_90_0.png" />
+<img alt="../_images/leptones_92_0.png" src="../_images/leptones_92_0.png" />
 </div>
 </div>
 </div>
@@ -1946,8 +1980,8 @@ Lett.</em> <strong>14</strong>, 449 (1965).</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_Escher_Moebius_P.png"><img alt="../_images/dirac_Escher_Moebius_P.png" class="align-center" src="../_images/dirac_Escher_Moebius_P.png" style="width: 300px;" /></a></p></td>
-<td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_Escher_Moebius.jpg"><img alt="../_images/dirac_Escher_Moebius.jpg" class="align-center" src="../_images/dirac_Escher_Moebius.jpg" style="width: 300px;" /></a></p></td>
+<tr class="row-even"><td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_mobius.png"><img alt="../_images/dirac_mobius.png" class="align-center" src="../_images/dirac_mobius.png" style="width: 300px;" /></a></p></td>
+<td class="text-align:center"><p><a class="reference internal" href="../_images/dirac_mobius_pinv.png"><img alt="../_images/dirac_mobius_pinv.png" class="align-center" src="../_images/dirac_mobius_pinv.png" style="width: 300px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
