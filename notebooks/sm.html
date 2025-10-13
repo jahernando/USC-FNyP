@@ -737,7 +737,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Wed Oct  8 15:25:13 2025
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Mon Oct 13 16:42:48 2025
 </pre></div>
 </div>
 </div>
@@ -881,16 +881,17 @@ title="Print to PDF"
 F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
 \]</div>
 <p>Pero la física <em>interesante</em> sucede en la <strong>interacción entre los campos</strong>.</p>
-<p>El lagrangiano del fermión y su interacción con el fotón es:</p>
+<p>El interacción del fermión cargado con el fotón aparece al introducir la derivada covariante generaliza</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{L}  = i \bar{\Psi} \gamma^\mu D_\mu \Psi - m \bar{\Psi} \Psi  - \frac{1}{4} F_{\mu\nu}F^{\mu\nu} = \\
+ i \bar{\Psi} \gamma^\mu \partial_\mu \Psi  - q  \, \bar{\Psi} \gamma^\mu \Psi  A_\mu - m \bar{\Psi}\Psi- \frac{1}{4} F_{\mu\nu}F^{\mu\nu}
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(q\)</span> es la carga eléctrica del fermión y <span class="math notranslate nohighlight">\(D_\mu = \partial_\mu + i q A_\mu\)</span></p>
+<p>El término de interacción entre el fotón y fermión cargado, con carga <span class="math notranslate nohighlight">\(q\)</span>, es:</p>
 <div class="math notranslate nohighlight">
 \[
-\mathcal{L}  = i \bar{\Psi} \gamma^\mu \partial_\mu \Psi - m \bar{\Psi}\Psi - Q  \, \bar{\Psi} \gamma^\mu \Psi  A_\mu - \frac{1}{4} F_{\mu\nu}F^{\mu\nu}
-\]</div>
-<p>donde <span class="math notranslate nohighlight">\(Q\)</span> es la carga eléctrica del fermión.</p>
-<p>El término de interacción es:</p>
-<div class="math notranslate nohighlight">
-\[
--  Q \bar{\Psi} \gamma^\mu \Psi \, A_\mu
+- q \bar{\Psi} \gamma^\mu \Psi \, A_\mu
 \]</div>
 <p>que corresponde al vértice de los diagramas de Feynman entre una corriente fermiónica y un fotón:</p>
 <table class="colwidths-auto table">
@@ -906,10 +907,15 @@ F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
 </tbody>
 </table>
 <p>La interacción electromagnética aparece al exigir que el lagrangiano de fermiones y bosones vectoriales admita la <strong>invariance gauge local</strong></p>
-<p>Esto es, el lagrangiano es invariante frente a un cambio local de fase, <span class="math notranslate nohighlight">\(\theta(x)\)</span> del fermión, con carga <span class="math notranslate nohighlight">\(Q\)</span>:</p>
+<p>El lagragiano es invariante bajo una cambio de fase global <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
-\Psi'(x) = e^{i Q\, \theta(x)} \, \Psi(x),
+\Psi'(x) \to e^{i q\, \theta} \,\, \Psi(x),
+\]</div>
+<p>Pero al sistutir la derivada covariante por la generalizada, el lagrangiano es ahora invariante bajo una transformación local, <span class="math notranslate nohighlight">\(\theta(x)\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\Psi'(x) \to e^{i q\, \theta(x)} \, \Psi(x),
 \]</div>
 <p>Decimos que el lagrangiano es invariante <span class="math notranslate nohighlight">\(U(1)_Q\)</span>, el grupo de rotaciones unitarias de dimensión 1, asociado a las carga eléctrica, y que la invariancia gauge local respecto a este grupo da lugar al campo, el fotón <span class="math notranslate nohighlight">\(A_\mu\)</span>, y la interacción electro magnética del fermión cargado con el fotón.</p>
 <p><em>ejercicio:</em> Verifica que el lagrangiano anterior es invariante gauge local.</p>
@@ -917,7 +923,7 @@ F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
 </div>
 <div class="section" id="teoria-electro-debil">
 <h3><span class="section-number">6.3.3. </span>Teoría electro-debil<a class="headerlink" href="#teoria-electro-debil" title="Permalink to this heading">#</a></h3>
-<p>No vamos a desarrollar la teoría electrodébil, solo vamos a indicar cómo se clasifican las partículas conocidas, comentar la importancia de la invariancia guage local, y dar los términos de interacción que aparecen en el lagrangiano.</p>
+<p>No vamos a desarrollar la teoría electrodébil, solo vamos a indicar cómo se clasifican las partículas conocidas, comentar la importancia de la invariancia gauge local y dar los términos de interacción que aparecen en el lagrangiano.</p>
 <p>Respecto a las interaciones débiles cargadas, mediadas por  <span class="math notranslate nohighlight">\(W^\pm\)</span>, sabemos que:</p>
 <ul class="simple">
 <li><p>Intervienen solo los espinores de quiralidad a izquierdas</p></li>
@@ -927,7 +933,7 @@ F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
 \[\begin{split}
   \begin{pmatrix} \nu_e \\ e \end{pmatrix}, \;\;\;   \begin{pmatrix} u \\ d \end{pmatrix}
   \end{split}\]</div>
-<p>La <strong>teoría electrodébil</strong>, para reflejar lo anterior, se construye, a partir principalmente de:</p>
+<p>La <strong>teoría electrodébil</strong> se construye a partir de:</p>
 <ul class="simple">
 <li><p>situar los espinores de izquierdas en un duplete de un espacio interno que llamaremos <strong>isospín débil</strong> de <span class="math notranslate nohighlight">\(SU(2)\)</span> y los de derechas en singletes:</p></li>
 </ul>
@@ -957,10 +963,19 @@ i \bar{\Psi}^{\nu}_L \gamma^\mu  \partial_\mu \Psi^{\nu}_L + i \gamma^\mu \bar{\
 \end{split}\]</div>
 <p>Si añadimos ahora  de nuevo el segundo término, el asociado al singlete, obtenemos:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-i \bar{\Psi}^{\nu}_L \gamma^\mu  \partial_\mu \Psi^{\nu}_L + i \gamma^\mu \bar{\Psi}^{e}_L \gamma^\mu  \partial_\mu \Psi^{e}_L + i \gamma^\mu \bar{\Psi}^{e}_R \gamma^\mu  \partial_\mu \Psi^{e}_R = \\ i \bar{\Psi}^{\nu}_L \gamma^\mu  \partial_\mu \Psi^{\nu}_L + i \bar{\Psi}^{e} \gamma^\mu  \partial_\mu \Psi^e   
-\end{split}\]</div>
-<p>que corresponde al lagrangiano de Dirac del neutrino y del electrón sin masa.</p>
+\[
+i \bar{\Psi}^{\nu}_L \gamma^\mu  \partial_\mu \Psi^{\nu}_L + i \gamma^\mu \bar{\Psi}^{e}_L \gamma^\mu  \partial_\mu \Psi^{e}_L + i \gamma^\mu \bar{\Psi}^{e}_R \gamma^\mu  \partial_\mu \Psi^{e}_R 
+\]</div>
+<p>dado que:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{\Psi}^{e} \gamma^\mu  \partial_\mu \Psi^e  = \bar{\Psi}^{e}_L \gamma^\mu  \partial_\mu \Psi^{e}_L + \bar{\Psi}^{e}_R \gamma^\mu  \partial_\mu \Psi^{e}_R
+\]</div>
+<p>obtenemos el lagrangiano de Dirac del neutrino y del electrón sin masa.</p>
+<div class="math notranslate nohighlight">
+\[
+i \bar{\Psi}^{\nu}_L \gamma^\mu  \partial_\mu \Psi^{\nu}_L + i \bar{\Psi}^{e} \gamma^\mu  \partial_\mu \Psi^e   
+\]</div>
 <p>El lagrangiano, de nuevo, de la primera familia:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1001,16 +1016,16 @@ U^\dagger U = I
 <p>Para obtener la interacción entre los fermiones y los campos vectoriales exigimos que el lagrangiano sea <strong>invariante gauge local</strong> respecto <span class="math notranslate nohighlight">\(SU(2)\times U(1)\)</span>. Esto es, para el duplete <span class="math notranslate nohighlight">\(L\)</span>, debe ser invariante bajo:</p>
 <div class="math notranslate nohighlight">
 \[
-L' = e^{i \theta(x)} L, \;\; L' = e^{i \theta(x)_i \frac{\sigma^i}{2}}
+L' \to e^{i \theta(x)} L, \;\; L' \to e^{i \theta(x)_i \frac{\sigma^i}{2}} L
 \]</div>
 <p>donde hay cuatro ángulos <span class="math notranslate nohighlight">\(\theta\)</span>, uno respecto a la fase global de <span class="math notranslate nohighlight">\(U(1)\)</span>, y 3 respecto a las rotaciones en <span class="math notranslate nohighlight">\(SU(2)\)</span>. Para cada uno de ellos apararecerá un campo vectorial asociado.</p>
 <p>Omitimos aquí el desarrollo de la teoría electrodébil, que contiene detalles relevantes, para indicar solo sus implicaciones y los términos de interacciones a los que da lugar. (ver la extensión y [MT])</p>
-<p>Los cuatro campos vectoriales físicos son:</p>
+<p>Ahora el fermión interacciona con cuatro campos vectoriales. Los cuatro campos vectoriales físicos son:</p>
 <div class="math notranslate nohighlight">
 \[
 W_\mu^\pm, \, Z_\mu, \, A_\mu
 \]</div>
-<p>Los <span class="math notranslate nohighlight">\(W^\pm\)</span> son cargados, con carga eléctrica <span class="math notranslate nohighlight">\(\pm e\)</span>, y los campos <span class="math notranslate nohighlight">\(Z, A\)</span>, son neutros. El campo <span class="math notranslate nohighlight">\(A\)</span> corresponde al campo electromagnético.</p>
+<p>Los <span class="math notranslate nohighlight">\(W^\pm_\mu\)</span> son cargados, con carga eléctrica <span class="math notranslate nohighlight">\(\pm e\)</span>, y los campos <span class="math notranslate nohighlight">\(Z_\mu, A_\mu\)</span>, son neutros. El campo <span class="math notranslate nohighlight">\(A\)</span> corresponde al campo electromagnético.</p>
 <p>La teoría electrodébil tiene solo dos parámetros:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(e\)</span>, la carga eléctrica, (o la constante de estrucura fina, <span class="math notranslate nohighlight">\(\alpha\)</span>)</p></li>
@@ -1021,11 +1036,25 @@ W_\mu^\pm, \, Z_\mu, \, A_\mu
 \[
 \sin^2 \theta_W = 0.23146 \pm 0.000012
 \]</div>
-<p>La relación entre las constantes de acoplo débil y electromagnética está dada por:</p>
-<div class="math notranslate nohighlight">
-\[
-g_W = \frac{e}{\sin \theta_W}, \;\; g_z  = \frac{g_W}{\cos \theta_W} = \frac{e}{\sin \theta_W \cos \theta_W}
-\]</div>
+<p>Las constantes de acoplo viene dadas por:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+<th class="text-align:center head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>electromagéntica</p></td>
+<td class="text-align:center"><p>débil cargada</p></td>
+<td class="text-align:center"><p>débil neutra</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(e\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(g_W = \frac{e}{\sin \theta_W}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(g_z  = \frac{g_W}{\cos \theta_W} = \frac{e}{\sin \theta_W \cos \theta_W}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <p>En el lagrangiano aparecen cuatro términos de interacción entre cada uno de los campos y el fermión.
 Estos son:</p>
 <ul class="simple">
@@ -1050,7 +1079,7 @@ Estos son:</p>
 </ul>
 <div class="math notranslate nohighlight">
 \[
-g_Z \left( c_L \, \bar{\Psi}_L \gamma^\mu \bar{\Psi}_L + c_R \, \bar{\Psi}_R \gamma^\mu \bar{\Psi}_R \right) \, Z_\mu
+g_Z \left( c_L \, \bar{\Psi}_L \gamma^\mu \Psi_L + c_R \, \bar{\Psi}_R \gamma^\mu \Psi_R \right) \, Z_\mu
 \]</div>
 <p>donde <span class="math notranslate nohighlight">\(g_Z\)</span> es la constante de acoplo débil neutra, y <span class="math notranslate nohighlight">\(c_L, c_R\)</span> son dos coeficientes que dependen de la quiralidad y del fermión en cuestión (que daremos más adelante).</p>
 <div class="section" id="la-corrientes-electromagneticas">
@@ -1269,7 +1298,7 @@ sigma max (ee-&gt;Z)    60.2 nbarns
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sm_40_0.png" src="../_images/sm_40_0.png" />
+<img alt="../_images/sm_43_0.png" src="../_images/sm_43_0.png" />
 </div>
 </div>
 </div>
@@ -1637,7 +1666,7 @@ V(\phi) = \frac{\mu^2}{2} (\phi^\dagger \phi) + \frac{\lambda}{4} (\phi^\dagger 
 \]</div>
 <p>que depende de los parámetros <span class="math notranslate nohighlight">\(\mu, \lambda\)</span>.</p>
 <p>Notar que si <span class="math notranslate nohighlight">\(\mu = \sqrt{2} m\)</span> y <span class="math notranslate nohighlight">\(\lambda = 0\)</span>, recuperamos el potencial inicial.</p>
-<p>(de nuevo los factores <span class="math notranslate nohighlight">\(1/2, 1/4\)</span> sirven para simplificar los cálculos, pero no son relevantes).</p>
+<p>Los factores <span class="math notranslate nohighlight">\(1/2, 1/4\)</span> sirven para simplificar los cálculos, pero no son relevantes.</p>
 <p>Las siguientes figuras muestran el potencial para los casos <span class="math notranslate nohighlight">\(\mu^2&gt;0, \mu^2&lt;0\)</span> con <span class="math notranslate nohighlight">\(\lambda &gt; 0\)</span>.
 Observa el valor <span class="math notranslate nohighlight">\(v\)</span>, que corresponde al mínimo.</p>
 <div class="cell docutils container">
@@ -1651,7 +1680,7 @@ Observa el valor <span class="math notranslate nohighlight">\(v\)</span>, que co
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sm_67_0.png" src="../_images/sm_67_0.png" />
+<img alt="../_images/sm_70_0.png" src="../_images/sm_70_0.png" />
 </div>
 </div>
 <p>El estado del vacío es el estado de mínima energía:</p>
@@ -1664,12 +1693,12 @@ Observa el valor <span class="math notranslate nohighlight">\(v\)</span>, que co
 v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
 \]</div>
 <p>donde a  <span class="math notranslate nohighlight">\(v\)</span> es el <strong>valor esperado en el vacío</strong> (<em>vev</em>).</p>
-<p>Siempre desarrollamos el campo alredor del valor en el vacío, esto es, escribimos:</p>
+<p>Desarrollamos el campo alredor del valor en el vacío, esto es, escribimos:</p>
 <div class="math notranslate nohighlight">
 \[
 \phi(x) = v + h(x), 
 \]</div>
-<p>Tras la elección de uno de los mínimos, al haber centrado el campo en <span class="math notranslate nohighlight">\(v\)</span>, decimos que rompemos la simetría inicial.</p>
+<p>Para ello debemos elegir un mínimo, decimos que rompemos la simetría inicial.</p>
 <p>Llamamos <strong>rotura espontánea de simetría</strong> al hecho de que aunque un sistema físico, un lagrangiano, aunque tenga una simetría dada, el vacío, esto es el valor mínimo del campo, no la cumple.</p>
 <p>En el caso de que <span class="math notranslate nohighlight">\(\phi\)</span> sea un complejo obtenemos la curva del potencial conocida como sobrero mexicano, donde uno de los ejes es la componente real del campo y la otra la imaginaria:</p>
 <table class="colwidths-auto table">
@@ -1686,14 +1715,20 @@ v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
 </table>
 <p>Luego la existencia de un campo escalar complejo, con un potencial tipo <em>sombrero mexicano</em>,  nos permite obtener un valor esperado en el vacío, con el que dotar de masa a los fermiones y bosones vectoriales.</p>
 <p>Pero, sin embargo, no tenemos un principio o una explicación de <em>por qué este potencial</em>.</p>
-<p>Tras la rotura espontánea de simetría, el campo de Higgs da lugar:</p>
+<p>El mecanimos de Higgs introduce dos parámetros libres (indeterminados), <span class="math notranslate nohighlight">\(v, \lambdda\)</span> o <span class="math notranslate nohighlight">\(v , m_H\)</span>, el velor esperado en el vacío y la masa de Higgs.</p>
+<p>También introduce un perámetro por cada fermión, <span class="math notranslate nohighlight">\(\lambda_f\)</span>, llamado el acoplo de Yukawa.</p>
+<p>A cambio tras la rotura espontánea de simetría, el campo de Higgs da lugar:</p>
 <ul class="simple">
-<li><p>a la <strong>masa de los bosones <span class="math notranslate nohighlight">\(W^\pm, Z\)</span></strong>.</p></li>
-<li><p>las <strong>masas de los fermiones</strong>.</p></li>
+<li><p>las <strong>masas de los fermiones</strong> (aunque las predice, porque cada fermión tiene asociada una constante de Yukawa propia)</p></li>
+<li><p>la <strong>masa de los besones vectoriales</strong>, <span class="math notranslate nohighlight">\(M_W, M_Z\)</span>. Predice el ratio de las masas y como veremos <span class="math notranslate nohighlight">\(M_W\)</span> está relacionada con <span class="math notranslate nohighlight">\(v\)</span></p></li>
+</ul>
+<p>Además predice las siguientes interacciones:</p>
+<ul class="simple">
 <li><p>a las interacciones entre el higgs, <span class="math notranslate nohighlight">\(h(x)\)</span>, y los bosones débiles, <span class="math notranslate nohighlight">\(W, Z\)</span>, y dar lugar a <strong>desintegraciones del Higgs a los bosones vectoriales</strong></p></li>
 <li><p>a las interacciones entre el higgs, <span class="math notranslate nohighlight">\(h(x)\)</span>, y los fermiones, que a su vez da lugar a <strong>desintegraciones a pares fermión-antifermión</strong></p></li>
 </ul>
 <p>Además el higgs se acopla consigo mismo en vértices de tres y cuatro ramas, y con los bosones vectoriales débiles en vértices de cuatro ramas. Esto es, genera nuevas interacciones entre sí, y con los bosones vectoriales.</p>
+<p>Esto es, el Higgs presenta una física muy variada.</p>
 <div class="section" id="las-masas">
 <h4><span class="section-number">6.4.3.1. </span>Las masas<a class="headerlink" href="#las-masas" title="Permalink to this heading">#</a></h4>
 <p>En la tabla se muestra la relación entre las masas se relacionan con el <em>vev</em> y las costantes de acoplo:</p>
@@ -1716,7 +1751,7 @@ v = \pm  \sqrt{\frac{-\mu^2}{\lambda}}
 <p>Observamos:</p>
 <ul class="simple">
 <li><p>Hay un parámetro del modelo <span class="math notranslate nohighlight">\(\lambda_f\)</span>, que se llama <strong>acoplo de Yukawa</strong>, para dar la masa de cada fermión y del vev <span class="math notranslate nohighlight">\(v\)</span>. ¡Hay tantos acoplos de Yukawa como fermiones cargados!</p></li>
-<li><p>Que la masa de los bosones vectoriales, <span class="math notranslate nohighlight">\(m_W, m_Z\)</span> está fijada por <span class="math notranslate nohighlight">\(v\)</span> y los acoplos, <span class="math notranslate nohighlight">\(g_W, g_Z\)</span>.</p></li>
+<li><p>Que la masa de los bosones vectoriales, <span class="math notranslate nohighlight">\(m_W, m_Z\)</span> está fijada por <span class="math notranslate nohighlight">\(v\)</span> y los parámetros electródibil <span class="math notranslate nohighlight">\(g_W, g_Z\)</span>, esto es de <span class="math notranslate nohighlight">\(e, \sin \theta_W\)</span>.</p></li>
 <li><p>Que la masa del Higgs depende de <span class="math notranslate nohighlight">\(v^2\)</span> y <span class="math notranslate nohighlight">\(\lambda\)</span>. El parámetro <span class="math notranslate nohighlight">\(\lambda\)</span> solo interviene en la masa del Higgs.</p></li>
 </ul>
 <p>El valor del <span class="math notranslate nohighlight">\(v\)</span> es un viejo conocido, se puede determinar a partir de <span class="math notranslate nohighlight">\(g_W, M_W\)</span>, esto es de <span class="math notranslate nohighlight">\(G_F\)</span>:</p>
