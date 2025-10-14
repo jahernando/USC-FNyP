@@ -8,7 +8,7 @@ options:
 # -caption: Apuntes
 chapters:
 #  - file: intro.md
-  - file: notebooks/general.ipynb
+#  - file: notebooks/general.ipynb
   - file: notebooks/introduccion.ipynb
   - file: notebooks/observables.ipynb
   - file: notebooks/leptones.ipynb
