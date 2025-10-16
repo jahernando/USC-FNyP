@@ -22,7 +22,7 @@ Ejercicio
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-[0;32m/var/folders/56/_pmdccc97ljb_l3v3s6gkrxm0000gn/T/ipykernel_15116/2716437163.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/var/folders/56/_pmdccc97ljb_l3v3s6gkrxm0000gn/T/ipykernel_15408/2716437163.py[0m in [0;36m<module>[0;34m[0m
 [0;32m----> 1[0;31m [0mEjercicio[0m[0;34m[0m[0;34m[0m[0m
 [0m
 [0;31mNameError[0m: name 'Ejercicio' is not defined
