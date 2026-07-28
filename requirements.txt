@@ -1,0 +1,4 @@
+# Entorno mínimo para ejecutar los notebooks (lo usa Binder).
+numpy
+scipy
+matplotlib

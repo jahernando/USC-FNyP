@@ -3,43 +3,27 @@
 
 format: jb-book
 root: intro
-options:
-  numbered: true
-# -caption: Apuntes
-chapters:
-#  - file: intro.md
-#  - file: notebooks/general.ipynb
-  - file: notebooks/introduccion.ipynb
-  - file: notebooks/observables.ipynb
-  - file: notebooks/leptones.ipynb
-  - file: notebooks/quarks_hadrons.ipynb
-  - file: notebooks/sm.ipynb
-#- caption: Extensiones
-  - file: notebooks/ext-cinematica.ipynb
-  - file: notebooks/ext-dirac.ipynb
-  - file: notebooks/ext-trans-Lorentz.ipynb
-  - file: notebooks/ext-grupos.ipynb
-  - file: notebooks/ext-sm.ipynb
-#- caption: Problemas
-#  - file: notebooks/probs/problemas-prel.ipynb
-#  - file: notebooks/probs/problemas-I.ipynb
-#  - file: notebooks/probs/problemas-II.ipynb
-#  - file: notebooks/probs/problemas-III.ipynb
-#  - file: notebooks/probs/problemas-IV.ipynb
 
+parts:
 
+  - caption: Apuntes
+    numbered: true
+    chapters:
+      - file: notebooks/introduccion.ipynb
+      - file: notebooks/observables.ipynb
+      - file: notebooks/leptones.ipynb
+      - file: notebooks/quarks_hadrons.ipynb
+      - file: notebooks/sm.ipynb
 
-#  chapters:
-#  - file: notebooks/tcalvec_integral_linea.ipynb
-#- caption: Hadrones
-#  chapters:
-#  - file: notebooks/tfourier.ipynb
-#- caption: Modelo Estándar
-#  chapters:
-#  - file: notebooks/tfourier.ipynb
-#- caption: Apéndices
-#  chapters:
-#  - file: notebooks/tfourier.ipynb
+  - caption: Extensiones
+    numbered: false
+    chapters:
+      - file: notebooks/ext-fundamentos.ipynb
 
-
-
+# Pendientes de revisión — se añadirán al Book conforme se curen:
+#   notebooks/ext-dirac.ipynb
+#   notebooks/ext-trans-Lorentz.ipynb
+#   notebooks/ext-grupos.ipynb
+#   notebooks/ext-sm.ipynb
+#   notebooks/deteccion.ipynb
+#   notebooks/probs/problemas-*.ipynb
