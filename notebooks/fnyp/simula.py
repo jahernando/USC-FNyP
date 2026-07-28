@@ -6,8 +6,12 @@ Cada función monta un pequeño experimento Monte Carlo, dibuja el resultado y
 experimento real. La idea es que el alumno cambie los parámetros (sobre todo el
 número de sucesos) y vea qué ocurre.
 
-Todas las funciones aceptan ``seed`` para que el resultado sea reproducible, y
-devuelven las cantidades medidas en un diccionario.
+Por defecto la semilla del generador es aleatoria (``seed=None``): repetir el
+experimento con las mismas condiciones da un conjunto de datos distinto y, por
+tanto, una medida distinta dentro del error. Pasando ``seed=<entero>`` se
+reproduce exactamente la misma toma de datos.
+
+Todas las funciones devuelven las cantidades medidas en un diccionario.
 
 Experimentos
 ------------
@@ -15,6 +19,11 @@ Experimentos
                         de interacción :math:`\\lambda`
 :func:`vida_media`      desintegraciones de una muestra -> mide :math:`\\tau` y su
                         error estadístico
+:func:`vida_media_evolucion`
+                        la misma toma de datos leída por partes -> se ve crecer el
+                        histograma y converger la medida como :math:`1/\\sqrt{n}`
+:func:`vida_media_animada`
+                        lo mismo, pero animado, para proyectar en clase
 :func:`espectro_beta`   compara la desintegración a dos y a tres cuerpos -> el
                         argumento que llevó a postular el neutrino
 :func:`rutherford`      dispersión de partículas :math:`\\alpha` sobre una lámina
@@ -34,7 +43,7 @@ K_COULOMB = 1.43996  # MeV fm
 # 1. Blanco extenso: atenuación del haz
 # ---------------------------------------------------------------------------
 
-def atenuacion(n=20000, lambda_real=12., espesor=50., seed=7, verbose=True):
+def atenuacion(n=20000, lambda_real=12., espesor=50., seed=None, verbose=True):
     """Un haz de ``n`` partículas atraviesa un blanco: mide la longitud de interacción.
 
     Cada partícula interacciona a una profundidad distribuida exponencialmente con
@@ -50,8 +59,10 @@ def atenuacion(n=20000, lambda_real=12., espesor=50., seed=7, verbose=True):
         Longitud de interacción "verdadera" [cm]; es lo que el ajuste debe recuperar.
     espesor : float
         Espesor del blanco [cm].
-    seed : int
-        Semilla del generador, para reproducibilidad.
+    seed : int or None
+        Semilla del generador. Por defecto ``None``: cada ejecución es una toma de
+        datos distinta, como en un experimento real. Fija un entero si quieres
+        repetir exactamente la misma medida.
     verbose : bool
         Si es ``True``, imprime el resultado y dibuja la figura.
 
@@ -91,7 +102,7 @@ def atenuacion(n=20000, lambda_real=12., espesor=50., seed=7, verbose=True):
 # 2. Vida media
 # ---------------------------------------------------------------------------
 
-def vida_media(n=2000, tau_real=2.197, seed=3, verbose=True):
+def vida_media(n=2000, tau_real=2.197, seed=None, verbose=True):
     """Simula la desintegración de ``n`` partículas y mide su vida media.
 
     Los tiempos de desintegración se generan según :math:`e^{-t/\\tau}`. El
@@ -105,8 +116,9 @@ def vida_media(n=2000, tau_real=2.197, seed=3, verbose=True):
         Número de partículas de la muestra.
     tau_real : float
         Vida media "verdadera". Por defecto, la del muón en microsegundos.
-    seed : int
-        Semilla del generador.
+    seed : int or None
+        Semilla del generador. Por defecto ``None``: cada ejecución es una toma de
+        datos distinta. Fija un entero para repetir la misma medida.
     verbose : bool
         Si es ``True``, imprime el resultado y dibuja el histograma.
 
@@ -133,6 +145,153 @@ def vida_media(n=2000, tau_real=2.197, seed=3, verbose=True):
               f'   ({desv:.1f} sigmas de la de entrada, con n = {n})')
 
     return dict(tau_medida=tau_medida, error=error, tau_real=tau_real, tiempos=t)
+
+
+def vida_media_evolucion(ns=(10, 100, 1000, 10000), tau_real=2.197, seed=None,
+                         verbose=True):
+    """Muestra cómo crece el histograma y cómo converge la medida al acumular sucesos.
+
+    Es **una sola toma de datos** que se va leyendo por partes: el histograma de
+    ``ns[1]`` sucesos contiene los ``ns[0]`` anteriores, y así sucesivamente. Por eso
+    se ve *crecer* el histograma, igual que en un experimento que acumula estadística,
+    y no cuatro experimentos independientes.
+
+    Lo que el alumno debe observar:
+
+    * la **forma** exponencial emerge del ruido a partir de unos cientos de sucesos;
+    * la medida de :math:`\\tau` se acerca al valor verdadero, pero el error decrece
+      solo como :math:`1/\\sqrt{n}`: cada dígito extra de precisión cuesta un factor
+      100 en tiempo de toma de datos.
+
+    Parameters
+    ----------
+    ns : sequence of int
+        Números de sucesos acumulados que se muestran, en orden creciente.
+    tau_real : float
+        Vida media "verdadera". Por defecto, la del muón en microsegundos.
+    seed : int or None
+        Semilla del generador. Por defecto ``None``: cada ejecución es una toma de
+        datos distinta. Fija un entero para repetir la misma medida.
+    verbose : bool
+        Si es ``True``, dibuja los histogramas y la curva de convergencia.
+
+    Returns
+    -------
+    dict
+        ``ns``, ``taus``, ``errores`` y ``tiempos`` (la muestra completa).
+    """
+    ns = sorted(int(n) for n in ns)
+    rng = np.random.default_rng(seed)
+    t = rng.exponential(tau_real, ns[-1])          # una única toma de datos
+
+    taus = np.array([t[:n].mean() for n in ns])
+    errores = taus / np.sqrt(ns)
+
+    if verbose:
+        bins = np.linspace(0, 6 * tau_real, 41)
+
+        fig, axes = plt.subplots(1, len(ns), figsize=(3.4 * len(ns), 3.2),
+                                 sharex=True)
+        for ax, n, tau, err in zip(np.atleast_1d(axes), ns, taus, errores):
+            # densidad, para que los histogramas sean comparables entre sí
+            ax.hist(t[:n], bins=bins, density=True, histtype='step', lw=1.5)
+            ax.plot(bins, np.exp(-bins / tau_real) / tau_real, 'k--', lw=1,
+                    label='exponencial real')
+            ax.set_title(f'n = {n}\n' + r'$\tau$ = ' + f'{tau:.2f} $\\pm$ {err:.2f}',
+                         fontsize=10)
+            ax.set_xlabel(r'$t$ ($\mu$s)')
+            ax.grid(alpha=0.3)
+        np.atleast_1d(axes)[0].set_ylabel('sucesos (normalizado)')
+        np.atleast_1d(axes)[0].legend(fontsize=8)
+        fig.tight_layout()
+
+        fig2, ax2 = plt.subplots(figsize=(5, 3.2))
+        ax2.errorbar(ns, taus, yerr=errores, fmt='o-', capsize=4)
+        ax2.axhline(tau_real, color='crimson', ls='--',
+                    label=r'$\tau$ verdadera')
+        ax2.set_xscale('log')
+        ax2.set_xlabel('sucesos acumulados $n$')
+        ax2.set_ylabel(r'$\tau$ medida ($\mu$s)')
+        ax2.grid(alpha=0.3)
+        ax2.legend()
+        fig2.tight_layout()
+
+        print(f' tau de entrada = {tau_real:6.4f}')
+        for n, tau, err in zip(ns, taus, errores):
+            desv = abs(tau - tau_real) / err
+            print(f'   n = {n:>7d}  ->  tau = {tau:6.4f} +- {err:6.4f}'
+                  f'   ({desv:.1f} sigmas)')
+
+    return dict(ns=np.array(ns), taus=taus, errores=errores, tiempos=t)
+
+
+def vida_media_animada(n_max=10000, n_min=10, frames=40, tau_real=2.197,
+                       fps=5, seed=None):
+    """Versión animada de :func:`vida_media_evolucion`, para proyectar en clase.
+
+    Misma idea —una sola toma de datos leída por prefijos crecientes— pero como
+    animación: el histograma se ve llenarse suceso a suceso y la medida de
+    :math:`\\tau` estabilizarse en el título.
+
+    Devuelve un objeto ``HTML`` con los controles de reproducción, así que la
+    celda **debe terminar en esta llamada** (sin punto y coma) para que se muestre.
+
+    .. warning::
+       La animación se incrusta como un PNG por fotograma: ~1-2 MB de salida. Úsala
+       en vivo (RISE, VS Code) y **no guardes el notebook con su salida** si no
+       quieres engordar el fichero y los diffs del repositorio. Para los apuntes y
+       el Book, usa :func:`vida_media_evolucion`.
+
+    Parameters
+    ----------
+    n_max, n_min : int
+        Sucesos acumulados en el último y en el primer fotograma.
+    frames : int
+        Número de fotogramas, espaciados logarítmicamente entre ``n_min`` y ``n_max``.
+    tau_real : float
+        Vida media "verdadera". Por defecto, la del muón en microsegundos.
+    fps : int
+        Fotogramas por segundo de la reproducción.
+    seed : int or None
+        Semilla del generador. Por defecto ``None``: cada ejecución es una toma de
+        datos distinta.
+
+    Returns
+    -------
+    IPython.display.HTML
+        La animación con sus controles.
+    """
+    from matplotlib.animation import FuncAnimation      # solo si se usa la animación
+    from IPython.display import HTML
+
+    rng = np.random.default_rng(seed)
+    t = rng.exponential(tau_real, n_max)                # una única toma de datos
+
+    ns = np.unique(np.logspace(np.log10(n_min), np.log10(n_max),
+                               frames).astype(int))
+    bins = np.linspace(0, 6 * tau_real, 41)
+    curva = np.exp(-bins / tau_real) / tau_real
+
+    fig, ax = plt.subplots(figsize=(6, 4))
+
+    def dibuja(n):
+        ax.clear()
+        ax.hist(t[:n], bins=bins, density=True, histtype='stepfilled',
+                alpha=0.6, lw=1.5)
+        ax.plot(bins, curva, 'k--', lw=1, label='exponencial real')
+        tau, err = t[:n].mean(), t[:n].mean() / np.sqrt(n)
+        ax.set_title(f'n = {n}' + r'   $\tau$ = ' + f'{tau:.3f} $\\pm$ {err:.3f} '
+                     + r'$\mu$s')
+        ax.set_xlabel(r'tiempo de desintegración $t$ ($\mu$s)')
+        ax.set_ylabel('sucesos (normalizado)')
+        ax.set_ylim(0, 1.15 * curva.max())
+        ax.grid(alpha=0.3)
+        ax.legend(loc='upper right')
+
+    anim = FuncAnimation(fig, dibuja, frames=ns, interval=1000 // fps, repeat=True)
+    html = anim.to_jshtml(default_mode='once')
+    plt.close(fig)                                      # evita el frame estático extra
+    return HTML(html)
 
 
 # ---------------------------------------------------------------------------
@@ -200,7 +359,7 @@ def espectro_beta(Q=0.782, m_e=0.511, verbose=True):
 # ---------------------------------------------------------------------------
 
 def rutherford(n=200000, E_MeV=5., Z_proyectil=2, Z_blanco=79,
-               b_max_fm=5000., sigma_thomson_grados=1., seed=5, verbose=True):
+               b_max_fm=5000., sigma_thomson_grados=1., seed=None, verbose=True):
     """Dispersión de partículas α sobre oro: modelo de Thomson frente al de Rutherford.
 
     **Rutherford**: toda la carga positiva se concentra en un núcleo puntual. Para
@@ -237,8 +396,9 @@ def rutherford(n=200000, E_MeV=5., Z_proyectil=2, Z_blanco=79,
         la lámina, ver el Taller).
     sigma_thomson_grados : float
         Anchura de la dispersión múltiple en el modelo de Thomson [grados].
-    seed : int
-        Semilla del generador.
+    seed : int or None
+        Semilla del generador. Por defecto ``None``: cada ejecución es una toma de
+        datos distinta. Fija un entero para repetir la misma medida.
     verbose : bool
         Si es ``True``, imprime los resultados y dibuja las distribuciones.
 
