@@ -10,17 +10,26 @@ parts:
     numbered: true
     chapters:
       - file: notebooks/introduccion.ipynb
-      - file: notebooks/observables.ipynb
-      - file: notebooks/leptones.ipynb
-      - file: notebooks/quarks_hadrons.ipynb
-      - file: notebooks/sm.ipynb
 
-  - caption: Extensiones
-    numbered: false
-    chapters:
-      - file: notebooks/ext-fundamentos.ipynb
-
-# Pendientes de revisión — se añadirán al Book conforme se curen:
+# Solo se publica el Tema I, que es el único revisado. El resto se añadirá conforme
+# se curen. Mientras tanto, las 5 referencias cruzadas del Tema I a estos ficheros
+# se renderizan como texto sin enlace (no son enlaces rotos, pero sí 5 warnings).
+#
+#   - caption: Apuntes
+#     numbered: true
+#     chapters:
+#       - file: notebooks/introduccion.ipynb
+#       - file: notebooks/observables.ipynb
+#       - file: notebooks/leptones.ipynb
+#       - file: notebooks/quarks_hadrons.ipynb
+#       - file: notebooks/sm.ipynb
+#
+#   - caption: Extensiones
+#     numbered: false
+#     chapters:
+#       - file: notebooks/ext-fundamentos.ipynb
+#
+# Pendientes de revisión:
 #   notebooks/ext-dirac.ipynb
 #   notebooks/ext-trans-Lorentz.ipynb
 #   notebooks/ext-grupos.ipynb

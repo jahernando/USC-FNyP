@@ -26,19 +26,25 @@ Estos apuntes son una recopilación de muy diversas fuentes, pero principalmente
 
 ## Contenido
 
-**Apuntes**
+Los apuntes constan de cinco temas y una serie de extensiones. **De momento se publica
+solo el primero**, que es el que está revisado; el resto se irá incorporando conforme se
+curen.
+
+**Publicado**
 
 1. Introducción a la Física de Partículas
+
+**En preparación**
+
 2. Observables
 3. Los leptones
 4. Los quarks y los hadrones
 5. El Modelo Estándar
 
-**Extensiones**
+*Extensiones*: Fundamentos
 
-* Fundamentos
-
-Este índice se irá ampliando conforme se revisen y curen el resto de temas y extensiones.
+Los temas en preparación se mencionan a lo largo del Tema I; esas referencias aparecen
+como texto sin enlace hasta que se publiquen.
 
 ```{tableofcontents}
 ```
