@@ -51,7 +51,7 @@ def sigma_mott(Z, E, M, theta):
 
     .. math::
         \\frac{d\\sigma}{d\\Omega} =
-        \\left( \\frac{Z e^2}{16 \\pi \\varepsilon_0 E} \\right)^2
+        \\left( \\frac{Z e^2}{8 \\pi \\varepsilon_0 E} \\right)^2
         \\frac{1}{\\sin^4(\\theta/2)} \\; \\frac{E'}{E} \\;
         \\left[ 1 - \\beta^2 \\sin^2(\\theta/2) \\right]
 
@@ -78,13 +78,20 @@ def sigma_mott(Z, E, M, theta):
     * :math:`1 - \\beta^2\\sin^2(\\theta/2)`, el efecto del espín del electrón, que
       suprime la dispersión hacia atrás (a :math:`\\theta = \\pi` y :math:`\\beta \\to 1`
       se anula: la conservación de la helicidad prohíbe la retrodispersión).
+
+    Ojo con el prefactor: la forma general es :math:`(Z e^2 / 4\\pi\\varepsilon_0 \\, 2pv)^2`.
+    Para una partícula no relativista :math:`pv = 2T` y sale el :math:`16\\pi\\varepsilon_0 T`
+    de :func:`sigma_rutherford`; para un electrón ultrarrelativista :math:`pv \\to E` y sale
+    :math:`8\\pi\\varepsilon_0 E`. No reutilizar aquí el prefactor de Rutherford, que está
+    escrito para energía **cinética**, mientras que ``E`` aquí es la energía **total**.
     """
     # energía del electrón dispersado, teniendo en cuenta el retroceso del núcleo
     E_prime = E / (1 + (2 * E / (M * const.c**2)) * np.sin(theta / 2)**2)
     # velocidad del electrón en unidades de c (E es la energía total)
     beta = np.sqrt(1 - (const.m_e * const.c**2 / E)**2)
-    factor = (Z * const.e**2 / (16 * np.pi * const.epsilon_0 * E))**2
-    return factor * (E_prime / E) * (1 - beta**2 * np.sin(theta / 2)**2)
+    factor = (Z * const.e**2 / (8 * np.pi * const.epsilon_0 * E))**2
+    return (factor / np.sin(theta / 2)**4
+            * (E_prime / E) * (1 - beta**2 * np.sin(theta / 2)**2))
 
 
 def plot_secciones_eficaces(E_alpha=5e6, E_electron=5e6, M_nucleus=197):
