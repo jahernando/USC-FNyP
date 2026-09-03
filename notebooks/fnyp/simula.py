@@ -24,6 +24,9 @@ Experimentos
                         histograma y converger la medida como :math:`1/\\sqrt{n}`
 :func:`vida_media_animada`
                         lo mismo, pero animado, para proyectar en clase
+:func:`vida_media_sin_memoria`
+                        el tiempo que le queda a un superviviente -> las partículas
+                        no envejecen, comparado con una población que sí lo hace
 :func:`espectro_beta`   compara la desintegración a dos y a tres cuerpos -> el
                         argumento que llevó a postular el neutrino
 :func:`rutherford`      dispersión de partículas :math:`\\alpha` sobre una lámina
@@ -292,6 +295,117 @@ def vida_media_animada(n_max=10000, n_min=10, frames=40, tau_real=2.197,
     html = anim.to_jshtml(default_mode='once')
     plt.close(fig)                                      # evita el frame estático extra
     return HTML(html)
+
+
+def vida_media_sin_memoria(n=200000, tau_real=2.197, edades=(1., 3.),
+                           seed=None, verbose=True):
+    """Muestra que una partícula **no envejece**: un superviviente es como uno nuevo.
+
+    Es el experimento que responde a la pregunta "si el muón lleva ya un rato sin
+    desintegrarse, ¿no le tocará ya?". Se simulan ``n`` partículas y se mira, para
+    los supervivientes a distintas edades, **cuánto tiempo les queda por vivir**.
+
+    Se comparan dos poblaciones con la *misma* vida media:
+
+    * **sin memoria**: tiempos exponenciales, como los núcleos y las partículas.
+      La distribución del tiempo restante de los supervivientes es idéntica a la
+      de la muestra recién preparada. Los histogramas caen uno sobre otro.
+    * **que envejece**: tiempos de Weibull de forma :math:`k=3`, que es lo que
+      describe el desgaste (una bombilla, un rodamiento, un ser vivo). Ahí los
+      supervivientes sí tienen menos vida por delante, y los histogramas se
+      separan.
+
+    El contraste es el argumento: si las partículas envejecieran, el panel de la
+    izquierda se parecería al de la derecha. No lo hace.
+
+    Parameters
+    ----------
+    n : int
+        Número de partículas simuladas en cada población.
+    tau_real : float
+        Vida media "verdadera", común a las dos poblaciones. Por defecto, la del
+        muón en microsegundos.
+    edades : sequence of float
+        Edades, **en unidades de** :math:`\\tau`, a las que se seleccionan los
+        supervivientes.
+    seed : int or None
+        Semilla del generador. Por defecto ``None``: cada ejecución es una toma de
+        datos distinta.
+    verbose : bool
+        Si es ``True``, dibuja los histogramas e imprime las vidas medias restantes.
+
+    Returns
+    -------
+    dict
+        ``medidas`` (vida media restante por población y edad), ``tiempos_exp``,
+        ``tiempos_env`` y ``tau_real``.
+    """
+    rng = np.random.default_rng(seed)
+
+    t_exp = rng.exponential(tau_real, n)
+
+    k = 3.0                                  # forma de Weibull: desgaste
+    t_env = rng.weibull(k, n)
+    t_env *= tau_real / t_env.mean()         # misma vida media que la exponencial
+
+    def restantes(t, edad):
+        """Tiempo que les queda a los que aún no se han desintegrado en ``edad``."""
+        t0 = edad * tau_real
+        return t[t > t0] - t0
+
+    poblaciones = (('sin memoria (exponencial)', t_exp),
+                   (f'que envejece (Weibull k={k:.0f})', t_env))
+    edades_todas = (0.0,) + tuple(float(e) for e in edades)
+
+    medidas = {}
+    for nombre, t in poblaciones:
+        filas = []
+        for edad in edades_todas:
+            r = restantes(t, edad)
+            if r.size == 0:                  # nadie llega: la poblacion se ha extinguido
+                filas.append(dict(edad=edad, n=0, media=np.nan, error=np.nan))
+                continue
+            media = r.mean()
+            filas.append(dict(edad=edad, n=int(r.size), media=media,
+                              error=media / np.sqrt(r.size)))
+        medidas[nombre] = filas
+
+    if verbose:
+        bins = np.linspace(0, 6 * tau_real, 61)
+
+        fig, axes = plt.subplots(1, 2, figsize=(9.5, 3.6), sharey=True)
+        for ax, (nombre, t) in zip(axes, poblaciones):
+            for edad in edades_todas:
+                r = restantes(t, edad)
+                if r.size == 0:
+                    continue                 # nadie sobrevive: no hay nada que dibujar
+                etiqueta = ('muestra recién preparada' if edad == 0 else
+                            f'sobrevivieron a $t > {edad:g}\\,\\tau$')
+                ax.hist(r, bins=bins, density=True,
+                        histtype='step', lw=1.6, label=etiqueta)
+            ax.set_yscale('log')
+            ax.set_title(nombre, fontsize=10)
+            ax.set_xlabel(r'tiempo que le queda por vivir ($\mu$s)')
+            ax.grid(alpha=0.3)
+            ax.legend(fontsize=8)
+        axes[0].set_ylabel('sucesos (normalizado)')
+        fig.tight_layout()
+
+        print(f' vida media de entrada = {tau_real:6.4f}\n')
+        for nombre, filas in medidas.items():
+            print(f' {nombre}')
+            for f in filas:
+                etq = ('muestra recién preparada' if f['edad'] == 0 else
+                       f"sobrevivieron a t > {f['edad']:g} tau")
+                if f['n'] == 0:
+                    print(f"   {etq:<28s} n = {f['n']:>7d}   no sobrevive ninguna")
+                    continue
+                print(f"   {etq:<28s} n = {f['n']:>7d}"
+                      f"   les quedan {f['media']:6.4f} +- {f['error']:6.4f}")
+            print()
+
+    return dict(medidas=medidas, tiempos_exp=t_exp, tiempos_env=t_env,
+                tau_real=tau_real)
 
 
 # ---------------------------------------------------------------------------
