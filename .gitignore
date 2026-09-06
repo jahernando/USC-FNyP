@@ -10,3 +10,15 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# Material docente que no debe llegar al repositorio público:
+# exámenes, sus soluciones y los PDF generados.
+notebooks/probs/exam*.ipynb
+notebooks/probs/prob25.ipynb
+pdfs/
+
+# Fotografía de personas identificables.
+notebooks/imgs/foto_publica.jpg
+
+# Almacén local de notebooks antiguos / de trabajo.
+notebooks/store/
