@@ -13,10 +13,10 @@ Index and links to the material of the course at *indice.ipynb*
 Clich here to start your interactive session (be patient!):
 
 Google: 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jahernando/USC-MMIII/blob/master/tindice.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jahernando/USC-FNyP/blob/main/notebooks/introduccion.ipynb)
 
 Binder:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jahernando/USC-MMIII/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jahernando/USC-FNyP/main)
 
 
 ## Entorno
