@@ -29,6 +29,16 @@ conda activate fnyp
 jupyter-book build .
 ```
 
+Para que los notebooks se abran con este entorno desde cualquier Jupyter, sin depender
+de cuál estuviera activo al arrancarlo, conviene registrar el kernel una vez:
+
+```bash
+conda activate fnyp
+python -m ipykernel install --user --name fnyp --display-name "Python (fnyp)"
+```
+
+Aparece entonces como **Python (fnyp)** en el selector de kernel.
+
 Para **solo ejecutar los notebooks** basta con `requirements.txt`, que es lo que usa
 Binder:
 
