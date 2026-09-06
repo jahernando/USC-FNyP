@@ -43,11 +43,16 @@ M_N = units.value("neutron mass energy equivalent in MeV")     # 939.565
 M_MU = 105.658                        # muón
 M_TAU = 1776.86                       # tauón
 M_PI = 139.570                        # pión cargado
+M_K = 493.677                         # kaón cargado
+M_B0 = 5279.72                        # mesón B0
 
 # Vidas medias, en segundos — PDG 2024
 TAU_MU = 2.1969811 * units.micro
 TAU_TAU = 290.3 * units.femto
 TAU_N = 878.4
+TAU_PI = 26.033 * units.nano
+TAU_K = 12.380 * units.nano
+TAU_B0 = 1.519 * units.pico
 
 # ---------------------------------------------------------------------------
 # Parámetros electrodébiles

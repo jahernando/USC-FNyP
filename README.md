@@ -17,3 +17,29 @@ Google:
 
 Binder:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jahernando/USC-MMIII/master)
+
+
+## Entorno
+
+Para **ejecutar los notebooks y compilar el Book** (entorno del autor):
+
+```bash
+conda env create -f environment.yml
+conda activate fnyp
+jupyter-book build .
+```
+
+Para **solo ejecutar los notebooks** basta con `requirements.txt`, que es lo que usa
+Binder:
+
+```bash
+pip install -r requirements.txt
+```
+
+Las versiones están acotadas a propósito en los dos ficheros, y deben mantenerse en
+paralelo: sin cotas, Binder resuelve lo último de cada día y las figuras que ve el
+alumno pueden no coincidir con las que se compilan en local.
+
+> **jupyter-book está fijado a la serie 0.15.** La 2.x es una reescritura sobre el
+> motor MyST y no lee este `_config.yml` ni este `_toc.yml`. Actualizar exige migrar
+> los dos ficheros y las directivas `admonition` de los talleres.

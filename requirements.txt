@@ -1,4 +1,11 @@
 # Entorno mínimo para ejecutar los notebooks (lo usa Binder).
-numpy
-scipy
-matplotlib
+#
+# Las cotas de versión son deliberadas: sin ellas Binder resuelve "lo último de
+# hoy" y las figuras que ve el alumno pueden no coincidir con las que se
+# compilan en local. Deben ir en paralelo con environment.yml.
+#
+# Esto NO incluye jupyter-book: Binder solo ejecuta los notebooks, no compila
+# el Book. Para eso, environment.yml.
+numpy==1.26.*
+scipy==1.17.*
+matplotlib==3.10.*

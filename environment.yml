@@ -1,0 +1,36 @@
+# Entorno de trabajo del autor: ejecutar los notebooks y compilar el Book.
+#
+#   conda env create -f environment.yml
+#   conda activate fnyp
+#   jupyter-book build .
+#
+# El entorno mínimo que necesita un alumno (o Binder) para *ejecutar* los
+# notebooks está en requirements.txt, con las mismas cotas de versión.
+#
+# OJO con jupyter-book: la serie 2.x es una reescritura sobre el motor MyST y
+# NO lee este _config.yml ni este _toc.yml. El pin de abajo no es cosmético;
+# sin él, `conda install jupyter-book` instala la 2.x y el build falla.
+name: fnyp
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+
+  # --- compilación del Book ---------------------------------------------
+  - jupyter-book=0.15.1        # NO subir sin migrar _config.yml y _toc.yml
+
+  # --- cálculo y figuras -------------------------------------------------
+  # Fijadas a la serie con la que están generadas las figuras ya commiteadas:
+  # subir matplotlib re-renderiza TODOS los PNG de los notebooks y ensucia el diff.
+  - numpy=1.26.*
+  - scipy=1.17.*
+  - matplotlib=3.10.*
+
+  # --- entorno de trabajo ------------------------------------------------
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - nbconvert
+  - pip
