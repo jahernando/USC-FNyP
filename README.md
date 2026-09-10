@@ -53,3 +53,26 @@ alumno pueden no coincidir con las que se compilan en local.
 > **jupyter-book está fijado a la serie 0.15.** La 2.x es una reescritura sobre el
 > motor MyST y no lee este `_config.yml` ni este `_toc.yml`. Actualizar exige migrar
 > los dos ficheros y las directivas `admonition` de los talleres.
+
+## Publicación del Book
+
+La web del curso, <https://jahernando.github.io/USC-FNyP/>, la sirve GitHub Pages desde
+la rama `gh-pages`. **No hay que tocar esa rama a mano**: el flujo de trabajo
+`.github/workflows/deploy-book.yml` compila el Book y la actualiza en cada `push` a
+`main` que toque los notebooks, `_config.yml`, `_toc.yml`, `intro.md` o
+`environment.yml`. También puede lanzarse a mano desde la pestaña *Actions*.
+
+El servidor crea el entorno a partir de `environment.yml`, de modo que compila con las
+mismas versiones acotadas que en local y las figuras coinciden.
+
+Si el flujo falla y hace falta publicar de inmediato, el despliegue manual sigue siendo
+válido:
+
+```bash
+conda activate fnyp
+jupyter-book build .
+ghp-import -n -p _build/html
+```
+
+GitHub Pages tarda unos minutos en servir la versión nueva, y la cabecera de caché es de
+diez minutos: para comprobarlo, recarga forzando.

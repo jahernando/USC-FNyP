@@ -1,0 +1,64 @@
+# Compila el Book y lo publica en la rama gh-pages, que es la que sirve
+# GitHub Pages en https://jahernando.github.io/USC-FNyP/
+#
+# Sustituye al despliegue manual, que era:
+#     conda activate fnyp && jupyter-book build . && ghp-import -n -p _build/html
+# Ese comando sigue siendo válido como salida de emergencia si el flujo falla.
+#
+# El entorno se crea a partir de environment.yml, no de una lista aparte: las
+# versiones de numpy / scipy / matplotlib están acotadas ahí a propósito para
+# que las figuras que compila el servidor sean las mismas que las de local.
+
+name: Compilar y publicar el Book
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'notebooks/**'
+      - 'intro.md'
+      - '_config.yml'
+      - '_toc.yml'
+      - 'logo.jpg'
+      - 'environment.yml'
+      - '.github/workflows/deploy-book.yml'
+  workflow_dispatch:        # permite lanzarlo a mano desde la pestaña Actions
+
+# Un despliegue a la vez. Si se empujan dos commits seguidos, el segundo espera
+# y publica al final la versión más reciente, en vez de pisarse entre ellos.
+concurrency:
+  group: deploy-book
+  cancel-in-progress: false
+
+jobs:
+  compilar-y-publicar:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write       # lo necesita el push a la rama gh-pages
+
+    defaults:
+      run:
+        shell: bash -el {0} # login shell: sin esto micromamba no activa el entorno
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Crear el entorno fnyp
+        uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-file: environment.yml
+          cache-environment: true
+
+      - name: Compilar el Book
+        run: |
+          jupyter-book build .
+          test -f _build/html/index.html   # aborta si el build no generó nada
+
+      - name: Publicar en gh-pages
+        run: |
+          python -m pip install --quiet ghp-import
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          ghp-import -n -p -f -b gh-pages -m "Book: main ${GITHUB_SHA:0:7}" _build/html
