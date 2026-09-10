@@ -43,13 +43,19 @@ jobs:
 
     steps:
       - name: Descargar el repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Crear el entorno fnyp
         uses: mamba-org/setup-micromamba@v2
         with:
           environment-file: environment.yml
           cache-environment: true
+
+      - name: Registrar el kernel fnyp
+        # El notebook fija en su metadata el kernel "fnyp". En local se registra
+        # una vez (ver README); aquí hay que hacerlo en cada ejecución, o el
+        # build falla con NoSuchKernel.
+        run: python -m ipykernel install --user --name fnyp --display-name "Python (fnyp)"
 
       - name: Compilar el Book
         run: |
