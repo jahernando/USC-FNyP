@@ -11,7 +11,8 @@ Y la dependencia de la vida media con el sistema de referencia
 (:func:`plot_dilatacion_temporal`).
 
 Aquí se trabaja en el S.I. (energías en julios, masas en kg) porque las expresiones
-se escriben con :math:`\\varepsilon_0` explícito; el resultado se devuelve en barn/sr.
+se escriben con :math:`\\varepsilon_0` explícito; las secciones eficaces se
+devuelven en m^2/sr.
 """
 
 import numpy as np
@@ -20,7 +21,7 @@ import matplotlib.pyplot as plt
 
 import scipy.constants as units
 
-from .common import BARN, M_MU, TAU_MU
+from .common import M_MU, TAU_MU
 
 
 def sigma_rutherford(Z1, Z2, E, theta):
@@ -97,38 +98,6 @@ def sigma_mott(Z, E, M, theta):
     factor = (Z * const.e**2 / (8 * np.pi * const.epsilon_0 * E))**2
     return (factor / np.sin(theta / 2)**4
             * (E_prime / E) * (1 - beta**2 * np.sin(theta / 2)**2))
-
-
-def plot_secciones_eficaces(E_alpha=5e6, E_electron=5e6, M_nucleus=197):
-    """Compara Rutherford (α) y Mott (β) sobre oro en función del ángulo.
-
-    Parameters
-    ----------
-    E_alpha : float
-        Energía cinética de la partícula α [eV].
-    E_electron : float
-        Energía total del electrón [eV].
-    M_nucleus : float
-        Masa del núcleo blanco [u]. Por defecto oro, A = 197.
-    """
-    theta = np.linspace(0.01, np.pi, 100)
-
-    E_alpha = E_alpha * const.e          # de eV a julios
-    E_electron = E_electron * const.e    # de eV a julios
-    M_nucleus = M_nucleus * const.u      # de u a kg
-
-    sigma_R = sigma_rutherford(2, 79, E_alpha, theta)   # alfa (Z=2) sobre oro (Z=79)
-    sigma_M = sigma_mott(79, E_electron, M_nucleus, theta)
-
-    plt.plot(theta / np.pi, sigma_R / BARN, label='Rutherford (α)')
-    plt.plot(theta / np.pi, sigma_M / BARN, label=r'Mott ($\beta$)')
-    plt.yscale('log')
-    plt.xlabel(r'Ángulo de dispersión, $\theta/\pi$')
-    plt.ylabel(r'$d\sigma/d\Omega$ [barn/sr]')
-    plt.title('Secciones eficaces: Rutherford (α) y Mott (β)')
-    plt.legend()
-    plt.grid(alpha=0.3)
-    return plt.gca()
 
 
 # ---------------------------------------------------------------------------

@@ -21,7 +21,7 @@ Uso en un notebook::
     from fnyp import common as fn
     from fnyp import introduccion as t1
 
-    t1.plot_secciones_eficaces(E_alpha=5e6, E_electron=5e6, M_nucleus=197)
+    t1.plot_dilatacion_temporal()
 """
 
 from . import common      # noqa: F401
