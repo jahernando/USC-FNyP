@@ -17,6 +17,8 @@ Experimentos
 ------------
 :func:`atenuacion`      un haz atraviesa un blanco extenso -> mide la longitud
                         de interacción :math:`\\lambda`
+:func:`supervivientes`  cuántas partículas quedan vivas en función del tiempo -> la
+                        muestra se reduce por factores iguales, no por cantidades
 :func:`vida_media`      desintegraciones de una muestra -> mide :math:`\\tau` y su
                         error estadístico
 :func:`vida_media_evolucion`
@@ -104,6 +106,85 @@ def atenuacion(n=20000, lambda_real=12., espesor=50., seed=None, verbose=True):
 # ---------------------------------------------------------------------------
 # 2. Vida media
 # ---------------------------------------------------------------------------
+
+def supervivientes(n=10000, tau_real=2.197, n_semividas=5, seed=None, verbose=True):
+    """Cuenta cuántas partículas quedan vivas en función del tiempo.
+
+    Es el experimento más directo: se prepara una muestra de ``n`` muones y se va
+    contando cuántos quedan. La curva no cae a trozos iguales, cae por **factores
+    iguales**: en cada intervalo :math:`T` desaparece la mitad de los que quedaban.
+
+    Se marcan las sucesivas semividas, :math:`T, 2T, 3T \\dots`, con los
+    :math:`N/2, N/4, N/8 \\dots` correspondientes. En escala logarítmica la curva
+    es una **recta**, que es la firma de la exponencial.
+
+    Parameters
+    ----------
+    n : int
+        Muones de la muestra inicial.
+    tau_real : float
+        Vida media "verdadera". Por defecto, la del muón en microsegundos.
+    n_semividas : int
+        Cuántas semividas se siguen.
+    seed : int or None
+        Semilla del generador. Por defecto ``None``: cada ejecución es una toma de
+        datos distinta.
+    verbose : bool
+        Si es ``True``, dibuja la curva de supervivencia y tabula los recuentos.
+
+    Returns
+    -------
+    dict
+        ``tiempos``, ``vivos``, ``t_semivida``, ``tau_real`` y los tiempos de
+        desintegración simulados.
+    """
+    rng = np.random.default_rng(seed)
+    t = np.sort(rng.exponential(tau_real, n))
+
+    t_semivida = tau_real * np.log(2)
+    t_max = n_semividas * t_semivida
+    tiempos = np.linspace(0., t_max, 400)
+
+    def quedan(x):
+        """Cuántos siguen vivos en el instante ``x``."""
+        return n - np.searchsorted(t, x, side='right')
+
+    vivos = quedan(tiempos)
+
+    if verbose:
+        marcas = [(k * t_semivida, n / 2**k) for k in range(1, n_semividas + 1)]
+        fig, axes = plt.subplots(1, 2, figsize=(9.5, 3.6))
+        for ax, escala in zip(axes, ('linear', 'log')):
+            y0 = 0.5 * n / 2**n_semividas if escala == 'log' else 0.
+            ax.plot(tiempos, vivos, lw=1.8, label=f'muestra simulada (N = {n})')
+            ax.plot(tiempos, n * np.exp(-tiempos / tau_real), 'k--', lw=1,
+                    label=r'$N \, e^{-t/\tau}$')
+            for tk, nk in marcas:                # la escalera de las semividas
+                ax.plot([tk, tk], [y0, nk], color='0.6', ls=':', lw=1)
+                ax.plot([0, tk], [nk, nk], color='0.6', ls=':', lw=1)
+            ax.set_yscale(escala)
+            ax.set_ylim(y0, 1.15 * n)
+            ax.set_xlim(0, t_max)
+            ax.set_xticks([k * t_semivida for k in range(n_semividas + 1)])
+            ax.set_xticklabels(['0'] + ['$T$'] +
+                               [f'${k}T$' for k in range(2, n_semividas + 1)])
+            ax.set_xlabel(r'tiempo $t$')
+            ax.grid(alpha=0.3)
+        axes[0].set_ylabel('muones que quedan')
+        axes[0].legend(fontsize=8)
+        axes[1].set_title('en escala logarítmica es una recta', fontsize=10)
+        fig.tight_layout()
+
+        print(f' muestra inicial  N = {n}')
+        print(f' vida media       tau = {tau_real:6.3f}')
+        print(f' semidesintegración T = tau ln2 = {t_semivida:6.3f}\n')
+        print('          quedan   N/2^k')
+        for k in range(1, n_semividas + 1):
+            print(f'  t = {k}T  {quedan(k * t_semivida):7d} {n / 2**k:9.1f}')
+
+    return dict(tiempos=tiempos, vivos=vivos, t_semivida=t_semivida,
+                tau_real=tau_real, tiempos_desintegracion=t)
+
 
 def vida_media(n=2000, tau_real=2.197, seed=None, verbose=True):
     """Simula la desintegración de ``n`` partículas y mide su vida media.

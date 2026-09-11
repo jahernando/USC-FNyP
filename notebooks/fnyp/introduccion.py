@@ -123,7 +123,7 @@ def plot_dilatacion_temporal(particulas=None, p_min=10., p_max=1e6,
       a partir de ahí: el codo marca dónde empieza a notarse la dilatación.
 
     * **derecha**, la longitud de desintegración
-      :math:`\lambda = \gamma\beta \, c\tau_0 = (p/mc) \, c\tau_0`, que es
+      :math:`L = \gamma\beta \, c\tau_0 = (p/mc) \, c\tau_0`, que es
       *exactamente* proporcional al momento — una recta de pendiente 1 para
       cualquier partícula. Lo que distingue a unas de otras es la ordenada,
       :math:`c\tau_0 / mc`.
@@ -180,7 +180,7 @@ def plot_dilatacion_temporal(particulas=None, p_min=10., p_max=1e6,
                  'espesor de la atmósfera, 15 km', fontsize=8, color='0.3')
         ax2.plot(P_MUON_COSMICO / 1000., lam_c, 'o', ms=7, color='crimson', zorder=5)
         ax2.annotate(f'muón cósmico\n$p$ = 4 GeV, $\\gamma$ = {gamma_c:.0f}\n'
-                     f'$\\lambda$ = {lam_c/1000.:.0f} km',
+                     f'$L$ = {lam_c/1000.:.0f} km',
                      xy=(P_MUON_COSMICO / 1000., lam_c),
                      xytext=(0.42, 0.12), textcoords='axes fraction',
                      fontsize=8, color='crimson',
@@ -196,7 +196,7 @@ def plot_dilatacion_temporal(particulas=None, p_min=10., p_max=1e6,
 
     for ax, ylab, tit in ((ax1, r'vida media $\tau$ (s)',
                            r'la vida media que mide el laboratorio'),
-                          (ax2, r'longitud de desintegración $\lambda$ (m)',
+                          (ax2, r'longitud de desintegración $L$ (m)',
                            r'cuánto vuela antes de desintegrarse')):
         ax.set_xscale('log'); ax.set_yscale('log')
         ax.set_xlabel(r'momento $p$ (GeV/c)')
