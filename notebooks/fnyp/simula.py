@@ -29,6 +29,9 @@ Experimentos
 :func:`vida_media_sin_memoria`
                         el tiempo que le queda a un superviviente -> las partículas
                         no envejecen, comparado con una población que sí lo hace
+:func:`canales`         desintegración con varios canales -> todos los canales
+                        comparten la misma vida media; las fracciones no dependen
+                        del tiempo
 :func:`espectro_beta`   compara la desintegración a dos y a tres cuerpos -> el
                         argumento que llevó a postular el neutrino
 :func:`rutherford`      dispersión de partículas :math:`\\alpha` sobre una lámina
@@ -487,6 +490,136 @@ def vida_media_sin_memoria(n=200000, tau_real=2.197, edades=(1., 3.),
 
     return dict(medidas=medidas, tiempos_exp=t_exp, tiempos_env=t_env,
                 tau_real=tau_real)
+
+
+def canales(n=200000, tau_real=0.2903,
+            br=(('e', 0.178), ('mu', 0.174), ('hadrones', 0.648)),
+            unidad='ps', seed=None, verbose=True):
+    """Muestra que **no hay una vida media por canal** de desintegración.
+
+    Es el experimento que responde a "si el canal a electrón es raro, ¿tardan más
+    los que se desintegran así?". Por defecto se simula el leptón :math:`\\tau`.
+
+    Cada canal :math:`i` es un **reloj** que suena al azar con ritmo
+    :math:`\\Gamma_i = \\mathcal{Br}_i / \\tau`. La partícula se desintegra cuando
+    suena el primero, y por el canal de ese reloj. Se compara con un mundo
+    inventado:
+
+    * **real**, una carrera de relojes: el tiempo del primer reloj es exponencial
+      con ritmo :math:`\\sum_i \\Gamma_i = 1/\\tau`, y **no depende de cuál gane**.
+      Todos los canales tienen la misma distribución de tiempos, con distinta
+      altura, y las fracciones son las mismas a cualquier tiempo.
+    * **inventado**: la partícula elige canal al nacer, con probabilidad
+      :math:`\\mathcal{Br}_i`, y vive después con la vida media "propia" del canal,
+      :math:`1/\\Gamma_i`. Los canales raros tardan más, las fracciones cambian con
+      el tiempo y, de paso, la vida media total ya no es :math:`\\tau`.
+
+    Parameters
+    ----------
+    n : int
+        Número de partículas simuladas en cada mundo.
+    tau_real : float
+        Vida media total. Por defecto, la del :math:`\\tau` en picosegundos.
+    br : sequence of (str, float)
+        Nombre y fracción de desintegración de cada canal. Se normalizan a 1.
+    unidad : str
+        Unidad de ``tau_real``, solo para las etiquetas.
+    seed : int or None
+        Semilla del generador. Por defecto ``None``: cada ejecución es una toma de
+        datos distinta.
+    verbose : bool
+        Si es ``True``, dibuja los histogramas y las fracciones frente al tiempo, e
+        imprime las medidas.
+
+    Returns
+    -------
+    dict
+        ``medidas`` (por mundo: fracción, tiempo medio de cada canal y fracciones a
+        tiempos cortos y largos), ``tiempos_real``, ``canal_real``,
+        ``tiempos_inv``, ``canal_inv``, ``gammas`` y ``tau_real``.
+    """
+    rng = np.random.default_rng(seed)
+
+    nombres = [b[0] for b in br]
+    fr = np.array([b[1] for b in br], dtype=float)
+    fr = fr / fr.sum()
+    gammas = fr / tau_real                   # anchuras parciales, Gamma_i = Br_i / tau
+
+    # Mundo real: un reloj por canal, gana el primero que suena
+    relojes = rng.exponential(1. / gammas, size=(n, fr.size))
+    t_real = relojes.min(axis=1)
+    c_real = relojes.argmin(axis=1)
+
+    # Mundo inventado: canal elegido al nacer y vida media propia 1/Gamma_i
+    c_inv = rng.choice(fr.size, size=n, p=fr)
+    t_inv = rng.exponential(1. / gammas[c_inv])
+
+    mundos = (('real: carrera de relojes', t_real, c_real),
+              ('inventado: vida media propia por canal', t_inv, c_inv))
+
+    def fracciones(c):
+        """Fracción de cada canal en una selección de partículas."""
+        if c.size == 0:
+            return [np.nan] * fr.size
+        return [float(np.mean(c == k)) for k in range(fr.size)]
+
+    medidas = {}
+    for nombre, t, c in mundos:
+        filas = []
+        for k, canal in enumerate(nombres):
+            tk = t[c == k]
+            media = tk.mean()
+            filas.append(dict(canal=canal, n=int(tk.size), br=tk.size / n,
+                              media=media, error=media / np.sqrt(tk.size),
+                              vida_propia=1. / gammas[k]))
+        medidas[nombre] = dict(canales=filas, tau_total=t.mean(),
+                               br_temprano=fracciones(c[t < 0.1 * tau_real]),
+                               br_tardio=fracciones(c[t > 3. * tau_real]))
+
+    if verbose:
+        bins = np.linspace(0, 6 * tau_real, 61)
+        bins_f = np.linspace(0, 6 * tau_real, 13)
+        centros = 0.5 * (bins_f[1:] + bins_f[:-1])
+
+        fig, axes = plt.subplots(2, 2, figsize=(9.5, 6.4), sharex=True, sharey='row')
+        for j, (nombre, t, c) in enumerate(mundos):
+            ax_t, ax_f = axes[0, j], axes[1, j]
+            n_bin = np.histogram(t, bins=bins_f)[0]
+            for k, canal in enumerate(nombres):
+                ax_t.hist(t[c == k], bins=bins, histtype='step', lw=1.6, color=f'C{k}',
+                          label=f'{canal}  ($\\mathcal{{Br}}$ = {fr[k]:.3f})')
+                n_k = np.histogram(t[c == k], bins=bins_f)[0]
+                ok = n_bin >= 20                 # sin estadística no se dibuja la fracción
+                p = n_k[ok] / n_bin[ok]
+                ax_f.errorbar(centros[ok], p, yerr=np.sqrt(p * (1 - p) / n_bin[ok]),
+                              fmt='o', ms=4, color=f'C{k}', label=canal)
+                ax_f.axhline(fr[k], color=f'C{k}', ls=':', lw=1)
+            ax_t.set_yscale('log')
+            ax_t.set_title(nombre, fontsize=10)
+            ax_t.grid(alpha=0.3)
+            ax_t.legend(fontsize=8)
+            ax_f.set_ylim(0, 1)
+            ax_f.set_xlabel(f'tiempo de desintegración ({unidad})')
+            ax_f.grid(alpha=0.3)
+        axes[0, 0].set_ylabel('sucesos')
+        axes[1, 0].set_ylabel('fracción de cada canal')
+        axes[1, 0].legend(fontsize=8)
+        fig.tight_layout()
+
+        print(f' vida media de entrada = {tau_real:6.4f} {unidad}\n')
+        for nombre, m in medidas.items():
+            print(f' {nombre}   (vida media total medida = {m["tau_total"]:6.4f} {unidad})')
+            for f in m['canales']:
+                print(f"   canal {f['canal']:<9s} Br = {f['br']:5.3f}"
+                      f"   <t> = {f['media']:6.4f} +- {f['error']:6.4f} {unidad}"
+                      f"   (1/Gamma_i = {f['vida_propia']:6.4f} {unidad})")
+            for etq, fs in (('t < 0.1 tau', m['br_temprano']), ('t > 3 tau  ', m['br_tardio'])):
+                print(f'   fracciones con {etq}: '
+                      + '  '.join(f'{c} {x:5.3f}' for c, x in zip(nombres, fs)))
+            print()
+
+    return dict(medidas=medidas, tiempos_real=t_real, canal_real=c_real,
+                tiempos_inv=t_inv, canal_inv=c_inv, gammas=gammas, tau_real=tau_real)
 
 
 # ---------------------------------------------------------------------------
