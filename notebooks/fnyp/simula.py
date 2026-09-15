@@ -629,9 +629,9 @@ def canales(n=200000, tau_real=0.2903,
 def espectro_beta(Q=0.782, m_e=0.511, verbose=True):
     """Compara el espectro del electrón en una desintegración a 2 y a 3 cuerpos.
 
-    En la desintegración a dos cuerpos :math:`n \\to p \\, e^-` la cinemática fija
+    En la desintegración a dos cuerpos :math:`n \\to p + e` la cinemática fija
     por completo la energía del electrón: el espectro sería **una raya**. En la
-    desintegración a tres cuerpos :math:`n \\to p \\, e^- \\bar{\\nu}_e` la energía se
+    desintegración a tres cuerpos :math:`n \\to p + e + \\bar{\\nu}_e` la energía se
     reparte entre el electrón y el neutrino, y el espectro es **continuo** entre 0
     y :math:`Q`.
 
@@ -668,9 +668,9 @@ def espectro_beta(Q=0.782, m_e=0.511, verbose=True):
     T_2 = Q
 
     if verbose:
-        plt.plot(T, dNdT, label=r'3 cuerpos: $n \to p \, e^- \, \bar{\nu}_e$')
+        plt.plot(T, dNdT, label=r'3 cuerpos: $n \to p + e + \bar{\nu}_e$')
         plt.vlines(T_2, 0, 1.05, color='crimson', lw=2,
-                   label=r'2 cuerpos: $n \to p \, e^-$')
+                   label=r'2 cuerpos: $n \to p + e$')
         plt.xlabel(r'energía cinética del electrón $T$ (MeV)')
         plt.ylabel(r'$dN/dT$ (normalizado)')
         plt.ylim(0, 1.15)
