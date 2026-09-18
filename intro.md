@@ -18,7 +18,7 @@ Los apuntes se organizan en cinco temas: una introducción a la temática de la 
 
 Se precisa un conocimiento previo de la cinemática relativista y de los conceptos básicos de Física Nuclear. También es conveniente conocer la ecuación de Dirac y una introducción a la Teoría Cuántica de Campos.
 
-Los apuntes se complementan con ciertas **extensiones**, donde se presentan de forma breve algunos fundamentos matemáticos relevantes.
+Los apuntes se complementan con **extensiones**, que desarrollan con más detalle algunos puntos de los capítulos y presentan de forma breve algunos fundamentos matemáticos, y con **boletines** de ejercicios resueltos.
 
 Estos apuntes son una recopilación de muy diversas fuentes, pero principalmente de los libros de M. Thomson y A. Bettini.
 
@@ -26,25 +26,28 @@ Estos apuntes son una recopilación de muy diversas fuentes, pero principalmente
 
 ## Contenido
 
-Los apuntes constan de cinco temas y una serie de extensiones. **De momento se publica
-solo el primero**, que es el que está revisado; el resto se irá incorporando conforme se
-curen.
+El libro se organiza en tres secciones:
+
+1. **Capítulos**: los cinco temas de la asignatura.
+2. **Extensiones**: complementos de los capítulos (deducciones completas, analogías,
+   simulaciones) y algunos fundamentos matemáticos.
+3. **Boletines**: los ejercicios de cada capítulo, resueltos en notebooks.
+
+**De momento se publica solo el primer capítulo**, que es el que está revisado; el resto,
+las extensiones y los boletines se irán incorporando conforme se curen.
 
 **Publicado**
 
-1. Introducción a la Física de Partículas
+* Capítulo 1: Introducción a la Física de Partículas
 
 **En preparación**
 
-2. Observables
-3. Los leptones
-4. Los quarks y los hadrones
-5. El Modelo Estándar
+* Capítulos 2–5: Observables; Los leptones; Los quarks y los hadrones; El Modelo Estándar
+* Extensiones: Introducción; Fundamentos
+* Boletines: Desintegración del protón en Super-Kamiokande
 
-*Extensiones*: Fundamentos
-
-Los temas en preparación se mencionan a lo largo del Tema I; esas referencias aparecen
-como texto sin enlace hasta que se publiquen.
+Los capítulos, extensiones y boletines en preparación se mencionan en el Capítulo 1; esas
+referencias aparecen como texto sin enlace hasta que se publiquen.
 
 ```{tableofcontents}
 ```

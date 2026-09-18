@@ -1,33 +1,47 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
+#
+# El Book tiene tres secciones: 1) Capítulos, 2) Extensiones (de los capítulos y
+# otras) y 3) Boletines (de los capítulos). De momento solo se publican los
+# Capítulos revisados. Las Extensiones y los Boletines están preparados abajo,
+# comentados: para publicarlos basta con descomentar su bloque.
+#
+# Mientras no se publiquen, las referencias cruzadas desde los capítulos a
+# ficheros fuera del TOC se renderizan como texto sin enlace (no son enlaces
+# rotos, pero sí warnings).
 
 format: jb-book
 root: intro
 
 parts:
 
-  - caption: Apuntes
+  # ------------------------------------------------------------ 1. Capítulos
+  - caption: Capítulos
     numbered: true
     chapters:
       - file: notebooks/introduccion.ipynb
+      # Pendientes de revisión:
+      # - file: notebooks/observables.ipynb
+      # - file: notebooks/leptones.ipynb
+      # - file: notebooks/quarks_hadrons.ipynb
+      # - file: notebooks/sm.ipynb
 
-# Solo se publica el Tema I, que es el único revisado. El resto se añadirá conforme
-# se curen. Mientras tanto, las 5 referencias cruzadas del Tema I a estos ficheros
-# se renderizan como texto sin enlace (no son enlaces rotos, pero sí 5 warnings).
-#
-#   - caption: Apuntes
-#     numbered: true
-#     chapters:
-#       - file: notebooks/introduccion.ipynb
-#       - file: notebooks/observables.ipynb
-#       - file: notebooks/leptones.ipynb
-#       - file: notebooks/quarks_hadrons.ipynb
-#       - file: notebooks/sm.ipynb
+# ------------------------------------------------------------ 2. Extensiones
+# (preparada, sin publicar)
 #
 #   - caption: Extensiones
 #     numbered: false
 #     chapters:
+#       - file: notebooks/intro_extension.ipynb
 #       - file: notebooks/ext-fundamentos.ipynb
+#
+# ------------------------------------------------------------ 3. Boletines
+# (preparada, sin publicar)
+#
+#   - caption: Boletines
+#     numbered: false
+#     chapters:
+#       - file: notebooks/bols/boletin_desintegracion_proton_simple.ipynb
 #
 # Pendientes de revisión:
 #   notebooks/ext-dirac.ipynb
@@ -35,4 +49,5 @@ parts:
 #   notebooks/ext-grupos.ipynb
 #   notebooks/ext-sm.ipynb
 #   notebooks/deteccion.ipynb
+#   notebooks/bols/boletin_desintegracion_proton.ipynb   (versión larga, sin sincronizar)
 #   notebooks/probs/problemas-*.ipynb

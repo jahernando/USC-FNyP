@@ -37,6 +37,11 @@ Experimentos
 :func:`rutherford`      dispersión de partículas :math:`\\alpha` sobre una lámina
                         de oro -> compara el modelo de Thomson con el núcleo
                         puntual de Rutherford
+:func:`resonancia`      el oscilador con rozamiento, libre y forzado -> cuanto
+                        menos dura, más ancho es el pico: anchura x duración = 1,
+                        la analogía clásica de la Breit-Wigner
+:func:`resonancia_animada`
+                        el barrido en frecuencia, animado, para proyectar en clase
 """
 
 import numpy as np
@@ -771,3 +776,227 @@ def rutherford(n=200000, E_MeV=5., Z_proyectil=2, Z_blanco=79,
 
     return dict(d_fm=d, frac_rutherford=frac_r, frac_thomson=frac_t,
                 theta_rutherford=theta_ruth, theta_thomson=theta_thom)
+
+
+# ---------------------------------------------------------------------------
+# 5. Resonancia: el oscilador forzado y la Breit-Wigner
+# ---------------------------------------------------------------------------
+
+def _oscilador(omega, gamma, omega0=1., t_max=None, n_puntos=4000):
+    """Integra :math:`\\ddot{x} + \\gamma \\dot{x} + \\omega_0^2 x = \\cos \\omega t`.
+
+    Si ``omega`` es 0, el oscilador **no se fuerza**: parte de :math:`x = 1` en
+    reposo y oscila libremente. Devuelve los tiempos, :math:`x(t)` y :math:`v(t)`.
+    """
+    from scipy.integrate import solve_ivp               # solo si se usa la resonancia
+
+    if t_max is None:
+        t_max = 12. / gamma + 20 * 2 * np.pi / max(omega, omega0)
+    fuerza = (lambda t: np.cos(omega * t)) if omega > 0 else (lambda t: 0.)
+    x0 = (0., 0.) if omega > 0 else (1., 0.)
+
+    def ecuacion(t, y):
+        x, v = y
+        return v, fuerza(t) - gamma * v - omega0**2 * x
+
+    ts = np.linspace(0, t_max, n_puntos)
+    sol = solve_ivp(ecuacion, (0, t_max), x0, t_eval=ts, rtol=1e-8, atol=1e-10)
+    return sol.t, sol.y[0], sol.y[1]
+
+
+def _potencia(omega, gamma, omega0=1., n_periodos=10):
+    """Potencia media que el forzamiento entrega al oscilador, ya en régimen estacionario.
+
+    Se integra hasta que el transitorio se ha apagado (:math:`\\sim 12/\\gamma`) y se
+    promedia :math:`F(t)\\, v(t)` sobre los últimos ``n_periodos`` periodos.
+    """
+    periodo = 2 * np.pi / omega
+    t_max = 12. / gamma + n_periodos * periodo
+    t, _, v = _oscilador(omega, gamma, omega0, t_max=t_max, n_puntos=6000)
+    ult = t > t_max - n_periodos * periodo
+    return np.mean(np.cos(omega * t[ult]) * v[ult])
+
+
+def _anchura_a_media_altura(omegas, p):
+    """Anchura a media altura de una curva con un solo pico, interpolando."""
+    mitad = p.max() / 2
+    arriba = np.where(p >= mitad)[0]
+    i, j = arriba[0], arriba[-1]
+    izq = np.interp(mitad, [p[i - 1], p[i]], [omegas[i - 1], omegas[i]])
+    dcha = np.interp(mitad, [p[j + 1], p[j]], [omegas[j + 1], omegas[j]])
+    return dcha - izq
+
+
+def resonancia(gammas=(0.05, 0.2), omega0=1., n_omegas=61, verbose=True):
+    """El oscilador con rozamiento: cuanto menos dura, más ancho es su pico.
+
+    Es la analogía clásica de una partícula inestable. Para cada rozamiento
+    :math:`\\gamma` se hacen dos "experimentos":
+
+    * **libre** (izquierda): se suelta el oscilador y se mira cómo se apaga. La
+      amplitud cae como :math:`e^{-\\gamma t/2}` y la energía como
+      :math:`e^{-\\gamma t}`: la energía "vive" un tiempo :math:`\\tau = 1/\\gamma`,
+      como la probabilidad de supervivencia :math:`e^{-t/\\tau}`.
+    * **forzado** (derecha): se empuja con :math:`\\cos \\omega t` y, para cada
+      :math:`\\omega`, se mide la potencia que absorbe una vez apagado el transitorio.
+      Es un barrido en frecuencia, como el de OPAL en :math:`\\sqrt{s}`.
+
+    La potencia absorbida es
+    :math:`P(\\omega) \\propto \\gamma \\omega^2 / [(\\omega_0^2 - \\omega^2)^2 + \\gamma^2 \\omega^2]`.
+    Cerca de :math:`\\omega_0`, con :math:`\\omega_0^2 - \\omega^2 \\simeq 2\\omega_0(\\omega_0 - \\omega)`,
+    es una Breit-Wigner (una lorentziana) de anchura a media altura :math:`\\gamma`:
+
+    .. math:: P(\\omega) \\propto \\frac{\\gamma^2/4}{(\\omega - \\omega_0)^2 + \\gamma^2/4}
+
+    y por tanto **anchura × duración = 1**. Con :math:`E = \\hbar \\omega` es
+    :math:`\\Gamma \\, \\tau = \\hbar`.
+
+    Todo se integra numéricamente: la anchura sale de la simulación, no de la fórmula.
+    Lejos del pico la simulación se separa de la Breit-Wigner, que es solo la
+    aproximación cerca de :math:`\\omega_0`; se nota más cuanto más ancho es el pico.
+
+    Parameters
+    ----------
+    gammas : sequence of float
+        Rozamientos a comparar, en unidades de :math:`\\omega_0`.
+    omega0 : float
+        Frecuencia propia del oscilador (el papel de la masa).
+    n_omegas : int
+        Número de frecuencias del barrido.
+    verbose : bool
+        Si es ``True``, dibuja la figura e imprime las anchuras medidas.
+
+    Returns
+    -------
+    dict
+        Por cada ``gamma``: ``omegas``, ``potencia`` (normalizada al máximo),
+        ``anchura`` medida y ``tau`` = 1/gamma.
+    """
+    resultados = {}
+    for gamma in gammas:
+        omegas = np.linspace(max(omega0 - 4 * max(gammas), 0.1 * omega0),
+                             omega0 + 4 * max(gammas), n_omegas)
+        # un barrido fino alrededor del pico para medir bien la anchura
+        finas = np.linspace(omega0 - 1.5 * gamma, omega0 + 1.5 * gamma, 41)
+        p = np.array([_potencia(w, gamma, omega0) for w in omegas])
+        p_fina = np.array([_potencia(w, gamma, omega0) for w in finas])
+        pmax = max(p.max(), p_fina.max())
+        orden = np.argsort(np.concatenate([omegas, finas]))
+        omegas = np.concatenate([omegas, finas])[orden]
+        p = np.concatenate([p, p_fina])[orden]
+        resultados[gamma] = dict(omegas=omegas, potencia=p / pmax,
+                                 anchura=_anchura_a_media_altura(finas, p_fina),
+                                 tau=1. / gamma)
+
+    if verbose:
+        fig, (ax_t, ax_w) = plt.subplots(1, 2, figsize=(10, 3.8))
+        for k, gamma in enumerate(gammas):
+            r = resultados[gamma]
+            t, x, _ = _oscilador(0., gamma, omega0, t_max=5. / min(gammas))
+            ax_t.plot(t, x, color=f'C{k}', lw=0.8,
+                      label=f'$\\gamma$ = {gamma}:  $\\tau$ = 1/$\\gamma$ = {r["tau"]:.0f}')
+            ax_t.plot(t, np.exp(-gamma * t / 2), color=f'C{k}', ls='--', lw=1)
+
+            w = np.linspace(r['omegas'][0], r['omegas'][-1], 400)
+            bw = (gamma**2 / 4) / ((w - omega0)**2 + gamma**2 / 4)
+            ax_w.plot(w, bw, color=f'C{k}', lw=1, label=f'Breit-Wigner, $\\Gamma$ = {gamma}')
+            ax_w.plot(r['omegas'], r['potencia'], 'o', ms=3.5, color=f'C{k}',
+                      label=f'simulación: anchura = {r["anchura"]:.3f}')
+        ax_t.set_xlabel('tiempo $t$ (unidades de $1/\\omega_0$)')
+        ax_t.set_ylabel('$x(t)$')
+        ax_t.set_title('libre: se apaga en un tiempo $\\sim 1/\\gamma$', fontsize=10)
+        ax_t.legend(fontsize=8, loc='upper right')
+        ax_t.grid(alpha=0.3)
+        ax_w.axvline(omega0, color='k', ls=':', lw=1)
+        ax_w.set_xlabel('frecuencia del forzamiento $\\omega$ (unidades de $\\omega_0$)')
+        ax_w.set_ylabel('potencia absorbida (normalizada)')
+        ax_w.set_title('forzado: pico de anchura $\\gamma$', fontsize=10)
+        ax_w.legend(fontsize=8, loc='upper left')
+        ax_w.grid(alpha=0.3)
+        fig.tight_layout()
+
+        for gamma in gammas:
+            r = resultados[gamma]
+            print(f' gamma = {gamma:5.3f}:  tau = 1/gamma = {r["tau"]:6.1f}'
+                  f'   anchura medida = {r["anchura"]:6.4f}'
+                  f'   anchura x tau = {r["anchura"] * r["tau"]:5.3f}')
+
+    return resultados
+
+
+def resonancia_animada(gamma=0.1, omega0=1., n_omegas=25, fps=4):
+    """Barrido animado de la resonancia, para proyectar en clase.
+
+    En cada fotograma se fuerza el oscilador a una frecuencia :math:`\\omega` y se
+    ve su respuesta :math:`x(t)` (izquierda): primero un transitorio y después una
+    oscilación estacionaria, grande cerca de :math:`\\omega_0` y pequeña lejos. La
+    potencia que absorbe se añade como un punto a la curva de resonancia (derecha),
+    que se va dibujando como la sección eficaz de OPAL al barrer :math:`\\sqrt{s}`.
+
+    Devuelve un objeto ``HTML`` con los controles de reproducción, así que la
+    celda **debe terminar en esta llamada** (sin punto y coma) para que se muestre.
+
+    .. warning::
+       Como :func:`vida_media_animada`, la salida pesa ~1-2 MB: úsala en vivo y
+       **no guardes el notebook con su salida**. Para los apuntes, :func:`resonancia`.
+
+    Parameters
+    ----------
+    gamma : float
+        Rozamiento, en unidades de :math:`\\omega_0`.
+    omega0 : float
+        Frecuencia propia.
+    n_omegas : int
+        Número de frecuencias del barrido (fotogramas).
+    fps : int
+        Fotogramas por segundo.
+
+    Returns
+    -------
+    IPython.display.HTML
+        La animación con sus controles.
+    """
+    from matplotlib.animation import FuncAnimation      # solo si se usa la animación
+    from IPython.display import HTML
+
+    omegas = np.linspace(omega0 - 4 * gamma, omega0 + 4 * gamma, n_omegas)
+    t_max = 8. / gamma
+    respuestas = [_oscilador(w, gamma, omega0, t_max=t_max, n_puntos=3000) for w in omegas]
+    potencias = np.array([_potencia(w, gamma, omega0) for w in omegas])
+    potencias /= potencias.max()
+    x_max = max(np.abs(x).max() for _, x, _ in respuestas)
+
+    w = np.linspace(omegas[0], omegas[-1], 400)
+    bw = (gamma**2 / 4) / ((w - omega0)**2 + gamma**2 / 4)
+
+    fig, (ax_t, ax_w) = plt.subplots(1, 2, figsize=(10, 3.8), dpi=72)
+
+    def dibuja(k):
+        t, x, _ = respuestas[k]
+        ax_t.clear()
+        ax_t.plot(t, x, lw=0.8)
+        ax_t.set_ylim(-1.1 * x_max, 1.1 * x_max)
+        ax_t.set_xlabel('tiempo $t$ (unidades de $1/\\omega_0$)')
+        ax_t.set_ylabel('$x(t)$')
+        ax_t.set_title(f'forzado a $\\omega$ = {omegas[k]:.3f} $\\omega_0$', fontsize=10)
+        ax_t.grid(alpha=0.3)
+
+        ax_w.clear()
+        ax_w.plot(w, bw, 'k--', lw=1, label=f'Breit-Wigner, $\\Gamma$ = {gamma}')
+        ax_w.plot(omegas[:k + 1], potencias[:k + 1], 'o', ms=4, color='C0',
+                  label='simulación')
+        ax_w.plot(omegas[k], potencias[k], 'o', ms=9, color='C3')
+        ax_w.axvline(omega0, color='k', ls=':', lw=1)
+        ax_w.set_xlim(omegas[0], omegas[-1])
+        ax_w.set_ylim(0, 1.15)
+        ax_w.set_xlabel('frecuencia del forzamiento $\\omega$ (unidades de $\\omega_0$)')
+        ax_w.set_ylabel('potencia absorbida (normalizada)')
+        ax_w.legend(fontsize=8, loc='upper left')
+        ax_w.grid(alpha=0.3)
+        fig.tight_layout()
+
+    anim = FuncAnimation(fig, dibuja, frames=range(n_omegas), interval=1000 // fps,
+                         repeat=True)
+    html = anim.to_jshtml(default_mode='once')
+    plt.close(fig)                                      # evita el frame estático extra
+    return HTML(html)
