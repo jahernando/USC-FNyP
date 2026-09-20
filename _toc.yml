@@ -21,7 +21,7 @@ parts:
     chapters:
       - file: notebooks/introduccion.ipynb
       # Pendientes de revisión:
-      # - file: notebooks/observables.ipynb
+      # - file: notebooks/perspectivas.ipynb
       # - file: notebooks/leptones.ipynb
       # - file: notebooks/quarks_hadrons.ipynb
       # - file: notebooks/sm.ipynb
