@@ -14,17 +14,20 @@ Lo que se extrae a este paquete:
 * la cosmética de las figuras (:func:`fnyp.common.plot_xy`);
 * definiciones de función largas cuya expresión ya está escrita en LaTeX en el
   texto, como las secciones eficaces de Rutherford y de Mott
-  (:mod:`fnyp.introduccion`).
+  (:mod:`fnyp.introduccion`), o las matrices de Dirac y las simulaciones de los
+  Talleres del tema de perspectivas (:mod:`fnyp.perspectivas`).
 
 Uso en un notebook::
 
     from fnyp import common as fn
     from fnyp import introduccion as t1
+    from fnyp import perspectivas as t2
 
     t1.plot_dilatacion_temporal()
 """
 
 from . import common      # noqa: F401
 from . import introduccion  # noqa: F401
+from . import perspectivas  # noqa: F401
 
-__all__ = ['common', 'introduccion']
+__all__ = ['common', 'introduccion', 'perspectivas']

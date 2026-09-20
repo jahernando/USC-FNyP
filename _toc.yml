@@ -20,8 +20,8 @@ parts:
     numbered: true
     chapters:
       - file: notebooks/introduccion.ipynb
+      - file: notebooks/perspectivas.ipynb
       # Pendientes de revisión:
-      # - file: notebooks/perspectivas.ipynb
       # - file: notebooks/leptones.ipynb
       # - file: notebooks/quarks_hadrons.ipynb
       # - file: notebooks/sm.ipynb
