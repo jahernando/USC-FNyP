@@ -23,10 +23,14 @@ Parte teórica
                          el eje z, y :math:`\\gamma^\\mu p_\\mu`
 :func:`kappa_espinor`    :math:`\\kappa = \\mathrm{p}/(E+m)` y el peso de las dos
                          componentes de abajo -> el límite ultrarrelativista
+:func:`latex`, :func:`muestra`, :func:`ok`
+                         cosmética: matrices y espinores escritos en LaTeX, con
+                         la marca de si la comprobación se cumple
 """
 
 import numpy as np
 import matplotlib.pyplot as plt
+from IPython.display import Math, display
 
 #: masa del electrón [MeV], para la Bethe-Bloch
 M_E_MEV = 0.511
@@ -318,6 +322,45 @@ def matrices_dirac():
                 P_L=0.5 * (I4 - gamma5), P_R=0.5 * (I4 + gamma5))
 
 
+def _numero(z, dec=3):
+    """Un número complejo en LaTeX: enteros y ``i`` limpios, el resto con ``dec`` cifras."""
+    z = complex(z)
+    re = 0. if abs(z.real) < 1e-12 else z.real
+    im = 0. if abs(z.imag) < 1e-12 else z.imag
+
+    def real(x):
+        return f'{int(round(x))}' if abs(x - round(x)) < 1e-12 else f'{x:.{dec}g}'
+
+    if im == 0.:
+        return real(re)
+    imag = {1.: 'i', -1.: '-i'}.get(im, real(im) + 'i')
+    if re == 0.:
+        return imag
+    return real(re) + ('' if imag.startswith('-') else '+') + imag
+
+
+def latex(x, dec=3):
+    """Escalar, vector (en columna) o matriz, en LaTeX (``pmatrix``)."""
+    x = np.asarray(x)
+    if x.ndim == 0:
+        return _numero(x, dec)
+    filas = x.reshape(-1, 1) if x.ndim == 1 else x
+    cuerpo = r' \\ '.join(' & '.join(_numero(z, dec) for z in fila)
+                          for fila in filas)
+    return r'\begin{pmatrix} ' + cuerpo + r' \end{pmatrix}'
+
+
+def ok(cierto):
+    """Marca LaTeX de una comprobación: tic verde o aspa roja."""
+    return (r'\quad \color{green}{\checkmark}' if cierto
+            else r'\quad \color{red}{\times}')
+
+
+def muestra(*piezas):
+    """Escribe en una línea, en LaTeX, varias expresiones separadas por espacios."""
+    display(Math(r' \qquad '.join(piezas)))
+
+
 def espinores(p, m):
     """Los cuatro espinores con **p** en el eje z, y :math:`\\gamma^\\mu p_\\mu`.
 
@@ -379,7 +422,8 @@ def kappa_espinor(verbose=True):
 
     .. math:: w = \\frac{\\kappa^2}{1 + \\kappa^2}
 
-    Ambas dependen **solo** de :math:`\\mathrm{p}/m`, no de la partícula: en
+    Ambas dependen **solo** de :math:`\\beta\\gamma = \\mathrm{p}/m`
+    (:math:`\\kappa = \\beta\\gamma/(\\gamma + 1)`), no de la partícula: en
     reposo :math:`\\kappa = 0` y queda el espinor de Pauli; en el límite
     ultrarrelativista :math:`\\kappa \\to 1` y arriba y abajo pesan igual
     (:math:`w \\to 1/2`). Ese es el régimen en el que la quiralidad se confunde
@@ -393,9 +437,9 @@ def kappa_espinor(verbose=True):
     Returns
     -------
     dict
-        ``x`` (:math:`\\mathrm{p}/m`), ``kappa``, ``peso`` y ``casos``.
+        ``x`` (:math:`\\beta\\gamma = \\mathrm{p}/m`), ``kappa``, ``peso`` y ``casos``.
     """
-    x = np.logspace(-2., 4., 600)                  # p/m
+    x = np.logspace(-2., 4., 600)                  # beta*gamma = p/m
     k = x / (np.sqrt(1. + x**2) + 1.)              # kappa = p/(E+m)
     w = k**2 / (1. + k**2)
 
@@ -416,13 +460,13 @@ def kappa_espinor(verbose=True):
             plt.annotate(etiqueta, (xi, ki), textcoords='offset points',
                          xytext=offset, fontsize=9, color='0.25')
         plt.xscale('log')
-        plt.xlabel(r'$\mathrm{p}/m$')
+        plt.xlabel(r'$\beta\gamma = \mathrm{p}/m$')
         plt.ylabel(r'$\kappa$,  peso')
         plt.ylim(0., 1.05)
         plt.legend(loc='upper left', fontsize=9)
         plt.grid(alpha=0.3, which='both')
         for etiqueta, (xi, ki, wi) in casos.items():
-            print(f' {etiqueta:12} : p/m = {xi:9.1f}, kappa = {ki:5.3f},'
+            print(f' {etiqueta:12} : beta*gamma = p/m = {xi:9.1f}, kappa = {ki:5.3f},'
                   f' peso abajo = {100 * wi:4.1f} %')
 
     return dict(x=x, kappa=k, peso=w, casos=casos)
