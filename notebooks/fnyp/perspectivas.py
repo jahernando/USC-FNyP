@@ -22,7 +22,8 @@ Parte teórica
 :func:`espinores`        los cuatro espinores :math:`u_s(p), v_s(p)` con **p** en
                          el eje z, y :math:`\\gamma^\\mu p_\\mu`
 :func:`kappa_espinor`    :math:`\\kappa = \\mathrm{p}/(E+m)` y el peso de las dos
-                         componentes de abajo -> el límite ultrarrelativista
+                         componentes de abajo frente al momento, para e y p ->
+                         el límite ultrarrelativista lo fija la masa
 :func:`latex`, :func:`muestra`, :func:`ok`
                          cosmética: matrices y espinores escritos en LaTeX, con
                          la marca de si la comprobación se cumple
@@ -407,14 +408,37 @@ def espinores(p, m):
 # ---------------------------------------------------------------------------
 
 #: casos marcados en la figura: (etiqueta, masa [GeV], momento [GeV], offset)
-CASOS_KAPPA = ((r'$e$, 1 MeV', 0.511e-3, 1e-3, (8, -4)),
-               (r'$p$, 1 GeV', 0.938, 1., (8, -12)),
-               (r'$e$, 1 GeV', 0.511e-3, 1., (-16, -16)),
-               (r'$p$, 7 TeV', 0.938, 7e3, (-24, -28)))
+#: partículas de la figura de kappa: nombre -> masa [GeV]
+MASAS_KAPPA = {r'$e$': 0.511e-3, r'$p$': 0.938}
+
+#: casos marcados en la figura de kappa: (etiqueta, partícula, p [GeV], offset)
+CASOS_KAPPA = ((r'$e$, 1 MeV', r'$e$', 1e-3, (-44, 6)),
+               (r'$e$, 1 GeV', r'$e$', 1., (-20, 8)),
+               (r'$p$, 1 GeV', r'$p$', 1., (8, -12)),
+               (r'$p$, 7 TeV', r'$p$', 7e3, (-24, 8)))
+
+#: peso de las componentes de abajo marcado en la figura
+PESO_REF = 0.4
+
+
+def _kappa(p, m):
+    """:math:`\\kappa = \\mathrm{p}/(E+m)`, con p y m en las mismas unidades."""
+    return p / (np.sqrt(p**2 + m**2) + m)
+
+
+def _peso(k):
+    """Peso de las dos componentes de abajo, :math:`\\kappa^2/(1+\\kappa^2)`."""
+    return k**2 / (1. + k**2)
+
+
+def _kappa_de_peso(w):
+    """Inversa de :func:`_peso`: :math:`\\kappa = \\sqrt{w/(1-w)}`."""
+    w = np.clip(w, 0., 0.999)
+    return np.sqrt(w / (1. - w))
 
 
 def kappa_espinor(verbose=True):
-    """:math:`\\kappa` y el peso de las dos componentes de abajo del espinor.
+    """:math:`\\kappa` frente al momento, para el electrón y el protón.
 
     Con **p** en el eje z, :math:`u_1 = N(1, 0, \\kappa, 0)` con
     :math:`\\kappa = \\mathrm{p}/(E+m)`. El peso de las dos componentes de abajo
@@ -422,9 +446,13 @@ def kappa_espinor(verbose=True):
 
     .. math:: w = \\frac{\\kappa^2}{1 + \\kappa^2}
 
-    Ambas dependen **solo** de :math:`\\beta\\gamma = \\mathrm{p}/m`
-    (:math:`\\kappa = \\beta\\gamma/(\\gamma + 1)`), no de la partícula: en
-    reposo :math:`\\kappa = 0` y queda el espinor de Pauli; en el límite
+    Se dibuja solo :math:`\\kappa`; el eje de la derecha es el mismo leído como
+    peso :math:`w` (no es otra curva: :math:`w` es función de :math:`\\kappa`).
+
+    Las dos curvas tienen la **misma forma**, desplazada en :math:`\\log p` por
+    :math:`m_p/m_e \\simeq 1836`: ambas dependen solo de
+    :math:`\\beta\\gamma = \\mathrm{p}/m` (:math:`\\kappa = \\beta\\gamma/(\\gamma + 1)`).
+    En reposo :math:`\\kappa = 0` y queda el espinor de Pauli; en el límite
     ultrarrelativista :math:`\\kappa \\to 1` y arriba y abajo pesan igual
     (:math:`w \\to 1/2`). Ese es el régimen en el que la quiralidad se confunde
     con la helicidad, y en el que trabaja la física de partículas.
@@ -432,41 +460,56 @@ def kappa_espinor(verbose=True):
     Parameters
     ----------
     verbose : bool
-        Si es ``True``, dibuja las dos curvas y marca algunos casos.
+        Si es ``True``, dibuja las curvas, marca algunos casos y el momento en
+        el que el peso de abajo llega al 40 %.
 
     Returns
     -------
     dict
-        ``x`` (:math:`\\beta\\gamma = \\mathrm{p}/m`), ``kappa``, ``peso`` y ``casos``.
+        ``p`` (GeV), ``kappa`` y ``peso`` (dicts por partícula), ``p_ref``
+        (momento en GeV con peso 40 %, por partícula) y ``casos``.
     """
-    x = np.logspace(-2., 4., 600)                  # beta*gamma = p/m
-    k = x / (np.sqrt(1. + x**2) + 1.)              # kappa = p/(E+m)
-    w = k**2 / (1. + k**2)
+    p = np.logspace(-5., 4., 600)                  # momento [GeV]
+    kappa = {nombre: _kappa(p, m) for nombre, m in MASAS_KAPPA.items()}
+    peso = {nombre: _peso(k) for nombre, k in kappa.items()}
+
+    # peso 40 %  ->  kappa_ref  ->  beta*gamma = 2 kappa / (1 - kappa^2)
+    k_ref = _kappa_de_peso(PESO_REF)
+    bg_ref = 2. * k_ref / (1. - k_ref**2)
+    p_ref = {nombre: bg_ref * m for nombre, m in MASAS_KAPPA.items()}
 
     casos = {}
-    for etiqueta, m, p, _ in CASOS_KAPPA:
-        xi = p / m
-        ki = xi / (np.sqrt(1. + xi**2) + 1.)
-        casos[etiqueta] = (xi, ki, ki**2 / (1. + ki**2))
+    for etiqueta, nombre, pi, _ in CASOS_KAPPA:
+        m = MASAS_KAPPA[nombre]
+        ki = _kappa(pi, m)
+        casos[etiqueta] = (pi, pi / m, ki, _peso(ki))
 
     if verbose:
-        plt.plot(x, k, lw=2, label=r'$\kappa = \mathrm{p}/(E+m)$')
-        plt.plot(x, w, lw=2, ls='--',
-                 label=r'peso de las componentes de abajo, $\kappa^2/(1+\kappa^2)$')
-        plt.axhline(0.5, color='0.6', lw=1, ls=':')
-        for etiqueta, _, _, offset in CASOS_KAPPA:
-            xi, ki, _w = casos[etiqueta]
-            plt.plot([xi], [ki], 'o', ms=6, color='0.25')
-            plt.annotate(etiqueta, (xi, ki), textcoords='offset points',
-                         xytext=offset, fontsize=9, color='0.25')
-        plt.xscale('log')
-        plt.xlabel(r'$\beta\gamma = \mathrm{p}/m$')
-        plt.ylabel(r'$\kappa$,  peso')
-        plt.ylim(0., 1.05)
-        plt.legend(loc='upper left', fontsize=9)
-        plt.grid(alpha=0.3, which='both')
-        for etiqueta, (xi, ki, wi) in casos.items():
-            print(f' {etiqueta:12} : beta*gamma = p/m = {xi:9.1f}, kappa = {ki:5.3f},'
+        fig, ax = plt.subplots()
+        for nombre in MASAS_KAPPA:
+            linea, = ax.plot(p, kappa[nombre], lw=2, label=nombre)
+            ax.axvline(p_ref[nombre], color=linea.get_color(), lw=1, ls=':')
+        ax.axhline(k_ref, color='0.6', lw=1, ls='--',
+                   label=f'peso abajo = {100 * PESO_REF:.0f} %')
+        for etiqueta, _, pi, offset in CASOS_KAPPA:
+            ki = casos[etiqueta][2]
+            ax.plot([pi], [ki], 'o', ms=6, color='0.25')
+            ax.annotate(etiqueta, (pi, ki), textcoords='offset points',
+                        xytext=offset, fontsize=9, color='0.25')
+        ax.set_xscale('log')
+        ax.set_xlabel('momento p (GeV)')
+        ax.set_ylabel(r'$\kappa = \mathrm{p}/(E+m)$')
+        ax.set_ylim(0., 1.02)
+        eje_w = ax.secondary_yaxis('right', functions=(_peso, _kappa_de_peso))
+        eje_w.set_ylabel(r'peso de las componentes de abajo, $\kappa^2/(1+\kappa^2)$')
+        eje_w.set_yticks([0., 0.1, 0.2, 0.3, 0.4, 0.45, 0.5])
+        ax.legend(loc='upper left', fontsize=9)
+        ax.grid(alpha=0.3, which='both')
+        for nombre, pr in p_ref.items():
+            print(f' {nombre.strip("$"):5} : peso abajo = {100 * PESO_REF:.0f} % en p = {1e3 * pr:8.1f} MeV'
+                  f'  (p/m = {bg_ref:.2f})')
+        for etiqueta, (pi, xi, ki, wi) in casos.items():
+            print(f' {etiqueta.replace("$", ""):12} : p/m = {xi:9.1f}, kappa = {ki:5.3f},'
                   f' peso abajo = {100 * wi:4.1f} %')
 
-    return dict(x=x, kappa=k, peso=w, casos=casos)
+    return dict(p=p, kappa=kappa, peso=peso, p_ref=p_ref, casos=casos)
