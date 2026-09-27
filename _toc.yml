@@ -33,7 +33,7 @@ parts:
 #     numbered: false
 #     chapters:
 #       - file: notebooks/intro_extension.ipynb
-#       - file: notebooks/ext-fundamentos.ipynb
+#       - file: notebooks/ext-cinematica.ipynb
 #       - file: notebooks/ext-dirac.ipynb
 #       - file: notebooks/ext-dirac-old.ipynb
 #
