@@ -71,15 +71,16 @@ revisados; el resto de capítulos y los boletines se irán incorporando conforme
 * Capítulo 1: Introducción a la Física de Partículas
 * Capítulo 2: Perspectivas: experimental y teórica
 * Anexos, extensiones: Introducción; Cinemática relativista y espacio fásico; La ecuación de Dirac;
-  Diagramas de Feynman y propagadores; La ecuación de Dirac (versión anterior)
+  La ecuación de Dirac (versión anterior)
 
 **En preparación**
 
 * Capítulos 3–5: Leptones: la mano izquierda de la Naturaleza; Hadrones: prisioneros del color;
   El Modelo Estándar: la simetría y su ruptura
+* Anexos, extensiones: Diagramas de Feynman y propagadores
 * Boletines: Desintegración del protón en Super-Kamiokande
 
-Los capítulos y boletines en preparación se mencionan en los capítulos publicados;
+Los capítulos, extensiones y boletines en preparación se mencionan en los capítulos publicados;
 esas referencias aparecen como texto sin enlace hasta que se publiquen.
 
 ```{tableofcontents}
