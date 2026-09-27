@@ -70,8 +70,7 @@ revisados; el resto de capítulos y los boletines se irán incorporando conforme
 
 * Capítulo 1: Introducción a la Física de Partículas
 * Capítulo 2: Perspectivas: experimental y teórica
-* Anexos, extensiones: Introducción; Cinemática relativista y espacio fásico; La ecuación de Dirac;
-  La ecuación de Dirac (versión anterior)
+* Anexos, extensiones: Introducción; Cinemática relativista y espacio fásico; La ecuación de Dirac
 
 **En preparación**
 

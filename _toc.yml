@@ -34,7 +34,7 @@ parts:
       - file: notebooks/ext-cinematica.ipynb
       - file: notebooks/ext-dirac.ipynb
       # - file: notebooks/ext-feynman.ipynb     (pendiente de revisión)
-      - file: notebooks/ext-dirac-old.ipynb
+      # - file: notebooks/ext-dirac-old.ipynb   (versión anterior, sin publicar)
 
 # ------------------------------------------------------------ 3. Boletines
 # (preparada, sin publicar)
