@@ -6,7 +6,7 @@ Autor: José Ángel Hernando Morata
 
 Correo electrónico: jose.hernando@usc.es
 
-Versión: Julio 2026
+Versión: Septiembre 2026
 
 -----
 
@@ -14,7 +14,15 @@ Versión: Julio 2026
 
 Esta asignatura es una introducción a la Física de Partículas, cuyo objetivo es presentar una visión actual de las partículas fundamentales, las fuerzas que median entre ellas y sus características principales.
 
-Los apuntes se organizan en cinco temas: una introducción a la temática de la Física de Partículas; la exposición de los observables relevantes, desde una perspectiva experimental y teórica; el desarrollo de las características de los leptones, y de los quarks y los hadrones; y, finalmente, una introducción a la teoría electrodébil y al bosón de Higgs.
+Los apuntes se organizan en cinco temas:
+
+1. **Introducción**: la temática de la Física de Partículas, su lenguaje y sus observables.
+2. **Perspectivas: experimental y teórica**: cómo se mide un observable (aceleradores, detectores,
+   análisis) y cómo se calcula (ecuación de Dirac, simetría *gauge*, diagramas de Feynman).
+3. **Leptones: la mano izquierda de la Naturaleza**: los leptones, la interacción débil, la violación
+   de la paridad y los neutrinos.
+4. **Hadrones: prisioneros del color**: los quarks, el color, el confinamiento y los hadrones.
+5. **El Modelo Estándar: la simetría y su ruptura**: la teoría electrodébil y el bosón de Higgs.
 
 Se precisa un conocimiento previo de la cinemática relativista y de los conceptos básicos de Física Nuclear. También es conveniente conocer la ecuación de Dirac y una introducción a la Teoría Cuántica de Campos.
 
@@ -24,30 +32,55 @@ Estos apuntes son una recopilación de muy diversas fuentes, pero principalmente
 
 -------
 
+## Cómo leer estos apuntes
+
+Además del texto principal, los capítulos usan unos pocos elementos, siempre con la misma marca:
+
+| elemento | marca | qué es |
+|:--|:--|:--|
+| **Taller** | `[>]` | un ejercicio para hacer tú, en una caja; muchos llevan código que se ejecuta en el notebook |
+| **Solución** | desplegable «Solución» | la respuesta del taller, plegada: ábrela después de intentarlo |
+| **Ficha** | `[i]` Ficha, desplegable | un recordatorio o una definición al margen (notación, unidades, tablas de consulta); se abre si hace falta y no interrumpe el hilo |
+| **Mirador** | `[+]` Mirador | una mirada más allá del hilo: adelantos de otros temas, conexiones con física de más nivel o con preguntas abiertas. Si es un párrafo, va en cursiva; si es más largo, se abre con «Mirador: título» y se cierra con «Fin del mirador». Se puede saltar sin perder el hilo |
+| **Cita** | bloque sangrado con autor y obra | palabras textuales de quienes hicieron la física |
+| **¿Qué ves?** | en negrita, tras una figura o una tabla | la lectura guiada de lo que se acaba de mostrar |
+
+Lo que en clase se afirma sin demostrar se desarrolla en las **extensiones**: al final de la celda
+correspondiente hay un enlace del tipo «Ver ext-dirac, sección 3.3». Las referencias entre corchetes,
+como [MT4.6], remiten a la bibliografía (aquí, Thomson, sección 4.6).
+
+-------
+
 ## Contenido
 
-El libro se organiza en tres secciones:
+**El libro son los capítulos**: los cinco temas de la asignatura, que se leen en orden y son lo
+que se da en clase.
 
-1. **Capítulos**: los cinco temas de la asignatura.
-2. **Extensiones**: complementos de los capítulos (deducciones completas, analogías,
-   simulaciones) y algunos fundamentos matemáticos.
-3. **Boletines**: los ejercicios de cada capítulo, resueltos en notebooks.
+Detrás van los **anexos**, que no hace falta leer para seguir el curso:
 
-**De momento se publica solo el primer capítulo**, que es el que está revisado; el resto,
-las extensiones y los boletines se irán incorporando conforme se curen.
+* **Extensiones**: el desarrollo matemático de lo que los capítulos afirman sin demostrar
+  (deducciones completas, analogías, simulaciones). Desde los capítulos se llega a ellas por los
+  enlaces «Ver ext-…, sección…».
+* **Boletines**: los ejercicios de cada capítulo, resueltos en notebooks.
+
+**De momento se publican los dos primeros capítulos y sus extensiones**, que son los que están
+revisados; el resto de capítulos y los boletines se irán incorporando conforme se curen.
 
 **Publicado**
 
 * Capítulo 1: Introducción a la Física de Partículas
+* Capítulo 2: Perspectivas: experimental y teórica
+* Anexos, extensiones: Introducción; Cinemática relativista y espacio fásico; La ecuación de Dirac;
+  Diagramas de Feynman y propagadores; La ecuación de Dirac (versión anterior)
 
 **En preparación**
 
-* Capítulos 2–5: Observables; Los leptones; Los quarks y los hadrones; El Modelo Estándar
-* Extensiones: Introducción; Fundamentos
+* Capítulos 3–5: Leptones: la mano izquierda de la Naturaleza; Hadrones: prisioneros del color;
+  El Modelo Estándar: la simetría y su ruptura
 * Boletines: Desintegración del protón en Super-Kamiokande
 
-Los capítulos, extensiones y boletines en preparación se mencionan en el Capítulo 1; esas
-referencias aparecen como texto sin enlace hasta que se publiquen.
+Los capítulos y boletines en preparación se mencionan en los capítulos publicados;
+esas referencias aparecen como texto sin enlace hasta que se publiquen.
 
 ```{tableofcontents}
 ```
