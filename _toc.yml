@@ -3,8 +3,7 @@
 #
 # El Book son los Capítulos; detrás van los anexos: 2) Extensiones (desarrollo
 # matemático de los capítulos) y 3) Boletines. Se publican los capítulos revisados
-# y sus extensiones. Los Boletines están preparados abajo, comentados: para
-# publicarlos basta con descomentar su bloque.
+# y sus extensiones, y los boletines revisados.
 #
 # Mientras no se publiquen, las referencias cruzadas desde los capítulos a
 # ficheros fuera del TOC se renderizan como texto sin enlace (no son enlaces
@@ -36,14 +35,12 @@ parts:
       # - file: notebooks/ext-feynman.ipynb     (pendiente de revisión)
       # - file: notebooks/ext-dirac-old.ipynb   (versión anterior, sin publicar)
 
-# ------------------------------------------------------------ 3. Boletines
-# (preparada, sin publicar)
-#
-#   - caption: "Anexos: boletines"
-#     numbered: false
-#     chapters:
-#       - file: notebooks/bols/boletin_desintegracion_proton_simple.ipynb
-#
+  # ------------------------------------------------------------ 3. Anexos: boletines
+  - caption: "Anexos: boletines"
+    numbered: false
+    chapters:
+      - file: notebooks/bols/boletin_desintegracion_proton_simple.ipynb
+
 # Pendientes de revisión:
 #   notebooks/ext-trans-Lorentz.ipynb
 #   notebooks/ext-grupos.ipynb

@@ -63,21 +63,21 @@ Detrás van los **anexos**, que no hace falta leer para seguir el curso:
   enlaces «Ver ext-…, sección…».
 * **Boletines**: los ejercicios de cada capítulo, resueltos en notebooks.
 
-**De momento se publican los dos primeros capítulos y sus extensiones**, que son los que están
-revisados; el resto de capítulos y los boletines se irán incorporando conforme se curen.
+**De momento se publican los dos primeros capítulos, sus extensiones y el primer boletín**, que son
+los que están revisados; el resto se irá incorporando conforme se cure.
 
 **Publicado**
 
 * Capítulo 1: Introducción a la Física de Partículas
 * Capítulo 2: Perspectivas: experimental y teórica
 * Anexos, extensiones: Introducción; Cinemática relativista y espacio fásico; La ecuación de Dirac
+* Anexos, boletines: ¿Se desintegra el protón? El límite de Super-Kamiokande (versión simple)
 
 **En preparación**
 
 * Capítulos 3–5: Leptones: la mano izquierda de la Naturaleza; Hadrones: prisioneros del color;
   El Modelo Estándar: la simetría y su ruptura
 * Anexos, extensiones: Diagramas de Feynman y propagadores
-* Boletines: Desintegración del protón en Super-Kamiokande
 
 Los capítulos, extensiones y boletines en preparación se mencionan en los capítulos publicados;
 esas referencias aparecen como texto sin enlace hasta que se publiquen.
