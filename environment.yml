@@ -27,6 +27,7 @@ dependencies:
   - numpy=1.26.*
   - scipy=1.17.*
   - matplotlib=3.10.*
+  - pandas=2.2.*               # lectura de CSV (boletines con datos: bols/datos/)
 
   # --- entorno de trabajo ------------------------------------------------
   - jupyterlab
