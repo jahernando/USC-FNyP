@@ -39,7 +39,7 @@ parts:
   - caption: "Anexos: boletines"
     numbered: false
     chapters:
-      - file: notebooks/bols/boletin_desintegracion_proton_simple.ipynb
+      - file: notebooks/bols/boletin_inicio_2627.ipynb      # desintegración del protón en SK (antes boletin_desintegracion_proton_simple)
 
 # Pendientes de revisión:
 #   notebooks/ext-trans-Lorentz.ipynb
@@ -47,4 +47,6 @@ parts:
 #   notebooks/ext-sm.ipynb
 #   notebooks/deteccion.ipynb
 #   notebooks/bols/boletin_desintegracion_proton.ipynb   (versión larga, sin sincronizar)
+#   notebooks/bols/boletin_I_2627.ipynb                  (boletín I con soluciones, se publica el 30/09)
+#   notebooks/bols/boletin_II_2627.ipynb, boletin_II_2627_higgs_4l.ipynb
 #   notebooks/probs/problemas-*.ipynb
