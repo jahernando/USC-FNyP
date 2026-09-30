@@ -10,7 +10,7 @@ on "Introduction to Particle Physics" of the "Nuclear and Particle Physics" intr
 
 Index and links to the material of the course at *indice.ipynb*
 
-Clich here to start your interactive session (be patient!):
+Click here to start your interactive session (be patient!):
 
 Google: 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jahernando/USC-FNyP/blob/main/notebooks/introduccion.ipynb)
