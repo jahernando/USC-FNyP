@@ -451,7 +451,7 @@ def vida_media_sin_memoria(n=200000, tau_real=2.197, edades=(1., 3.),
         filas = []
         for edad in edades_todas:
             r = restantes(t, edad)
-            if r.size == 0:                  # nadie llega: la poblacion se ha extinguido
+            if r.size == 0:                  # nadie llega: la población se ha extinguido
                 filas.append(dict(edad=edad, n=0, media=np.nan, error=np.nan))
                 continue
             media = r.mean()
