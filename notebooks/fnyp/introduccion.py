@@ -113,7 +113,7 @@ H_ATMOSFERA = 15000.
 
 def plot_dilatacion_temporal(particulas=None, p_min=10., p_max=1e6,
                              marcar_muon_cosmico=True, verbose=True):
-    """Dibuja la vida media y la longitud de desintegración frente al momento.
+    r"""Dibuja la vida media y la longitud de desintegración frente al momento.
 
     Dos paneles, los dos en escala log-log:
 

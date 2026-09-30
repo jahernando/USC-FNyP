@@ -13,6 +13,9 @@ Parte experimental
                          y cómo lo difuminan el :math:`p_T` del W y la resolución
 :func:`dedx`             :math:`\\mathrm{d}E/\\mathrm{d}x` de Bethe-Bloch frente al
                          momento -> las bandas de una TPC y dónde se cruzan
+:func:`pico_sobre_fondo` un pico de :math:`H \\to \\gamma\\gamma` sobre el fondo al
+                         acumular luminosidad -> la significancia crece como
+                         :math:`\\sqrt{\\mathcal{L}}`, salvo que un sistemático la frene
 
 Parte teórica
 -------------
@@ -106,7 +109,7 @@ def masa_transversa(n=200000, m_w=80.4, pt_w=15., sigma=4., seed=None,
     """
     rng = np.random.default_rng(seed)
 
-    # desintegracion isotropa en el sistema del W: e y nu, espalda contra espalda
+    # desintegración isótropa en el sistema del W: e y nu, espalda contra espalda
     cos_t = rng.uniform(-1., 1., n)
     phi = rng.uniform(0., 2 * np.pi, n)
     sin_t = np.sqrt(1. - cos_t**2)
@@ -155,9 +158,9 @@ def masa_transversa(n=200000, m_w=80.4, pt_w=15., sigma=4., seed=None,
         plt.legend(loc='upper left')
         plt.grid(alpha=0.3)
         for nombre, x in casos:
-            print(f' {nombre:38} : maximo en mT = {_moda(x, bins):5.1f} GeV,'
+            print(f' {nombre:38} : máximo en mT = {_moda(x, bins):5.1f} GeV,'
                   f' {100 * fraccion[nombre]:6.2f} % por encima de mW')
-        print(f' {"(el pT del W por si solo, sin resolucion)":38} :'
+        print(f' {"(el pT del W por sí solo, sin resolución)":38} :'
               f' {100 * fraccion["solo el pT del W"]:30.2f} % por encima de mW')
 
     return dict(mt_ideal=casos[0][1], mt_medida=casos[1][1],
@@ -225,7 +228,7 @@ def dedx(p_min=0.1, p_max=10., Z_A=0.5, I_eV=188., resolucion=0.07,
     -------
     dict
         ``p`` (momento), ``curvas`` (dict de arrays) y ``separacion``: por cada
-        par de bandas contiguas, el momento hasta el que se distinguen a mas de
+        par de bandas contiguas, el momento hasta el que se distinguen a más de
         2 sigma y, si lo hay, el momento al que se cruzan.
     """
     rng = np.random.default_rng(seed)
@@ -239,7 +242,7 @@ def dedx(p_min=0.1, p_max=10., Z_A=0.5, I_eV=188., resolucion=0.07,
     p = np.logspace(np.log10(p_min), np.log10(p_max), 400)
     curvas = {nombre: bethe(p, m) for nombre, m in MASAS.items()}
 
-    # separacion entre bandas contiguas, en unidades de la resolucion
+    # separación entre bandas contiguas, en unidades de la resolución
     orden = sorted(MASAS, key=lambda k: MASAS[k])
     separacion = {}
     for a, b in zip(orden[:-1], orden[1:]):
@@ -250,7 +253,7 @@ def dedx(p_min=0.1, p_max=10., Z_A=0.5, I_eV=188., resolucion=0.07,
             separacion[f'{a}/{b}'] = None
             continue
         p_lim = float(p[buenos][-1])
-        # por debajo del limite las dos bandas pueden llegar a cruzarse
+        # por debajo del límite las dos bandas pueden llegar a cruzarse
         malos = np.where(~buenos & (p < p_lim))[0]
         cruce = float(p[malos[np.argmin(n_sigma[malos])]]) if len(malos) else None
         separacion[f'{a}/{b}'] = (p_lim, cruce)
@@ -270,7 +273,7 @@ def dedx(p_min=0.1, p_max=10., Z_A=0.5, I_eV=188., resolucion=0.07,
         plt.grid(alpha=0.3, which='both')
         for par, dato in separacion.items():
             if dato is None:
-                print(f' {par:9} : no se distinguen a mas de 2 sigma')
+                print(f' {par:9} : no se distinguen a más de 2 sigma')
                 continue
             p_lim, cruce = dato
             aviso = '' if cruce is None else f', pero se cruzan en {cruce:5.2f} GeV'
@@ -278,6 +281,167 @@ def dedx(p_min=0.1, p_max=10., Z_A=0.5, I_eV=188., resolucion=0.07,
                   f' {p_lim:5.2f} GeV{aviso}')
 
     return dict(p=p, curvas=curvas, separacion=separacion)
+
+
+# ---------------------------------------------------------------------------
+# 2b. Experimental: un pico sobre el fondo y su significancia
+# ---------------------------------------------------------------------------
+
+def pico_sobre_fondo(lumis=(1., 10., 100.), m_h=125., sigma_m=1.7, s_por_fb=18.,
+                     b_por_fb=5500., pendiente=0.03, m_min=100., m_max=160.,
+                     ancho_bin=0.5, sistematico=0., seed=None, verbose=True):
+    """Un pico de :math:`H \\to \\gamma\\gamma` sobre el fondo, acumulando luminosidad.
+
+    El espectro de masa invariante :math:`m_{\\gamma\\gamma}` tiene un fondo
+    exponencial que cae suavemente y, encima, un pico gaussiano de anchura
+    ``sigma_m`` —la resolución del calorímetro— en :math:`m_H`. Los números por
+    defecto son los del canal :math:`\\gamma\\gamma` de ATLAS en 2011-2012: unos 18
+    sucesos de señal y unos 5500 de fondo por fb\\ :sup:`-1` entre 100 y 160 GeV.
+
+    Como en :func:`fnyp.simula.vida_media_evolucion`, es **una sola toma de datos**
+    que se va acumulando: cada luminosidad contiene los sucesos de las anteriores.
+    En cada paso se estima el fondo bajo el pico ajustando una exponencial a las
+    **bandas laterales** (fuera de :math:`m_H \\pm 2\\sigma_m`), como en el análisis
+    real, y se calcula la significancia de conteo
+
+    .. math:: Z = \\frac{N - B}{\\sqrt{B + (\\delta B)^2}}, \\qquad \\delta B = s \\, B
+
+    con :math:`s` = ``sistematico`` la incertidumbre relativa sobre el fondo. Sin
+    sistemático, :math:`S \\propto \\mathcal{L}` y :math:`\\sqrt{B} \\propto
+    \\sqrt{\\mathcal{L}}`, así que :math:`Z \\propto \\sqrt{\\mathcal{L}}`. Con él,
+    :math:`Z` satura en :math:`S/(sB)`: tomar más datos deja de ayudar.
+
+    Es una simplificación deliberada: ni categorías, ni ajuste de verosimilitud, ni
+    error estadístico del propio ajuste de las bandas laterales.
+
+    Parameters
+    ----------
+    lumis : sequence of float
+        Luminosidades integradas [fb^-1] a las que se dibuja el histograma.
+    m_h, sigma_m : float
+        Posición y anchura (resolución) del pico [GeV].
+    s_por_fb, b_por_fb : float
+        Sucesos de señal y de fondo esperados por fb^-1, en todo el rango.
+    pendiente : float
+        Pendiente de la exponencial del fondo [1/GeV].
+    m_min, m_max, ancho_bin : float
+        Rango y anchura de bin del histograma [GeV].
+    sistematico : float
+        Incertidumbre relativa sobre el fondo bajo el pico (0.01 = 1 %).
+    seed : int, optional
+        Semilla del generador; por defecto, aleatoria.
+    verbose : bool
+        Si es ``True``, dibuja los histogramas y la curva de significancia.
+
+    Returns
+    -------
+    dict
+        ``pasos`` (luminosidades), ``z_obs`` y ``z_esp`` (significancia observada
+        y esperada en cada paso), ``s_ventana`` y ``b_ventana`` (señal y fondo
+        esperados por fb^-1 en la ventana), ``l_5sigma`` (luminosidad para 5 sigma
+        esperadas, ``inf`` si no se alcanza), ``bordes`` e ``histogramas``.
+    """
+    from scipy.special import erf
+
+    rng = np.random.default_rng(seed)
+    lumis = sorted(float(l) for l in lumis)
+
+    bordes = np.arange(m_min, m_max + 0.5 * ancho_bin, ancho_bin)
+    centros = 0.5 * (bordes[1:] + bordes[:-1])
+
+    # sucesos esperados por bin y por fb^-1: exponencial normalizada + gaussiana
+    forma_b = np.exp(-pendiente * (bordes - m_min))
+    mu_b = b_por_fb * (forma_b[:-1] - forma_b[1:]) / (forma_b[0] - forma_b[-1])
+    cdf = 0.5 * (1. + erf((bordes - m_h) / (np.sqrt(2.) * sigma_m)))
+    mu_s = s_por_fb * np.diff(cdf)
+
+    ventana = np.abs(centros - m_h) < 2. * sigma_m
+    s_w, b_w = float(mu_s[ventana].sum()), float(mu_b[ventana].sum())
+
+    def z_esperada(lum):
+        s, b = s_w * lum, b_w * lum
+        return s / np.sqrt(b + (sistematico * b)**2)
+
+    # una sola toma de datos: se suman incrementos de Poisson paso a paso
+    pasos = np.unique(np.concatenate([np.geomspace(min(0.3, lumis[0]), lumis[-1], 40),
+                                      lumis]))
+    cuentas = np.zeros_like(centros)
+    z_obs, histogramas, estimas = [], {}, {}
+    anterior = 0.
+    for lum in pasos:
+        cuentas = cuentas + rng.poisson((mu_b + mu_s) * (lum - anterior))
+        anterior = lum
+        # fondo bajo el pico: exponencial ajustada a las bandas laterales
+        lat = ~ventana & (cuentas > 0)
+        coef = np.polyfit(centros[lat], np.log(cuentas[lat]), 1, w=np.sqrt(cuentas[lat]))
+        ajuste = np.exp(np.polyval(coef, centros))
+        n_w, b_est = cuentas[ventana].sum(), ajuste[ventana].sum()
+        z_obs.append((n_w - b_est) / np.sqrt(b_est + (sistematico * b_est)**2))
+        if np.isclose(lumis, lum).any():
+            histogramas[lum] = cuentas.copy()
+            estimas[lum] = (ajuste, n_w, b_est, z_obs[-1])
+    z_obs = np.array(z_obs)
+    z_esp = z_esperada(pasos)
+
+    denominador = s_w**2 - 25. * (sistematico * b_w)**2
+    l_5sigma = 25. * b_w / denominador if denominador > 0 else np.inf
+
+    if verbose:
+        # arriba el espectro; abajo datos menos fondo, donde el pico sí se ve
+        fig, axes = plt.subplots(2, len(lumis), figsize=(3.4 * len(lumis), 4.6),
+                                 sharex=True, squeeze=False,
+                                 gridspec_kw=dict(height_ratios=(2, 1)))
+        for j, lum in enumerate(lumis):
+            ax, ax_r = axes[0, j], axes[1, j]
+            h, ajuste = histogramas[lum], estimas[lum][0]
+            ax.errorbar(centros, h, yerr=np.sqrt(h), fmt='o', ms=2, lw=0.8, color='k')
+            ax.plot(centros, ajuste, 'C3--', lw=1.2, label='fondo (bandas laterales)')
+            ax.set_title(f'$\\mathcal{{L}}$ = {lum:g} fb$^{{-1}}$', fontsize=10)
+            ax_r.errorbar(centros, h - ajuste, yerr=np.sqrt(h), fmt='o', ms=2, lw=0.8,
+                          color='k')
+            ax_r.plot(centros, mu_s * lum, 'C0-', lw=1.5, label='señal esperada')
+            ax_r.axhline(0., color='C3', ls='--', lw=1)
+            ax_r.set_xlabel(r'$m_{\gamma\gamma}$ (GeV)')
+            for a in (ax, ax_r):
+                a.axvspan(m_h - 2 * sigma_m, m_h + 2 * sigma_m, color='C0', alpha=0.12)
+                a.grid(alpha=0.3)
+        axes[0, 0].set_ylabel(f'sucesos / {ancho_bin:g} GeV')
+        axes[1, 0].set_ylabel('datos $-$ fondo')
+        axes[0, 0].legend(fontsize=8)
+        axes[1, 0].legend(fontsize=8, loc='lower left')
+        fig.tight_layout()
+
+        fig2, ax2 = plt.subplots(figsize=(5.5, 3.4))
+        ax2.plot(pasos, z_obs, 'o', ms=3.5, color='k', label='observada')
+        ax2.plot(pasos, z_esp, 'C0-', lw=1.5, label='esperada')
+        if sistematico > 0:
+            ax2.plot(pasos, s_w * pasos / np.sqrt(b_w * pasos), 'C0:', lw=1.2,
+                     label='esperada, sin sistemático')
+        for z, texto in ((3., 'evidencia'), (5., 'descubrimiento')):
+            ax2.axhline(z, color='0.5', ls='--', lw=1)
+            ax2.text(pasos[0], z + 0.1, f' {z:.0f}$\\sigma$: {texto}', fontsize=8, color='0.3')
+        ax2.set_xscale('log')
+        ax2.set_xlabel(r'luminosidad integrada $\mathcal{L}$ (fb$^{-1}$)')
+        ax2.set_ylabel(r'significancia $Z$ ($\sigma$)')
+        ax2.grid(alpha=0.3, which='both')
+        ax2.legend(fontsize=8, loc='upper left', bbox_to_anchor=(0., 0.9))
+        fig2.tight_layout()
+
+        print(f' en la ventana {m_h - 2 * sigma_m:.1f}-{m_h + 2 * sigma_m:.1f} GeV, por fb^-1:'
+              f'  S = {s_w:.1f},  B = {b_w:.0f}')
+        for lum in lumis:
+            _, n_w, b_est, z = estimas[lum]
+            print(f'   L = {lum:6g} fb^-1 : N = {n_w:8.0f},  B estimado = {b_est:8.0f},'
+                  f'  N - B = {n_w - b_est:6.0f}  ->  Z = {z:4.1f} sigma'
+                  f'  (esperada {z_esperada(lum):4.1f})')
+        if np.isfinite(l_5sigma):
+            print(f' 5 sigma esperadas con L = {l_5sigma:.0f} fb^-1')
+        else:
+            print(f' 5 sigma esperadas: nunca. Z satura en S/(s B) = '
+                  f'{s_w / (sistematico * b_w):.1f} sigma')
+
+    return dict(pasos=pasos, z_obs=z_obs, z_esp=z_esp, s_ventana=s_w, b_ventana=b_w,
+                l_5sigma=l_5sigma, bordes=bordes, histogramas=histogramas)
 
 
 # ---------------------------------------------------------------------------
