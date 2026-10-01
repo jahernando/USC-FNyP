@@ -27,6 +27,9 @@ Parte teórica
 :func:`kappa_espinor`    :math:`\\kappa = \\mathrm{p}/(E+m)` y el peso de las dos
                          componentes de abajo frente al momento, para e y p ->
                          el límite ultrarrelativista lo fija la masa
+:func:`hera`             :math:`|M|^2` de la corriente neutra (fotón) y de la
+                         cargada (W) frente a :math:`Q^2` -> el propagador:
+                         la débil deja de ser débil cuando :math:`Q^2 \sim m_W^2`
 :func:`latex`, :func:`muestra`, :func:`ok`
                          cosmética: matrices y espinores escritos en LaTeX, con
                          la marca de si la comprobación se cumple
@@ -677,3 +680,70 @@ def kappa_espinor(verbose=True):
                   f' peso abajo = {100 * wi:4.1f} %')
 
     return dict(p=p, kappa=kappa, peso=peso, p_ref=p_ref, casos=casos)
+
+
+# ---------------------------------------------------------------------------
+# Teórica: el propagador en HERA, corriente neutra frente a cargada
+# ---------------------------------------------------------------------------
+
+#: acoplos y masa del W para :func:`hera`
+ALPHA_EM = 1. / 137.
+G_W = 0.65
+M_W = 80.4
+
+
+def hera(q2_min=10., q2_max=1e5, alpha=ALPHA_EM, g_w=G_W, m_w=M_W, verbose=True):
+    """:math:`|M|^2` de la corriente neutra y de la cargada frente a :math:`Q^2`.
+
+    En la dispersión profunda :math:`e + p \to e + X` (NC) el electrón
+    intercambia un fotón con un quark; en :math:`e + p \to \nu + X` (CC), un
+    :math:`W`. Con dos vértices y un propagador, y :math:`Q^2 = -q^2 > 0`:
+
+    .. math::
+
+        |M_{NC}|^2 \propto \left(\frac{e^2}{Q^2}\right)^2, \qquad
+        |M_{CC}|^2 \propto \left(\frac{g_W^2/2}{Q^2 + m_W^2}\right)^2
+
+    con :math:`g_W/\sqrt{2}` el acoplo efectivo del vértice :math:`V-A` para
+    fermiones a izquierdas. Se cruzan en
+
+    .. math:: Q^2_\times = \frac{e^2 \, m_W^2}{g_W^2/2 - e^2}
+
+    Es una simplificación deliberada: sin el :math:`Z` en la NC, sin factores de
+    helicidad y sin la estructura del protón (las PDF). Sirve para ver la
+    **forma**; el cruce, solo en orden de magnitud.
+
+    Returns
+    -------
+    dict
+        ``q2`` (GeV^2), ``nc`` y ``cc`` (GeV^-4) y ``q2_cruce`` (GeV^2).
+    """
+    q2 = np.logspace(np.log10(q2_min), np.log10(q2_max), 400)
+    e2 = 4. * np.pi * alpha
+    gef2 = g_w**2 / 2.
+    nc = (e2 / q2)**2
+    cc = (gef2 / (q2 + m_w**2))**2
+    q2_cruce = e2 * m_w**2 / (gef2 - e2) if gef2 > e2 else np.inf
+
+    if verbose:
+        fig, ax = plt.subplots()
+        ax.plot(q2, nc, lw=2, color='#0072B2', ls='-',
+                label=r'NC, fotón: $(e^2/Q^2)^2$')
+        ax.plot(q2, cc, lw=2, color='#D55E00', ls='--',
+                label=r'CC, $W$: $(g_W^2/2)^2/(Q^2+m_W^2)^2$')
+        ax.axvline(m_w**2, color='0.4', lw=1, ls=':', label=r'$Q^2 = m_W^2$')
+        if np.isfinite(q2_cruce):
+            ax.plot([q2_cruce], [(e2 / q2_cruce)**2], 'o', ms=7, color='0.2')
+        ax.set_xscale('log')
+        ax.set_yscale('log')
+        ax.set_xlabel(r'$Q^2$ (GeV$^2$)')
+        ax.set_ylabel(r'(acoplo $\times$ propagador)$^2$ (GeV$^{-4}$)')
+        ax.legend(fontsize=9)
+        ax.grid(alpha=0.3, which='both')
+        fig.tight_layout()
+        print(f' e = {np.sqrt(e2):.3f},  g_W/sqrt(2) = {np.sqrt(gef2):.3f},  m_W^2 = {m_w**2:.0f} GeV^2')
+        print(f' NC = CC en Q^2 = {q2_cruce:.0f} GeV^2  (sqrt(Q^2) = {np.sqrt(q2_cruce):.0f} GeV)')
+        for q in (q2_min, 1e3, m_w**2, q2_max):
+            print(f' Q^2 = {q:8.0f} GeV^2 :  CC/NC = {((gef2 / (q + m_w**2)) / (e2 / q))**2:.2e}')
+
+    return dict(q2=q2, nc=nc, cc=cc, q2_cruce=q2_cruce)
