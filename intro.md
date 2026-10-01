@@ -63,7 +63,7 @@ Detrás van los **anexos**, que no hace falta leer para seguir el curso:
   enlaces «Ver ext-…, sección…».
 * **Boletines**: los ejercicios de cada capítulo, resueltos en notebooks.
 
-**De momento se publican los dos primeros capítulos, sus extensiones y el primer boletín**, que son
+**De momento se publican los dos primeros capítulos, sus extensiones y los primeros boletines**, que son
 los que están revisados; el resto se irá incorporando conforme se cure.
 
 **Publicado**
@@ -71,7 +71,8 @@ los que están revisados; el resto se irá incorporando conforme se cure.
 * Capítulo 1: Introducción a la Física de Partículas
 * Capítulo 2: Perspectivas: experimental y teórica
 * Anexos, extensiones: Introducción; Cinemática relativista y espacio fásico; La ecuación de Dirac
-* Anexos, boletines: ¿Se desintegra el protón? El límite de Super-Kamiokande (versión simple)
+* Anexos, boletines: ¿Se desintegra el protón? El límite de Super-Kamiokande (versión simple); boletín I,
+  cinemática relativista (con soluciones)
 
 **En preparación**
 
