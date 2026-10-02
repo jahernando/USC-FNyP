@@ -1,0 +1,1472 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Extensión: Cinemática relativista y espacio fásico &#8212; Introducción a la Física de Partículas - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/ext-cinematica';</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Extensión: La ecuación de Dirac" href="ext-dirac.html" />
+    <link rel="prev" title="Extensión: Introducción" href="intro_extension.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Introducción a la Física de Partículas - USC - Home"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Introducción a la Física de Partículas - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Capítulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Física de Partículas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="perspectivas.html">Perspectivas: experimental y teórica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leptones.html">Leptones: la mano izquierda de la Naturaleza</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: extensiones</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro_extension.html">Extensión: Introducción</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Extensión: Cinemática relativista y espacio fásico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-dirac.html">Extensión: La ecuación de Dirac</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-quiral.html">Extensión: La quiralidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-feynman.html">Extensión: Diagramas de Feynman y propagadores</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: boletines</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_inicio_2627.html">¿Se desintegra el protón?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_I_2627.html">Partículas — boletín I</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/main?urlpath=tree/./notebooks/ext-cinematica.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jahernando/USC-FNyP/blob/main/./notebooks/ext-cinematica.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/ext-cinematica.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/ext-cinematica.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Extensión: Cinemática relativista y espacio fásico</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion">Notación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidades-naturales">1. Unidades naturales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#todo-en-potencias-del-gev">1.1. Todo en potencias del GeV</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-del-curso">1.2. Ejemplos del curso</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-transformacion-de-lorentz">2. La transformación de Lorentz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deduccion">2.1. Deducción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consecuencias">2.2. Consecuencias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-rapidez">2.3. La rapidez</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuadrivectores">3. Cuadrivectores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metrica-e-indices">3.1. Métrica e índices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-transformaciones-de-lorentz-como-matrices">3.2. Las transformaciones de Lorentz como matrices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuadrivelocidad-y-cuadrimomento">3.3. Cuadrivelocidad y cuadrimomento</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#una-medida-invariante-mathrm-d-3-bf-p-2e">3.4. Una medida invariante: <span class="math notranslate nohighlight">\(\mathrm{d}^3{\bf p}/2E\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invariantes-y-centro-de-masas">4. Invariantes y centro de masas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-invariante-s-y-la-velocidad-del-cm">4.1. El invariante <span class="math notranslate nohighlight">\(s\)</span> y la velocidad del CM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#del-cm-al-laboratorio">4.2. Del CM al laboratorio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-a-dos-cuerpos">4.3. Cinemática a dos cuerpos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-variables-de-mandelstam">4.4. Las variables de Mandelstam</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-en-colisionadores">5. Cinemática en colisionadores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#momento-transverso-rapidez-y-pseudorrapidez">5.1. Momento transverso, rapidez y pseudorrapidez</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#desintegracion-en-vuelo">5.2. Desintegración en vuelo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-la-regla-de-oro-a-gamma-y-sigma">6. De la regla de oro a <span class="math notranslate nohighlight">\(\Gamma\)</span> y <span class="math notranslate nohighlight">\(\sigma\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-regla-de-oro">6.1. La regla de oro</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contar-estados-de-donde-salen-delta-4-y-los-2-pi">6.2. Contar estados: de dónde salen <span class="math notranslate nohighlight">\(\delta^4\)</span> y los <span class="math notranslate nohighlight">\((2\pi)\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizacion-relativista-y-elemento-de-matriz">6.3. Normalización relativista y elemento de matriz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-formulas-generales-anchura-y-seccion-eficaz">6.4. Las fórmulas generales: anchura y sección eficaz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anchura-de-desintegracion-a-dos-cuerpos">6.5. Anchura de desintegración a dos cuerpos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seccion-eficaz-de-una-interaccion-de-dos-a-dos-cuerpos">6.6. Sección eficaz de una interacción de dos a dos cuerpos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-seccion-eficaz-diferencial-en-t">6.7. La sección eficaz diferencial en <span class="math notranslate nohighlight">\(t\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tres-cuerpos-y-la-regla-de-sargent">7. Tres cuerpos y la regla de Sargent</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-espectro-beta">7.1. El espectro <span class="math notranslate nohighlight">\(\beta\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-regla-de-sargent">7.2. La regla de Sargent</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="extension-cinematica-relativista-y-espacio-fasico">
+<h1>Extensión: Cinemática relativista y espacio fásico<a class="headerlink" href="#extension-cinematica-relativista-y-espacio-fasico" title="Permalink to this heading">#</a></h1>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Septiembre 2026</p>
+<section id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h2>
+<p>Esta extensión es el <strong>desarrollo matemático</strong> de lo que la <a class="reference internal" href="introduccion.html"><span class="doc std std-doc">introducción</span></a>
+(unidades, transformaciones de Lorentz, invariantes) y la parte teórica de
+<a class="reference internal" href="perspectivas.html"><span class="doc std std-doc">perspectivas</span></a> (de la regla de oro a la sección eficaz y la anchura) presentan
+sin demostrar. Responde a siete preguntas:</p>
+<ol class="arabic simple">
+<li><p><strong>¿Cómo se vuelve de las unidades naturales al SI?</strong></p></li>
+<li><p><strong>¿De dónde sale la transformación de Lorentz?</strong> Y sus consecuencias: dilatación del tiempo,
+contracción de longitudes, composición de velocidades y rapidez.</p></li>
+<li><p><strong>¿Qué es un cuadrivector?</strong> La métrica, los índices y los invariantes.</p></li>
+<li><p><strong>¿Cómo se pasa del laboratorio al centro de masas?</strong> El invariante <span class="math notranslate nohighlight">\(s\)</span>, la cinemática a dos
+cuerpos y las variables de Mandelstam.</p></li>
+<li><p><strong>¿Qué variables se usan en un colisionador?</strong> Momento transverso, rapidez y pseudorrapidez, y la
+desintegración en vuelo.</p></li>
+<li><p><strong>¿Cómo se pasa de la regla de oro a <span class="math notranslate nohighlight">\(\Gamma\)</span> y <span class="math notranslate nohighlight">\(\sigma\)</span>?</strong></p></li>
+<li><p><strong>¿Por qué la anchura va como <span class="math notranslate nohighlight">\(E_0^5\)</span>?</strong> El espacio fásico a tres cuerpos y la regla de Sargent.</p></li>
+</ol>
+<section id="notacion">
+<h3>Notación<a class="headerlink" href="#notacion" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Unidades naturales, <span class="math notranslate nohighlight">\(\hbar = c = 1\)</span> (salvo en la sección 1). Métrica
+<span class="math notranslate nohighlight">\(g_{\mu\nu} = \mathrm{diag}(1, -1, -1, -1)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(x^\mu = (t, {\bf x})\)</span>, <span class="math notranslate nohighlight">\(p^\mu = (E, {\bf p})\)</span>; un índice repetido, arriba y abajo, se suma.</p></li>
+<li><p>Las cantidades en el centro de masas (CM) llevan asterisco: <span class="math notranslate nohighlight">\(E^*\)</span>, <span class="math notranslate nohighlight">\(p^*\)</span>, <span class="math notranslate nohighlight">\(\theta^*\)</span>.</p></li>
+</ul>
+</section>
+</section>
+<section id="unidades-naturales">
+<h2>1. Unidades naturales<a class="headerlink" href="#unidades-naturales" title="Permalink to this heading">#</a></h2>
+<section id="todo-en-potencias-del-gev">
+<h3>1.1. Todo en potencias del GeV<a class="headerlink" href="#todo-en-potencias-del-gev" title="Permalink to this heading">#</a></h3>
+<p>Con <span class="math notranslate nohighlight">\(\hbar = c = 1\)</span> solo queda una unidad, la de energía. Cada magnitud es una potencia del GeV:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>magnitud</p></th>
+<th class="head text-center"><p>dimensión en UN</p></th>
+<th class="head text-left"><p>se pasa al SI con</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>energía, momento, masa</p></td>
+<td class="text-center"><p>GeV</p></td>
+<td class="text-left"><p>— (<span class="math notranslate nohighlight">\(c\)</span> y <span class="math notranslate nohighlight">\(c^2\)</span> se sobreentienden: GeV<span class="math notranslate nohighlight">\(/c\)</span>, GeV<span class="math notranslate nohighlight">\(/c^2\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>longitud</p></td>
+<td class="text-center"><p>GeV<span class="math notranslate nohighlight">\(^{-1}\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\hbar c = 0.1973\)</span> GeV fm</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>tiempo</p></td>
+<td class="text-center"><p>GeV<span class="math notranslate nohighlight">\(^{-1}\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\hbar = 6.582 \cdot 10^{-25}\)</span> GeV s</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>sección eficaz</p></td>
+<td class="text-center"><p>GeV<span class="math notranslate nohighlight">\(^{-2}\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\((\hbar c)^2 = 0.3894\)</span> GeV<span class="math notranslate nohighlight">\(^2\)</span> mb</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>anchura, ritmo</p></td>
+<td class="text-center"><p>GeV</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\Gamma = \hbar/\tau\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>La receta.</strong> Una magnitud que en UN vale <span class="math notranslate nohighlight">\(X\)</span> GeV<span class="math notranslate nohighlight">\(^n\)</span> se pasa al SI multiplicando por la
+combinación de <span class="math notranslate nohighlight">\(\hbar\)</span> y <span class="math notranslate nohighlight">\(c\)</span> que da las dimensiones correctas. Basta con recordar dos cosas: <span class="math notranslate nohighlight">\(\hbar c\)</span>
+convierte energía en inverso de longitud, y <span class="math notranslate nohighlight">\(\hbar\)</span> convierte energía en inverso de tiempo.</p>
+</section>
+<section id="ejemplos-del-curso">
+<h3>1.2. Ejemplos del curso<a class="headerlink" href="#ejemplos-del-curso" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Una anchura y una vida media.</strong> <span class="math notranslate nohighlight">\(\Gamma_Z = 2.495\)</span> GeV da
+<span class="math notranslate nohighlight">\(\tau_Z = \hbar/\Gamma_Z = 6.58 \cdot 10^{-25} / 2.495 = 2.6 \cdot 10^{-25}\)</span> s, y
+<span class="math notranslate nohighlight">\(c\tau_Z = \hbar c/\Gamma_Z = 0.197/2.495 = 0.079\)</span> fm.</p></li>
+<li><p><strong>Una sección eficaz.</strong> <span class="math notranslate nohighlight">\(\sigma(e^+ + e \to \mu^+ + \mu) = 4\pi\alpha^2/3s\)</span> a <span class="math notranslate nohighlight">\(\sqrt{s} = 10\)</span> GeV vale
+<span class="math notranslate nohighlight">\(2.2 \cdot 10^{-6}\)</span> GeV<span class="math notranslate nohighlight">\(^{-2}\)</span>, es decir, <span class="math notranslate nohighlight">\(2.2 \cdot 10^{-6} \times 0.389\)</span> mb <span class="math notranslate nohighlight">\(= 0.87\)</span> nb.</p></li>
+<li><p><strong>La longitud de desintegración.</strong> En UN, <span class="math notranslate nohighlight">\(L = \gamma\beta\,\tau_0\)</span>: tiempo y longitud tienen la
+misma dimensión y no hace falta ninguna <span class="math notranslate nohighlight">\(c\)</span>. Para el muón,
+<span class="math notranslate nohighlight">\(\tau_0 = 2.197 \cdot 10^{-6}\ \mathrm{s} / 6.58 \cdot 10^{-25}\ \mathrm{GeV\,s} = 3.34 \cdot 10^{18}\)</span> GeV<span class="math notranslate nohighlight">\(^{-1}\)</span>, y
+<span class="math notranslate nohighlight">\(\tau_0 \times \hbar c = 3.34 \cdot 10^{18} \times 0.197\)</span> fm <span class="math notranslate nohighlight">\(= 659\)</span> m: es el <span class="math notranslate nohighlight">\(c\tau_0\)</span> de la introducción.</p></li>
+<li><p><strong>La constante de estructura fina.</strong> En el SI, <span class="math notranslate nohighlight">\(\alpha = e^2/(4\pi\varepsilon_0\hbar c) \simeq 1/137\)</span>. Con
+<span class="math notranslate nohighlight">\(\hbar = c = 1\)</span> y <span class="math notranslate nohighlight">\(\varepsilon_0 = 1\)</span> (unidades de Heaviside-Lorentz), <span class="math notranslate nohighlight">\(\alpha = e^2/4\pi\)</span> y
+<span class="math notranslate nohighlight">\(e = \sqrt{4\pi\alpha} = 0.303\)</span>. <span class="math notranslate nohighlight">\(\alpha\)</span> es adimensional: vale lo mismo en cualquier sistema.</p></li>
+</ul>
+<p><em>Cuestiones:</em> ¿cuánto vale en fm el radio del protón, <span class="math notranslate nohighlight">\(r_p = 4.1\)</span> GeV<span class="math notranslate nohighlight">\(^{-1}\)</span>? ¿Y en GeV<span class="math notranslate nohighlight">\(^{-2}\)</span> una
+sección eficaz de <span class="math notranslate nohighlight">\(1\)</span> pb?</p>
+</section>
+</section>
+<section id="la-transformacion-de-lorentz">
+<h2>2. La transformación de Lorentz<a class="headerlink" href="#la-transformacion-de-lorentz" title="Permalink to this heading">#</a></h2>
+<section id="deduccion">
+<h3>2.1. Deducción<a class="headerlink" href="#deduccion" title="Permalink to this heading">#</a></h3>
+<p>Dos sistemas inerciales, <span class="math notranslate nohighlight">\(\Sigma'\)</span> moviéndose con velocidad <span class="math notranslate nohighlight">\(\beta\)</span> en <span class="math notranslate nohighlight">\(z\)</span> respecto de <span class="math notranslate nohighlight">\(\Sigma\)</span>, con
+los orígenes coincidentes en <span class="math notranslate nohighlight">\(t = t' = 0\)</span>. Tres ingredientes:</p>
+<ol class="arabic simple">
+<li><p><strong>El intervalo es invariante.</strong> Un destello en el origen cumple <span class="math notranslate nohighlight">\(t^2 - {\bf r}^2 = 0\)</span> en los dos
+sistemas; Einstein exige más: <span class="math notranslate nohighlight">\(t^2 - {\bf r}^2 = t'^2 - {\bf r}'^2\)</span> para cualquier suceso.</p></li>
+<li><p><strong>Linealidad.</strong> La transformación es lineal (el espacio-tiempo es homogéneo), y por simetría las
+direcciones transversas no cambian: <span class="math notranslate nohighlight">\(x' = x\)</span>, <span class="math notranslate nohighlight">\(y' = y\)</span>.</p></li>
+<li><p><strong>El origen de <span class="math notranslate nohighlight">\(\Sigma'\)</span></strong> (<span class="math notranslate nohighlight">\(z' = 0\)</span>) se mueve en <span class="math notranslate nohighlight">\(\Sigma\)</span> como <span class="math notranslate nohighlight">\(z = \beta t\)</span>.</p></li>
+</ol>
+<p>Escribimos entonces <span class="math notranslate nohighlight">\(t' = A\,t + B\,z\)</span>, <span class="math notranslate nohighlight">\(z' = C\,t + D\,z\)</span>. La condición 3 da <span class="math notranslate nohighlight">\(C\,t + D\,\beta t = 0\)</span>, es
+decir, <span class="math notranslate nohighlight">\(C = -\beta D\)</span>. La condición 1, <span class="math notranslate nohighlight">\(t'^2 - z'^2 = t^2 - z^2\)</span> para todo <span class="math notranslate nohighlight">\(t, z\)</span>, da</p>
+<div class="math notranslate nohighlight">
+\[
+A^2 - C^2 = 1, \qquad D^2 - B^2 = 1, \qquad AB - CD = 0 .
+\]</div>
+<p>Con <span class="math notranslate nohighlight">\(C = -\beta D\)</span>, la tercera da <span class="math notranslate nohighlight">\(B = -\beta D^2/A\)</span>, y la segunda,
+<span class="math notranslate nohighlight">\(D^2\,(A^2 - \beta^2 D^2) = A^2\)</span>. Como la primera es <span class="math notranslate nohighlight">\(A^2 - \beta^2 D^2 = 1\)</span>, queda <span class="math notranslate nohighlight">\(D^2 = A^2\)</span>: <span class="math notranslate nohighlight">\(D = A\)</span>
+(con signo positivo, para que <span class="math notranslate nohighlight">\(\beta \to 0\)</span> sea la identidad). Entonces <span class="math notranslate nohighlight">\(A^2(1 - \beta^2) = 1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+A = D = \frac{1}{\sqrt{1 - \beta^2}} \equiv \gamma, \qquad B = C = -\gamma\beta
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+t' = \gamma\,(t - \beta z), \qquad x' = x, \qquad y' = y, \qquad z' = \gamma\,(z - \beta t)
+}
+\]</div>
+<p>La inversa se obtiene cambiando <span class="math notranslate nohighlight">\(\beta \to -\beta\)</span> (el origen de <span class="math notranslate nohighlight">\(\Sigma\)</span> se mueve con <span class="math notranslate nohighlight">\(-\beta\)</span> en
+<span class="math notranslate nohighlight">\(\Sigma'\)</span>). Es la transformación de la <a class="reference internal" href="introduccion.html"><span class="doc std std-doc">introducción</span></a>.</p>
+</section>
+<section id="consecuencias">
+<h3>2.2. Consecuencias<a class="headerlink" href="#consecuencias" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p><strong>Dilatación del tiempo.</strong> Un reloj en reposo en <span class="math notranslate nohighlight">\(\Sigma'\)</span> (<span class="math notranslate nohighlight">\(z'\)</span> fijo) marca un intervalo <span class="math notranslate nohighlight">\(\Delta\tau\)</span>. Con la
+inversa, <span class="math notranslate nohighlight">\(t = \gamma\,(t' + \beta z')\)</span>, en <span class="math notranslate nohighlight">\(\Sigma\)</span> dura</p>
+<div class="math notranslate nohighlight">
+\[\Delta t = \gamma\,\Delta\tau \;\geq\; \Delta\tau .\]</div>
+<p>Es la vida media en el laboratorio, <span class="math notranslate nohighlight">\(\tau = \gamma\tau_0\)</span>.</p>
+</li>
+<li><p><strong>Contracción de longitudes.</strong> Una regla en reposo en <span class="math notranslate nohighlight">\(\Sigma'\)</span> mide <span class="math notranslate nohighlight">\(L_0 = \Delta z'\)</span>. En <span class="math notranslate nohighlight">\(\Sigma\)</span> se miden
+sus extremos a la vez, <span class="math notranslate nohighlight">\(\Delta t = 0\)</span>, y <span class="math notranslate nohighlight">\(z' = \gamma\,(z - \beta t)\)</span> da <span class="math notranslate nohighlight">\(L_0 = \gamma L\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[L = \frac{L_0}{\gamma} .\]</div>
+<p>Un volumen se contrae en la dirección del movimiento, <span class="math notranslate nohighlight">\(V = V_0/\gamma\)</span>: es lo que obliga a la
+normalización <span class="math notranslate nohighlight">\(2E\)</span> de la sección 6.3.</p>
+</li>
+<li><p><strong>Composición de velocidades.</strong> Un objeto con velocidad <span class="math notranslate nohighlight">\(u'\)</span> en <span class="math notranslate nohighlight">\(z\)</span> en <span class="math notranslate nohighlight">\(\Sigma'\)</span> tiene en <span class="math notranslate nohighlight">\(\Sigma\)</span></p>
+<div class="math notranslate nohighlight">
+\[u = \frac{\mathrm{d}z}{\mathrm{d}t} = \frac{u' + \beta}{1 + u'\beta}\]</div>
+<p>(dividiendo <span class="math notranslate nohighlight">\(\mathrm{d}z = \gamma(\mathrm{d}z' + \beta\,\mathrm{d}t')\)</span> entre <span class="math notranslate nohighlight">\(\mathrm{d}t = \gamma(\mathrm{d}t' + \beta\,\mathrm{d}z')\)</span>). Nunca supera
+<span class="math notranslate nohighlight">\(1\)</span>: con <span class="math notranslate nohighlight">\(u' = 1\)</span>, <span class="math notranslate nohighlight">\(u = 1\)</span>.</p>
+</li>
+</ul>
+</section>
+<section id="la-rapidez">
+<h3>2.3. La rapidez<a class="headerlink" href="#la-rapidez" title="Permalink to this heading">#</a></h3>
+<p>Como <span class="math notranslate nohighlight">\(\gamma^2 - (\gamma\beta)^2 = 1\)</span>, se puede poner <span class="math notranslate nohighlight">\(\gamma = \cosh\eta\)</span>, <span class="math notranslate nohighlight">\(\gamma\beta = \sinh\eta\)</span>, <span class="math notranslate nohighlight">\(\beta = \tanh\eta\)</span>: la
+transformación es una rotación <strong>hiperbólica</strong> en el plano <span class="math notranslate nohighlight">\((t, z)\)</span>, de «ángulo» <span class="math notranslate nohighlight">\(\eta\)</span>, la <strong>rapidez</strong>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} t' \\ z' \end{pmatrix} =
+\begin{pmatrix} \cosh\eta &amp; -\sinh\eta \\ -\sinh\eta &amp; \cosh\eta \end{pmatrix}
+\begin{pmatrix} t \\ z \end{pmatrix}
+\end{split}\]</div>
+<p><strong>Las rapideces se suman.</strong> Dos <em>boosts</em> seguidos en <span class="math notranslate nohighlight">\(z\)</span> son el producto de las dos matrices, y por
+las fórmulas de suma del coseno y el seno hiperbólicos, el resultado es otro <em>boost</em> de rapidez
+<span class="math notranslate nohighlight">\(\eta_1 + \eta_2\)</span>. Es la composición de velocidades escrita de otra forma:
+<span class="math notranslate nohighlight">\(\tanh(\eta_1 + \eta_2) = (\beta_1 + \beta_2)/(1 + \beta_1\beta_2)\)</span>.</p>
+<p>Para una partícula, el <em>boost</em> desde su reposo tiene <span class="math notranslate nohighlight">\(\cosh\eta = E/m\)</span> y <span class="math notranslate nohighlight">\(\sinh\eta = \mathrm{p}/m\)</span>, luego</p>
+<div class="math notranslate nohighlight">
+\[
+\eta = \frac{1}{2}\ln\frac{E + \mathrm{p}}{E - \mathrm{p}} .
+\]</div>
+<p>Con <span class="math notranslate nohighlight">\(\mathrm{p}\)</span> en la dirección del <em>boost</em>, es la <strong>rapidez</strong> <span class="math notranslate nohighlight">\(y\)</span> de la sección 5.</p>
+</section>
+</section>
+<section id="cuadrivectores">
+<h2>3. Cuadrivectores<a class="headerlink" href="#cuadrivectores" title="Permalink to this heading">#</a></h2>
+<section id="metrica-e-indices">
+<h3>3.1. Métrica e índices<a class="headerlink" href="#metrica-e-indices" title="Permalink to this heading">#</a></h3>
+<p>Un <strong>cuadrivector contravariante</strong> (índice arriba), <span class="math notranslate nohighlight">\(a^\mu = (a^0, {\bf a})\)</span>, es cualquier cuaterna que se
+transforma como <span class="math notranslate nohighlight">\(x^\mu = (t, {\bf x})\)</span>. Con la métrica de Minkowski se baja el índice y se obtiene el
+<strong>covariante</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+a_\mu = g_{\mu\nu}\,a^\nu = (a^0, -{\bf a}), \qquad
+a \cdot b = a^\mu b_\mu = g_{\mu\nu}\,a^\mu b^\nu = a^0 b^0 - {\bf a}\cdot{\bf b} .
+\]</div>
+<p>La norma, <span class="math notranslate nohighlight">\(a^2 = (a^0)^2 - {\bf a}^2\)</span>, puede ser positiva (tipo tiempo), nula (tipo luz) o negativa
+(tipo espacio). El <strong>cuadrigradiente</strong>, <span class="math notranslate nohighlight">\(\partial_\mu = \partial/\partial x^\mu = (\partial_t, \nabla)\)</span>, lleva el índice abajo.</p>
+</section>
+<section id="las-transformaciones-de-lorentz-como-matrices">
+<h3>3.2. Las transformaciones de Lorentz como matrices<a class="headerlink" href="#las-transformaciones-de-lorentz-como-matrices" title="Permalink to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(x'^\mu = \Lambda^\mu{}_\nu\, x^\nu\)</span>, con <span class="math notranslate nohighlight">\(\mu\)</span> el índice de fila y <span class="math notranslate nohighlight">\(\nu\)</span> el de columna. Lo que <strong>define</strong> a una
+transformación de Lorentz es que conserva el producto escalar: para todo <span class="math notranslate nohighlight">\(x, y\)</span>,
+<span class="math notranslate nohighlight">\(x'^{T} g\, y' = x^T \Lambda^T g \Lambda\, y = x^T g\, y\)</span>, luego</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\Lambda^T g\, \Lambda = g
+}
+\]</div>
+<p>Tomando determinantes, <span class="math notranslate nohighlight">\(\det\Lambda = \pm 1\)</span>. Las <strong>propias</strong> (<span class="math notranslate nohighlight">\(\det\Lambda = +1\)</span>: rotaciones y <em>boosts</em>) se
+conectan de forma continua con la identidad; la <strong>paridad</strong>, <span class="math notranslate nohighlight">\({\bf x} \to -{\bf x}\)</span>, es impropia. Por ser
+«pseudo-ortogonales» respecto de <span class="math notranslate nohighlight">\(g\)</span>, los covariantes se transforman con la inversa,
+<span class="math notranslate nohighlight">\(a'_\mu = a_\nu\,(\Lambda^{-1})^\nu{}_\mu\)</span>, y por eso <span class="math notranslate nohighlight">\(a'^\mu b'_\mu = a^\mu b_\mu\)</span>.</p>
+<p>Rotación en torno a <span class="math notranslate nohighlight">\(z\)</span> y <em>boost</em> en <span class="math notranslate nohighlight">\(z\)</span> (activos):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Lambda(\phi) =
+\begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; \cos\phi &amp; -\sin\phi &amp; 0 \\ 0 &amp; \sin\phi &amp; \cos\phi &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{pmatrix},
+\qquad
+\Lambda(\eta) =
+\begin{pmatrix} \cosh\eta &amp; 0 &amp; 0 &amp; \sinh\eta \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ \sinh\eta &amp; 0 &amp; 0 &amp; \cosh\eta \end{pmatrix}
+\end{split}\]</div>
+<p>El formalismo completo (generadores, representación de los espinores) está en
+<span class="xref myst">ext-trans-Lorentz</span>.</p>
+</section>
+<section id="cuadrivelocidad-y-cuadrimomento">
+<h3>3.3. Cuadrivelocidad y cuadrimomento<a class="headerlink" href="#cuadrivelocidad-y-cuadrimomento" title="Permalink to this heading">#</a></h3>
+<p>El <strong>tiempo propio</strong>, <span class="math notranslate nohighlight">\(\mathrm{d}\tau^2 = \mathrm{d}t^2 - \mathrm{d}{\bf x}^2 = \mathrm{d}t^2/\gamma^2\)</span>, es invariante. Dividiendo el
+cuadrivector <span class="math notranslate nohighlight">\(\mathrm{d}x^\mu\)</span> por él se obtienen otros dos cuadrivectores:</p>
+<div class="math notranslate nohighlight">
+\[
+u^\mu = \frac{\mathrm{d}x^\mu}{\mathrm{d}\tau} = \gamma\,(1, {\bf v}), \qquad
+p^\mu = m\,u^\mu = (\gamma m, \gamma m{\bf v}) = (E, {\bf p}), \qquad
+p^2 = m^2 .
+\]</div>
+<p>(Es el taller «¿Por qué <span class="math notranslate nohighlight">\((E, {\bf p})\)</span> se transforma como <span class="math notranslate nohighlight">\((t, {\bf r})\)</span>?» de la introducción.) En una
+reacción se conserva el cuadrimomento total, y su norma es el invariante <span class="math notranslate nohighlight">\(s\)</span> (sección 4).</p>
+</section>
+<section id="una-medida-invariante-mathrm-d-3-bf-p-2e">
+<h3>3.4. Una medida invariante: <span class="math notranslate nohighlight">\(\mathrm{d}^3{\bf p}/2E\)</span><a class="headerlink" href="#una-medida-invariante-mathrm-d-3-bf-p-2e" title="Permalink to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\mathrm{d}^3{\bf p}\)</span> no es invariante (se contrae en la dirección del <em>boost</em>), pero <span class="math notranslate nohighlight">\(\mathrm{d}^3{\bf p}/2E\)</span> sí. Se ve
+partiendo de algo que obviamente lo es:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{d}^4p\;\delta(p^2 - m^2)\,\theta(p^0)
+\]</div>
+<p>(<span class="math notranslate nohighlight">\(\mathrm{d}^4p\)</span> es invariante porque <span class="math notranslate nohighlight">\(|\det\Lambda| = 1\)</span>; <span class="math notranslate nohighlight">\(p^2\)</span> es invariante; y un <em>boost</em> no cambia el signo de
+<span class="math notranslate nohighlight">\(p^0\)</span>). Integrando en <span class="math notranslate nohighlight">\(p^0\)</span> con <span class="math notranslate nohighlight">\(\delta(p_0^2 - E^2) = \frac{1}{2E}\left[\delta(p^0 - E) + \delta(p^0 + E)\right]\)</span>, solo
+sobrevive <span class="math notranslate nohighlight">\(p^0 = E &gt; 0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\int \mathrm{d}p^0\; \delta(p^2 - m^2)\,\theta(p^0) = \frac{1}{2E}
+\qquad \Rightarrow \qquad
+\frac{\mathrm{d}^3{\bf p}}{2E} \;\text{ es invariante.}
+\]</div>
+<p>Es la medida del espacio fásico relativista de la sección 6.</p>
+</section>
+</section>
+<section id="invariantes-y-centro-de-masas">
+<h2>4. Invariantes y centro de masas<a class="headerlink" href="#invariantes-y-centro-de-masas" title="Permalink to this heading">#</a></h2>
+<section id="el-invariante-s-y-la-velocidad-del-cm">
+<h3>4.1. El invariante <span class="math notranslate nohighlight">\(s\)</span> y la velocidad del CM<a class="headerlink" href="#el-invariante-s-y-la-velocidad-del-cm" title="Permalink to this heading">#</a></h3>
+<p>En <span class="math notranslate nohighlight">\(a + b \to \dots\)</span>, con <span class="math notranslate nohighlight">\(b\)</span> en reposo en el laboratorio, el cuadrimomento total es
+<span class="math notranslate nohighlight">\(P = (E_a + m_b, {\bf p}_a)\)</span> y su norma,</p>
+<div class="math notranslate nohighlight">
+\[
+s = P^2 = m_a^2 + m_b^2 + 2\,m_b E_a ,
+\]</div>
+<p>vale lo mismo en cualquier sistema. El CM es el sistema en el que <span class="math notranslate nohighlight">\({\bf P} = 0\)</span>: se mueve respecto del
+laboratorio con la velocidad del cuadrimomento total, y como <span class="math notranslate nohighlight">\(P^2 = s\)</span> hace el papel de una masa,</p>
+<div class="math notranslate nohighlight">
+\[
+\beta_{CM} = \frac{|{\bf p}_a|}{E_a + m_b}, \qquad \gamma_{CM} = \frac{E_a + m_b}{\sqrt{s}}, \qquad
+\gamma_{CM}\beta_{CM} = \frac{|{\bf p}_a|}{\sqrt{s}} .
+\]</div>
+<p>En blanco fijo y a alta energía, <span class="math notranslate nohighlight">\(\gamma_{CM} \simeq \sqrt{E_a/2m_b}\)</span>: el CM se mueve muy deprisa, y los
+productos salen concentrados <strong>hacia delante</strong>. En un colisionador simétrico el CM es el laboratorio.</p>
+</section>
+<section id="del-cm-al-laboratorio">
+<h3>4.2. Del CM al laboratorio<a class="headerlink" href="#del-cm-al-laboratorio" title="Permalink to this heading">#</a></h3>
+<p>Una partícula que en el CM tiene energía <span class="math notranslate nohighlight">\(E^*\)</span>, momento <span class="math notranslate nohighlight">\(p^*\)</span> y ángulo <span class="math notranslate nohighlight">\(\theta^*\)</span> respecto de la dirección
+del <em>boost</em> tiene en el laboratorio</p>
+<div class="math notranslate nohighlight">
+\[
+E = \gamma_{CM}\left(E^* + \beta_{CM}\,p^*\cos\theta^*\right), \qquad
+p\cos\theta = \gamma_{CM}\left(p^*\cos\theta^* + \beta_{CM}\,E^*\right), \qquad
+p\sin\theta = p^*\sin\theta^* ,
+\]</div>
+<p>y dividiendo las dos últimas,</p>
+<div class="math notranslate nohighlight">
+\[
+\tan\theta = \frac{\sin\theta^*}{\gamma_{CM}\left(\cos\theta^* + \beta_{CM}/\beta^*\right)}, \qquad \beta^* = \frac{p^*}{E^*} .
+\]</div>
+<p>Si la partícula es más lenta en el CM que el propio CM, <span class="math notranslate nohighlight">\(\beta^* &lt; \beta_{CM}\)</span>, el denominador no se anula
+nunca: <strong>todas</strong> salen hacia delante, dentro de un cono de ángulo máximo
+<span class="math notranslate nohighlight">\(\sin\theta_{max} = \beta^*\gamma^*/(\beta_{CM}\gamma_{CM})\)</span>. Es la geometría de los experimentos de blanco fijo y
+<em>hacia delante</em> de perspectivas.</p>
+</section>
+<section id="cinematica-a-dos-cuerpos">
+<h3>4.3. Cinemática a dos cuerpos<a class="headerlink" href="#cinematica-a-dos-cuerpos" title="Permalink to this heading">#</a></h3>
+<p>En el CM de <span class="math notranslate nohighlight">\(a + b \to c + d\)</span> los momentos iniciales son opuestos, y los finales también:
+<span class="math notranslate nohighlight">\({\bf p}^*_i = {\bf p}_a = -{\bf p}_b\)</span>, <span class="math notranslate nohighlight">\({\bf p}^*_f = {\bf p}_c = -{\bf p}_d\)</span>. Como la energía total es <span class="math notranslate nohighlight">\(\sqrt{s}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+s = (p_a + p_b)^2 = (E^*_a + E^*_b)^2 .
+\]</div>
+<p>Las energías y los momentos en el CM quedan fijados por <span class="math notranslate nohighlight">\(s\)</span> y las masas.</p>
+<p>Podemos calcular <span class="math notranslate nohighlight">\(E^*_a, E^*_b\)</span> a partir de <span class="math notranslate nohighlight">\(s\)</span> y las masas <span class="math notranslate nohighlight">\(m_a, m_b\)</span>.</p>
+<p>Si calculamos, <span class="math notranslate nohighlight">\(E^{*2}_a\)</span> teniendo en cuenta que <span class="math notranslate nohighlight">\(E^*_a = (\sqrt{s} - E^*_b)\)</span>, y <span class="math notranslate nohighlight">\(p^*_a = p^*_b = p^*_i\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+E^{*2}_a = m^2_a + p_i^{*2} = E^{*2}_b - 2 \sqrt{s}E^*_b + s = m^2_b + p_i^{*2} - 2 \sqrt{s}E^*_b + s \\
+m^2_a = m^2_b + s - 2 \sqrt{s} E^*_b
+\end{gathered}
+\end{split}\]</div>
+<p>y como el tratamiento para <span class="math notranslate nohighlight">\(a\)</span> es idéntico al de <span class="math notranslate nohighlight">\(b\)</span>, obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+E^*_a = \frac{s + m^2_a - m^2_b}{2 \sqrt{s}}, \;\; E^*_b = \frac{s + m^2_b - m^2_a}{2 \sqrt{s}}.
+\]</div>
+<p>El momento será:</p>
+<div class="math notranslate nohighlight">
+\[
+p^{*}_i = \sqrt{E^{*2}_a - m^2_a} = \sqrt{E^{*2}_b - m^2_b}, \qquad 2 p^{*2}_i = E^{*2}_a + E^{*2}_b - m^2_a - m^2_b
+\]</div>
+<p>por lo tanto</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+p^{*2}_i = \frac{E^{*2}_a + E^{*2}_b - m^2_a - m^2_b}{2} = \\ 
+\frac{\left[s + (m^2_a - m^2_b) \right]^2 + \left[s - (m^2_a - m^2_b)\right]^2 - 4 s (m^2_a + m^2_b)}{8 s} = \\
+\frac{s^2 + (m^2_a - m^2_b)^2 - 2 s (m^2_a + m^2_b)}{4s}
+\end{gathered}
+\end{split}\]</div>
+<p>como:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+m^2_a - m^2_b = (m_a + m_b) (m_a - m_b), \\ 2(m^2_a + m^2_b) = (m_a+m_b)^2 + (m_a-m_b)^2
+\end{gathered}
+\end{split}\]</div>
+<p>tenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+p^{*2}_i = \frac{s^2 + (m_a+m_b)^2(m_a-m_b)^2 - s \left[ (m_a+m_b)^2 + (m_a - m_b)^2 \right] }{4s} = \\
+       = \frac{\left[s- (m_a+m_b)^2\right] \, \left[s - (m_a-m_b)^2\right]}{4s}
+\end{gathered}
+\end{split}\]</div>
+<p>por lo que el momento inicial es:</p>
+<div class="math notranslate nohighlight">
+\[
+p^*_i = \frac{\sqrt{\left[s- (m_a+m_b)^2\right] \, \left[s - (m_a-m_b)^2\right]}}{2\sqrt{s}}
+\]</div>
+<p>Como la situación es idéntica para las partículas finales tenemos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+E^*_c = \frac{s + m^2_c - m^2_d}{2 \sqrt{s}}, \;\; E^*_d = \frac{s + m^2_d - m^2_c}{2 \sqrt{s}} \\
+p^*_f = \frac{\sqrt{\left[s- (m_c+m_d)^2\right] \, \left[s - (m_c-m_d)^2\right]}}{2 \sqrt{s}}
+\end{gathered}
+\end{split}\]</div>
+<p>En el caso de la desintegración a dos cuerpos, <span class="math notranslate nohighlight">\(a \to c + d\)</span>, la energía en el CM es <span class="math notranslate nohighlight">\( \sqrt{s} = m_a\)</span>.</p>
+<p>Los momentos y energía finales son en ese caso:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+E^*_c = \frac{m^2_a + m^2_c - m^2_d}{2 m_a}, \;\; E^*_d = \frac{m^2_a + m^2_d - m^2_c}{2 m_a} \\
+p^*_f = \frac{1}{2m_a}\sqrt{\left[m^2_a- (m_c+m_d)^2\right] \, \left[m^2_a - (m_c-m_d)^2\right]}
+\end{gathered}
+\end{split}\]</div>
+</section>
+<section id="las-variables-de-mandelstam">
+<h3>4.4. Las variables de Mandelstam<a class="headerlink" href="#las-variables-de-mandelstam" title="Permalink to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><a class="reference internal" href="../_images/feynman_stchannels.png"><img alt="../_images/feynman_stchannels.png" class="align-center" src="../_images/feynman_stchannels.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>canal <span class="math notranslate nohighlight">\(t\)</span> (dispersión, izda.) y canal <span class="math notranslate nohighlight">\(s\)</span> (aniquilación, dcha.)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Con los cuatro cuadrimomentos de <span class="math notranslate nohighlight">\(a + b \to c + d\)</span> se forman tres invariantes:</p>
+<div class="math notranslate nohighlight">
+\[
+s = (p_a + p_b)^2, \qquad t = (p_a - p_c)^2, \qquad u = (p_a - p_d)^2 .
+\]</div>
+<p><span class="math notranslate nohighlight">\(s\)</span> es la energía en el CM al cuadrado y <span class="math notranslate nohighlight">\(t\)</span> el cuadrimomento transferido de <span class="math notranslate nohighlight">\(a\)</span> a <span class="math notranslate nohighlight">\(c\)</span> (el <span class="math notranslate nohighlight">\(q^2\)</span> del
+propagador en el canal <span class="math notranslate nohighlight">\(t\)</span>). Solo dos son independientes:</p>
+<div class="math notranslate nohighlight">
+\[
+s + t + u = m_a^2 + m_b^2 + m_c^2 + m_d^2 ,
+\]</div>
+<p>porque, desarrollando, <span class="math notranslate nohighlight">\(s + t + u = 3m_a^2 + m_b^2 + m_c^2 + m_d^2 + 2\,p_a\cdot(p_b - p_c - p_d)\)</span> y, por
+conservación, <span class="math notranslate nohighlight">\(p_b - p_c - p_d = -p_a\)</span>.</p>
+<p><strong>El invariante <span class="math notranslate nohighlight">\(t\)</span>.</strong></p>
+<p>El invariante <span class="math notranslate nohighlight">\(t = (p_c - p_a)^2 = (p_d - p_b)^2\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+t = (p_c - p_a)^2 = p^2_c + p^2_a - 2 p_c \cdot p_a = m^2_a + m^2_c + 2 |{\bf p}_a| |{\bf p}_c| \cos \theta_{ac} - 2 E_a E_c \\
+t = (p_d - p_b)^2 = p^2_d + p^2_b - 2 p_d \cdot p_b = m^2_b + m^2_d + 2 |{\bf p}_b| |{\bf p}_d| \cos \theta_{bd} - 2 E_b E_d
+\end{gathered}
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\theta_{ac}, \theta_{bd}\)</span> son los ángulos entre los momentos de <span class="math notranslate nohighlight">\(ac\)</span> y <span class="math notranslate nohighlight">\(bd\)</span> respectivamente.</p>
+<p>En el sistema de laboratorio, con <span class="math notranslate nohighlight">\(b\)</span> en reposo, <span class="math notranslate nohighlight">\(p_b = (m_b, {\bf 0})\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+ t = m^2_b + m^2_d - 2m_b E_d, \;\; E_d = \frac{m^2_b + m^2_d - t}{2m_b}
+\]</div>
+<p>En el sistema CM (ver figura de la interacción a dos cuerpos), <span class="math notranslate nohighlight">\(|{\bf p}_a| = p^*_i, \; |{\bf p}_c| = p^*_f\)</span> y <span class="math notranslate nohighlight">\(\theta_{ac} = \theta^*\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+t = m^2_a + m^2_c + 2 p^*_i p^*_f \cos \theta^* - 2E^*_a E^*_c, \\
+\cos \theta^* = \frac{t - m^2_a - m^2_c + 2E^*_aE^*_c}{2 p^*_i p^*_f}
+\end{gathered}
+\end{split}\]</div>
+</section>
+</section>
+<section id="cinematica-en-colisionadores">
+<h2>5. Cinemática en colisionadores<a class="headerlink" href="#cinematica-en-colisionadores" title="Permalink to this heading">#</a></h2>
+<section id="momento-transverso-rapidez-y-pseudorrapidez">
+<h3>5.1. Momento transverso, rapidez y pseudorrapidez<a class="headerlink" href="#momento-transverso-rapidez-y-pseudorrapidez" title="Permalink to this heading">#</a></h3>
+<p>En un colisionador de hadrones chocan partones con fracciones desconocidas del momento del protón:
+el sistema de la colisión tiene un <em>boost</em> desconocido <strong>a lo largo del haz</strong> (<span class="math notranslate nohighlight">\(z\)</span>). Conviene usar
+variables que se transformen de forma sencilla bajo ese <em>boost</em>:</p>
+<ul>
+<li><p>el <strong>momento transverso</strong>, <span class="math notranslate nohighlight">\(p_T = \sqrt{p_x^2 + p_y^2}\)</span>, y el ángulo azimutal <span class="math notranslate nohighlight">\(\phi\)</span>: no cambian;</p></li>
+<li><p>la <strong>rapidez</strong>,</p>
+<div class="math notranslate nohighlight">
+\[y = \frac{1}{2}\ln\frac{E + p_z}{E - p_z}, \qquad E = m_T\cosh y, \quad p_z = m_T\sinh y, \quad m_T = \sqrt{m^2 + p_T^2} ,\]</div>
+<p>que bajo un <em>boost</em> en <span class="math notranslate nohighlight">\(z\)</span> de rapidez <span class="math notranslate nohighlight">\(\eta\)</span> se <strong>desplaza</strong>, <span class="math notranslate nohighlight">\(y \to y + \eta\)</span> (sección 2.3): las
+diferencias de rapidez y la forma de <span class="math notranslate nohighlight">\(\mathrm{d}N/\mathrm{d}y\)</span> no cambian.</p>
+</li>
+</ul>
+<p>Para medir <span class="math notranslate nohighlight">\(y\)</span> hace falta la masa. Si <span class="math notranslate nohighlight">\(E \gg m\)</span>, <span class="math notranslate nohighlight">\(y\)</span> solo depende del ángulo polar <span class="math notranslate nohighlight">\(\theta\)</span>, y se usa la
+<strong>pseudorrapidez</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\eta_{ps} = -\ln\tan\frac{\theta}{2} .
+\]</div>
+<p>(En la literatura se escribe <span class="math notranslate nohighlight">\(\eta\)</span>; aquí le ponemos subíndice para no confundirla con la rapidez <span class="math notranslate nohighlight">\(\eta\)</span> del
+<em>boost</em> de perspectivas.) <span class="math notranslate nohighlight">\(\eta_{ps} = 0\)</span> es perpendicular al haz; <span class="math notranslate nohighlight">\(|\eta_{ps}| = 2.5\)</span>, el límite de los
+detectores de trazas de ATLAS y CMS, es <span class="math notranslate nohighlight">\(\theta = 9.4^\circ\)</span>; LHCb cubre <span class="math notranslate nohighlight">\(2 &lt; \eta_{ps} &lt; 5\)</span>, entre <span class="math notranslate nohighlight">\(15^\circ\)</span> y
+<span class="math notranslate nohighlight">\(0.8^\circ\)</span>.</p>
+</section>
+<section id="desintegracion-en-vuelo">
+<h3>5.2. Desintegración en vuelo<a class="headerlink" href="#desintegracion-en-vuelo" title="Permalink to this heading">#</a></h3>
+<p>Una partícula de masa <span class="math notranslate nohighlight">\(M\)</span> que se mueve con <span class="math notranslate nohighlight">\(\gamma, \beta\)</span> se desintegra en dos. En su reposo cada hija
+tiene <span class="math notranslate nohighlight">\(E^*\)</span> y <span class="math notranslate nohighlight">\(p^*\)</span> fijos (sección 4.3), y en el laboratorio (sección 4.2)</p>
+<div class="math notranslate nohighlight">
+\[
+E = \gamma\left(E^* + \beta\,p^*\cos\theta^*\right) .
+\]</div>
+<p>Si la desintegración es isótropa en el reposo (espín 0), <span class="math notranslate nohighlight">\(\cos\theta^*\)</span> se reparte uniforme entre <span class="math notranslate nohighlight">\(-1\)</span> y <span class="math notranslate nohighlight">\(1\)</span>,
+y la <strong>energía en el laboratorio también</strong>: el espectro es <strong>plano</strong> entre
+<span class="math notranslate nohighlight">\(\gamma(E^* - \beta p^*)\)</span> y <span class="math notranslate nohighlight">\(\gamma(E^* + \beta p^*)\)</span>.</p>
+<p><strong>Ejemplo: <span class="math notranslate nohighlight">\(\pi^0 \to \gamma + \gamma\)</span>.</strong> Con <span class="math notranslate nohighlight">\(E^* = p^* = m_\pi/2\)</span>, cada fotón tiene una energía uniforme entre
+<span class="math notranslate nohighlight">\(E_\pi(1 - \beta)/2\)</span> y <span class="math notranslate nohighlight">\(E_\pi(1 + \beta)/2\)</span>, y el ángulo entre los dos fotones es como mínimo
+<span class="math notranslate nohighlight">\(\sin(\theta_{min}/2) = m_\pi/E_\pi\)</span>. Un <span class="math notranslate nohighlight">\(\pi^0\)</span> de <span class="math notranslate nohighlight">\(10\)</span> GeV da fotones separados unos <span class="math notranslate nohighlight">\(27\)</span> mrad: en un
+calorímetro a un metro, <span class="math notranslate nohighlight">\(2.7\)</span> cm, del orden del tamaño de una celda. Por eso a alta energía un <span class="math notranslate nohighlight">\(\pi^0\)</span>
+puede confundirse con un fotón.</p>
+<p>La misma cuenta, proyectada en el plano transverso, da el <strong>pico jacobiano</strong> de la masa transversa
+del <span class="math notranslate nohighlight">\(W\)</span> (taller de perspectivas): una distribución uniforme en <span class="math notranslate nohighlight">\(\cos\theta^*\)</span> se amontona donde la
+variable medida deja de crecer.</p>
+</section>
+</section>
+<section id="de-la-regla-de-oro-a-gamma-y-sigma">
+<h2>6. De la regla de oro a <span class="math notranslate nohighlight">\(\Gamma\)</span> y <span class="math notranslate nohighlight">\(\sigma\)</span><a class="headerlink" href="#de-la-regla-de-oro-a-gamma-y-sigma" title="Permalink to this heading">#</a></h2>
+<section id="la-regla-de-oro">
+<h3>6.1. La regla de oro<a class="headerlink" href="#la-regla-de-oro" title="Permalink to this heading">#</a></h3>
+<p>Un estado inicial <span class="math notranslate nohighlight">\(|i\rangle\)</span> y una perturbación <span class="math notranslate nohighlight">\(H_{int}\)</span>. A primer orden, la amplitud de encontrar el
+sistema en <span class="math notranslate nohighlight">\(|f\rangle\)</span> al cabo de un tiempo <span class="math notranslate nohighlight">\(t\)</span> es</p>
+<div class="math notranslate nohighlight">
+\[
+c_f(t) = -i\,T_{fi}\int_0^t e^{i(E_f - E_i)t'}\,\mathrm{d}t', \qquad T_{fi} = \langle f|H_{int}|i\rangle ,
+\]</div>
+<p>y su módulo al cuadrado,</p>
+<div class="math notranslate nohighlight">
+\[
+|c_f(t)|^2 = |T_{fi}|^2\,\frac{\sin^2(\Delta t/2)}{(\Delta/2)^2}, \qquad \Delta = E_f - E_i ,
+\]</div>
+<p>es una función cada vez más picada en <span class="math notranslate nohighlight">\(\Delta = 0\)</span>, de área <span class="math notranslate nohighlight">\(2\pi t\)</span>: para <span class="math notranslate nohighlight">\(t\)</span> grande,
+<span class="math notranslate nohighlight">\(|c_f|^2 \to 2\pi\,t\,\delta(E_f - E_i)\,|T_{fi}|^2\)</span>. La probabilidad <strong>crece linealmente</strong> con el tiempo: hay
+un <strong>ritmo</strong> constante. Sumando sobre los estados finales, con <span class="math notranslate nohighlight">\(\mathrm{d}N = \rho(E_f)\,\mathrm{d}E_f\)</span> estados en
+<span class="math notranslate nohighlight">\(\mathrm{d}E_f\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\Gamma_{fi} = 2\pi\,|T_{fi}|^2\,\rho(E_i)
+}
+\]</div>
+<p>Es la regla de oro de perspectivas. El trabajo está en contar los estados, <span class="math notranslate nohighlight">\(\rho\)</span>.</p>
+</section>
+<section id="contar-estados-de-donde-salen-delta-4-y-los-2-pi">
+<h3>6.2. Contar estados: de dónde salen <span class="math notranslate nohighlight">\(\delta^4\)</span> y los <span class="math notranslate nohighlight">\((2\pi)\)</span><a class="headerlink" href="#contar-estados-de-donde-salen-delta-4-y-los-2-pi" title="Permalink to this heading">#</a></h3>
+<p>Normalizamos cada partícula en una caja de volumen <span class="math notranslate nohighlight">\(V = L^3\)</span> con condiciones periódicas: los momentos
+permitidos son <span class="math notranslate nohighlight">\({\bf p} = 2\pi{\bf n}/L\)</span>, y en <span class="math notranslate nohighlight">\(\mathrm{d}^3{\bf p}\)</span> caben <span class="math notranslate nohighlight">\(V\,\mathrm{d}^3{\bf p}/(2\pi)^3\)</span> estados. Con <span class="math notranslate nohighlight">\(V = 1\)</span> (una
+partícula por unidad de volumen), <span class="math notranslate nohighlight">\(\mathrm{d}^3{\bf p}/(2\pi)^3\)</span>.</p>
+<p>Para <span class="math notranslate nohighlight">\(n\)</span> partículas finales hay dos restricciones:</p>
+<ul class="simple">
+<li><p><strong>Momento.</strong> El elemento de matriz lleva la integral de las ondas planas,
+<span class="math notranslate nohighlight">\(\int e^{i({\bf p}_a - \sum{\bf p}_k)\cdot{\bf x}}\,\mathrm{d}^3x = (2\pi)^3\,\delta^3({\bf p}_a - \sum{\bf p}_k)\)</span> (con <span class="math notranslate nohighlight">\(V \to \infty\)</span>): el momento se
+conserva, y el último momento queda fijado por los demás.</p></li>
+<li><p><strong>Energía.</strong> La regla de oro la impone con la derivada <span class="math notranslate nohighlight">\(\rho = \mathrm{d}N/\mathrm{d}E\)</span>, que es lo mismo que integrar
+con <span class="math notranslate nohighlight">\(\delta(E_a - \sum E_k)\)</span>.</p></li>
+</ul>
+<p>Juntando, para una desintegración:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = 2\pi\int |T_{fi}|^2\,\delta\Big(E_a - \sum E_k\Big)\,(2\pi)^3\delta^3\Big({\bf p}_a - \sum{\bf p}_k\Big)\prod_{k=1}^{n}\frac{\mathrm{d}^3{\bf p}_k}{(2\pi)^3}
+= (2\pi)^4\int |T_{fi}|^2\,\delta^4\Big(p_a - \sum p_k\Big)\prod_{k=1}^{n}\frac{\mathrm{d}^3{\bf p}_k}{(2\pi)^3}
+\]</div>
+<p>El <span class="math notranslate nohighlight">\((2\pi)^4\)</span> es el <span class="math notranslate nohighlight">\(2\pi\)</span> de la regla de oro por el <span class="math notranslate nohighlight">\((2\pi)^3\)</span> de la conservación del momento; cada
+partícula final aporta un <span class="math notranslate nohighlight">\(1/(2\pi)^3\)</span>.</p>
+</section>
+<section id="normalizacion-relativista-y-elemento-de-matriz">
+<h3>6.3. Normalización relativista y elemento de matriz<a class="headerlink" href="#normalizacion-relativista-y-elemento-de-matriz" title="Permalink to this heading">#</a></h3>
+<p>En mecánica cuántica normalizamos la función de ondas, <span class="math notranslate nohighlight">\(\psi\)</span> en un cubo de lados <span class="math notranslate nohighlight">\(L\)</span>, con volumen <span class="math notranslate nohighlight">\(V = L^3\)</span>, a la unidad:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_V \psi^* \psi \, \mathrm{d}^3x = 1 
+\]</div>
+<p>Esto es, la partícula está contenida en <span class="math notranslate nohighlight">\(V\)</span>.</p>
+<p>El número de estados disponibles en ese volumen es:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{V \, \mathrm{d}^3{\bf p}}{(2\pi)^3},
+\]</div>
+<p>que viene de expresar <span class="math notranslate nohighlight">\(\frac{\mathrm{d}^3 {\bf x} \, \mathrm{d}^3 {\bf p}}{h^3}\)</span> en unidades naturales, donde <span class="math notranslate nohighlight">\(h = 2\pi\)</span>.</p>
+<p>El volumen sin embargo no es un invariante Lorentz.</p>
+<p>Un cubo de lado <span class="math notranslate nohighlight">\(L\)</span> visto desde un sistema en el que se mueve con factor de Lorentz <span class="math notranslate nohighlight">\(\gamma\)</span> se
+contrae en la dirección del movimiento (sección 2.2):</p>
+<div class="math notranslate nohighlight">
+\[
+V' = \frac{L^3}{\gamma} = \frac{V}{\gamma},
+\]</div>
+<p>y la densidad de partículas, <span class="math notranslate nohighlight">\(1/V\)</span>, <strong>aumenta</strong> en un factor <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>Si en ese cubo estaba contenida la partícula con energía <span class="math notranslate nohighlight">\(E_0 \)</span>, en el sistema de referencia con factor <span class="math notranslate nohighlight">\(\gamma\)</span>, su energía es:</p>
+<div class="math notranslate nohighlight">
+\[
+E' = \gamma E_0
+\]</div>
+<p>Vemos que la densidad, <span class="math notranslate nohighlight">\(1/V\)</span>, y la energía, <span class="math notranslate nohighlight">\(E\)</span>, se transforman de igual forma, con un factor <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>En mecánica cuántica relativista, normalizamos la función de ondas, <span class="math notranslate nohighlight">\(\Psi\)</span>, en un volumen <span class="math notranslate nohighlight">\(V\)</span> a <span class="math notranslate nohighlight">\(2E\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_V \Psi^* \Psi \, \mathrm{d}^3 x = 2E,
+\]</div>
+<p>El factor <span class="math notranslate nohighlight">\(2\)</span> es por conveniencia.</p>
+<p>Esto es, <span class="math notranslate nohighlight">\(2E\)</span> partículas por unidad de volumen. Esta normalización sí es invariante porque la densidad, <span class="math notranslate nohighlight">\(1/V\)</span>, y la energía, <span class="math notranslate nohighlight">\(E\)</span>, cambian con el mismo factor al cambiar el sistema de referencia.</p>
+<p>Como consecuencia de la normalización relativista de la función de ondas <span class="math notranslate nohighlight">\(\Psi\)</span>, el elemento de matriz relativista <span class="math notranslate nohighlight">\(M_{fi} = \langle \Psi_f| H_{int}| \Psi_i \rangle\)</span> se relaciona con el no-relativista <span class="math notranslate nohighlight">\(T_{fi} = \langle \psi_f | H_{int}| \psi_i \rangle\)</span> por un factor que proviene de la normalización.</p>
+<div class="math notranslate nohighlight">
+\[
+M_{fi} = \langle \Psi_f | H_{int}| \Psi_i \rangle = \left(\prod_i \sqrt{2E_i} \right) \langle  \psi_f | H_{int}| \psi_i \rangle =  \left(\prod_i \sqrt{2E_i} \right)  T_{fi}
+\]</div>
+<p>donde el índice <span class="math notranslate nohighlight">\(i\)</span> corre en las <span class="math notranslate nohighlight">\(n\)</span> partículas iniciales y finales.</p>
+<p>Las expresiones de la razón de transición (la anchura) o de la sección eficaz en el tratamiento relativista incorporan por lo tanto el siguiente factor:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{\prod_i (2E_i)},
+\]</div>
+<p>debido a la normalización relativista.</p>
+</section>
+<section id="las-formulas-generales-anchura-y-seccion-eficaz">
+<h3>6.4. Las fórmulas generales: anchura y sección eficaz<a class="headerlink" href="#las-formulas-generales-anchura-y-seccion-eficaz" title="Permalink to this heading">#</a></h3>
+<p>La <strong>regla de oro de Fermi</strong> da la razón de transición como el elemento de matriz al cuadrado por
+la densidad de estados finales. Aplicada a una partícula que se desintegra da la <strong>anchura</strong>,
+<span class="math notranslate nohighlight">\(\Gamma\)</span>; aplicada a dos que chocan, dividida por el flujo, la <strong>sección eficaz</strong>, <span class="math notranslate nohighlight">\(\sigma\)</span>. Las
+escribimos primero en su forma no relativista y después en la relativista, con los factores
+<span class="math notranslate nohighlight">\(1/(2E)\)</span> de la normalización.</p>
+<p><strong>Anchura de desintegración.</strong></p>
+<p>La expresión no relativista (sección 6.2) de la anchura de desintegración de una partícula de energía <span class="math notranslate nohighlight">\(E_a\)</span> a <span class="math notranslate nohighlight">\(m\)</span> partículas finales es:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma  = (2\pi)^4 \int |T_{fi}|^2 \delta^4 \left(\sum_k p_k - p_a \right) \, \prod_i \frac{\mathrm{d}^3{\bf p}_i}{(2\pi)^3}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(p_a\)</span> es el cuadrimomento de la partícula inicial y <span class="math notranslate nohighlight">\(p_i\)</span> (o <span class="math notranslate nohighlight">\(p_k\)</span>) los de las finales, <span class="math notranslate nohighlight">\(i = 1, \dots, m\)</span>. Recordar que las deltas de Dirac imponen la conservación de energía y momento entre la partícula inicial y las finales.</p>
+<p>Y la relativista:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = \frac{(2\pi)^4}{2 E_a} \int |M_{fi}|^2 \delta^4 \left(\sum_k p_k - p_a \right) \, \prod_i \frac{\mathrm{d}^3{\bf p}_i}{(2\pi)^3 (2E_i)}
+\]</div>
+<p><strong>Sección eficaz de la interacción de dos partículas <span class="math notranslate nohighlight">\(a + b\)</span>.</strong></p>
+<p>Sea la interacción entre dos partículas <span class="math notranslate nohighlight">\(a, b\)</span> que da lugar a <span class="math notranslate nohighlight">\(m\)</span> partículas finales.</p>
+<p>Sea un flujo de partículas <span class="math notranslate nohighlight">\(a\)</span>, con densidad de <span class="math notranslate nohighlight">\(N_a\)</span> partículas en un volumen <span class="math notranslate nohighlight">\(V\)</span>, que se mueve contra <span class="math notranslate nohighlight">\(N_b\)</span> partículas blanco en un volumen <span class="math notranslate nohighlight">\(V\)</span> que a su vez se mueven en sentido opuesto con <span class="math notranslate nohighlight">\(v_b\)</span>.</p>
+<p>Asignamos una sección eficaz <span class="math notranslate nohighlight">\(\sigma\)</span> de interacción a las partículas blanco <span class="math notranslate nohighlight">\(b\)</span>. La frecuencia de interacciones corresponderá al número de partículas <span class="math notranslate nohighlight">\(a\)</span> que atraviesan, por unidad de tiempo, un cilindro de base <span class="math notranslate nohighlight">\(\sigma\)</span> y altura <span class="math notranslate nohighlight">\((v_a + v_b)\,\mathrm{d}t\)</span> para cada partícula <span class="math notranslate nohighlight">\(b\)</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><a class="reference internal" href="../_images/fun_drawing_xsection.png"><img alt="../_images/fun_drawing_xsection.png" class="align-center" src="../_images/fun_drawing_xsection.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>(a) una partícula <span class="math notranslate nohighlight">\(a\)</span> recorre en <span class="math notranslate nohighlight">\(\mathrm{d}t\)</span> un cilindro de longitud <span class="math notranslate nohighlight">\((v_a+v_b)\,\mathrm{d}t\)</span> [MT3.4]</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>(b) visión transversal del cilindro, las partículas <span class="math notranslate nohighlight">\(b\)</span> en el mismo con el disco de la sección eficaz</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Esto es, el número de interacciones en un volumen <span class="math notranslate nohighlight">\(V\)</span> y un tiempo <span class="math notranslate nohighlight">\(\mathrm{d}t\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{d}N = (v_a + v_b) \sigma \, n_a N_b \, \mathrm{d}t
+\]</div>
+<p>El factor <span class="math notranslate nohighlight">\((v_a + v_b) n_a\)</span> es el flujo de partículas <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(\phi_a\)</span>, con velocidad <span class="math notranslate nohighlight">\(v_a\)</span> que atraviesan una superficie perpendicular a su velocidad, cuando la partícula <span class="math notranslate nohighlight">\(b\)</span> se mueve contra ellas con velocidad <span class="math notranslate nohighlight">\(v_b\)</span>.</p>
+<p>Luego, la frecuencia de interacciones, <span class="math notranslate nohighlight">\(R\)</span>, en un volumen, V, donde hay <span class="math notranslate nohighlight">\(N_b\)</span>, partículas blanco, al que llega un flujo <span class="math notranslate nohighlight">\(\phi_a\)</span> de partículas <span class="math notranslate nohighlight">\(a\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+R = \phi_a \, \sigma \, N_b
+\]</div>
+<p>En mecánica cuántica se adopta la normalización de una partícula en una unidad de volumen, <span class="math notranslate nohighlight">\(V = 1, n_a = 1, n_b = 1\)</span>, en ese caso:</p>
+<div class="math notranslate nohighlight">
+\[
+R = (v_a + v_b) \, \sigma, \;\;\; \sigma = \frac{R}{(v_a+v_b)}
+\]</div>
+<p>Con esa normalización a una partícula por unidad de volumen, la expresión no relativista para la sección eficaz de <span class="math notranslate nohighlight">\(a+b\)</span> para producir <span class="math notranslate nohighlight">\(m\)</span> partículas es:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{(2\pi)^4}{|v_a + v_b|} \int |T_{fi}|^2 \delta^4 \left(\sum_k p_k - p_a - p_b \right) \, \prod_i \frac{\mathrm{d}^3{\bf p}_i}{(2\pi)^3},
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(v_a, v_b\)</span> son el módulo de las velocidades, considerando que las partículas colisionan en una misma dirección y tienen sentidos opuestos. Las deltas de Dirac imponen la condición de conservación de la energía y momento entre los estados inicial y final.</p>
+<p>La expresión relativista, con el factor <span class="math notranslate nohighlight">\(1/(2E)\)</span> de cada partícula, es:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{(2\pi)^4}{(2 E_a) (2 E_b) (\beta_a + \beta_b)} \int |M_{fi}|^2 \delta^4 \left(\sum_k p_k - p_a -p_b\right) \, \prod_i \frac{\mathrm{d}^3{\bf p}_i}{(2\pi)^3 (2E_i)}
+\]</div>
+<p>En la versión relativista, cada uno de los factores de la sección eficaz es invariante Lorentz:</p>
+<ul class="simple">
+<li><p>el elemento de matriz al cuadrado: <span class="math notranslate nohighlight">\(|M_{fi}|^2 = | \langle \Psi_f| H_{int} | \Psi_i\rangle |^2\)</span></p></li>
+<li><p>la densidad de estados: <span class="math notranslate nohighlight">\(\frac{\mathrm{d}^3 {\bf p}}{(2\pi)^3 (2E)}\)</span> (sección 3.4)</p></li>
+<li><p>el término asociado al flujo: <span class="math notranslate nohighlight">\(4 E_a E_b (\beta_a + \beta_b)\)</span> (para haces colineales)</p></li>
+</ul>
+<p>Notar que a partir de la propiedad de la función delta de Dirac, <span class="math notranslate nohighlight">\(\int_{E&gt;0} \delta(E^2-{\bf p}^2 - m^2) \, \mathrm{d}E = \frac{1}{2E}\)</span>, podemos reescribir:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}^3{\bf p}}{(2\pi)^3 (2E)} = \int \delta(p^2-m^2) \, \theta(p^0) \frac{\mathrm{d}^4p}{(2\pi)^3}
+\]</div>
+<p><em>Cuestión</em>: Demostrar que <span class="math notranslate nohighlight">\(4 E_a E_b (\beta_a + \beta_b) = 4 \sqrt{(p_a \cdot p_b)^2 - m^2_a m^2_b}\)</span>, que en el CM vale <span class="math notranslate nohighlight">\(4 \, p^*_i \sqrt{s}\)</span></p>
+</section>
+<section id="anchura-de-desintegracion-a-dos-cuerpos">
+<h3>6.5. Anchura de desintegración a dos cuerpos<a class="headerlink" href="#anchura-de-desintegracion-a-dos-cuerpos" title="Permalink to this heading">#</a></h3>
+<p>Consideremos la desintegración de una partícula <span class="math notranslate nohighlight">\(a\)</span> en dos <span class="math notranslate nohighlight">\(b, c\)</span>, con masas <span class="math notranslate nohighlight">\(m_a, m_b, m_c\)</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/intro_drawing_decay2.png"><img alt="../_images/intro_drawing_decay2.png" class="align-center" src="../_images/intro_drawing_decay2.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Esquema de desintegración de la partícula <span class="math notranslate nohighlight">\(a\)</span> a dos <span class="math notranslate nohighlight">\(b, c\)</span> en el CM</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>El sistema más conveniente para tratar el proceso es el CM, donde la partícula <span class="math notranslate nohighlight">\(a\)</span> está en reposo, y tiene <span class="math notranslate nohighlight">\(E = m_a\)</span>.</p>
+<p>Las partículas <span class="math notranslate nohighlight">\(b, c\)</span> salen con momentos opuestos <span class="math notranslate nohighlight">\({\bf p}^* = {\bf p}_b = - {\bf p}_c\)</span>.</p>
+<p>El módulo del momento de las partículas salientes, <span class="math notranslate nohighlight">\(p^*\)</span> es (sección 4.3):</p>
+<div class="math notranslate nohighlight">
+\[
+p^*= \frac{1}{2m_a} \sqrt{[m^2_a - (m_b+m_c)^2] \, [m^2_a - (m_b - m_c)^2] }
+\]</div>
+<p>La anchura de desintegración, <span class="math notranslate nohighlight">\(\Gamma\)</span>, es la razón de transición de la regla de oro de Fermi.</p>
+<p>Integramos usando <span class="math notranslate nohighlight">\(\delta({\bf p}_b + {\bf p}_c)\)</span> en  <span class="math notranslate nohighlight">\(\mathrm{d}^3p_{c}\)</span> directamente.</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = \frac{1}{(2 E) (2\pi)^2} \int |M_{fi}|^2 \delta \left(E - E_b - E_c \right) \frac{p^2_b }{4 E_b E_c}\,  \mathrm{d}p_b \mathrm{d}\Omega^*,
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(E_b = \sqrt{m^2_b + p^2_b}, \; E_c = \sqrt{m^2_c + p^2_b}\)</span> y <span class="math notranslate nohighlight">\(\mathrm{d}\Omega^*\)</span> el diferencial de ángulo sólido.</p>
+<p>Si aplicamos la siguiente propiedad de la delta de Dirac: <span class="math notranslate nohighlight">\(\int \delta(f(p))\,  \mathrm{d} p = \left|\frac{\mathrm{d}f(p)}{\mathrm{d}p} \right|_{p'}^{-1}\)</span>, donde <span class="math notranslate nohighlight">\(p'\)</span> cumple <span class="math notranslate nohighlight">\(f(p') = 0\)</span></p>
+<p>con <span class="math notranslate nohighlight">\(f(p_b) = E -  \sqrt{m^2_b + p^2_b}- \sqrt{m^2_c + p^2_b}\)</span> respecto <span class="math notranslate nohighlight">\(p = p_b\)</span>, y <span class="math notranslate nohighlight">\(p' = p^*\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}f(p_b)}{\mathrm{d}p_b} = \frac{p_b}{\sqrt{m^2_b + p^2_b}} + \frac{p_b}{\sqrt{m^2_c + p^2_b}} = p_b \frac{E_b + E_c}{E_b E_c} = p_b \frac{E}{E_b E_c}
+\]</div>
+<p>La anchura de desintegración queda:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = \frac{1}{8 \pi^2 E} \frac{(p^*)^2}{4 E_b E_c} \frac{E_b E_c}{p^* E} \int |M_{fi}|^2 \, \mathrm{d}\Omega^* = 
+\frac{1}{8\pi^2}\frac{p^*}{4 E^2} \int |M_{fi}|^2 \, \mathrm{d}\Omega^*
+\]</div>
+<p>La anchura de desintegración, en este caso, solo depende de <span class="math notranslate nohighlight">\(p^*\)</span>, <span class="math notranslate nohighlight">\(m_a\)</span> y el elemento de matriz, si colocamos <span class="math notranslate nohighlight">\(E = E_a = m_a\)</span> en el CM:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = \frac{p^*}{32 \pi^2 m^2_a} \int_{\Omega} |M_{fi}|^2 \mathrm{d}\Omega^*
+\]</div>
+</section>
+<section id="seccion-eficaz-de-una-interaccion-de-dos-a-dos-cuerpos">
+<h3>6.6. Sección eficaz de una interacción de dos a dos cuerpos<a class="headerlink" href="#seccion-eficaz-de-una-interaccion-de-dos-a-dos-cuerpos" title="Permalink to this heading">#</a></h3>
+<p>Sea la interacción entre dos partículas incidentes, <span class="math notranslate nohighlight">\(a, b\)</span>, que da lugar a dos partículas finales, <span class="math notranslate nohighlight">\(c, d\)</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/intro_drawing_int2.png"><img alt="../_images/intro_drawing_int2.png" class="align-center" src="../_images/intro_drawing_int2.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Esquema de interacción de las partículas <span class="math notranslate nohighlight">\(a, b\)</span> a <span class="math notranslate nohighlight">\(c, d\)</span> en el CM</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>El sistema más conveniente para calcular la sección eficaz es el CM. En este sistema los momentos iniciales, y los finales, son opuestos:</p>
+<div class="math notranslate nohighlight">
+\[
+{\bf p}^*_i = {\bf p}_a = - {\bf p}_b, \;\; {\bf p}^*_f = {\bf p}_c = - {\bf p}_d
+\]</div>
+<p>Notar que las partículas están en un plano, y el único parámetro libre (además del azimut, que se integra) es el ángulo, <span class="math notranslate nohighlight">\(\theta^*\)</span> entre <span class="math notranslate nohighlight">\({\bf p}^*_f\)</span> y <span class="math notranslate nohighlight">\({\bf p}^*_i\)</span>, y este último define el eje.</p>
+<p>La sección eficaz se obtiene a partir de la expresión general donde <span class="math notranslate nohighlight">\(E = E_a + E_b\)</span>, <span class="math notranslate nohighlight">\(p_b = p_a = p^*_i\)</span> y <span class="math notranslate nohighlight">\(p_d = p_c = p^*_f\)</span>.</p>
+<p>El término del espacio fásico se calcula igual que en la anchura de desintegración a dos cuerpos (sección 6.5), solo que ahora <span class="math notranslate nohighlight">\(E = E_a + E_b\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{(2\pi)^2}\frac{p^*_f}{4 E} \int  |M_{fi}|^2 \, \mathrm{d}\Omega^*
+\]</div>
+<p>El término asociado al flujo:</p>
+<div class="math notranslate nohighlight">
+\[
+4 E_a E_b (\beta_b + \beta_a) = 4 E_a E_b \left(\frac{p_a}{E_a} + \frac{p_b}{E_b}\right) = 4 p^*_i (E_a + E_b) = 4 E \, p^*_i
+\]</div>
+<p>La sección queda:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{1}{64 \pi^2 E^2} \frac{p^*_f}{p^*_i} \int_\Omega |M_{fi}|^2 \, \mathrm{d}\Omega^*
+\]</div>
+<p>Si sustituimos <span class="math notranslate nohighlight">\(E^2 =  s\)</span> donde <span class="math notranslate nohighlight">\(s = \left[(E_a, {\bf p}_a) + (E_b, {\bf p}_b)\right]^2 = [(E_a + E_b, {\bf 0})]^2\)</span>, es el cuadrado del cuadrimomento total: la energía en el CM al cuadrado.</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{1}{64 \pi^2 s} \frac{p^*_f}{p^*_i} \int_\Omega |M_{fi}|^2 \, \mathrm{d}\Omega^*
+\]</div>
+</section>
+<section id="la-seccion-eficaz-diferencial-en-t">
+<h3>6.7. La sección eficaz diferencial en <span class="math notranslate nohighlight">\(t\)</span><a class="headerlink" href="#la-seccion-eficaz-diferencial-en-t" title="Permalink to this heading">#</a></h3>
+<p>Con el invariante <span class="math notranslate nohighlight">\(t\)</span> de la sección 4.4: como <span class="math notranslate nohighlight">\(t\)</span> solo depende de <span class="math notranslate nohighlight">\(\cos\theta^*\)</span> a través de <span class="math notranslate nohighlight">\(\mathrm{d}t = 2\,p^*_i\,p^*_f \; \mathrm{d}\cos\theta^*\)</span>, y
+<span class="math notranslate nohighlight">\(\mathrm{d}\Omega^* = \mathrm{d}\phi^* \, \mathrm{d}\cos\theta^*\)</span>, si <span class="math notranslate nohighlight">\(|M_{fi}|^2\)</span> no depende del azimut la sección eficaz
+diferencial en <span class="math notranslate nohighlight">\(t\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\frac{\mathrm{d}\sigma}{\mathrm{d}t} = \frac{|M_{fi}|^2}{64 \pi \, s \, p^{*2}_i}
+}
+\]</div>
+<p>que es invariante Lorentz, y es la forma que se usa en la práctica.</p>
+</section>
+</section>
+<section id="tres-cuerpos-y-la-regla-de-sargent">
+<h2>7. Tres cuerpos y la regla de Sargent<a class="headerlink" href="#tres-cuerpos-y-la-regla-de-sargent" title="Permalink to this heading">#</a></h2>
+<section id="el-espectro-beta">
+<h3>7.1. El espectro <span class="math notranslate nohighlight">\(\beta\)</span><a class="headerlink" href="#el-espectro-beta" title="Permalink to this heading">#</a></h3>
+<p>En la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> de un núcleo, <span class="math notranslate nohighlight">\(N \to N' + e + \bar\nu_e\)</span>, el núcleo hijo se lleva el momento
+que haga falta pero apenas energía (es miles de veces más pesado). La energía disponible,
+<span class="math notranslate nohighlight">\(E_0 = E_e + E_\nu\)</span> (la energía <strong>total</strong> del electrón en el punto final, <span class="math notranslate nohighlight">\(E_0 = Q + m_e\)</span>), se reparte entre
+el electrón y el neutrino, y la delta de momento se come la integral del núcleo. Con la regla de oro
+(sección 6.1) y un elemento de matriz constante, <span class="math notranslate nohighlight">\(T\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{d}\Gamma = 2\pi\,|T|^2\,\frac{\mathrm{d}N}{\mathrm{d}E_0}, \qquad
+\mathrm{d}N = \frac{4\pi p_e^2\,\mathrm{d}p_e}{(2\pi)^3}\,\frac{4\pi p_\nu^2\,\mathrm{d}p_\nu}{(2\pi)^3} .
+\]</div>
+<p>A <span class="math notranslate nohighlight">\(p_e\)</span> fijo, <span class="math notranslate nohighlight">\(E_\nu = p_\nu = E_0 - E_e\)</span> y <span class="math notranslate nohighlight">\(\mathrm{d}p_\nu/\mathrm{d}E_0 = 1\)</span>, así que</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\frac{\mathrm{d}\Gamma}{\mathrm{d}p_e} = \frac{|T|^2}{2\pi^3}\; p_e^2\,(E_0 - E_e)^2
+}
+\]</div>
+<p>Es la <strong>forma del espectro</strong> <span class="math notranslate nohighlight">\(\beta\)</span>: nula en <span class="math notranslate nohighlight">\(p_e = 0\)</span> y en el punto final, con un máximo en medio. (Falta
+la <strong>función de Fermi</strong>, que corrige la atracción coulombiana entre el electrón y el núcleo.)</p>
+</section>
+<section id="la-regla-de-sargent">
+<h3>7.2. La regla de Sargent<a class="headerlink" href="#la-regla-de-sargent" title="Permalink to this heading">#</a></h3>
+<p>La anchura total es la integral del espectro. Si <span class="math notranslate nohighlight">\(E_0 \gg m_e\)</span>, <span class="math notranslate nohighlight">\(E_e \simeq p_e\)</span> y, con <span class="math notranslate nohighlight">\(x = E_e/E_0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = \frac{|T|^2}{2\pi^3}\int_0^{E_0} E^2(E_0 - E)^2\,\mathrm{d}E = \frac{|T|^2}{2\pi^3}\,E_0^5\int_0^1 x^2(1 - x)^2\,\mathrm{d}x
+= \frac{|T|^2\,E_0^5}{60\,\pi^3} .
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\boxed{\Gamma \propto E_0^5}
+\]</div>
+<p>Es la <strong>regla de Sargent</strong>: la vida media de una desintegración débil va como la quinta potencia de la
+energía disponible. Es lo que explica, en el taller de la introducción, que el neutrón (<span class="math notranslate nohighlight">\(E_0 = 1.29\)</span> MeV)
+viva <span class="math notranslate nohighlight">\(10^8\)</span> veces más que el muón (<span class="math notranslate nohighlight">\(E_0 \simeq m_\mu\)</span>), con la misma interacción.</p>
+<p>La potencia cinco no es casual: en la teoría de Fermi <span class="math notranslate nohighlight">\(|T|^2 \propto G_F^2\)</span>, con dimensiones de GeV<span class="math notranslate nohighlight">\(^{-4}\)</span>, y
+<span class="math notranslate nohighlight">\(\Gamma\)</span> tiene dimensiones de energía; la única escala es <span class="math notranslate nohighlight">\(E_0\)</span>. El cálculo completo de la desintegración
+del muón da <span class="math notranslate nohighlight">\(\Gamma_\mu = G_F^2\,m_\mu^5/192\pi^3\)</span>. [MT11.5]</p>
+<p><strong>El punto final y la masa del neutrino.</strong> Si el neutrino tiene masa, <span class="math notranslate nohighlight">\(p_\nu^2 = (E_0 - E_e)^2 - m_\nu^2\)</span>, y el
+espectro cae a cero en <span class="math notranslate nohighlight">\(E_0 - m_\nu\)</span> con otra forma: es lo que mide KATRIN (taller de la
+introducción).</p>
+<p><em>Cuestiones:</em> comprueba <span class="math notranslate nohighlight">\(\int_0^1 x^2(1 - x)^2\,\mathrm{d}x = 1/30\)</span>. Con <span class="math notranslate nohighlight">\(\Gamma \propto E_0^5\)</span>, ¿cuánto cambia la vida media
+si la energía disponible se reduce a la mitad?</p>
+</section>
+</section>
+<section id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[MT] Mark Thomson, <em>Modern Particle Physics</em>, Cambridge University Press (2013): capítulo 2
+(cinemática relativista), 3 (regla de oro, desintegraciones y secciones eficaces) y 11.5 (desintegración
+del muón).</p></li>
+<li><p>[AB] Alessandro Bettini, <em>Introduction to Elementary Particle Physics</em>, Cambridge University Press:
+1.3–1.6.</p></li>
+<li><p>[PDG] Particle Data Group, <em>Kinematics</em> (reseña): fórmulas de dos y tres cuerpos, Mandelstam, rapidez.</p></li>
+<li><p>Formalismo de las transformaciones de Lorentz: <span class="xref myst">ext-trans-Lorentz</span>.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro_extension.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Extensión: Introducción</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ext-dirac.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Extensión: La ecuación de Dirac</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion">Notación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidades-naturales">1. Unidades naturales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#todo-en-potencias-del-gev">1.1. Todo en potencias del GeV</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-del-curso">1.2. Ejemplos del curso</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-transformacion-de-lorentz">2. La transformación de Lorentz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deduccion">2.1. Deducción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consecuencias">2.2. Consecuencias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-rapidez">2.3. La rapidez</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuadrivectores">3. Cuadrivectores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metrica-e-indices">3.1. Métrica e índices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-transformaciones-de-lorentz-como-matrices">3.2. Las transformaciones de Lorentz como matrices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuadrivelocidad-y-cuadrimomento">3.3. Cuadrivelocidad y cuadrimomento</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#una-medida-invariante-mathrm-d-3-bf-p-2e">3.4. Una medida invariante: <span class="math notranslate nohighlight">\(\mathrm{d}^3{\bf p}/2E\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invariantes-y-centro-de-masas">4. Invariantes y centro de masas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-invariante-s-y-la-velocidad-del-cm">4.1. El invariante <span class="math notranslate nohighlight">\(s\)</span> y la velocidad del CM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#del-cm-al-laboratorio">4.2. Del CM al laboratorio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-a-dos-cuerpos">4.3. Cinemática a dos cuerpos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-variables-de-mandelstam">4.4. Las variables de Mandelstam</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-en-colisionadores">5. Cinemática en colisionadores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#momento-transverso-rapidez-y-pseudorrapidez">5.1. Momento transverso, rapidez y pseudorrapidez</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#desintegracion-en-vuelo">5.2. Desintegración en vuelo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-la-regla-de-oro-a-gamma-y-sigma">6. De la regla de oro a <span class="math notranslate nohighlight">\(\Gamma\)</span> y <span class="math notranslate nohighlight">\(\sigma\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-regla-de-oro">6.1. La regla de oro</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contar-estados-de-donde-salen-delta-4-y-los-2-pi">6.2. Contar estados: de dónde salen <span class="math notranslate nohighlight">\(\delta^4\)</span> y los <span class="math notranslate nohighlight">\((2\pi)\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizacion-relativista-y-elemento-de-matriz">6.3. Normalización relativista y elemento de matriz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-formulas-generales-anchura-y-seccion-eficaz">6.4. Las fórmulas generales: anchura y sección eficaz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anchura-de-desintegracion-a-dos-cuerpos">6.5. Anchura de desintegración a dos cuerpos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seccion-eficaz-de-una-interaccion-de-dos-a-dos-cuerpos">6.6. Sección eficaz de una interacción de dos a dos cuerpos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-seccion-eficaz-diferencial-en-t">6.7. La sección eficaz diferencial en <span class="math notranslate nohighlight">\(t\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tres-cuerpos-y-la-regla-de-sargent">7. Tres cuerpos y la regla de Sargent</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-espectro-beta">7.1. El espectro <span class="math notranslate nohighlight">\(\beta\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-regla-de-sargent">7.2. La regla de Sargent</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por J. Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
