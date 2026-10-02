@@ -16,7 +16,7 @@ parts:
 
   # ------------------------------------------------------------ 1. Capítulos
   - caption: Capítulos
-    numbered: true
+    numbered: false      # la numeración de secciones va en los propios notebooks (1., 1.1.)
     chapters:
       - file: notebooks/introduccion.ipynb
       - file: notebooks/perspectivas.ipynb
