@@ -20,8 +20,8 @@ parts:
     chapters:
       - file: notebooks/introduccion.ipynb
       - file: notebooks/perspectivas.ipynb
+      - file: notebooks/leptones.ipynb
       # Pendientes de revisión:
-      # - file: notebooks/leptones.ipynb
       # - file: notebooks/quarks_hadrons.ipynb
       # - file: notebooks/sm.ipynb
 
@@ -32,7 +32,8 @@ parts:
       - file: notebooks/intro_extension.ipynb
       - file: notebooks/ext-cinematica.ipynb
       - file: notebooks/ext-dirac.ipynb
-      # - file: notebooks/ext-feynman.ipynb     (pendiente de revisión)
+      - file: notebooks/ext-quiral.ipynb
+      - file: notebooks/ext-feynman.ipynb
       # - file: notebooks/ext-dirac-old.ipynb   (versión anterior, sin publicar)
 
   # ------------------------------------------------------------ 3. Anexos: boletines
