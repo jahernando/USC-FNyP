@@ -26,7 +26,7 @@ from pathlib import Path
 import numpy as np
 
 SEED = 2627
-N_EVENTS = 5000                  # sucesos aceptados por muestra
+N_EVENTS = 10000                 # sucesos aceptados por muestra
 M_MU = 0.10566                   # GeV
 SAMPLES = {
     # nombre: (masa GeV, c*tau um, p0 GeV, n)
