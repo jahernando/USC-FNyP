@@ -23,7 +23,7 @@ Los apuntes se organizan en cinco temas:
    de la paridad y los neutrinos.
 4. **Quarks y hadrones: el color que no se ve**: los quarks, el color, el confinamiento, los hadrones y la
    mezcla de los quarks (la matriz CKM).
-5. **El Modelo Estándar: el $Z$ y el Higgs**: las corrientes neutras, la resonancia del $Z$ y el bosón de Higgs.
+5. **El Modelo Estándar: el vacío no está vacío**: las corrientes neutras, la resonancia del $Z$ y el bosón de Higgs.
 
 Se precisa un conocimiento previo de la cinemática relativista y de los conceptos básicos de Física Nuclear. También es conveniente conocer la ecuación de Dirac y una introducción a la Teoría Cuántica de Campos.
 
@@ -67,9 +67,9 @@ Detrás van los **anexos**, que no hace falta leer para seguir el curso:
 **Publicado**
 
 * Capítulos 1–5: Introducción a la Física de Partículas; Perspectivas: experimental y teórica; Leptones: la mano
-  izquierda de la Naturaleza; Quarks y hadrones: el color que no se ve; El Modelo Estándar: el $Z$ y el Higgs
-* Anexos, extensiones: Introducción; Cinemática relativista y espacio fásico; La ecuación de Dirac; La quiralidad;
-  Las simetrías internas, $U(1)$, $SU(2)$ y $SU(3)$; Diagramas de Feynman y propagadores; El Modelo Estándar
+  izquierda de la Naturaleza; Quarks y hadrones: el color que no se ve; El Modelo Estándar: el vacío no está vacío
+* Anexos, extensiones: Cinemática relativista y espacio fásico; La ecuación de Dirac; La quiralidad; Las simetrías
+  internas; Diagramas de Feynman y propagadores; El Modelo Estándar
 * Anexos, boletines: ¿Se desintegra el protón? El límite de Super-Kamiokande (versión simple); boletín I,
   cinemática relativista; boletín II, observables, y su ejercicio guiado, $H \to 4$ leptones con los datos abiertos
   de CMS (todos con soluciones)
