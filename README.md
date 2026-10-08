@@ -8,7 +8,8 @@
 This repository contains Python-Notebooks and Python code for the lectures
 on "Introduction to Particle Physics" of the "Nuclear and Particle Physics" introductory course of the University of Santiago de Compostela.
 
-Index and links to the material of the course at *indice.ipynb*
+The notes are published as a Jupyter Book at https://jahernando.github.io/USC-FNyP/ (chapters, extensions and
+exercise sheets; the table of contents is `_toc.yml`). Old or unused notebooks are kept in `notebooks/archive/`.
 
 Click here to start your interactive session (be patient!):
 

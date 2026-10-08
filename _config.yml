@@ -13,8 +13,8 @@ execute:
   timeout: 120
 
 # Construye SOLO los ficheros listados en _toc.yml.
-# El resto de notebooks (store/, probs/, deteccion, divulgacion, extensiones sin
-# revisar...) se quedan en el repo pero no entran en el Book.
+# El resto de notebooks (los antiguos o sin uso, en notebooks/archive/, y los que están
+# en preparación) se quedan en el repo pero no entran en el Book.
 only_build_toc_files: true
 
 # Define the name of the latex output file for PDF builds

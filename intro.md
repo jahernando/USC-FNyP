@@ -6,7 +6,7 @@ Autor: José Ángel Hernando Morata
 
 Correo electrónico: jose.hernando@usc.es
 
-Versión: Septiembre 2026
+Versión: Octubre 2026
 
 -----
 
@@ -21,8 +21,9 @@ Los apuntes se organizan en cinco temas:
    análisis) y cómo se calcula (ecuación de Dirac, simetría *gauge*, diagramas de Feynman).
 3. **Leptones: la mano izquierda de la Naturaleza**: los leptones, la interacción débil, la violación
    de la paridad y los neutrinos.
-4. **Hadrones: prisioneros del color**: los quarks, el color, el confinamiento y los hadrones.
-5. **El Modelo Estándar: la simetría y su ruptura**: la teoría electrodébil y el bosón de Higgs.
+4. **Quarks y hadrones: el color que no se ve**: los quarks, el color, el confinamiento, los hadrones y la
+   mezcla de los quarks (la matriz CKM).
+5. **El Modelo Estándar: el $Z$ y el Higgs**: las corrientes neutras, la resonancia del $Z$ y el bosón de Higgs.
 
 Se precisa un conocimiento previo de la cinemática relativista y de los conceptos básicos de Física Nuclear. También es conveniente conocer la ecuación de Dirac y una introducción a la Teoría Cuántica de Campos.
 
@@ -41,7 +42,7 @@ Además del texto principal, los capítulos usan unos pocos elementos, siempre c
 | **Taller** | `[>]` | un ejercicio para hacer tú, en una caja; muchos llevan código que se ejecuta en el notebook |
 | **Solución** | desplegable «Solución» | la respuesta del taller, plegada: ábrela después de intentarlo |
 | **Ficha** | `[i]` Ficha, desplegable | un recordatorio o una definición al margen (notación, unidades, tablas de consulta); se abre si hace falta y no interrumpe el hilo |
-| **Mirador** | `[+]` Mirador | una mirada más allá del hilo: adelantos de otros temas, conexiones con física de más nivel o con preguntas abiertas. Si es un párrafo, va en cursiva; si es más largo, se abre con «Mirador: título» y se cierra con «Fin del mirador». Se puede saltar sin perder el hilo |
+| **Mirador** | `[+]` Mirador | una mirada más allá del hilo: adelantos de otros temas, conexiones con física de más nivel o con preguntas abiertas. Si es un párrafo, va en cursiva; si es más largo, va en un desplegable «[+] Mirador — título». Se puede saltar sin perder el hilo |
 | **Cita** | bloque sangrado con autor y obra | palabras textuales de quienes hicieron la física |
 | **¿Qué ves?** | en negrita, tras una figura o una tabla | la lectura guiada de lo que se acaba de mostrar |
 
@@ -63,25 +64,20 @@ Detrás van los **anexos**, que no hace falta leer para seguir el curso:
   enlaces «Ver ext-…, sección…».
 * **Boletines**: los ejercicios de cada capítulo, resueltos en notebooks.
 
-**De momento se publican los dos primeros capítulos, sus extensiones y los primeros boletines**, que son
-los que están revisados; el resto se irá incorporando conforme se cure.
-
 **Publicado**
 
-* Capítulo 1: Introducción a la Física de Partículas
-* Capítulo 2: Perspectivas: experimental y teórica
-* Anexos, extensiones: Introducción; Cinemática relativista y espacio fásico; La ecuación de Dirac
+* Capítulos 1–5: Introducción a la Física de Partículas; Perspectivas: experimental y teórica; Leptones: la mano
+  izquierda de la Naturaleza; Quarks y hadrones: el color que no se ve; El Modelo Estándar: el $Z$ y el Higgs
+* Anexos, extensiones: Introducción; Cinemática relativista y espacio fásico; La ecuación de Dirac; La quiralidad;
+  Las simetrías internas, $U(1)$, $SU(2)$ y $SU(3)$; Diagramas de Feynman y propagadores; El Modelo Estándar
 * Anexos, boletines: ¿Se desintegra el protón? El límite de Super-Kamiokande (versión simple); boletín I,
-  cinemática relativista (con soluciones)
+  cinemática relativista; boletín II, observables, y su ejercicio guiado, $H \to 4$ leptones con los datos abiertos
+  de CMS (todos con soluciones)
 
 **En preparación**
 
-* Capítulos 3–5: Leptones: la mano izquierda de la Naturaleza; Hadrones: prisioneros del color;
-  El Modelo Estándar: la simetría y su ruptura
-* Anexos, extensiones: Diagramas de Feynman y propagadores
-
-Los capítulos, extensiones y boletines en preparación se mencionan en los capítulos publicados;
-esas referencias aparecen como texto sin enlace hasta que se publiquen.
+* Anexos, boletines: boletín III, la perspectiva experimental (aceleradores, interacción con la materia, detectores
+  y del dato al resultado)
 
 ```{tableofcontents}
 ```
