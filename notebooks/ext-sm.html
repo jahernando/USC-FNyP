@@ -1,0 +1,1359 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Extensión: El Modelo Estándar &#8212; Introducción a la Física de Partículas - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/ext-sm';</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="¿Se desintegra el protón?" href="bols/boletin_inicio_2627.html" />
+    <link rel="prev" title="Extensión: Diagramas de Feynman y propagadores" href="ext-feynman.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Introducción a la Física de Partículas - USC - Home"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Introducción a la Física de Partículas - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Capítulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Física de Partículas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="perspectivas.html">Perspectivas: experimental y teórica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leptones.html">Leptones: la mano izquierda de la Naturaleza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quarks_hadrons.html">Quarks y hadrones: el color que no se ve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sm.html">El Modelo Estándar: el vacío no está vacío</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: extensiones</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ext-cinematica.html">Extensión: Cinemática relativista y espacio fásico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-dirac.html">Extensión: La ecuación de Dirac</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-quiral.html">Extensión: La quiralidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-grupos.html">Extensión: Las simetrías internas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-feynman.html">Extensión: Diagramas de Feynman y propagadores</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Extensión: El Modelo Estándar</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: boletines</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_inicio_2627.html">¿Se desintegra el protón?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_I_2627.html">Partículas — boletín I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_II_2627.html">Partículas — boletín II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_II_2627_higgs_4l.html">Un pico sobre el fondo</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/main?urlpath=tree/./notebooks/ext-sm.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jahernando/USC-FNyP/blob/main/./notebooks/ext-sm.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/ext-sm.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/ext-sm.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Extensión: El Modelo Estándar</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion">Notación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-u-1-a-su-2-times-u-1">1. De <span class="math notranslate nohighlight">\(U(1)\)</span> a <span class="math notranslate nohighlight">\(SU(2) \times U(1)\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lo-que-hay-que-reproducir">1.1. Lo que hay que reproducir</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dobletes-y-singletes">1.2. Dobletes y singletes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-hipercarga">1.3. La hipercarga</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-termino-cinetico-y-sus-simetrias-globales">1.4. El término cinético y sus simetrías globales</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#las-dos-simetrias-globales">Las dos simetrías globales</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#de-global-a-local-cuatro-bosones">1.5. De global a local: cuatro bosones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-bosones-fisicos-y-sus-acoplos">2. Los bosones físicos y sus acoplos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-w-pm">2.1. Los <span class="math notranslate nohighlight">\(W^\pm\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-mezcla-el-z-y-el-foton">2.2. La mezcla: el <span class="math notranslate nohighlight">\(Z\)</span> y el fotón</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-acoplos-del-z">2.3. Los acoplos del <span class="math notranslate nohighlight">\(Z\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-modelo-abeliano-de-higgs">3. El modelo abeliano de Higgs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-boson-con-masa-rompe-la-simetria">3.1. Un bosón con masa rompe la simetría</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-rotura">3.2. La rotura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-foton-se-come-el-goldstone">3.3. El fotón se come el Goldstone</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-doblete-de-higgs">4. El doblete de Higgs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-un-doblete">4.1. Por qué un doblete</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-masas-del-w-y-del-z">4.2. Las masas del <span class="math notranslate nohighlight">\(W\)</span> y del <span class="math notranslate nohighlight">\(Z\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lo-que-sale-ademas">4.3. Lo que sale además</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#las-masas-de-los-fermiones">5. Las masas de los fermiones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-electron">5.1. El electrón</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-quarks">5.2. Los quarks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tres-familias-de-donde-sale-la-ckm">5.3. Tres familias: de dónde sale la CKM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-potencial-desarrollado">6. El potencial desarrollado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-parametros">7. Los parámetros</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="extension-el-modelo-estandar">
+<h1>Extensión: El Modelo Estándar<a class="headerlink" href="#extension-el-modelo-estandar" title="Permalink to this heading">#</a></h1>
+<p>José A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Octubre 2026</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Configuración: el código auxiliar está en el paquete notebooks/fnyp/</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">fnyp</span>
+<span class="k">except</span> <span class="ne">ModuleNotFoundError</span><span class="p">:</span>      <span class="c1"># en Google Colab hay que traerse antes el repositorio</span>
+    <span class="o">!</span>git<span class="w"> </span>clone<span class="w"> </span>-q<span class="w"> </span>https://github.com/jahernando/USC-FNyP.git
+    <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span><span class="p">;</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'USC-FNyP/notebooks'</span><span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">fnyp.inicio</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Oct  8 13:39:09 2026
+</pre></div>
+</div>
+</div>
+</div>
+<section id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h2>
+<p>Esta extensión es el <strong>desarrollo matemático</strong> de lo que el tema del <a class="reference internal" href="sm.html"><span class="doc std std-doc">Modelo Estándar</span></a> cuenta
+sin fórmulas de más: de dónde salen el <span class="math notranslate nohighlight">\(W\)</span>, el <span class="math notranslate nohighlight">\(Z\)</span> y el fotón, por qué el <span class="math notranslate nohighlight">\(Z\)</span> se acopla como se acopla, y cómo el campo
+de Higgs da masa a los bosones y a los fermiones. Parte de la simetría <em>gauge</em> de <a class="reference internal" href="perspectivas.html"><span class="doc std std-doc">perspectivas</span></a>
+(sección 2.4) y de la quiralidad de <a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>. Tiene siete secciones:</p>
+<ol class="arabic simple">
+<li><p><strong>De <span class="math notranslate nohighlight">\(U(1)\)</span> a <span class="math notranslate nohighlight">\(SU(2) \times U(1)\)</span>.</strong> <em>¿Qué simetría y con qué cargas?</em> Dobletes, hipercarga y cuatro bosones.</p></li>
+<li><p><strong>Los bosones físicos y sus acoplos.</strong> <em>¿De dónde salen el <span class="math notranslate nohighlight">\(W^\pm\)</span>, el <span class="math notranslate nohighlight">\(Z\)</span> y el fotón?</em> La mezcla, <span class="math notranslate nohighlight">\(e = g\sin\theta_W\)</span> y los
+<span class="math notranslate nohighlight">\(c_L\)</span>, <span class="math notranslate nohighlight">\(c_R\)</span> del tema.</p></li>
+<li><p><strong>El modelo abeliano de Higgs.</strong> <em>¿Cómo coge masa un bosón sin romper la simetría?</em> Un fotón que se come un bosón
+de Goldstone.</p></li>
+<li><p><strong>El doblete de Higgs.</strong> <em>¿Y el <span class="math notranslate nohighlight">\(W\)</span> y el <span class="math notranslate nohighlight">\(Z\)</span>?</em> <span class="math notranslate nohighlight">\(m_W = gv/2\)</span>, <span class="math notranslate nohighlight">\(m_Z = m_W/\cos\theta_W\)</span>, y el fotón sin masa.</p></li>
+<li><p><strong>Las masas de los fermiones.</strong> <em>¿Y el electrón y los quarks?</em> Los acoplos de Yukawa, y de ahí la CKM.</p></li>
+<li><p><strong>El potencial desarrollado.</strong> <em>¿Qué más trae el Higgs?</em> Su masa y sus autoacoplos.</p></li>
+<li><p><strong>Los parámetros.</strong></p></li>
+</ol>
+<section id="notacion">
+<h3>Notación<a class="headerlink" href="#notacion" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Unidades naturales y la métrica de <a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, <span class="math notranslate nohighlight">\(\mathrm{diag}(1, -1, -1, -1)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(s_W \equiv \sin\theta_W\)</span>, <span class="math notranslate nohighlight">\(c_W \equiv \cos\theta_W\)</span>. Acoplos <em>gauge</em>: <span class="math notranslate nohighlight">\(g\)</span> (el <span class="math notranslate nohighlight">\(g_W\)</span> del tema) para <span class="math notranslate nohighlight">\(SU(2)\)</span> y <span class="math notranslate nohighlight">\(g'\)</span> para <span class="math notranslate nohighlight">\(U(1)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(T_a = \sigma_a/2\)</span>, los generadores de <span class="math notranslate nohighlight">\(SU(2)\)</span> en un doblete; <span class="math notranslate nohighlight">\(T_\pm = T_1 \pm iT_2\)</span>, con <span class="math notranslate nohighlight">\(T_+ = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix}\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\psi_L = P_L\psi\)</span>, <span class="math notranslate nohighlight">\(\psi_R = P_R\psi\)</span>, con <span class="math notranslate nohighlight">\(P_{L,R} = \frac{1}{2}(1 \mp \gamma^5)\)</span> (<a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>, sección 2).</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Phi\)</span>: el doblete de Higgs. <span class="math notranslate nohighlight">\(v = 246\)</span> GeV, el valor del campo en el vacío. <span class="math notranslate nohighlight">\(h\)</span>: el bosón de Higgs.</p></li>
+</ul>
+<details>
+<summary><b>[i] Ficha — El lagrangiano en tres líneas</b></summary>
+<p>El tema usa ecuaciones de movimiento; aquí es más cómodo el <strong>lagrangiano</strong>, <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>, del que salen por
+Euler-Lagrange. Basta con saber leer tres tipos de término:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>término</p></th>
+<th class="head text-left"><p>qué es</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\psi\,i\gamma^\mu\partial_\mu\psi\)</span>, <span class="math notranslate nohighlight">\(\ \frac{1}{2}\partial_\mu h\,\partial^\mu h\)</span>, <span class="math notranslate nohighlight">\(\ -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}\)</span></p></td>
+<td class="text-left"><p>cinéticos: propagación libre</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(-m\,\bar\psi\psi\)</span>, <span class="math notranslate nohighlight">\(\ -\frac{1}{2}m_h^2 h^2\)</span>, <span class="math notranslate nohighlight">\(\ +\frac{1}{2}m_Z^2 Z_\mu Z^\mu\)</span>, <span class="math notranslate nohighlight">\(\ +m_W^2 W^+_\mu W^{-\mu}\)</span></p></td>
+<td class="text-left"><p><strong>de masa</strong>: cuadráticos en un campo</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(-q\,\bar\psi\gamma^\mu\psi\,A_\mu\)</span>, <span class="math notranslate nohighlight">\(\ y\,h\,\bar\psi\psi\)</span>, <span class="math notranslate nohighlight">\(\ h\,Z_\mu Z^\mu\)</span>, …</p></td>
+<td class="text-left"><p><strong>de interacción</strong>: tres o más campos, un vértice</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Un término de masa de un campo complejo (<span class="math notranslate nohighlight">\(W^\pm\)</span>) va sin el <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>. La interacción con el fotón sale de cambiar
+<span class="math notranslate nohighlight">\(\partial_\mu \to D_\mu = \partial_\mu + iqA_\mu\)</span> en el término cinético, que es lo que pide la simetría <em>gauge</em> (perspectivas, 2.4).</p>
+</details></section>
+</section>
+<section id="de-u-1-a-su-2-times-u-1">
+<h2>1. De <span class="math notranslate nohighlight">\(U(1)\)</span> a <span class="math notranslate nohighlight">\(SU(2) \times U(1)\)</span><a class="headerlink" href="#de-u-1-a-su-2-times-u-1" title="Permalink to this heading">#</a></h2>
+<section id="lo-que-hay-que-reproducir">
+<h3>1.1. Lo que hay que reproducir<a class="headerlink" href="#lo-que-hay-que-reproducir" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>El <span class="math notranslate nohighlight">\(W\)</span> solo se acopla a la parte <strong>izquierda</strong> de los fermiones, y siempre a <strong>parejas</strong>: <span class="math notranslate nohighlight">\(\nu_e \leftrightarrow e\)</span>, <span class="math notranslate nohighlight">\(u \leftrightarrow d\)</span>.</p></li>
+<li><p>El fotón se acopla igual a las dos partes, con la carga.</p></li>
+<li><p>Existe un bosón neutro más, el <span class="math notranslate nohighlight">\(Z\)</span>, que ve las dos partes con intensidades distintas.</p></li>
+</ul>
+</section>
+<section id="dobletes-y-singletes">
+<h3>1.2. Dobletes y singletes<a class="headerlink" href="#dobletes-y-singletes" title="Permalink to this heading">#</a></h3>
+<p>Las partes izquierdas forman <strong>dobletes</strong> de isoespín débil, <span class="math notranslate nohighlight">\(T = \frac{1}{2}\)</span>; las derechas, <strong>singletes</strong>, <span class="math notranslate nohighlight">\(T = 0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+L = \begin{pmatrix} \nu_e \\ e \end{pmatrix}_L, \quad e_R; \qquad
+Q_L = \begin{pmatrix} u \\ d \end{pmatrix}_L, \quad u_R, \quad d_R .
+\end{split}\]</div>
+<p>La simetría <span class="math notranslate nohighlight">\(SU(2)_L\)</span> gira los dos miembros de cada doblete entre sí, <span class="math notranslate nohighlight">\(L \to e^{i\alpha_a(x) T_a}L\)</span>, y deja quietos los
+singletes. Una partícula y su compañera de doblete son, para esta simetría, lo mismo.</p>
+<p><strong>Sin masa, por ahora</strong>: con esta asignación, ningún fermión puede tener masa (sección 1.4).</p>
+</section>
+<section id="la-hipercarga">
+<h3>1.3. La hipercarga<a class="headerlink" href="#la-hipercarga" title="Permalink to this heading">#</a></h3>
+<p>El fotón no puede ser el bosón de la <span class="math notranslate nohighlight">\(SU(2)\)</span>: se acopla igual a <span class="math notranslate nohighlight">\(e_L\)</span> y a <span class="math notranslate nohighlight">\(e_R\)</span>, que están en sitios distintos. Hace falta
+otra <span class="math notranslate nohighlight">\(U(1)\)</span>, la de <strong>hipercarga</strong> <span class="math notranslate nohighlight">\(Y\)</span>, con su propio bosón, <span class="math notranslate nohighlight">\(B_\mu\)</span>. La carga eléctrica es</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{Q = T_3 + Y}
+\]</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\nu_L\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(e_L\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(e_R\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(u_L\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(d_L\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(u_R\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(d_R\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\Phi\)</span> (sección 4)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(T_3\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\frac{1}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\frac{1}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\pm\frac{1}{2}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(Y\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\frac{1}{6}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\frac{1}{6}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\frac{2}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\frac{1}{2}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(Q\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\frac{2}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\frac{2}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+1\)</span>, <span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Los dos miembros de un doblete tienen la misma <span class="math notranslate nohighlight">\(Y\)</span> (la <span class="math notranslate nohighlight">\(U(1)\)</span> no distingue arriba de abajo); su carga difiere en una
+unidad, la que lleva el <span class="math notranslate nohighlight">\(W\)</span>.</p>
+</section>
+<section id="el-termino-cinetico-y-sus-simetrias-globales">
+<h3>1.4. El término cinético y sus simetrías globales<a class="headerlink" href="#el-termino-cinetico-y-sus-simetrias-globales" title="Permalink to this heading">#</a></h3>
+<p>Sin masa, el lagrangiano libre de la primera familia de leptones, escrito con el doblete y el singlete, es</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}_0 = \bar L\, i\gamma^\mu\partial_\mu L + \bar e_R\, i\gamma^\mu\partial_\mu e_R .
+\]</div>
+<p>El primer término es un producto escalar en el espacio del doblete, con <span class="math notranslate nohighlight">\(\bar L = (\bar\nu_L,\ \bar e_L)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\bar L\, i\gamma^\mu\partial_\mu L
+= (\bar\nu_L,\ \bar e_L)\; i\gamma^\mu\partial_\mu \begin{pmatrix} \nu_L \\ e_L \end{pmatrix}
+= \bar\nu_L\, i\gamma^\mu\partial_\mu\nu_L + \bar e_L\, i\gamma^\mu\partial_\mu e_L .
+\end{split}\]</div>
+<p>Y como el término vectorial no mezcla las quiralidades (<a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>, sección 9.3),
+<span class="math notranslate nohighlight">\(\bar e\, i\gamma^\mu\partial_\mu e = \bar e_L\, i\gamma^\mu\partial_\mu e_L + \bar e_R\, i\gamma^\mu\partial_\mu e_R\)</span>. Sumando:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\mathcal{L}_0 = \bar\nu_L\, i\gamma^\mu\partial_\mu\nu_L + \bar e\, i\gamma^\mu\partial_\mu e
+}
+\]</div>
+<p>un neutrino a izquierdas y un electrón de Dirac, los dos sin masa: la misma física de siempre, agrupada de otra
+manera. La ventaja es que ahora se ven las simetrías.</p>
+<section id="las-dos-simetrias-globales">
+<h4>Las dos simetrías globales<a class="headerlink" href="#las-dos-simetrias-globales" title="Permalink to this heading">#</a></h4>
+<p>Con <span class="math notranslate nohighlight">\(\vec\alpha\)</span> y <span class="math notranslate nohighlight">\(\beta\)</span> <strong>constantes</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+SU(2):\quad L \to e^{i\vec\alpha\cdot\vec T}\,L, \quad e_R \to e_R ;
+\qquad\qquad
+U(1)_Y:\quad L \to e^{iY_L\beta}\,L, \quad e_R \to e^{iY_R\beta}\,e_R
+}
+\]</div>
+<p><strong><span class="math notranslate nohighlight">\(SU(2)\)</span>.</strong> Un giro en el espacio del doblete, <span class="math notranslate nohighlight">\(L \to U L\)</span>, con <span class="math notranslate nohighlight">\(U = e^{i\alpha_a T_a}\)</span> unitaria y constante, y <span class="math notranslate nohighlight">\(e_R \to e_R\)</span>. <span class="math notranslate nohighlight">\(U\)</span> actúa
+sobre el índice del doblete, no sobre el del espinor: conmuta con las <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>, y <span class="math notranslate nohighlight">\(\bar L \to \bar L\, U^\dagger\)</span>. Entonces</p>
+<div class="math notranslate nohighlight">
+\[
+\bar L\, i\gamma^\mu\partial_\mu L \;\to\; \bar L\, U^\dagger\, i\gamma^\mu\partial_\mu (U L) = \bar L\, U^\dagger U\, i\gamma^\mu\partial_\mu L = \bar L\, i\gamma^\mu\partial_\mu L .
+\]</div>
+<p>Es invariante, aunque <span class="math notranslate nohighlight">\(U\)</span> mezcle <span class="math notranslate nohighlight">\(\nu_L\)</span> con <span class="math notranslate nohighlight">\(e_L\)</span>: <strong>para esta simetría, el neutrino y la parte izquierda del electrón son el
+mismo objeto</strong>. Cada término por separado, <span class="math notranslate nohighlight">\(\bar\nu_L\,i\gamma\partial\nu_L\)</span> o <span class="math notranslate nohighlight">\(\bar e_L\,i\gamma\partial e_L\)</span>, no lo es.</p>
+<p><strong><span class="math notranslate nohighlight">\(U(1)_Y\)</span>.</strong> Un cambio de fase, con la hipercarga de cada campo: <span class="math notranslate nohighlight">\(L \to e^{iY_L\beta}L\)</span>, <span class="math notranslate nohighlight">\(e_R \to e^{iY_R\beta}e_R\)</span>, con <span class="math notranslate nohighlight">\(Y_L = -\frac{1}{2}\)</span> e
+<span class="math notranslate nohighlight">\(Y_R = -1\)</span>. Cada término es invariante por separado: la fase de <span class="math notranslate nohighlight">\(\psi\)</span> se cancela con la de <span class="math notranslate nohighlight">\(\bar\psi\)</span>.</p>
+<p><strong>El término de masa no es invariante.</strong> <span class="math notranslate nohighlight">\(m\,\bar e e = m(\bar e_L e_R + \bar e_R e_L)\)</span>:</p>
+<ul class="simple">
+<li><p>bajo <span class="math notranslate nohighlight">\(SU(2)\)</span>, <span class="math notranslate nohighlight">\(e_L\)</span> se mezcla con <span class="math notranslate nohighlight">\(\nu_L\)</span> y <span class="math notranslate nohighlight">\(e_R\)</span> no: <span class="math notranslate nohighlight">\(\bar e_L e_R\)</span> no se transforma en sí mismo;</p></li>
+<li><p>bajo <span class="math notranslate nohighlight">\(U(1)_Y\)</span>, <span class="math notranslate nohighlight">\(\bar e_L e_R \to e^{i(Y_R - Y_L)\beta}\,\bar e_L e_R = e^{-i\beta/2}\,\bar e_L e_R\)</span>: las dos hipercargas no se cancelan.</p></li>
+</ul>
+<p>Por eso, en <span class="math notranslate nohighlight">\(SU(2) \times U(1)\)</span>, <strong>todos los fermiones empiezan sin masa</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — ¿Qué es invariante?</b></p>
+<p>Bajo <span class="math notranslate nohighlight">\(SU(2)\)</span> y <span class="math notranslate nohighlight">\(U(1)_Y\)</span> globales:</p>
+<ol class="arabic simple">
+<li><p>Comprueba que <span class="math notranslate nohighlight">\(\bar e_R\, i\gamma^\mu\partial_\mu e_R\)</span> es invariante bajo las dos.</p></li>
+<li><p>¿Qué fase coge <span class="math notranslate nohighlight">\(\bar e_R e_L\)</span> bajo <span class="math notranslate nohighlight">\(U(1)_Y\)</span>? ¿Y el término completo <span class="math notranslate nohighlight">\(m\,\bar e e\)</span>?</p></li>
+<li><p>Alguien propone como masa <span class="math notranslate nohighlight">\(m\,\bar L L\)</span>, que sí es invariante bajo <span class="math notranslate nohighlight">\(SU(2)\)</span> y <span class="math notranslate nohighlight">\(U(1)_Y\)</span>. ¿Por qué no sirve? (Pista:
+<a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>, sección 9.2.)</p></li>
+<li><p>¿Qué carga <span class="math notranslate nohighlight">\(Y\)</span> tendría que tener un campo <span class="math notranslate nohighlight">\(\Phi\)</span>, doblete de <span class="math notranslate nohighlight">\(SU(2)\)</span>, para que <span class="math notranslate nohighlight">\(\bar L\,\Phi\,e_R\)</span> fuera invariante? (Es la
+sección 5.)</p></li>
+</ol>
+</div><details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(e_R\)</span> es singlete: <span class="math notranslate nohighlight">\(SU(2)\)</span> no lo toca. Bajo <span class="math notranslate nohighlight">\(U(1)_Y\)</span>, <span class="math notranslate nohighlight">\(e_R \to e^{-i\beta}e_R\)</span> y <span class="math notranslate nohighlight">\(\bar e_R \to e^{+i\beta}\bar e_R\)</span>: las fases se cancelan.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\bar e_R e_L \to e^{i(Y_L - Y_R)\beta}\,\bar e_R e_L = e^{+i\beta/2}\,\bar e_R e_L\)</span>, la fase opuesta a la de <span class="math notranslate nohighlight">\(\bar e_L e_R\)</span>. La suma no es invariante: cada
+sumando coge una fase distinta.</p></li>
+<li><p>Porque es cero: <span class="math notranslate nohighlight">\(\bar\psi_L\psi_L = \bar\psi P_R P_L\psi = 0\)</span>. El escalar solo existe entre una parte izquierda y una derecha; una masa
+tiene que unir un doblete con un singlete.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\bar L\)</span> tiene <span class="math notranslate nohighlight">\(Y = +\frac{1}{2}\)</span> y <span class="math notranslate nohighlight">\(e_R\)</span>, <span class="math notranslate nohighlight">\(Y = -1\)</span>: hace falta <span class="math notranslate nohighlight">\(Y_\Phi = +\frac{1}{2}\)</span>. Y un doblete por otro doblete da un invariante de
+<span class="math notranslate nohighlight">\(SU(2)\)</span>. Es el doblete de Higgs.</p></li>
+</ol>
+</details></section>
+</section>
+<section id="de-global-a-local-cuatro-bosones">
+<h3>1.5. De global a local: cuatro bosones<a class="headerlink" href="#de-global-a-local-cuatro-bosones" title="Permalink to this heading">#</a></h3>
+<p>Si los parámetros dependen del punto,</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+SU(2):\quad L \to e^{i\vec\alpha(x)\cdot\vec T}\,L, \quad e_R \to e_R ;
+\qquad\qquad
+U(1)_Y:\quad L \to e^{iY_L\beta(x)}\,L, \quad e_R \to e^{iY_R\beta(x)}\,e_R
+}
+\]</div>
+<p>el término cinético deja de ser invariante. Con <span class="math notranslate nohighlight">\(U(x) = e^{i\vec\alpha(x)\cdot\vec T}\)</span>: <span class="math notranslate nohighlight">\(\partial_\mu(UL) = U\,\partial_\mu L + (\partial_\mu U)\,L\)</span>, y sobra
+el segundo sumando. Como en perspectivas, se arregla con una <strong>derivada covariante</strong>, ahora con un bosón por cada
+generador: tres <span class="math notranslate nohighlight">\(W^a_\mu\)</span> para <span class="math notranslate nohighlight">\(SU(2)\)</span> y uno, <span class="math notranslate nohighlight">\(B_\mu\)</span>, para <span class="math notranslate nohighlight">\(U(1)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+D_\mu = \partial_\mu + i g\,T_a W^a_\mu + i g'\,Y B_\mu
+}
+\]</div>
+<p>Para un singlete, <span class="math notranslate nohighlight">\(T_a = 0\)</span> y solo queda <span class="math notranslate nohighlight">\(B\)</span>. Los términos cinéticos <span class="math notranslate nohighlight">\(\bar\psi\,i\gamma^\mu D_\mu\psi\)</span> de todos los fermiones dan sus
+interacciones:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}_{\text{int}} = -\bar\psi\,\gamma^\mu\left(g\,T_a W^a_\mu + g'\,Y B_\mu\right)\psi .
+\]</div>
+<p>Dos acoplos, <span class="math notranslate nohighlight">\(g\)</span> y <span class="math notranslate nohighlight">\(g'\)</span>, para todas las interacciones electrodébiles de todos los fermiones.</p>
+</section>
+</section>
+<section id="los-bosones-fisicos-y-sus-acoplos">
+<h2>2. Los bosones físicos y sus acoplos<a class="headerlink" href="#los-bosones-fisicos-y-sus-acoplos" title="Permalink to this heading">#</a></h2>
+<section id="los-w-pm">
+<h3>2.1. Los <span class="math notranslate nohighlight">\(W^\pm\)</span><a class="headerlink" href="#los-w-pm" title="Permalink to this heading">#</a></h3>
+<p>Con <span class="math notranslate nohighlight">\(T_\pm = T_1 \pm iT_2\)</span>, los dos primeros bosones se combinan en</p>
+<div class="math notranslate nohighlight">
+\[
+T_1 W^1 + T_2 W^2 = \frac{1}{\sqrt{2}}\left(T_+ W^+ + T_- W^-\right), \qquad
+W^\pm \equiv \frac{1}{\sqrt{2}}\left(W^1 \mp iW^2\right) .
+\]</div>
+<p><span class="math notranslate nohighlight">\(T_+\)</span> sube del miembro de abajo al de arriba. Para la primera familia de leptones:</p>
+<div class="math notranslate nohighlight">
+\[
+-\frac{g}{\sqrt{2}}\,\bar L\gamma^\mu T_+ L\,W^+_\mu = -\frac{g}{\sqrt{2}}\,\bar\nu_L\gamma^\mu e_L\,W^+_\mu ,
+\]</div>
+<p>el vértice <span class="math notranslate nohighlight">\(e \to \nu_e\)</span> con un <span class="math notranslate nohighlight">\(W\)</span>, con acoplo <span class="math notranslate nohighlight">\(g/\sqrt{2}\)</span> y <strong>solo a izquierdas</strong>: la violación máxima de la paridad sale por
+construcción. Es el vértice de <a class="reference internal" href="leptones.html"><span class="doc std std-doc">leptones</span></a>.</p>
+</section>
+<section id="la-mezcla-el-z-y-el-foton">
+<h3>2.2. La mezcla: el <span class="math notranslate nohighlight">\(Z\)</span> y el fotón<a class="headerlink" href="#la-mezcla-el-z-y-el-foton" title="Permalink to this heading">#</a></h3>
+<p>Quedan dos bosones neutros, <span class="math notranslate nohighlight">\(W^3\)</span> y <span class="math notranslate nohighlight">\(B\)</span>, que se acoplan a <span class="math notranslate nohighlight">\(T_3\)</span> y a <span class="math notranslate nohighlight">\(Y\)</span>. Ninguno de los dos es el fotón: los físicos son
+dos combinaciones ortogonales, giradas un ángulo <span class="math notranslate nohighlight">\(\theta_W\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\boxed{
+\begin{pmatrix} Z \\ A \end{pmatrix} =
+\begin{pmatrix} c_W &amp; -s_W \\ s_W &amp; c_W \end{pmatrix}
+\begin{pmatrix} W^3 \\ B \end{pmatrix}
+}
+\qquad \Longleftrightarrow \qquad
+W^3 = c_W Z + s_W A, \quad B = -s_W Z + c_W A .
+\end{split}\]</div>
+<p>Sustituyendo en la parte neutra de <span class="math notranslate nohighlight">\(D_\mu\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+g\,T_3 W^3 + g' Y B = A\left(g s_W T_3 + g' c_W Y\right) + Z\left(g c_W T_3 - g' s_W Y\right) .
+\]</div>
+<p><strong>El fotón tiene que acoplarse a la carga</strong>, <span class="math notranslate nohighlight">\(eQ = e(T_3 + Y)\)</span>. Eso exige</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+g\,s_W = g'\,c_W = e
+}
+\qquad \Longrightarrow \qquad \tan\theta_W = \frac{g'}{g}, \quad g = \frac{e}{s_W} .
+\]</div>
+<p>Es la relación <span class="math notranslate nohighlight">\(g_W = e/\sin\theta_W\)</span> del tema: <span class="math notranslate nohighlight">\(\theta_W\)</span> mide cuánto pesa la hipercarga frente al isoespín.</p>
+</section>
+<section id="los-acoplos-del-z">
+<h3>2.3. Los acoplos del <span class="math notranslate nohighlight">\(Z\)</span><a class="headerlink" href="#los-acoplos-del-z" title="Permalink to this heading">#</a></h3>
+<p>En el coeficiente del <span class="math notranslate nohighlight">\(Z\)</span>, con <span class="math notranslate nohighlight">\(Y = Q - T_3\)</span> y <span class="math notranslate nohighlight">\(g' = g\,s_W/c_W\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+g c_W T_3 - g' s_W (Q - T_3) = \frac{g}{c_W}\left[T_3\,(c_W^2 + s_W^2) - s_W^2\,Q\right] = g_Z\left(T_3 - Q\,s_W^2\right),
+\qquad g_Z \equiv \frac{g}{c_W} .
+\]</div>
+<p>Para la parte izquierda, <span class="math notranslate nohighlight">\(T_3 = \pm\frac{1}{2}\)</span>; para la derecha, <span class="math notranslate nohighlight">\(T_3 = 0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+c_L = T_3 - Q\,s_W^2, \qquad c_R = -Q\,s_W^2
+}
+\]</div>
+<p>la tabla de la sección 1.1 del tema, ahora deducida. Dos consecuencias:</p>
+<ul class="simple">
+<li><p>El <span class="math notranslate nohighlight">\(Z\)</span> se acopla a los neutrinos (<span class="math notranslate nohighlight">\(T_3 = \frac{1}{2}\)</span>, <span class="math notranslate nohighlight">\(Q = 0\)</span>), aunque no tengan carga.</p></li>
+<li><p>Solo hay <span class="math notranslate nohighlight">\(Z\)</span> entre un fermión y él mismo: <span class="math notranslate nohighlight">\(T_3\)</span> y <span class="math notranslate nohighlight">\(Q\)</span> son diagonales. <strong>No hay corrientes neutras que cambien el sabor</strong> a
+orden árbol (sección 5.3).</p></li>
+</ul>
+<details>
+<summary><b>[+] Mirador — Por qué hay tres colores: las anomalías</b></summary>
+<p><strong>La cuenta.</strong> Suma las cargas eléctricas de todas las partículas de la primera familia, contando los colores:</p>
+<div class="math notranslate nohighlight">
+\[
+\underbrace{0}_{\nu_e} + \underbrace{(-1)}_{e} + 3\times\underbrace{\tfrac{2}{3}}_{u} + 3\times\underbrace{\left(-\tfrac{1}{3}\right)}_{d} = 0 .
+\]</div>
+<p><strong>La familia es neutra.</strong> Con <span class="math notranslate nohighlight">\(N_c\)</span> colores la suma sería <span class="math notranslate nohighlight">\(-1 + N_c/3\)</span>: solo se anula con <strong>tres</strong>.</p>
+<p><strong>Por qué tiene que ser cero.</strong> No es una casualidad, sino una condición de consistencia. Una <strong>anomalía</strong> es una
+simetría del lagrangiano que se pierde al cuantizar. Ocurre en un diagrama con un lazo de fermiones en forma de
+<strong>triángulo</strong>, con un bosón <em>gauge</em> en cada vértice; cada fermión que circula por el lazo contribuye con el producto de
+sus tres cargas. En una teoría <em>gauge</em> la simetría no se puede perder: es la que garantiza que las probabilidades
+sumen uno y que los infinitos se puedan absorber (la renormalización). Así que <strong>la suma sobre todos los fermiones
+tiene que anularse</strong>.</p>
+<p><strong>Por qué es la carga.</strong> En el triángulo con dos <span class="math notranslate nohighlight">\(W\)</span> y un <span class="math notranslate nohighlight">\(B\)</span>, cada doblete izquierdo contribuye con su hipercarga, y la
+condición es <span class="math notranslate nohighlight">\(\sum Y = 0\)</span> sobre los dobletes: <span class="math notranslate nohighlight">\(-\frac{1}{2}\)</span> (leptones) <span class="math notranslate nohighlight">\(+ N_c \times \frac{1}{6}\)</span> (quarks) <span class="math notranslate nohighlight">\(= 0\)</span>, otra vez <span class="math notranslate nohighlight">\(N_c = 3\)</span>. Como <span class="math notranslate nohighlight">\(Q = T_3 + Y\)</span> y <span class="math notranslate nohighlight">\(T_3\)</span>
+se cancela dentro de cada doblete, pedir esto es lo mismo que pedir que la familia sea neutra.</p>
+<p><strong>Lo que explica.</strong></p>
+<ul class="simple">
+<li><p><strong>Por qué las familias vienen completas:</strong> los leptones solos, o los quarks solos, no forman una teoría consistente.
+Cada familia de leptones necesita su familia de quarks (la pregunta abierta de <a class="reference internal" href="leptones.html"><span class="doc std std-doc">leptones</span></a>).</p></li>
+<li><p><strong>La carga del protón.</strong> Si el electrón tiene carga <span class="math notranslate nohighlight">\(-1\)</span> y dentro de un doblete la carga cambia en una unidad, la
+condición fija <span class="math notranslate nohighlight">\(Q_d = -\frac{1}{3}\)</span> y <span class="math notranslate nohighlight">\(Q_u = +\frac{2}{3}\)</span>. El protón, <span class="math notranslate nohighlight">\(uud\)</span>, tiene carga <span class="math notranslate nohighlight">\(+1\)</span>: <strong>exactamente</strong> la opuesta a la del electrón. Por eso
+la materia es neutra.</p></li>
+</ul>
+<p>Hay más triángulos (con tres <span class="math notranslate nohighlight">\(B\)</span>, con gluones, con gravitones), y todos se anulan familia a familia. El taller comprueba
+dos.</p>
+</details><div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — Las cargas de una familia</b></p>
+<ol class="arabic simple">
+<li><p>Ejecuta la celda: a partir de <span class="math notranslate nohighlight">\(T_3\)</span> e <span class="math notranslate nohighlight">\(Y\)</span> calcula <span class="math notranslate nohighlight">\(Q\)</span>, <span class="math notranslate nohighlight">\(c_L\)</span> y <span class="math notranslate nohighlight">\(c_R\)</span> para los estados de una familia. Compara con la tabla del
+tema.</p></li>
+<li><p>Suma las cargas de la familia, contando los colores, con <span class="math notranslate nohighlight">\(N_c = 1, 2, 3, 4\)</span>. ¿Cuándo es neutra?</p></li>
+<li><p>El triángulo con tres <span class="math notranslate nohighlight">\(B\)</span> pide <span class="math notranslate nohighlight">\(\sum (Y_L^3 - Y_R^3) = 0\)</span>, sumando las partes izquierdas y restando las derechas. Compruébalo con
+<span class="math notranslate nohighlight">\(N_c = 3\)</span>. ¿Y sin quarks?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># las cargas de una familia: (nombre, T3, Y, quiralidad, ¿quark?)</span>
+<span class="n">s2w</span> <span class="o">=</span> <span class="mf">0.2315</span>
+<span class="n">estados</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'nu_L'</span><span class="p">,</span> <span class="o">+</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'L'</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span> <span class="p">(</span><span class="s1">'e_L'</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'L'</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span> <span class="p">(</span><span class="s1">'e_R'</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'R'</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+           <span class="p">(</span><span class="s1">'u_L'</span><span class="p">,</span> <span class="o">+</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="p">,</span> <span class="s1">'L'</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="p">(</span><span class="s1">'d_L'</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="p">,</span> <span class="s1">'L'</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="p">(</span><span class="s1">'u_R'</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'R'</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="p">(</span><span class="s1">'d_R'</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'R'</span><span class="p">,</span> <span class="kc">True</span><span class="p">)]</span>
+<span class="k">for</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">T3</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">quir</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">estados</span><span class="p">:</span>
+    <span class="n">Q</span> <span class="o">=</span> <span class="n">T3</span> <span class="o">+</span> <span class="n">Y</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">T3</span> <span class="o">-</span> <span class="n">Q</span> <span class="o">*</span> <span class="n">s2w</span> <span class="k">if</span> <span class="n">quir</span> <span class="o">==</span> <span class="s1">'L'</span> <span class="k">else</span> <span class="o">-</span><span class="n">Q</span> <span class="o">*</span> <span class="n">s2w</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' </span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">5s</span><span class="si">}</span><span class="s1">: Q = </span><span class="si">{</span><span class="n">Q</span><span class="si">:</span><span class="s1">+.3f</span><span class="si">}</span><span class="s1">,  c_</span><span class="si">{</span><span class="n">quir</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="n">c</span><span class="si">:</span><span class="s1">+.3f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="c1"># 2. carga total de la familia (partículas: nu, e, u, d; cada quark con Nc colores)</span>
+<span class="k">for</span> <span class="n">Nc</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' Nc = </span><span class="si">{</span><span class="n">Nc</span><span class="si">}</span><span class="s1">: carga total = 0 - 1 + </span><span class="si">{</span><span class="n">Nc</span><span class="si">}</span><span class="s1"> x (2/3 - 1/3) = </span><span class="si">{</span><span class="o">-</span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Nc</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="si">:</span><span class="s1">+.3f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="c1"># 3. triángulo con tres B: suma de Y^3, izquierdos menos derechos</span>
+<span class="k">for</span> <span class="n">con_quarks</span> <span class="ow">in</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="n">sY3</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">((</span><span class="o">+</span><span class="mi">1</span> <span class="k">if</span> <span class="n">q</span> <span class="o">==</span> <span class="s1">'L'</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">3</span> <span class="k">if</span> <span class="n">quark</span> <span class="k">else</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">Y</span><span class="o">**</span><span class="mi">3</span>
+              <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">quark</span> <span class="ow">in</span> <span class="n">estados</span> <span class="k">if</span> <span class="n">con_quarks</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">quark</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' </span><span class="si">{</span><span class="s2">"con"</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">con_quarks</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s2">"sin"</span><span class="si">}</span><span class="s1"> quarks: suma de Y^3 (L - R) = </span><span class="si">{</span><span class="n">sY3</span><span class="si">:</span><span class="s1">+.4f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> nu_L : Q = +0.000,  c_L = +0.500
+ e_L  : Q = -1.000,  c_L = -0.268
+ e_R  : Q = -1.000,  c_R = +0.232
+ u_L  : Q = +0.667,  c_L = +0.346
+ d_L  : Q = -0.333,  c_L = -0.423
+ u_R  : Q = +0.667,  c_R = -0.154
+ d_R  : Q = -0.333,  c_R = +0.077
+ Nc = 1: carga total = 0 - 1 + 1 x (2/3 - 1/3) = -0.667
+ Nc = 2: carga total = 0 - 1 + 2 x (2/3 - 1/3) = -0.333
+ Nc = 3: carga total = 0 - 1 + 3 x (2/3 - 1/3) = +0.000
+ Nc = 4: carga total = 0 - 1 + 4 x (2/3 - 1/3) = +0.333
+ con quarks: suma de Y^3 (L - R) = +0.0000
+ sin quarks: suma de Y^3 (L - R) = +0.7500
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\nu_L\)</span>: <span class="math notranslate nohighlight">\(Q = 0\)</span>, <span class="math notranslate nohighlight">\(c_L = +0.500\)</span>; <span class="math notranslate nohighlight">\(e_L\)</span>: <span class="math notranslate nohighlight">\(-1\)</span>, <span class="math notranslate nohighlight">\(-0.268\)</span>; <span class="math notranslate nohighlight">\(e_R\)</span>: <span class="math notranslate nohighlight">\(c_R = +0.232\)</span>; <span class="math notranslate nohighlight">\(u_L\)</span>: <span class="math notranslate nohighlight">\(+\frac{2}{3}\)</span>, <span class="math notranslate nohighlight">\(+0.346\)</span>; <span class="math notranslate nohighlight">\(d_L\)</span>: <span class="math notranslate nohighlight">\(-\frac{1}{3}\)</span>, <span class="math notranslate nohighlight">\(-0.423\)</span>;
+<span class="math notranslate nohighlight">\(u_R\)</span>: <span class="math notranslate nohighlight">\(-0.154\)</span>; <span class="math notranslate nohighlight">\(d_R\)</span>: <span class="math notranslate nohighlight">\(+0.077\)</span>. La tabla del tema.</p></li>
+<li><p><span class="math notranslate nohighlight">\(-1 + N_c/3\)</span>: <span class="math notranslate nohighlight">\(-0.67\)</span>, <span class="math notranslate nohighlight">\(-0.33\)</span>, <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(+0.33\)</span>. <strong>Solo con tres colores</strong> la familia es neutra.</p></li>
+<li><p>Con quarks y tres colores, <span class="math notranslate nohighlight">\(\sum(Y_L^3 - Y_R^3) = 0\)</span>; sin quarks, <span class="math notranslate nohighlight">\(+\frac{3}{4}\)</span>. Dos condiciones distintas, y las dos piden lo mismo: leptones
+y quarks juntos, con tres colores.</p></li>
+</ol>
+</details></section>
+</section>
+<section id="el-modelo-abeliano-de-higgs">
+<h2>3. El modelo abeliano de Higgs<a class="headerlink" href="#el-modelo-abeliano-de-higgs" title="Permalink to this heading">#</a></h2>
+<section id="un-boson-con-masa-rompe-la-simetria">
+<h3>3.1. Un bosón con masa rompe la simetría<a class="headerlink" href="#un-boson-con-masa-rompe-la-simetria" title="Permalink to this heading">#</a></h3>
+<p>Antes del <span class="math notranslate nohighlight">\(W\)</span> y del <span class="math notranslate nohighlight">\(Z\)</span>, el caso más sencillo: un fotón y un escalar complejo <span class="math notranslate nohighlight">\(\phi\)</span> de carga <span class="math notranslate nohighlight">\(q\)</span>. Un término de masa para el
+fotón, <span class="math notranslate nohighlight">\(\frac{1}{2}m^2 A_\mu A^\mu\)</span>, no es invariante bajo <span class="math notranslate nohighlight">\(A_\mu \to A_\mu - \partial_\mu\theta\)</span>. La simetría prohíbe la masa (perspectivas, 2.4).</p>
+<p>El escalar, con <span class="math notranslate nohighlight">\(D_\mu = \partial_\mu + iqA_\mu\)</span> y el potencial del tema,</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L} = (D_\mu\phi)^*(D^\mu\phi) - V(\phi), \qquad V = \mu^2\,\phi^*\phi + \lambda\,(\phi^*\phi)^2, \quad \lambda &gt; 0 ,
+\]</div>
+<p>es invariante bajo <span class="math notranslate nohighlight">\(\phi \to e^{iq\theta(x)}\phi\)</span>, <span class="math notranslate nohighlight">\(A_\mu \to A_\mu - \partial_\mu\theta\)</span>, la misma transformación que en perspectivas.</p>
+</section>
+<section id="la-rotura">
+<h3>3.2. La rotura<a class="headerlink" href="#la-rotura" title="Permalink to this heading">#</a></h3>
+<p>Con <span class="math notranslate nohighlight">\(\mu^2 &lt; 0\)</span>, el mínimo está en el círculo <span class="math notranslate nohighlight">\(|\phi|^2 = -\mu^2/2\lambda \equiv v^2/2\)</span>, con <span class="math notranslate nohighlight">\(v^2 = -\mu^2/\lambda\)</span> (el sombrero del tema, sección
+3.3). Desarrollando alrededor de un punto del círculo, el real,</p>
+<div class="math notranslate nohighlight">
+\[
+\phi = \frac{1}{\sqrt{2}}\left(v + h + i\chi\right),
+\]</div>
+<p>con <span class="math notranslate nohighlight">\(h\)</span> en la dirección radial y <span class="math notranslate nohighlight">\(\chi\)</span> a lo largo del fondo, el potencial queda</p>
+<div class="math notranslate nohighlight">
+\[
+V = -\frac{\lambda v^4}{4} + \lambda v^2\,h^2 + \lambda v\,h\,(h^2 + \chi^2) + \frac{\lambda}{4}(h^2 + \chi^2)^2 .
+\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(h\)</span> tiene masa: <span class="math notranslate nohighlight">\(\frac{1}{2}m_h^2 = \lambda v^2\)</span>, <strong><span class="math notranslate nohighlight">\(m_h^2 = 2\lambda v^2\)</span></strong>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\chi\)</span> no aparece en ningún término cuadrático: <strong>no tiene masa</strong>. Es el <strong>bosón de Goldstone</strong>: moverse por el fondo del
+sombrero no cuesta energía.</p></li>
+</ul>
+<p>Sin el fotón, este sería el final: una partícula con masa y otra sin ella (teorema de Goldstone).</p>
+</section>
+<section id="el-foton-se-come-el-goldstone">
+<h3>3.3. El fotón se come el Goldstone<a class="headerlink" href="#el-foton-se-come-el-goldstone" title="Permalink to this heading">#</a></h3>
+<p>Con el fotón, la fase de <span class="math notranslate nohighlight">\(\phi\)</span> se puede quitar con una transformación <em>gauge</em>: escribiendo <span class="math notranslate nohighlight">\(\phi = e^{i\chi/v}(v + h)/\sqrt{2}\)</span> y
+eligiendo <span class="math notranslate nohighlight">\(\theta = -\chi/qv\)</span>, el campo queda real en todas partes (la <strong>gauge unitaria</strong>). <span class="math notranslate nohighlight">\(\chi\)</span> desaparece. El término
+cinético da</p>
+<div class="math notranslate nohighlight">
+\[
+(D_\mu\phi)^*(D^\mu\phi) = \frac{1}{2}\partial_\mu h\,\partial^\mu h + \frac{q^2}{2}\,(v + h)^2 A_\mu A^\mu ,
+\]</div>
+<p>y en él:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\frac{1}{2}(qv)^2 A_\mu A^\mu\)</span>: <strong>un término de masa para el fotón</strong>, <span class="math notranslate nohighlight">\(m_A = qv\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(q^2 v\,h\,A_\mu A^\mu\)</span> y <span class="math notranslate nohighlight">\(\frac{q^2}{2}h^2 A_\mu A^\mu\)</span>: vértices <span class="math notranslate nohighlight">\(hAA\)</span> y <span class="math notranslate nohighlight">\(hhAA\)</span>, con acoplo proporcional a <span class="math notranslate nohighlight">\(m_A^2\)</span>.</p></li>
+</ul>
+<p><strong>Grados de libertad.</strong> Antes: <span class="math notranslate nohighlight">\(2\)</span> (el escalar complejo) <span class="math notranslate nohighlight">\(+ 2\)</span> (las polarizaciones de un fotón sin masa) <span class="math notranslate nohighlight">\(= 4\)</span>. Después:
+<span class="math notranslate nohighlight">\(1\)</span> (<span class="math notranslate nohighlight">\(h\)</span>) <span class="math notranslate nohighlight">\(+ 3\)</span> (un vector con masa tiene tres polarizaciones) <span class="math notranslate nohighlight">\(= 4\)</span>. El Goldstone no se ha perdido: es la
+<strong>polarización longitudinal</strong> del fotón. Es el mecanismo de un superconductor (el mirador del tema).</p>
+</section>
+</section>
+<section id="el-doblete-de-higgs">
+<h2>4. El doblete de Higgs<a class="headerlink" href="#el-doblete-de-higgs" title="Permalink to this heading">#</a></h2>
+<section id="por-que-un-doblete">
+<h3>4.1. Por qué un doblete<a class="headerlink" href="#por-que-un-doblete" title="Permalink to this heading">#</a></h3>
+<p>Para dar masa a <strong>tres</strong> bosones (<span class="math notranslate nohighlight">\(W^+\)</span>, <span class="math notranslate nohighlight">\(W^-\)</span>, <span class="math notranslate nohighlight">\(Z\)</span>) hacen falta tres Goldstone, y para dar masa a los fermiones el campo
+tiene que poder unir un doblete con un singlete (sección 5). Las dos cosas las hace un <strong>doblete de escalares
+complejos</strong>, con <span class="math notranslate nohighlight">\(Y = +\frac{1}{2}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}, \qquad
+\mathcal{L}_\Phi = (D_\mu\Phi)^\dagger(D^\mu\Phi) - \mu^2\,\Phi^\dagger\Phi - \lambda\,(\Phi^\dagger\Phi)^2 .
+\end{split}\]</div>
+<p>Cuatro campos reales. Con <span class="math notranslate nohighlight">\(\mu^2 &lt; 0\)</span>, el mínimo está en <span class="math notranslate nohighlight">\(\Phi^\dagger\Phi = v^2/2\)</span>. En la <em>gauge</em> unitaria, los tres Goldstone se
+absorben y queda</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\boxed{
+\Phi = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v + h \end{pmatrix}
+}
+\end{split}\]</div>
+<p>El valor en el vacío está en la componente de abajo, la de <strong>carga cero</strong> (<span class="math notranslate nohighlight">\(T_3 = -\frac{1}{2}\)</span>, <span class="math notranslate nohighlight">\(Y = +\frac{1}{2}\)</span>): el vacío no tiene
+carga eléctrica.</p>
+</section>
+<section id="las-masas-del-w-y-del-z">
+<h3>4.2. Las masas del <span class="math notranslate nohighlight">\(W\)</span> y del <span class="math notranslate nohighlight">\(Z\)</span><a class="headerlink" href="#las-masas-del-w-y-del-z" title="Permalink to this heading">#</a></h3>
+<p>Con <span class="math notranslate nohighlight">\(T_a W^a = \frac{1}{2}\begin{pmatrix} W^3 &amp; \sqrt{2}\,W^+ \\ \sqrt{2}\,W^- &amp; -W^3 \end{pmatrix}\)</span> y <span class="math notranslate nohighlight">\(Y = \frac{1}{2}\)</span>, sobre <span class="math notranslate nohighlight">\(\Phi = (0, \varphi)\)</span>, <span class="math notranslate nohighlight">\(\varphi = (v + h)/\sqrt{2}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left(g\,T_a W^a + g' Y B\right)\Phi = \frac{1}{2}\begin{pmatrix} \sqrt{2}\,g\,W^+ \\ -g W^3 + g' B \end{pmatrix}\varphi
+= \frac{1}{2}\begin{pmatrix} \sqrt{2}\,g\,W^+ \\ -g_Z\,Z \end{pmatrix}\varphi ,
+\end{split}\]</div>
+<p>porque <span class="math notranslate nohighlight">\(-gW^3 + g'B = -(g c_W + g' s_W)\,Z + (g' c_W - g s_W)\,A = -g_Z\,Z\)</span>: <strong>el fotón no aparece</strong>, gracias a <span class="math notranslate nohighlight">\(g s_W = g' c_W\)</span>. El
+término cinético da</p>
+<div class="math notranslate nohighlight">
+\[
+(D_\mu\Phi)^\dagger(D^\mu\Phi) = \frac{1}{2}\partial_\mu h\,\partial^\mu h
++ \frac{g^2}{4}\,(v + h)^2\,W^+_\mu W^{-\mu} + \frac{g_Z^2}{8}\,(v + h)^2\,Z_\mu Z^\mu ,
+\]</div>
+<p>y comparando con los términos de masa, <span class="math notranslate nohighlight">\(m_W^2 W^+W^-\)</span> y <span class="math notranslate nohighlight">\(\frac{1}{2}m_Z^2 ZZ\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+m_W = \frac{g v}{2}, \qquad m_Z = \frac{g_Z v}{2} = \frac{m_W}{c_W}, \qquad m_A = 0
+}
+\]</div>
+</section>
+<section id="lo-que-sale-ademas">
+<h3>4.3. Lo que sale además<a class="headerlink" href="#lo-que-sale-ademas" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong><span class="math notranslate nohighlight">\(m_W/m_Z = \cos\theta_W\)</span></strong>, una predicción: no hay parámetros nuevos para las masas de los bosones. Se suele escribir
+<span class="math notranslate nohighlight">\(\rho \equiv m_W^2/(m_Z^2 c_W^2) = 1\)</span>; se cumple al <span class="math notranslate nohighlight">\(10^{-3}\)</span>, la diferencia son lazos (en ellos, el top y el Higgs: el mirador
+de la sección 2.5 del tema).</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(v\)</span> a partir de <span class="math notranslate nohighlight">\(G_F\)</span>.</strong> A bajas energías el propagador del <span class="math notranslate nohighlight">\(W\)</span> es <span class="math notranslate nohighlight">\(1/m_W^2\)</span>, y <span class="math notranslate nohighlight">\(\frac{G_F}{\sqrt{2}} = \frac{g^2}{8 m_W^2} = \frac{1}{2v^2}\)</span>:
+<span class="math notranslate nohighlight">\(v = (\sqrt{2}\,G_F)^{-1/2} = 246\)</span> GeV.</p></li>
+<li><p><strong>Los vértices del Higgs con los bosones</strong>, desarrollando <span class="math notranslate nohighlight">\((v + h)^2 = v^2 + 2vh + h^2\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{2 m_W^2}{v}\,h\,W^+_\mu W^{-\mu} + \frac{m_Z^2}{v}\,h\,Z_\mu Z^\mu
++ \frac{m_W^2}{v^2}\,h^2\,W^+_\mu W^{-\mu} + \frac{m_Z^2}{2v^2}\,h^2\,Z_\mu Z^\mu :
+\]</div>
+<p>el Higgs se acopla a los bosones <strong>en proporción al cuadrado de su masa</strong> (la figura de ATLAS de la sección 4.4 del
+tema, con <span class="math notranslate nohighlight">\(\sqrt{\kappa_V}\,m_V/v\)</span>).</p>
+<ul class="simple">
+<li><p><strong>Cuenta de grados de libertad</strong>, en el taller.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — La masa del fotón es cero</b></p>
+<p>La parte neutra del término cinético, <span class="math notranslate nohighlight">\(\frac{g_Z^2}{8}v^2 Z^2\)</span>, escrita con <span class="math notranslate nohighlight">\(W^3\)</span> y <span class="math notranslate nohighlight">\(B\)</span>, es <span class="math notranslate nohighlight">\(\frac{v^2}{8}(gW^3 - g'B)^2 = \frac{1}{2}V^T M^2 V\)</span>, con <span class="math notranslate nohighlight">\(V = (W^3, B)\)</span> y</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M^2 = \frac{v^2}{4}\begin{pmatrix} g^2 &amp; -g g' \\ -g g' &amp; g'^2 \end{pmatrix} .
+\end{split}\]</div>
+<ol class="arabic simple">
+<li><p>Ejecuta la celda: con <span class="math notranslate nohighlight">\(g\)</span> y <span class="math notranslate nohighlight">\(g'\)</span> a partir de <span class="math notranslate nohighlight">\(e\)</span> y <span class="math notranslate nohighlight">\(\sin^2\theta_W\)</span>, diagonaliza <span class="math notranslate nohighlight">\(M^2\)</span>. ¿Cuáles son las masas? ¿Qué ángulo forma
+el autovector sin masa con el eje de <span class="math notranslate nohighlight">\(B\)</span>?</p></li>
+<li><p>¿Por qué el determinante de <span class="math notranslate nohighlight">\(M^2\)</span> tiene que ser cero, sean cuales sean <span class="math notranslate nohighlight">\(g\)</span> y <span class="math notranslate nohighlight">\(g'\)</span>?</p></li>
+<li><p>Cuenta los grados de libertad antes de la rotura (el doblete y cuatro bosones sin masa) y después (<span class="math notranslate nohighlight">\(h\)</span>, tres bosones
+con masa y el fotón).</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># matriz de masas de (W3, B) y sus autovectores</span>
+<span class="n">alfa</span><span class="p">,</span> <span class="n">s2w</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mf">128.9</span><span class="p">,</span> <span class="mf">0.2315</span><span class="p">,</span> <span class="mf">246.22</span>
+<span class="n">e</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">alfa</span><span class="p">)</span>
+<span class="n">g</span><span class="p">,</span> <span class="n">gp</span> <span class="o">=</span> <span class="n">e</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s2w</span><span class="p">),</span> <span class="n">e</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">s2w</span><span class="p">)</span>
+<span class="n">M2</span> <span class="o">=</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">g</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="n">g</span> <span class="o">*</span> <span class="n">gp</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="n">g</span> <span class="o">*</span> <span class="n">gp</span><span class="p">,</span> <span class="n">gp</span><span class="o">**</span><span class="mi">2</span><span class="p">]])</span>
+<span class="n">m2</span><span class="p">,</span> <span class="n">vecs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigh</span><span class="p">(</span><span class="n">M2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' g = </span><span class="si">{</span><span class="n">g</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">, g</span><span class="se">\'</span><span class="s1"> = </span><span class="si">{</span><span class="n">gp</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">m2i</span><span class="p">,</span> <span class="n">vec</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">m2</span><span class="p">,</span> <span class="n">vecs</span><span class="o">.</span><span class="n">T</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' masa = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">m2i</span><span class="p">))</span><span class="si">:</span><span class="s1">6.2f</span><span class="si">}</span><span class="s1"> GeV,  autovector (W3, B) = (</span><span class="si">{</span><span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">+.3f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s1">+.3f</span><span class="si">}</span><span class="s1">)'</span><span class="p">)</span>
+<span class="n">foton</span> <span class="o">=</span> <span class="n">vecs</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' angulo del foton con B: </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">foton</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> grados;  theta_W = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s2w</span><span class="p">)))</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> grados'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' m_W = g v / 2 = </span><span class="si">{</span><span class="n">g</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> GeV'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> g = 0.649, g' = 0.356
+ masa =   0.00 GeV,  autovector (W3, B) = (-0.481, -0.877)
+ masa =  91.13 GeV,  autovector (W3, B) = (-0.877, +0.481)
+ angulo del foton con B: 28.76 grados;  theta_W = 28.76 grados
+ m_W = g v / 2 = 79.89 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p>Las masas son <span class="math notranslate nohighlight">\(0\)</span> y <span class="math notranslate nohighlight">\(91.1\)</span> GeV (la medida, <span class="math notranslate nohighlight">\(91.19\)</span>). El autovector sin masa es <span class="math notranslate nohighlight">\((s_W, c_W)\)</span> (salvo el signo global): el
+<strong>fotón</strong>, a un ángulo <span class="math notranslate nohighlight">\(\theta_W = 28.8^\circ\)</span> del eje de <span class="math notranslate nohighlight">\(B\)</span>. El otro, <span class="math notranslate nohighlight">\((c_W, -s_W)\)</span>, es el <span class="math notranslate nohighlight">\(Z\)</span>. Y <span class="math notranslate nohighlight">\(m_W = 79.9\)</span> GeV, frente a <span class="math notranslate nohighlight">\(80.37\)</span> medido:
+a orden árbol no se puede acertar a la vez <span class="math notranslate nohighlight">\(m_Z\)</span> y <span class="math notranslate nohighlight">\(m_W\)</span> con esta precisión; la diferencia son lazos (el <span class="math notranslate nohighlight">\(\rho\)</span> de la sección 4.3).</p></li>
+<li><p>Porque <span class="math notranslate nohighlight">\(M^2 \propto u\,u^T\)</span> con <span class="math notranslate nohighlight">\(u = (g, -g')\)</span>: tiene rango uno. Solo una combinación de <span class="math notranslate nohighlight">\(W^3\)</span> y <span class="math notranslate nohighlight">\(B\)</span>, la que se acopla al
+vacío, coge masa; la ortogonal, no. Es la carga eléctrica, que el vacío no rompe.</p></li>
+<li><p>Antes: <span class="math notranslate nohighlight">\(4\)</span> (el doblete) <span class="math notranslate nohighlight">\(+ 4 \times 2\)</span> (cuatro bosones sin masa) <span class="math notranslate nohighlight">\(= 12\)</span>. Después: <span class="math notranslate nohighlight">\(1\)</span> (<span class="math notranslate nohighlight">\(h\)</span>) <span class="math notranslate nohighlight">\(+ 3 \times 3\)</span> (<span class="math notranslate nohighlight">\(W^\pm\)</span>, <span class="math notranslate nohighlight">\(Z\)</span>) <span class="math notranslate nohighlight">\(+ 2\)</span> (el fotón) <span class="math notranslate nohighlight">\(= 12\)</span>.</p></li>
+</ol>
+</details></section>
+</section>
+<section id="las-masas-de-los-fermiones">
+<h2>5. Las masas de los fermiones<a class="headerlink" href="#las-masas-de-los-fermiones" title="Permalink to this heading">#</a></h2>
+<section id="el-electron">
+<h3>5.1. El electrón<a class="headerlink" href="#el-electron" title="Permalink to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\bar L\,\Phi\)</span> es invariante bajo <span class="math notranslate nohighlight">\(SU(2)\)</span> (un doblete por otro) y tiene <span class="math notranslate nohighlight">\(Y = +\frac{1}{2} + \frac{1}{2} = 1\)</span>; multiplicado por <span class="math notranslate nohighlight">\(e_R\)</span> (<span class="math notranslate nohighlight">\(Y = -1\)</span>),
+el producto es invariante del todo. Es el <strong>acoplo de Yukawa</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}_Y = -y_e\left(\bar L\,\Phi\,e_R + \bar e_R\,\Phi^\dagger L\right) .
+\]</div>
+<p>En la <em>gauge</em> unitaria, <span class="math notranslate nohighlight">\(\bar L\Phi = \bar e_L\,(v + h)/\sqrt{2}\)</span>, y</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}_Y = -\frac{y_e}{\sqrt{2}}(v + h)\left(\bar e_L e_R + \bar e_R e_L\right) = -\underbrace{\frac{y_e v}{\sqrt{2}}}_{m_e}\,\bar e e - \frac{m_e}{v}\,h\,\bar e e .
+\]</div>
+<p><strong>La masa y el acoplo al Higgs salen del mismo término</strong>: <span class="math notranslate nohighlight">\(m_e = y_e v/\sqrt{2}\)</span>, y el vértice <span class="math notranslate nohighlight">\(h\bar e e\)</span> vale <span class="math notranslate nohighlight">\(m_e/v\)</span>. Es la
+ecuación de la sección 3.2 del tema.</p>
+<p><strong>El neutrino no coge masa</strong>: haría falta un <span class="math notranslate nohighlight">\(\nu_R\)</span>, que en el Modelo Estándar no existe.</p>
+</section>
+<section id="los-quarks">
+<h3>5.2. Los quarks<a class="headerlink" href="#los-quarks" title="Permalink to this heading">#</a></h3>
+<p>El <span class="math notranslate nohighlight">\(d\)</span> es como el electrón: <span class="math notranslate nohighlight">\(-y_d\,\bar Q_L\,\Phi\,d_R + \text{h.c.}\)</span>, con <span class="math notranslate nohighlight">\(Y = -\frac{1}{6} + \frac{1}{2} - \frac{1}{3} = 0\)</span>. Para el <span class="math notranslate nohighlight">\(u\)</span>, que está arriba del
+doblete, hace falta un doblete con el valor en el vacío <strong>arriba</strong>: el conjugado,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\tilde\Phi \equiv i\sigma_2\,\Phi^* = \frac{1}{\sqrt{2}}\begin{pmatrix} v + h \\ 0 \end{pmatrix}, \qquad Y = -\frac{1}{2} ,
+\end{split}\]</div>
+<p>y el término <span class="math notranslate nohighlight">\(-y_u\,\bar Q_L\,\tilde\Phi\,u_R + \text{h.c.}\)</span> (<span class="math notranslate nohighlight">\(Y = -\frac{1}{6} - \frac{1}{2} + \frac{2}{3} = 0\)</span>). Los dos dan</p>
+<div class="math notranslate nohighlight">
+\[
+m_u = \frac{y_u v}{\sqrt{2}}, \qquad m_d = \frac{y_d v}{\sqrt{2}} ,
+\]</div>
+<p>y los vértices <span class="math notranslate nohighlight">\(h\bar u u\)</span> y <span class="math notranslate nohighlight">\(h\bar d d\)</span> con <span class="math notranslate nohighlight">\(m_q/v\)</span>. <strong>Un acoplo de Yukawa libre por fermión cargado</strong>: nueve con las tres
+familias. El Higgs explica el mecanismo, no los valores.</p>
+</section>
+<section id="tres-familias-de-donde-sale-la-ckm">
+<h3>5.3. Tres familias: de dónde sale la CKM<a class="headerlink" href="#tres-familias-de-donde-sale-la-ckm" title="Permalink to this heading">#</a></h3>
+<p>Con tres familias, nada impide que el Higgs una un <span class="math notranslate nohighlight">\(\bar Q_{L,i}\)</span> de una familia con el <span class="math notranslate nohighlight">\(d_{R,j}\)</span> de otra: los Yukawas son
+<strong>matrices</strong> <span class="math notranslate nohighlight">\(3\times 3\)</span>, y las de masa, <span class="math notranslate nohighlight">\(M^d = y^d v/\sqrt{2}\)</span> y <span class="math notranslate nohighlight">\(M^u = y^u v/\sqrt{2}\)</span>, no son diagonales. Se diagonalizan con matrices
+unitarias distintas para la parte izquierda y la derecha:</p>
+<div class="math notranslate nohighlight">
+\[
+d_L = U^d_L\,d'_L, \quad u_L = U^u_L\,u'_L, \qquad (U^d_L)^\dagger M^d\, U^d_R = \mathrm{diag}(m_d, m_s, m_b) ,
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(d'\)</span>, <span class="math notranslate nohighlight">\(u'\)</span> son los quarks con masa definida. En la corriente del <span class="math notranslate nohighlight">\(W\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar u_L\gamma^\mu d_L = \bar u'_L\gamma^\mu \underbrace{(U^u_L)^\dagger U^d_L}_{V_{\text{CKM}}} d'_L .
+\]</div>
+<p><strong>La CKM es el desajuste entre cómo diagonalizan las masas los quarks de arriba y los de abajo</strong> (el tema de
+<a class="reference internal" href="quarks_hadrons.html"><span class="doc std std-doc">hadrones</span></a>, parte 4). En las corrientes del <span class="math notranslate nohighlight">\(Z\)</span> y del fotón, <span class="math notranslate nohighlight">\(\bar d_L\gamma^\mu d_L = \bar d'_L\gamma^\mu (U^d_L)^\dagger U^d_L\,d'_L\)</span>,
+y el producto es la identidad: <strong>no cambian el sabor</strong>. Con neutrinos sin masa, en los leptones no hay mezcla; la PMNS
+de las oscilaciones pide ir más allá del Modelo Estándar.</p>
+</section>
+</section>
+<section id="el-potencial-desarrollado">
+<h2>6. El potencial desarrollado<a class="headerlink" href="#el-potencial-desarrollado" title="Permalink to this heading">#</a></h2>
+<p>Con <span class="math notranslate nohighlight">\(\Phi^\dagger\Phi = (v + h)^2/2\)</span> y <span class="math notranslate nohighlight">\(\mu^2 = -\lambda v^2\)</span>, el potencial es</p>
+<div class="math notranslate nohighlight">
+\[
+V = \mu^2\,\frac{(v + h)^2}{2} + \lambda\,\frac{(v + h)^4}{4}
+= -\frac{\lambda v^4}{4} + \lambda v^2\,h^2 + \lambda v\,h^3 + \frac{\lambda}{4}\,h^4 .
+\]</div>
+<p>Es exactamente el <span class="math notranslate nohighlight">\(V(\phi) = \mu^2\phi^2/2 + \lambda\phi^4/4\)</span> del tema con <span class="math notranslate nohighlight">\(\phi = v + h\)</span>: la simplificación del tema no pierde nada.</p>
+<ul class="simple">
+<li><p>El término lineal en <span class="math notranslate nohighlight">\(h\)</span> se anula: <span class="math notranslate nohighlight">\(v\)</span> es el mínimo.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda v^2 h^2 = \frac{1}{2}m_H^2 h^2\)</span>: <strong><span class="math notranslate nohighlight">\(m_H^2 = 2\lambda v^2\)</span></strong>. Con <span class="math notranslate nohighlight">\(m_H = 125.2\)</span> GeV, <span class="math notranslate nohighlight">\(\lambda = 0.13\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda v\,h^3 = \dfrac{m_H^2}{2v}\,h^3\)</span> y <span class="math notranslate nohighlight">\(\dfrac{\lambda}{4}h^4 = \dfrac{m_H^2}{8v^2}\,h^4\)</span>: los <strong>autoacoplos</strong>, fijados por <span class="math notranslate nohighlight">\(m_H\)</span> y <span class="math notranslate nohighlight">\(v\)</span>. Medir el de tres
+Higgs, en <span class="math notranslate nohighlight">\(p + p \to H + H\)</span>, es comprobar la forma del potencial (el mirador de la sección 3.5 del tema).</p></li>
+</ul>
+</section>
+<section id="los-parametros">
+<h2>7. Los parámetros<a class="headerlink" href="#los-parametros" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>sector</p></th>
+<th class="head text-left"><p>parámetros del lagrangiano</p></th>
+<th class="head text-left"><p>lo que se mide mejor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><em>gauge</em></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(g'\)</span>, <span class="math notranslate nohighlight">\(g_s\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\sin^2\theta_W\)</span> (o <span class="math notranslate nohighlight">\(m_Z\)</span>), <span class="math notranslate nohighlight">\(\alpha_S\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Higgs</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\mu^2\)</span>, <span class="math notranslate nohighlight">\(\lambda\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(G_F\)</span> (es decir, <span class="math notranslate nohighlight">\(v\)</span>), <span class="math notranslate nohighlight">\(m_H\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Yukawa</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(9\)</span> acoplos</p></td>
+<td class="text-left"><p>las masas de los <span class="math notranslate nohighlight">\(9\)</span> fermiones cargados</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>mezcla</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(3\)</span> ángulos y <span class="math notranslate nohighlight">\(1\)</span> fase</p></td>
+<td class="text-left"><p>la CKM</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>QCD</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\theta_{QCD}\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(&lt; 10^{-10}\)</span> (momento dipolar del neutrón)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Diecinueve.</strong> Todo lo demás —<span class="math notranslate nohighlight">\(m_W\)</span>, <span class="math notranslate nohighlight">\(m_Z/m_W\)</span>, los acoplos del <span class="math notranslate nohighlight">\(Z\)</span>, las anchuras, los acoplos y las desintegraciones del
+Higgs— es predicción. Con neutrinos con masa hacen falta al menos siete más.</p>
+</section>
+<section id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[MT] M. Thomson, <em>Modern Particle Physics</em>, Cambridge University Press: temas 15 (unificación electrodébil) y 17
+(el bosón de Higgs).</p></li>
+<li><p>[AB] A. Bettini, <em>Introduction to Elementary Particle Physics</em>, Cambridge University Press: tema 9.</p></li>
+<li><p>[PK] M. Peskin, <em>Lectures on the Theory of the Weak Interaction</em>, <a class="reference external" href="https://arxiv.org/abs/1708.09043">arXiv:1708.09043</a> (2017).</p></li>
+<li><p>[PDG] Particle Data Group, reseñas <em>Electroweak model and constraints on new physics</em> y <em>Status of Higgs boson
+physics</em>, <a class="reference external" href="https://pdg.lbl.gov/">pdg.lbl.gov</a>.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ext-feynman.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Extensión: Diagramas de Feynman y propagadores</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="bols/boletin_inicio_2627.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">¿Se desintegra el protón?</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion">Notación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-u-1-a-su-2-times-u-1">1. De <span class="math notranslate nohighlight">\(U(1)\)</span> a <span class="math notranslate nohighlight">\(SU(2) \times U(1)\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lo-que-hay-que-reproducir">1.1. Lo que hay que reproducir</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dobletes-y-singletes">1.2. Dobletes y singletes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-hipercarga">1.3. La hipercarga</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-termino-cinetico-y-sus-simetrias-globales">1.4. El término cinético y sus simetrías globales</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#las-dos-simetrias-globales">Las dos simetrías globales</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#de-global-a-local-cuatro-bosones">1.5. De global a local: cuatro bosones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-bosones-fisicos-y-sus-acoplos">2. Los bosones físicos y sus acoplos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-w-pm">2.1. Los <span class="math notranslate nohighlight">\(W^\pm\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-mezcla-el-z-y-el-foton">2.2. La mezcla: el <span class="math notranslate nohighlight">\(Z\)</span> y el fotón</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-acoplos-del-z">2.3. Los acoplos del <span class="math notranslate nohighlight">\(Z\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-modelo-abeliano-de-higgs">3. El modelo abeliano de Higgs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-boson-con-masa-rompe-la-simetria">3.1. Un bosón con masa rompe la simetría</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-rotura">3.2. La rotura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-foton-se-come-el-goldstone">3.3. El fotón se come el Goldstone</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-doblete-de-higgs">4. El doblete de Higgs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-un-doblete">4.1. Por qué un doblete</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-masas-del-w-y-del-z">4.2. Las masas del <span class="math notranslate nohighlight">\(W\)</span> y del <span class="math notranslate nohighlight">\(Z\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lo-que-sale-ademas">4.3. Lo que sale además</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#las-masas-de-los-fermiones">5. Las masas de los fermiones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-electron">5.1. El electrón</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-quarks">5.2. Los quarks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tres-familias-de-donde-sale-la-ckm">5.3. Tres familias: de dónde sale la CKM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-potencial-desarrollado">6. El potencial desarrollado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-parametros">7. Los parámetros</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por J. Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,971 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Partículas — boletín II &#8212; Introducción a la Física de Partículas - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/bols/boletin_II_2627';</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="Un pico sobre el fondo" href="boletin_II_2627_higgs_4l.html" />
+    <link rel="prev" title="Partículas — boletín I" href="boletin_I_2627.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Introducción a la Física de Partículas - USC - Home"/>
+    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Introducción a la Física de Partículas - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Capítulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../introduccion.html">Introducción a Física de Partículas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../perspectivas.html">Perspectivas: experimental y teórica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../leptones.html">Leptones: la mano izquierda de la Naturaleza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quarks_hadrons.html">Quarks y hadrones: el color que no se ve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sm.html">El Modelo Estándar: el vacío no está vacío</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: extensiones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ext-cinematica.html">Extensión: Cinemática relativista y espacio fásico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-dirac.html">Extensión: La ecuación de Dirac</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-quiral.html">Extensión: La quiralidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-grupos.html">Extensión: Las simetrías internas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-feynman.html">Extensión: Diagramas de Feynman y propagadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-sm.html">Extensión: El Modelo Estándar</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: boletines</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="boletin_inicio_2627.html">¿Se desintegra el protón?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boletin_I_2627.html">Partículas — boletín I</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Partículas — boletín II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boletin_II_2627_higgs_4l.html">Un pico sobre el fondo</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/main?urlpath=tree/./notebooks/bols/boletin_II_2627.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jahernando/USC-FNyP/blob/main/./notebooks/bols/boletin_II_2627.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/bols/boletin_II_2627.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notebooks/bols/boletin_II_2627.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Partículas — boletín II</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observables-seccion-eficaz-luminosidad-vida-media-invariante-s-fraccion-y-anchura">Observables: sección eficaz, luminosidad, vida media, invariante <span class="math notranslate nohighlight">\(s\)</span>, fracción y anchura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivos">Objetivos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seccion-eficaz-y-luminosidad">Sección eficaz y luminosidad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vida-media">Vida media</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-invariante-s">El invariante <span class="math notranslate nohighlight">\(s\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fraccion-de-desintegracion-y-anchura">Fracción de desintegración y anchura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos">Datos</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="particulas-boletin-ii">
+<h1>Partículas — boletín II<a class="headerlink" href="#particulas-boletin-ii" title="Permalink to this heading">#</a></h1>
+<section id="observables-seccion-eficaz-luminosidad-vida-media-invariante-s-fraccion-y-anchura">
+<h2>Observables: sección eficaz, luminosidad, vida media, invariante <span class="math notranslate nohighlight">\(s\)</span>, fracción y anchura<a class="headerlink" href="#observables-seccion-eficaz-luminosidad-vida-media-invariante-s-fraccion-y-anchura" title="Permalink to this heading">#</a></h2>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Curso 2026/27</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Configuración e imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">expon</span>
+
+<span class="c1"># Constantes y masas (GeV, s, cm)</span>
+<span class="n">hbar</span>  <span class="o">=</span> <span class="mf">6.582e-25</span>      <span class="c1"># GeV s</span>
+<span class="n">c</span>     <span class="o">=</span> <span class="mf">3.0e10</span>         <span class="c1"># cm/s</span>
+<span class="n">N_A</span>   <span class="o">=</span> <span class="mf">6.022e23</span>       <span class="c1"># 1/mol</span>
+<span class="n">m_p</span>   <span class="o">=</span> <span class="mf">0.93827</span>        <span class="c1"># GeV</span>
+<span class="n">m_pi0</span> <span class="o">=</span> <span class="mf">0.13498</span>        <span class="c1"># GeV</span>
+<span class="n">m_tau</span> <span class="o">=</span> <span class="mf">1.7769</span>         <span class="c1"># GeV</span>
+<span class="n">m_Z</span>   <span class="o">=</span> <span class="mf">91.19</span>          <span class="c1"># GeV</span>
+<span class="n">nb</span><span class="p">,</span> <span class="n">pb</span> <span class="o">=</span> <span class="mf">1e-33</span><span class="p">,</span> <span class="mf">1e-36</span>  <span class="c1"># cm^2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this heading">#</a></h2>
+<p>Los ejercicios siguen el orden de la sección <em>Observables</em> del capítulo de introducción:</p>
+<ul class="simple">
+<li><p><strong>Sección eficaz y luminosidad</strong> (1): la luminosidad de un blanco fijo.</p></li>
+<li><p><strong>Vida media</strong> (2): cuántos pares se producen y cuánto vuelan.</p></li>
+<li><p><strong>El invariante <span class="math notranslate nohighlight">\(s\)</span></strong> (3–8): masa invariante, un pico sobre el fondo (con una gráfica y con datos
+reales), colisionador frente a blanco fijo y energías umbral.</p></li>
+<li><p><strong>Fracción de desintegración</strong> (9) y <strong>anchura</strong> (10).</p></li>
+</ul>
+<p><strong>Notación.</strong> Unidades naturales, <span class="math notranslate nohighlight">\(\hbar = c = 1\)</span>, salvo que se diga lo contrario. <span class="math notranslate nohighlight">\(e\)</span>, <span class="math notranslate nohighlight">\(\mu\)</span>, <span class="math notranslate nohighlight">\(\tau\)</span> son los
+leptones con carga negativa y <span class="math notranslate nohighlight">\(e^+\)</span>, <span class="math notranslate nohighlight">\(\mu^+\)</span>, <span class="math notranslate nohighlight">\(\tau^+\)</span> sus antipartículas; el signo <span class="math notranslate nohighlight">\(+\)</span> separa todas las
+partículas. LAB es el sistema del laboratorio y CM el del centro de masas; salvo que se diga lo contrario,
+los datos están en el LAB.</p>
+</section>
+<section id="seccion-eficaz-y-luminosidad">
+<h2>Sección eficaz y luminosidad<a class="headerlink" href="#seccion-eficaz-y-luminosidad" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 1 — Luminosidad de un blanco fijo</b></p>
+<p>Calcula la luminosidad equivalente de un haz de protones de intensidad <span class="math notranslate nohighlight">\(10^{13}\)</span> <span class="math notranslate nohighlight">\(\mathrm{s}^{-1}\)</span> que incide sobre
+un tanque de 10 cm de longitud de hidrógeno líquido, de densidad <span class="math notranslate nohighlight">\(\rho = 60\)</span> kg/<span class="math notranslate nohighlight">\(\mathrm{m}^3\)</span>. Compárala con la del
+LHC, <span class="math notranslate nohighlight">\(10^{34}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^{-2}\,\mathrm{s}^{-1}\)</span>.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">I</span>    <span class="o">=</span> <span class="mf">1e13</span>                      <span class="c1"># protones/s</span>
+<span class="n">rho</span>  <span class="o">=</span> <span class="mf">0.060</span>                     <span class="c1"># g/cm^3</span>
+<span class="n">l</span>    <span class="o">=</span> <span class="mi">10</span>                        <span class="c1"># cm</span>
+<span class="n">n</span>    <span class="o">=</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">N_A</span> <span class="o">/</span> <span class="mf">1.008</span>         <span class="c1"># protones (núcleos de H) por cm^3</span>
+<span class="n">lum</span>  <span class="o">=</span> <span class="n">I</span> <span class="o">*</span> <span class="n">n</span> <span class="o">*</span> <span class="n">l</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'n = </span><span class="si">{:.1e}</span><span class="s1"> cm^-3,  L = </span><span class="si">{:.1e}</span><span class="s1"> cm^-2 s^-1,  L / L_LHC = </span><span class="si">{:.0f}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">lum</span><span class="p">,</span> <span class="n">lum</span> <span class="o">/</span> <span class="mf">1e34</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n = 3.6e+22 cm^-3,  L = 3.6e+36 cm^-2 s^-1,  L / L_LHC = 358
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<p>En blanco fijo, <span class="math notranslate nohighlight">\(\nu = \phi\,\sigma\,N_b = (I/S)\,\sigma\,(n S \ell) = \sigma\,I\,n\,\ell\)</span>; comparando con
+<span class="math notranslate nohighlight">\(\nu = \mathcal{L}\sigma\)</span>, <span class="math notranslate nohighlight">\(\mathcal{L} = I\,n\,\ell\)</span> (no depende de la sección del haz).
+<span class="math notranslate nohighlight">\(n = \rho N_A/A = 3.6\times10^{22}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^{-3}\)</span>, luego <span class="math notranslate nohighlight">\(\mathcal{L} = 3.6\times10^{36}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^{-2}\,\mathrm{s}^{-1}\)</span>,
+unas 400 veces la del LHC. (Aproximación de blanco delgado: vale si <span class="math notranslate nohighlight">\(\ell \ll \lambda\)</span>; aquí
+<span class="math notranslate nohighlight">\(\lambda \sim 10\)</span> m para <span class="math notranslate nohighlight">\(\sigma \sim 30\)</span> mb.)</p>
+</details></section>
+<section id="vida-media">
+<h2>Vida media<a class="headerlink" href="#vida-media" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 2 — Pares $\tau + \tau^+$ en el pico del $Z$</b></p>
+<p>La sección eficaz <span class="math notranslate nohighlight">\(e + e^+ \to \tau + \tau^+\)</span> es 1.7 nb a <span class="math notranslate nohighlight">\(\sqrt s = 91\)</span> GeV.</p>
+<ol class="arabic simple">
+<li><p>Si la luminosidad es <span class="math notranslate nohighlight">\(10^{32}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^{-2}\,\mathrm{s}^{-1}\)</span>, ¿cuál es la razón de producción de pares <span class="math notranslate nohighlight">\(\tau + \tau^+\)</span>?</p></li>
+<li><p>Calcula la energía, el momento y la distancia media recorrida por los <span class="math notranslate nohighlight">\(\tau\)</span> (<span class="math notranslate nohighlight">\(\tau_\tau = 0.29\)</span> ps).</p></li>
+<li><p>¿Es posible que un <span class="math notranslate nohighlight">\(\tau\)</span> concreto recorra 4 mm? ¿Con qué probabilidad?</p></li>
+<li><p>En el plano transverso, ¿qué relación guardan los momentos del <span class="math notranslate nohighlight">\(\tau\)</span> y del <span class="math notranslate nohighlight">\(\tau^+\)</span>?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sigma</span><span class="p">,</span> <span class="n">lum</span> <span class="o">=</span> <span class="mf">1.7</span> <span class="o">*</span> <span class="n">nb</span><span class="p">,</span> <span class="mf">1e32</span>
+<span class="n">E</span>   <span class="o">=</span> <span class="mi">91</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="n">p</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">E</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">m_tau</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">d</span>   <span class="o">=</span> <span class="n">p</span> <span class="o">/</span> <span class="n">m_tau</span> <span class="o">*</span> <span class="n">c</span> <span class="o">*</span> <span class="mf">0.29e-12</span>           <span class="c1"># gamma beta c tau, en cm</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'nu = </span><span class="si">{:.2f}</span><span class="s1"> /s'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sigma</span> <span class="o">*</span> <span class="n">lum</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'E = </span><span class="si">{:.1f}</span><span class="s1"> GeV, p = </span><span class="si">{:.2f}</span><span class="s1"> GeV, gamma beta = </span><span class="si">{:.1f}</span><span class="s1">, &lt;d&gt; = </span><span class="si">{:.2f}</span><span class="s1"> mm'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">p</span> <span class="o">/</span> <span class="n">m_tau</span><span class="p">,</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">d</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'P(d &gt; 4 mm) = </span><span class="si">{:.2f}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">expon</span><span class="o">.</span><span class="n">sf</span><span class="p">(</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">d</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nu = 0.17 /s
+E = 45.5 GeV, p = 45.47 GeV, gamma beta = 25.6, &lt;d&gt; = 2.23 mm
+P(d &gt; 4 mm) = 0.17
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\nu = \sigma\mathcal{L} = 1.7\times10^{-33}\times10^{32} = 0.17\)</span> <span class="math notranslate nohighlight">\(\mathrm{s}^{-1}\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(E = \sqrt s/2 = 45.5\)</span> GeV, <span class="math notranslate nohighlight">\(p = 45.47\)</span> GeV, <span class="math notranslate nohighlight">\(\gamma\beta = p/m = 25.6\)</span>;
+<span class="math notranslate nohighlight">\(\langle d\rangle = \gamma\beta c\tau = 25.6\times87\,\mu\mathrm{m}\)</span> <span class="math notranslate nohighlight">\(= 2.2\)</span> mm.</p></li>
+<li><p>Sí: la distancia sigue una exponencial de media 2.2 mm; <span class="math notranslate nohighlight">\(P(d &gt; 4\ \mathrm{mm}) = e^{-4/2.2} = 0.16\)</span>.</p></li>
+<li><p>Opuestos e iguales en módulo (el CM coincide con el laboratorio).</p></li>
+</ol>
+</details></section>
+<section id="el-invariante-s">
+<h2>El invariante <span class="math notranslate nohighlight">\(s\)</span><a class="headerlink" href="#el-invariante-s" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 3 — Masa invariante de tres protones</b></p>
+<p>Tres protones de <span class="math notranslate nohighlight">\(p = 3\)</span> GeV se emiten en un plano formando <span class="math notranslate nohighlight">\(120^\circ\)</span> entre sí. ¿Cuál es su masa invariante?</p>
+</div><details>
+<summary><b>Solución</b></summary>
+<p>Los tres momentos suman cero, así que <span class="math notranslate nohighlight">\(M = \sum E_i = 3\sqrt{9 + 0.938^2} = 9.43\)</span> GeV.</p>
+</details><div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 4 — Un pico sobre el fondo</b></p>
+<p>La figura muestra los sucesos con <strong>cuatro leptones</strong> (dos pares <span class="math notranslate nohighlight">\(e + e^+\)</span> o <span class="math notranslate nohighlight">\(\mu + \mu^+\)</span>) que registró
+ATLAS en colisiones <span class="math notranslate nohighlight">\(p + p\)</span> a <span class="math notranslate nohighlight">\(\sqrt s = 13.6\)</span> TeV (29 <span class="math notranslate nohighlight">\(\mathrm{fb}^{-1}\)</span>), en función de la masa invariante de los
+cuatro, <span class="math notranslate nohighlight">\(m_{4l}\)</span>. Los puntos son los datos; los histogramas, lo que se espera de los procesos conocidos que
+también dan cuatro leptones (el <em>fondo</em>).</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../../_images/higgs_4l_sin_senal.png"><img alt="../../_images/higgs_4l_sin_senal.png" class="align-center" src="../../_images/higgs_4l_sin_senal.png" style="width: 420px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(m_{4l}\)</span> en ATLAS, con el fondo esperado [ATLAS, <span class="math notranslate nohighlight">\(\sqrt s = 13.6\)</span> TeV; figura retocada].</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple">
+<li><p>¿Hay algo en los datos que el fondo no explique? ¿Dónde? Estima cuántos sucesos de más hay y la masa de
+la partícula que los produce.</p></li>
+<li><p>En uno de esos sucesos se miden, en el LAB, los momentos (en GeV)
+<span class="math notranslate nohighlight">\(e: (54, 0, 0)\)</span>, <span class="math notranslate nohighlight">\(e^+: (-38, 0, 0)\)</span>, <span class="math notranslate nohighlight">\(\mu: (0, 0, 19)\)</span>, <span class="math notranslate nohighlight">\(\mu^+: (-8, 15, 0)\)</span>.
+Desprecia la masa de los leptones. Calcula la masa invariante de los cuatro. ¿Es compatible con el pico?
+¿Por qué se usa la masa invariante y no la energía total de los cuatro leptones?</p></li>
+<li><p>Calcula la masa invariante del par <span class="math notranslate nohighlight">\(e + e^+\)</span> y la del par <span class="math notranslate nohighlight">\(\mu + \mu^+\)</span>. ¿Qué partícula se desintegra en
+cada par? ¿Qué partícula es la madre?</p></li>
+<li><p>¿Por qué uno de los dos bosones intermedios no puede tener su masa?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">masa</span><span class="p">(</span><span class="o">*</span><span class="n">ps</span><span class="p">):</span>
+    <span class="c1"># masa invariante de partículas sin masa, dados sus trimomentos</span>
+    <span class="n">E</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ps</span><span class="p">)</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ps</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">E</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">P</span> <span class="o">@</span> <span class="n">P</span><span class="p">)</span>
+
+<span class="n">e</span><span class="p">,</span> <span class="n">ep</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">mup</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="p">[(</span><span class="mi">54</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">38</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">19</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'m4l = </span><span class="si">{:.1f}</span><span class="s1"> GeV,  m_ee = </span><span class="si">{:.1f}</span><span class="s1"> GeV,  m_mumu = </span><span class="si">{:.1f}</span><span class="s1"> GeV'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+      <span class="n">masa</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">ep</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">mup</span><span class="p">),</span> <span class="n">masa</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">ep</span><span class="p">),</span> <span class="n">masa</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">mup</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>m4l = 125.4 GeV,  m_ee = 90.6 GeV,  m_mumu = 25.4 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../../_images/higgs_4l_atlas.png"><img alt="../../_images/higgs_4l_atlas.png" class="align-center" src="../../_images/higgs_4l_atlas.png" style="width: 420px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>La figura original, con la señal del Higgs (azul) y la incertidumbre del fondo (rayado).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple">
+<li><p>Entre 120 y 130 GeV hay <span class="math notranslate nohighlight">\(8 + 11 + 10 + 10 + 7 = 46\)</span> sucesos donde el fondo espera <span class="math notranslate nohighlight">\(\simeq 17\)</span>: unos
+<strong>30 sucesos de más</strong>, agrupados en un pico en <span class="math notranslate nohighlight">\(m_{4l} \simeq 125\)</span> GeV. Fuera del pico los datos siguen al
+fondo (con fluctuaciones de <span class="math notranslate nohighlight">\(\pm\sqrt N\)</span>). Una partícula de 125 GeV que se desintegra en cuatro leptones:
+el <strong>bosón de Higgs</strong>. La anchura del pico, de unos pocos GeV, es la resolución del detector; la del Higgs
+es de 4 MeV.</p></li>
+<li><p><span class="math notranslate nohighlight">\(E = 54 + 38 + 19 + 17 = 128\)</span> GeV y <span class="math notranslate nohighlight">\(\vec P = (8, 15, 19)\)</span> GeV, <span class="math notranslate nohighlight">\(|\vec P|^2 = 650\)</span> <span class="math notranslate nohighlight">\(\mathrm{GeV}^2\)</span>:
+<span class="math notranslate nohighlight">\(m_{4l} = \sqrt{16384 - 650} = 125.4\)</span> GeV, en el pico. La energía total depende del sistema de referencia
+(aquí el sistema de los cuatro leptones se mueve con <span class="math notranslate nohighlight">\(\beta = 25.5/128 = 0.20\)</span>), y de un suceso a otro
+cambia con el movimiento del Higgs; la masa invariante es la misma en todos los sistemas y es la masa de la
+madre.</p></li>
+<li><p><span class="math notranslate nohighlight">\(m_{ee} = \sqrt{92^2 - 16^2} = 90.6\)</span> GeV: un <span class="math notranslate nohighlight">\(Z\)</span>. <span class="math notranslate nohighlight">\(m_{\mu\mu} = \sqrt{36^2 - 650} = 25.4\)</span> GeV: otro <span class="math notranslate nohighlight">\(Z\)</span>,
+pero lejos de su masa. La cadena es <span class="math notranslate nohighlight">\(H \to Z + Z^* \to e + e^+ + \mu + \mu^+\)</span>.</p></li>
+<li><p>Dos <span class="math notranslate nohighlight">\(Z\)</span> con su masa necesitan <span class="math notranslate nohighlight">\(2m_Z = 182\)</span> GeV <span class="math notranslate nohighlight">\(&gt; m_H = 125\)</span> GeV: no hay energía. Uno sale con su masa y
+el otro, <strong>virtual</strong> (<span class="math notranslate nohighlight">\(Z^*\)</span>), con la que sobra: <span class="math notranslate nohighlight">\(m_{Z^*} \le m_H - m_Z \simeq 34\)</span> GeV. Por eso el segundo
+par tiene siempre una masa invariante pequeña.</p></li>
+</ol>
+</details><div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 5 — El Higgs en los datos abiertos de CMS (con el ordenador)</b></p>
+<p>Rehaz la figura del ejercicio anterior con datos reales: los 278 sucesos con cuatro leptones de CMS de 2011 y
+2012 (<span class="math notranslate nohighlight">\(\sqrt s = 7\)</span> y 8 TeV, 14 <span class="math notranslate nohighlight">\(\mathrm{fb}^{-1}\)</span>), publicados en el CERN Open Data Portal. El fichero
+<code class="docutils literal notranslate"><span class="pre">datos/higgs_4l_cms.csv</span></code> da los cuadrimomentos de los cuatro leptones de cada suceso, y
+<code class="docutils literal notranslate"><span class="pre">datos/higgs_4l_cms_esperados.csv</span></code>, los sucesos esperados de cada fondo y de un Higgs de 125 GeV, en
+intervalos de 3 GeV de <span class="math notranslate nohighlight">\(m_{4l}\)</span>.</p>
+<ol class="arabic simple">
+<li><p>Calcula <span class="math notranslate nohighlight">\(m_{4l}\)</span> de cada suceso a partir de los cuadrimomentos.</p></li>
+<li><p>Empareja los leptones en dos pares de carga opuesta y mismo sabor; llama <span class="math notranslate nohighlight">\(Z_1\)</span> al más cercano a <span class="math notranslate nohighlight">\(m_Z\)</span>.
+Histograma <span class="math notranslate nohighlight">\(m_{Z_1}\)</span> y <span class="math notranslate nohighlight">\(m_{Z_2}\)</span> para los sucesos con <span class="math notranslate nohighlight">\(121 &lt; m_{4l} &lt; 130\)</span> GeV. ¿Qué relación hay entre
+<span class="math notranslate nohighlight">\(m_{Z_1}\)</span>, <span class="math notranslate nohighlight">\(m_{Z_2}\)</span> y <span class="math notranslate nohighlight">\(m_{4l}\)</span>?</p></li>
+<li><p>Dibuja el espectro de <span class="math notranslate nohighlight">\(m_{4l}\)</span> entre 70 y 181 GeV sobre los fondos apilados. ¿De qué es el pico en 91 GeV?
+¿Dónde hay un exceso?</p></li>
+<li><p>Cuenta los sucesos observados y el fondo esperado en <span class="math notranslate nohighlight">\(121 &lt; m_{4l} &lt; 130\)</span> GeV. ¿Qué probabilidad hay de
+que el fondo solo dé tantos o más? Calcúlala con la distribución de Poisson y simulando experimentos.
+¿Es un descubrimiento?</p></li>
+</ol>
+<p><strong>Este ejercicio se hace en su propio cuaderno guiado:
+<a class="reference internal" href="boletin_II_2627_higgs_4l.html"><span class="doc std std-doc">boletin_II_2627_higgs_4l.ipynb</span></a></strong>, con un taller por apartado y sus soluciones.</p>
+</div><div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 6 — El LHC en blanco fijo</b></p>
+<p>En el LHC colisionan protones con <span class="math notranslate nohighlight">\(\sqrt s = 14\)</span> TeV. ¿Qué energía tiene cada protón? Si la colisión fuese en
+blanco fijo, ¿qué energía necesitaría el protón incidente?</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="mf">14e3</span><span class="o">**</span><span class="mi">2</span>                               <span class="c1"># GeV^2</span>
+<span class="n">E_fijo</span> <span class="o">=</span> <span class="p">(</span><span class="n">s</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">m_p</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">m_p</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'colisionador: E = </span><span class="si">{:.0f}</span><span class="s1"> GeV;  blanco fijo: E = </span><span class="si">{:.2e}</span><span class="s1"> GeV = </span><span class="si">{:.1e}</span><span class="s1"> eV'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+      <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">E_fijo</span><span class="p">,</span> <span class="n">E_fijo</span> <span class="o">*</span> <span class="mf">1e9</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>colisionador: E = 7000 GeV;  blanco fijo: E = 1.04e+08 GeV = 1.0e+17 eV
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<p>En el colisionador (CM), <span class="math notranslate nohighlight">\(s = (2E)^2\)</span>: <span class="math notranslate nohighlight">\(E = 7\)</span> TeV. En blanco fijo, <span class="math notranslate nohighlight">\(s = (E + m_p)^2 - p^2 = 2m_p^2 + 2m_pE\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+E = \frac{s - 2m_p^2}{2m_p} \simeq \frac{(14\times10^{3})^2}{2\times0.938}\ \mathrm{GeV} = 1.04\times10^{8}\ \mathrm{GeV}
+= 1.04\times10^{5}\ \mathrm{TeV} \simeq 10^{17}\ \mathrm{eV},
+\]</div>
+<p>energía que solo alcanzan los rayos cósmicos.</p>
+</details><div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 7 — Producción de antiprotones</b></p>
+<p>Para producir antiprotones se hace incidir un haz de protones sobre un blanco de hidrógeno mediante
+<span class="math notranslate nohighlight">\(p + p \to p + p + p + \bar p\)</span>.</p>
+<ol class="arabic simple">
+<li><p>Comprueba que la reacción está permitida.</p></li>
+<li><p>Determina la energía mínima en el CM.</p></li>
+<li><p>Determina la energía y el momento umbral del protón incidente en el laboratorio.</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s_min</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="n">m_p</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">E</span> <span class="o">=</span> <span class="p">(</span><span class="n">s_min</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">m_p</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">m_p</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'sqrt(s)_min = </span><span class="si">{:.2f}</span><span class="s1"> GeV;  E = </span><span class="si">{:.2f}</span><span class="s1"> GeV, p = </span><span class="si">{:.2f}</span><span class="s1"> GeV, T = </span><span class="si">{:.2f}</span><span class="s1"> GeV'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+      <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s_min</span><span class="p">),</span> <span class="n">E</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">E</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">m_p</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span> <span class="n">E</span> <span class="o">-</span> <span class="n">m_p</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sqrt(s)_min = 3.75 GeV;  E = 6.57 GeV, p = 6.50 GeV, T = 5.63 GeV
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p>Conserva la carga (<span class="math notranslate nohighlight">\(2 \to 2\)</span>) y el número bariónico (<span class="math notranslate nohighlight">\(2 \to 3 - 1 = 2\)</span>): el <span class="math notranslate nohighlight">\(\bar p\)</span> se crea junto a un protón.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sqrt{s}_{\min} = 4m_p = 3.75\)</span> GeV.</p></li>
+<li><p><span class="math notranslate nohighlight">\(2m_p^2 + 2m_pE = 16m_p^2 \Rightarrow E = 7m_p = 6.57\)</span> GeV; <span class="math notranslate nohighlight">\(p = \sqrt{48}\,m_p = 6.50\)</span> GeV; <span class="math notranslate nohighlight">\(T = 6m_p = 5.63\)</span> GeV.</p></li>
+</ol>
+</details><div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 8 — Fotoproducción de piones y el corte GZK</b></p>
+<p>Considera <span class="math notranslate nohighlight">\(\gamma + p \to p + \pi^0\)</span>.</p>
+<ol class="arabic simple">
+<li><p>¿Cuál es la energía mínima de los fotones si inciden sobre protones en reposo?</p></li>
+<li><p>¿Qué energía mínima deben tener los protones ultrarrelativistas de los rayos cósmicos para que la reacción
+tenga lugar con los fotones de 1 meV del fondo cósmico de microondas?</p></li>
+<li><p>Justo por encima del umbral la sección eficaz es <span class="math notranslate nohighlight">\(\sigma = 0.6\)</span> mb y la densidad de fotones del fondo es
+<span class="math notranslate nohighlight">\(\rho_\gamma = 4.1\times10^{8}\)</span> <span class="math notranslate nohighlight">\(\mathrm{m}^{-3}\)</span>. Calcula la longitud de interacción del protón. ¿Es grande o
+pequeña a escala cosmológica? (1 Mpc <span class="math notranslate nohighlight">\(= 3.09\times10^{22}\)</span> m.)</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s_umbral</span> <span class="o">=</span> <span class="p">(</span><span class="n">m_p</span> <span class="o">+</span> <span class="n">m_pi0</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">E_gamma</span>  <span class="o">=</span> <span class="p">(</span><span class="n">s_umbral</span> <span class="o">-</span> <span class="n">m_p</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">m_p</span><span class="p">)</span>
+<span class="n">E_p</span>      <span class="o">=</span> <span class="n">s_umbral</span> <span class="o">/</span> <span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="mf">1e-12</span><span class="p">)</span>                 <span class="c1"># fotón de 1 meV = 1e-12 GeV, choque frontal</span>
+<span class="n">lam</span>      <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mf">4.1e8</span> <span class="o">*</span> <span class="mf">0.6e-31</span><span class="p">)</span>                  <span class="c1"># m  (0.6 mb = 0.6e-31 m^2)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'E_gamma = </span><span class="si">{:.0f}</span><span class="s1"> MeV;  E_p = </span><span class="si">{:.1e}</span><span class="s1"> eV;  lambda = </span><span class="si">{:.1e}</span><span class="s1"> m = </span><span class="si">{:.1f}</span><span class="s1"> Mpc'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+      <span class="mf">1e3</span> <span class="o">*</span> <span class="n">E_gamma</span><span class="p">,</span> <span class="mf">1e9</span> <span class="o">*</span> <span class="n">E_p</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">lam</span> <span class="o">/</span> <span class="mf">3.09e22</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E_gamma = 145 MeV;  E_p = 2.9e+20 eV;  lambda = 4.1e+22 m = 1.3 Mpc
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<p>En el umbral, <span class="math notranslate nohighlight">\(s = (m_p + m_\pi)^2\)</span>.</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(s = (E_\gamma + m_p)^2 - E_\gamma^2 = m_p^2 + 2m_pE_\gamma \Rightarrow
+E_\gamma = \dfrac{(m_p + m_\pi)^2 - m_p^2}{2m_p} = 145\)</span> MeV.</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(E_p \simeq p_p\)</span>: <span class="math notranslate nohighlight">\(s \simeq 2E_\gamma E_p(1 - \cos\theta)\)</span>, mínimo en choque frontal (<span class="math notranslate nohighlight">\(\cos\theta = -1\)</span>):
+<span class="math notranslate nohighlight">\(s = 4E_\gamma E_p \Rightarrow E_p = \dfrac{(m_p + m_\pi)^2}{4E_\gamma} = 2.9\times10^{20}\)</span> eV.
+Por encima, los protones pierden energía con el fondo cósmico (corte GZK).</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda = 1/(\rho_\gamma\sigma) = 4\times10^{22}\)</span> m <span class="math notranslate nohighlight">\(\simeq 1.3\)</span> Mpc, frente a los <span class="math notranslate nohighlight">\(\sim10^{4}\)</span> Mpc del
+universo observable: <strong>minúscula</strong>. Un protón de <span class="math notranslate nohighlight">\(10^{20}\)</span> eV no puede venir de lejos.
+(Matiz honesto: 1.3 Mpc es la longitud de interacción <em>muy por encima</em> del umbral. La distancia que de
+verdad importa es la de pérdida de energía, más larga —del orden de 100 Mpc—, porque cerca del umbral solo
+participa la cola energética del espectro de cuerpo negro y porque cada colisión se lleva solo un
+<span class="math notranslate nohighlight">\(\sim20\,\%\)</span> de la energía del protón. La conclusión no cambia: hay un horizonte GZK, y los rayos cósmicos
+de energía extrema tienen que proceder del universo cercano.)</p></li>
+</ol>
+</details></section>
+<section id="fraccion-de-desintegracion-y-anchura">
+<h2>Fracción de desintegración y anchura<a class="headerlink" href="#fraccion-de-desintegracion-y-anchura" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 9 — Higgs a dos fotones en el LHC</b></p>
+<p>La sección eficaz de producción del Higgs es 50 pb en colisiones <span class="math notranslate nohighlight">\(p + p\)</span> a <span class="math notranslate nohighlight">\(\sqrt s = 8\)</span> TeV. Si
+<span class="math notranslate nohighlight">\(\mathcal{B}(H \to \gamma + \gamma) = 2.2\times10^{-3}\)</span>, ¿cuántos sucesos de este tipo se producen en un año
+(<span class="math notranslate nohighlight">\(10^7\)</span> s) con <span class="math notranslate nohighlight">\(\mathcal{L} = 10^{34}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^{-2}\,\mathrm{s}^{-1}\)</span>? ¿Qué luminosidad integrada hace falta para
+producir 100?</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sigma</span><span class="p">,</span> <span class="n">Br</span><span class="p">,</span> <span class="n">lum</span><span class="p">,</span> <span class="n">T</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">*</span> <span class="n">pb</span><span class="p">,</span> <span class="mf">2.2e-3</span><span class="p">,</span> <span class="mf">1e34</span><span class="p">,</span> <span class="mf">1e7</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'N = </span><span class="si">{:.1e}</span><span class="s1">;  L_int para 100 = </span><span class="si">{:.0f}</span><span class="s1"> pb^-1'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sigma</span> <span class="o">*</span> <span class="n">Br</span> <span class="o">*</span> <span class="n">lum</span> <span class="o">*</span> <span class="n">T</span><span class="p">,</span> <span class="mi">100</span> <span class="o">/</span> <span class="p">(</span><span class="mi">50</span> <span class="o">*</span> <span class="n">Br</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>N = 1.1e+04;  L_int para 100 = 909 pb^-1
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<p><span class="math notranslate nohighlight">\(N = \sigma\,\mathcal{B}\,\mathcal{L}\,T = 50\times10^{-36}\times2.2\times10^{-3}\times10^{34}\times10^{7} = 1.1\times10^{4}\)</span>.
+<span class="math notranslate nohighlight">\(\mathcal{L}_{\rm int} = N/(\sigma\mathcal{B}) = 100/(50\ \mathrm{pb}\times2.2\times10^{-3}) = 909\)</span> <span class="math notranslate nohighlight">\(\mathrm{pb}^{-1}\)</span>
+<span class="math notranslate nohighlight">\(\simeq 0.9\)</span> <span class="math notranslate nohighlight">\(\mathrm{fb}^{-1}\)</span>.</p>
+</details><div class="admonition tip">
+<p class="admonition-title"><b>[>] Ejercicio 10 — Anchura y vida media</b></p>
+<p>La vida media del <span class="math notranslate nohighlight">\(\pi^0\)</span> es <span class="math notranslate nohighlight">\(\tau = 8.4\times10^{-17}\)</span> s. ¿Cuál es su anchura de desintegración? La anchura
+del mesón <span class="math notranslate nohighlight">\(\eta\)</span> es <span class="math notranslate nohighlight">\(\Gamma_\eta = 1.3\)</span> keV. ¿Cuál es su vida media?</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Gamma(pi0) = </span><span class="si">{:.1f}</span><span class="s1"> eV;  tau(eta) = </span><span class="si">{:.1e}</span><span class="s1"> s'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1e9</span> <span class="o">*</span> <span class="n">hbar</span> <span class="o">/</span> <span class="mf">8.4e-17</span><span class="p">,</span> <span class="n">hbar</span> <span class="o">/</span> <span class="mf">1.3e-6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gamma(pi0) = 7.8 eV;  tau(eta) = 5.1e-19 s
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<p><span class="math notranslate nohighlight">\(\Gamma = \hbar/\tau\)</span>: <span class="math notranslate nohighlight">\(\Gamma_{\pi^0} = 6.58\times10^{-16}\)</span> eV s <span class="math notranslate nohighlight">\(/ 8.4\times10^{-17}\)</span> s <span class="math notranslate nohighlight">\(= 7.8\)</span> eV;
+<span class="math notranslate nohighlight">\(\tau_\eta = \hbar/\Gamma_\eta = 6.58\times10^{-16}/1.3\times10^{3} = 5.1\times10^{-19}\)</span> s.
+Anchuras de eV–keV para desintegraciones electromagnéticas; el <span class="math notranslate nohighlight">\(\eta\)</span> vive menos porque tiene más canales
+abiertos.</p>
+</details></section>
+<section id="datos">
+<h2>Datos<a class="headerlink" href="#datos" title="Permalink to this heading">#</a></h2>
+<p><strong>Constantes.</strong> <span class="math notranslate nohighlight">\(\hbar c = 197.3\)</span> MeV fm; <span class="math notranslate nohighlight">\(\hbar = 6.582\times10^{-22}\)</span> MeV s; <span class="math notranslate nohighlight">\(c = 3.0\times10^{8}\)</span> m/s;
+<span class="math notranslate nohighlight">\(N_A = 6.022\times10^{23}\)</span> <span class="math notranslate nohighlight">\(\mathrm{mol}^{-1}\)</span>; 1 b <span class="math notranslate nohighlight">\(= 10^{-24}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^2 = 100\)</span> <span class="math notranslate nohighlight">\(\mathrm{fm}^2\)</span>, 1 pb <span class="math notranslate nohighlight">\(= 10^{-36}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^2\)</span>.</p>
+<p><strong>Masas.</strong> <span class="math notranslate nohighlight">\(m_{\pi^0} = 134.98\)</span> MeV, <span class="math notranslate nohighlight">\(m_p = 938.27\)</span> MeV, <span class="math notranslate nohighlight">\(m_\tau = 1776.9\)</span> MeV, <span class="math notranslate nohighlight">\(m_Z = 91.19\)</span> GeV.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks/bols"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="boletin_I_2627.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Partículas — boletín I</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="boletin_II_2627_higgs_4l.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Un pico sobre el fondo</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observables-seccion-eficaz-luminosidad-vida-media-invariante-s-fraccion-y-anchura">Observables: sección eficaz, luminosidad, vida media, invariante <span class="math notranslate nohighlight">\(s\)</span>, fracción y anchura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivos">Objetivos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seccion-eficaz-y-luminosidad">Sección eficaz y luminosidad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vida-media">Vida media</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-invariante-s">El invariante <span class="math notranslate nohighlight">\(s\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fraccion-de-desintegracion-y-anchura">Fracción de desintegración y anchura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos">Datos</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por J. Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1233 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Extensión: Las simetrías internas &#8212; Introducción a la Física de Partículas - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/ext-grupos';</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Extensión: Diagramas de Feynman y propagadores" href="ext-feynman.html" />
+    <link rel="prev" title="Extensión: La quiralidad" href="ext-quiral.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Introducción a la Física de Partículas - USC - Home"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Introducción a la Física de Partículas - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Capítulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Física de Partículas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="perspectivas.html">Perspectivas: experimental y teórica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leptones.html">Leptones: la mano izquierda de la Naturaleza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quarks_hadrons.html">Quarks y hadrones: el color que no se ve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sm.html">El Modelo Estándar: el vacío no está vacío</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: extensiones</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ext-cinematica.html">Extensión: Cinemática relativista y espacio fásico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-dirac.html">Extensión: La ecuación de Dirac</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-quiral.html">Extensión: La quiralidad</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Extensión: Las simetrías internas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-feynman.html">Extensión: Diagramas de Feynman y propagadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-sm.html">Extensión: El Modelo Estándar</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: boletines</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_inicio_2627.html">¿Se desintegra el protón?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_I_2627.html">Partículas — boletín I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_II_2627.html">Partículas — boletín II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_II_2627_higgs_4l.html">Un pico sobre el fondo</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/main?urlpath=tree/./notebooks/ext-grupos.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jahernando/USC-FNyP/blob/main/./notebooks/ext-grupos.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/ext-grupos.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/ext-grupos.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Extensión: Las simetrías internas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grupos-generadores-y-representaciones">1. Grupos, generadores y representaciones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simetrias-y-grupos">1.1. Simetrías y grupos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generadores">1.2. Generadores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#representaciones">1.3. Representaciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-1-la-fase-y-la-carga">2. <span class="math notranslate nohighlight">\(U(1)\)</span>: la fase y la carga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#su-2-el-espin-y-el-isoespin">3. <span class="math notranslate nohighlight">\(SU(2)\)</span>: el espín y el isoespín</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generadores-algebra-y-estados">3.1. Generadores, álgebra y estados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combinar-dos-dobletes-mathbf-2-otimes-mathbf-2-mathbf-3-oplus-mathbf-1">3.2. Combinar dos dobletes: <span class="math notranslate nohighlight">\(\mathbf{2} \otimes \mathbf{2} = \mathbf{3} \oplus \mathbf{1}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#su-2-y-las-rotaciones-las-dos-vueltas">3.3. <span class="math notranslate nohighlight">\(SU(2)\)</span> y las rotaciones: las dos vueltas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tres-usos-de-su-2">3.4. Tres usos de <span class="math notranslate nohighlight">\(SU(2)\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#su-3-ocho-generadores">4. <span class="math notranslate nohighlight">\(SU(3)\)</span>: ocho generadores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-matrices-de-gell-mann">4.1. Las matrices de Gell-Mann</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-diagramas-de-pesos">4.2. Los diagramas de pesos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combinar-tripletes">4.3. Combinar tripletes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-color">5. El color</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-sabor-el-camino-octuple">6. El sabor: el camino óctuple</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#una-simetria-aproximada">6.1. Una simetría aproximada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-multipletes">6.2. Los multipletes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-global-a-local-un-boson-por-generador">7. De global a local: un bosón por generador</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aparte-el-grupo-de-lorentz">8. Aparte: el grupo de Lorentz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rotaciones-y-boosts">8.1. Rotaciones y <em>boosts</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dos-su-2-escondidas">8.2. Dos <span class="math notranslate nohighlight">\(SU(2)\)</span> escondidas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-es-compacto-por-que-hace-falta-bar-psi">8.3. No es compacto: por qué hace falta <span class="math notranslate nohighlight">\(\bar\Psi\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="extension-las-simetrias-internas">
+<h1>Extensión: Las simetrías internas<a class="headerlink" href="#extension-las-simetrias-internas" title="Permalink to this heading">#</a></h1>
+<p>José A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Octubre 2026</p>
+<section id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h2>
+<p>Esta extensión es el <strong>desarrollo matemático de las simetrías internas</strong> del Modelo Estándar, <span class="math notranslate nohighlight">\(U(1)\)</span>, <span class="math notranslate nohighlight">\(SU(2)\)</span> y
+<span class="math notranslate nohighlight">\(SU(3)\)</span>, que los temas usan sin demostrar: la carga y el fotón (<a class="reference internal" href="perspectivas.html"><span class="doc std std-doc">perspectivas</span></a>,
+<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>), el isoespín débil (<a class="reference internal" href="leptones.html"><span class="doc std std-doc">leptones</span></a>, <a class="reference internal" href="ext-sm.html"><span class="doc std std-doc">ext-sm</span></a>), el
+color y los multipletes de hadrones (<a class="reference internal" href="quarks_hadrons.html"><span class="doc std std-doc">quarks y hadrones</span></a>).</p>
+<p><strong>Simetrías internas.</strong> Son transformaciones que mezclan las etiquetas «de dentro» de un campo, su fase, su sabor o su
+color, en el mismo punto del espacio-tiempo, sin tocar <span class="math notranslate nohighlight">\(t\)</span> ni <span class="math notranslate nohighlight">\({\bf x}\)</span>. Fijan las <strong>cargas</strong> y las <strong>interacciones</strong>. Son
+distintas de las simetrías del <strong>espacio-tiempo</strong>, las traslaciones, las rotaciones y los <em>boosts</em>, que mueven los
+puntos y mezclan las componentes de los vectores y del espín, y fijan la energía, el momento y el espín. Las dos se
+describen con la misma matemática, los grupos de Lie, pero <strong>esta extensión trata de las internas</strong>. Tiene siete
+secciones sobre ellas y una octava, aparte, que mira el grupo de Lorentz con las mismas herramientas; cada una
+responde a una pregunta:</p>
+<ol class="arabic simple">
+<li><p><strong>Grupos, generadores y representaciones.</strong> <em>¿Qué es una simetría continua?</em> Unas matrices que se obtienen
+exponenciando unos pocos generadores. Sus autovalores son los números cuánticos.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(U(1)\)</span>: la fase y la carga.</strong> <em>¿Qué simetría da la carga eléctrica?</em> La más sencilla: una fase.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(SU(2)\)</span>: el espín y el isoespín.</strong> <em>¿Por qué dobletes y tripletes?</em> Las representaciones de <span class="math notranslate nohighlight">\(SU(2)\)</span> y cómo se
+combinan.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(SU(3)\)</span>: ocho generadores.</strong> <em>¿Cómo se dibujan sus representaciones?</em> En el plano <span class="math notranslate nohighlight">\((T_3, Y)\)</span>: triángulos,
+hexágonos y triángulos grandes.</p></li>
+<li><p><strong>El color.</strong> <em>¿Por qué solo <span class="math notranslate nohighlight">\(qqq\)</span> y <span class="math notranslate nohighlight">\(q\bar q\)</span>?</em> Son las combinaciones que pueden ser singletes de color.</p></li>
+<li><p><strong>El sabor: el camino óctuple.</strong> <em>¿Por qué los hadrones ligeros vienen en octetes y decupletes?</em> Por una simetría
+aproximada entre <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(d\)</span> y <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+<li><p><strong>De global a local: un bosón por generador.</strong> <em>¿Por qué un fotón, tres <span class="math notranslate nohighlight">\(W\)</span> y ocho gluones?</em> Y por qué los
+gluones interaccionan entre sí y el fotón no.</p></li>
+<li><p><strong>Aparte: el grupo de Lorentz.</strong> <em>¿Qué son, para un grupo, un escalar, un cuadrivector y un espinor?</em>
+Representaciones de una simetría del espacio-tiempo, no interna. Y por qué hace falta <span class="math notranslate nohighlight">\(\bar\Psi\)</span>.</p></li>
+</ol>
+<p>Convenios: <span class="math notranslate nohighlight">\(\hbar = c = 1\)</span>; generadores hermíticos, <span class="math notranslate nohighlight">\(U = e^{i\theta_a T_a}\)</span>, con suma sobre los índices repetidos.</p>
+</section>
+<section id="grupos-generadores-y-representaciones">
+<h2>1. Grupos, generadores y representaciones<a class="headerlink" href="#grupos-generadores-y-representaciones" title="Permalink to this heading">#</a></h2>
+<section id="simetrias-y-grupos">
+<h3>1.1. Simetrías y grupos<a class="headerlink" href="#simetrias-y-grupos" title="Permalink to this heading">#</a></h3>
+<p>Un <strong>grupo</strong> es un conjunto de transformaciones que se pueden componer: el producto de dos es otra del grupo, hay
+una identidad, cada una tiene su inversa, y el producto es asociativo. Si el orden no importa, <span class="math notranslate nohighlight">\(g_1 g_2 = g_2 g_1\)</span>, el
+grupo es <strong>abeliano</strong>.</p>
+<p>Las simetrías de la física forman grupos: si dos transformaciones dejan la física igual, aplicar una tras otra
+también. Las hay <strong>discretas</strong>, como la paridad y la conjugación de carga (<a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>,
+sección 2), y <strong>continuas</strong>, que dependen de parámetros reales, como un ángulo. Las continuas y derivables son los
+<strong>grupos de Lie</strong>: las rotaciones, las transformaciones de Lorentz y los tres de esta extensión.</p>
+<p><strong>Simetría y conservación</strong> (E. Noether, 1918). Cada simetría continua del lagrangiano da una cantidad
+conservada: la traslación en el tiempo, la energía; las rotaciones, el momento angular; una fase, una carga
+(sección 2).</p>
+</section>
+<section id="generadores">
+<h3>1.2. Generadores<a class="headerlink" href="#generadores" title="Permalink to this heading">#</a></h3>
+<p>Cerca de la identidad, <span class="math notranslate nohighlight">\(U \simeq I + i\theta_a T_a\)</span>: los <span class="math notranslate nohighlight">\(T_a\)</span> son los <strong>generadores</strong>. Una transformación finita es
+muchas pequeñas seguidas:</p>
+<div class="math notranslate nohighlight">
+\[
+U(\theta) = \lim_{N \to \infty}\left(I + \frac{i\theta_a T_a}{N}\right)^N = e^{i\theta_a T_a} .
+\]</div>
+<ul class="simple">
+<li><p><strong>Si <span class="math notranslate nohighlight">\(U\)</span> es unitaria, los generadores son hermíticos.</strong> Son observables, y sus autovalores, <strong>números
+cuánticos</strong>.</p></li>
+<li><p><strong>El álgebra.</strong> Que el grupo sea o no abeliano lo decide el conmutador de los generadores,
+<span class="math notranslate nohighlight">\([T_a, T_b] = i f_{abc}\,T_c\)</span>; las <span class="math notranslate nohighlight">\(f_{abc}\)</span> son las <strong>constantes de estructura</strong>. Si son todas nulas, el grupo es
+abeliano.</p></li>
+<li><p><strong>El rango.</strong> Los generadores que conmutan entre sí se diagonalizan a la vez y etiquetan los estados con números
+cuánticos <strong>aditivos</strong>. Cuántos hay es el rango del grupo: <span class="math notranslate nohighlight">\(1\)</span> en <span class="math notranslate nohighlight">\(SU(2)\)</span> (<span class="math notranslate nohighlight">\(T_3\)</span>) y <span class="math notranslate nohighlight">\(2\)</span> en <span class="math notranslate nohighlight">\(SU(3)\)</span> (<span class="math notranslate nohighlight">\(T_3\)</span> y <span class="math notranslate nohighlight">\(T_8\)</span>).</p></li>
+</ul>
+<p><strong>Cuántos generadores.</strong> <span class="math notranslate nohighlight">\(SU(n)\)</span> son las matrices <span class="math notranslate nohighlight">\(n \times n\)</span> unitarias (U) con determinante <span class="math notranslate nohighlight">\(1\)</span> (S, <em>special</em>).
+Una matriz compleja <span class="math notranslate nohighlight">\(n \times n\)</span> tiene <span class="math notranslate nohighlight">\(2n^2\)</span> parámetros reales; <span class="math notranslate nohighlight">\(U^\dagger U = I\)</span> impone <span class="math notranslate nohighlight">\(n^2\)</span> condiciones, y
+<span class="math notranslate nohighlight">\(\det U = 1\)</span> una más. Quedan <span class="math notranslate nohighlight">\(n^2 - 1\)</span>: <strong><span class="math notranslate nohighlight">\(3\)</span> en <span class="math notranslate nohighlight">\(SU(2)\)</span>, <span class="math notranslate nohighlight">\(8\)</span> en <span class="math notranslate nohighlight">\(SU(3)\)</span></strong>, y <span class="math notranslate nohighlight">\(1\)</span> en <span class="math notranslate nohighlight">\(U(1)\)</span>. Como
+<span class="math notranslate nohighlight">\(\det e^{iT} = e^{i\,\mathrm{tr}\,T}\)</span>, los generadores de <span class="math notranslate nohighlight">\(SU(n)\)</span> tienen traza nula.</p>
+</section>
+<section id="representaciones">
+<h3>1.3. Representaciones<a class="headerlink" href="#representaciones" title="Permalink to this heading">#</a></h3>
+<p>El mismo grupo actúa sobre objetos de distinta dimensión: las rotaciones giran un espinor de Pauli (espín <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>,
+dos componentes) con matrices <span class="math notranslate nohighlight">\(2 \times 2\)</span> y un vector con matrices <span class="math notranslate nohighlight">\(3 \times 3\)</span>. El espinor de Dirac, con cuatro
+componentes, se gira con matrices <span class="math notranslate nohighlight">\(4 \times 4\)</span>, <span class="math notranslate nohighlight">\(S(\Lambda)\)</span>; pero en la base quiral son dos bloques <span class="math notranslate nohighlight">\(2 \times 2\)</span> que no se
+mezclan, uno por quiralidad (<a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>, sección 6): es <strong>reducible</strong>, y solo la paridad, que
+intercambia los bloques, lo une. Cada conjunto de matrices que se multiplican como los elementos del grupo es una
+<strong>representación</strong>; los vectores sobre los que actúan forman su base, y son los
+<strong>estados</strong> de las partículas.</p>
+<ul class="simple">
+<li><p><strong>Irreducible:</strong> no se puede partir en bloques que no se mezclen. Las partículas son las bases de las
+representaciones irreducibles, que se nombran por su dimensión: <span class="math notranslate nohighlight">\(\mathbf{1}\)</span> (singlete), <span class="math notranslate nohighlight">\(\mathbf{2}\)</span> (doblete),
+<span class="math notranslate nohighlight">\(\mathbf{3}\)</span> (triplete), <span class="math notranslate nohighlight">\(\mathbf{8}\)</span> (octete)…</p></li>
+<li><p><strong>Fundamental:</strong> la más pequeña que no es trivial, <span class="math notranslate nohighlight">\(\mathbf{2}\)</span> en <span class="math notranslate nohighlight">\(SU(2)\)</span> y <span class="math notranslate nohighlight">\(\mathbf{3}\)</span> en <span class="math notranslate nohighlight">\(SU(3)\)</span>. Los quarks
+están en ella. Su <strong>conjugada</strong>, con <span class="math notranslate nohighlight">\(U^*\)</span>, es la de los antiquarks: <span class="math notranslate nohighlight">\(\bar{\mathbf{3}}\)</span>.</p></li>
+<li><p><strong>Adjunta:</strong> su dimensión es el número de generadores, <span class="math notranslate nohighlight">\(\mathbf{3}\)</span> en <span class="math notranslate nohighlight">\(SU(2)\)</span> y <span class="math notranslate nohighlight">\(\mathbf{8}\)</span> en <span class="math notranslate nohighlight">\(SU(3)\)</span>. Los
+bosones <em>gauge</em> están en ella (sección 7).</p></li>
+<li><p><strong>Singlete:</strong> no cambia. Es lo que no lleva la carga de ese grupo: un hadrón es un singlete de color.</p></li>
+<li><p><strong>Combinar</strong> dos sistemas es multiplicar sus representaciones, <span class="math notranslate nohighlight">\(\otimes\)</span>, y descomponer el producto en
+irreducibles, <span class="math notranslate nohighlight">\(\oplus\)</span>: <span class="math notranslate nohighlight">\(\mathbf{2} \otimes \mathbf{2} = \mathbf{3} \oplus \mathbf{1}\)</span> (sección 3). Las dimensiones
+cuadran, <span class="math notranslate nohighlight">\(2 \times 2 = 3 + 1\)</span>.</p></li>
+<li><p><strong>Casimir:</strong> un operador que conmuta con todos los generadores, como <span class="math notranslate nohighlight">\({\bf J}^2\)</span>. Vale lo mismo en toda una
+representación irreducible, y la etiqueta.</p></li>
+</ul>
+</section>
+</section>
+<section id="u-1-la-fase-y-la-carga">
+<h2>2. <span class="math notranslate nohighlight">\(U(1)\)</span>: la fase y la carga<a class="headerlink" href="#u-1-la-fase-y-la-carga" title="Permalink to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\(U(1)\)</span> son las fases, <span class="math notranslate nohighlight">\(U(\theta) = e^{iq\theta}\)</span>. Tiene un solo generador, cuyo autovalor es la carga <span class="math notranslate nohighlight">\(q\)</span>, y es
+abeliano: <span class="math notranslate nohighlight">\(e^{iq\theta_1}e^{iq\theta_2} = e^{iq(\theta_1 + \theta_2)}\)</span>, en cualquier orden. Sus representaciones
+irreducibles son de dimensión <span class="math notranslate nohighlight">\(1\)</span> y se etiquetan con <span class="math notranslate nohighlight">\(q\)</span>: <strong>cada partícula tiene su carga</strong>, y cualquier valor está
+permitido. Es el mismo grupo que las rotaciones del plano, <span class="math notranslate nohighlight">\(SO(2)\)</span>: <span class="math notranslate nohighlight">\(e^{i\theta}\)</span> y la matriz de giro
+<span class="math notranslate nohighlight">\(\begin{pmatrix} \cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{pmatrix}\)</span> se componen igual.</p>
+<p><strong>En la física:</strong></p>
+<ul class="simple">
+<li><p><strong>Fase global</strong>, <span class="math notranslate nohighlight">\(\Psi \to e^{iq\theta}\Psi\)</span>. La ecuación de Dirac no cambia. Por Noether se conserva la corriente,
+<span class="math notranslate nohighlight">\(\partial_\mu(\bar\Psi\gamma^\mu\Psi) = 0\)</span>, y con ella la carga (<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, sección 4). Con una fase
+para los quarks y otra para cada familia de leptones salen la conservación del número bariónico y de los
+leptónicos.</p></li>
+<li><p><strong>Fase local</strong>, <span class="math notranslate nohighlight">\(\theta(x)\)</span>. Hace falta un campo que compense la derivada de la fase: el fotón,
+<span class="math notranslate nohighlight">\(D_\mu = \partial_\mu + iqA_\mu\)</span> (<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, sección 5). Un generador, un bosón.</p></li>
+<li><p><strong>Las cargas se suman.</strong> Un estado de dos partículas de cargas <span class="math notranslate nohighlight">\(q_1\)</span> y <span class="math notranslate nohighlight">\(q_2\)</span> se transforma con
+<span class="math notranslate nohighlight">\(e^{i(q_1 + q_2)\theta}\)</span>. Es la versión abeliana, trivial, de la suma de momentos angulares de <span class="math notranslate nohighlight">\(SU(2)\)</span>.</p></li>
+</ul>
+</section>
+<section id="su-2-el-espin-y-el-isoespin">
+<h2>3. <span class="math notranslate nohighlight">\(SU(2)\)</span>: el espín y el isoespín<a class="headerlink" href="#su-2-el-espin-y-el-isoespin" title="Permalink to this heading">#</a></h2>
+<section id="generadores-algebra-y-estados">
+<h3>3.1. Generadores, álgebra y estados<a class="headerlink" href="#generadores-algebra-y-estados" title="Permalink to this heading">#</a></h3>
+<p>Los generadores son las matrices de Pauli entre dos, <span class="math notranslate nohighlight">\(T_a = \sigma_a/2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sigma_1 = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}, \quad
+\sigma_2 = \begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix}, \quad
+\sigma_3 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}, \qquad
+[T_a, T_b] = i\,\varepsilon_{abc}\,T_c .
+\end{split}\]</div>
+<p>Es el álgebra del momento angular: <span class="math notranslate nohighlight">\(SU(2)\)</span> <strong>no es abeliano</strong>. Su rango es <span class="math notranslate nohighlight">\(1\)</span>; se diagonalizan <span class="math notranslate nohighlight">\(T_3\)</span> y el Casimir
+<span class="math notranslate nohighlight">\({\bf T}^2 = T_1^2 + T_2^2 + T_3^2\)</span>, y los estados son <span class="math notranslate nohighlight">\(|t, m\rangle\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+{\bf T}^2\,|t, m\rangle = t(t+1)\,|t, m\rangle, \qquad T_3\,|t, m\rangle = m\,|t, m\rangle, \qquad m = -t, \dots, t .
+\]</div>
+<p>Cada <span class="math notranslate nohighlight">\(t = 0, \frac{1}{2}, 1, \frac{3}{2}, \dots\)</span> es una representación irreducible de dimensión <span class="math notranslate nohighlight">\(2t + 1\)</span>: <span class="math notranslate nohighlight">\(\mathbf{1}\)</span>,
+<span class="math notranslate nohighlight">\(\mathbf{2}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{3}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{4}\)</span>… Los <strong>operadores escalera</strong>, <span class="math notranslate nohighlight">\(T_\pm = T_1 \pm iT_2\)</span>, recorren cada una:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T_\pm\,|t, m\rangle = \sqrt{t(t+1) - m(m \pm 1)}\;|t, m \pm 1\rangle ,
+\qquad \text{en } \mathbf{2}: \;
+T_+ = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix}, \;
+T_- = \begin{pmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{pmatrix} .
+\end{split}\]</div>
+</section>
+<section id="combinar-dos-dobletes-mathbf-2-otimes-mathbf-2-mathbf-3-oplus-mathbf-1">
+<h3>3.2. Combinar dos dobletes: <span class="math notranslate nohighlight">\(\mathbf{2} \otimes \mathbf{2} = \mathbf{3} \oplus \mathbf{1}\)</span><a class="headerlink" href="#combinar-dos-dobletes-mathbf-2-otimes-mathbf-2-mathbf-3-oplus-mathbf-1" title="Permalink to this heading">#</a></h3>
+<p>Dos espines <span class="math notranslate nohighlight">\(1/2\)</span> tienen cuatro estados: <span class="math notranslate nohighlight">\(\uparrow\uparrow\)</span>, <span class="math notranslate nohighlight">\(\uparrow\downarrow\)</span>, <span class="math notranslate nohighlight">\(\downarrow\uparrow\)</span>, <span class="math notranslate nohighlight">\(\downarrow\downarrow\)</span>. Se
+parte del de <span class="math notranslate nohighlight">\(m\)</span> máximo, <span class="math notranslate nohighlight">\(\uparrow\uparrow\)</span>, y se baja con <span class="math notranslate nohighlight">\(T_- = T_-^{(1)} + T_-^{(2)}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+|1, 1\rangle = \uparrow\uparrow, \qquad
+|1, 0\rangle = \frac{1}{\sqrt{2}}\left(\uparrow\downarrow + \downarrow\uparrow\right), \qquad
+|1, -1\rangle = \downarrow\downarrow ;
+\qquad
+|0, 0\rangle = \frac{1}{\sqrt{2}}\left(\uparrow\downarrow - \downarrow\uparrow\right) .
+\]</div>
+<p>El singlete es el estado con <span class="math notranslate nohighlight">\(m = 0\)</span> ortogonal a <span class="math notranslate nohighlight">\(|1, 0\rangle\)</span>. <strong>El triplete es simétrico</strong> al intercambiar las dos
+partículas, y <strong>el singlete, antisimétrico</strong>.</p>
+<p>En general, <span class="math notranslate nohighlight">\(t_1 \otimes t_2 = |t_1 - t_2| \oplus \dots \oplus (t_1 + t_2)\)</span>, con los coeficientes de Clebsch-Gordan del
+<a class="reference external" href="https://pdg.lbl.gov/2024/reviews/rpp2024-rev-clebsch-gordan-coefs.pdf">PDG</a>. Con tres dobletes,
+<span class="math notranslate nohighlight">\(\mathbf{2} \otimes \mathbf{2} \otimes \mathbf{2} = \mathbf{4} \oplus \mathbf{2} \oplus \mathbf{2}\)</span>: espín <span class="math notranslate nohighlight">\(3/2\)</span>, totalmente
+simétrico, y dos de espín <span class="math notranslate nohighlight">\(1/2\)</span> de simetría mixta. Son los espines de los bariones (sección 6). [MT9.2, MT9.3]</p>
+</section>
+<section id="su-2-y-las-rotaciones-las-dos-vueltas">
+<h3>3.3. <span class="math notranslate nohighlight">\(SU(2)\)</span> y las rotaciones: las dos vueltas<a class="headerlink" href="#su-2-y-las-rotaciones-las-dos-vueltas" title="Permalink to this heading">#</a></h3>
+<p>Las rotaciones del espacio, <span class="math notranslate nohighlight">\(SO(3)\)</span>, tienen la misma álgebra; en la representación <span class="math notranslate nohighlight">\(\mathbf{3}\)</span>, la de los vectores,
+<span class="math notranslate nohighlight">\((T_a)_{bc} = -i\,\varepsilon_{abc}\)</span>. Pero no son el mismo grupo. Un giro de <span class="math notranslate nohighlight">\(2\pi\)</span> alrededor de <span class="math notranslate nohighlight">\(z\)</span> en el doblete es</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+e^{i 2\pi T_3} = \begin{pmatrix} e^{i\pi} &amp; 0 \\ 0 &amp; e^{-i\pi} \end{pmatrix} = -I :
+\end{split}\]</div>
+<p><strong>el espinor vuelve cambiado de signo</strong>, y hacen falta <span class="math notranslate nohighlight">\(4\pi\)</span> para recuperarlo, como en
+<a class="reference internal" href="perspectivas.html"><span class="doc std std-doc">perspectivas</span></a> y en <a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a> (sección 3.3). <span class="math notranslate nohighlight">\(U\)</span> y <span class="math notranslate nohighlight">\(-U\)</span> son el mismo
+giro del espacio: <span class="math notranslate nohighlight">\(SU(2)\)</span> recubre dos veces <span class="math notranslate nohighlight">\(SO(3)\)</span>. Las representaciones de <span class="math notranslate nohighlight">\(t\)</span> entero lo son de los dos grupos;
+las de <span class="math notranslate nohighlight">\(t\)</span> semientero, los espinores, solo de <span class="math notranslate nohighlight">\(SU(2)\)</span>.</p>
+</section>
+<section id="tres-usos-de-su-2">
+<h3>3.4. Tres usos de <span class="math notranslate nohighlight">\(SU(2)\)</span><a class="headerlink" href="#tres-usos-de-su-2" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>El espín.</strong> El doblete <span class="math notranslate nohighlight">\((\uparrow, \downarrow)\)</span> y la suma de momentos angulares de la mecánica cuántica.</p></li>
+<li><p><strong>El isoespín de sabor</strong> (W. Heisenberg, 1932). El protón y el neutrón pesan casi lo mismo, <span class="math notranslate nohighlight">\(938.3\)</span> y <span class="math notranslate nohighlight">\(939.6\)</span> MeV, y
+la interacción fuerte los trata igual: son un doblete de una simetría <span class="math notranslate nohighlight">\(SU(2)\)</span> <strong>global y aproximada</strong>. En quarks,
+el doblete es <span class="math notranslate nohighlight">\((u, d)\)</span>, con <span class="math notranslate nohighlight">\(m_u \simeq m_d\)</span>, despreciables frente a la escala de los hadrones, <span class="math notranslate nohighlight">\(\sim 1\)</span> GeV. Los
+piones, <span class="math notranslate nohighlight">\((\pi^+, \pi^0, \pi^-)\)</span>, son un triplete, <span class="math notranslate nohighlight">\(t = 1\)</span>. Los antiquarks forman el doblete <span class="math notranslate nohighlight">\((-\bar d, \bar u)\)</span>, que se
+transforma como <span class="math notranslate nohighlight">\((u, d)\)</span> (el signo menos lo hace posible). La simetría la rompen <span class="math notranslate nohighlight">\(m_d - m_u\)</span> y la carga eléctrica:
+por eso <span class="math notranslate nohighlight">\(m_n - m_p = 1.3\)</span> MeV y <span class="math notranslate nohighlight">\(m_{\pi^\pm} - m_{\pi^0} = 4.6\)</span> MeV. [MT9.2, MT9.5]</p></li>
+<li><p><strong>El isoespín débil.</strong> Las partes a izquierdas forman dobletes, <span class="math notranslate nohighlight">\((\nu_e, e)_L\)</span> y <span class="math notranslate nohighlight">\((u, d)_L\)</span>, y las partes a
+derechas son singletes (<a class="reference internal" href="leptones.html"><span class="doc std std-doc">leptones</span></a>). Es una simetría <strong>local</strong>, que da los <span class="math notranslate nohighlight">\(W\)</span>
+(<a class="reference internal" href="ext-sm.html"><span class="doc std std-doc">ext-sm</span></a>), y exacta salvo por la rotura del Higgs.</p></li>
+</ul>
+<p><em>Ojo con la hipercarga.</em> En sabor, <span class="math notranslate nohighlight">\(Q = T_3 + Y/2\)</span> con <span class="math notranslate nohighlight">\(Y = B + S\)</span> (sección 6); en la teoría electrodébil, la
+hipercarga débil se define con <span class="math notranslate nohighlight">\(Q = T_3 + Y\)</span> (<a class="reference internal" href="ext-sm.html"><span class="doc std std-doc">ext-sm</span></a>). Son dos números distintos con el mismo nombre.</p>
+</section>
+</section>
+<section id="su-3-ocho-generadores">
+<h2>4. <span class="math notranslate nohighlight">\(SU(3)\)</span>: ocho generadores<a class="headerlink" href="#su-3-ocho-generadores" title="Permalink to this heading">#</a></h2>
+<section id="las-matrices-de-gell-mann">
+<h3>4.1. Las matrices de Gell-Mann<a class="headerlink" href="#las-matrices-de-gell-mann" title="Permalink to this heading">#</a></h3>
+<p>Los ocho generadores son <span class="math notranslate nohighlight">\(T_a = \lambda_a/2\)</span>, con las matrices de Gell-Mann:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\lambda_1 = \begin{pmatrix} 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}, \;
+\lambda_2 = \begin{pmatrix} 0 &amp; -i &amp; 0 \\ i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}, \;
+\lambda_3 = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}, \;
+\lambda_4 = \begin{pmatrix} 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 \end{pmatrix},
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\lambda_5 = \begin{pmatrix} 0 &amp; 0 &amp; -i \\ 0 &amp; 0 &amp; 0 \\ i &amp; 0 &amp; 0 \end{pmatrix}, \;
+\lambda_6 = \begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 \end{pmatrix}, \;
+\lambda_7 = \begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -i \\ 0 &amp; i &amp; 0 \end{pmatrix}, \;
+\lambda_8 = \frac{1}{\sqrt{3}}\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; -2 \end{pmatrix} .
+\end{split}\]</div>
+<ul class="simple">
+<li><p>Son hermíticas y de traza nula. <span class="math notranslate nohighlight">\(\lambda_{1,2,3}\)</span> son las de Pauli en el bloque de arriba: <strong><span class="math notranslate nohighlight">\(SU(2)\)</span> está dentro
+de <span class="math notranslate nohighlight">\(SU(3)\)</span></strong>, y hay otras dos copias, en los bloques <span class="math notranslate nohighlight">\((1, 3)\)</span> y <span class="math notranslate nohighlight">\((2, 3)\)</span>.</p></li>
+<li><p>Cumplen <span class="math notranslate nohighlight">\([T_a, T_b] = i f_{abc}\,T_c\)</span>, con <span class="math notranslate nohighlight">\(f_{123} = 1\)</span>, <span class="math notranslate nohighlight">\(f_{458} = f_{678} = \sqrt{3}/2\)</span> y otras, totalmente antisimétricas.</p></li>
+<li><p><strong>Rango 2:</strong> solo <span class="math notranslate nohighlight">\(\lambda_3\)</span> y <span class="math notranslate nohighlight">\(\lambda_8\)</span> son diagonales. Se usan <span class="math notranslate nohighlight">\(T_3 = \lambda_3/2\)</span> y la hipercarga
+<span class="math notranslate nohighlight">\(Y = \lambda_8/\sqrt{3}\)</span>; en la representación fundamental,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+T_3 = \mathrm{diag}\left(\tfrac{1}{2}, -\tfrac{1}{2}, 0\right), \qquad
+Y = \mathrm{diag}\left(\tfrac{1}{3}, \tfrac{1}{3}, -\tfrac{2}{3}\right), \qquad
+\sum_a T_a^2 = \tfrac{4}{3}\,I .
+\]</div>
+</section>
+<section id="los-diagramas-de-pesos">
+<h3>4.2. Los diagramas de pesos<a class="headerlink" href="#los-diagramas-de-pesos" title="Permalink to this heading">#</a></h3>
+<p>Cada estado tiene dos números cuánticos aditivos, <span class="math notranslate nohighlight">\((T_3, Y)\)</span>, y se dibuja como un punto del plano. El triplete
+<span class="math notranslate nohighlight">\(\mathbf{3}\)</span> es un triángulo con el vértice abajo; el antitriplete <span class="math notranslate nohighlight">\(\bar{\mathbf{3}}\)</span>, con todos los números
+cambiados de signo, uno con el vértice arriba:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/groups_su3_triplete.png"><img alt="../_images/groups_su3_triplete.png" class="align-center" src="../_images/groups_su3_triplete.png" style="width: 560px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>el triplete <span class="math notranslate nohighlight">\(\mathbf{3}\)</span> y el antitriplete <span class="math notranslate nohighlight">\(\bar{\mathbf{3}}\)</span> en el plano <span class="math notranslate nohighlight">\((T_3, Y)\)</span>, con los nombres de los quarks de sabor; los de color, <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, ocupan los mismos puntos. Las flechas son los operadores escalera</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Hay tres pares de <strong>operadores escalera</strong>, uno por cada <span class="math notranslate nohighlight">\(SU(2)\)</span> de dentro:</p>
+<div class="math notranslate nohighlight">
+\[
+T_\pm = \tfrac{1}{2}(\lambda_1 \pm i\lambda_2), \qquad
+V_\pm = \tfrac{1}{2}(\lambda_4 \pm i\lambda_5), \qquad
+U_\pm = \tfrac{1}{2}(\lambda_6 \pm i\lambda_7),
+\]</div>
+<p>con <span class="math notranslate nohighlight">\(T_+\,d = u\)</span>, <span class="math notranslate nohighlight">\(V_+\,s = u\)</span> y <span class="math notranslate nohighlight">\(U_+\,s = d\)</span>. Cada uno mueve el punto en una dirección fija: <span class="math notranslate nohighlight">\(T_+\)</span>, <span class="math notranslate nohighlight">\((+1, 0)\)</span>; <span class="math notranslate nohighlight">\(V_+\)</span>,
+<span class="math notranslate nohighlight">\((+\frac{1}{2}, +1)\)</span>; <span class="math notranslate nohighlight">\(U_+\)</span>, <span class="math notranslate nohighlight">\((-\frac{1}{2}, +1)\)</span>. Por eso los diagramas de <span class="math notranslate nohighlight">\(SU(3)\)</span> tienen simetría hexagonal.</p>
+</section>
+<section id="combinar-tripletes">
+<h3>4.3. Combinar tripletes<a class="headerlink" href="#combinar-tripletes" title="Permalink to this heading">#</a></h3>
+<p>Para combinar dos representaciones se coloca el diagrama de la segunda sobre cada punto de la primera: los números
+cuánticos aditivos se suman. Con <span class="math notranslate nohighlight">\(\bar{\mathbf{3}}\)</span> sobre <span class="math notranslate nohighlight">\(\mathbf{3}\)</span> salen nueve puntos: un hexágono con tres en
+el centro. Es un octete y un singlete:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{3} \otimes \bar{\mathbf{3}} = \mathbf{8} \oplus \mathbf{1}, \qquad
+\mathbf{3} \otimes \mathbf{3} = \mathbf{6} \oplus \bar{\mathbf{3}}, \qquad
+\mathbf{3} \otimes \mathbf{3} \otimes \mathbf{3} = \mathbf{10} \oplus \mathbf{8} \oplus \mathbf{8} \oplus \mathbf{1} .
+\]</div>
+<p>Las dimensiones cuadran: <span class="math notranslate nohighlight">\(9 = 8 + 1\)</span>, <span class="math notranslate nohighlight">\(9 = 6 + 3\)</span>, <span class="math notranslate nohighlight">\(27 = 10 + 8 + 8 + 1\)</span>. En el producto de tres, el <span class="math notranslate nohighlight">\(\mathbf{10}\)</span> es
+totalmente simétrico, el <span class="math notranslate nohighlight">\(\mathbf{1}\)</span> totalmente antisimétrico y los dos <span class="math notranslate nohighlight">\(\mathbf{8}\)</span> tienen simetría mixta, igual que
+<span class="math notranslate nohighlight">\(\mathbf{4}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{2}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{2}\)</span> en <span class="math notranslate nohighlight">\(SU(2)\)</span>. [MT9.6]</p>
+</section>
+</section>
+<section id="el-color">
+<h2>5. El color<a class="headerlink" href="#el-color" title="Permalink to this heading">#</a></h2>
+<p>Cada quark es un triplete de color, <span class="math notranslate nohighlight">\((r, g, b)\)</span>, y cada antiquark, un <span class="math notranslate nohighlight">\(\bar{\mathbf{3}}\)</span>. La simetría de color es
+<strong>exacta y local</strong>: da la cromodinámica cuántica, QCD (sección 7). Y solo los <strong>singletes de color</strong> pueden estar
+libres: es el confinamiento (<a class="reference internal" href="quarks_hadrons.html"><span class="doc std std-doc">quarks y hadrones</span></a>, sección 2.1).</p>
+<ul class="simple">
+<li><p><strong>Mesones</strong>, <span class="math notranslate nohighlight">\(q\bar q\)</span>: <span class="math notranslate nohighlight">\(\mathbf{3} \otimes \bar{\mathbf{3}} = \mathbf{8} \oplus \mathbf{1}\)</span>. El singlete es
+<span class="math notranslate nohighlight">\(\frac{1}{\sqrt{3}}(r\bar r + g\bar g + b\bar b)\)</span>.</p></li>
+<li><p><strong>Dos quarks</strong>, <span class="math notranslate nohighlight">\(qq\)</span>: <span class="math notranslate nohighlight">\(\mathbf{3} \otimes \mathbf{3} = \mathbf{6} \oplus \bar{\mathbf{3}}\)</span>. <strong>No hay singlete</strong>: no
+existen hadrones de dos quarks.</p></li>
+<li><p><strong>Bariones</strong>, <span class="math notranslate nohighlight">\(qqq\)</span>: un singlete, el totalmente antisimétrico,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{\sqrt{6}}\,\varepsilon_{ijk}\,q_i q_j q_k = \frac{1}{\sqrt{6}}\left(rgb - rbg + gbr - grb + brg - bgr\right) .
+\]</div>
+<p>Es el que resuelve el problema del <span class="math notranslate nohighlight">\(\Delta^{++}\)</span> (<a class="reference internal" href="quarks_hadrons.html"><span class="doc std std-doc">quarks y hadrones</span></a>, sección 1.2).</p>
+<p><strong>Por qué son invariantes.</strong> <span class="math notranslate nohighlight">\(\delta_{ij}\,q_i\bar q_j\)</span> lo es porque <span class="math notranslate nohighlight">\(U\)</span> es unitaria, <span class="math notranslate nohighlight">\(U^\dagger U = I\)</span>; y
+<span class="math notranslate nohighlight">\(\varepsilon_{ijk}\,q_i q_j q_k\)</span>, porque <span class="math notranslate nohighlight">\(\det U = 1\)</span>: <span class="math notranslate nohighlight">\(\varepsilon_{ijk}\,U_{ia}U_{jb}U_{kc} = \det U\;\varepsilon_{abc}\)</span>. Las
+dos condiciones de <span class="math notranslate nohighlight">\(SU(3)\)</span>, unitaria y especial, son justo las que hacen falta.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/groups_su3_33b.png"><img alt="../_images/groups_su3_33b.png" class="align-center" src="../_images/groups_su3_33b.png" style="width: 620px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\mathbf{3} \otimes \bar{\mathbf{3}} = \mathbf{8} \oplus \mathbf{1}\)</span> en color: los nueve estados de <span class="math notranslate nohighlight">\(q\bar q\)</span> y el singlete, en el centro [MT]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/groups_su3_333.png"><img alt="../_images/groups_su3_333.png" class="align-center" src="../_images/groups_su3_333.png" style="width: 620px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\mathbf{3} \otimes \mathbf{3} \otimes \mathbf{3} = \mathbf{10} \oplus \mathbf{8} \oplus \mathbf{8} \oplus \mathbf{1}\)</span> en color: el único singlete es el punto suelto [MT]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Los gluones</strong> llevan color y anticolor: están en la adjunta, el <span class="math notranslate nohighlight">\(\mathbf{8}\)</span> de <span class="math notranslate nohighlight">\(\mathbf{3} \otimes \bar{\mathbf{3}}\)</span>
+(<span class="math notranslate nohighlight">\(r\bar g\)</span>, <span class="math notranslate nohighlight">\(r\bar b\)</span>, <span class="math notranslate nohighlight">\(\frac{1}{\sqrt{2}}(r\bar r - g\bar g)\)</span>…). El singlete no es un gluón. Si lo fuera, no tendría
+color, se acoplaría a los hadrones, que tampoco lo tienen, y habría una fuerza fuerte de largo alcance entre ellos,
+como la eléctrica entre cargas. No se ve: el grupo es <span class="math notranslate nohighlight">\(SU(3)\)</span>, con ocho, y no <span class="math notranslate nohighlight">\(U(3)\)</span>, con nueve. [MT10.2, MT10.3]</p>
+<p><strong>Otras combinaciones blancas.</strong> <span class="math notranslate nohighlight">\(qq\bar q\bar q\)</span> y <span class="math notranslate nohighlight">\(qqqq\bar q\)</span> también contienen singletes: son los tetraquarks y
+pentaquarks (<a class="reference internal" href="quarks_hadrons.html"><span class="doc std std-doc">quarks y hadrones</span></a>, sección 1.2). La regla: hace falta que el número de quarks
+menos el de antiquarks sea múltiplo de <span class="math notranslate nohighlight">\(3\)</span> (cuestión 6).</p>
+</section>
+<section id="el-sabor-el-camino-octuple">
+<h2>6. El sabor: el camino óctuple<a class="headerlink" href="#el-sabor-el-camino-octuple" title="Permalink to this heading">#</a></h2>
+<section id="una-simetria-aproximada">
+<h3>6.1. Una simetría aproximada<a class="headerlink" href="#una-simetria-aproximada" title="Permalink to this heading">#</a></h3>
+<p>La interacción fuerte no distingue el sabor. Si <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(d\)</span> y <span class="math notranslate nohighlight">\(s\)</span> pesaran lo mismo, los hadrones se agruparían en
+representaciones de un <span class="math notranslate nohighlight">\(SU(3)\)</span> <strong>de sabor</strong>, con los quarks en el triplete <span class="math notranslate nohighlight">\((u, d, s)\)</span> de la figura de la sección 4.2.
+No pesan lo mismo, <span class="math notranslate nohighlight">\(m_s \simeq 93\)</span> MeV frente a unos pocos MeV, pero la diferencia es pequeña frente a la escala de los
+hadrones, <span class="math notranslate nohighlight">\(\sim 1\)</span> GeV: la simetría es <strong>aproximada</strong>, y las masas de un mismo multiplete difieren en un <span class="math notranslate nohighlight">\(10\)</span>–<span class="math notranslate nohighlight">\(30\,\%\)</span>.
+Con el <span class="math notranslate nohighlight">\(c\)</span>, el <span class="math notranslate nohighlight">\(b\)</span> o el <span class="math notranslate nohighlight">\(t\)</span>, mucho más pesados, ya no sirve.</p>
+<p>En sabor, <span class="math notranslate nohighlight">\(Y = B + S\)</span> (número bariónico más extrañeza; el <span class="math notranslate nohighlight">\(s\)</span> tiene <span class="math notranslate nohighlight">\(S = -1\)</span>), y la carga es
+<span class="math notranslate nohighlight">\(Q = T_3 + Y/2\)</span> (Gell-Mann y Nishijima): <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\((\frac{1}{2}, \frac{1}{3})\)</span>, <span class="math notranslate nohighlight">\(Q = \frac{2}{3}\)</span>; <span class="math notranslate nohighlight">\(d\)</span>, <span class="math notranslate nohighlight">\((-\frac{1}{2}, \frac{1}{3})\)</span>,
+<span class="math notranslate nohighlight">\(Q = -\frac{1}{3}\)</span>; <span class="math notranslate nohighlight">\(s\)</span>, <span class="math notranslate nohighlight">\((0, -\frac{2}{3})\)</span>, <span class="math notranslate nohighlight">\(Q = -\frac{1}{3}\)</span>.</p>
+<ul class="simple">
+<li><p><strong>Mesones</strong>, <span class="math notranslate nohighlight">\(\mathbf{3} \otimes \bar{\mathbf{3}} = \mathbf{8} \oplus \mathbf{1}\)</span>: el octete de los mesones
+pseudoescalares, <span class="math notranslate nohighlight">\(K\)</span>, <span class="math notranslate nohighlight">\(\pi\)</span> y <span class="math notranslate nohighlight">\(\eta\)</span>, y un singlete, el <span class="math notranslate nohighlight">\(\eta'\)</span> (los <span class="math notranslate nohighlight">\(\eta\)</span> físicos son mezclas de los dos).</p></li>
+<li><p><strong>Bariones</strong>, <span class="math notranslate nohighlight">\(\mathbf{3} \otimes \mathbf{3} \otimes \mathbf{3} = \mathbf{10} \oplus \mathbf{8} \oplus \mathbf{8} \oplus \mathbf{1}\)</span>,
+combinado con el espín, <span class="math notranslate nohighlight">\(\mathbf{2} \otimes \mathbf{2} \otimes \mathbf{2} = \mathbf{4} \oplus \mathbf{2} \oplus \mathbf{2}\)</span>.
+El color es antisimétrico (sección 5) y, con <span class="math notranslate nohighlight">\(L = 0\)</span>, el espacio es simétrico: Pauli pide que <strong>sabor por espín sea
+simétrico</strong>. Solo hay dos formas: el <span class="math notranslate nohighlight">\(\mathbf{10}\)</span> con espín <span class="math notranslate nohighlight">\(\frac{3}{2}\)</span>, simétricos los dos, y el <span class="math notranslate nohighlight">\(\mathbf{8}\)</span> con espín
+<span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>, combinando las dos simetrías mixtas. <strong>Un decuplete <span class="math notranslate nohighlight">\(\frac{3}{2}^+\)</span> y un octete <span class="math notranslate nohighlight">\(\frac{1}{2}^+\)</span></strong>, y ningún
+singlete: exactamente lo que se observa. [MT9.6]</p></li>
+</ul>
+</section>
+<section id="los-multipletes">
+<h3>6.2. Los multipletes<a class="headerlink" href="#los-multipletes" title="Permalink to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/groups_su3_multipletes.png"><img alt="../_images/groups_su3_multipletes.png" class="align-center" src="../_images/groups_su3_multipletes.png" style="width: 900px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>los mesones pseudoescalares (<span class="math notranslate nohighlight">\(\mathbf{8}\)</span>), los bariones <span class="math notranslate nohighlight">\(\frac{1}{2}^+\)</span> (<span class="math notranslate nohighlight">\(\mathbf{8}\)</span>) y los bariones <span class="math notranslate nohighlight">\(\frac{3}{2}^+\)</span> (<span class="math notranslate nohighlight">\(\mathbf{10}\)</span>) en el plano <span class="math notranslate nohighlight">\((T_3, Y)\)</span>, con <span class="math notranslate nohighlight">\(Y = B + S\)</span>; a la derecha, las masas de cada fila de los bariones, en MeV [PDG]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>¿Qué ves?</strong></p>
+<ul class="simple">
+<li><p>Cada fila horizontal es un multiplete de isoespín, con la misma extrañeza: <span class="math notranslate nohighlight">\((p, n)\)</span> es un doblete, los <span class="math notranslate nohighlight">\(\Sigma\)</span> y
+los <span class="math notranslate nohighlight">\(\pi\)</span>, tripletes; los <span class="math notranslate nohighlight">\(\Delta\)</span>, un cuadruplete.</p></li>
+<li><p>La carga crece hacia la derecha, <span class="math notranslate nohighlight">\(Q = T_3 + Y/2\)</span>: las diagonales de arriba a la izquierda a abajo a la derecha tienen
+la misma carga.</p></li>
+<li><p>Cada fila hacia abajo tiene un <span class="math notranslate nohighlight">\(s\)</span> más, y pesa más: en el decuplete, unos <span class="math notranslate nohighlight">\(150\)</span> MeV por cada <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+<li><p>El vértice de abajo del decuplete, <span class="math notranslate nohighlight">\(sss\)</span>, es el <span class="math notranslate nohighlight">\(\Omega^-\)</span>.</p></li>
+</ul>
+<details>
+<summary><b>[+] Mirador — La predicción del $\Omega^-$</b></summary>
+<p>En 1962 se conocían nueve bariones de espín <span class="math notranslate nohighlight">\(\frac{3}{2}\)</span>: los cuatro <span class="math notranslate nohighlight">\(\Delta\)</span>, los tres <span class="math notranslate nohighlight">\(\Sigma^*\)</span> y los dos <span class="math notranslate nohighlight">\(\Xi^*\)</span>. Gell-Mann vio
+que encajaban en un decuplete al que le faltaba el vértice: una partícula <span class="math notranslate nohighlight">\(sss\)</span>, de carga <span class="math notranslate nohighlight">\(-1\)</span>, extrañeza <span class="math notranslate nohighlight">\(-3\)</span> y masa,
+siguiendo el espaciado, <span class="math notranslate nohighlight">\(1533 + 148 \simeq 1680\)</span> MeV. Con esa masa no podía desintegrarse por la interacción fuerte: no
+hay un estado más ligero con extrañeza <span class="math notranslate nohighlight">\(-3\)</span>. Tendría que hacerlo por la débil, cambiando la extrañeza de una en una,
+y vivir lo bastante como para dejar una traza.</p>
+<p>En 1964, en la cámara de burbujas de Brookhaven, apareció el <span class="math notranslate nohighlight">\(\Omega^-\)</span> con una masa de <span class="math notranslate nohighlight">\(1672\)</span> MeV, y vive <span class="math notranslate nohighlight">\(0.8 \cdot 10^{-10}\)</span> s.
+Fue la confirmación del camino óctuple, y la primera pista de que detrás había tres quarks. [OM]</p>
+</details></section>
+</section>
+<section id="de-global-a-local-un-boson-por-generador">
+<h2>7. De global a local: un bosón por generador<a class="headerlink" href="#de-global-a-local-un-boson-por-generador" title="Permalink to this heading">#</a></h2>
+<p>Con una transformación local, <span class="math notranslate nohighlight">\(\psi \to e^{i\theta_a(x)T_a}\,\psi\)</span>, la derivada actúa sobre los <span class="math notranslate nohighlight">\(\theta_a(x)\)</span> y la
+ecuación deja de ser invariante, como en <span class="math notranslate nohighlight">\(U(1)\)</span> (<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, sección 5). Para compensarlo hace
+falta <strong>un campo por generador</strong> en la derivada covariante:</p>
+<div class="math notranslate nohighlight">
+\[
+D_\mu = \partial_\mu + i g\,T_a A^a_\mu ,
+\qquad
+A'^a_\mu = A^a_\mu - \frac{1}{g}\,\partial_\mu\theta_a - f_{abc}\,\theta_b A^c_\mu \quad (\theta \text{ pequeño}) .
+\]</div>
+<ul class="simple">
+<li><p><strong>Cuántos bosones:</strong> <span class="math notranslate nohighlight">\(U(1)\)</span>, uno, el fotón; <span class="math notranslate nohighlight">\(SU(2)\)</span>, tres, <span class="math notranslate nohighlight">\(W^1\)</span>, <span class="math notranslate nohighlight">\(W^2\)</span> y <span class="math notranslate nohighlight">\(W^3\)</span> (los <span class="math notranslate nohighlight">\(W^\pm\)</span>, y el <span class="math notranslate nohighlight">\(W^3\)</span> se mezcla para dar
+el <span class="math notranslate nohighlight">\(Z\)</span> y el fotón: <a class="reference internal" href="ext-sm.html"><span class="doc std std-doc">ext-sm</span></a>); <span class="math notranslate nohighlight">\(SU(3)\)</span>, ocho gluones.</p></li>
+<li><p><strong>Los bosones llevan la carga.</strong> El último término de <span class="math notranslate nohighlight">\(A'\)</span> dice que los campos se transforman entre sí: están en la
+adjunta. En <span class="math notranslate nohighlight">\(U(1)\)</span>, <span class="math notranslate nohighlight">\(f_{abc} = 0\)</span> y el fotón es neutro; los gluones tienen color y los <span class="math notranslate nohighlight">\(W\)</span>, isoespín débil.</p></li>
+<li><p><strong>Interaccionan entre sí.</strong> El tensor de campo es
+<span class="math notranslate nohighlight">\(F^a_{\mu\nu} = \partial_\mu A^a_\nu - \partial_\nu A^a_\mu - g\,f_{abc}\,A^b_\mu A^c_\nu\)</span>, y el término cinético,
+<span class="math notranslate nohighlight">\(-\frac{1}{4}F^a_{\mu\nu}F^{a\,\mu\nu}\)</span>, contiene productos de tres y de cuatro campos: <strong>vértices de tres y de cuatro
+gluones</strong>, y <span class="math notranslate nohighlight">\(WW\gamma\)</span>, <span class="math notranslate nohighlight">\(WWZ\)</span> (<a class="reference internal" href="sm.html"><span class="doc std std-doc">el Modelo Estándar</span></a>, sección 1.1). En QCD, los gluones que se
+acoplan a sí mismos dan la libertad asintótica y el confinamiento (<a class="reference internal" href="quarks_hadrons.html"><span class="doc std std-doc">quarks y hadrones</span></a>,
+sección 2).</p></li>
+<li><p><strong>Un solo acoplo.</strong> En <span class="math notranslate nohighlight">\(U(1)\)</span> cada partícula puede tener su carga <span class="math notranslate nohighlight">\(q\)</span>; en un grupo no abeliano el álgebra fija la
+normalización y hay <strong>un solo <span class="math notranslate nohighlight">\(g\)</span></strong>: todos los quarks tienen la misma carga de color, y todos los dobletes, el
+mismo acoplo con los <span class="math notranslate nohighlight">\(W\)</span>. Es la universalidad.</p></li>
+<li><p><strong>Sin masa.</strong> Un término <span class="math notranslate nohighlight">\(m^2 A^a_\mu A^{a\,\mu}\)</span> no es invariante: los bosones <em>gauge</em> no tienen masa, salvo que la
+simetría se rompa, que es lo que hace el Higgs con los <span class="math notranslate nohighlight">\(W\)</span> y el <span class="math notranslate nohighlight">\(Z\)</span> (<a class="reference internal" href="ext-sm.html"><span class="doc std std-doc">ext-sm</span></a>, sección 3).
+[MT10.1, MT15]</p></li>
+</ul>
+</section>
+<section id="aparte-el-grupo-de-lorentz">
+<h2>8. Aparte: el grupo de Lorentz<a class="headerlink" href="#aparte-el-grupo-de-lorentz" title="Permalink to this heading">#</a></h2>
+<p><strong>No es una simetría interna.</strong> Las secciones anteriores transforman las etiquetas internas de un campo en un punto
+fijo. El grupo de Lorentz transforma el propio espacio-tiempo: gira los ejes o cambia de sistema de referencia, y con
+ellos se mezclan las componentes de los vectores y de los espinores. Pero es un grupo de Lie, con generadores y
+representaciones, y las herramientas de esta extensión ordenan lo que <a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a> (sección 3) y
+<a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a> (sección 6) calculan.</p>
+<section id="rotaciones-y-boosts">
+<h3>8.1. Rotaciones y <em>boosts</em><a class="headerlink" href="#rotaciones-y-boosts" title="Permalink to this heading">#</a></h3>
+<p>Tiene seis generadores: tres de rotaciones, <span class="math notranslate nohighlight">\({\bf J}\)</span>, y tres de <em>boosts</em>, <span class="math notranslate nohighlight">\({\bf K}\)</span>, con el álgebra</p>
+<div class="math notranslate nohighlight">
+\[
+[J_i, J_j] = i\,\varepsilon_{ijk}\,J_k, \qquad [J_i, K_j] = i\,\varepsilon_{ijk}\,K_k, \qquad [K_i, K_j] = -i\,\varepsilon_{ijk}\,J_k .
+\]</div>
+<ul class="simple">
+<li><p><strong>Las rotaciones solas</strong> forman un subgrupo: el <span class="math notranslate nohighlight">\(SU(2)\)</span> del espín (sección 3).</p></li>
+<li><p><strong>Los <em>boosts</em> no.</strong> Dos <em>boosts</em> en direcciones distintas dan un <em>boost</em> y una rotación: es la última relación, y
+su efecto físico es la precesión de Thomas.</p></li>
+<li><p><strong>En el espinor de Dirac</strong>, <span class="math notranslate nohighlight">\({\bf J} = \frac{1}{2}{\bf \Sigma}\)</span> y <span class="math notranslate nohighlight">\(K_k = \frac{i}{2}\gamma^0\gamma^k\)</span>: son los generadores de
+<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, sección 3.2 (cuestión 8).</p></li>
+</ul>
+</section>
+<section id="dos-su-2-escondidas">
+<h3>8.2. Dos <span class="math notranslate nohighlight">\(SU(2)\)</span> escondidas<a class="headerlink" href="#dos-su-2-escondidas" title="Permalink to this heading">#</a></h3>
+<p>Las combinaciones <span class="math notranslate nohighlight">\({\bf A} = \frac{1}{2}({\bf J} + i{\bf K})\)</span> y <span class="math notranslate nohighlight">\({\bf B} = \frac{1}{2}({\bf J} - i{\bf K})\)</span> cumplen cada una el álgebra de
+<span class="math notranslate nohighlight">\(SU(2)\)</span> y conmutan entre sí, <span class="math notranslate nohighlight">\([A_i, B_j] = 0\)</span>. Cada representación irreducible se etiqueta con <strong>dos espines</strong>,
+<span class="math notranslate nohighlight">\((j_A, j_B)\)</span>, tiene dimensión <span class="math notranslate nohighlight">\((2j_A + 1)(2j_B + 1)\)</span> y, como <span class="math notranslate nohighlight">\({\bf J} = {\bf A} + {\bf B}\)</span>, contiene los espines de
+<span class="math notranslate nohighlight">\(j_A \otimes j_B\)</span> (sección 3.2):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\((j_A, j_B)\)</span></p></th>
+<th class="head text-center"><p>dimensión</p></th>
+<th class="head text-center"><p>espín</p></th>
+<th class="head text-left"><p>qué es</p></th>
+<th class="head text-left"><p>dónde aparece</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\((0, 0)\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-left"><p>escalar</p></td>
+<td class="text-left"><p>el Higgs, <span class="math notranslate nohighlight">\(\bar\Psi\Psi\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\((\frac{1}{2}, 0)\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></td>
+<td class="text-left"><p>espinor de Weyl a izquierdas</p></td>
+<td class="text-left"><p><a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>, sección 4</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\((0, \frac{1}{2})\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></td>
+<td class="text-left"><p>espinor de Weyl a derechas</p></td>
+<td class="text-left"><p><a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>, sección 4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\((\frac{1}{2}, \frac{1}{2})\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0 \oplus 1\)</span></p></td>
+<td class="text-left"><p>cuadrivector</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(x^\mu\)</span>, <span class="math notranslate nohighlight">\(p^\mu\)</span>, <span class="math notranslate nohighlight">\(A^\mu\)</span>, <span class="math notranslate nohighlight">\(\bar\Psi\gamma^\mu\Psi\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\((\frac{1}{2}, 0) \oplus (0, \frac{1}{2})\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{1}{2} \oplus \frac{1}{2}\)</span></p></td>
+<td class="text-left"><p>espinor de Dirac</p></td>
+<td class="text-left"><p><a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p><strong>Cuatro componentes no son lo mismo.</strong> Bajo rotaciones, el cuadrivector es un escalar, <span class="math notranslate nohighlight">\(t\)</span>, y un vector, <span class="math notranslate nohighlight">\({\bf x}\)</span>;
+el espinor de Dirac, dos espines <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> (cuestión 9).</p></li>
+<li><p><strong>El espinor de Dirac es reducible.</strong> En la base quiral, <span class="math notranslate nohighlight">\(S(\Lambda)\)</span> son dos bloques <span class="math notranslate nohighlight">\(2 \times 2\)</span> que no se mezclan, uno
+por quiralidad. La <strong>paridad</strong> intercambia <span class="math notranslate nohighlight">\((\frac{1}{2}, 0)\)</span> y <span class="math notranslate nohighlight">\((0, \frac{1}{2})\)</span> (<a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>,
+sección 2.3): si se incluye, ya no se separan, y el de Dirac es el espinor más pequeño en una teoría que conserve la
+paridad, como QED. La débil, que no la conserva, usa solo la mitad.</p></li>
+<li><p><strong>Los bilineales.</strong> El conjugado de un espinor a izquierdas se transforma como uno a derechas:
+<span class="math notranslate nohighlight">\(\psi_L^\dagger\)</span> es un <span class="math notranslate nohighlight">\((0, \frac{1}{2})\)</span>. Es lo que hace el <span class="math notranslate nohighlight">\(\gamma^0\)</span> del adjunto: en la base quiral cruza los bloques,
+<span class="math notranslate nohighlight">\(\bar\Psi = (\psi_R^\dagger, \psi_L^\dagger)\)</span>, y <span class="math notranslate nohighlight">\(\bar\Psi\Psi = \psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L = \bar\Psi_L\Psi_R + \bar\Psi_R\Psi_L\)</span>
+(<a class="reference internal" href="ext-quiral.html"><span class="doc std std-doc">ext-quiral</span></a>, secciones 3 y 9). Así, <span class="math notranslate nohighlight">\(\psi_L^\dagger\psi_R\)</span>, <span class="math notranslate nohighlight">\((0, \frac{1}{2}) \otimes (0, \frac{1}{2}) = (0, 0) \oplus (0, 1)\)</span>,
+contiene un escalar: la masa, que une L con R. Y <span class="math notranslate nohighlight">\(\bar\Psi_L\gamma^\mu\Psi_L\)</span>, que en componentes de Weyl es <span class="math notranslate nohighlight">\(\psi_L^\dagger\)</span>
+por <span class="math notranslate nohighlight">\(\psi_L\)</span> con una matriz <span class="math notranslate nohighlight">\(2 \times 2\)</span> para cada <span class="math notranslate nohighlight">\(\mu\)</span>, es <span class="math notranslate nohighlight">\((0, \frac{1}{2}) \otimes (\frac{1}{2}, 0) = (\frac{1}{2}, \frac{1}{2})\)</span>: un
+cuadrivector, la corriente, que no mezcla las quiralidades.</p></li>
+</ul>
+</section>
+<section id="no-es-compacto-por-que-hace-falta-bar-psi">
+<h3>8.3. No es compacto: por qué hace falta <span class="math notranslate nohighlight">\(\bar\Psi\)</span><a class="headerlink" href="#no-es-compacto-por-que-hace-falta-bar-psi" title="Permalink to this heading">#</a></h3>
+<p>Los ángulos de una rotación tienen período, <span class="math notranslate nohighlight">\(2\pi\)</span> (o <span class="math notranslate nohighlight">\(4\pi\)</span> en los espinores); la rapidez de un <em>boost</em> va de <span class="math notranslate nohighlight">\(-\infty\)</span>
+a <span class="math notranslate nohighlight">\(+\infty\)</span>. El grupo de Lorentz <strong>no es compacto</strong>, y eso tiene una consecuencia: sus representaciones de dimensión
+finita <strong>no son unitarias</strong>.</p>
+<ul class="simple">
+<li><p>Los generadores de los <em>boosts</em> no son hermíticos: <span class="math notranslate nohighlight">\(K_k = \frac{i}{2}\gamma^0\gamma^k\)</span> es antihermítico.</p></li>
+<li><p><span class="math notranslate nohighlight">\(S(\Lambda)\)</span> no conserva la norma: <span class="math notranslate nohighlight">\(\Psi^\dagger\Psi\)</span> <strong>no es invariante</strong>. Es la componente temporal de un cuadrivector,
+y crece como <span class="math notranslate nohighlight">\(E\)</span> (la normalización <span class="math notranslate nohighlight">\(u^\dagger u = 2E\)</span>).</p></li>
+<li><p>Por eso los invariantes se construyen con <span class="math notranslate nohighlight">\(\bar\Psi = \Psi^\dagger\gamma^0\)</span>, que se transforma con <span class="math notranslate nohighlight">\(S^{-1}\)</span>
+(<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, sección 4.1).</p></li>
+</ul>
+<p>En los grupos internos, compactos, no pasa: <span class="math notranslate nohighlight">\(U^\dagger U = I\)</span>, y <span class="math notranslate nohighlight">\(\psi^\dagger\psi\)</span> ya es invariante.</p>
+<details>
+<summary><b>[+] Mirador — Una partícula es una representación</b></summary>
+<p>Las representaciones unitarias del grupo de Lorentz existen, pero son de dimensión infinita: actúan sobre los estados
+con todos los momentos posibles. E. Wigner (1939) las clasificó para el grupo de Poincaré, Lorentz más traslaciones, y
+encontró que cada una se etiqueta con una <strong>masa</strong> y un <strong>espín</strong> (o una helicidad, si la masa es nula). Desde
+entonces, la definición más limpia de partícula es esa: una representación irreducible del grupo de Poincaré. Las
+simetrías internas le añaden sus cargas. [WI]</p>
+<p>¿Se pueden mezclar las dos clases de simetrías, por ejemplo con un grupo que transforme a la vez el espín y el color?
+S. Coleman y J. Mandula (1967) demostraron que no: en una teoría razonable, el grupo de simetría es el producto de
+Poincaré por las internas, sin mezcla. Es la razón de fondo para tratarlas por separado. La única salida es la
+<strong>supersimetría</strong>, que relaciona fermiones y bosones. [CM]</p>
+</details><p><em>Cuestiones:</em></p>
+<ol class="arabic simple">
+<li><p>Comprueba que un giro de <span class="math notranslate nohighlight">\(2\pi\)</span>, <span class="math notranslate nohighlight">\(e^{i2\pi T_3}\)</span>, es <span class="math notranslate nohighlight">\(-I\)</span> en el doblete y <span class="math notranslate nohighlight">\(+I\)</span> en el triplete, con
+<span class="math notranslate nohighlight">\(T_3 = \mathrm{diag}(1, 0, -1)\)</span>.</p></li>
+<li><p>¿Cuántos generadores tiene <span class="math notranslate nohighlight">\(U(n)\)</span>? ¿Qué generador tiene <span class="math notranslate nohighlight">\(U(3)\)</span> que no tenga <span class="math notranslate nohighlight">\(SU(3)\)</span>, y qué partícula le
+correspondería?</p></li>
+<li><p>Con la regla de los diagramas, coloca el <span class="math notranslate nohighlight">\(\bar{\mathbf{3}}\)</span> sobre los vértices del <span class="math notranslate nohighlight">\(\mathbf{3}\)</span>. ¿Cuántos estados
+caen en el centro? ¿Cuántos son del octete?</p></li>
+<li><p>Calcula <span class="math notranslate nohighlight">\(Y = B + S\)</span> y <span class="math notranslate nohighlight">\(Q = T_3 + Y/2\)</span> para el <span class="math notranslate nohighlight">\(p\)</span>, el <span class="math notranslate nohighlight">\(\Sigma^+\)</span>, el <span class="math notranslate nohighlight">\(\Xi^-\)</span>, el <span class="math notranslate nohighlight">\(\Omega^-\)</span> y el <span class="math notranslate nohighlight">\(K^+\)</span>.</p></li>
+<li><p>Con las masas del decuplete, <span class="math notranslate nohighlight">\(1232\)</span>, <span class="math notranslate nohighlight">\(1385\)</span> y <span class="math notranslate nohighlight">\(1533\)</span> MeV, predice la del <span class="math notranslate nohighlight">\(\Omega^-\)</span>. ¿Por qué no puede desintegrarse a
+<span class="math notranslate nohighlight">\(\Xi^0 + K^-\)</span>, que conserva la extrañeza?</p></li>
+<li><p>Los estados de <span class="math notranslate nohighlight">\(qq\)</span> tienen <span class="math notranslate nohighlight">\(Y\)</span> igual a la suma de dos de <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span>, <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span> y <span class="math notranslate nohighlight">\(-\frac{2}{3}\)</span>. ¿Puede alguno tener
+<span class="math notranslate nohighlight">\(Y = 0\)</span>? ¿Qué dice eso de los singletes de color de <span class="math notranslate nohighlight">\(qq\)</span>? ¿Y de <span class="math notranslate nohighlight">\(qqq\)</span> y de <span class="math notranslate nohighlight">\(q\bar q\)</span>?</p></li>
+<li><p>Comprueba que <span class="math notranslate nohighlight">\(\varepsilon_{ijk}\,U_{ia}U_{jb}U_{kc} = \det U\,\varepsilon_{abc}\)</span> para <span class="math notranslate nohighlight">\(a, b, c = 1, 2, 3\)</span> (es la definición
+del determinante). ¿Por qué entonces el singlete de tres quarks necesita <span class="math notranslate nohighlight">\(\det U = 1\)</span>?</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(K_k = \frac{i}{2}\gamma^0\gamma^k\)</span>, <span class="math notranslate nohighlight">\(J_3 = \frac{1}{2}\Sigma_3\)</span> y <span class="math notranslate nohighlight">\(\gamma^1\gamma^2 = -i\,\Sigma_3\)</span> (<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, sección 3.2),
+comprueba que <span class="math notranslate nohighlight">\([K_1, K_2] = -iJ_3\)</span>. ¿Es hermítico <span class="math notranslate nohighlight">\(K_3\)</span>?</p></li>
+<li><p>Descompón bajo rotaciones <span class="math notranslate nohighlight">\((\frac{1}{2}, \frac{1}{2})\)</span> y <span class="math notranslate nohighlight">\((\frac{1}{2}, 0) \oplus (0, \frac{1}{2})\)</span> con la regla de la sección 3.2. En
+<span class="math notranslate nohighlight">\(x^\mu\)</span>, ¿qué componentes son el espín <span class="math notranslate nohighlight">\(0\)</span> y cuáles el espín <span class="math notranslate nohighlight">\(1\)</span>?</p></li>
+</ol>
+<details>
+<summary><b>Soluciones</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(e^{i2\pi T_3}\)</span> es diagonal, con <span class="math notranslate nohighlight">\(e^{i2\pi m}\)</span>: en el doblete, <span class="math notranslate nohighlight">\(m = \pm\frac{1}{2}\)</span> y <span class="math notranslate nohighlight">\(e^{\pm i\pi} = -1\)</span>; en el triplete,
+<span class="math notranslate nohighlight">\(m = 1, 0, -1\)</span> y <span class="math notranslate nohighlight">\(e^{i2\pi m} = 1\)</span>. Los espinores cambian de signo, los vectores no.</p></li>
+<li><p><span class="math notranslate nohighlight">\(n^2\)</span>: sin la condición del determinante. El de más es la identidad, una fase común a los tres colores: un <span class="math notranslate nohighlight">\(U(1)\)</span>.
+En color sería un noveno gluón, el singlete, sin color y de largo alcance entre hadrones (sección 5). No existe.</p></li>
+<li><p>Tres en el centro, <span class="math notranslate nohighlight">\(u\bar u\)</span>, <span class="math notranslate nohighlight">\(d\bar d\)</span> y <span class="math notranslate nohighlight">\(s\bar s\)</span>: dos combinaciones son del octete (<span class="math notranslate nohighlight">\(\pi^0\)</span> y <span class="math notranslate nohighlight">\(\eta_8\)</span>) y una es el
+singlete. En los vértices del hexágono, seis estados, uno en cada uno.</p></li>
+<li><p><span class="math notranslate nohighlight">\(p\)</span> (<span class="math notranslate nohighlight">\(uud\)</span>): <span class="math notranslate nohighlight">\(Y = 1\)</span>, <span class="math notranslate nohighlight">\(T_3 = \frac{1}{2}\)</span>, <span class="math notranslate nohighlight">\(Q = 1\)</span>. <span class="math notranslate nohighlight">\(\Sigma^+\)</span> (<span class="math notranslate nohighlight">\(uus\)</span>): <span class="math notranslate nohighlight">\(Y = 0\)</span>, <span class="math notranslate nohighlight">\(T_3 = 1\)</span>, <span class="math notranslate nohighlight">\(Q = 1\)</span>. <span class="math notranslate nohighlight">\(\Xi^-\)</span> (<span class="math notranslate nohighlight">\(dss\)</span>): <span class="math notranslate nohighlight">\(Y = -1\)</span>,
+<span class="math notranslate nohighlight">\(T_3 = -\frac{1}{2}\)</span>, <span class="math notranslate nohighlight">\(Q = -1\)</span>. <span class="math notranslate nohighlight">\(\Omega^-\)</span> (<span class="math notranslate nohighlight">\(sss\)</span>): <span class="math notranslate nohighlight">\(Y = -2\)</span>, <span class="math notranslate nohighlight">\(T_3 = 0\)</span>, <span class="math notranslate nohighlight">\(Q = -1\)</span>. <span class="math notranslate nohighlight">\(K^+\)</span> (<span class="math notranslate nohighlight">\(u\bar s\)</span>): <span class="math notranslate nohighlight">\(Y = 1\)</span>, <span class="math notranslate nohighlight">\(T_3 = \frac{1}{2}\)</span>, <span class="math notranslate nohighlight">\(Q = 1\)</span>.</p></li>
+<li><p>Los saltos son <span class="math notranslate nohighlight">\(153\)</span> y <span class="math notranslate nohighlight">\(148\)</span> MeV: <span class="math notranslate nohighlight">\(m_\Omega \simeq 1533 + 148 \simeq 1681\)</span> MeV (medida, <span class="math notranslate nohighlight">\(1672\)</span>). <span class="math notranslate nohighlight">\(\Xi^0 + K^-\)</span> pesan
+<span class="math notranslate nohighlight">\(1315 + 494 = 1809\)</span> MeV, más que el <span class="math notranslate nohighlight">\(\Omega^-\)</span>: ningún estado con <span class="math notranslate nohighlight">\(S = -3\)</span> es más ligero, y solo puede desintegrarse
+por la débil, a <span class="math notranslate nohighlight">\(\Lambda + K^-\)</span> o <span class="math notranslate nohighlight">\(\Xi + \pi\)</span>, cambiando la extrañeza en una unidad.</p></li>
+<li><p>Las sumas posibles son <span class="math notranslate nohighlight">\(\frac{2}{3}\)</span>, <span class="math notranslate nohighlight">\(-\frac{1}{3}\)</span> y <span class="math notranslate nohighlight">\(-\frac{4}{3}\)</span>: nunca <span class="math notranslate nohighlight">\(0\)</span>. Un singlete tiene <span class="math notranslate nohighlight">\(T_3 = Y = 0\)</span>, así que en
+<span class="math notranslate nohighlight">\(qq\)</span> no hay ninguno. En <span class="math notranslate nohighlight">\(qqq\)</span>, <span class="math notranslate nohighlight">\(\frac{1}{3} + \frac{1}{3} - \frac{2}{3} = 0\)</span> sí es posible (<span class="math notranslate nohighlight">\(rgb\)</span>), y en <span class="math notranslate nohighlight">\(q\bar q\)</span> también
+(<span class="math notranslate nohighlight">\(r\bar r\)</span>). En general, el número de quarks menos el de antiquarks tiene que ser múltiplo de <span class="math notranslate nohighlight">\(3\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varepsilon_{ijk}\,U_{i1}U_{j2}U_{k3}\)</span> es la fórmula del determinante (suma con signo de productos de una entrada por
+columna); cambiar el orden de las columnas solo cambia el signo, como <span class="math notranslate nohighlight">\(\varepsilon_{abc}\)</span>. Así,
+<span class="math notranslate nohighlight">\(\varepsilon_{ijk}\,q'_i q'_j q'_k = \varepsilon_{ijk}\,U_{ia}U_{jb}U_{kc}\,q_a q_b q_c = \det U\,\varepsilon_{abc}\,q_a q_b q_c\)</span>: es invariante
+solo si <span class="math notranslate nohighlight">\(\det U = 1\)</span>. En <span class="math notranslate nohighlight">\(U(3)\)</span> cambiaría de fase.</p></li>
+<li><p><span class="math notranslate nohighlight">\([K_1, K_2] = -\frac{1}{4}[\gamma^0\gamma^1, \gamma^0\gamma^2]\)</span>. Como <span class="math notranslate nohighlight">\(\gamma^0\)</span> anticonmuta con <span class="math notranslate nohighlight">\(\gamma^k\)</span> y <span class="math notranslate nohighlight">\((\gamma^0)^2 = I\)</span>,
+<span class="math notranslate nohighlight">\(\gamma^0\gamma^1\gamma^0\gamma^2 = -\gamma^1\gamma^2\)</span> y <span class="math notranslate nohighlight">\(\gamma^0\gamma^2\gamma^0\gamma^1 = -\gamma^2\gamma^1 = \gamma^1\gamma^2\)</span>: el conmutador es
+<span class="math notranslate nohighlight">\(-2\gamma^1\gamma^2\)</span>, y <span class="math notranslate nohighlight">\([K_1, K_2] = \frac{1}{2}\gamma^1\gamma^2 = -\frac{i}{2}\Sigma_3 = -iJ_3\)</span>. <span class="math notranslate nohighlight">\((\gamma^0\gamma^3)^\dagger = \gamma^0\gamma^3\)</span>, así que
+<span class="math notranslate nohighlight">\(K_3^\dagger = -\frac{i}{2}\gamma^0\gamma^3 = -K_3\)</span>: <strong>antihermítico</strong>, y <span class="math notranslate nohighlight">\(e^{-i\eta K_3}\)</span> no es unitaria.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{1}{2} \otimes \frac{1}{2} = 0 \oplus 1\)</span>: en <span class="math notranslate nohighlight">\(x^\mu\)</span>, <span class="math notranslate nohighlight">\(t\)</span> es el espín <span class="math notranslate nohighlight">\(0\)</span> (no cambia al girar) y <span class="math notranslate nohighlight">\((x, y, z)\)</span> el espín <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(1 + 3 = 4\)</span>.
+El espinor de Dirac, <span class="math notranslate nohighlight">\(\frac{1}{2} \oplus \frac{1}{2}\)</span>: dos dobletes, <span class="math notranslate nohighlight">\(2 + 2 = 4\)</span>, los dos bloques de <span class="math notranslate nohighlight">\({\bf \Sigma} = \mathrm{diag}(\vec\sigma, \vec\sigma)\)</span>.</p></li>
+</ol>
+</details></section>
+</section>
+<section id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[MT] M. Thomson, <em>Modern Particle Physics</em>, Cambridge University Press (2013): simetrías y modelo de quarks, tema 9
+(isoespín, 9.2 y 9.5; <span class="math notranslate nohighlight">\(SU(3)\)</span> de sabor, 9.6); QCD, tema 10 (el principio <em>gauge</em>, 10.1; color y gluones, 10.2 y
+10.3); la teoría electrodébil, tema 15.</p></li>
+<li><p>[GR] D. Griffiths, <em>Introduction to Elementary Particles</em>, Wiley (2008): temas 4 (simetrías) y 5 (estados ligados).</p></li>
+<li><p>[HM] F. Halzen y A. D. Martin, <em>Quarks and Leptons</em>, Wiley (1984): tema 2.</p></li>
+<li><p>[GE] H. Georgi, <em>Lie Algebras in Particle Physics</em>, Westview (1999): para profundizar.</p></li>
+<li><p>[PS] M. E. Peskin y D. V. Schroeder, <em>An Introduction to Quantum Field Theory</em>, Westview (1995): las
+representaciones del grupo de Lorentz y los espinores de Weyl, secciones 3.1 y 3.2.</p></li>
+<li><p>[WI] E. Wigner, «On unitary representations of the inhomogeneous Lorentz group», <em>Ann. Math.</em> <strong>40</strong>, 149 (1939).</p></li>
+<li><p>[CM] S. Coleman y J. Mandula, «All possible symmetries of the S matrix», <em>Phys. Rev.</em> <strong>159</strong>, 1251 (1967).</p></li>
+<li><p>[OM] V. E. Barnes et al., «Observation of a hyperon with strangeness minus three», <em>Phys. Rev. Lett.</em> <strong>12</strong>, 204 (1964).</p></li>
+<li><p>[PDG] <a class="reference external" href="https://pdg.lbl.gov/">Particle Data Group</a>: masas de los hadrones y coeficientes de Clebsch-Gordan.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ext-quiral.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Extensión: La quiralidad</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ext-feynman.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Extensión: Diagramas de Feynman y propagadores</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grupos-generadores-y-representaciones">1. Grupos, generadores y representaciones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simetrias-y-grupos">1.1. Simetrías y grupos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generadores">1.2. Generadores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#representaciones">1.3. Representaciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#u-1-la-fase-y-la-carga">2. <span class="math notranslate nohighlight">\(U(1)\)</span>: la fase y la carga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#su-2-el-espin-y-el-isoespin">3. <span class="math notranslate nohighlight">\(SU(2)\)</span>: el espín y el isoespín</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generadores-algebra-y-estados">3.1. Generadores, álgebra y estados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combinar-dos-dobletes-mathbf-2-otimes-mathbf-2-mathbf-3-oplus-mathbf-1">3.2. Combinar dos dobletes: <span class="math notranslate nohighlight">\(\mathbf{2} \otimes \mathbf{2} = \mathbf{3} \oplus \mathbf{1}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#su-2-y-las-rotaciones-las-dos-vueltas">3.3. <span class="math notranslate nohighlight">\(SU(2)\)</span> y las rotaciones: las dos vueltas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tres-usos-de-su-2">3.4. Tres usos de <span class="math notranslate nohighlight">\(SU(2)\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#su-3-ocho-generadores">4. <span class="math notranslate nohighlight">\(SU(3)\)</span>: ocho generadores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-matrices-de-gell-mann">4.1. Las matrices de Gell-Mann</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-diagramas-de-pesos">4.2. Los diagramas de pesos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combinar-tripletes">4.3. Combinar tripletes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-color">5. El color</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-sabor-el-camino-octuple">6. El sabor: el camino óctuple</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#una-simetria-aproximada">6.1. Una simetría aproximada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-multipletes">6.2. Los multipletes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-global-a-local-un-boson-por-generador">7. De global a local: un bosón por generador</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aparte-el-grupo-de-lorentz">8. Aparte: el grupo de Lorentz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rotaciones-y-boosts">8.1. Rotaciones y <em>boosts</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dos-su-2-escondidas">8.2. Dos <span class="math notranslate nohighlight">\(SU(2)\)</span> escondidas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-es-compacto-por-que-hace-falta-bar-psi">8.3. No es compacto: por qué hace falta <span class="math notranslate nohighlight">\(\bar\Psi\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por J. Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

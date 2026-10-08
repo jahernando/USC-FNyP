@@ -1,0 +1,2048 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Quarks y hadrones: el color que no se ve &#8212; Introducción a la Física de Partículas - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/quarks_hadrons';</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="El Modelo Estándar: el vacío no está vacío" href="sm.html" />
+    <link rel="prev" title="Leptones: la mano izquierda de la Naturaleza" href="leptones.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Introducción a la Física de Partículas - USC - Home"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Introducción a la Física de Partículas - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Capítulos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Física de Partículas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="perspectivas.html">Perspectivas: experimental y teórica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leptones.html">Leptones: la mano izquierda de la Naturaleza</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quarks y hadrones: el color que no se ve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sm.html">El Modelo Estándar: el vacío no está vacío</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: extensiones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ext-cinematica.html">Extensión: Cinemática relativista y espacio fásico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-dirac.html">Extensión: La ecuación de Dirac</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-quiral.html">Extensión: La quiralidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-grupos.html">Extensión: Las simetrías internas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-feynman.html">Extensión: Diagramas de Feynman y propagadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-sm.html">Extensión: El Modelo Estándar</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: boletines</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_inicio_2627.html">¿Se desintegra el protón?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_I_2627.html">Partículas — boletín I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_II_2627.html">Partículas — boletín II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_II_2627_higgs_4l.html">Un pico sobre el fondo</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/main?urlpath=tree/./notebooks/quarks_hadrons.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jahernando/USC-FNyP/blob/main/./notebooks/quarks_hadrons.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/quarks_hadrons.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/quarks_hadrons.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Quarks y hadrones: el color que no se ve</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivos">Objetivos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-hadrones-y-los-quarks">1. Los hadrones y los quarks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bariones-y-mesones">1.1. Bariones y mesones</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tres-escalas-de-tiempo">Tres escalas de tiempo</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-quarks-y-el-color">1.2. Los quarks y el color</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#un-barion-imposible">Un barión imposible</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-color">El color</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solo-lo-que-no-tiene-color">Solo lo que no tiene color</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descubrimientos">1.3. Descubrimientos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-proton-y-un-neutron">1.4. ¿Qué es un protón? ¿Y un neutrón?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lo-que-hay-dentro-del-proton">Lo que hay dentro del protón</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-neutron">El neutrón</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formulemos-algunas-preguntas">1.5. Formulemos algunas preguntas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#las-que-responde-el-tema-y-las-que-no">Las que responde el tema, y las que no</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-interaccion-fuerte">2. La interacción fuerte</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confinamiento">2.1. Confinamiento</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hadronizacion-y-jets">2.2. Hadronización y jets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#libertad-asintotica">2.3. Libertad asintótica</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#las-pruebas-quarks-espin-y-color">3. Las pruebas: quarks, espín y color</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dentro-del-nucleon-dispersion-de-neutrinos">3.1. Dentro del nucleón: dispersión de neutrinos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-1-3-es-la-helicidad">El <span class="math notranslate nohighlight">\(1/3\)</span> es la helicidad</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cuanto-momento-llevan-los-quarks">¿Cuánto momento llevan los quarks?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-e-to-q-bar-q-el-espin-de-los-quarks">3.2. <span class="math notranslate nohighlight">\(e^+ + e \to q + \bar{q}\)</span>: el espín de los quarks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#la-distribucion-angular">La distribución angular</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-numero-de-colores">3.3. El número de colores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#las-desintegraciones-debiles-de-los-hadrones">4. Las desintegraciones débiles de los hadrones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-angulo-de-cabibbo">4.1. El ángulo de Cabibbo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-matriz-ckm">4.2. La matriz CKM</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-triangulo-de-unitariedad">El triángulo de unitariedad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="quarks-y-hadrones-el-color-que-no-se-ve">
+<h1>Quarks y hadrones: el color que no se ve<a class="headerlink" href="#quarks-y-hadrones-el-color-que-no-se-ve" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Configuración: el código auxiliar está en el paquete notebooks/fnyp/</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">fnyp</span>
+<span class="k">except</span> <span class="ne">ModuleNotFoundError</span><span class="p">:</span>      <span class="c1"># en Google Colab hay que traerse antes el repositorio</span>
+    <span class="o">!</span>git<span class="w"> </span>clone<span class="w"> </span>-q<span class="w"> </span>https://github.com/jahernando/USC-FNyP.git
+    <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span><span class="p">;</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'USC-FNyP/notebooks'</span><span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">fnyp.inicio</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Last version  Thu Oct  8 13:39:19 2026
+</pre></div>
+</div>
+</div>
+</div>
+<section id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this heading">#</a></h2>
+<p>El tema tiene cuatro partes:</p>
+<ol class="arabic simple">
+<li><p><strong>Los hadrones y los quarks.</strong> Bariones y mesones, los seis quarks y el <strong>color</strong>. Y una pregunta sencilla con
+una respuesta sorprendente: ¿qué es un protón?</p></li>
+<li><p><strong>La interacción fuerte.</strong> Confinamiento, hadronización y libertad asintótica: una fuerza que crece con la
+distancia.</p></li>
+<li><p><strong>Las pruebas.</strong> Los neutrinos ven los quarks dentro del nucleón; la aniquilación <span class="math notranslate nohighlight">\(e^+ + e \to q + \bar{q}\)</span> mide su
+espín y cuenta los colores.</p></li>
+<li><p><strong>Las desintegraciones débiles de los hadrones.</strong> El <span class="math notranslate nohighlight">\(W\)</span> mezcla las familias de quarks: el ángulo de Cabibbo y la
+matriz CKM.</p></li>
+</ol>
+</section>
+<section id="los-hadrones-y-los-quarks">
+<h2>1. Los hadrones y los quarks<a class="headerlink" href="#los-hadrones-y-los-quarks" title="Permalink to this heading">#</a></h2>
+<section id="bariones-y-mesones">
+<h3>1.1. Bariones y mesones<a class="headerlink" href="#bariones-y-mesones" title="Permalink to this heading">#</a></h3>
+<p>Los <strong>hadrones</strong> son las partículas que sienten la interacción fuerte. Están hechos de quarks y son de dos tipos:</p>
+<ul class="simple">
+<li><p><strong>bariones</strong>: tres quarks, <span class="math notranslate nohighlight">\(qqq\)</span>, con número bariónico <span class="math notranslate nohighlight">\(B = 1\)</span> (los antibariones, <span class="math notranslate nohighlight">\(\bar{q}\bar{q}\bar{q}\)</span>, <span class="math notranslate nohighlight">\(B = -1\)</span>);</p></li>
+<li><p><strong>mesones</strong>: un quark y un antiquark, <span class="math notranslate nohighlight">\(q\bar{q}\)</span>, con <span class="math notranslate nohighlight">\(B = 0\)</span>.</p></li>
+</ul>
+<p>En los dos casos la carga es entera. Se conocen cientos de hadrones [PDG], y todos son inestables salvo el
+protón: <span class="math notranslate nohighlight">\(\tau_p &gt; 3.6 \cdot 10^{29}\)</span> años, sea cual sea el canal, y <span class="math notranslate nohighlight">\(\tau_p &gt; 2.4 \cdot 10^{34}\)</span> años para <span class="math notranslate nohighlight">\(p \to e^+ + \pi^0\)</span>
+(Super-Kamiokande, el boletín de inicio). [SKp]</p>
+<p>Algunos bariones relevantes [PDG]:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>nombre</p></th>
+<th class="head text-center"><p>quarks</p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(J^{P}\)</span></p></th>
+<th class="head text-center"><p>masa (MeV)</p></th>
+<th class="head text-center"><p>vida media o anchura</p></th>
+<th class="head text-left"><p>desintegraciones principales</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(p\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(uud\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2^+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(938.27\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(&gt; 3.6 \cdot 10^{29}\)</span> años</p></td>
+<td class="text-left"><p>estable</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(n\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(udd\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2^+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(939.57\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(878.4 \pm 0.5\)</span> s</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(p + e + \bar{\nu}_e\)</span> (<span class="math notranslate nohighlight">\(100\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\Delta^{++}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(uuu\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(3/2^+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1232\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Gamma \simeq 117\)</span> MeV</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(p + \pi^+\)</span> (<span class="math notranslate nohighlight">\(100\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\Lambda\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(uds\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2^+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1115.68\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(263\)</span> ps</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(p + \pi^-\)</span> (<span class="math notranslate nohighlight">\(64\,\%\)</span>), <span class="math notranslate nohighlight">\(n + \pi^0\)</span> (<span class="math notranslate nohighlight">\(36\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\Sigma^0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(uds\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2^+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1192.64\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(7.4 \cdot 10^{-20}\)</span> s</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\Lambda + \gamma\)</span> (<span class="math notranslate nohighlight">\(100\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\Omega^-\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(sss\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(3/2^+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1672.45\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(82\)</span> ps</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\Lambda + K^-\)</span> (<span class="math notranslate nohighlight">\(68\,\%\)</span>), <span class="math notranslate nohighlight">\(\Xi^0 + \pi^-\)</span> (<span class="math notranslate nohighlight">\(24\,\%\)</span>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="math notranslate nohighlight">\(J^P\)</span> es el espín <span class="math notranslate nohighlight">\(J\)</span> y la paridad intrínseca <span class="math notranslate nohighlight">\(P\)</span> (la ficha de abajo). En las partículas muy inestables se da la
+anchura, <span class="math notranslate nohighlight">\(\Gamma = \hbar/\tau\)</span>.</p>
+<p>Algunos mesones relevantes [PDG]:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>nombre</p></th>
+<th class="head text-center"><p>quarks</p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(J^{P}\)</span></p></th>
+<th class="head text-center"><p>masa (MeV)</p></th>
+<th class="head text-center"><p>vida media o anchura</p></th>
+<th class="head text-left"><p>desintegraciones principales</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\pi^0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\((u\bar{u} - d\bar{d})/\sqrt{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0^-\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(134.98\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(8.4 \cdot 10^{-17}\)</span> s</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(2\gamma\)</span> (<span class="math notranslate nohighlight">\(98.8\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\pi^+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(u\bar{d}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(139.57\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(26.03\)</span> ns</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\mu^+ + \nu_\mu\)</span> (<span class="math notranslate nohighlight">\(99.99\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\rho^0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\((u\bar{u} - d\bar{d})/\sqrt{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1^-\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(775.3\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Gamma \simeq 149\)</span> MeV</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\pi^+ + \pi^-\)</span> (<span class="math notranslate nohighlight">\(\simeq 100\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(K^+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(u\bar{s}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(493.68\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(12.38\)</span> ns</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\mu^+ + \nu_\mu\)</span> (<span class="math notranslate nohighlight">\(64\,\%\)</span>), <span class="math notranslate nohighlight">\(\pi^+ + \pi^0\)</span> (<span class="math notranslate nohighlight">\(21\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(K^0_S\)</span>, <span class="math notranslate nohighlight">\(K^0_L\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(d\bar{s}\)</span>, <span class="math notranslate nohighlight">\(s\bar{d}\)</span> (mezclas)</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(497.61\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(89.5\)</span> ps; <span class="math notranslate nohighlight">\(51.2\)</span> ns</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(2\pi\)</span>; <span class="math notranslate nohighlight">\(3\pi\)</span>, <span class="math notranslate nohighlight">\(\pi + \ell + \nu\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\phi\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(s\bar{s}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1^-\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1019.46\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Gamma \simeq 4.25\)</span> MeV</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(K^+ + K^-\)</span> (<span class="math notranslate nohighlight">\(49\,\%\)</span>), <span class="math notranslate nohighlight">\(K^0_L + K^0_S\)</span> (<span class="math notranslate nohighlight">\(34\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(D^+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(c\bar{d}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1869.7\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1.03\)</span> ps</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(K + \dots\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(D^0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(c\bar{u}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1864.8\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.41\)</span> ps</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(K + \dots\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(B^0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(d\bar{b}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(5279.7\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1.52\)</span> ps</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(D + \dots\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(J/\psi\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(c\bar{c}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(3096.9\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Gamma \simeq 93\)</span> keV</p></td>
+<td class="text-left"><p>hadrones (<span class="math notranslate nohighlight">\(88\,\%\)</span>), <span class="math notranslate nohighlight">\(e^+ + e\)</span> (<span class="math notranslate nohighlight">\(6\,\%\)</span>), <span class="math notranslate nohighlight">\(\mu^+ + \mu\)</span> (<span class="math notranslate nohighlight">\(6\,\%\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\Upsilon\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(b\bar{b}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(9460.4\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Gamma \simeq 54\)</span> keV</p></td>
+<td class="text-left"><p>hadrones, <span class="math notranslate nohighlight">\(\ell^+ + \ell\)</span> (<span class="math notranslate nohighlight">\(2.5\,\%\)</span> cada uno)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Los antimesones (<span class="math notranslate nohighlight">\(\pi^-\)</span>, <span class="math notranslate nohighlight">\(K^-\)</span>, <span class="math notranslate nohighlight">\(D^-\)</span>, <span class="math notranslate nohighlight">\(\bar{D}^0\)</span>, <span class="math notranslate nohighlight">\(\bar{B}^0\)</span>…) tienen la composición conjugada y las mismas masas y
+vidas medias.</p>
+<details>
+<summary><b>[i] Ficha — $J^P$: espín y paridad intrínseca</b></summary>
+<p>En un hadrón, los quarks pueden tener momento angular orbital <span class="math notranslate nohighlight">\(L\)</span>. El espín del hadrón, <span class="math notranslate nohighlight">\(J\)</span>, suma <span class="math notranslate nohighlight">\(L\)</span> y los espines
+de los quarks, y la paridad es <span class="math notranslate nohighlight">\(P = P_{\text{intrínseca}}\,(-1)^L\)</span>.</p>
+<ul class="simple">
+<li><p>Un quark tiene paridad <span class="math notranslate nohighlight">\(+1\)</span> y un antiquark <span class="math notranslate nohighlight">\(-1\)</span> (fermión y antifermión tienen paridades opuestas). Un mesón
+<span class="math notranslate nohighlight">\(q\bar{q}\)</span> tiene <span class="math notranslate nohighlight">\(P = -(-1)^L\)</span>; un barión <span class="math notranslate nohighlight">\(qqq\)</span>, <span class="math notranslate nohighlight">\(P = +(-1)^{L}\)</span>.</p></li>
+<li><p><strong>Mesones con <span class="math notranslate nohighlight">\(L = 0\)</span>:</strong> espines opuestos dan <span class="math notranslate nohighlight">\(J^P = 0^-\)</span> (los <strong>pseudoescalares</strong>: <span class="math notranslate nohighlight">\(\pi\)</span>, <span class="math notranslate nohighlight">\(K\)</span>, <span class="math notranslate nohighlight">\(D\)</span>, <span class="math notranslate nohighlight">\(B\)</span>); espines
+paralelos, <span class="math notranslate nohighlight">\(J^P = 1^-\)</span> (los <strong>vectoriales</strong>: <span class="math notranslate nohighlight">\(\rho\)</span>, <span class="math notranslate nohighlight">\(\phi\)</span>, <span class="math notranslate nohighlight">\(J/\psi\)</span>, <span class="math notranslate nohighlight">\(\Upsilon\)</span>). Los vectoriales tienen los números
+cuánticos del fotón: por eso aparecen como resonancias en <span class="math notranslate nohighlight">\(e^+ + e \to\)</span> hadrones (sección 3.3).</p></li>
+<li><p><strong>Bariones con <span class="math notranslate nohighlight">\(L = 0\)</span>:</strong> <span class="math notranslate nohighlight">\(J^P = 1/2^+\)</span> (<span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(\Lambda\)</span>, <span class="math notranslate nohighlight">\(\Sigma\)</span>) o <span class="math notranslate nohighlight">\(3/2^+\)</span> (<span class="math notranslate nohighlight">\(\Delta\)</span>, <span class="math notranslate nohighlight">\(\Omega^-\)</span>).</p></li>
+</ul>
+</details><section id="tres-escalas-de-tiempo">
+<h4>Tres escalas de tiempo<a class="headerlink" href="#tres-escalas-de-tiempo" title="Permalink to this heading">#</a></h4>
+<p><strong>¿Qué ves?</strong> Fíjate en la columna de las vidas medias:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Delta^{++}\)</span> y <span class="math notranslate nohighlight">\(\rho^0\)</span>, con anchuras de <span class="math notranslate nohighlight">\(\sim 100\)</span> MeV: <span class="math notranslate nohighlight">\(\tau = \hbar/\Gamma \sim 10^{-23}\)</span> s, el tiempo que tarda la luz en
+cruzar un protón. Es la <strong>interacción fuerte</strong>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Sigma^0 \to \Lambda + \gamma\)</span> y <span class="math notranslate nohighlight">\(\pi^0 \to 2\gamma\)</span>, con fotones: <span class="math notranslate nohighlight">\(10^{-20}\)</span>–<span class="math notranslate nohighlight">\(10^{-16}\)</span> s. Es la <strong>electromagnética</strong>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Lambda\)</span>, <span class="math notranslate nohighlight">\(K\)</span>, <span class="math notranslate nohighlight">\(\pi^\pm\)</span>, <span class="math notranslate nohighlight">\(D\)</span>, <span class="math notranslate nohighlight">\(B\)</span>: de <span class="math notranslate nohighlight">\(10^{-13}\)</span> a <span class="math notranslate nohighlight">\(10^{-8}\)</span> s, y el neutrón, <span class="math notranslate nohighlight">\(15\)</span> minutos. Es la <strong>débil</strong>: cambian el
+sabor de un quark.</p></li>
+</ul>
+<p>La vida media dice qué interacción actúa. Las partículas que se desintegran por la débil son las más ligeras de
+su sabor: ya no tienen a qué desintegrarse sin cambiarlo.</p>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — Fuerte, electromagnética o débil</b></p>
+<ol class="arabic simple">
+<li><p>Ejecuta la celda: calcula <span class="math notranslate nohighlight">\(\tau = \hbar/\Gamma\)</span> del <span class="math notranslate nohighlight">\(\Delta\)</span>, del <span class="math notranslate nohighlight">\(\rho\)</span> y del <span class="math notranslate nohighlight">\(\phi\)</span>, y compáralo con el tiempo que tarda la
+luz en recorrer <span class="math notranslate nohighlight">\(1\)</span> fm.</p></li>
+<li><p>Define la <strong>extrañeza</strong>, <span class="math notranslate nohighlight">\(S\)</span>, como menos el número de quarks <span class="math notranslate nohighlight">\(s\)</span> (<span class="math notranslate nohighlight">\(S = -1\)</span> por cada <span class="math notranslate nohighlight">\(s\)</span>, <span class="math notranslate nohighlight">\(+1\)</span> por cada <span class="math notranslate nohighlight">\(\bar{s}\)</span>).
+Para cada desintegración de las tablas, comprueba la carga, el número bariónico y <span class="math notranslate nohighlight">\(S\)</span>. ¿Cuáles cambian <span class="math notranslate nohighlight">\(S\)</span>?</p></li>
+<li><p>El <span class="math notranslate nohighlight">\(\Sigma^0\)</span> y el <span class="math notranslate nohighlight">\(\Lambda\)</span> tienen los mismos quarks. ¿Por qué el <span class="math notranslate nohighlight">\(\Sigma^0\)</span> se desintegra en <span class="math notranslate nohighlight">\(10^{-20}\)</span> s y el <span class="math notranslate nohighlight">\(\Lambda\)</span> tarda
+<span class="math notranslate nohighlight">\(10^{-10}\)</span> s?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># vidas medias a partir de las anchuras: tau = hbar / Gamma</span>
+<span class="n">hbar</span> <span class="o">=</span> <span class="mf">6.582e-22</span>                       <span class="c1"># MeV s</span>
+<span class="k">for</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">gamma</span> <span class="ow">in</span> <span class="p">[(</span><span class="s1">'Delta'</span><span class="p">,</span> <span class="mf">117.</span><span class="p">),</span> <span class="p">(</span><span class="s1">'rho'</span><span class="p">,</span> <span class="mf">149.</span><span class="p">),</span> <span class="p">(</span><span class="s1">'phi'</span><span class="p">,</span> <span class="mf">4.25</span><span class="p">)]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' </span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">6s</span><span class="si">}</span><span class="s1">: Gamma = </span><span class="si">{</span><span class="n">gamma</span><span class="si">:</span><span class="s1">6.2f</span><span class="si">}</span><span class="s1"> MeV,  tau = </span><span class="si">{</span><span class="n">hbar</span><span class="o">/</span><span class="n">gamma</span><span class="si">:</span><span class="s1">.1e</span><span class="si">}</span><span class="s1"> s'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' luz en 1 fm: </span><span class="si">{</span><span class="mf">1e-15</span><span class="o">/</span><span class="mf">3e8</span><span class="si">:</span><span class="s1">.1e</span><span class="si">}</span><span class="s1"> s'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Delta : Gamma = 117.00 MeV,  tau = 5.6e-24 s
+ rho   : Gamma = 149.00 MeV,  tau = 4.4e-24 s
+ phi   : Gamma =   4.25 MeV,  tau = 1.5e-22 s
+ luz en 1 fm: 3.3e-24 s
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\tau_\Delta \simeq 5.6 \cdot 10^{-24}\)</span> s, <span class="math notranslate nohighlight">\(\tau_\rho \simeq 4.4 \cdot 10^{-24}\)</span> s, del orden de lo que tarda la luz en cruzar <span class="math notranslate nohighlight">\(1\)</span> fm,
+<span class="math notranslate nohighlight">\(3 \cdot 10^{-24}\)</span> s. El <span class="math notranslate nohighlight">\(\phi\)</span> vive <span class="math notranslate nohighlight">\(40\)</span> veces más, <span class="math notranslate nohighlight">\(1.5 \cdot 10^{-22}\)</span> s: casi no tiene espacio fásico para desintegrarse
+en <span class="math notranslate nohighlight">\(K\bar{K}\)</span> (<span class="math notranslate nohighlight">\(2m_K = 987\)</span> MeV frente a <span class="math notranslate nohighlight">\(1019\)</span> MeV).</p></li>
+<li><p>Fuertes y electromagnéticas conservan <span class="math notranslate nohighlight">\(S\)</span>: <span class="math notranslate nohighlight">\(\Delta^{++} \to p + \pi^+\)</span>, <span class="math notranslate nohighlight">\(\Sigma^0 \to \Lambda + \gamma\)</span>, <span class="math notranslate nohighlight">\(\phi \to K^+ + K^-\)</span> (<span class="math notranslate nohighlight">\(S\)</span>: <span class="math notranslate nohighlight">\(0 \to -1 + 1\)</span>).
+Las débiles lo cambian en una unidad: <span class="math notranslate nohighlight">\(\Lambda \to p + \pi^-\)</span> (<span class="math notranslate nohighlight">\(-1 \to 0\)</span>), <span class="math notranslate nohighlight">\(\Omega^- \to \Lambda + K^-\)</span> (<span class="math notranslate nohighlight">\(-3 \to -2\)</span>),
+<span class="math notranslate nohighlight">\(K^+ \to \mu^+ + \nu_\mu\)</span> (<span class="math notranslate nohighlight">\(+1 \to 0\)</span>).</p></li>
+<li><p>El <span class="math notranslate nohighlight">\(\Sigma^0\)</span> es más pesado que el <span class="math notranslate nohighlight">\(\Lambda\)</span> y puede desintegrarse en él emitiendo un fotón, sin cambiar los quarks. El <span class="math notranslate nohighlight">\(\Lambda\)</span> es
+el barión extraño más ligero: para desintegrarse tiene que cambiar un <span class="math notranslate nohighlight">\(s\)</span> por un <span class="math notranslate nohighlight">\(u\)</span>, y eso solo lo hace la débil.</p></li>
+</ol>
+</details></section>
+</section>
+<section id="los-quarks-y-el-color">
+<h3>1.2. Los quarks y el color<a class="headerlink" href="#los-quarks-y-el-color" title="Permalink to this heading">#</a></h3>
+<p>Hay seis quarks, en tres dobletes de isoespín débil, como los leptones:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} u \\ d \end{pmatrix}, \; \begin{pmatrix} c \\ s \end{pmatrix}, \;
+\begin{pmatrix} t \\ b \end{pmatrix}
+\end{split}\]</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>carga <span class="math notranslate nohighlight">\(Q\)</span> (<span class="math notranslate nohighlight">\(e\)</span>)</p></th>
+<th class="head text-center"><p>1.ª generación</p></th>
+<th class="head text-center"><p>2.ª generación</p></th>
+<th class="head text-center"><p>3.ª generación</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(+\frac{2}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(u\)</span> (<span class="math notranslate nohighlight">\(2.2\)</span> MeV)</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(c\)</span> (<span class="math notranslate nohighlight">\(1.27\)</span> GeV)</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(t\)</span> (<span class="math notranslate nohighlight">\(173\)</span> GeV)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(d\)</span> (<span class="math notranslate nohighlight">\(4.7\)</span> MeV)</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(s\)</span> (<span class="math notranslate nohighlight">\(93\)</span> MeV)</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(b\)</span> (<span class="math notranslate nohighlight">\(4.18\)</span> GeV)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>(masas del PDG; las de los quarks ligeros no se miden directamente, porque los quarks están confinados).</p>
+<p>Una partícula con carga <span class="math notranslate nohighlight">\(2/3\)</span> o <span class="math notranslate nohighlight">\(-1/3\)</span> sería fácil de reconocer, y nunca se ha visto ninguna: <strong>los quarks no
+están libres</strong>, solo dentro de los hadrones.</p>
+<section id="un-barion-imposible">
+<h4>Un barión imposible<a class="headerlink" href="#un-barion-imposible" title="Permalink to this heading">#</a></h4>
+<p><strong>Antes de seguir, mójate.</strong> El <span class="math notranslate nohighlight">\(\Delta^{++}\)</span> es <span class="math notranslate nohighlight">\(uuu\)</span>, con <span class="math notranslate nohighlight">\(J = 3/2\)</span>, en su estado fundamental (<span class="math notranslate nohighlight">\(L = 0\)</span>).</p>
+<ol class="arabic simple">
+<li><p>¿Cómo están los tres espines?</p></li>
+<li><p>¿Cómo es su función de ondas al intercambiar dos quarks: en el espacio, en el sabor y en el espín?</p></li>
+<li><p>Los quarks son fermiones. ¿Qué pide el principio de Pauli? ¿Qué falla?</p></li>
+</ol>
+</section>
+<section id="el-color">
+<h4>El color<a class="headerlink" href="#el-color" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Para sumar <span class="math notranslate nohighlight">\(J = 3/2\)</span> con <span class="math notranslate nohighlight">\(L = 0\)</span>, <strong>los tres espines tienen que ser paralelos</strong>.</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(L = 0\)</span>, la función de ondas espacial es <strong>simétrica</strong>; tres <span class="math notranslate nohighlight">\(u\)</span>, simétrica en <strong>sabor</strong>; tres espines
+paralelos, simétrica en <strong>espín</strong>.</p></li>
+<li><p>Pauli pide que la función de ondas total de fermiones idénticos sea <strong>antisimétrica</strong>. El <span class="math notranslate nohighlight">\(\Delta^{++}\)</span>, y lo
+mismo el <span class="math notranslate nohighlight">\(\Omega^-\)</span> (<span class="math notranslate nohighlight">\(sss\)</span>), ¡no podría existir!</p></li>
+</ol>
+<p>La solución (O. W. Greenberg, 1964; M. Han y Y. Nambu, 1965): los quarks tienen un número cuántico más, con
+<strong>tres valores</strong>, el <strong>color</strong>: rojo, verde y azul (<span class="math notranslate nohighlight">\(r, g, b\)</span>). La función de ondas es antisimétrica en color,</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi_{\text{color}} = \frac{1}{\sqrt{6}}\,\varepsilon_{ijk}\,q_i\,q_j\,q_k
+= \frac{1}{\sqrt{6}}\left(rgb - rbg + gbr - grb + brg - bgr\right),
+\]</div>
+<p>y la total vuelve a serlo. [GRE]</p>
+<p>Los nombres de los colores son una metáfora: no tienen nada que ver con la luz.</p>
+</section>
+<section id="solo-lo-que-no-tiene-color">
+<h4>Solo lo que no tiene color<a class="headerlink" href="#solo-lo-que-no-tiene-color" title="Permalink to this heading">#</a></h4>
+<p>Cada quark es un triplete de color: hay <span class="math notranslate nohighlight">\(6 \times 3 = 18\)</span> quarks y otros tantos antiquarks. Pero <strong>los hadrones no
+tienen color</strong>: son combinaciones «blancas», <strong>singletes de color</strong>.</p>
+<p>La teoría de la interacción fuerte, la <strong>cromodinámica cuántica</strong> (QCD), dice que solo pueden estar libres los
+singletes de color. Con tres colores hay uno en <span class="math notranslate nohighlight">\(q\bar{q}\)</span>, <span class="math notranslate nohighlight">\((r\bar{r} + g\bar{g} + b\bar{b})/\sqrt{3}\)</span>, y otro en <span class="math notranslate nohighlight">\(qqq\)</span>, el <span class="math notranslate nohighlight">\(\varepsilon_{ijk}\)</span> de
+arriba, pero <strong>ninguno en <span class="math notranslate nohighlight">\(qq\)</span></strong>: por eso existen mesones y bariones, y no hay estados de dos quarks ni quarks
+sueltos. Que hay tres colores lo mediremos en la sección 3.3. Las cuentas de grupos, <span class="math notranslate nohighlight">\(SU(3)\)</span> de color y de sabor, están en
+<a class="reference internal" href="ext-grupos.html"><span class="doc std std-doc">ext-grupos</span></a>.</p>
+<p>El color lo intercambian <strong>ocho gluones</strong>. A diferencia del fotón, que no tiene carga eléctrica, <strong>los gluones tienen
+color</strong> (un color y un anticolor) e interaccionan entre sí. De ahí sale todo lo que tiene de especial la
+interacción fuerte (segunda parte).</p>
+<details>
+<summary><b>[+] Mirador — Tetraquarks y pentaquarks</b></summary>
+<p><span class="math notranslate nohighlight">\(qq\bar{q}\bar{q}\)</span> y <span class="math notranslate nohighlight">\(qqqq\bar{q}\)</span> también pueden ser singletes de color. Desde el <span class="math notranslate nohighlight">\(X(3872)\)</span> (Belle, 2003) se han encontrado
+decenas de <strong>hadrones exóticos</strong>: tetraquarks como el <span class="math notranslate nohighlight">\(Z_c(3900)\)</span> o el <span class="math notranslate nohighlight">\(T_{cc}^+\)</span>, con dos quarks <span class="math notranslate nohighlight">\(c\)</span>, y pentaquarks como los
+<span class="math notranslate nohighlight">\(P_c\)</span> de LHCb (2015), con <span class="math notranslate nohighlight">\(uudc\bar{c}\)</span>. Se discute si son estados compactos o «moléculas» de dos hadrones ligadas.
+[LHCb]</p>
+</details></section>
+</section>
+<section id="descubrimientos">
+<h3>1.3. Descubrimientos<a class="headerlink" href="#descubrimientos" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>1932</strong> J. Chadwick descubre el neutrón.</p></li>
+<li><p><strong>1935</strong> H. Yukawa postula que la fuerza entre nucleones la transmite una partícula de <span class="math notranslate nohighlight">\(\sim 100\)</span> MeV.</p></li>
+<li><p><strong>1947</strong> C. Powell descubre en emulsiones el pión, que se desintegra en un muón. G. Rochester y C. Butler
+observan las partículas «V»: los kaones, las primeras <strong>extrañas</strong>.</p></li>
+<li><p><strong>1961</strong> M. Gell-Mann e Y. Ne’eman ordenan los hadrones con la simetría SU(3) de sabor. En 1962 Gell-Mann
+predice el <span class="math notranslate nohighlight">\(\Omega^-\)</span>, que se descubre en Brookhaven en 1964.</p></li>
+<li><p><strong>1964</strong> Gell-Mann y G. Zweig proponen los quarks; Greenberg, el color.</p></li>
+<li><p><strong>1968–69</strong> La dispersión de electrones en SLAC ve partículas puntuales dentro del protón (introducción).</p></li>
+<li><p><strong>1973</strong> D. Gross, F. Wilczek y D. Politzer: la libertad asintótica, la base de QCD (Nobel de 2004).</p></li>
+<li><p><strong>1974</strong> El <span class="math notranslate nohighlight">\(J/\psi\)</span> (<span class="math notranslate nohighlight">\(c\bar{c}\)</span>), en SLAC (B. Richter) y Brookhaven (S. Ting): la «revolución de noviembre».</p></li>
+<li><p><strong>1977</strong> El <span class="math notranslate nohighlight">\(\Upsilon\)</span> (<span class="math notranslate nohighlight">\(b\bar{b}\)</span>), en Fermilab (L. Lederman).</p></li>
+<li><p><strong>1979</strong> El gluón, en sucesos de tres <em>jets</em> en PETRA (DESY).</p></li>
+<li><p><strong>1995</strong> El top, en Fermilab (CDF y D0).</p></li>
+</ul>
+<p><strong>Hitos en las desintegraciones débiles de los hadrones</strong> (sección 4):</p>
+<ul class="simple">
+<li><p><strong>1963</strong> N. Cabibbo: el <span class="math notranslate nohighlight">\(W\)</span> se acopla a mezclas de quarks <span class="math notranslate nohighlight">\(d\)</span> y <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+<li><p><strong>1964</strong> J. Cronin y V. Fitch: violación de <span class="math notranslate nohighlight">\(CP\)</span> en los kaones neutros.</p></li>
+<li><p><strong>1973</strong> M. Kobayashi y T. Maskawa: con tres familias, la mezcla explica la violación de <span class="math notranslate nohighlight">\(CP\)</span>. Predicen la tercera
+familia antes de que se descubran el <span class="math notranslate nohighlight">\(\tau\)</span> y el <span class="math notranslate nohighlight">\(b\)</span>.</p></li>
+<li><p><strong>2001</strong> BaBar (SLAC) y Belle (KEK) miden la violación de <span class="math notranslate nohighlight">\(CP\)</span> en los mesones <span class="math notranslate nohighlight">\(B^0\)</span>, de acuerdo con la CKM.</p></li>
+</ul>
+<p>[AB4, MT9]</p>
+</section>
+<section id="que-es-un-proton-y-un-neutron">
+<h3>1.4. ¿Qué es un protón? ¿Y un neutrón?<a class="headerlink" href="#que-es-un-proton-y-un-neutron" title="Permalink to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/gen_proton_neutron.jpg"><img alt="../_images/gen_proton_neutron.jpg" class="align-center" src="../_images/gen_proton_neutron.jpg" style="width: 420px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>la imagen de libro: tres quarks de tres colores unidos por gluones</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Antes de seguir, mójate.</strong> El protón es <span class="math notranslate nohighlight">\(uud\)</span>, con <span class="math notranslate nohighlight">\(m_u \simeq 2\)</span> MeV y <span class="math notranslate nohighlight">\(m_d \simeq 5\)</span> MeV.</p>
+<ol class="arabic simple">
+<li><p>¿De dónde salen sus <span class="math notranslate nohighlight">\(938\)</span> MeV?</p></li>
+<li><p>¿Llevan los tres quarks todo su momento? ¿Y todo su espín?</p></li>
+<li><p>El neutrón es neutro. ¿Puede tener momento magnético?</p></li>
+</ol>
+<section id="lo-que-hay-dentro-del-proton">
+<h4>Lo que hay dentro del protón<a class="headerlink" href="#lo-que-hay-dentro-del-proton" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Tres quarks de valencia</strong>, <span class="math notranslate nohighlight">\(uud\)</span>, que fijan sus números cuánticos: carga <span class="math notranslate nohighlight">\(+1\)</span>, número bariónico <span class="math notranslate nohighlight">\(1\)</span>, espín <span class="math notranslate nohighlight">\(1/2\)</span>.</p></li>
+<li><p>Un <strong>mar</strong> de pares quark-antiquark y de <strong>gluones</strong>, que aparecen y desaparecen sin parar.</p></li>
+<li><p><strong>La masa.</strong> Los quarks aportan <span class="math notranslate nohighlight">\(2m_u + m_d \simeq 9\)</span> MeV: <strong>un 1 %</strong>. El resto es energía, <span class="math notranslate nohighlight">\(E = mc^2\)</span>: la del campo
+de gluones y la cinética de unos quarks encerrados en <span class="math notranslate nohighlight">\(1\)</span> fm. QCD en el retículo la calcula con un 2 % de
+precisión [BMW] (el mirador <em>Y se hizo la masa</em>). Casi toda la masa de la materia visible es energía de QCD, no masa de Higgs.</p></li>
+<li><p><strong>El momento.</strong> Los quarks llevan la mitad del momento del protón, y los gluones la otra mitad (lo mediremos con
+neutrinos, sección 3.1).</p></li>
+<li><p><strong>El espín.</strong> En el modelo de quarks, el espín del protón es la suma de los de sus tres quarks. En 1988 EMC (CERN)
+lo midió, con muones polarizados contra protones polarizados, y los espines de los quarks no daban casi nada: la
+<strong>crisis del espín</strong>. Hoy sabemos que aportan un <span class="math notranslate nohighlight">\(\sim 30\,\%\)</span> (quarks y antiquarks de todos los sabores); el resto es
+espín de los gluones y movimiento orbital, que aún no se han separado bien. [EMC]</p></li>
+<li><p><strong>El tamaño.</strong> Radio de carga: <span class="math notranslate nohighlight">\(0.84\)</span> fm.</p></li>
+</ul>
+<p>Un protón no es tres bolitas: es un sistema de muchos cuerpos, relativista, que QCD mantiene unido.</p>
+<details>
+<summary><b>[+] Mirador — Y se hizo la masa</b></summary>
+<p><strong>Las piezas no pesan.</strong> Pesa las piezas de un protón, dos <span class="math notranslate nohighlight">\(u\)</span> y un <span class="math notranslate nohighlight">\(d\)</span>: <span class="math notranslate nohighlight">\(9\)</span> MeV. El protón pesa <span class="math notranslate nohighlight">\(938\)</span>. ¿De dónde sale
+el resto?</p>
+<p><strong>En el átomo pasa lo contrario.</strong> Un átomo de hidrógeno pesa <span class="math notranslate nohighlight">\(13.6\)</span> eV <em>menos</em> que un protón y un electrón por
+separado: la energía de enlace es negativa, y el todo pesa un poco menos que sus partes. En el protón, el todo pesa
+cien veces <strong>más</strong> que sus partes. La diferencia es energía, <span class="math notranslate nohighlight">\(m = E/c^2\)</span>: la de lo que se mueve dentro.</p>
+<p><strong>Una caja de luz.</strong> Una caja de espejos llena de fotones pesa más que vacía, aunque los fotones no tengan masa: su
+energía, <span class="math notranslate nohighlight">\(E/c^2\)</span>, cuenta. El protón es una caja así, pero sin paredes: quarks casi sin masa y gluones sin masa,
+encerrados por su propio campo.</p>
+<p><strong>Una estimación.</strong> Encerrar un quark en una región de tamaño <span class="math notranslate nohighlight">\(R\)</span> le da, por el principio de incertidumbre, un
+momento <span class="math notranslate nohighlight">\(p \sim \hbar/R\)</span>; con su masa de unos MeV va casi a la velocidad de la luz, y su energía es <span class="math notranslate nohighlight">\(E \simeq pc\)</span>. Tres
+quarks: <span class="math notranslate nohighlight">\(3\hbar c/R\)</span>, que <strong>crece si se aprietan</strong>. La cuerda de gluones que los sujeta (sección 2.1) guarda <span class="math notranslate nohighlight">\(\kappa R\)</span>,
+que <strong>crece si se separan</strong>. El protón se queda donde la suma es mínima, en <span class="math notranslate nohighlight">\(3\hbar c/R = \kappa R\)</span>: mitad de la energía
+en los quarks y mitad en la cuerda. Con <span class="math notranslate nohighlight">\(\hbar c = 0.197\)</span> GeV fm y <span class="math notranslate nohighlight">\(\kappa \simeq 0.9\)</span> GeV/fm sale
+<span class="math notranslate nohighlight">\(R = \sqrt{3\hbar c/\kappa} \simeq 0.8\)</span> fm, el radio del protón, y <span class="math notranslate nohighlight">\(E \simeq 2\sqrt{3\hbar c\,\kappa} \simeq 1.5\)</span> GeV. Sin poner a mano ni
+el tamaño ni la masa, una cuenta de servilleta da el radio y la masa con un <span class="math notranslate nohighlight">\(50\,\%\)</span> de error. En el hidrógeno, la
+misma cuenta, con la atracción de Coulomb en lugar de la cuerda, da exactos el radio de Bohr y los <span class="math notranslate nohighlight">\(-13.6\)</span> eV.</p>
+<p><strong>El reparto.</strong> QCD en el retículo, que resuelve la teoría en superordenadores, calcula la masa del protón con un
+<span class="math notranslate nohighlight">\(2\,\%\)</span> de precisión [BMW] y la reparte [χQCD] (el reparto depende de cómo se separen las piezas):</p>
+<ul class="simple">
+<li><p>las masas de los quarks, incluidos los <span class="math notranslate nohighlight">\(s\)</span> del mar: <span class="math notranslate nohighlight">\(\sim 9\,\%\)</span>;</p></li>
+<li><p>la energía de movimiento de los quarks: <span class="math notranslate nohighlight">\(\sim 32\,\%\)</span>;</p></li>
+<li><p>la energía del campo de gluones: <span class="math notranslate nohighlight">\(\sim 37\,\%\)</span>;</p></li>
+<li><p>un efecto cuántico de QCD, la <em>anomalía</em>, que fija la escala de la teoría: <span class="math notranslate nohighlight">\(\sim 23\,\%\)</span>.</p></li>
+</ul>
+<p><strong>Sin Higgs, casi igual.</strong> Si el Higgs no diera masa a los quarks, el protón seguiría pesando unos <span class="math notranslate nohighlight">\(880\)</span> MeV. El
+electrón, en cambio, no pesaría nada, y no habría átomos. El Higgs da la masa a las partículas elementales, pero más
+del <span class="math notranslate nohighlight">\(90\,\%\)</span> de la masa de tu cuerpo es energía de QCD.</p>
+</details><details>
+<summary><b>[+] Mirador — El radio del protón</b></summary>
+<p>Durante décadas, el radio de carga del protón se midió con la dispersión de electrones y con la espectroscopía del
+hidrógeno: <span class="math notranslate nohighlight">\(0.88\)</span> fm. En 2010, el grupo de R. Pohl midió el <strong>hidrógeno muónico</strong> (un muón en lugar del electrón, 200
+veces más cerca del protón y mucho más sensible a su tamaño) y obtuvo <span class="math notranslate nohighlight">\(0.84\)</span> fm, más de cinco desviaciones por debajo. ¿Física
+nueva que distinguiera el muón del electrón? Las medidas nuevas con electrones dan también <span class="math notranslate nohighlight">\(0.84\)</span> fm: el problema
+estaba en las antiguas. [POHL]</p>
+</details></section>
+<section id="el-neutron">
+<h4>El neutrón<a class="headerlink" href="#el-neutron" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Es <span class="math notranslate nohighlight">\(udd\)</span></strong>: carga <span class="math notranslate nohighlight">\(\frac{2}{3} - \frac{1}{3} - \frac{1}{3} = 0\)</span>. Pero tiene momento magnético, <span class="math notranslate nohighlight">\(\mu_n = -1.91\,\mu_N\)</span> (el del protón es
+<span class="math notranslate nohighlight">\(+2.79\,\mu_N\)</span>, con <span class="math notranslate nohighlight">\(\mu_N = e\hbar/2m_p\)</span>): una partícula neutra y puntual no lo tendría. <strong>Es la prueba de que el neutrón
+está hecho de cargas.</strong> El modelo de quarks predice <span class="math notranslate nohighlight">\(\mu_n/\mu_p = -2/3\)</span>; se mide <span class="math notranslate nohighlight">\(-0.685\)</span> (el taller).</p></li>
+<li><p><strong>Pesa más que el protón</strong>, <span class="math notranslate nohighlight">\(m_n - m_p = 1.29\)</span> MeV: el <span class="math notranslate nohighlight">\(d\)</span> pesa más que el <span class="math notranslate nohighlight">\(u\)</span> y eso gana a la energía electrostática
+del protón, que lo haría más pesado. Por eso el neutrón libre se desintegra, <span class="math notranslate nohighlight">\(n \to p + e + \bar{\nu}_e\)</span>, cambiando un
+<span class="math notranslate nohighlight">\(d\)</span> en un <span class="math notranslate nohighlight">\(u\)</span>, y el hidrógeno es estable.</p></li>
+</ul>
+<p><em><strong>[+] Mirador.</strong></em> <em>Si fuera al revés, el protón se desintegraría en neutrón y no habría átomos de hidrógeno, ni
+estrellas como el Sol, ni agua.</em></p>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — Los momentos magnéticos del protón y del neutrón</b></p>
+<p>Cada quark tiene el momento magnético de una partícula de Dirac, <span class="math notranslate nohighlight">\(\mu_q = Q_q\,e\hbar/2m_q\)</span>. Con la función de ondas de
+espín y sabor del modelo de quarks se obtiene</p>
+<div class="math notranslate nohighlight">
+\[
+\mu_p = \frac{4}{3}\mu_u - \frac{1}{3}\mu_d, \qquad \mu_n = \frac{4}{3}\mu_d - \frac{1}{3}\mu_u .
+\]</div>
+<ol class="arabic simple">
+<li><p>Si <span class="math notranslate nohighlight">\(m_u = m_d\)</span>, ¿cuánto vale <span class="math notranslate nohighlight">\(\mu_u/\mu_d\)</span>? Calcula <span class="math notranslate nohighlight">\(\mu_n/\mu_p\)</span> y compáralo con el valor medido, <span class="math notranslate nohighlight">\(-1.913/2.793\)</span>.</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(\mu_p = 2.793\,\mu_N\)</span>, ¿qué masa tienen que tener los quarks? Compárala con <span class="math notranslate nohighlight">\(m_u \simeq 2\)</span> MeV.</p></li>
+<li><p>¿Qué te dice el resultado sobre la pregunta de la masa del protón?</p></li>
+</ol>
+</div><details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\mu_u/\mu_d = Q_u/Q_d = -2\)</span>. Entonces <span class="math notranslate nohighlight">\(\mu_p = \frac{4}{3}(-2\mu_d) - \frac{1}{3}\mu_d = -3\mu_d\)</span> y <span class="math notranslate nohighlight">\(\mu_n = \frac{4}{3}\mu_d + \frac{2}{3}\mu_d = 2\mu_d\)</span>:
+<span class="math notranslate nohighlight">\(\mu_n/\mu_p = -2/3 = -0.667\)</span>. Se mide <span class="math notranslate nohighlight">\(-0.685\)</span>: <strong>un 3 %</strong>, sin ningún parámetro libre.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu_p = -3\mu_d = e\hbar/2m_q = (m_p/m_q)\,\mu_N\)</span>, así que <span class="math notranslate nohighlight">\(m_q = m_p/2.793 \simeq 336\)</span> MeV.</p></li>
+<li><p>Dentro del protón, los quarks se comportan como partículas de <span class="math notranslate nohighlight">\(\sim 330\)</span> MeV, la <strong>masa constituyente</strong>: la de
+Higgs (<span class="math notranslate nohighlight">\(2\)</span>–<span class="math notranslate nohighlight">\(5\)</span> MeV) más la energía de QCD que llevan consigo. Tres de ellas dan casi la masa del protón.</p></li>
+</ol>
+<p>[MT9]</p>
+</details></section>
+</section>
+<section id="formulemos-algunas-preguntas">
+<h3>1.5. Formulemos algunas preguntas<a class="headerlink" href="#formulemos-algunas-preguntas" title="Permalink to this heading">#</a></h3>
+<p>Ya conoces los hadrones: de qué están hechos, cómo se desintegran y por qué los quarks necesitan color. Y has visto
+que un protón es mucho más que tres quarks.</p>
+<p><strong>Antes de seguir, mójate:</strong> ¿qué preguntas te harías sobre los quarks y la interacción fuerte? Haz tu lista. A
+algunas responderemos en este tema; otras no tienen respuesta todavía.</p>
+<section id="las-que-responde-el-tema-y-las-que-no">
+<h4>Las que responde el tema, y las que no<a class="headerlink" href="#las-que-responde-el-tema-y-las-que-no" title="Permalink to this heading">#</a></h4>
+<p><strong>Las que responde este tema:</strong></p>
+<ul class="simple">
+<li><p><strong>¿Por qué no vemos quarks sueltos?</strong> Porque la fuerza entre ellos crece con la distancia: el <strong>confinamiento</strong>, en la
+segunda parte.</p></li>
+<li><p><strong>Si no se ven, ¿cómo sabemos que existen?</strong> Los neutrinos y los electrones rebotan en ellos dentro del protón, y en
+<span class="math notranslate nohighlight">\(e^+ + e \to q + \bar{q}\)</span> se ve su espín y su carga: tercera parte.</p></li>
+<li><p><strong>¿De verdad hay tres colores?</strong> Sí: se cuentan con <span class="math notranslate nohighlight">\(R\)</span>, en la sección 3.3.</p></li>
+<li><p><strong>¿Por qué el <span class="math notranslate nohighlight">\(\Lambda\)</span> o el <span class="math notranslate nohighlight">\(K\)</span> viven tanto, y el <span class="math notranslate nohighlight">\(b\)</span> más aún?</strong> Porque el <span class="math notranslate nohighlight">\(W\)</span> casi no mezcla familias: Cabibbo y la CKM, en la
+cuarta parte.</p></li>
+<li><p><strong>¿Por qué solo <span class="math notranslate nohighlight">\(qqq\)</span> y <span class="math notranslate nohighlight">\(q\bar{q}\)</span>?</strong> Porque solo los singletes de color pueden estar libres: sección 1.2.</p></li>
+</ul>
+<p><strong>Las que siguen abiertas:</strong></p>
+<ul class="simple">
+<li><p><strong>¿Por qué confina QCD?</strong> Se ve en los experimentos y en el retículo, pero nadie lo ha demostrado. Demostrar que la
+teoría tiene un «salto de masa», muy ligado al confinamiento, es uno de los siete «problemas del milenio» del
+Instituto Clay, con un millón de dólares de premio.</p></li>
+<li><p><strong>¿Por qué esas masas y esas mezclas?</strong> Las masas de los quarks van de <span class="math notranslate nohighlight">\(2\)</span> MeV a <span class="math notranslate nohighlight">\(173\)</span> GeV, y la CKM tiene una
+jerarquía clara. En el Modelo Estándar son parámetros libres, como las masas de los leptones.</p></li>
+<li><p><strong>¿Se desintegra el protón?</strong> Las teorías de gran unificación dicen que sí. Super-Kamiokande no lo ha visto: su vida media
+es mayor que <span class="math notranslate nohighlight">\(10^{34}\)</span> años; Hyper-Kamiokande y DUNE seguirán buscando.</p></li>
+<li><p><strong>¿Por qué hay materia y no antimateria?</strong> La violación de <span class="math notranslate nohighlight">\(CP\)</span> de la CKM se queda corta por unos diez órdenes de
+magnitud (el mirador del final del tema).</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="la-interaccion-fuerte">
+<h2>2. La interacción fuerte<a class="headerlink" href="#la-interaccion-fuerte" title="Permalink to this heading">#</a></h2>
+<section id="confinamiento">
+<h3>2.1. Confinamiento<a class="headerlink" href="#confinamiento" title="Permalink to this heading">#</a></h3>
+<p>Los quarks nunca aparecen aislados: siempre en tríos (bariones) o en parejas quark-antiquark (mesones). Es el
+<strong>confinamiento</strong>.</p>
+<p>No hay una demostración analítica, pero el potencial entre un quark y un antiquark, que reproduce los espectros
+del <span class="math notranslate nohighlight">\(c\bar{c}\)</span> y del <span class="math notranslate nohighlight">\(b\bar{b}\)</span> y QCD en el retículo, tiene dos términos:</p>
+<div class="math notranslate nohighlight">
+\[
+V(r) \simeq -\frac{4}{3}\frac{\alpha_S\,\hbar c}{r} + \kappa\, r, \qquad \kappa \simeq 0.9\ \mathrm{GeV/fm} .
+\]</div>
+<p>A distancias cortas es como el de Coulomb. A distancias largas <strong>crece con <span class="math notranslate nohighlight">\(r\)</span></strong>: los gluones forman un tubo de
+campo, una <strong>cuerda</strong>, cuya energía aumenta con la longitud. Separar dos quarks <span class="math notranslate nohighlight">\(1\)</span> fm cuesta <span class="math notranslate nohighlight">\(\sim 1\)</span> GeV, más que
+crear un par de piones. Antes de que los quarks se separen, la cuerda se rompe creando un par quark-antiquark en
+la rotura: en lugar de dos quarks libres, dos mesones. [MT10.4]</p>
+</section>
+<section id="hadronizacion-y-jets">
+<h3>2.2. Hadronización y jets<a class="headerlink" href="#hadronizacion-y-jets" title="Permalink to this heading">#</a></h3>
+<p>Cuando en un choque de alta energía sale despedido un quark (o un gluón), la cuerda se rompe una y otra vez y
+el quark se viste de hadrones: es la <strong>hadronización</strong>. Lo que llega al detector es un <strong>jet</strong>, un chorro de
+hadrones en un cono alrededor de la dirección del quark inicial.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_hadronization.png"><img alt="../_images/hadrons_hadronization.png" class="align-center" src="../_images/hadrons_hadronization.png" style="width: 400px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>esquema de la hadronización [MT]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La hadronización no se calcula desde primeros principios: se modela con modelos fenomenológicos (como el de cuerdas
+de Lund) ajustados a los datos. Los jets de quarks pesados, <span class="math notranslate nohighlight">\(c\)</span> y <span class="math notranslate nohighlight">\(b\)</span>, se reconocen porque el hadrón pesado vuela unos
+milímetros antes de desintegrarse. El top no forma jets propios: se desintegra, <span class="math notranslate nohighlight">\(t \to W^+ + b\)</span>, antes de hadronizar.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_jets_OPAL.png"><img alt="../_images/hadrons_jets_OPAL.png" class="align-center" src="../_images/hadrons_jets_OPAL.png" style="width: 550px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>dos sucesos de OPAL (LEP) vistos a lo largo del haz: trazas cargadas (violeta) y depósitos en los calorímetros [MT, OPAL]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>¿Qué ves?</strong></p>
+<ul class="simple">
+<li><p>A la izquierda, <strong>dos jets</strong> opuestos: <span class="math notranslate nohighlight">\(e^+ + e \to q + \bar{q}\)</span>. Los dos quarks salen espalda con espalda, como pide la
+conservación del momento.</p></li>
+<li><p>A la derecha, <strong>tres jets</strong> en un plano: <span class="math notranslate nohighlight">\(e^+ + e \to q + \bar{q} + g\)</span>, uno de los quarks ha radiado un <strong>gluón</strong> con
+mucha energía. Así se descubrió el gluón en PETRA, en 1979.</p></li>
+<li><p>La fracción de sucesos de tres jets es proporcional a <span class="math notranslate nohighlight">\(\alpha_S\)</span>: es una manera de medirla. La distribución de ángulos
+entre los jets dice que el gluón tiene espín <span class="math notranslate nohighlight">\(1\)</span>.</p></li>
+</ul>
+<p>En ATLAS y CMS, el sabor de los jets (si vienen de un <span class="math notranslate nohighlight">\(b\)</span>, de un <span class="math notranslate nohighlight">\(c\)</span> o de un quark ligero) se identifica con
+algoritmos de aprendizaje profundo.</p>
+</section>
+<section id="libertad-asintotica">
+<h3>2.3. Libertad asintótica<a class="headerlink" href="#libertad-asintotica" title="Permalink to this heading">#</a></h3>
+<p><strong>Las constantes de acoplo no son constantes:</strong> dependen de la escala a la que se mire la interacción, del <span class="math notranslate nohighlight">\(q^2\)</span>, de
+forma suave, logarítmica.</p>
+<p>En QED, los diagramas de orden superior daban infinitos. A finales de los 40, S. Tomonaga, J. Schwinger,
+R. Feynman y F. Dyson los reabsorbieron en la carga y la masa medidas: es la <strong>renormalización</strong>. Su consecuencia
+física es que la carga efectiva depende de la distancia. En 1971, G. “t Hooft y M. Veltman demostraron que las
+teorías gauge, como QCD y la electrodébil, también son renormalizables.</p>
+<ul class="simple">
+<li><p><strong>QED: apantallamiento.</strong> El vacío alrededor de un electrón se llena de pares <span class="math notranslate nohighlight">\(e^+e\)</span> virtuales que se polarizan y
+apantallan su carga. Cuanto más cerca se mira, más carga se ve: <span class="math notranslate nohighlight">\(\alpha\)</span> <strong>crece</strong>, de <span class="math notranslate nohighlight">\(1/137\)</span> a baja energía a <span class="math notranslate nohighlight">\(1/128\)</span>
+a la masa del <span class="math notranslate nohighlight">\(Z\)</span>.</p></li>
+<li><p><strong>QCD: antiapantallamiento.</strong> Los pares <span class="math notranslate nohighlight">\(q\bar{q}\)</span> apantallan el color, pero los gluones, que tienen color, lo
+<strong>esparcen</strong> y ganan. Cuanto más cerca se mira, menos color se ve: <span class="math notranslate nohighlight">\(\alpha_S\)</span> <strong>decrece</strong>.</p></li>
+</ul>
+<p>A cortas distancias (alta energía) los quarks están casi libres: es la <strong>libertad asintótica</strong> (Gross, Wilczek y
+Politzer, 1973). A largas distancias el acoplo crece: es la otra cara del confinamiento. [MT10.5, AB5.8]</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_alphas_running.png"><img alt="../_images/hadrons_alphas_running.png" class="align-center" src="../_images/hadrons_alphas_running.png" style="width: 380px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>medidas de <span class="math notranslate nohighlight">\(\alpha_S(Q^2)\)</span> en función de <span class="math notranslate nohighlight">\(Q\)</span>, de procesos muy distintos [PDG]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>¿Qué ves?</strong></p>
+<ul class="simple">
+<li><p>Medidas de procesos muy distintos (desintegraciones del <span class="math notranslate nohighlight">\(\tau\)</span>, jets en <span class="math notranslate nohighlight">\(e^+e\)</span>, en <span class="math notranslate nohighlight">\(ep\)</span> y en <span class="math notranslate nohighlight">\(pp\)</span>, quarkonio…) caen
+sobre una sola curva: una única constante, que corre.</p></li>
+<li><p>A <span class="math notranslate nohighlight">\(Q \sim 2\)</span> GeV, <span class="math notranslate nohighlight">\(\alpha_S \simeq 0.3\)</span>; a la masa del <span class="math notranslate nohighlight">\(Z\)</span>, <span class="math notranslate nohighlight">\(\alpha_S(m_Z) = 0.118\)</span>; a <span class="math notranslate nohighlight">\(1\)</span> TeV, <span class="math notranslate nohighlight">\(\simeq 0.09\)</span>. A <span class="math notranslate nohighlight">\(\sim 1\)</span> GeV la curva se
+dispara: ahí no se puede calcular con diagramas de Feynman.</p></li>
+</ul>
+<p>A un lazo, con <span class="math notranslate nohighlight">\(n_f\)</span> sabores de quarks activos:</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_S(q^2) = \frac{\alpha_S(m_Z^2)}{1 + b_0\,\alpha_S(m_Z^2)\,\ln(q^2/m_Z^2)}, \qquad b_0 = \frac{33 - 2n_f}{12\pi} .
+\]</div>
+<p>El <span class="math notranslate nohighlight">\(33\)</span> son los gluones (antiapantallan) y el <span class="math notranslate nohighlight">\(-2n_f\)</span>, los quarks (apantallan). Con <span class="math notranslate nohighlight">\(n_f \le 16\)</span>, <span class="math notranslate nohighlight">\(b_0 &gt; 0\)</span> y el acoplo decrece.</p>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — La constante fuerte corre</b></p>
+<ol class="arabic simple">
+<li><p>Con la fórmula a un lazo, <span class="math notranslate nohighlight">\(\alpha_S(m_Z) = 0.118\)</span> y <span class="math notranslate nohighlight">\(n_f = 5\)</span>, calcula <span class="math notranslate nohighlight">\(\alpha_S\)</span> a <span class="math notranslate nohighlight">\(10\)</span> GeV y a <span class="math notranslate nohighlight">\(1\)</span> TeV y compáralo con la figura.</p></li>
+<li><p>Ejecuta la celda y dibuja <span class="math notranslate nohighlight">\(\alpha_S(Q)\)</span>. ¿A qué <span class="math notranslate nohighlight">\(Q\)</span> se hace <span class="math notranslate nohighlight">\(\alpha_S \sim 1\)</span>?</p></li>
+<li><p>¿Qué pasaría si hubiera <span class="math notranslate nohighlight">\(17\)</span> sabores de quarks?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># alpha_S a un lazo, desde alpha_S(m_Z)</span>
+<span class="n">mZ</span><span class="p">,</span> <span class="n">alfaZ</span><span class="p">,</span> <span class="n">nf</span> <span class="o">=</span> <span class="mf">91.19</span><span class="p">,</span> <span class="mf">0.118</span><span class="p">,</span> <span class="mi">5</span>
+<span class="n">b0</span>     <span class="o">=</span> <span class="p">(</span><span class="mi">33</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">nf</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">12</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="n">alfa_s</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">Q</span><span class="p">:</span> <span class="n">alfaZ</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">b0</span> <span class="o">*</span> <span class="n">alfaZ</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">mZ</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">,</span> <span class="mf">91.19</span><span class="p">,</span> <span class="mf">1000.</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' Q = </span><span class="si">{</span><span class="n">Q</span><span class="si">:</span><span class="s1">7.1f</span><span class="si">}</span><span class="s1"> GeV:  alpha_S = </span><span class="si">{</span><span class="n">alfa_s</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="n">plot_xy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="mf">3.3</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="n">alfa_s</span><span class="p">,</span> <span class="sa">r</span><span class="s1">'$Q$ (GeV)'</span><span class="p">,</span> <span class="sa">r</span><span class="s1">'$\alpha_S(Q)$'</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s1">'log'</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Q =     2.0 GeV:  alpha_S = 0.262
+ Q =    10.0 GeV:  alpha_S = 0.173
+ Q =    91.2 GeV:  alpha_S = 0.118
+ Q =  1000.0 GeV:  alpha_S = 0.088
+</pre></div>
+</div>
+<img alt="../_images/7121a3b15c1efa1453edfa6871cd4150f0f72f13fcd2e1b5d335e2e0425f50b5.png" src="../_images/7121a3b15c1efa1453edfa6871cd4150f0f72f13fcd2e1b5d335e2e0425f50b5.png" />
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(b_0 = 23/12\pi = 0.610\)</span>. A <span class="math notranslate nohighlight">\(10\)</span> GeV, <span class="math notranslate nohighlight">\(\ln(q^2/m_Z^2) = -4.42\)</span> y <span class="math notranslate nohighlight">\(\alpha_S \simeq 0.173\)</span>; a <span class="math notranslate nohighlight">\(1\)</span> TeV, <span class="math notranslate nohighlight">\(\ln = 4.79\)</span> y <span class="math notranslate nohighlight">\(\alpha_S \simeq 0.088\)</span>. Los dos
+sobre la curva de la figura.</p></li>
+<li><p>Con esta fórmula, <span class="math notranslate nohighlight">\(\alpha_S\)</span> crece rápido por debajo de <span class="math notranslate nohighlight">\(\sim 2\)</span> GeV y diverge hacia <span class="math notranslate nohighlight">\(Q \sim 0.1\)</span> GeV, el polo de Landau, <span class="math notranslate nohighlight">\(\Lambda_{\text{QCD}}\)</span>.
+Mucho antes la fórmula deja de valer: a <span class="math notranslate nohighlight">\(\sim 1\)</span> GeV QCD ya no es perturbativa.</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(n_f = 17\)</span>, <span class="math notranslate nohighlight">\(b_0 &lt; 0\)</span>: los quarks ganarían a los gluones, <span class="math notranslate nohighlight">\(\alpha_S\)</span> crecería con la energía, como <span class="math notranslate nohighlight">\(\alpha\)</span>, y no habría
+libertad asintótica.</p></li>
+</ol>
+</details><details>
+<summary><b>[+] Mirador — ¿Se unifican las fuerzas?</b></summary>
+<p>Si se extrapolan las tres constantes, la fuerte y la débil bajando y la electromagnética subiendo, se acercan
+a energías de <span class="math notranslate nohighlight">\(\sim 10^{15}\)</span>–<span class="math notranslate nohighlight">\(10^{16}\)</span> GeV. En el Modelo Estándar no llegan a cruzarse en un punto; en las teorías
+supersimétricas, sí. Es la idea de la <strong>gran unificación</strong>: las tres interacciones serían una sola a esas
+energías. Una predicción de estas teorías es que el protón se desintegra: es lo que busca Super-Kamiokande (el
+boletín de inicio).</p>
+</details><details>
+<summary><b>[+] Mirador — El plasma de quarks y gluones</b></summary>
+<p>A temperaturas de <span class="math notranslate nohighlight">\(\sim 160\)</span> MeV (<span class="math notranslate nohighlight">\(2 \cdot 10^{12}\)</span> K) o a densidades muy altas, los hadrones se funden y los quarks y
+gluones se mueven libremente en un volumen mucho mayor que un hadrón: es el <strong>plasma de quarks y gluones</strong>, el
+estado del Universo durante sus primeros microsegundos. Se produce chocando núcleos pesados en RHIC (Brookhaven) y
+en el LHC (ALICE). Resultó ser casi un líquido perfecto, con la viscosidad más baja conocida.</p>
+</details></section>
+</section>
+<section id="las-pruebas-quarks-espin-y-color">
+<h2>3. Las pruebas: quarks, espín y color<a class="headerlink" href="#las-pruebas-quarks-espin-y-color" title="Permalink to this heading">#</a></h2>
+<section id="dentro-del-nucleon-dispersion-de-neutrinos">
+<h3>3.1. Dentro del nucleón: dispersión de neutrinos<a class="headerlink" href="#dentro-del-nucleon-dispersion-de-neutrinos" title="Permalink to this heading">#</a></h3>
+<p>La estructura del protón se estudia lanzándole partículas:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>sonda</p></th>
+<th class="head text-left"><p>proceso</p></th>
+<th class="head text-left"><p>interacción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>electrones</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(e + p \to e + X\)</span></p></td>
+<td class="text-left"><p>electromagnética</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>neutrinos</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\nu_\mu + N \to \mu + X\)</span></p></td>
+<td class="text-left"><p>débil</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>protones</p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(p + p \to X\)</span></p></td>
+<td class="text-left"><p>fuerte</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>donde <span class="math notranslate nohighlight">\(X\)</span> son hadrones. A baja energía la dispersión es <strong>elástica</strong>, <span class="math notranslate nohighlight">\(e + p \to e + p\)</span>, y ve el protón entero: su
+carga, su tamaño, su momento magnético. A alta energía domina la <strong>inelástica</strong>, <span class="math notranslate nohighlight">\(e + p \to e + X\)</span>: la sonda choca
+<strong>elásticamente con un quark</strong> del protón, que luego hadroniza. Es lo que vio SLAC a finales de los 60 con
+electrones (introducción) [MT8, AB6.3]. Feynman llamó <strong>partones</strong> a esos constituyentes: los quarks de valencia, los
+del mar y los gluones.</p>
+<p>Con neutrinos, que solo sienten la débil, el cálculo es más sencillo. Lo hicieron, en los 70 y 80, CDHS y CHARM en el
+CERN y CCFR en Fermilab [MT12.2-3].</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/feynman_nuq_scattering.png"><img alt="../_images/feynman_nuq_scattering.png" class="align-center" src="../_images/feynman_nuq_scattering.png" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>dispersión de <span class="math notranslate nohighlight">\(\nu_\mu\)</span> y <span class="math notranslate nohighlight">\(\bar{\nu}_\mu\)</span> con quarks y antiquarks por corrientes cargadas</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La carga manda: un <span class="math notranslate nohighlight">\(\nu_\mu\)</span> da un <span class="math notranslate nohighlight">\(\mu\)</span> y tiene que convertir un <span class="math notranslate nohighlight">\(d\)</span> en <span class="math notranslate nohighlight">\(u\)</span> (o un <span class="math notranslate nohighlight">\(\bar{u}\)</span> en <span class="math notranslate nohighlight">\(\bar{d}\)</span>); un <span class="math notranslate nohighlight">\(\bar{\nu}_\mu\)</span> da un <span class="math notranslate nohighlight">\(\mu^+\)</span> y
+convierte un <span class="math notranslate nohighlight">\(u\)</span> en <span class="math notranslate nohighlight">\(d\)</span> (o un <span class="math notranslate nohighlight">\(\bar{d}\)</span> en <span class="math notranslate nohighlight">\(\bar{u}\)</span>). <strong>Cada uno ve solo la mitad de los quarks.</strong></p>
+<p>En el CM del neutrino y el quark, con <span class="math notranslate nohighlight">\(s\)</span> el cuadrado de su energía total, el cálculo de los diagramas da [MT12.2]:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma(\nu_\mu + d \to \mu + u) = \frac{G_F^2}{\pi}\,s, \qquad
+\sigma(\bar{\nu}_\mu + u \to \mu^+ + d) = \frac{1}{3}\,\frac{G_F^2}{\pi}\,s .
+\]</div>
+<p>¿De dónde sale el <span class="math notranslate nohighlight">\(1/3\)</span>?</p>
+<section id="el-1-3-es-la-helicidad">
+<h4>El <span class="math notranslate nohighlight">\(1/3\)</span> es la helicidad<a class="headerlink" href="#el-1-3-es-la-helicidad" title="Permalink to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_nuq_spins.png"><img alt="../_images/hadrons_nuq_spins.png" class="align-center" src="../_images/hadrons_nuq_spins.png" style="width: 700px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>helicidades en el CM: <span class="math notranslate nohighlight">\(\nu_\mu + d\)</span>, <span class="math notranslate nohighlight">\(\nu_\mu + \bar{u}\)</span>, <span class="math notranslate nohighlight">\(\bar{\nu}_\mu + u\)</span> y <span class="math notranslate nohighlight">\(\bar{\nu}_\mu + \bar{d}\)</span>; flechas azules, espines</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A estas energías todo es ultrarrelativista y la débil solo ve <strong>partículas a izquierdas</strong> (<span class="math notranslate nohighlight">\(h = -\)</span>) y <strong>antipartículas a
+derechas</strong> (<span class="math notranslate nohighlight">\(h = +\)</span>), como en leptones.</p>
+<ul class="simple">
+<li><p><strong><span class="math notranslate nohighlight">\(\nu_\mu + d\)</span></strong>: los dos a izquierdas, moviéndose en sentidos opuestos, tienen los espines opuestos: <span class="math notranslate nohighlight">\(J_z = 0\)</span>.
+No hay dirección preferida y el <span class="math notranslate nohighlight">\(\mu\)</span> sale <strong>isótropo</strong>.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(\bar{\nu}_\mu + u\)</span></strong>: el <span class="math notranslate nohighlight">\(\bar{\nu}\)</span> a derechas y el <span class="math notranslate nohighlight">\(u\)</span> a izquierdas tienen los espines en el mismo sentido: <span class="math notranslate nohighlight">\(J_z = 1\)</span>. Hacia
+atrás, <span class="math notranslate nohighlight">\(\theta^* = \pi\)</span>, el estado final tendría <span class="math notranslate nohighlight">\(J_z = -1\)</span>: está prohibido. La amplitud va como <span class="math notranslate nohighlight">\(\frac{1}{2}(1 + \cos\theta^*)\)</span> y</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}\sigma}{\mathrm{d}\Omega^*} = \frac{1}{4}(1 + \cos\theta^*)^2\,\frac{G_F^2\,s}{4\pi^2} ,
+\]</div>
+<p>que, integrada, es <span class="math notranslate nohighlight">\(1/3\)</span> de la isótropa.</p>
+<p>Con antiquarks es al revés: <span class="math notranslate nohighlight">\(\nu + \bar{q}\)</span> da el <span class="math notranslate nohighlight">\(1/3\)</span> y <span class="math notranslate nohighlight">\(\bar{\nu} + \bar{q}\)</span> el <span class="math notranslate nohighlight">\(1\)</span>. <strong>Para un blanco hecho solo de quarks,
+<span class="math notranslate nohighlight">\(\sigma(\nu)/\sigma(\bar{\nu}) = 3\)</span>.</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_xsection_nuN.png"><img alt="../_images/hadrons_xsection_nuN.png" class="align-center" src="../_images/hadrons_xsection_nuN.png" style="width: 550px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\sigma(\nu_\mu + N \to \mu + X)/E_\nu\)</span> y <span class="math notranslate nohighlight">\(\sigma(\bar{\nu}_\mu + N \to \mu^+ + X)/E_\nu\)</span> frente a <span class="math notranslate nohighlight">\(E_\nu\)</span>, de muchos experimentos [PDG]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>¿Qué ves?</strong></p>
+<ul class="simple">
+<li><p>Por encima de <span class="math notranslate nohighlight">\(\sim 10\)</span> GeV, <span class="math notranslate nohighlight">\(\sigma/E_\nu\)</span> es <strong>constante</strong>: la sección eficaz crece <strong>linealmente con la energía</strong>. Es lo que
+dice <span class="math notranslate nohighlight">\(\sigma \propto s = 2 m_N E_\nu\)</span> para un blanco fijo: los quarks se comportan como partículas <strong>puntuales</strong>.</p></li>
+<li><p>Los promedios son</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{\sigma(\nu + N)}{E_\nu} = 0.677 \cdot 10^{-38}\ \mathrm{cm^2\,GeV^{-1}}, \qquad
+\frac{\sigma(\bar{\nu} + N)}{E_\nu} = 0.334 \cdot 10^{-38}\ \mathrm{cm^2\,GeV^{-1}} .
+\]</div>
+<ul class="simple">
+<li><p>El cociente es <span class="math notranslate nohighlight">\(\simeq 2\)</span>, <strong>no <span class="math notranslate nohighlight">\(3\)</span></strong>: el nucleón no tiene solo quarks.</p></li>
+<li><p>A baja energía, por debajo de <span class="math notranslate nohighlight">\(\sim 5\)</span> GeV, la dispersión ya no es solo con quarks sueltos (dispersión elástica y
+resonancias del nucleón).</p></li>
+</ul>
+</section>
+<section id="cuanto-momento-llevan-los-quarks">
+<h4>¿Cuánto momento llevan los quarks?<a class="headerlink" href="#cuanto-momento-llevan-los-quarks" title="Permalink to this heading">#</a></h4>
+<p>Cada quark lleva una fracción <span class="math notranslate nohighlight">\(x\)</span> del momento del nucleón, y su <span class="math notranslate nohighlight">\(s\)</span> es <span class="math notranslate nohighlight">\(x\,s\)</span>. Sumando sobre todos, entran
+<span class="math notranslate nohighlight">\(f_q\)</span>, <strong>la fracción del momento del nucleón que llevan los quarks</strong>, y <span class="math notranslate nohighlight">\(f_{\bar{q}}\)</span>, la que llevan los antiquarks. En un
+nucleón promedio (mitad protón, mitad neutrón), el <span class="math notranslate nohighlight">\(\nu\)</span> ve la mitad de los quarks (los <span class="math notranslate nohighlight">\(d\)</span>) y la mitad de los
+antiquarks (los <span class="math notranslate nohighlight">\(\bar{u}\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma(\nu_\mu + N) = \frac{G^2_F\,s}{2\pi} \left(f_q + \frac{1}{3} f_{\bar{q}} \right), \qquad
+\sigma(\bar{\nu}_\mu + N) = \frac{G^2_F\,s}{2\pi} \left(\frac{1}{3} f_q + f_{\bar{q}} \right) .
+\]</div>
+<p>Con los datos (el taller):</p>
+<div class="math notranslate nohighlight">
+\[
+f_q \simeq 0.40, \qquad f_{\bar{q}} \simeq 0.08 .
+\]</div>
+<p><strong>Los quarks y antiquarks llevan la mitad del momento del nucleón. La otra mitad la llevan los gluones</strong>, que los
+neutrinos no ven. Es lo que encontramos en 1.4, y lo confirman los experimentos <span class="math notranslate nohighlight">\(e + p \to e + X\)</span>.</p>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — ¿Cuánto momento llevan los gluones?</b></p>
+<ol class="arabic simple">
+<li><p>Para un blanco fijo, <span class="math notranslate nohighlight">\(s = 2 m_N E_\nu\)</span>. Calcula <span class="math notranslate nohighlight">\(G_F^2\,m_N/\pi\)</span> en <span class="math notranslate nohighlight">\(\mathrm{cm^2\,GeV^{-1}}\)</span> (<span class="math notranslate nohighlight">\(1\ \mathrm{GeV^{-2}} = 0.3894\ \mathrm{mb}\)</span>).</p></li>
+<li><p>Ejecuta la celda: resuelve el sistema para <span class="math notranslate nohighlight">\(f_q\)</span> y <span class="math notranslate nohighlight">\(f_{\bar{q}}\)</span> con los datos del PDG.</p></li>
+<li><p>¿Qué fracción del momento llevan los gluones? ¿Por qué los neutrinos no la ven?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fracciones de momento de quarks y antiquarks a partir de sigma(nu N) y sigma(nubar N)</span>
+<span class="n">GF</span><span class="p">,</span> <span class="n">mN</span><span class="p">,</span> <span class="n">GeV2_cm2</span> <span class="o">=</span> <span class="mf">1.1664e-5</span><span class="p">,</span> <span class="mf">0.9389</span><span class="p">,</span> <span class="mf">0.3894e-27</span>     <span class="c1"># GeV^-2, GeV, cm^2 por GeV^-2</span>
+<span class="n">coef</span>   <span class="o">=</span> <span class="n">GF</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">mN</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">GeV2_cm2</span>                 <span class="c1"># sigma/E por unidad de (f_q + f_qbar/3), cm^2/GeV</span>
+<span class="n">sig_nu</span><span class="p">,</span> <span class="n">sig_nub</span> <span class="o">=</span> <span class="mf">0.677e-38</span><span class="p">,</span> <span class="mf">0.334e-38</span>                 <span class="c1"># cm^2/GeV</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+<span class="n">fq</span><span class="p">,</span> <span class="n">fqb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">sig_nu</span><span class="p">,</span> <span class="n">sig_nub</span><span class="p">])</span> <span class="o">/</span> <span class="n">coef</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' G_F^2 m_N / pi = </span><span class="si">{</span><span class="n">coef</span><span class="si">:</span><span class="s1">.3e</span><span class="si">}</span><span class="s1"> cm^2/GeV'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' f_q = </span><span class="si">{</span><span class="n">fq</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">,  f_qbar = </span><span class="si">{</span><span class="n">fqb</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">,  gluones = </span><span class="si">{</span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">fq</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">fqb</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> G_F^2 m_N / pi = 1.583e-38 cm^2/GeV
+ f_q = 0.402,  f_qbar = 0.077,  gluones = 0.52
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(G_F^2 m_N/\pi = 4.06 \cdot 10^{-11}\ \mathrm{GeV^{-3}} = 1.58 \cdot 10^{-38}\ \mathrm{cm^2\,GeV^{-1}}\)</span>: es justamente
+<span class="math notranslate nohighlight">\(\frac{G_F^2\,s}{2\pi}/E_\nu\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_q + f_{\bar{q}}/3 = 0.428\)</span> y <span class="math notranslate nohighlight">\(f_q/3 + f_{\bar{q}} = 0.211\)</span>, de donde <span class="math notranslate nohighlight">\(f_q \simeq 0.40\)</span> y <span class="math notranslate nohighlight">\(f_{\bar{q}} \simeq 0.08\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(1 - 0.40 - 0.08 \simeq 0.5\)</span>: <strong>la mitad</strong>. Los gluones no tienen carga débil (ni eléctrica): el <span class="math notranslate nohighlight">\(W\)</span> no se acopla a ellos.</p></li>
+</ol>
+</details></section>
+</section>
+<section id="e-e-to-q-bar-q-el-espin-de-los-quarks">
+<h3>3.2. <span class="math notranslate nohighlight">\(e^+ + e \to q + \bar{q}\)</span>: el espín de los quarks<a class="headerlink" href="#e-e-to-q-bar-q-el-espin-de-los-quarks" title="Permalink to this heading">#</a></h3>
+<p>La aniquilación <span class="math notranslate nohighlight">\(e^+ + e \to q + \bar{q}\)</span> es la otra gran prueba de los quarks: de su espín, de su carga y del número de
+colores. Se compara con <span class="math notranslate nohighlight">\(e^+ + e \to \mu^+ + \mu\)</span>, que tiene los mismos diagramas:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/feynman_new_eemumu_eeqq.png"><img alt="../_images/feynman_new_eemumu_eeqq.png" class="align-center" src="../_images/feynman_new_eemumu_eeqq.png" style="width: 450px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(e^+ + e \to \mu^+ + \mu\)</span> (izda.) y <span class="math notranslate nohighlight">\(e^+ + e \to q + \bar{q}\)</span> (dcha.), por un fotón o un <span class="math notranslate nohighlight">\(Z\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Los propagadores del fotón y del <span class="math notranslate nohighlight">\(Z\)</span> van como <span class="math notranslate nohighlight">\(1/q^2\)</span> y <span class="math notranslate nohighlight">\(1/(q^2 - m_Z^2)\)</span>, con <span class="math notranslate nohighlight">\(q^2 = s\)</span>:</p>
+<ul class="simple">
+<li><p>con <span class="math notranslate nohighlight">\(s \ll m_Z^2\)</span>, <strong>domina el fotón</strong> (QED);</p></li>
+<li><p>con <span class="math notranslate nohighlight">\(s \simeq m_Z^2\)</span>, domina el <span class="math notranslate nohighlight">\(Z\)</span>: la resonancia, que veremos en el tema del Modelo Estándar;</p></li>
+<li><p>entre medias, contribuyen los dos.</p></li>
+</ul>
+<p>Aquí nos quedamos por debajo del <span class="math notranslate nohighlight">\(Z\)</span>, con el fotón.</p>
+<section id="la-distribucion-angular">
+<h4>La distribución angular<a class="headerlink" href="#la-distribucion-angular" title="Permalink to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_eemumu_helicities_2.png"><img alt="../_images/hadrons_eemumu_helicities_2.png" class="align-center" src="../_images/hadrons_eemumu_helicities_2.png" style="width: 700px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>las cuatro combinaciones de helicidad en <span class="math notranslate nohighlight">\(e^+ + e \to \mu^+ + \mu\)</span> en el CM [MT6.2]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A alta energía, el fotón conserva la helicidad: solo aniquila un <span class="math notranslate nohighlight">\(e\)</span> y un <span class="math notranslate nohighlight">\(e^+\)</span> con helicidades opuestas (LR o RL)
+y crea un <span class="math notranslate nohighlight">\(\mu\)</span> y un <span class="math notranslate nohighlight">\(\mu^+\)</span> también opuestos. El estado inicial tiene <span class="math notranslate nohighlight">\(J_z = \pm 1\)</span> a lo largo del haz, y el final <span class="math notranslate nohighlight">\(J_z = \pm 1\)</span>
+a lo largo del <span class="math notranslate nohighlight">\(\mu\)</span>: las amplitudes van como <span class="math notranslate nohighlight">\((1 \pm \cos\theta)\)</span>. Sumando las cuatro,</p>
+<div class="math notranslate nohighlight">
+\[
+\langle |\mathcal{M}_{fi}|^2 \rangle = e^4\,(1 + \cos^2\theta), \qquad
+\frac{\mathrm{d}\sigma}{\mathrm{d}\Omega} = \frac{\alpha^2}{4s}\,(1 + \cos^2\theta), \qquad
+\sigma(e^+ + e \to \mu^+ + \mu) = \frac{4\pi\alpha^2}{3s} .
+\]</div>
+<p><strong>El <span class="math notranslate nohighlight">\(1 + \cos^2\theta\)</span> es la firma de dos fermiones de espín <span class="math notranslate nohighlight">\(1/2\)</span>.</strong> Para quarks, lo mismo, con la carga <span class="math notranslate nohighlight">\(Q_q e\)</span> en el vértice.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_eeqq_CELLO.png"><img alt="../_images/hadrons_eeqq_CELLO.png" class="align-center" src="../_images/hadrons_eeqq_CELLO.png" style="width: 300px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>distribución angular de los sucesos de dos jets en CELLO (DESY, 1987), <span class="math notranslate nohighlight">\(\sqrt{s} = 39\)</span>–<span class="math notranslate nohighlight">\(46\)</span> GeV [CELLO]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>¿Qué ves?</strong></p>
+<ul class="simple">
+<li><p>La dirección de los jets da la de los quarks. Los sucesos crecen hacia <span class="math notranslate nohighlight">\(|\cos\theta| = 1\)</span>: de <span class="math notranslate nohighlight">\(\sim 130\)</span> a <span class="math notranslate nohighlight">\(\sim 230\)</span>, un
+factor <span class="math notranslate nohighlight">\(1.7\)</span>; <span class="math notranslate nohighlight">\(1 + \cos^2\theta\)</span> da <span class="math notranslate nohighlight">\(1.72\)</span> a <span class="math notranslate nohighlight">\(|\cos\theta| = 0.85\)</span>.</p></li>
+<li><p><strong>Los quarks tienen espín <span class="math notranslate nohighlight">\(1/2\)</span>.</strong> Si fueran de espín <span class="math notranslate nohighlight">\(0\)</span>, la distribución sería <span class="math notranslate nohighlight">\(\sin^2\theta\)</span>: máxima a <span class="math notranslate nohighlight">\(90^\circ\)</span>, justo al revés.</p></li>
+<li><p>Se usa <span class="math notranslate nohighlight">\(|\cos\theta|\)</span> porque en un suceso de dos jets no se sabe cuál es el quark y cuál el antiquark.</p></li>
+</ul>
+</section>
+</section>
+<section id="el-numero-de-colores">
+<h3>3.3. El número de colores<a class="headerlink" href="#el-numero-de-colores" title="Permalink to this heading">#</a></h3>
+<p>Si los quarks tienen color, cada color es un canal más: el elemento de matriz al cuadrado lleva un factor <span class="math notranslate nohighlight">\(Q_q^2\)</span> por
+la carga y otro <span class="math notranslate nohighlight">\(N_c\)</span> por los colores. Sumando los quarks que se pueden crear a cada <span class="math notranslate nohighlight">\(\sqrt{s}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma(e^+ + e \to \text{hadrones}) = \frac{4\pi\alpha^2}{3s}\, N_c \sum_q Q_q^2 .
+\]</div>
+<p>El cociente con los muones elimina todo lo demás:</p>
+<div class="math notranslate nohighlight">
+\[
+R = \frac{\sigma(e^+ + e \to \text{hadrones})}{\sigma(e^+ + e \to \mu^+ + \mu)} = N_c \sum_q Q_q^2 .
+\]</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>quarks accesibles</p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(u, d, s\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(+\,c\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(+\,b\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(N_c = 3\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(3\left(\frac{4}{9} + \frac{1}{9} + \frac{1}{9}\right) = 2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(2 + \frac{4}{3} = \frac{10}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{10}{3} + \frac{1}{3} = \frac{11}{3}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(N_c = 1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{2}{3}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{10}{9}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{11}{9}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Cada vez que se abre un quark nuevo, <span class="math notranslate nohighlight">\(R\)</span> sube un <strong>escalón</strong> de altura <span class="math notranslate nohighlight">\(N_c Q_q^2\)</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_eeqq_rmu.png"><img alt="../_images/hadrons_eeqq_rmu.png" class="align-center" src="../_images/hadrons_eeqq_rmu.png" style="width: 520px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\sigma(e^+ + e \to \text{hadrones})\)</span> (arriba) y <span class="math notranslate nohighlight">\(R\)</span> (abajo) frente a <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> [PDG]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>¿Qué ves?</strong></p>
+<ul class="simple">
+<li><p>La sección eficaz <strong>cae como <span class="math notranslate nohighlight">\(1/s\)</span></strong>, salvo en los picos. <span class="math notranslate nohighlight">\(R\)</span>, en cambio, es casi <strong>plano</strong>: los hadrones se producen
+como los muones, por pares de partículas puntuales.</p></li>
+<li><p><strong>Resonancias</strong>: <span class="math notranslate nohighlight">\(\rho\)</span>, <span class="math notranslate nohighlight">\(\omega\)</span>, <span class="math notranslate nohighlight">\(\phi\)</span>, <span class="math notranslate nohighlight">\(J/\psi\)</span>, <span class="math notranslate nohighlight">\(\psi(2S)\)</span>, <span class="math notranslate nohighlight">\(\Upsilon\)</span>, todas <span class="math notranslate nohighlight">\(1^-\)</span>, con los números cuánticos del fotón (la ficha de
+<span class="math notranslate nohighlight">\(J^P\)</span>). Y el <span class="math notranslate nohighlight">\(Z\)</span>, a <span class="math notranslate nohighlight">\(91\)</span> GeV, donde <span class="math notranslate nohighlight">\(R\)</span> se dispara.</p></li>
+<li><p>Entre las resonancias, <span class="math notranslate nohighlight">\(R\)</span> sube por <strong>escalones</strong>.</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_eeqq_colors_bettini.png"><img alt="../_images/hadrons_eeqq_colors_bettini.png" class="align-center" src="../_images/hadrons_eeqq_colors_bettini.png" style="width: 650px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(R\)</span> frente a <span class="math notranslate nohighlight">\(\sqrt{s}\)</span> con las predicciones para uno y tres colores; línea continua, con la corrección de QCD [AB6.3]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>¿Qué ves?</strong></p>
+<ul class="simple">
+<li><p>Los datos están en <span class="math notranslate nohighlight">\(\simeq 2.2\)</span> con <span class="math notranslate nohighlight">\(u, d, s\)</span>; <span class="math notranslate nohighlight">\(\simeq 3.6\)</span> por encima del <span class="math notranslate nohighlight">\(c\)</span>; <span class="math notranslate nohighlight">\(\simeq 3.9\)</span> por encima del <span class="math notranslate nohighlight">\(b\)</span>. Las predicciones con
+<strong>un color</strong> (<span class="math notranslate nohighlight">\(2/3\)</span>, <span class="math notranslate nohighlight">\(10/9\)</span>, <span class="math notranslate nohighlight">\(11/9\)</span>) quedan a un factor <span class="math notranslate nohighlight">\(3\)</span>: <strong>hay tres colores</strong>.</p></li>
+<li><p>Los escalones miden también las <strong>cargas fraccionarias</strong>: el del <span class="math notranslate nohighlight">\(c\)</span> (<span class="math notranslate nohighlight">\(Q = 2/3\)</span>) es cuatro veces el del <span class="math notranslate nohighlight">\(b\)</span> (<span class="math notranslate nohighlight">\(Q = -1/3\)</span>).</p></li>
+<li><p>Los datos quedan un poco por encima de <span class="math notranslate nohighlight">\(N_c\sum Q_q^2\)</span>: los quarks pueden radiar gluones, y la corrección de QCD,
+<span class="math notranslate nohighlight">\(R \to R\,(1 + \alpha_S/\pi)\)</span>, lo arregla. Otra medida de <span class="math notranslate nohighlight">\(\alpha_S\)</span>.</p></li>
+</ul>
+<p><strong>La medida de <span class="math notranslate nohighlight">\(R\)</span> prueba a la vez que los quarks existen, que tienen carga fraccionaria y que vienen en tres
+colores.</strong></p>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — $R$ con uno y con tres colores</b></p>
+<ol class="arabic simple">
+<li><p>Calcula <span class="math notranslate nohighlight">\(R\)</span> a <span class="math notranslate nohighlight">\(\sqrt{s} = 2\)</span>, <span class="math notranslate nohighlight">\(5\)</span> y <span class="math notranslate nohighlight">\(12\)</span> GeV con <span class="math notranslate nohighlight">\(N_c = 1\)</span> y con <span class="math notranslate nohighlight">\(N_c = 3\)</span>. ¿Qué quarks están accesibles en cada caso?</p></li>
+<li><p>Añade la corrección <span class="math notranslate nohighlight">\((1 + \alpha_S/\pi)\)</span> con <span class="math notranslate nohighlight">\(\alpha_S\)</span> del taller anterior y compara con los datos: <span class="math notranslate nohighlight">\(2.2\)</span>, <span class="math notranslate nohighlight">\(3.6\)</span> y <span class="math notranslate nohighlight">\(3.9\)</span>.</p></li>
+<li><p>Ejecuta la celda. ¿Por qué el escalón del <span class="math notranslate nohighlight">\(c\)</span> no está en <span class="math notranslate nohighlight">\(2m_c = 2.5\)</span> GeV sino en <span class="math notranslate nohighlight">\(\sim 3.7\)</span> GeV?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># R = N_c sum Q_q^2, con los umbrales de producción de hadrones con c y con b</span>
+<span class="n">umbrales</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'u'</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">'d'</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">'s'</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">'c'</span><span class="p">,</span> <span class="mf">3.73</span><span class="p">,</span> <span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">'b'</span><span class="p">,</span> <span class="mf">10.56</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)]</span>
+<span class="n">R</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">rs</span><span class="p">,</span> <span class="n">Nc</span><span class="p">:</span> <span class="n">Nc</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">umbral</span><span class="p">,</span> <span class="n">Q</span> <span class="ow">in</span> <span class="n">umbrales</span> <span class="k">if</span> <span class="n">rs</span> <span class="o">&gt;</span> <span class="n">umbral</span><span class="p">)</span>
+
+<span class="n">rs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">40.</span><span class="p">,</span> <span class="mi">800</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="n">plot_xy</span><span class="p">(</span><span class="n">rs</span><span class="p">,</span> <span class="p">[</span><span class="n">R</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">rs</span><span class="p">],</span> <span class="sa">r</span><span class="s1">'$\sqrt</span><span class="si">{s}</span><span class="s1">$ (GeV)'</span><span class="p">,</span> <span class="sa">r</span><span class="s1">'$R$'</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s1">'3 colores'</span><span class="p">)</span>
+<span class="n">fn</span><span class="o">.</span><span class="n">plot_xy</span><span class="p">(</span><span class="n">rs</span><span class="p">,</span> <span class="p">[</span><span class="n">R</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">rs</span><span class="p">],</span> <span class="sa">r</span><span class="s1">'$\sqrt</span><span class="si">{s}</span><span class="s1">$ (GeV)'</span><span class="p">,</span> <span class="sa">r</span><span class="s1">'$R$'</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s1">'1 color'</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">'--'</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">,</span> <span class="mf">12.</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' sqrt(s) = </span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s1">4.1f</span><span class="si">}</span><span class="s1"> GeV:  R(Nc=1) = </span><span class="si">{</span><span class="n">R</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">,  R(Nc=3) = </span><span class="si">{</span><span class="n">R</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> sqrt(s) =  2.0 GeV:  R(Nc=1) = 0.67,  R(Nc=3) = 2.00
+ sqrt(s) =  5.0 GeV:  R(Nc=1) = 1.11,  R(Nc=3) = 3.33
+ sqrt(s) = 12.0 GeV:  R(Nc=1) = 1.22,  R(Nc=3) = 3.67
+</pre></div>
+</div>
+<img alt="../_images/663b07aa2b4600bdd0aeca61843dee67e04729775275c8ec8ee6770a64aba2da.png" src="../_images/663b07aa2b4600bdd0aeca61843dee67e04729775275c8ec8ee6770a64aba2da.png" />
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p>A <span class="math notranslate nohighlight">\(2\)</span> GeV, <span class="math notranslate nohighlight">\(u, d, s\)</span>: <span class="math notranslate nohighlight">\(R = 2/3\)</span> (<span class="math notranslate nohighlight">\(N_c = 1\)</span>) o <span class="math notranslate nohighlight">\(2\)</span> (<span class="math notranslate nohighlight">\(N_c = 3\)</span>). A <span class="math notranslate nohighlight">\(5\)</span> GeV, también el <span class="math notranslate nohighlight">\(c\)</span>: <span class="math notranslate nohighlight">\(10/9\)</span> o <span class="math notranslate nohighlight">\(10/3\)</span>. A <span class="math notranslate nohighlight">\(12\)</span> GeV, también el <span class="math notranslate nohighlight">\(b\)</span>:
+<span class="math notranslate nohighlight">\(11/9\)</span> o <span class="math notranslate nohighlight">\(11/3\)</span>.</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(\alpha_S \simeq 0.3\)</span>, <span class="math notranslate nohighlight">\(0.2\)</span> y <span class="math notranslate nohighlight">\(0.17\)</span>: <span class="math notranslate nohighlight">\(R \simeq 2.2\)</span>, <span class="math notranslate nohighlight">\(3.5\)</span> y <span class="math notranslate nohighlight">\(3.9\)</span>. De acuerdo con los datos; con un color, ni de lejos.</p></li>
+<li><p>Por debajo de <span class="math notranslate nohighlight">\(\sim 3.7\)</span> GeV, el par <span class="math notranslate nohighlight">\(c\bar{c}\)</span> no puede formar dos hadrones con encanto (el más ligero, el <span class="math notranslate nohighlight">\(D\)</span>, pesa
+<span class="math notranslate nohighlight">\(1.87\)</span> GeV): solo forma resonancias <span class="math notranslate nohighlight">\(c\bar{c}\)</span> (<span class="math notranslate nohighlight">\(J/\psi\)</span>, <span class="math notranslate nohighlight">\(\psi(2S)\)</span>), que son los picos estrechos. El escalón llega al superar
+<span class="math notranslate nohighlight">\(2m_D = 3.73\)</span> GeV. Con el <span class="math notranslate nohighlight">\(b\)</span>, igual: <span class="math notranslate nohighlight">\(2m_B = 10.56\)</span> GeV, justo después del <span class="math notranslate nohighlight">\(\Upsilon(4S)\)</span>.</p></li>
+</ol>
+</details></section>
+</section>
+<section id="las-desintegraciones-debiles-de-los-hadrones">
+<h2>4. Las desintegraciones débiles de los hadrones<a class="headerlink" href="#las-desintegraciones-debiles-de-los-hadrones" title="Permalink to this heading">#</a></h2>
+<section id="el-angulo-de-cabibbo">
+<h3>4.1. El ángulo de Cabibbo<a class="headerlink" href="#el-angulo-de-cabibbo" title="Permalink to this heading">#</a></h3>
+<p>En leptones vimos la <strong>universalidad</strong>: el <span class="math notranslate nohighlight">\(W\)</span> se acopla con la misma <span class="math notranslate nohighlight">\(g_W\)</span> a los tres dobletes <span class="math notranslate nohighlight">\((\nu_\ell, \ell)\)</span>, y nunca
+mezcla familias.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/feynman_wleptons.png"><img alt="../_images/feynman_wleptons.png" class="align-center" src="../_images/feynman_wleptons.png" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>vértices del <span class="math notranslate nohighlight">\(W\)</span> con los leptones</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>¿Pasa lo mismo con los quarks? Se compara la <span class="math notranslate nohighlight">\(G_F\)</span> de la desintegración del muón con la de las desintegraciones <span class="math notranslate nohighlight">\(\beta\)</span>
+nucleares más limpias (las transiciones <span class="math notranslate nohighlight">\(0^+ \to 0^+\)</span>):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/feynman_mu_beta_decay.png"><img alt="../_images/feynman_mu_beta_decay.png" class="align-center" src="../_images/feynman_mu_beta_decay.png" style="width: 350px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>desintegración <span class="math notranslate nohighlight">\(\beta\)</span> (<span class="math notranslate nohighlight">\(d \to u\)</span>) y del muón</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="math notranslate nohighlight">
+\[
+G^{(\beta)}_F = 1.136 \cdot 10^{-5}\ \mathrm{GeV^{-2}}, \qquad G^{(\mu)}_F = 1.1664 \cdot 10^{-5}\ \mathrm{GeV^{-2}} :
+\]</div>
+<p>un <strong>2.6 % menor</strong>, muy por encima de los errores. Además, las desintegraciones que cambian la extrañeza (<span class="math notranslate nohighlight">\(s \to u\)</span>) son
+unas <span class="math notranslate nohighlight">\(20\)</span> veces más lentas de lo esperado.</p>
+<p><strong>Cabibbo (1963):</strong> el <span class="math notranslate nohighlight">\(W\)</span> es universal, pero no se acopla al <span class="math notranslate nohighlight">\(d\)</span> ni al <span class="math notranslate nohighlight">\(s\)</span>, sino a una mezcla de los dos,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} d' \\ s' \end{pmatrix} =
+\begin{pmatrix} \cos \theta_C &amp; \sin \theta_C \\ - \sin \theta_C &amp; \cos \theta_C \end{pmatrix}
+\begin{pmatrix} d \\ s \end{pmatrix} ,
+\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\theta_C\)</span> es el <strong>ángulo de Cabibbo</strong>. Los estados de <strong>masa</strong>, <span class="math notranslate nohighlight">\(d\)</span> y <span class="math notranslate nohighlight">\(s\)</span>, los que forman los hadrones, no son los estados
+<strong>débiles</strong>, <span class="math notranslate nohighlight">\(d'\)</span> y <span class="math notranslate nohighlight">\(s'\)</span>, los que se acoplan al <span class="math notranslate nohighlight">\(W\)</span>. Es lo mismo que con los neutrinos y sus oscilaciones.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/feynman_cabibbo.png"><img alt="../_images/feynman_cabibbo.png" class="align-center" src="../_images/feynman_cabibbo.png" style="width: 350px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>vértices débiles con el ángulo de Cabibbo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(u \leftrightarrow d\)</span>: acoplo <span class="math notranslate nohighlight">\(g_W\cos\theta_C\)</span>. La <span class="math notranslate nohighlight">\(G_F\)</span> de la <span class="math notranslate nohighlight">\(\beta\)</span> lleva un <span class="math notranslate nohighlight">\(\cos\theta_C\)</span>, y la anchura, <span class="math notranslate nohighlight">\(\cos^2\theta_C\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(u \leftrightarrow s\)</span>: acoplo <span class="math notranslate nohighlight">\(g_W\sin\theta_C\)</span>: las desintegraciones que cambian la extrañeza, suprimidas por <span class="math notranslate nohighlight">\(\sin^2\theta_C\)</span>.</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/feynman_piK_cabibbo.png"><img alt="../_images/feynman_piK_cabibbo.png" class="align-center" src="../_images/feynman_piK_cabibbo.png" style="width: 450px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\pi^- \to \mu + \bar{\nu}_\mu\)</span> (<span class="math notranslate nohighlight">\(\cos\theta_C\)</span>) y <span class="math notranslate nohighlight">\(K^- \to \mu + \bar{\nu}_\mu\)</span> (<span class="math notranslate nohighlight">\(\sin\theta_C\)</span>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>El cociente <span class="math notranslate nohighlight">\(\Gamma(K \to \mu\nu)/\Gamma(\pi \to \mu\nu)\)</span> lleva <span class="math notranslate nohighlight">\(\tan^2\theta_C\)</span>, además del espacio fásico y de un factor de estructura de
+cada mesón (el taller). Resulta <span class="math notranslate nohighlight">\(\theta_C \simeq 13^\circ\)</span>.</p>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — Cabibbo con kaones y piones</b></p>
+<p>La anchura de un mesón pseudoescalar <span class="math notranslate nohighlight">\(P\)</span> en <span class="math notranslate nohighlight">\(\mu + \nu\)</span> es (lo mismo que la supresión por helicidad de leptones)</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma(P \to \mu\nu) = \frac{G_F^2}{8\pi}\,f_P^2\,|V|^2\,m_P\,m_\mu^2\left(1 - \frac{m_\mu^2}{m_P^2}\right)^2 ,
+\]</div>
+<p>con <span class="math notranslate nohighlight">\(|V| = \cos\theta_C\)</span> para el <span class="math notranslate nohighlight">\(\pi\)</span> y <span class="math notranslate nohighlight">\(\sin\theta_C\)</span> para el <span class="math notranslate nohighlight">\(K\)</span>. <span class="math notranslate nohighlight">\(f_P\)</span> mide la probabilidad de que el quark y el antiquark del
+mesón se encuentren; QCD en el retículo da <span class="math notranslate nohighlight">\(f_K/f_\pi = 1.193\)</span>.</p>
+<ol class="arabic simple">
+<li><p>Con las vidas medias y las fracciones del PDG, calcula el cociente medido <span class="math notranslate nohighlight">\(\Gamma(K \to \mu\nu)/\Gamma(\pi \to \mu\nu)\)</span>.</p></li>
+<li><p>Calcula el factor cinemático <span class="math notranslate nohighlight">\(\frac{m_K}{m_\pi}\left[\frac{1 - m_\mu^2/m_K^2}{1 - m_\mu^2/m_\pi^2}\right]^2\)</span>.</p></li>
+<li><p>Despeja <span class="math notranslate nohighlight">\(\tan\theta_C\)</span> y <span class="math notranslate nohighlight">\(\theta_C\)</span>.</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># el ángulo de Cabibbo con K -&gt; mu nu y pi -&gt; mu nu</span>
+<span class="n">mK</span><span class="p">,</span> <span class="n">mpi</span><span class="p">,</span> <span class="n">mmu</span> <span class="o">=</span> <span class="mf">493.677</span><span class="p">,</span> <span class="mf">139.570</span><span class="p">,</span> <span class="mf">105.658</span>        <span class="c1"># MeV</span>
+<span class="n">tauK</span><span class="p">,</span> <span class="n">brK</span>    <span class="o">=</span> <span class="mf">12.380e-9</span><span class="p">,</span> <span class="mf">0.6356</span>                <span class="c1"># s, fracción K -&gt; mu nu</span>
+<span class="n">taupi</span><span class="p">,</span> <span class="n">brpi</span>  <span class="o">=</span> <span class="mf">26.033e-9</span><span class="p">,</span> <span class="mf">0.99988</span>
+<span class="n">fKfpi</span>        <span class="o">=</span> <span class="mf">1.193</span>
+
+<span class="n">medido</span> <span class="o">=</span> <span class="p">(</span><span class="n">brK</span> <span class="o">/</span> <span class="n">tauK</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">brpi</span> <span class="o">/</span> <span class="n">taupi</span><span class="p">)</span>
+<span class="n">cinem</span>  <span class="o">=</span> <span class="p">(</span><span class="n">mK</span> <span class="o">/</span> <span class="n">mpi</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="mi">1</span> <span class="o">-</span> <span class="n">mmu</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">mK</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">mmu</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">mpi</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">tanC</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">medido</span> <span class="o">/</span> <span class="p">(</span><span class="n">cinem</span> <span class="o">*</span> <span class="n">fKfpi</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' Gamma(K)/Gamma(pi) medido = </span><span class="si">{</span><span class="n">medido</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' factor cinemático         = </span><span class="si">{</span><span class="n">cinem</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' tan(theta_C) = </span><span class="si">{</span><span class="n">tanC</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">,  theta_C = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">tanC</span><span class="p">))</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> grados'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Gamma(K)/Gamma(pi) medido = 1.3367
+ factor cinemático         = 17.670
+ tan(theta_C) = 0.2305,  theta_C = 12.98 grados
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\Gamma(K)/\Gamma(\pi) = (0.6356/12.38\ \mathrm{ns})/(0.99988/26.03\ \mathrm{ns}) = 1.337\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(3.537 \times (0.9542/0.4269)^2 = 17.67\)</span>. Sin la supresión de Cabibbo, el cociente sería <span class="math notranslate nohighlight">\(17.67 \times 1.193^2 \simeq 25\)</span>, en lugar de <span class="math notranslate nohighlight">\(1.34\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan^2\theta_C = 1.337/(17.67 \times 1.193^2) = 0.0532\)</span>: <span class="math notranslate nohighlight">\(\tan\theta_C = 0.231\)</span>, <span class="math notranslate nohighlight">\(\theta_C = 13.0^\circ\)</span>, de acuerdo con
+<span class="math notranslate nohighlight">\(|V_{us}/V_{ud}| = 0.231\)</span> del PDG.</p></li>
+</ol>
+</details></section>
+<section id="la-matriz-ckm">
+<h3>4.2. La matriz CKM<a class="headerlink" href="#la-matriz-ckm" title="Permalink to this heading">#</a></h3>
+<p>Con tres familias, el <span class="math notranslate nohighlight">\(W\)</span> conecta cada quark de arriba con los tres de abajo:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/feynman_vertexW.png"><img alt="../_images/feynman_vertexW.png" class="align-center" src="../_images/feynman_vertexW.png" style="width: 600px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>vértices del <span class="math notranslate nohighlight">\(W\)</span> con parejas de quarks: el acoplo es <span class="math notranslate nohighlight">\(g_W V_{ij}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La mezcla es la matriz de <strong>Cabibbo-Kobayashi-Maskawa</strong> (CKM), unitaria, <span class="math notranslate nohighlight">\(V^\dagger V = I\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} d' \\ s' \\ b' \end{pmatrix} =
+\begin{pmatrix} V_{ud} &amp; V_{us} &amp; V_{ub} \\
+                V_{cd} &amp; V_{cs} &amp; V_{cb} \\
+                V_{td} &amp; V_{ts} &amp; V_{tb} \end{pmatrix}
+\begin{pmatrix} d \\ s \\ b \end{pmatrix}
+\end{split}\]</div>
+<p>La corriente cargada entre un <span class="math notranslate nohighlight">\(d\)</span> y un <span class="math notranslate nohighlight">\(u\)</span> es la de leptones con un factor más:</p>
+<div class="math notranslate nohighlight">
+\[
+j^\mu_{d \to u} = \frac{g_W}{\sqrt{2}}\,V_{ud}\;\bar{u}(p_u)\,\gamma^\mu \frac{1}{2}(1 - \gamma^5)\,u(p_d) .
+\]</div>
+<p>Los valores medidos [PDG]:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+|V_{CKM}| \simeq
+\begin{pmatrix} 0.974 &amp; 0.225 &amp; 0.004\\
+                0.225 &amp; 0.973 &amp; 0.041 \\
+                0.009 &amp; 0.040 &amp; 0.999 \end{pmatrix}
+\end{split}\]</div>
+<p><strong>¿Qué ves?</strong></p>
+<ul class="simple">
+<li><p>La diagonal es casi <span class="math notranslate nohighlight">\(1\)</span>: el <span class="math notranslate nohighlight">\(W\)</span> casi no mezcla familias.</p></li>
+<li><p>Hay una <strong>jerarquía</strong>: con <span class="math notranslate nohighlight">\(\lambda = \sin\theta_C \simeq 0.225\)</span>, la mezcla entre la 1.ª y la 2.ª familia va como <span class="math notranslate nohighlight">\(\lambda\)</span>; entre la 2.ª y
+la 3.ª, como <span class="math notranslate nohighlight">\(\lambda^2\)</span>; entre la 1.ª y la 3.ª, como <span class="math notranslate nohighlight">\(\lambda^3\)</span>. Nadie sabe por qué.</p></li>
+<li><p>Por eso el <span class="math notranslate nohighlight">\(b\)</span> vive tanto, <span class="math notranslate nohighlight">\(1.5\)</span> ps, para su masa: solo puede desintegrarse cambiando de familia, por <span class="math notranslate nohighlight">\(V_{cb}\)</span> o <span class="math notranslate nohighlight">\(V_{ub}\)</span>.</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/feynman_K0_B0_decays.png"><img alt="../_images/feynman_K0_B0_decays.png" class="align-center" src="../_images/feynman_K0_B0_decays.png" style="width: 450px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(K^0 \to \pi^- + e^+ + \nu_e\)</span> mide $</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details>
+<summary><b>[i] Ficha — Los parámetros de la CKM</b></summary>
+<p>Una matriz unitaria <span class="math notranslate nohighlight">\(3 \times 3\)</span> tiene <span class="math notranslate nohighlight">\(9\)</span> parámetros reales; redefiniendo las fases de los quarks se eliminan <span class="math notranslate nohighlight">\(5\)</span>. Quedan
+<strong>tres ángulos y una fase</strong>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+V_{CKM} =
+\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; c_{23} &amp; s_{23} \\ 0 &amp; -s_{23} &amp; c_{23} \end{pmatrix}
+\begin{pmatrix} c_{13} &amp; 0 &amp; s_{13}e^{-i\delta} \\ 0 &amp; 1 &amp; 0 \\  -s_{13} e^{i\delta}&amp; 0 &amp; c_{13} \end{pmatrix}
+\begin{pmatrix} c_{12} &amp; s_{12} &amp; 0 \\ -s_{12} &amp; c_{12} &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix},
+\end{split}\]</div>
+<p>con <span class="math notranslate nohighlight">\(c_{ij} = \cos\theta_{ij}\)</span> y <span class="math notranslate nohighlight">\(s_{ij} = \sin\theta_{ij}\)</span>. Los valores medidos [PDG]:</p>
+<div class="math notranslate nohighlight">
+\[
+s_{12} = 0.2250, \quad s_{13} = 0.0037, \quad s_{23} = 0.0418, \quad \delta = 1.15\ \mathrm{rad} .
+\]</div>
+<p>Con dos familias no queda ninguna fase. Con tres, la fase <span class="math notranslate nohighlight">\(\delta\)</span> hace la matriz compleja, y eso <strong>viola <span class="math notranslate nohighlight">\(CP\)</span></strong>: por eso
+Kobayashi y Maskawa necesitaban una tercera familia. Es la misma estructura que la matriz PMNS de los neutrinos.
+[MT14, AB8]</p>
+</details><section id="el-triangulo-de-unitariedad">
+<h4>El triángulo de unitariedad<a class="headerlink" href="#el-triangulo-de-unitariedad" title="Permalink to this heading">#</a></h4>
+<p>La unitariedad liga los elementos de la CKM. Por ejemplo, <span class="math notranslate nohighlight">\(V_{ud}V^*_{ub} + V_{cd}V^*_{cb} + V_{td}V^*_{tb} = 0\)</span>: tres números
+complejos que suman cero forman un <strong>triángulo</strong>. Si la fase <span class="math notranslate nohighlight">\(\delta\)</span> fuera cero, el triángulo sería plano; su área
+mide la violación de <span class="math notranslate nohighlight">\(CP\)</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><a class="reference internal" href="../_images/hadrons_CKM_plot.png"><img alt="../_images/hadrons_CKM_plot.png" class="align-center" src="../_images/hadrons_CKM_plot.png" style="width: 450px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>el triángulo en el plano <span class="math notranslate nohighlight">\((\bar\rho, \bar\eta)\)</span> y las regiones permitidas por cada medida al 99 % CL [PDG]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>¿Qué ves?</strong></p>
+<ul class="simple">
+<li><p>Cada banda es un tipo de medida distinto: desintegraciones de <span class="math notranslate nohighlight">\(B\)</span> (<span class="math notranslate nohighlight">\(\sin 2\beta\)</span>, <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span>, <span class="math notranslate nohighlight">\(|V_{ub}|\)</span>), oscilaciones de <span class="math notranslate nohighlight">\(B^0\)</span> y
+<span class="math notranslate nohighlight">\(B^0_s\)</span> (<span class="math notranslate nohighlight">\(\Delta m_d\)</span>, <span class="math notranslate nohighlight">\(\Delta m_s\)</span>), violación de <span class="math notranslate nohighlight">\(CP\)</span> en los kaones (<span class="math notranslate nohighlight">\(\varepsilon_K\)</span>).</p></li>
+<li><p><strong>Todas se cruzan en un punto</strong>, el vértice del triángulo: una sola fase <span class="math notranslate nohighlight">\(\delta\)</span> explica toda la violación de <span class="math notranslate nohighlight">\(CP\)</span> de los
+quarks. Es el éxito del mecanismo de Kobayashi y Maskawa (Nobel de 2008).</p></li>
+<li><p>El triángulo <strong>no es plano</strong>: <span class="math notranslate nohighlight">\(\bar\eta \simeq 0.35\)</span>. Los quarks violan <span class="math notranslate nohighlight">\(CP\)</span>.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — ¿Es unitaria la CKM?</b></p>
+<ol class="arabic simple">
+<li><p>Con <span class="math notranslate nohighlight">\(|V_{ud}| = 0.97367 \pm 0.00032\)</span>, <span class="math notranslate nohighlight">\(|V_{us}| = 0.22431 \pm 0.00085\)</span> y <span class="math notranslate nohighlight">\(|V_{ub}| = 0.00382 \pm 0.00020\)</span> [PDG], comprueba la primera
+fila: ¿suman <span class="math notranslate nohighlight">\(1\)</span> los cuadrados?</p></li>
+<li><p>¿Cuántas desviaciones faltan? ¿Qué elemento domina el error?</p></li>
+<li><p>Si la suma no fuera <span class="math notranslate nohighlight">\(1\)</span>, ¿qué significaría?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># unitariedad de la primera fila de la CKM</span>
+<span class="n">V</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.97367</span><span class="p">,</span> <span class="mf">0.22431</span><span class="p">,</span> <span class="mf">0.00382</span><span class="p">])</span>
+<span class="n">dV</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.00032</span><span class="p">,</span> <span class="mf">0.00085</span><span class="p">,</span> <span class="mf">0.00020</span><span class="p">])</span>
+
+<span class="n">suma</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">V</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">dsuma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="mi">2</span> <span class="o">*</span> <span class="n">V</span> <span class="o">*</span> <span class="n">dV</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' |Vud|^2 + |Vus|^2 + |Vub|^2 = </span><span class="si">{</span><span class="n">suma</span><span class="si">:</span><span class="s1">.5f</span><span class="si">}</span><span class="s1"> +- </span><span class="si">{</span><span class="n">dsuma</span><span class="si">:</span><span class="s1">.5f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' 1 - suma = </span><span class="si">{</span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">suma</span><span class="si">:</span><span class="s1">.5f</span><span class="si">}</span><span class="s1">  (</span><span class="si">{</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">suma</span><span class="p">)</span><span class="o">/</span><span class="n">dsuma</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1"> desviaciones)'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">' contribuciones al error: </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">V</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">dV</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> |Vud|^2 + |Vus|^2 + |Vub|^2 = 0.99836 +- 0.00073
+ 1 - suma = 0.00164  (2.2 desviaciones)
+ contribuciones al error: [0.00062 0.00038 0.     ]
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(0.94803 + 0.05032 + 0.00001 = 0.99836\)</span>.</p></li>
+<li><p>Faltan <span class="math notranslate nohighlight">\(0.0016 \pm 0.0007\)</span>: unas dos desviaciones con estos errores. Dominan <span class="math notranslate nohighlight">\(V_{ud}\)</span> (<span class="math notranslate nohighlight">\(6 \cdot 10^{-4}\)</span>) y <span class="math notranslate nohighlight">\(V_{us}\)</span> (<span class="math notranslate nohighlight">\(4 \cdot 10^{-4}\)</span>); <span class="math notranslate nohighlight">\(V_{ub}\)</span>
+apenas cuenta.</p></li>
+<li><p>Que hay algo más: una cuarta familia, o una interacción nueva que contribuya a la desintegración <span class="math notranslate nohighlight">\(\beta\)</span> o a la del
+muón. Hoy se discute si es real («la anomalía de Cabibbo»): depende de las correcciones teóricas a <span class="math notranslate nohighlight">\(V_{ud}\)</span> y de las
+distintas medidas de <span class="math notranslate nohighlight">\(V_{us}\)</span>, que no acaban de coincidir.</p></li>
+</ol>
+</details><details>
+<summary><b>[+] Mirador — ¿Por qué hay materia y no antimateria?</b></summary>
+<p><strong>Uno de cada mil millones.</strong> En el Universo temprano, muy caliente, se creaban y aniquilaban pares de quarks y
+antiquarks sin parar, y había casi tantos de unos como de otros. Casi: por cada mil millones de antiquarks había mil
+millones y <strong>un</strong> quark. Al enfriarse, todo se aniquiló en fotones y sobrevivió ese uno. Es toda la materia que vemos:
+estrellas, planetas y nosotros. Lo dicen dos medidas independientes, las abundancias de los núcleos ligeros y el fondo
+de microondas: hay unos <span class="math notranslate nohighlight">\(6\)</span> bariones por cada <span class="math notranslate nohighlight">\(10^{10}\)</span> fotones [PDG]. Y no hay galaxias de antimateria: en las fronteras
+con las de materia veríamos los rayos <span class="math notranslate nohighlight">\(\gamma\)</span> de la aniquilación.</p>
+<p>No puede ser una condición inicial (la inflación la habría diluido): el exceso <strong>se fabricó</strong>. Para fabricarlo hacen
+falta tres cosas (A. Sakharov, 1967) [SAK]:</p>
+<ol class="arabic simple">
+<li><p><strong>Violar el número bariónico, <span class="math notranslate nohighlight">\(B\)</span>.</strong> Si <span class="math notranslate nohighlight">\(B\)</span> se conserva y el Universo empezó con <span class="math notranslate nohighlight">\(B = 0\)</span>, se queda en <span class="math notranslate nohighlight">\(0\)</span>. Como una
+cuenta en la que cada ingreso viene con su gasto: el saldo no se mueve.</p></li>
+<li><p><strong>Violar <span class="math notranslate nohighlight">\(C\)</span> y <span class="math notranslate nohighlight">\(CP\)</span>.</strong> Aunque se viole <span class="math notranslate nohighlight">\(B\)</span>, si cada proceso que crea bariones tiene un gemelo que crea antibariones
+al mismo ritmo, se compensan. Que se viole <span class="math notranslate nohighlight">\(C\)</span> no basta: si <span class="math notranslate nohighlight">\(CP\)</span> se conserva, el gemelo es el reflejo <span class="math notranslate nohighlight">\(CP\)</span>, y lo que sobre de quarks a izquierdas se compensa con los antiquarks a derechas, como los
+<span class="math notranslate nohighlight">\(\nu_L\)</span> y los <span class="math notranslate nohighlight">\(\bar\nu_R\)</span> de <a class="reference internal" href="leptones.html"><span class="doc std std-doc">leptones</span></a>. Hace falta que la Naturaleza distinga materia de antimateria
+también en el espejo.</p></li>
+<li><p><strong>Salir del equilibrio.</strong> En equilibrio, cada proceso va tan deprisa como el inverso, y partícula y antipartícula,
+con la misma masa (<span class="math notranslate nohighlight">\(CPT\)</span>), acaban igual de abundantes: lo que se fabrica se deshace. Como dos depósitos de agua
+comunicados, que siempre se nivelan. Hace falta cerrar la llave a tiempo: algo que pase más deprisa de lo que el
+Universo, al expandirse y enfriarse, puede deshacer. Por ejemplo, una partícula pesada que se desintegra cuando ya
+hace demasiado frío para volver a crearla.</p></li>
+</ol>
+<p><strong>El Modelo Estándar se queda corto.</strong> La fase de la CKM viola <span class="math notranslate nohighlight">\(CP\)</span>, pero muy poco: hacen falta las tres familias, y
+que todas las masas de los quarks sean distintas, y el efecto queda unos <strong>diez órdenes de magnitud</strong> por debajo de lo
+necesario.</p>
+<p><strong>Hace falta física nueva.</strong> Una de las candidatas es la <strong>leptogénesis</strong> (M. Fukugita y T. Yanagida, 1986) [FY]: unos
+neutrinos muy pesados, los mismos que explicarían por qué los neutrinos ligeros pesan tan poco, se desintegraron
+en el Universo temprano, un poco más a leptones que a antileptones. Después, parte de ese exceso de leptones se
+convirtió en exceso de bariones. A esos neutrinos pesados no los podemos producir, pero sí comprobar dos piezas: que los neutrinos violan <span class="math notranslate nohighlight">\(CP\)</span> (la fase <span class="math notranslate nohighlight">\(\delta\)</span> de la
+PMNS, que buscan T2K, NOvA y medirán DUNE e Hyper-Kamiokande) y que son su propia antipartícula (la doble <span class="math notranslate nohighlight">\(\beta\)</span> sin
+neutrinos, que busca NEXT en Canfranc). No lo demostrarían, pero la harían mucho más creíble. Otras candidatas
+necesitan un sector de Higgs más rico, con más violación de <span class="math notranslate nohighlight">\(CP\)</span>; las busca el LHC.</p>
+</details></section>
+</section>
+</section>
+<section id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[AB] A. Bettini, <em>Introduction to Elementary Particle Physics</em>, Cambridge University Press: temas 4, 5, 6 y 8.</p></li>
+<li><p>[MT] M. Thomson, <em>Modern Particle Physics</em>, Cambridge University Press: temas 8, 9, 10, 12 y 14.</p></li>
+<li><p>[PDG] <a class="reference external" href="https://pdg.lbl.gov/">Particle Data Group</a>.</p></li>
+<li><p>[SKp] A. Takenaka et al. (Super-Kamiokande), <em>Phys. Rev. D</em> <strong>102</strong>, 112011 (2020).</p></li>
+<li><p>[GRE] O. W. Greenberg, <em>Phys. Rev. Lett.</em> <strong>13</strong>, 598 (1964).</p></li>
+<li><p>[BMW] S. Dürr et al., <em>Science</em> <strong>322</strong>, 1224 (2008); Sz. Borsanyi et al., <em>Science</em> <strong>347</strong>, 1452 (2015).</p></li>
+<li><p>[χQCD] Y.-B. Yang et al. (χQCD), «Proton mass decomposition from the QCD energy momentum tensor», <em>Phys. Rev. Lett.</em> <strong>121</strong>, 212001 (2018).</p></li>
+<li><p>[EMC] J. Ashman et al. (EMC), <em>Phys. Lett. B</em> <strong>206</strong>, 364 (1988).</p></li>
+<li><p>[POHL] R. Pohl et al., <em>Nature</em> <strong>466</strong>, 213 (2010).</p></li>
+<li><p>[CELLO] H. J. Behrend et al. (CELLO), <em>Phys. Lett. B</em> <strong>183</strong>, 400 (1987).</p></li>
+<li><p>[LHCb] R. Aaij et al. (LHCb), <em>Phys. Rev. Lett.</em> <strong>115</strong>, 072001 (2015).</p></li>
+<li><p>[SAK] A. D. Sakharov, <em>JETP Lett.</em> <strong>5</strong>, 24 (1967).</p></li>
+<li><p>[FY] M. Fukugita y T. Yanagida, <em>Phys. Lett. B</em> <strong>174</strong>, 45 (1986).</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="leptones.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Leptones: la mano izquierda de la Naturaleza</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="sm.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">El Modelo Estándar: el vacío no está vacío</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivos">Objetivos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-hadrones-y-los-quarks">1. Los hadrones y los quarks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bariones-y-mesones">1.1. Bariones y mesones</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tres-escalas-de-tiempo">Tres escalas de tiempo</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-quarks-y-el-color">1.2. Los quarks y el color</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#un-barion-imposible">Un barión imposible</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-color">El color</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solo-lo-que-no-tiene-color">Solo lo que no tiene color</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descubrimientos">1.3. Descubrimientos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-proton-y-un-neutron">1.4. ¿Qué es un protón? ¿Y un neutrón?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lo-que-hay-dentro-del-proton">Lo que hay dentro del protón</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-neutron">El neutrón</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formulemos-algunas-preguntas">1.5. Formulemos algunas preguntas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#las-que-responde-el-tema-y-las-que-no">Las que responde el tema, y las que no</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-interaccion-fuerte">2. La interacción fuerte</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confinamiento">2.1. Confinamiento</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hadronizacion-y-jets">2.2. Hadronización y jets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#libertad-asintotica">2.3. Libertad asintótica</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#las-pruebas-quarks-espin-y-color">3. Las pruebas: quarks, espín y color</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dentro-del-nucleon-dispersion-de-neutrinos">3.1. Dentro del nucleón: dispersión de neutrinos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-1-3-es-la-helicidad">El <span class="math notranslate nohighlight">\(1/3\)</span> es la helicidad</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cuanto-momento-llevan-los-quarks">¿Cuánto momento llevan los quarks?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-e-to-q-bar-q-el-espin-de-los-quarks">3.2. <span class="math notranslate nohighlight">\(e^+ + e \to q + \bar{q}\)</span>: el espín de los quarks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#la-distribucion-angular">La distribución angular</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-numero-de-colores">3.3. El número de colores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#las-desintegraciones-debiles-de-los-hadrones">4. Las desintegraciones débiles de los hadrones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-angulo-de-cabibbo">4.1. El ángulo de Cabibbo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-matriz-ckm">4.2. La matriz CKM</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-triangulo-de-unitariedad">El triángulo de unitariedad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por J. Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

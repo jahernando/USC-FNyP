@@ -1,0 +1,1392 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Extensión: La quiralidad &#8212; Introducción a la Física de Partículas - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/ext-quiral';</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Extensión: Las simetrías internas" href="ext-grupos.html" />
+    <link rel="prev" title="Extensión: La ecuación de Dirac" href="ext-dirac.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Introducción a la Física de Partículas - USC - Home"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Introducción a la Física de Partículas - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Capítulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Física de Partículas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="perspectivas.html">Perspectivas: experimental y teórica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leptones.html">Leptones: la mano izquierda de la Naturaleza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quarks_hadrons.html">Quarks y hadrones: el color que no se ve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sm.html">El Modelo Estándar: el vacío no está vacío</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: extensiones</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ext-cinematica.html">Extensión: Cinemática relativista y espacio fásico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-dirac.html">Extensión: La ecuación de Dirac</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Extensión: La quiralidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-grupos.html">Extensión: Las simetrías internas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-feynman.html">Extensión: Diagramas de Feynman y propagadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext-sm.html">Extensión: El Modelo Estándar</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: boletines</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_inicio_2627.html">¿Se desintegra el protón?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_I_2627.html">Partículas — boletín I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_II_2627.html">Partículas — boletín II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bols/boletin_II_2627_higgs_4l.html">Un pico sobre el fondo</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/main?urlpath=tree/./notebooks/ext-quiral.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jahernando/USC-FNyP/blob/main/./notebooks/ext-quiral.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/ext-quiral.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/ext-quiral.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Extensión: La quiralidad</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion">Notación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-quiralidad">1. La quiralidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-autovalores-de-gamma-5">1.1. Los autovalores de <span class="math notranslate nohighlight">\(\gamma^5\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-pauli-dirac">1.2. En Pauli-Dirac</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-proyectores-y-la-paridad">2. Los proyectores y la paridad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-proyectores-de-quiralidad">2.1. Los proyectores de quiralidad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-paridad-en-los-espinores">2.2. La paridad en los espinores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-paridad-intercambia-las-quiralidades">2.3. La paridad intercambia las quiralidades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-conjugacion-de-carga">2.4. La conjugación de carga</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-quiralidad-de-las-antiparticulas">2.5. La quiralidad de las antipartículas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-base-quiral">3. La base quiral</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-representacion-de-weyl">3.1. La representación de Weyl</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-espinor-partido-en-dos">3.2. El espinor, partido en dos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fermiones-sin-masa-los-espinores-de-weyl">4. Fermiones sin masa: los espinores de Weyl</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-ecuacion-de-dirac-en-la-base-quiral">4.1. La ecuación de Dirac en la base quiral</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-masa-las-dos-partes-se-separan">4.2. Sin masa, las dos partes se separan</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fermiones-con-masa">5. Fermiones con masa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-soluciones">5.1. Las soluciones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-termino-de-masa">5.2. El término de masa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-quiralidad-no-se-conserva-al-propagarse">5.3. La quiralidad no se conserva al propagarse</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotaciones-y-boosts-en-la-base-quiral">6. Rotaciones y <em>boosts</em> en la base quiral</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-dos-partes-se-transforman-por-separado">6.1. Las dos partes se transforman por separado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-el-espinor-en-movimiento-sin-resolver-la-ecuacion">6.2. Ejemplo: el espinor en movimiento, sin resolver la ecuación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#helicidad-y-quiralidad">7. Helicidad y quiralidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-estado-de-helicidad-en-sus-dos-quiralidades">7.1. Un estado de helicidad, en sus dos quiralidades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">7.2. En Pauli-Dirac</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#helicidad-y-quiralidad-bajo-transformaciones">8. Helicidad y quiralidad bajo transformaciones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cada-una-tiene-una-virtud-y-un-defecto">8.1. Cada una tiene una virtud y un defecto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-adelantar-a-la-particula">8.2. Ejemplo: adelantar a la partícula</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#las-formas-bilineales-y-la-quiralidad">9. Las formas bilineales y la quiralidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-adjuntos-de-las-partes-quirales">9.1. Los adjuntos de las partes quirales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-escalar-y-el-pseudoescalar-mezclan-las-quiralidades">9.2. El escalar y el pseudoescalar mezclan las quiralidades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-vector-y-el-axial-no-las-mezclan">9.3. El vector y el axial no las mezclan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-la-base-quiral">9.4. En la base quiral</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-significa">9.5. Qué significa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#es-la-misma-en-todos-los-sistemas-inerciales">9.6. ¿Es la misma en todos los sistemas inerciales?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="extension-la-quiralidad">
+<h1>Extensión: La quiralidad<a class="headerlink" href="#extension-la-quiralidad" title="Permalink to this heading">#</a></h1>
+<p>José A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<p>Octubre 2026</p>
+<section id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h2>
+<p>Esta extensión es el <strong>desarrollo matemático de la quiralidad</strong>, que el tema de <a class="reference internal" href="leptones.html"><span class="doc std std-doc">leptones</span></a> presenta
+en clase: la interacción débil solo ve la mano izquierda de los fermiones. Parte de lo que se construye en
+<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>: la ecuación de Dirac, los espinores, sus transformaciones de Lorentz y las formas
+bilineales. Tiene nueve secciones; cada una responde a una pregunta:</p>
+<ol class="arabic simple">
+<li><p><strong>La quiralidad.</strong> <em>¿Qué es?</em> Los autovalores de <span class="math notranslate nohighlight">\(\gamma^5\)</span>.</p></li>
+<li><p><strong>Los proyectores, la paridad y la conjugación de carga.</strong> <em>¿Cómo se separa un espinor en sus dos quiralidades?</em>
+Con <span class="math notranslate nohighlight">\(P_L\)</span> y <span class="math notranslate nohighlight">\(P_R\)</span>. La paridad las intercambia; la conjugación de carga pasa a la antipartícula, con la carga opuesta.</p></li>
+<li><p><strong>La base quiral.</strong> <em>¿En qué base se ven las dos partes por separado?</em> La representación de Weyl.</p></li>
+<li><p><strong>Fermiones sin masa: los espinores de Weyl.</strong> <em>¿Qué pasa si <span class="math notranslate nohighlight">\(m = 0\)</span>?</em> Las dos partes se desacoplan.</p></li>
+<li><p><strong>Fermiones con masa.</strong> <em>¿Qué hace la masa?</em> Acopla las dos partes.</p></li>
+<li><p><strong>Rotaciones y <em>boosts</em> en la base quiral.</strong> <em>¿Cómo se transforma cada parte?</em> Por separado: la quiralidad es
+invariante Lorentz.</p></li>
+<li><p><strong>Helicidad y quiralidad.</strong> <em>¿Cómo se relacionan?</em> Coinciden sin masa; con masa, un estado de helicidad es una
+mezcla de las dos quiralidades.</p></li>
+<li><p><strong>Helicidad y quiralidad bajo transformaciones.</strong> <em>¿Qué cambia con el observador y qué al propagarse?</em></p></li>
+<li><p><strong>Las formas bilineales y la quiralidad.</strong> <em>¿Qué partes ve cada forma?</em> El escalar (la masa) une L con R; la
+corriente vectorial no las mezcla, y la <span class="math notranslate nohighlight">\(V - A\)</span> solo ve la izquierda, en cualquier sistema de referencia.</p></li>
+</ol>
+<section id="notacion">
+<h3>Notación<a class="headerlink" href="#notacion" title="Permalink to this heading">#</a></h3>
+<p>La de <a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>:</p>
+<ul class="simple">
+<li><p>Unidades naturales, métrica <span class="math notranslate nohighlight">\(\mathrm{diag}(1, -1, -1, -1)\)</span>, <span class="math notranslate nohighlight">\(p^\mu = (E, {\bf p})\)</span>, <span class="math notranslate nohighlight">\(\mathrm{p} = |{\bf p}|\)</span>, <span class="math notranslate nohighlight">\(\beta = \mathrm{p}/E\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\kappa \equiv \mathrm{p}/(E+m)\)</span>, <span class="math notranslate nohighlight">\(N \equiv \sqrt{E+m}\)</span>. Rapidez de un <em>boost</em>: <span class="math notranslate nohighlight">\(\eta\)</span>, con <span class="math notranslate nohighlight">\(\cosh\eta = E/m\)</span>, <span class="math notranslate nohighlight">\(\sinh\eta = \mathrm{p}/m\)</span>, y
+<span class="math notranslate nohighlight">\(\kappa = \tanh\frac{\eta}{2}\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\chi_+ = (1, 0)\)</span>, <span class="math notranslate nohighlight">\(\chi_- = (0, 1)\)</span>: espín arriba y abajo en <span class="math notranslate nohighlight">\(z\)</span>. <span class="math notranslate nohighlight">\(u_\pm\)</span>: los espinores de helicidad con <span class="math notranslate nohighlight">\({\bf p}\)</span> en <span class="math notranslate nohighlight">\(z\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma^5 \equiv i\gamma^0\gamma^1\gamma^2\gamma^3\)</span>, con <span class="math notranslate nohighlight">\((\gamma^5)^2 = I\)</span>, <span class="math notranslate nohighlight">\((\gamma^5)^\dagger = \gamma^5\)</span> y <span class="math notranslate nohighlight">\(\{\gamma^5, \gamma^\mu\} = 0\)</span> (<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, sección 1.7).</p></li>
+<li><p>Las secciones 1 y 2 usan la representación de <strong>Pauli-Dirac</strong>, la de ext-dirac; a partir de la 3, la de <strong>Weyl</strong>.
+Se indica cuando hace falta.</p></li>
+</ul>
+</section>
+</section>
+<section id="la-quiralidad">
+<h2>1. La quiralidad<a class="headerlink" href="#la-quiralidad" title="Permalink to this heading">#</a></h2>
+<section id="los-autovalores-de-gamma-5">
+<h3>1.1. Los autovalores de <span class="math notranslate nohighlight">\(\gamma^5\)</span><a class="headerlink" href="#los-autovalores-de-gamma-5" title="Permalink to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\gamma^5\)</span> es hermítica y su cuadrado es la identidad. Sus autovalores son reales y su cuadrado vale <span class="math notranslate nohighlight">\(1\)</span>: solo pueden
+ser <span class="math notranslate nohighlight">\(\pm 1\)</span>. Como su traza es cero, hay <strong>dos de cada</strong>.</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\gamma^5\,\Psi_L = -\Psi_L, \qquad \gamma^5\,\Psi_R = +\Psi_R
+}
+\]</div>
+<p>La <strong>quiralidad</strong> de un espinor es su autovalor de <span class="math notranslate nohighlight">\(\gamma^5\)</span>: <span class="math notranslate nohighlight">\(-1\)</span>, <strong>a izquierdas</strong> (L); <span class="math notranslate nohighlight">\(+1\)</span>, <strong>a derechas</strong> (R). El
+nombre viene del griego <em>kheir</em>, mano: la paridad convierte una en otra, como un espejo convierte la mano
+izquierda en la derecha (sección 2.3).</p>
+</section>
+<section id="en-pauli-dirac">
+<h3>1.2. En Pauli-Dirac<a class="headerlink" href="#en-pauli-dirac" title="Permalink to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\gamma^5 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix}\)</span> intercambia los dos bloques del espinor, así que sus autovectores son</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi_L = \begin{pmatrix} \chi \\ -\chi \end{pmatrix}, \qquad \Psi_R = \begin{pmatrix} \chi \\ \chi \end{pmatrix},
+\end{split}\]</div>
+<p>con cualquier <span class="math notranslate nohighlight">\(\chi\)</span> de dos componentes. Un espinor cualquiera <strong>no es autoestado</strong> de <span class="math notranslate nohighlight">\(\gamma^5\)</span>: es una mezcla de
+las dos quiralidades. Por ejemplo, el espinor en reposo, <span class="math notranslate nohighlight">\(u(m) = \sqrt{2m}\,(\chi, 0)\)</span>, es mitad y mitad:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sqrt{2m}\begin{pmatrix} \chi \\ 0 \end{pmatrix} = \sqrt{\frac{m}{2}}\begin{pmatrix} \chi \\ \chi \end{pmatrix} + \sqrt{\frac{m}{2}}\begin{pmatrix} \chi \\ -\chi \end{pmatrix} .
+\end{split}\]</div>
+</section>
+</section>
+<section id="los-proyectores-y-la-paridad">
+<h2>2. Los proyectores y la paridad<a class="headerlink" href="#los-proyectores-y-la-paridad" title="Permalink to this heading">#</a></h2>
+<section id="los-proyectores-de-quiralidad">
+<h3>2.1. Los proyectores de quiralidad<a class="headerlink" href="#los-proyectores-de-quiralidad" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+P_L \equiv \frac{1}{2}(I - \gamma^5), \qquad P_R \equiv \frac{1}{2}(I + \gamma^5)
+}
+\]</div>
+<p>Con <span class="math notranslate nohighlight">\((\gamma^5)^2 = I\)</span>:</p>
+<ul class="simple">
+<li><p>son <strong>proyectores complementarios</strong>: <span class="math notranslate nohighlight">\(P_L + P_R = I\)</span>, <span class="math notranslate nohighlight">\(P_{L,R}^2 = P_{L,R}\)</span>, <span class="math notranslate nohighlight">\(P_L P_R = 0\)</span>;</p></li>
+<li><p><strong>dan los autoestados</strong>: <span class="math notranslate nohighlight">\(\gamma^5 P_L = \frac{1}{2}(\gamma^5 - I) = -P_L\)</span> y <span class="math notranslate nohighlight">\(\gamma^5 P_R = +P_R\)</span>. Luego <span class="math notranslate nohighlight">\(P_L\Psi\)</span> es a izquierdas y <span class="math notranslate nohighlight">\(P_R\Psi\)</span> a
+derechas, sea cual sea <span class="math notranslate nohighlight">\(\Psi\)</span>.</p></li>
+</ul>
+<p>Cualquier espinor se separa, de una sola manera, en sus dos partes quirales:</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi = \Psi_L + \Psi_R, \qquad \Psi_{L,R} = P_{L,R}\,\Psi .
+\]</div>
+<p>En Pauli-Dirac,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_L = \frac{1}{2}\begin{pmatrix} I &amp; -I \\ -I &amp; I \end{pmatrix}, \qquad
+P_R = \frac{1}{2}\begin{pmatrix} I &amp; I \\ I &amp; I \end{pmatrix} .
+\end{split}\]</div>
+</section>
+<section id="la-paridad-en-los-espinores">
+<h3>2.2. La paridad en los espinores<a class="headerlink" href="#la-paridad-en-los-espinores" title="Permalink to this heading">#</a></h3>
+<p>La paridad es la transformación de Lorentz impropia <span class="math notranslate nohighlight">\(\Lambda = \mathrm{diag}(1, -1, -1, -1)\)</span>. La condición de
+<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a> (sección 3.1), <span class="math notranslate nohighlight">\(S^{-1}\gamma^\mu S = \Lambda^\mu{}_\nu\gamma^\nu\)</span>, pide una <span class="math notranslate nohighlight">\(S\)</span> que deje <span class="math notranslate nohighlight">\(\gamma^0\)</span> igual y cambie el signo
+de las <span class="math notranslate nohighlight">\(\gamma^k\)</span>. <span class="math notranslate nohighlight">\(S = \gamma^0\)</span> lo cumple: <span class="math notranslate nohighlight">\(\gamma^0\gamma^0\gamma^0 = \gamma^0\)</span> y <span class="math notranslate nohighlight">\(\gamma^0\gamma^k\gamma^0 = -\gamma^k\)</span>. Así,</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\Psi(t, {\bf x}) \;\to\; \gamma^0\,\Psi(t, -{\bf x}), \qquad \bar\Psi \;\to\; \bar\Psi\,\gamma^0
+}
+\]</div>
+<p><strong>Las formas bilineales bajo paridad.</strong> Con <span class="math notranslate nohighlight">\(\gamma^0\gamma^5\gamma^0 = -\gamma^5\)</span> (porque <span class="math notranslate nohighlight">\(\gamma^5\)</span> anticonmuta con <span class="math notranslate nohighlight">\(\gamma^0\)</span>):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>forma</p></th>
+<th class="head text-left"><p><span class="math notranslate nohighlight">\(\to\)</span></p></th>
+<th class="head text-left"><p>bajo paridad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\Psi\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\gamma^0\gamma^0\Psi = \bar\Psi\Psi\)</span></p></td>
+<td class="text-left"><p>escalar</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\gamma^5\Psi\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\gamma^0\gamma^5\gamma^0\Psi = -\bar\Psi\gamma^5\Psi\)</span></p></td>
+<td class="text-left"><p>pseudoescalar</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\gamma^\mu\Psi\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\((j^0, {\bf j}) \to (j^0, -{\bf j})\)</span></p></td>
+<td class="text-left"><p>vector</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\gamma^\mu\gamma^5\Psi\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\((j^0_A, {\bf j}_A) \to (-j^0_A, +{\bf j}_A)\)</span></p></td>
+<td class="text-left"><p>axial</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>(para el axial, <span class="math notranslate nohighlight">\(\gamma^0\gamma^\mu\gamma^5\gamma^0 = (\gamma^0\gamma^\mu\gamma^0)(\gamma^0\gamma^5\gamma^0) = -\gamma^0\gamma^\mu\gamma^0\,\gamma^5\)</span>). Son las columnas de «bajo
+paridad» de <a class="reference internal" href="perspectivas.html"><span class="doc std std-doc">perspectivas</span></a> y de <a class="reference internal" href="leptones.html"><span class="doc std std-doc">leptones</span></a>.</p>
+</section>
+<section id="la-paridad-intercambia-las-quiralidades">
+<h3>2.3. La paridad intercambia las quiralidades<a class="headerlink" href="#la-paridad-intercambia-las-quiralidades" title="Permalink to this heading">#</a></h3>
+<p>Como <span class="math notranslate nohighlight">\(\gamma^0\)</span> anticonmuta con <span class="math notranslate nohighlight">\(\gamma^5\)</span>, <span class="math notranslate nohighlight">\(\gamma^0 P_L = P_R\,\gamma^0\)</span>, y</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma^0\,\Psi_L = \gamma^0 P_L\Psi = P_R\,(\gamma^0\Psi) :
+\]</div>
+<p>la parte izquierda de <span class="math notranslate nohighlight">\(\Psi\)</span> se convierte en la parte derecha del espinor transformado, y al revés:
+<span class="math notranslate nohighlight">\(\Psi_L \leftrightarrow \Psi_R\)</span>.</p>
+<ul class="simple">
+<li><p><strong>La paridad no conserva la quiralidad: la invierte.</strong> Del transformado de <span class="math notranslate nohighlight">\(\Psi_L\)</span> no queda nada a izquierdas,
+<span class="math notranslate nohighlight">\(P_L(\gamma^0\Psi_L) = \gamma^0 P_R P_L\Psi = 0\)</span>.</p></li>
+<li><p><strong>Solo cuenta <span class="math notranslate nohighlight">\(\gamma^0\)</span>.</strong> El cambio <span class="math notranslate nohighlight">\({\bf x} \to -{\bf x}\)</span> actúa sobre el argumento, no sobre las componentes del
+espinor; y la fase global que puede acompañar a la paridad, <span class="math notranslate nohighlight">\(\Psi \to \eta_P\,\gamma^0\Psi(t, -{\bf x})\)</span> con <span class="math notranslate nohighlight">\(|\eta_P| = 1\)</span>,
+tampoco cambia el autovalor de <span class="math notranslate nohighlight">\(\gamma^5\)</span>.</p></li>
+<li><p><strong>Una teoría que trate distinto las dos quiralidades viola la paridad.</strong> Es lo que hace la interacción
+débil: la imagen especular de un <span class="math notranslate nohighlight">\(\nu_L\)</span> sería un <span class="math notranslate nohighlight">\(\nu_R\)</span>, que no está en el Modelo Estándar.</p></li>
+</ul>
+</section>
+<section id="la-conjugacion-de-carga">
+<h3>2.4. La conjugación de carga<a class="headerlink" href="#la-conjugacion-de-carga" title="Permalink to this heading">#</a></h3>
+<p>La <strong>conjugación de carga</strong>, <span class="math notranslate nohighlight">\(C\)</span>, cambia la partícula por su antipartícula: la misma masa, el mismo momento y el
+mismo espín, y las cargas opuestas. No toca <span class="math notranslate nohighlight">\((t, {\bf x})\)</span>. Sobre la solución de Dirac actúa con un complejo
+conjugado, que invierte la fase, y una matriz:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\Psi \;\to\; \Psi^c = i\gamma^2\,\Psi^*
+}
+\]</div>
+<p>(en Pauli-Dirac y en Weyl, donde <span class="math notranslate nohighlight">\(\gamma^2\)</span> es la única matriz imaginaria).</p>
+<p><strong>La carga opuesta.</strong> Partimos de la ecuación con el fotón de <a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a> (sección 5.2),
+<span class="math notranslate nohighlight">\([\gamma^\mu(i\partial_\mu - qA_\mu) - m]\,\Psi = 0\)</span>. Su compleja conjugada (<span class="math notranslate nohighlight">\(A_\mu\)</span> es real) es</p>
+<div class="math notranslate nohighlight">
+\[
+[(\gamma^\mu)^*(-i\partial_\mu - qA_\mu) - m]\,\Psi^* = 0 .
+\]</div>
+<p>Multiplicamos por <span class="math notranslate nohighlight">\(i\gamma^2\)</span> por la izquierda. Si <span class="math notranslate nohighlight">\(\mu \neq 2\)</span>, <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> es real y anticonmuta con <span class="math notranslate nohighlight">\(\gamma^2\)</span>; si <span class="math notranslate nohighlight">\(\mu = 2\)</span>,
+<span class="math notranslate nohighlight">\((\gamma^2)^* = -\gamma^2\)</span>. En los dos casos <span class="math notranslate nohighlight">\(i\gamma^2(\gamma^\mu)^* = -\gamma^\mu\,i\gamma^2\)</span>, y</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+[\gamma^\mu(i\partial_\mu + qA_\mu) - m]\,\Psi^c = 0
+}
+\]</div>
+<p>Es la ecuación de Dirac con la misma masa y <strong>la carga cambiada</strong>, <span class="math notranslate nohighlight">\(q \to -q\)</span>: <span class="math notranslate nohighlight">\(\Psi^c\)</span> describe la antipartícula.
+Con una onda plana, <span class="math notranslate nohighlight">\(\Psi = u_s\,e^{-ipx}\)</span> da <span class="math notranslate nohighlight">\(\Psi^c = (i\gamma^2 u_s^*)\,e^{+ipx}\)</span>, la fase de la antipartícula con el mismo
+<span class="math notranslate nohighlight">\(p\)</span>; y con los espinores de <a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a> (sección 2.4), <span class="math notranslate nohighlight">\(i\gamma^2 u_1^* = v_1\)</span>, con el mismo espín físico
+(cuestión 9). <strong><span class="math notranslate nohighlight">\(C\)</span> conserva el momento y el espín, y por tanto la helicidad.</strong> [MT4.7.5]</p>
+<p><strong><span class="math notranslate nohighlight">\(C\)</span> y la quiralidad.</strong> <span class="math notranslate nohighlight">\(\gamma^5\)</span> es real y anticonmuta con <span class="math notranslate nohighlight">\(\gamma^2\)</span>, así que <span class="math notranslate nohighlight">\(i\gamma^2 P_L^* = i\gamma^2 P_L = P_R\,i\gamma^2\)</span>, y</p>
+<div class="math notranslate nohighlight">
+\[
+(\Psi_L)^c = i\gamma^2 (P_L\Psi)^* = P_R\,\Psi^c :
+\]</div>
+<p>como la paridad, <span class="math notranslate nohighlight">\(C\)</span> <strong>cambia el signo del autovalor de <span class="math notranslate nohighlight">\(\gamma^5\)</span></strong>. Pero, a diferencia de la paridad, no toca la
+helicidad: un fermión sin masa de helicidad negativa pasa a un antifermión de helicidad negativa. En los espinores
+de las antipartículas, la quiralidad física es, por tanto, la opuesta al autovalor de <span class="math notranslate nohighlight">\(\gamma^5\)</span> (sección 2.5).</p>
+<p><strong>El neutrino.</strong> Con las dos transformaciones:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P\)</span>: <span class="math notranslate nohighlight">\(\nu_L \to \nu_R\)</span> (sección 2.3), que no está en el Modelo Estándar.</p></li>
+<li><p><span class="math notranslate nohighlight">\(C\)</span>: <span class="math notranslate nohighlight">\(\nu_L \to \bar\nu_L\)</span>, que tampoco: la interacción débil viola <span class="math notranslate nohighlight">\(C\)</span> de forma máxima.</p></li>
+<li><p><span class="math notranslate nohighlight">\(CP\)</span>: <span class="math notranslate nohighlight">\(\nu_L \to \bar\nu_R\)</span>, que sí existe. Es la tabla del neutrino de <a class="reference internal" href="leptones.html"><span class="doc std std-doc">leptones</span></a>. [MT13.5.2]</p></li>
+</ul>
+<p><em><strong>[+] Mirador.</strong></em> <em>En QFT, <span class="math notranslate nohighlight">\(C\)</span> es un operador sobre los estados que cambia cada partícula por su antipartícula, y sobre
+el campo actúa con la misma <span class="math notranslate nohighlight">\(i\gamma^2\)</span>; la carga opuesta sale directamente de la corriente, sin regla práctica. La
+interacción electromagnética y la fuerte conservan <span class="math notranslate nohighlight">\(C\)</span> y <span class="math notranslate nohighlight">\(P\)</span> por separado; la débil, no.</em></p>
+</section>
+<section id="la-quiralidad-de-las-antiparticulas">
+<h3>2.5. La quiralidad de las antipartículas<a class="headerlink" href="#la-quiralidad-de-las-antiparticulas" title="Permalink to this heading">#</a></h3>
+<p>Para los espinores <span class="math notranslate nohighlight">\(v\)</span>, los operadores dan el valor físico con el signo cambiado (<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>,
+sección 2.6), y la quiralidad no es una excepción: <span class="math notranslate nohighlight">\(C\)</span> conserva la helicidad pero cambia el autovalor de <span class="math notranslate nohighlight">\(\gamma^5\)</span>
+(sección 2.4). El antifermión a derechas es</p>
+<div class="math notranslate nohighlight">
+\[
+v_R = P_L\,v = \frac{1}{2}(I - \gamma^5)\,v .
+\]</div>
+<p><strong>Por qué es la definición correcta.</strong> Sin masa, la quiralidad de una partícula coincide con su helicidad. <span class="math notranslate nohighlight">\(C\)</span>
+conserva la helicidad y cambia el signo de <span class="math notranslate nohighlight">\(\gamma^5\)</span>, <span class="math notranslate nohighlight">\(i\gamma^2\,\gamma^{5*}\,(i\gamma^2)^{-1} = -\gamma^5\)</span> (sección 2.4). Para que, sin
+masa, quiralidad y helicidad coincidan <strong>también en las antipartículas</strong>, la quiralidad física de un espinor <span class="math notranslate nohighlight">\(v\)</span> tiene
+que ser el opuesto del autovalor de <span class="math notranslate nohighlight">\(\gamma^5\)</span>. No es un convenio: es lo que hace que la quiralidad sea la misma
+propiedad para la materia y para la antimateria. Ejemplo: con <span class="math notranslate nohighlight">\(\kappa \to 1\)</span>, <span class="math notranslate nohighlight">\(v_1\)</span> tiene helicidad <span class="math notranslate nohighlight">\(+\)</span> y
+<span class="math notranslate nohighlight">\(\gamma^5 v_1 = -v_1\)</span>: es un antifermión a derechas, <span class="math notranslate nohighlight">\(v_1 = P_L v_1\)</span> (cuestión 9).</p>
+<p>Por eso el mismo <span class="math notranslate nohighlight">\(P_L\)</span> del vértice <span class="math notranslate nohighlight">\(V - A\)</span> selecciona los fermiones a izquierdas <strong>y</strong> los antifermiones a
+derechas, y la corriente del neutrino solo contiene <span class="math notranslate nohighlight">\(\nu_L\)</span> y <span class="math notranslate nohighlight">\(\bar\nu_R\)</span>. [MT6.4]</p>
+<details>
+<summary><b>[+] Mirador — El signo menos, en la teoría de campos</b></summary>
+<p>En QFT el campo es un operador que destruye partículas y crea antipartículas, todas de energía positiva:</p>
+<div class="math notranslate nohighlight">
+\[
+\psi(x) = \sum_{{\bf p}, s}\left[\, b_s\,u_s\,e^{-ip\cdot x} + d_s^\dagger\,v_s\,e^{+ip\cdot x} \,\right] .
+\]</div>
+<p>La energía, el momento, la carga o la quiralidad totales son sumas del tipo <span class="math notranslate nohighlight">\(\int\psi^\dagger\hat O\,\psi\)</span>. Su parte de
+antipartículas lleva el valor <span class="math notranslate nohighlight">\(\lambda_v\)</span> de <span class="math notranslate nohighlight">\(\hat O\)</span> sobre <span class="math notranslate nohighlight">\(v\,e^{+ip\cdot x}\)</span> multiplicado por <span class="math notranslate nohighlight">\(d\,d^\dagger\)</span>. Los fermiones
+<strong>anticonmutan</strong>, <span class="math notranslate nohighlight">\(d\,d^\dagger = 1 - d^\dagger d\)</span>, así que cada antipartícula aporta <span class="math notranslate nohighlight">\(-\lambda_v\)</span>: <strong>el signo menos de la regla
+práctica es el de la estadística de Fermi</strong>. Sin él, las antipartículas tendrían energía negativa. Y como
+<span class="math notranslate nohighlight">\(\psi_L = P_L\psi\)</span> contiene <span class="math notranslate nohighlight">\(b\,P_L u\)</span> y <span class="math notranslate nohighlight">\(d^\dagger P_L v\)</span>, el campo a izquierdas destruye partículas L y crea antipartículas R.
+[PS3.5]</p>
+</details></section>
+</section>
+<section id="la-base-quiral">
+<h2>3. La base quiral<a class="headerlink" href="#la-base-quiral" title="Permalink to this heading">#</a></h2>
+<section id="la-representacion-de-weyl">
+<h3>3.1. La representación de Weyl<a class="headerlink" href="#la-representacion-de-weyl" title="Permalink to this heading">#</a></h3>
+<p>En Pauli-Dirac <span class="math notranslate nohighlight">\(\gamma^5\)</span> no es diagonal. Cambiando de base con la matriz unitaria</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U = \frac{1}{\sqrt{2}}\begin{pmatrix} I &amp; -I \\ I &amp; I \end{pmatrix}, \qquad
+\Psi_{W} = U\,\Psi_{PD}, \qquad \gamma^\mu_{W} = U\,\gamma^\mu_{PD}\,U^\dagger ,
+\end{split}\]</div>
+<p>se obtiene la representación <strong>de Weyl</strong>, o <strong>quiral</strong>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\boxed{
+\gamma^0 = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix}, \qquad
+\gamma^k = \begin{pmatrix} 0 &amp; \sigma_k \\ -\sigma_k &amp; 0 \end{pmatrix}, \qquad
+\gamma^5 = \begin{pmatrix} -I &amp; 0 \\ 0 &amp; I \end{pmatrix}
+}
+\end{split}\]</div>
+<p>y <span class="math notranslate nohighlight">\(P_L = \mathrm{diag}(I, 0)\)</span>, <span class="math notranslate nohighlight">\(P_R = \mathrm{diag}(0, I)\)</span>. Cumple la misma álgebra, <span class="math notranslate nohighlight">\(\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}I\)</span>: la física no
+cambia (<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, sección 1.5).</p>
+</section>
+<section id="el-espinor-partido-en-dos">
+<h3>3.2. El espinor, partido en dos<a class="headerlink" href="#el-espinor-partido-en-dos" title="Permalink to this heading">#</a></h3>
+<p>En la base quiral, las dos componentes de arriba son la parte L y las dos de abajo la parte R:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}, \qquad
+\psi_L = \frac{1}{\sqrt{2}}(\psi_a - \psi_b), \quad \psi_R = \frac{1}{\sqrt{2}}(\psi_a + \psi_b),
+\end{split}\]</div>
+<p>con <span class="math notranslate nohighlight">\(\psi_a\)</span>, <span class="math notranslate nohighlight">\(\psi_b\)</span> los bloques de arriba y de abajo en Pauli-Dirac. Cada parte es un objeto de <strong>dos componentes</strong>.</p>
+<ul class="simple">
+<li><p>La <strong>paridad</strong>, <span class="math notranslate nohighlight">\(\gamma^0\)</span>, intercambia los dos bloques: <span class="math notranslate nohighlight">\((\psi_L, \psi_R) \to (\psi_R, \psi_L)\)</span>.</p></li>
+<li><p>El <strong>espín</strong>, <span class="math notranslate nohighlight">\(\Sigma_k = \mathrm{diag}(\sigma_k, \sigma_k)\)</span>, es el mismo en las dos bases, y actúa igual sobre las dos partes.</p></li>
+<li><p>El <strong>adjunto</strong>, <span class="math notranslate nohighlight">\(\bar\Psi = \Psi^\dagger\gamma^0 = (\psi_R^\dagger, \psi_L^\dagger)\)</span>, cruza los bloques.</p></li>
+</ul>
+</section>
+</section>
+<section id="fermiones-sin-masa-los-espinores-de-weyl">
+<h2>4. Fermiones sin masa: los espinores de Weyl<a class="headerlink" href="#fermiones-sin-masa-los-espinores-de-weyl" title="Permalink to this heading">#</a></h2>
+<section id="la-ecuacion-de-dirac-en-la-base-quiral">
+<h3>4.1. La ecuación de Dirac en la base quiral<a class="headerlink" href="#la-ecuacion-de-dirac-en-la-base-quiral" title="Permalink to this heading">#</a></h3>
+<p>Con <span class="math notranslate nohighlight">\(\not{p} = \gamma^0 E - \gamma^k p^k = \begin{pmatrix} 0 &amp; E - \vec\sigma\cdot{\bf p} \\ E + \vec\sigma\cdot{\bf p} &amp; 0 \end{pmatrix}\)</span>, la ecuación <span class="math notranslate nohighlight">\((\not{p} - m)\,u = 0\)</span> queda</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} -m &amp; E - \vec\sigma\cdot{\bf p} \\ E + \vec\sigma\cdot{\bf p} &amp; -m \end{pmatrix}
+\begin{pmatrix} u_L \\ u_R \end{pmatrix} = 0
+\qquad \Longleftrightarrow \qquad
+\begin{cases}
+(E + \vec\sigma\cdot{\bf p})\,u_L = m\,u_R \\
+(E - \vec\sigma\cdot{\bf p})\,u_R = m\,u_L
+\end{cases}
+\end{split}\]</div>
+<p><strong>La masa es lo único que acopla</strong> <span class="math notranslate nohighlight">\(u_L\)</span> con <span class="math notranslate nohighlight">\(u_R\)</span>.</p>
+</section>
+<section id="sin-masa-las-dos-partes-se-separan">
+<h3>4.2. Sin masa, las dos partes se separan<a class="headerlink" href="#sin-masa-las-dos-partes-se-separan" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+(E + \vec\sigma\cdot{\bf p})\,u_L = 0, \qquad (E - \vec\sigma\cdot{\bf p})\,u_R = 0 :
+\]</div>
+<p>son las <strong>ecuaciones de Weyl</strong> (1929). Con <span class="math notranslate nohighlight">\(E = \mathrm{p}\)</span> y <span class="math notranslate nohighlight">\({\bf p} = \mathrm{p}\,\hat{\bf v}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+(\hat{\bf v}\cdot\vec\sigma)\,u_L = -u_L, \qquad (\hat{\bf v}\cdot\vec\sigma)\,u_R = +u_R .
+\]</div>
+<p><strong>Sin masa, la parte L tiene helicidad negativa y la R positiva.</strong> Y son <strong>dos partículas independientes</strong>, de dos
+componentes cada una: se puede tener una sin la otra. Es el neutrino del Modelo Estándar, que solo tiene <span class="math notranslate nohighlight">\(u_L\)</span>
+(y su antipartícula, <span class="math notranslate nohighlight">\(\bar\nu_R\)</span>).</p>
+<p><em><strong>[+] Mirador.</strong></em> <em>Weyl propuso su ecuación en 1929, y Pauli la descartó porque viola la paridad. Tras el
+experimento de Wu (1957) resultó ser la del neutrino.</em></p>
+</section>
+</section>
+<section id="fermiones-con-masa">
+<h2>5. Fermiones con masa<a class="headerlink" href="#fermiones-con-masa" title="Permalink to this heading">#</a></h2>
+<section id="las-soluciones">
+<h3>5.1. Las soluciones<a class="headerlink" href="#las-soluciones" title="Permalink to this heading">#</a></h3>
+<p>Con masa, las dos ecuaciones de la sección 4.1 van juntas: dada <span class="math notranslate nohighlight">\(u_L\)</span>, <span class="math notranslate nohighlight">\(u_R = (E + \vec\sigma\cdot{\bf p})\,u_L/m\)</span>. Con <span class="math notranslate nohighlight">\({\bf p}\)</span> en <span class="math notranslate nohighlight">\(z\)</span> y
+<span class="math notranslate nohighlight">\(\sigma_3\chi_\pm = \pm\chi_\pm\)</span>, normalizados a <span class="math notranslate nohighlight">\(u^\dagger u = 2E\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\boxed{
+u_\pm = \begin{pmatrix} \sqrt{E \mp \mathrm{p}}\;\chi_\pm \\ \sqrt{E \pm \mathrm{p}}\;\chi_\pm \end{pmatrix}
+}
+\end{split}\]</div>
+<p>(con <span class="math notranslate nohighlight">\(\sqrt{E - \mathrm{p}}\sqrt{E + \mathrm{p}} = m\)</span>). <strong>Las dos partes están siempre presentes.</strong> En reposo, <span class="math notranslate nohighlight">\(\mathrm{p} = 0\)</span>, pesan lo mismo:
+<span class="math notranslate nohighlight">\(u = \sqrt{m}\,(\chi, \chi)\)</span>. Al aumentar la energía, en <span class="math notranslate nohighlight">\(u_+\)</span> crece la parte R y en <span class="math notranslate nohighlight">\(u_-\)</span> la L.</p>
+</section>
+<section id="el-termino-de-masa">
+<h3>5.2. El término de masa<a class="headerlink" href="#el-termino-de-masa" title="Permalink to this heading">#</a></h3>
+<p>Con <span class="math notranslate nohighlight">\(\bar\Psi = (\psi_R^\dagger, \psi_L^\dagger)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+\bar\Psi\Psi = \psi_R^\dagger\psi_L + \psi_L^\dagger\psi_R = \bar\Psi_R\Psi_L + \bar\Psi_L\Psi_R :
+\]</div>
+<p>el término de masa del lagrangiano, <span class="math notranslate nohighlight">\(m\bar\Psi\Psi\)</span>, <strong>acopla la izquierda con la derecha</strong>. Un fermión con masa (de
+Dirac) necesita las dos partes.</p>
+</section>
+<section id="la-quiralidad-no-se-conserva-al-propagarse">
+<h3>5.3. La quiralidad no se conserva al propagarse<a class="headerlink" href="#la-quiralidad-no-se-conserva-al-propagarse" title="Permalink to this heading">#</a></h3>
+<p>El hamiltoniano de Dirac, <span class="math notranslate nohighlight">\(H = \vec\alpha\cdot{\bf p} + \beta m\)</span>, con <span class="math notranslate nohighlight">\(\alpha^k = \gamma^0\gamma^k\)</span> y <span class="math notranslate nohighlight">\(\beta = \gamma^0\)</span>, en la base quiral es</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+H = \begin{pmatrix} -\vec\sigma\cdot{\bf p} &amp; m \\ m &amp; \vec\sigma\cdot{\bf p} \end{pmatrix} :
+\end{split}\]</div>
+<p>el término cinético es diagonal (no mezcla) y la masa está <strong>fuera de la diagonal</strong>. En general, <span class="math notranslate nohighlight">\(\gamma^5\)</span> conmuta con
+<span class="math notranslate nohighlight">\(\alpha^k\)</span> (anticonmuta con cada factor) y anticonmuta con <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+[\gamma^5, H] = 2m\,\gamma^5\gamma^0 \neq 0 .
+\]</div>
+<p><strong>Con masa, la quiralidad no se conserva</strong>: un espinor que empieza siendo L desarrolla parte R al evolucionar.
+Sin masa, sí se conserva.</p>
+</section>
+</section>
+<section id="rotaciones-y-boosts-en-la-base-quiral">
+<h2>6. Rotaciones y <em>boosts</em> en la base quiral<a class="headerlink" href="#rotaciones-y-boosts-en-la-base-quiral" title="Permalink to this heading">#</a></h2>
+<section id="las-dos-partes-se-transforman-por-separado">
+<h3>6.1. Las dos partes se transforman por separado<a class="headerlink" href="#las-dos-partes-se-transforman-por-separado" title="Permalink to this heading">#</a></h3>
+<p>En <a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a> (secciones 3.2–3.6), los generadores son el espín, <span class="math notranslate nohighlight">\(\frac{1}{2}\Sigma_k\)</span>, para las rotaciones, y
+<span class="math notranslate nohighlight">\(\frac{1}{2}\gamma^0\gamma^k\)</span> para los <em>boosts</em>. En la base quiral, <span class="math notranslate nohighlight">\(\Sigma_k = \mathrm{diag}(\sigma_k, \sigma_k)\)</span> y <span class="math notranslate nohighlight">\(\gamma^0\gamma^k = \mathrm{diag}(-\sigma_k, \sigma_k)\)</span>: <strong>los dos son
+diagonales por bloques</strong>, y por tanto también <span class="math notranslate nohighlight">\(S(\Lambda)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\boxed{
+S = \begin{pmatrix} S_L &amp; 0 \\ 0 &amp; S_R \end{pmatrix}, \qquad
+\begin{aligned}
+&amp;\text{rotación } \theta\,\hat{\bf n}: &amp;&amp; S_L = S_R = e^{-i\,\theta\,\hat{\bf n}\cdot\vec\sigma/2} \\
+&amp;\textit{boost } \eta\,\hat{\bf n}: &amp;&amp; S_L = e^{-\eta\,\hat{\bf n}\cdot\vec\sigma/2}, \quad S_R = e^{+\eta\,\hat{\bf n}\cdot\vec\sigma/2}
+\end{aligned}
+}
+\end{split}\]</div>
+<ul class="simple">
+<li><p><strong>Ninguna transformación de Lorentz mezcla L con R</strong>: <span class="math notranslate nohighlight">\(\psi_L \to S_L\,\psi_L\)</span> y <span class="math notranslate nohighlight">\(\psi_R \to S_R\,\psi_R\)</span>. Un espinor puramente L es
+puramente L para cualquier observador. <strong>La quiralidad es invariante Lorentz</strong> (equivalente a <span class="math notranslate nohighlight">\([\gamma^5, S] = 0\)</span>,
+ext-dirac, sección 3.2).</p></li>
+<li><p>Las dos partes son <strong>dos representaciones distintas</strong> del grupo de Lorentz: se transforman igual bajo rotaciones,
+pero con el <em>boost</em> opuesto. Solo la paridad las une (sección 2.3).</p></li>
+<li><p><strong>Rotaciones:</strong> la misma matriz unitaria en las dos partes: la proporción entre L y R no cambia.</p></li>
+<li><p><strong><em>Boosts</em>:</strong> no son unitarios y tienen exponentes opuestos: <strong>reescalan</strong> las dos partes de forma distinta. La
+proporción cambia, pero lo L sigue siendo L.</p></li>
+</ul>
+</section>
+<section id="ejemplo-el-espinor-en-movimiento-sin-resolver-la-ecuacion">
+<h3>6.2. Ejemplo: el espinor en movimiento, sin resolver la ecuación<a class="headerlink" href="#ejemplo-el-espinor-en-movimiento-sin-resolver-la-ecuacion" title="Permalink to this heading">#</a></h3>
+<p>El espinor en reposo con espín arriba es <span class="math notranslate nohighlight">\(u(m) = \sqrt{m}\,(\chi_+, \chi_+)\)</span>. Un <em>boost</em> de rapidez <span class="math notranslate nohighlight">\(\eta\)</span> en <span class="math notranslate nohighlight">\(z\)</span> actúa sobre
+<span class="math notranslate nohighlight">\(\chi_+\)</span>, con <span class="math notranslate nohighlight">\(\sigma_3 = +1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S\,u(m) = \sqrt{m}\begin{pmatrix} e^{-\eta/2}\,\chi_+ \\ e^{+\eta/2}\,\chi_+ \end{pmatrix}
+= \begin{pmatrix} \sqrt{E - \mathrm{p}}\;\chi_+ \\ \sqrt{E + \mathrm{p}}\;\chi_+ \end{pmatrix} = u_+ ,
+\end{split}\]</div>
+<p>porque <span class="math notranslate nohighlight">\(m\,e^{\mp\eta} = m(\cosh\eta \mp \sinh\eta) = E \mp \mathrm{p}\)</span>. Es la solución de la sección 5.1. El <em>boost</em> no cambia la dirección
+de ninguna de las dos partes: solo multiplica la L por <span class="math notranslate nohighlight">\(e^{-\eta/2}\)</span> y la R por <span class="math notranslate nohighlight">\(e^{+\eta/2}\)</span>.</p>
+</section>
+</section>
+<section id="helicidad-y-quiralidad">
+<h2>7. Helicidad y quiralidad<a class="headerlink" href="#helicidad-y-quiralidad" title="Permalink to this heading">#</a></h2>
+<section id="un-estado-de-helicidad-en-sus-dos-quiralidades">
+<h3>7.1. Un estado de helicidad, en sus dos quiralidades<a class="headerlink" href="#un-estado-de-helicidad-en-sus-dos-quiralidades" title="Permalink to this heading">#</a></h3>
+<p>De la sección 5.1, con <span class="math notranslate nohighlight">\(|u|^2 = 2E\)</span>, la fracción de cada quiralidad en un estado de helicidad es</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>helicidad <span class="math notranslate nohighlight">\(\downarrow\)</span> \ quiralidad <span class="math notranslate nohighlight">\(\rightarrow\)</span></p></th>
+<th class="head text-center"><p>R</p></th>
+<th class="head text-center"><p>L</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{E + \mathrm{p}}{2E} = \frac{1}{2}(1 + \beta)\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{E - \mathrm{p}}{2E} = \frac{1}{2}(1 - \beta)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(-\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}(1 - \beta)\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}(1 + \beta)\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p><strong>En reposo</strong>, <span class="math notranslate nohighlight">\(\beta = 0\)</span>: mitad y mitad.</p></li>
+<li><p><strong>Sin masa</strong>, <span class="math notranslate nohighlight">\(\beta = 1\)</span>: <span class="math notranslate nohighlight">\(u_+\)</span> es puramente R y <span class="math notranslate nohighlight">\(u_-\)</span> puramente L. <strong>Helicidad y quiralidad coinciden.</strong></p></li>
+<li><p><strong>Con <span class="math notranslate nohighlight">\(E \gg m\)</span></strong>: la fracción «equivocada», <span class="math notranslate nohighlight">\(|P_L u_+|^2/|u_+|^2 = \frac{1}{2}(1 - \beta) \simeq m^2/4E^2\)</span>, es pequeña. La
+componente misma (su raíz, la amplitud) va como <span class="math notranslate nohighlight">\(m/2E\)</span>. La amplitud es la que entra en <span class="math notranslate nohighlight">\(M_{fi}\)</span>; la fracción,
+en las tasas.</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>7.2. En Pauli-Dirac<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>Es lo mismo escrito en la otra base. Con <span class="math notranslate nohighlight">\(u_+ = N(1, 0, \kappa, 0)\)</span> y <span class="math notranslate nohighlight">\(u_- = N(0, 1, 0, -\kappa)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+P_R\,u_+ = \tfrac{1}{2}(1+\kappa)\,N\,(1, 0, 1, 0), \qquad P_L\,u_+ = \tfrac{1}{2}(1-\kappa)\,N\,(1, 0, -1, 0),
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+P_R\,u_- = \tfrac{1}{2}(1-\kappa)\,N\,(0, 1, 0, 1), \qquad P_L\,u_- = \tfrac{1}{2}(1+\kappa)\,N\,(0, 1, 0, -1) .
+\]</div>
+<p>Las <strong>amplitudes</strong> <span class="math notranslate nohighlight">\(\frac{1}{2}(1 \pm \kappa)\)</span> son las que usa el tema de leptones; sus cuadrados, por la norma de los vectores,
+<span class="math notranslate nohighlight">\(2N^2\cdot\frac{1}{4}(1 \pm \kappa)^2 = E \pm \mathrm{p}\)</span>, dan las fracciones de la tabla de arriba. En la desintegración a dos cuerpos
+<span class="math notranslate nohighlight">\(\pi \to l\,\nu\)</span>, con <span class="math notranslate nohighlight">\(E_l\)</span> y <span class="math notranslate nohighlight">\(\mathrm{p}_l\)</span> del CM (<a class="reference internal" href="ext-cinematica.html"><span class="doc std std-doc">ext-cinematica</span></a>, sección 4.3), <span class="math notranslate nohighlight">\(\kappa = (m_\pi - m_l)/(m_\pi + m_l)\)</span> y
+<span class="math notranslate nohighlight">\(\frac{1}{2}(1 - \kappa) = m_l/(m_\pi + m_l)\)</span>: la supresión por helicidad de <a class="reference internal" href="leptones.html"><span class="doc std std-doc">leptones</span></a>.</p>
+</section>
+</section>
+<section id="helicidad-y-quiralidad-bajo-transformaciones">
+<h2>8. Helicidad y quiralidad bajo transformaciones<a class="headerlink" href="#helicidad-y-quiralidad-bajo-transformaciones" title="Permalink to this heading">#</a></h2>
+<section id="cada-una-tiene-una-virtud-y-un-defecto">
+<h3>8.1. Cada una tiene una virtud y un defecto<a class="headerlink" href="#cada-una-tiene-una-virtud-y-un-defecto" title="Permalink to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p>helicidad, <span class="math notranslate nohighlight">\(\vec\Sigma\cdot\hat{\bf p}\)</span></p></th>
+<th class="head text-left"><p>quiralidad, <span class="math notranslate nohighlight">\(\gamma^5\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>¿se conserva al propagarse? (conmuta con <span class="math notranslate nohighlight">\(H\)</span>)</p></td>
+<td class="text-left"><p><strong>sí</strong></p></td>
+<td class="text-left"><p><strong>no</strong>, si hay masa (sección 5.3)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>¿es la misma para todo observador? (conmuta con <span class="math notranslate nohighlight">\(S(\Lambda)\)</span>)</p></td>
+<td class="text-left"><p><strong>no</strong>, si hay masa</p></td>
+<td class="text-left"><p><strong>sí</strong> (sección 6.1)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>¿la tiene definida una partícula libre con masa?</p></td>
+<td class="text-left"><p><strong>sí</strong></p></td>
+<td class="text-left"><p><strong>no</strong>: lleva las dos partes</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>sin masa</p></td>
+<td class="text-left"><p>se conserva, es invariante y coincide con la quiralidad</p></td>
+<td class="text-left"><p>ídem</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>La helicidad depende del observador</strong> si hay masa: un observador que adelanta a la partícula la ve moverse hacia
+atrás, con el espín igual, y su helicidad cambia de signo. Sin masa no se la puede adelantar.</p>
+<p><strong>La quiralidad no depende del observador</strong>, pero una partícula con masa no la tiene definida. Lo que es igual
+para todos los observadores es la <strong>separación</strong> del espinor en sus dos partes: la parte L para uno es la parte L
+para cualquier otro. Lo que cambia es <strong>cuánto pesa</strong> cada parte.</p>
+</section>
+<section id="ejemplo-adelantar-a-la-particula">
+<h3>8.2. Ejemplo: adelantar a la partícula<a class="headerlink" href="#ejemplo-adelantar-a-la-particula" title="Permalink to this heading">#</a></h3>
+<p>Tomemos <span class="math notranslate nohighlight">\(u_+\)</span>, con rapidez <span class="math notranslate nohighlight">\(\vartheta\)</span> en <span class="math notranslate nohighlight">\(z\)</span>. Sus dos partes están en la proporción (sección 6.2)</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\text{amplitud R}}{\text{amplitud L}} = \sqrt{\frac{E + \mathrm{p}}{E - \mathrm{p}}} = e^{\vartheta} .
+\]</div>
+<p>Un <em>boost</em> de rapidez <span class="math notranslate nohighlight">\(\eta\)</span> en <span class="math notranslate nohighlight">\(z\)</span> multiplica la R por <span class="math notranslate nohighlight">\(e^{\eta/2}\)</span> y la L por <span class="math notranslate nohighlight">\(e^{-\eta/2}\)</span>: la proporción pasa a <span class="math notranslate nohighlight">\(e^{\vartheta + \eta}\)</span>.</p>
+<ul class="simple">
+<li><p><strong><span class="math notranslate nohighlight">\(\eta = -\vartheta\)</span></strong>, el sistema en reposo: mitad y mitad.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(\eta = -2\vartheta\)</span></strong>, el observador que la adelanta: la proporción es <span class="math notranslate nohighlight">\(e^{-\vartheta}\)</span>, domina la parte L. La partícula
+se mueve hacia <span class="math notranslate nohighlight">\(-z\)</span> con el espín hacia <span class="math notranslate nohighlight">\(+z\)</span>: helicidad negativa. Es el mismo estado, visto por otro observador.</p></li>
+</ul>
+<p><strong>Ninguna parte ha cambiado de quiralidad</strong>; ha cambiado su peso. Por eso la interacción débil se escribe con la
+quiralidad: el <span class="math notranslate nohighlight">\(W\)</span> se acopla a la parte L, y todos los observadores están de acuerdo en cuál es.</p>
+</section>
+</section>
+<section id="las-formas-bilineales-y-la-quiralidad">
+<h2>9. Las formas bilineales y la quiralidad<a class="headerlink" href="#las-formas-bilineales-y-la-quiralidad" title="Permalink to this heading">#</a></h2>
+<section id="los-adjuntos-de-las-partes-quirales">
+<h3>9.1. Los adjuntos de las partes quirales<a class="headerlink" href="#los-adjuntos-de-las-partes-quirales" title="Permalink to this heading">#</a></h3>
+<p>Para separar las formas bilineales hacen falta los adjuntos de <span class="math notranslate nohighlight">\(\Psi_L\)</span> y <span class="math notranslate nohighlight">\(\Psi_R\)</span>. Como <span class="math notranslate nohighlight">\(\gamma^5\)</span> es hermítica y
+anticonmuta con <span class="math notranslate nohighlight">\(\gamma^0\)</span>, <span class="math notranslate nohighlight">\(P_L\gamma^0 = \gamma^0 P_R\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar\Psi_L \equiv (P_L\Psi)^\dagger\gamma^0 = \Psi^\dagger P_L\gamma^0 = \Psi^\dagger\gamma^0 P_R = \bar\Psi\,P_R, \qquad \bar\Psi_R = \bar\Psi\,P_L .
+\]</div>
+<p><strong>El adjunto cambia el proyector.</strong> Y como <span class="math notranslate nohighlight">\(\gamma^5\)</span> anticonmuta con <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>, al pasar un proyector a través de una <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>
+también cambia: <span class="math notranslate nohighlight">\(P_R\gamma^\mu = \gamma^\mu P_L\)</span>. Con estas dos reglas, y <span class="math notranslate nohighlight">\(P_L P_R = 0\)</span>, sale todo lo demás.</p>
+</section>
+<section id="el-escalar-y-el-pseudoescalar-mezclan-las-quiralidades">
+<h3>9.2. El escalar y el pseudoescalar mezclan las quiralidades<a class="headerlink" href="#el-escalar-y-el-pseudoescalar-mezclan-las-quiralidades" title="Permalink to this heading">#</a></h3>
+<p>Escribiendo <span class="math notranslate nohighlight">\(\Psi = \Psi_L + \Psi_R\)</span> y <span class="math notranslate nohighlight">\(\bar\Psi = \bar\Psi_L + \bar\Psi_R\)</span>, los términos con la misma quiralidad se anulan:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar\Psi_L\Psi_L = \bar\Psi P_R\,P_L\Psi = 0, \qquad \bar\Psi_R\Psi_R = \bar\Psi P_L\,P_R\Psi = 0 ,
+\]</div>
+<p>y solo sobreviven los cruzados:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\bar\Psi\Psi = \bar\Psi_L\Psi_R + \bar\Psi_R\Psi_L
+}
+\qquad
+\bar\Psi\gamma^5\Psi = \bar\Psi_L\Psi_R - \bar\Psi_R\Psi_L .
+\]</div>
+<p><strong>El escalar une la izquierda con la derecha.</strong> Es el término de masa, <span class="math notranslate nohighlight">\(m\bar\Psi\Psi\)</span> (sección 5.2).</p>
+</section>
+<section id="el-vector-y-el-axial-no-las-mezclan">
+<h3>9.3. El vector y el axial no las mezclan<a class="headerlink" href="#el-vector-y-el-axial-no-las-mezclan" title="Permalink to this heading">#</a></h3>
+<p>Ahora son los cruzados los que se anulan, porque la <span class="math notranslate nohighlight">\(\gamma^\mu\)</span> cambia el proyector:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar\Psi_L\gamma^\mu\Psi_R = \bar\Psi P_R\,\gamma^\mu P_R\Psi = \bar\Psi\gamma^\mu P_L P_R\Psi = 0 ,
+\]</div>
+<p>y lo mismo <span class="math notranslate nohighlight">\(\bar\Psi_R\gamma^\mu\Psi_L\)</span>. Sobreviven los de la misma quiralidad:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\bar\Psi\gamma^\mu\Psi = \bar\Psi_L\gamma^\mu\Psi_L + \bar\Psi_R\gamma^\mu\Psi_R
+}
+\qquad
+\bar\Psi\gamma^\mu\gamma^5\Psi = -\bar\Psi_L\gamma^\mu\Psi_L + \bar\Psi_R\gamma^\mu\Psi_R
+\]</div>
+<p>(en el axial, <span class="math notranslate nohighlight">\(\gamma^5\Psi_L = -\Psi_L\)</span> y <span class="math notranslate nohighlight">\(\gamma^5\Psi_R = +\Psi_R\)</span>). Restando:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\bar\Psi\gamma^\mu\,\frac{1}{2}(1 - \gamma^5)\,\Psi = \frac{1}{2}\left(V^\mu - A^\mu\right) = \bar\Psi_L\gamma^\mu\Psi_L
+}
+\]</div>
+<p><strong>La regla:</strong> un número <strong>par</strong> de matrices <span class="math notranslate nohighlight">\(\gamma\)</span> (S, P y también el tensor, <span class="math notranslate nohighlight">\(\sigma^{\mu\nu}\)</span>) une L con R; un número <strong>impar</strong>
+(V, A) une L con L y R con R.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>forma</p></th>
+<th class="head text-left"><p>en partes quirales</p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\Psi\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi_L\Psi_R + \bar\Psi_R\Psi_L\)</span></p></td>
+<td class="text-left"><p><strong>mezcla</strong> L y R</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\gamma^5\Psi\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi_L\Psi_R - \bar\Psi_R\Psi_L\)</span></p></td>
+<td class="text-left"><p>mezcla</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\gamma^\mu\Psi\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi_L\gamma^\mu\Psi_L + \bar\Psi_R\gamma^\mu\Psi_R\)</span></p></td>
+<td class="text-left"><p><strong>no mezcla</strong>; L y R por igual</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi\gamma^\mu\gamma^5\Psi\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(-\bar\Psi_L\gamma^\mu\Psi_L + \bar\Psi_R\gamma^\mu\Psi_R\)</span></p></td>
+<td class="text-left"><p>no mezcla; L y R con signo opuesto</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\frac{1}{2}(V - A)\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\bar\Psi_L\gamma^\mu\Psi_L\)</span></p></td>
+<td class="text-left"><p><strong>solo L</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="en-la-base-quiral">
+<h3>9.4. En la base quiral<a class="headerlink" href="#en-la-base-quiral" title="Permalink to this heading">#</a></h3>
+<p>Con <span class="math notranslate nohighlight">\(\Psi = (\psi_L, \psi_R)\)</span> y <span class="math notranslate nohighlight">\(\bar\Psi = (\psi_R^\dagger, \psi_L^\dagger)\)</span> (sección 3.2), todo es explícito. Con <span class="math notranslate nohighlight">\(\gamma^0\gamma^0 = I\)</span> y
+<span class="math notranslate nohighlight">\(\gamma^0\gamma^k = \mathrm{diag}(-\sigma_k, \sigma_k)\)</span>, y llamando <span class="math notranslate nohighlight">\(\sigma^\mu = (I, \vec\sigma)\)</span> y <span class="math notranslate nohighlight">\(\bar\sigma^\mu = (I, -\vec\sigma)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar\Psi\Psi = \psi_R^\dagger\,\psi_L + \psi_L^\dagger\,\psi_R, \qquad
+\bar\Psi\gamma^\mu\Psi = \psi_L^\dagger\,\bar\sigma^\mu\,\psi_L + \psi_R^\dagger\,\sigma^\mu\,\psi_R .
+\]</div>
+<p>El escalar está <strong>fuera de la diagonal</strong>: une los bloques de arriba y de abajo. La corriente es <strong>diagonal</strong>: cada parte
+con la suya, y cada una con su propia matriz, <span class="math notranslate nohighlight">\(\bar\sigma^\mu\)</span> o <span class="math notranslate nohighlight">\(\sigma^\mu\)</span> (por eso las dos partes son representaciones
+distintas, sección 6.1). La corriente <span class="math notranslate nohighlight">\(V - A\)</span> es <span class="math notranslate nohighlight">\(\psi_L^\dagger\bar\sigma^\mu\psi_L\)</span>: <strong>solo necesita el objeto de dos componentes</strong> <span class="math notranslate nohighlight">\(\psi_L\)</span>.</p>
+</section>
+<section id="que-significa">
+<h3>9.5. Qué significa<a class="headerlink" href="#que-significa" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Las interacciones vectoriales</strong>, la electromagnética y la fuerte, acoplan la izquierda y la derecha <strong>por igual
+y por separado</strong>: no distinguen las manos, y conservan la paridad.</p></li>
+<li><p><strong>La corriente cargada de la débil</strong>, <span class="math notranslate nohighlight">\(V - A\)</span>, solo acopla la izquierda: la parte derecha no participa.</p></li>
+<li><p><strong>Sin masa, la quiralidad se conserva en el vértice</strong>: un electrón que entra L sale L, sea el vértice del fotón o del
+<span class="math notranslate nohighlight">\(W\)</span>. Como sin masa la quiralidad es la helicidad, a alta energía <strong>la helicidad se conserva en los vértices</strong>
+vectoriales.</p></li>
+<li><p><strong>La masa es lo único que une las dos partes.</strong> Un fermión con solo la parte L, como el neutrino del Modelo
+Estándar, no puede tener un término <span class="math notranslate nohighlight">\(m\bar\Psi\Psi\)</span>: no tiene masa de Dirac.</p></li>
+</ul>
+<p><em><strong>[+] Mirador.</strong></em> <em>En el Modelo Estándar, <span class="math notranslate nohighlight">\(e_L\)</span> y <span class="math notranslate nohighlight">\(e_R\)</span> son objetos distintos para la interacción débil: <span class="math notranslate nohighlight">\(e_L\)</span> va con
+<span class="math notranslate nohighlight">\(\nu_L\)</span> y <span class="math notranslate nohighlight">\(e_R\)</span> va solo. Un término <span class="math notranslate nohighlight">\(m\,\bar e_L e_R\)</span> mezclaría dos objetos que la débil trata distinto, y no está permitido.
+La masa del electrón la da su acoplo con el campo de Higgs (tema del Modelo Estándar).</em></p>
+</section>
+<section id="es-la-misma-en-todos-los-sistemas-inerciales">
+<h3>9.6. ¿Es la misma en todos los sistemas inerciales?<a class="headerlink" href="#es-la-misma-en-todos-los-sistemas-inerciales" title="Permalink to this heading">#</a></h3>
+<p>La corriente cargada une dos campos distintos, por ejemplo el electrón y su neutrino:</p>
+<div class="math notranslate nohighlight">
+\[
+j^\mu = \bar e\,\gamma^\mu\,\frac{1}{2}(1 - \gamma^5)\,\nu = \bar e_L\,\gamma^\mu\,\nu_L .
+\]</div>
+<p>Con una transformación de Lorentz, <span class="math notranslate nohighlight">\(\nu \to S\nu\)</span>, <span class="math notranslate nohighlight">\(\bar e \to \bar e\,S^{-1}\)</span>, y como <span class="math notranslate nohighlight">\(P_L\)</span> conmuta con <span class="math notranslate nohighlight">\(S\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+j'^\mu = \bar e\,S^{-1}\gamma^\mu P_L\,S\,\nu = \bar e\,(S^{-1}\gamma^\mu S)\,P_L\,\nu = \Lambda^\mu{}_\nu\;\bar e\,\gamma^\nu P_L\,\nu .
+\]</div>
+<ul class="simple">
+<li><p><strong>Su forma es la misma en todos los sistemas inerciales</strong>: sigue siendo una corriente entre partes L, <span class="math notranslate nohighlight">\(\bar e_L\gamma^\mu\nu_L\)</span>.
+Ningún observador ve intervenir la parte R.</p></li>
+<li><p><strong>Su valor no</strong>: es un <strong>cuadrivector</strong>, y sus componentes cambian como las de cualquier cuadrivector. Lo que es
+igual para todos es su contracción con otro cuadrivector, <span class="math notranslate nohighlight">\(j^\mu W_\mu\)</span> o <span class="math notranslate nohighlight">\(j_{lep}\cdot j_{had}\)</span>: un escalar, y con él <span class="math notranslate nohighlight">\(M_{fi}\)</span>.</p></li>
+<li><p><strong>Con la paridad, en cambio, la forma cambia</strong>: <span class="math notranslate nohighlight">\(\gamma^0\)</span> lleva <span class="math notranslate nohighlight">\(P_L\)</span> a <span class="math notranslate nohighlight">\(P_R\)</span> (sección 2.3), y la corriente se convierte en
+<span class="math notranslate nohighlight">\(\bar e_R\gamma^\mu\nu_R\)</span>, que no aparece en la teoría. Es la violación de la paridad.</p></li>
+</ul>
+<p><em>Cuestiones:</em></p>
+<ol class="arabic">
+<li><p>Comprueba que <span class="math notranslate nohighlight">\(U\)</span> (sección 3.1) es unitaria y que <span class="math notranslate nohighlight">\(U\gamma^5_{PD}U^\dagger = \mathrm{diag}(-I, I)\)</span> y <span class="math notranslate nohighlight">\(U\gamma^0_{PD}U^\dagger = \begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix}\)</span>.</p></li>
+<li><p>Comprueba <span class="math notranslate nohighlight">\(\gamma^0\gamma^\mu\gamma^5\gamma^0\)</span> para <span class="math notranslate nohighlight">\(\mu = 0\)</span> y <span class="math notranslate nohighlight">\(\mu = 3\)</span>, y deduce cómo se transforma la corriente axial bajo paridad.</p></li>
+<li><p>Calcula <span class="math notranslate nohighlight">\(P_R u_-\)</span> y <span class="math notranslate nohighlight">\(P_L u_-\)</span> con las matrices de Pauli-Dirac.</p></li>
+<li><p>Comprueba que las matrices de Weyl cumplen <span class="math notranslate nohighlight">\(\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu} I\)</span>.</p></li>
+<li><p>Deduce <span class="math notranslate nohighlight">\(u_\pm\)</span> de la sección 5.1 a partir de las ecuaciones de la 4.1. ¿Qué componentes sobreviven si <span class="math notranslate nohighlight">\(m = 0\)</span>?</p></li>
+<li><p>Comprueba que <span class="math notranslate nohighlight">\(\gamma^5\)</span> no conmuta con <span class="math notranslate nohighlight">\(H = \vec\alpha\cdot{\bf p} + \beta m\)</span>, salvo si <span class="math notranslate nohighlight">\(m = 0\)</span>, y escribe <span class="math notranslate nohighlight">\(H\)</span> en la base quiral.</p></li>
+<li><p><strong>Un <em>boost</em> no convierte L en R, pero cambia la proporción.</strong> Toma <span class="math notranslate nohighlight">\(u_+\)</span> en Pauli-Dirac, con <span class="math notranslate nohighlight">\({\bf p}\)</span> en <span class="math notranslate nohighlight">\(z\)</span> y rapidez <span class="math notranslate nohighlight">\(\eta\)</span>,
+y las direcciones quirales <span class="math notranslate nohighlight">\(e_R = (1, 0, 1, 0)\)</span>, <span class="math notranslate nohighlight">\(e_L = (1, 0, -1, 0)\)</span>.</p>
+<p>a) Escribe <span class="math notranslate nohighlight">\(u_+ = c_R\,e_R + c_L\,e_L\)</span> y comprueba que <span class="math notranslate nohighlight">\(c_R/c_L = e^{\eta}\)</span>.</p>
+<p>b) Aplica <span class="math notranslate nohighlight">\(S(\eta'\,\hat z)\)</span> de <a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a> (sección 3.5) a <span class="math notranslate nohighlight">\(e_R\)</span> y a <span class="math notranslate nohighlight">\(e_L\)</span>. ¿Qué les pasa?</p>
+<p>c) ¿Qué cociente tiene <span class="math notranslate nohighlight">\(S(\eta'\,\hat z)\,u_+\)</span>? ¿Qué espinor es?</p>
+<p>d) Toma <span class="math notranslate nohighlight">\(\eta' = -2\eta\)</span>, el observador que adelanta a la partícula. ¿Hacia dónde se mueve, qué helicidad tiene y
+qué parte pesa más? ¿Ha cambiado de quiralidad alguna de las dos partes?</p>
+</li>
+<li><p>Comprueba la tabla de la sección 9.3 para <span class="math notranslate nohighlight">\(\bar\Psi\gamma^\mu\gamma^5\Psi\)</span> y deduce que <span class="math notranslate nohighlight">\(\frac{1}{2}(V - A)\)</span> solo contiene la parte L.</p></li>
+<li><p>Con los espinores de <a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a> (sección 2.4), comprueba que <span class="math notranslate nohighlight">\(i\gamma^2 u_1^* = v_1\)</span> y <span class="math notranslate nohighlight">\(i\gamma^2 u_2^* = -v_2\)</span>. ¿Qué
+espín físico tienen <span class="math notranslate nohighlight">\(u_1\)</span> y <span class="math notranslate nohighlight">\(v_1\)</span>? En el límite <span class="math notranslate nohighlight">\(\kappa \to 1\)</span>, ¿qué autovalor de <span class="math notranslate nohighlight">\(\gamma^5\)</span> tiene cada uno?</p></li>
+<li><p>Comprueba que <span class="math notranslate nohighlight">\((\Psi^c)^c = \Psi\)</span>.</p></li>
+</ol>
+<details>
+<summary><b>Soluciones</b></summary>
+<ol class="arabic">
+<li><p><span class="math notranslate nohighlight">\(U U^\dagger = \frac{1}{2}\begin{pmatrix} I &amp; -I \\ I &amp; I \end{pmatrix}\begin{pmatrix} I &amp; I \\ -I &amp; I \end{pmatrix} = I\)</span>. <span class="math notranslate nohighlight">\(U\gamma^5_{PD} = \frac{1}{\sqrt 2}\begin{pmatrix} -I &amp; I \\ I &amp; I \end{pmatrix}\)</span>, y por <span class="math notranslate nohighlight">\(U^\dagger\)</span> da <span class="math notranslate nohighlight">\(\mathrm{diag}(-I, I)\)</span>.
+<span class="math notranslate nohighlight">\(U\gamma^0_{PD} = \frac{1}{\sqrt 2}\begin{pmatrix} I &amp; I \\ I &amp; -I \end{pmatrix}\)</span>, y por <span class="math notranslate nohighlight">\(U^\dagger\)</span> da <span class="math notranslate nohighlight">\(\begin{pmatrix} 0 &amp; I \\ I &amp; 0 \end{pmatrix}\)</span>.</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(\gamma^5\gamma^0 = -\gamma^0\gamma^5\)</span>: <span class="math notranslate nohighlight">\(\mu = 0\)</span>, <span class="math notranslate nohighlight">\(\gamma^0\gamma^0\gamma^5\gamma^0 = \gamma^5\gamma^0 = -\gamma^0\gamma^5\)</span>; <span class="math notranslate nohighlight">\(\mu = 3\)</span>,
+<span class="math notranslate nohighlight">\(\gamma^0\gamma^3\gamma^5\gamma^0 = -\gamma^0\gamma^3\gamma^0\gamma^5 = \gamma^3\gamma^5\)</span>. La parte temporal de la corriente axial
+cambia de signo y la espacial no: <span class="math notranslate nohighlight">\((j^0_A, {\bf j}_A) \to (-j^0_A, {\bf j}_A)\)</span>, como un momento angular.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P_R u_- = \frac{1}{2}(1 - \kappa)\,N\,(0, 1, 0, 1)\)</span> y <span class="math notranslate nohighlight">\(P_L u_- = \frac{1}{2}(1 + \kappa)\,N\,(0, 1, 0, -1)\)</span>: <span class="math notranslate nohighlight">\(u_-\)</span> es sobre todo L.</p></li>
+<li><p><span class="math notranslate nohighlight">\((\gamma^0)^2 = I\)</span>; <span class="math notranslate nohighlight">\((\gamma^k)^2 = \mathrm{diag}(-\sigma_k^2, -\sigma_k^2) = -I\)</span>; <span class="math notranslate nohighlight">\(\gamma^0\gamma^k = \mathrm{diag}(-\sigma_k, \sigma_k)\)</span> y
+<span class="math notranslate nohighlight">\(\gamma^k\gamma^0 = \mathrm{diag}(\sigma_k, -\sigma_k)\)</span>, que suman cero; y <span class="math notranslate nohighlight">\(\{\gamma^i, \gamma^j\} = -\mathrm{diag}(\{\sigma_i, \sigma_j\}, \{\sigma_i, \sigma_j\}) = -2\delta_{ij} I\)</span>.</p></li>
+<li><p>De la primera, <span class="math notranslate nohighlight">\((E + \vec\sigma\cdot{\bf p})\,u_L = m\,u_R\)</span>. Con <span class="math notranslate nohighlight">\({\bf p}\)</span> en <span class="math notranslate nohighlight">\(z\)</span> y <span class="math notranslate nohighlight">\(u_L = a\,\chi_\pm\)</span>, <span class="math notranslate nohighlight">\(u_R = b\,\chi_\pm\)</span>: <span class="math notranslate nohighlight">\((E \pm \mathrm{p})\,a = m\,b\)</span>.
+Con <span class="math notranslate nohighlight">\(a = \sqrt{E \mp \mathrm{p}}\)</span> sale <span class="math notranslate nohighlight">\(b = \sqrt{E \pm \mathrm{p}}\)</span>, porque <span class="math notranslate nohighlight">\((E + \mathrm{p})(E - \mathrm{p}) = m^2\)</span>; y <span class="math notranslate nohighlight">\(|a|^2 + |b|^2 = 2E\)</span>. Con <span class="math notranslate nohighlight">\(m = 0\)</span>, <span class="math notranslate nohighlight">\(E = \mathrm{p}\)</span>:
+<span class="math notranslate nohighlight">\(u_+ = \sqrt{2E}\,(0, 0, 1, 0)\)</span> es solo R, y <span class="math notranslate nohighlight">\(u_- = \sqrt{2E}\,(0, 1, 0, 0)\)</span> solo L.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma^5\)</span> anticonmuta con cada <span class="math notranslate nohighlight">\(\gamma^\mu\)</span>, así que conmuta con <span class="math notranslate nohighlight">\(\alpha^k = \gamma^0\gamma^k\)</span>, pero anticonmuta con <span class="math notranslate nohighlight">\(\beta = \gamma^0\)</span>:
+<span class="math notranslate nohighlight">\([\gamma^5, H] = m(\gamma^5\gamma^0 - \gamma^0\gamma^5) = 2m\,\gamma^5\gamma^0\)</span>. En la base quiral, <span class="math notranslate nohighlight">\(\alpha^k = \mathrm{diag}(-\sigma_k, \sigma_k)\)</span> y <span class="math notranslate nohighlight">\(\beta = \gamma^0\)</span>, y sale la
+matriz de la sección 5.3.</p></li>
+<li><p>a) <span class="math notranslate nohighlight">\(u_+ = N(1, 0, \kappa, 0) = \frac{1}{2}(1+\kappa)N\,e_R + \frac{1}{2}(1-\kappa)N\,e_L\)</span>, y
+<span class="math notranslate nohighlight">\(c_R/c_L = (1+\kappa)/(1-\kappa) = (1 + \tanh\frac{\eta}{2})/(1 - \tanh\frac{\eta}{2}) = e^{\eta}\)</span>.</p>
+<p>b) <span class="math notranslate nohighlight">\(\gamma^0\gamma^3\,e_R = e_R\)</span> y <span class="math notranslate nohighlight">\(\gamma^0\gamma^3\,e_L = -e_L\)</span>, así que <span class="math notranslate nohighlight">\(S(\eta'\,\hat z)\,e_R = e^{\eta'/2}\,e_R\)</span> y <span class="math notranslate nohighlight">\(S(\eta'\,\hat z)\,e_L = e^{-\eta'/2}\,e_L\)</span>. <strong>No cambian
+de dirección</strong>: <span class="math notranslate nohighlight">\(e_R\)</span> sigue siendo R y <span class="math notranslate nohighlight">\(e_L\)</span> sigue siendo L. Solo se <strong>reescalan</strong>, y de forma distinta, porque el
+<em>boost</em> no es unitario.</p>
+<p>c) <span class="math notranslate nohighlight">\(c_R/c_L \to e^{\eta + \eta'}\)</span>: es <span class="math notranslate nohighlight">\(u_+\)</span> con rapidez <span class="math notranslate nohighlight">\(\eta + \eta'\)</span> (los <em>boosts</em> en <span class="math notranslate nohighlight">\(z\)</span> suman rapideces).</p>
+<p>d) Con rapidez <span class="math notranslate nohighlight">\(-\eta\)</span> se mueve hacia <span class="math notranslate nohighlight">\(-z\)</span>, con el espín todavía hacia <span class="math notranslate nohighlight">\(+z\)</span>: <strong>helicidad negativa</strong>. El cociente es
+<span class="math notranslate nohighlight">\(e^{-\eta}\)</span>: pesa más la parte L, como corresponde a una helicidad negativa. Ninguna parte ha cambiado de
+quiralidad; lo que ha cambiado es cuánto pesa cada una.</p>
+</li>
+<li><p><span class="math notranslate nohighlight">\(\bar\Psi\gamma^\mu\gamma^5\Psi = \bar\Psi\gamma^\mu\gamma^5(\Psi_L + \Psi_R) = -\bar\Psi\gamma^\mu\Psi_L + \bar\Psi\gamma^\mu\Psi_R\)</span>. Y <span class="math notranslate nohighlight">\(\bar\Psi\gamma^\mu\Psi_L = \bar\Psi\gamma^\mu P_L\Psi_L = \bar\Psi P_R\gamma^\mu\Psi_L = \bar\Psi_L\gamma^\mu\Psi_L\)</span>
+(igual con R). Restando, <span class="math notranslate nohighlight">\(\bar\Psi\gamma^\mu\Psi - \bar\Psi\gamma^\mu\gamma^5\Psi = 2\bar\Psi_L\gamma^\mu\Psi_L\)</span>.</p></li>
+<li><p>En Pauli-Dirac, <span class="math notranslate nohighlight">\(i\gamma^2\)</span> tiene filas <span class="math notranslate nohighlight">\((0, 0, 0, 1)\)</span>, <span class="math notranslate nohighlight">\((0, 0, -1, 0)\)</span>, <span class="math notranslate nohighlight">\((0, -1, 0, 0)\)</span> y <span class="math notranslate nohighlight">\((1, 0, 0, 0)\)</span>. Los <span class="math notranslate nohighlight">\(u_s\)</span> son reales:
+<span class="math notranslate nohighlight">\(i\gamma^2 u_1 = N(0, -\kappa, 0, 1) = v_1\)</span> e <span class="math notranslate nohighlight">\(i\gamma^2 u_2 = N(-\kappa, 0, -1, 0) = -v_2\)</span> (un signo global, una fase sin efecto).
+<span class="math notranslate nohighlight">\(u_1\)</span> tiene espín <span class="math notranslate nohighlight">\(+\frac{1}{2}\)</span> y el espín físico de <span class="math notranslate nohighlight">\(v_1\)</span> también es <span class="math notranslate nohighlight">\(+\frac{1}{2}\)</span> (<a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>, sección 3):
+con el mismo momento, la misma helicidad. Con <span class="math notranslate nohighlight">\(\kappa = 1\)</span>, <span class="math notranslate nohighlight">\(\gamma^5 u_1 = N(1, 0, 1, 0) = +u_1\)</span> y <span class="math notranslate nohighlight">\(\gamma^5 v_1 = N(0, 1, 0, -1) = -v_1\)</span>:
+el autovalor de <span class="math notranslate nohighlight">\(\gamma^5\)</span> cambia de signo, y <span class="math notranslate nohighlight">\(v_1\)</span>, de helicidad positiva, es el antifermión a derechas, <span class="math notranslate nohighlight">\(v_1 = P_L v_1\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\((i\gamma^2\Psi^*)^* = -i(\gamma^2)^*\Psi = i\gamma^2\Psi\)</span>, y <span class="math notranslate nohighlight">\(i\gamma^2\,i\gamma^2\Psi = -(\gamma^2)^2\Psi = \Psi\)</span>, porque <span class="math notranslate nohighlight">\((\gamma^2)^2 = -I\)</span>.</p></li>
+</ol>
+</details></section>
+</section>
+<section id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>[MT] Mark Thomson, <em>Modern Particle Physics</em>, Cambridge University Press (2013): quiralidad, sección 6.4; helicidad, sección 4.8;
+conjugación de carga, sección 4.7.5; <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(P\)</span> y <span class="math notranslate nohighlight">\(CP\)</span> en el neutrino, sección 13.5.2.</p></li>
+<li><p>[PS] M. E. Peskin y D. V. Schroeder, <em>An Introduction to Quantum Field Theory</em>, Westview (1995): representación de Weyl y
+espinores de Weyl, secciones 3.2–3.4 (con la misma convención, <span class="math notranslate nohighlight">\(\gamma^5 = \mathrm{diag}(-1, 1)\)</span>); cuantización del campo
+de Dirac, sección 3.5.</p></li>
+<li><p><a class="reference internal" href="ext-dirac.html"><span class="doc std std-doc">ext-dirac</span></a>: la ecuación de Dirac, los espinores, las transformaciones de Lorentz y las formas bilineales.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ext-dirac.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Extensión: La ecuación de Dirac</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ext-grupos.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Extensión: Las simetrías internas</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notacion">Notación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-quiralidad">1. La quiralidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-autovalores-de-gamma-5">1.1. Los autovalores de <span class="math notranslate nohighlight">\(\gamma^5\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-pauli-dirac">1.2. En Pauli-Dirac</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-proyectores-y-la-paridad">2. Los proyectores y la paridad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-proyectores-de-quiralidad">2.1. Los proyectores de quiralidad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-paridad-en-los-espinores">2.2. La paridad en los espinores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-paridad-intercambia-las-quiralidades">2.3. La paridad intercambia las quiralidades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-conjugacion-de-carga">2.4. La conjugación de carga</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-quiralidad-de-las-antiparticulas">2.5. La quiralidad de las antipartículas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-base-quiral">3. La base quiral</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-representacion-de-weyl">3.1. La representación de Weyl</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-espinor-partido-en-dos">3.2. El espinor, partido en dos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fermiones-sin-masa-los-espinores-de-weyl">4. Fermiones sin masa: los espinores de Weyl</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-ecuacion-de-dirac-en-la-base-quiral">4.1. La ecuación de Dirac en la base quiral</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-masa-las-dos-partes-se-separan">4.2. Sin masa, las dos partes se separan</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fermiones-con-masa">5. Fermiones con masa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-soluciones">5.1. Las soluciones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-termino-de-masa">5.2. El término de masa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-quiralidad-no-se-conserva-al-propagarse">5.3. La quiralidad no se conserva al propagarse</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotaciones-y-boosts-en-la-base-quiral">6. Rotaciones y <em>boosts</em> en la base quiral</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-dos-partes-se-transforman-por-separado">6.1. Las dos partes se transforman por separado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-el-espinor-en-movimiento-sin-resolver-la-ecuacion">6.2. Ejemplo: el espinor en movimiento, sin resolver la ecuación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#helicidad-y-quiralidad">7. Helicidad y quiralidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-estado-de-helicidad-en-sus-dos-quiralidades">7.1. Un estado de helicidad, en sus dos quiralidades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">7.2. En Pauli-Dirac</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#helicidad-y-quiralidad-bajo-transformaciones">8. Helicidad y quiralidad bajo transformaciones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cada-una-tiene-una-virtud-y-un-defecto">8.1. Cada una tiene una virtud y un defecto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-adelantar-a-la-particula">8.2. Ejemplo: adelantar a la partícula</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#las-formas-bilineales-y-la-quiralidad">9. Las formas bilineales y la quiralidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-adjuntos-de-las-partes-quirales">9.1. Los adjuntos de las partes quirales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-escalar-y-el-pseudoescalar-mezclan-las-quiralidades">9.2. El escalar y el pseudoescalar mezclan las quiralidades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-vector-y-el-axial-no-las-mezclan">9.3. El vector y el axial no las mezclan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-la-base-quiral">9.4. En la base quiral</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-significa">9.5. Qué significa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#es-la-misma-en-todos-los-sistemas-inerciales">9.6. ¿Es la misma en todos los sistemas inerciales?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por J. Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
