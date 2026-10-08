@@ -21,8 +21,7 @@ parts:
       - file: notebooks/introduccion.ipynb
       - file: notebooks/perspectivas.ipynb
       - file: notebooks/leptones.ipynb
-      # Pendiente de revisión:
-      # - file: notebooks/quarks_hadrons.ipynb
+      - file: notebooks/quarks_hadrons.ipynb
       - file: notebooks/sm.ipynb
 
   # ------------------------------------------------------------ 2. Anexos: extensiones
@@ -33,6 +32,7 @@ parts:
       - file: notebooks/ext-cinematica.ipynb
       - file: notebooks/ext-dirac.ipynb
       - file: notebooks/ext-quiral.ipynb
+      - file: notebooks/ext-grupos.ipynb
       - file: notebooks/ext-feynman.ipynb
       - file: notebooks/ext-sm.ipynb
       # - file: notebooks/ext-dirac-old.ipynb   (versión anterior, sin publicar)
@@ -46,7 +46,6 @@ parts:
 
 # Pendientes de revisión:
 #   notebooks/ext-trans-Lorentz.ipynb
-#   notebooks/ext-grupos.ipynb
 #   notebooks/deteccion.ipynb
 #   notebooks/bols/boletin_desintegracion_proton.ipynb   (versión larga, sin sincronizar)
 #   notebooks/bols/boletin_II_2627.ipynb, boletin_II_2627_higgs_4l.ipynb
