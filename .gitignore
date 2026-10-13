@@ -22,3 +22,6 @@ notebooks/imgs/foto_publica.jpg
 
 # Almacén local de notebooks antiguos / de trabajo.
 notebooks/archive/store/
+
+# datos del ejercicio del tau: se dan en el aula virtual, no en GitHub
+notebooks/bols/datos/taus_45GeV.csv
