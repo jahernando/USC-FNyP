@@ -43,8 +43,9 @@ parts:
       - file: notebooks/bols/boletin_I_2627.ipynb           # boletín I, cinemática relativista, con soluciones
       - file: notebooks/bols/boletin_II_2627.ipynb          # boletín II, observables, con soluciones
       - file: notebooks/bols/boletin_II_2627_higgs_4l.ipynb # boletín II, ejercicio 5 guiado: H -> 4 leptones con datos de CMS
+      - file: notebooks/bols/boletin_III_2627_clase.ipynb   # boletín III, detectores y estadística, versión dada en clase (8 ej.)
 
 # Sin publicar:
-#   notebooks/bols/boletin_III_2627.ipynb   (en preparación)
+#   notebooks/bols/boletin_III_2627.ipynb   (versión reordenada de 11 ejercicios, en preparación)
 #   notebooks/bols/FNP_practica1_cinematica_masa_invariante.ipynb
 # Los notebooks antiguos o sin uso están en notebooks/archive/ (no entran en el Book).
