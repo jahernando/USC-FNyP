@@ -1,0 +1,840 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>La paridad se rompe en la desintegración del muón &#8212; Introducción a la Física de Partículas - USC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/bols/boletin_IV_2627_muon';</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="prev" title="Partículas — boletín IV" href="boletin_IV_2627.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Introducción a la Física de Partículas - USC - Home"/>
+    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Introducción a la Física de Partículas - USC - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Capítulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../introduccion.html">Introducción a Física de Partículas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../perspectivas.html">Perspectivas: experimental y teórica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../leptones.html">Leptones: la mano izquierda de la Naturaleza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quarks_hadrons.html">Quarks y hadrones: el color que no se ve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sm.html">El Modelo Estándar: el vacío no está vacío</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: extensiones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ext-cinematica.html">Extensión: Cinemática relativista y espacio fásico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-dirac.html">Extensión: La ecuación de Dirac</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-quiral.html">Extensión: La quiralidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-grupos.html">Extensión: Las simetrías internas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-feynman.html">Extensión: Diagramas de Feynman y propagadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ext-sm.html">Extensión: El Modelo Estándar</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos: boletines</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="boletin_inicio_2627.html">¿Se desintegra el protón?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boletin_I_2627.html">Partículas — boletín I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boletin_II_2627.html">Partículas — boletín II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boletin_II_2627_higgs_4l.html">Un pico sobre el fondo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boletin_III_2627_clase.html">Partículas — boletín III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boletin_IV_2627.html">Partículas — boletín IV</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">La paridad se rompe en la desintegración del muón</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/jahernando/USC-FNyP/main?urlpath=tree/./notebooks/bols/boletin_IV_2627_muon.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/jahernando/USC-FNyP/blob/main/./notebooks/bols/boletin_IV_2627_muon.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jahernando/USC-FNyP/issues/new?title=Issue%20on%20page%20%2Fnotebooks/bols/boletin_IV_2627_muon.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notebooks/bols/boletin_IV_2627_muon.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>La paridad se rompe en la desintegración del muón</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boletin-iv-ejercicio-10-guiado-mu-to-e-nu-e-bar-nu-mu">Boletín IV, ejercicio 10 (guiado): <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivos">Objetivos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-experimento">El experimento</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-y-b-con-lapiz-y-papel-las-helicidades">(a) y (b) Con lápiz y papel: las helicidades</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-la-asimetria-delante-atras">(c) La asimetría delante-atrás</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-la-simulacion">(d) La simulación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-v-a-o-v-a">(e) <span class="math notranslate nohighlight">\(V - A\)</span> o <span class="math notranslate nohighlight">\(V + A\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="la-paridad-se-rompe-en-la-desintegracion-del-muon">
+<h1>La paridad se rompe en la desintegración del muón<a class="headerlink" href="#la-paridad-se-rompe-en-la-desintegracion-del-muon" title="Permalink to this heading">#</a></h1>
+<section id="boletin-iv-ejercicio-10-guiado-mu-to-e-nu-e-bar-nu-mu">
+<h2>Boletín IV, ejercicio 10 (guiado): <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu\)</span><a class="headerlink" href="#boletin-iv-ejercicio-10-guiado-mu-to-e-nu-e-bar-nu-mu" title="Permalink to this heading">#</a></h2>
+<p>Jose A. Hernando</p>
+<p><em>Departamento de Física de Partículas. Universidade de Santiago de Compostela</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Configuración e imports</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Colores Okabe-Ito (legibles con daltonismo), y además estilos de línea distintos</span>
+<span class="n">AZUL</span><span class="p">,</span> <span class="n">NARANJA</span><span class="p">,</span> <span class="n">BERMELLON</span><span class="p">,</span> <span class="n">VERDE</span> <span class="o">=</span> <span class="s1">'#0072B2'</span><span class="p">,</span> <span class="s1">'#E69F00'</span><span class="p">,</span> <span class="s1">'#D55E00'</span><span class="p">,</span> <span class="s1">'#009E73'</span>
+
+<span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">1957</span><span class="p">)</span>      <span class="c1"># semilla fija: todos obtenemos los mismos números</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Usar la <strong>helicidad</strong> de los neutrinos y la <strong>quiralidad</strong> del positrón (<span class="math notranslate nohighlight">\(V - A\)</span>) para predecir hacia dónde
+sale el <span class="math notranslate nohighlight">\(e^+\)</span> (ejercicios 6–9 del boletín).</p></li>
+<li><p><strong>Simular</strong> la desintegración con la distribución de Michel, por aceptación-rechazo.</p></li>
+<li><p>Medir la <strong>asimetría delante-atrás</strong> y, con ella, el parámetro <span class="math notranslate nohighlight">\(\xi\)</span> que mide la violación de la paridad.</p></li>
+<li><p>Ver qué observable distingue <span class="math notranslate nohighlight">\(V - A\)</span> de <span class="math notranslate nohighlight">\(V + A\)</span> y cuál no.</p></li>
+</ul>
+<p>La teoría está en <a class="reference internal" href="../leptones.html"><span class="doc std std-doc">leptones</span></a>, sección 2 (el experimento de Wu y los miradores
+<em>Los parámetros de Michel</em> y <em>Otro experimento de Wu, sin núcleos</em>).</p>
+</section>
+<section id="el-experimento">
+<h2>El experimento<a class="headerlink" href="#el-experimento" title="Permalink to this heading">#</a></h2>
+<p>En 1957, a la vez que Wu, R. Garwin, L. Lederman y M. Weinrich pararon en un bloque de carbono los <span class="math notranslate nohighlight">\(\mu^+\)</span> de
+<span class="math notranslate nohighlight">\(\pi^+ \to \mu^+ + \nu_\mu\)</span> y contaron los positrones de <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu\)</span> en función del
+ángulo. Los muones conservan su polarización mientras se paran.</p>
+<p>Despreciando la masa del electrón, con <span class="math notranslate nohighlight">\(x = E_e/E_{\max}\)</span>, <span class="math notranslate nohighlight">\(E_{\max} = m_\mu/2 = 52.8\)</span> MeV, y <span class="math notranslate nohighlight">\(\theta\)</span> el ángulo
+entre el <span class="math notranslate nohighlight">\(e^+\)</span> y el <strong>espín</strong> del <span class="math notranslate nohighlight">\(\mu^+\)</span>, la teoría <span class="math notranslate nohighlight">\(V - A\)</span> predice</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mathrm{d}^2\Gamma}{\mathrm{d}x\,\mathrm{d}\cos\theta} \propto x^2\left[(3 - 2x) + \xi\,(2x - 1)\cos\theta\right],
+\]</div>
+<p>con <span class="math notranslate nohighlight">\(\xi = +1\)</span>. Con <span class="math notranslate nohighlight">\(V + A\)</span> sería <span class="math notranslate nohighlight">\(\xi = -1\)</span>, y si la interacción conservase la paridad, <span class="math notranslate nohighlight">\(\xi = 0\)</span>: la imagen
+especular (<span class="math notranslate nohighlight">\(\theta \to \pi - \theta\)</span>) sería igual de probable.</p>
+</section>
+<section id="a-y-b-con-lapiz-y-papel-las-helicidades">
+<h2>(a) y (b) Con lápiz y papel: las helicidades<a class="headerlink" href="#a-y-b-con-lapiz-y-papel-las-helicidades" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — ¿Hacia dónde sale el positrón?</b></p>
+<ol class="arabic simple">
+<li><p><strong>(a)</strong> El pión tiene espín <span class="math notranslate nohighlight">\(0\)</span> y el <span class="math notranslate nohighlight">\(\nu_\mu\)</span> helicidad negativa. En el reposo del pión, ¿hacia dónde apunta el espín
+del <span class="math notranslate nohighlight">\(\mu^+\)</span> respecto a su momento? ¿Qué helicidad tiene?</p></li>
+<li><p><strong>(b)</strong> En el extremo del espectro, <span class="math notranslate nohighlight">\(x = 1\)</span>, el <span class="math notranslate nohighlight">\(e^+\)</span> lleva el máximo momento: los dos neutrinos salen juntos, en
+sentido opuesto. ¿Cuánto suman sus espines? El <span class="math notranslate nohighlight">\(e^+\)</span> de <span class="math notranslate nohighlight">\(V - A\)</span> es un antifermión <strong>a derechas</strong> (ext-quiral,
+sección 2.5); sin masa, ¿qué helicidad tiene? ¿Hacia dónde sale entonces respecto al espín del <span class="math notranslate nohighlight">\(\mu^+\)</span>?</p></li>
+<li><p>Comprueba que la fórmula da <span class="math notranslate nohighlight">\(1 + \cos\theta\)</span> en <span class="math notranslate nohighlight">\(x = 1\)</span>. ¿Cuántos positrones salen en <span class="math notranslate nohighlight">\(\theta = \pi\)</span>?</p></li>
+</ol>
+</div><details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p>El <span class="math notranslate nohighlight">\(\mu^+\)</span> y el <span class="math notranslate nohighlight">\(\nu_\mu\)</span> salen en sentidos opuestos, y sus espines tienen que sumar <span class="math notranslate nohighlight">\(0\)</span> a lo largo de esa
+dirección (el momento angular orbital no tiene componente a lo largo del momento). El <span class="math notranslate nohighlight">\(\nu_\mu\)</span> tiene el espín
+opuesto a su momento; el <span class="math notranslate nohighlight">\(\mu^+\)</span>, opuesto al del <span class="math notranslate nohighlight">\(\nu_\mu\)</span>, apunta en el sentido del momento del <span class="math notranslate nohighlight">\(\nu_\mu\)</span>, es
+decir, <strong>opuesto al momento del <span class="math notranslate nohighlight">\(\mu^+\)</span></strong>: helicidad negativa. (Para un antifermión de <span class="math notranslate nohighlight">\(V - A\)</span> es la helicidad
+«equivocada»: solo es posible porque el muón tiene masa. Es la supresión por helicidad de leptones, sección 2.8.)</p></li>
+<li><p>El <span class="math notranslate nohighlight">\(\nu_e\)</span> tiene helicidad <span class="math notranslate nohighlight">\(-\)</span> y el <span class="math notranslate nohighlight">\(\bar\nu_\mu\)</span>, <span class="math notranslate nohighlight">\(+\)</span>. Si van en el mismo sentido, sus espines son opuestos y
+suman <span class="math notranslate nohighlight">\(0\)</span>. El espín <span class="math notranslate nohighlight">\(\frac12\)</span> del <span class="math notranslate nohighlight">\(\mu^+\)</span> lo tiene que llevar entero el <span class="math notranslate nohighlight">\(e^+\)</span>, en la misma dirección. El <span class="math notranslate nohighlight">\(e^+\)</span> a
+derechas y sin masa tiene helicidad <span class="math notranslate nohighlight">\(+\)</span>: su momento apunta como su espín, es decir, <strong>como el espín del
+<span class="math notranslate nohighlight">\(\mu^+\)</span></strong>. Sale hacia delante, <span class="math notranslate nohighlight">\(\theta = 0\)</span>.</p></li>
+<li><p>En <span class="math notranslate nohighlight">\(x = 1\)</span>, <span class="math notranslate nohighlight">\((3 - 2) + \xi(2 - 1)\cos\theta = 1 + \cos\theta\)</span> con <span class="math notranslate nohighlight">\(\xi = 1\)</span>: es máximo en <span class="math notranslate nohighlight">\(\theta = 0\)</span> y <strong>nulo</strong> en
+<span class="math notranslate nohighlight">\(\theta = \pi\)</span>. Con <span class="math notranslate nohighlight">\(V + A\)</span> (<span class="math notranslate nohighlight">\(\xi = -1\)</span>) sería al revés.</p></li>
+</ol>
+</details></section>
+<section id="c-la-asimetria-delante-atras">
+<h2>(c) La asimetría delante-atrás<a class="headerlink" href="#c-la-asimetria-delante-atras" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — Integrar en la energía</b></p>
+<ol class="arabic simple">
+<li><p>Integra la distribución en <span class="math notranslate nohighlight">\(x\)</span> entre <span class="math notranslate nohighlight">\(0\)</span> y <span class="math notranslate nohighlight">\(1\)</span> y comprueba que
+<span class="math notranslate nohighlight">\(\dfrac{\mathrm{d}\Gamma}{\mathrm{d}\cos\theta} \propto 1 + \dfrac{\xi}{3}\cos\theta\)</span>.</p></li>
+<li><p>Define <span class="math notranslate nohighlight">\(N_F\)</span> (positrones con <span class="math notranslate nohighlight">\(\cos\theta &gt; 0\)</span>) y <span class="math notranslate nohighlight">\(N_B\)</span> (con <span class="math notranslate nohighlight">\(\cos\theta &lt; 0\)</span>). Demuestra que la asimetría
+<span class="math notranslate nohighlight">\(A_{FB} = (N_F - N_B)/(N_F + N_B)\)</span> vale <span class="math notranslate nohighlight">\(\xi/6\)</span>.</p></li>
+</ol>
+</div><details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\int_0^1 x^2(3 - 2x)\,\mathrm{d}x = 1 - \frac12 = \frac12\)</span> y <span class="math notranslate nohighlight">\(\int_0^1 x^2(2x - 1)\,\mathrm{d}x = \frac12 - \frac13 = \frac16\)</span>. Luego
+<span class="math notranslate nohighlight">\(\mathrm{d}\Gamma/\mathrm{d}\cos\theta \propto \frac12 + \frac{\xi}{6}\cos\theta = \frac12\left(1 + \frac{\xi}{3}\cos\theta\right)\)</span>.</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(1 + a\cos\theta\)</span>: <span class="math notranslate nohighlight">\(N_F \propto \int_0^1 (1 + a c)\,\mathrm{d}c = 1 + \frac{a}{2}\)</span> y <span class="math notranslate nohighlight">\(N_B \propto 1 - \frac{a}{2}\)</span>, así que
+<span class="math notranslate nohighlight">\(A_{FB} = \frac{a}{2} = \frac{\xi}{6}\)</span>. Integrada, la asimetría es pequeña: los positrones de baja energía van
+ligeramente hacia atrás y diluyen la de los rápidos.</p></li>
+</ol>
+</details></section>
+<section id="d-la-simulacion">
+<h2>(d) La simulación<a class="headerlink" href="#d-la-simulacion" title="Permalink to this heading">#</a></h2>
+<p><strong>Aceptación-rechazo.</strong> Para generar puntos <span class="math notranslate nohighlight">\((x, \cos\theta)\)</span> con densidad <span class="math notranslate nohighlight">\(f(x, \cos\theta)\)</span>, se generan uniformes
+en el rectángulo <span class="math notranslate nohighlight">\([0, 1] \times [-1, 1]\)</span> y una altura <span class="math notranslate nohighlight">\(u\)</span> uniforme en <span class="math notranslate nohighlight">\([0, f_{\max}]\)</span>, y se aceptan los que quedan
+por debajo, <span class="math notranslate nohighlight">\(u &lt; f\)</span>. Aquí <span class="math notranslate nohighlight">\(f_{\max} = 2\)</span> (en <span class="math notranslate nohighlight">\(x = 1\)</span>, <span class="math notranslate nohighlight">\(\cos\theta = \xi\)</span>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">genera</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">xi</span><span class="p">):</span>
+    <span class="c1"># n desintegraciones (x, cos theta) con d2G/dx dcos ∝ x^2 [(3 - 2x) + xi (2x - 1) cos]</span>
+    <span class="n">xs</span><span class="p">,</span> <span class="n">cs</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="p">((</span><span class="mi">3</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">xi</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
+        <span class="n">ok</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">f</span>          <span class="c1"># f &lt;= 2 en todo el dominio si |xi| &lt;= 1</span>
+        <span class="n">xs</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">ok</span><span class="p">]);</span> <span class="n">cs</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">ok</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">xs</span><span class="p">[:</span><span class="n">n</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">cs</span><span class="p">[:</span><span class="n">n</span><span class="p">])</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">asimetria</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+    <span class="c1"># A_FB y su error binomial, sqrt((1 - A^2)/N)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">c</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">c</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">))</span> <span class="o">/</span> <span class="n">n</span>
+    <span class="k">return</span> <span class="n">a</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="mi">1</span> <span class="o">-</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — Simula 10 000 desintegraciones</b></p>
+<ol class="arabic simple">
+<li><p>Genera <span class="math notranslate nohighlight">\(N = 10^4\)</span> desintegraciones con <span class="math notranslate nohighlight">\(\xi = 1\)</span>. ¿Qué fracción de las propuestas se acepta? ¿Por qué no importa
+para el resultado?</p></li>
+<li><p>Dibuja el espectro en <span class="math notranslate nohighlight">\(x\)</span> y compáralo con <span class="math notranslate nohighlight">\(x^2(3 - 2x)\)</span>.</p></li>
+<li><p>Dibuja la distribución en <span class="math notranslate nohighlight">\(\cos\theta\)</span> por separado para <span class="math notranslate nohighlight">\(x &lt; \frac12\)</span> y <span class="math notranslate nohighlight">\(x &gt; \frac12\)</span>. ¿Por qué cambia de signo la
+asimetría? Calcula la pendiente esperada en cada caso.</p></li>
+<li><p>Mide <span class="math notranslate nohighlight">\(A_{FB}\)</span> con todos los sucesos y deduce <span class="math notranslate nohighlight">\(\xi = 6A_{FB}\)</span> con su error.</p></li>
+<li><p>¿Cuántas desintegraciones hacen falta para excluir que se conserva la paridad (<span class="math notranslate nohighlight">\(\xi = 0\)</span>) a <span class="math notranslate nohighlight">\(5\sigma\)</span>?
+¿Y para medir <span class="math notranslate nohighlight">\(\xi\)</span> con un 1 % de error?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">10_000</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">genera</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">xi</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="n">bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span>
+<span class="n">a1</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">'step'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">AZUL</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'simulación, $V - A$'</span><span class="p">)</span>
+<span class="n">xx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+<span class="n">a1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">N</span><span class="o">*</span><span class="p">(</span><span class="n">bins</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">bins</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">/</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">xx</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">xx</span><span class="p">),</span> <span class="s1">'k--'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">'$x^2(3 - 2x)$'</span><span class="p">)</span>
+<span class="n">a1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">'$x = E_e/E_{\max}$'</span><span class="p">);</span> <span class="n">a1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'sucesos'</span><span class="p">);</span> <span class="n">a1</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">bc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">sel</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">ls</span><span class="p">,</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="p">[(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">NARANJA</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'x &lt; 1/2'</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">BERMELLON</span><span class="p">,</span> <span class="s1">'-.'</span><span class="p">,</span> <span class="s1">'x &gt; 1/2'</span><span class="p">)]:</span>
+    <span class="n">a2</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">sel</span><span class="p">],</span> <span class="n">bc</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">'step'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">col</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="n">ls</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'$'</span> <span class="o">+</span> <span class="n">nombre</span> <span class="o">+</span> <span class="s1">'$'</span><span class="p">)</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="n">asimetria</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">sel</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="si">{:8s}</span><span class="s1">: </span><span class="si">{:5d}</span><span class="s1"> sucesos, A_FB = </span><span class="si">{:+.3f}</span><span class="s1"> ± </span><span class="si">{:.3f}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">sel</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span> <span class="n">a</span><span class="p">,</span> <span class="n">s</span><span class="p">))</span>
+<span class="n">a2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">'$\cos\theta$ (respecto al espín del $\mu^+$)'</span><span class="p">);</span> <span class="n">a2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'sucesos'</span><span class="p">)</span>
+<span class="n">a2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">);</span> <span class="n">a2</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">'upper left'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">a</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="n">asimetria</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'todos   : A_FB = </span><span class="si">{:.3f}</span><span class="s1"> ± </span><span class="si">{:.3f}</span><span class="s1">  -&gt;  xi = </span><span class="si">{:.2f}</span><span class="s1"> ± </span><span class="si">{:.2f}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="mi">6</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="mi">6</span><span class="o">*</span><span class="n">s</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x &lt; 1/2 :  1902 sucesos, A_FB = -0.058 ± 0.023
+x &gt; 1/2 :  8098 sucesos, A_FB = +0.205 ± 0.011
+</pre></div>
+</div>
+<img alt="../../_images/72dcfa35f3f88af743f39f73537bed47a07f2e47f9a8cd685a2f84252b701967.png" src="../../_images/72dcfa35f3f88af743f39f73537bed47a07f2e47f9a8cd685a2f84252b701967.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>todos   : A_FB = 0.155 ± 0.010  -&gt;  xi = 0.93 ± 0.06
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p>La eficiencia es el volumen bajo <span class="math notranslate nohighlight">\(f\)</span> entre el de la caja: <span class="math notranslate nohighlight">\(\frac{\int f}{2 \times 2} = \frac{2 \times \frac12}{4} = 25\,\%\)</span>
+(la integral en <span class="math notranslate nohighlight">\(\cos\theta\)</span> da <span class="math notranslate nohighlight">\(2\)</span>, y en <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(\frac12\)</span>). Solo cuesta tiempo: los sucesos aceptados siguen la
+distribución <span class="math notranslate nohighlight">\(f\)</span> igual.</p></li>
+<li><p>El espectro sigue <span class="math notranslate nohighlight">\(x^2(3 - 2x)\)</span>: crece hasta el extremo, <span class="math notranslate nohighlight">\(x = 1\)</span>. El 81 % de los positrones tiene <span class="math notranslate nohighlight">\(x &gt; \frac12\)</span>.</p></li>
+<li><p>Integrando en cada intervalo, la pendiente <span class="math notranslate nohighlight">\(a\)</span> de <span class="math notranslate nohighlight">\(1 + a\cos\theta\)</span> es
+<span class="math notranslate nohighlight">\(a = \xi\,\frac{\int x^2(2x - 1)}{\int x^2(3 - 2x)}\)</span>: <span class="math notranslate nohighlight">\(-0.11\)</span> para <span class="math notranslate nohighlight">\(x &lt; \frac12\)</span> (<span class="math notranslate nohighlight">\(A_{FB} = a/2 = -0.06\)</span>) y <span class="math notranslate nohighlight">\(+0.44\)</span> para
+<span class="math notranslate nohighlight">\(x &gt; \frac12\)</span> (<span class="math notranslate nohighlight">\(A_{FB} = +0.22\)</span>). El factor <span class="math notranslate nohighlight">\((2x - 1)\)</span> cambia de signo en <span class="math notranslate nohighlight">\(x = \frac12\)</span>: los positrones lentos salen
+ligeramente hacia atrás. El argumento de (b) solo vale cerca de <span class="math notranslate nohighlight">\(x = 1\)</span>: con <span class="math notranslate nohighlight">\(x \to 0\)</span> los dos neutrinos
+salen opuestos, sus espines se suman, y el <span class="math notranslate nohighlight">\(e^+\)</span> ya no tiene por qué llevar el del muón. Con esta semilla,
+<span class="math notranslate nohighlight">\(A_{FB} = -0.06 \pm 0.02\)</span> y <span class="math notranslate nohighlight">\(+0.21 \pm 0.01\)</span>.</p></li>
+<li><p>Con esta semilla, <span class="math notranslate nohighlight">\(A_{FB} = 0.155 \pm 0.010\)</span>, es decir, <span class="math notranslate nohighlight">\(\xi = 0.93 \pm 0.06\)</span>: compatible con <span class="math notranslate nohighlight">\(1\)</span> (a <span class="math notranslate nohighlight">\(1.2\sigma\)</span>).
+Con otra semilla saldrá otro número; la dispersión entre semillas es el error, <span class="math notranslate nohighlight">\(\pm 0.06\)</span>.</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(A = \frac16\)</span> y <span class="math notranslate nohighlight">\(\sigma_A \simeq 1/\sqrt N\)</span>: <span class="math notranslate nohighlight">\(A\sqrt N = 5\)</span> da <span class="math notranslate nohighlight">\(N = 900\)</span>. Para <span class="math notranslate nohighlight">\(\sigma_\xi/\xi = 6\sigma_A = 0.01\)</span>,
+<span class="math notranslate nohighlight">\(N \simeq (6/0.01)^2 \simeq 3.6\times10^5\)</span>. Garwin, Lederman y Weinrich vieron la asimetría en unos días;
+los experimentos actuales (TWIST, en TRIUMF) han acumulado <span class="math notranslate nohighlight">\(\sim 10^{10}\)</span> desintegraciones.</p></li>
+</ol>
+</details></section>
+<section id="e-v-a-o-v-a">
+<h2>(e) <span class="math notranslate nohighlight">\(V - A\)</span> o <span class="math notranslate nohighlight">\(V + A\)</span><a class="headerlink" href="#e-v-a-o-v-a" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title"><b>[>] Taller — ¿Qué observable los distingue?</b></p>
+<ol class="arabic simple">
+<li><p>Genera otras <span class="math notranslate nohighlight">\(10^4\)</span> desintegraciones con <span class="math notranslate nohighlight">\(\xi = -1\)</span> (<span class="math notranslate nohighlight">\(V + A\)</span>).</p></li>
+<li><p>Compara los dos espectros en <span class="math notranslate nohighlight">\(x\)</span>. ¿Los distingue?</p></li>
+<li><p>Compara las distribuciones en <span class="math notranslate nohighlight">\(\cos\theta\)</span> para <span class="math notranslate nohighlight">\(x &gt; \frac12\)</span>. ¿Y ahora?</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(\xi = 0\)</span>, ¿cómo serían? ¿Qué mide entonces <span class="math notranslate nohighlight">\(\xi\)</span>?</p></li>
+</ol>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x2</span><span class="p">,</span> <span class="n">c2</span> <span class="o">=</span> <span class="n">genera</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">xi</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">a1</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span>  <span class="n">bins</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">'step'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">AZUL</span><span class="p">,</span>      <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>          <span class="n">label</span><span class="o">=</span><span class="s1">'$V - A$'</span><span class="p">)</span>
+<span class="n">a1</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">'step'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">BERMELLON</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">'--'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'$V + A$'</span><span class="p">)</span>
+<span class="n">a1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">'$x = E_e/E_{\max}$'</span><span class="p">);</span> <span class="n">a1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'sucesos'</span><span class="p">);</span> <span class="n">a1</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">a2</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">],</span>   <span class="n">bc</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">'step'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">AZUL</span><span class="p">,</span>      <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>          <span class="n">label</span><span class="o">=</span><span class="s1">'$V - A$'</span><span class="p">)</span>
+<span class="n">a2</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">c2</span><span class="p">[</span><span class="n">x2</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">],</span> <span class="n">bc</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">'step'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">BERMELLON</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">'--'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'$V + A$'</span><span class="p">)</span>
+<span class="n">a2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">'$\cos\theta$, $x &gt; 1/2$'</span><span class="p">);</span> <span class="n">a2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'sucesos'</span><span class="p">)</span>
+<span class="n">a2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">);</span> <span class="n">a2</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">'upper center'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">a</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="n">asimetria</span><span class="p">(</span><span class="n">c2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'V + A: A_FB = </span><span class="si">{:.3f}</span><span class="s1"> ± </span><span class="si">{:.3f}</span><span class="s1">  -&gt;  xi = </span><span class="si">{:.2f}</span><span class="s1"> ± </span><span class="si">{:.2f}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="mi">6</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="mi">6</span><span class="o">*</span><span class="n">s</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/2d4776206b48a3d56365b6378e69848577249d28d8823004e68fe78686d830d8.png" src="../../_images/2d4776206b48a3d56365b6378e69848577249d28d8823004e68fe78686d830d8.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>V + A: A_FB = -0.167 ± 0.010  -&gt;  xi = -1.00 ± 0.06
+</pre></div>
+</div>
+</div>
+</div>
+<details>
+<summary><b>Solución</b></summary>
+<ol class="arabic simple">
+<li><p>y 2. Los espectros son iguales salvo fluctuaciones: integrado en el ángulo, el término en <span class="math notranslate nohighlight">\(\xi\)</span> desaparece y
+queda <span class="math notranslate nohighlight">\(x^2(3 - 2x)\)</span> en los dos casos. El espectro no sabe nada de la paridad. Es lo que dice el mirador de
+Michel: <span class="math notranslate nohighlight">\(\rho = \frac34\)</span> en los dos.</p></li>
+<li><p>La distribución angular es la imagen especular: con <span class="math notranslate nohighlight">\(V + A\)</span> los positrones rápidos salen <strong>en contra</strong> del espín
+del muón (<span class="math notranslate nohighlight">\(\xi = -1\)</span>, <span class="math notranslate nohighlight">\(A_{FB} \simeq -0.17\)</span>). Con <span class="math notranslate nohighlight">\(V + A\)</span> el <span class="math notranslate nohighlight">\(e^+\)</span> saldría a izquierdas, y en <span class="math notranslate nohighlight">\(x = 1\)</span> tendría que
+salir hacia atrás.</p></li>
+<li><p>Con <span class="math notranslate nohighlight">\(\xi = 0\)</span> la distribución sería plana en <span class="math notranslate nohighlight">\(\cos\theta\)</span> para cualquier <span class="math notranslate nohighlight">\(x\)</span>: tantos positrones hacia delante como
+hacia atrás. <span class="math notranslate nohighlight">\(\xi\)</span> mide la violación de la paridad: lo que cambia al mirar el experimento en un espejo
+(<span class="math notranslate nohighlight">\(\cos\theta \to -\cos\theta\)</span>, porque el espín, un vector axial, no se invierte y el momento sí). Se mide
+<span class="math notranslate nohighlight">\(\xi = 1.000 \pm 0.001\)</span>: la violación es <strong>máxima</strong>, como en el experimento de Wu.</p></li>
+</ol>
+</details></section>
+<section id="resumen">
+<h2>Resumen<a class="headerlink" href="#resumen" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>La helicidad negativa del <span class="math notranslate nohighlight">\(\nu_\mu\)</span> polariza los <span class="math notranslate nohighlight">\(\mu^+\)</span> del pión; la del <span class="math notranslate nohighlight">\(\nu_e\)</span> y el <span class="math notranslate nohighlight">\(\bar\nu_\mu\)</span>, y el <span class="math notranslate nohighlight">\(e^+\)</span> a
+derechas de <span class="math notranslate nohighlight">\(V - A\)</span>, hacen que los positrones rápidos salgan a favor del espín del muón.</p></li>
+<li><p>Simulado con la distribución de Michel, <span class="math notranslate nohighlight">\(A_{FB} = \xi/6\)</span>: con <span class="math notranslate nohighlight">\(10^4\)</span> desintegraciones,
+<span class="math notranslate nohighlight">\(\xi = 0.93 \pm 0.06\)</span>. Bastan unas 900 para excluir la conservación de la paridad a <span class="math notranslate nohighlight">\(5\sigma\)</span>.</p></li>
+<li><p>El espectro de energía es el mismo con <span class="math notranslate nohighlight">\(V - A\)</span> y con <span class="math notranslate nohighlight">\(V + A\)</span>; solo la distribución <strong>angular respecto al espín</strong>
+distingue una de otra. Se mide <span class="math notranslate nohighlight">\(\xi = 1\)</span>: la paridad se viola de forma máxima.</p></li>
+</ul>
+<p><em><strong>[+] Mirador.</strong></em> <em>En el experimento de Garwin, Lederman y Weinrich, un campo magnético hacía precesar el espín
+de los muones parados, y el contador, fijo, veía oscilar el número de positrones con la frecuencia de precesión.
+Así midieron a la vez la asimetría y el momento magnético del muón, <span class="math notranslate nohighlight">\(g \simeq 2\)</span>. Es el origen de los experimentos de
+<span class="math notranslate nohighlight">\(g - 2\)</span>.</em></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks/bols"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="boletin_IV_2627.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Partículas — boletín IV</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boletin-iv-ejercicio-10-guiado-mu-to-e-nu-e-bar-nu-mu">Boletín IV, ejercicio 10 (guiado): <span class="math notranslate nohighlight">\(\mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivos">Objetivos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-experimento">El experimento</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-y-b-con-lapiz-y-papel-las-helicidades">(a) y (b) Con lápiz y papel: las helicidades</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-la-asimetria-delante-atras">(c) La asimetría delante-atrás</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-la-simulacion">(d) La simulación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-v-a-o-v-a">(e) <span class="math notranslate nohighlight">\(V - A\)</span> o <span class="math notranslate nohighlight">\(V + A\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por J. Ángel Hernando Morata
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
