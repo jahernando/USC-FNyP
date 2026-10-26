@@ -44,6 +44,8 @@ parts:
       - file: notebooks/bols/boletin_II_2627.ipynb          # boletín II, observables, con soluciones
       - file: notebooks/bols/boletin_II_2627_higgs_4l.ipynb # boletín II, ejercicio 5 guiado: H -> 4 leptones con datos de CMS
       - file: notebooks/bols/boletin_III_2627_clase.ipynb   # boletín III, detectores y estadística, versión dada en clase (8 ej.)
+      - file: notebooks/bols/boletin_IV_2627.ipynb          # boletín IV, diagramas de Feynman, Dirac y quiralidad, con soluciones
+      - file: notebooks/bols/boletin_IV_2627_muon.ipynb     # boletín IV, ejercicio 10 guiado: paridad en mu+ -> e+ simulada
 
 # Sin publicar:
 #   notebooks/bols/boletin_III_2627.ipynb   (versión reordenada de 11 ejercicios, en preparación)
